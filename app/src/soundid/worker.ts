@@ -51,11 +51,15 @@ async function init(base: string, lat: number, lon: number) {
 
   post({ type: 'progress', stage: 'area', pct: 92 });
   let geo: Float32Array | null = null;
-  try {
-    areaModel = await tf.loadGraphModel(base + 'area-model/model.json');
-    geo = await areaScores(lat, lon);
-  } catch (e: any) {
-    console.warn('area model unavailable', e?.message);
+  // the range model is small but its download can fail on a poor connection: try three times
+  for (let attempt = 1; attempt <= 3 && !geo; attempt++) {
+    try {
+      areaModel = await tf.loadGraphModel(base + 'area-model/model.json');
+      geo = await areaScores(lat, lon);
+    } catch (e: any) {
+      console.warn(`range model attempt ${attempt} failed`, e?.message);
+      await new Promise((r) => setTimeout(r, 1500 * attempt));
+    }
   }
   const classes = (birdModel.outputs[0].shape[1] as number) || 0;
   post({ type: 'ready', backend: tf.getBackend(), classes, geo }, geo ? [geo.buffer] : []);

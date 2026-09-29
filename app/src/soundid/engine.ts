@@ -9,6 +9,7 @@ const WINDOW = SAMPLE_RATE * 3;
 const HOP_MS = 1500;
 const GEO_MIN = 0.03;            // off-list species must be plausible here according to the BirdNET range model
 const OFFLIST_PENALTY = 0.15;    // and need a higher confidence than checklist species
+const OFFLIST_NO_RANGE = 0.8;    // without the range model nothing filters foreign species: only near-certain ones pass
 // centre of the Greater Makalali / Pidwa area, used until a GPS position is known
 const HOME = { lat: -24.12, lon: 30.66 };
 
@@ -55,6 +56,11 @@ const pending = new Map<number, (top: [number, number][]) => void>();
 const isSpecies = (c: ClassRow) => c[0].includes(' ') && c[0] !== c[1]; // BirdNET also has classes like "Engine", "Dog", "Human vocal"
 
 export const getAnalyser = () => analyser;
+export const hasRangeModel = () => !!geo;
+/** Number of model files already stored on the phone (the Sound ID pack has 18). */
+export async function packFiles(): Promise<number> {
+  try { return (await (await caches.open('pack-birdnet')).keys()).length; } catch { return 0; }
+}
 export const classCount = () => classes.length;
 
 /** Load the model (once). Resolves when the worker is ready. */
@@ -108,7 +114,7 @@ export function interpret(top: [number, number][], now = Date.now()) {
     if (pidwaId) { if (conf < thr) continue; }
     else {
       if (geo && geo[index] < GEO_MIN) continue;          // not known from this region: almost certainly a false alarm
-      if (conf < Math.min(0.9, thr + OFFLIST_PENALTY)) continue;
+      if (conf < (geo ? Math.min(0.9, thr + OFFLIST_PENALTY) : OFFLIST_NO_RANGE)) continue;
     }
     const key = pidwaId || 'x:' + slug(c[0]);
     const i = list.findIndex((d) => d.key === key);

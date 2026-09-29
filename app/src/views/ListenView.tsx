@@ -42,6 +42,7 @@ function Spectrogram() {
 export function ListenView() {
   const [form, setForm] = useState<Detection | null>(null);
   const [, force] = useState(0);
+  const [inPack, setInPack] = useState<number | null>(null);
   const st = sid.status.value;
   const dets = sid.detections.value;
   const seen = seenCount.value;
@@ -52,6 +53,7 @@ export function ListenView() {
   useEffect(() => { const t = setInterval(() => force((n) => n + 1), 1000); return () => clearInterval(t); }, []);
   // start loading the model as soon as the screen opens, so the first tap on the button is quick
   useEffect(() => { if (sid.status.value === 'idle') sid.load().catch(() => {}); }, []);
+  useEffect(() => { sid.packFiles().then(setInPack); }, [st]);
 
   async function toggle() {
     if (st === 'listening') { sid.stop(); return; }
@@ -73,8 +75,9 @@ export function ListenView() {
           {st === 'listening' ? '■' : '🎤'}
         </button>
         <div class="lstatus">
+          {st === 'loading' && inPack !== null && inPack < 18 && <div class="small" style="margin-bottom:4px">The model is being fetched from the network (60 MB), this can take minutes. <a href={href('settings')}><b>Download the Sound ID pack in Settings</b></a> once and it starts in seconds, even offline.</div>}
           {st === 'loading' && <><b>Preparing sound ID…</b><div class="muted small">{STAGE[sid.progress.value.stage] || sid.progress.value.stage}</div><div class="progress"><i style={`width:${sid.progress.value.pct}%`} /></div></>}
-          {st === 'ready' && <><b>Tap to listen</b><div class="muted small">Hold the phone still, microphone towards the bird.</div></>}
+          {st === 'ready' && <><b>Tap to listen</b><div class="muted small">Hold the phone still, microphone towards the bird.</div>{!sid.hasRangeModel() && <div class="small err">Range model missing: species outside the checklist are shown only above 80 %.</div>}</>}
           {st === 'idle' && <b>Sound ID</b>}
           {st === 'listening' && <><b>Listening… {Math.floor(secs / 60)}:{String(secs % 60).padStart(2, '0')}</b><div class="muted small">{sid.lastMs.value ? `analysis ${sid.lastMs.value} ms per 3 s` : 'first result in a few seconds'}</div><div class="level"><i style={`width:${Math.min(100, Math.round(sid.level.value * 300))}%`} /></div></>}
           {st === 'error' && <><b class="err">Sound ID unavailable</b><div class="small">{sid.errorMsg.value}</div><a class="btn sm secondary" style="margin-top:6px" href={href('settings')}>Settings</a> <button class="btn sm secondary" onClick={() => { sid.status.value = 'idle'; sid.load().catch(() => {}); }}>retry</button></>}
