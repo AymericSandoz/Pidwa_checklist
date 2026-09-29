@@ -7,7 +7,7 @@ import { soundIdGrade } from '../util';
 import * as sid from '../soundid/engine';
 import type { Detection, Sensitivity } from '../soundid/engine';
 
-const STAGE: Record<string, string> = { classes: 'reading the species list', backend: 'starting the graphics engine', model: 'loading the model', warmup: 'warming up', area: 'loading the range model', ready: 'ready' };
+const STAGE: Record<string, string> = { classes: 'reading the species list', backend: 'starting the engine', model: 'loading the model', warmup: 'warming up', check: 'checking the results on a reference sound', fallback: 'graphics chip gives wrong results, switching to the processor', area: 'loading the range model', ready: 'ready' };
 const SENS: [Sensitivity, string][] = [['low', 'strict'], ['normal', 'normal'], ['high', 'sensitive']];
 const NOW_MS = 4000; // a species heard less than 4 s ago is shown as "singing now"
 const KIND: Record<string, string> = { list: 'checklist', region: 'region', impossible: 'not from here', other: '' };
@@ -81,7 +81,7 @@ export function ListenView() {
         <div class="lstatus">
           {st === 'loading' && inPack !== null && inPack < 18 && <div class="small" style="margin-bottom:4px">The model is being fetched from the network (60 MB), this can take minutes. <a href={href('settings')}><b>Download the Sound ID pack in Settings</b></a> once and it starts in seconds, even offline.</div>}
           {st === 'loading' && <><b>Preparing sound ID…</b><div class="muted small">{STAGE[sid.progress.value.stage] || sid.progress.value.stage}</div><div class="progress"><i style={`width:${sid.progress.value.pct}%`} /></div></>}
-          {st === 'ready' && <><b>Tap to listen</b><div class="muted small">Hold the phone still, microphone towards the bird.</div>{!sid.hasRangeModel() && <div class="small err">Range model missing: species outside the checklist are shown only above 80 %.</div>}</>}
+          {st === 'ready' && <><b>Tap to listen</b><div class="muted small">Hold the phone still, microphone towards the bird.</div>{sid.engineInfo.value && !sid.engineInfo.value.verified && <div class="small err">Warning: the model fails its start-up check on this phone. Results cannot be trusted.</div>}{!sid.hasRangeModel() && <div class="small err">Range model missing: species outside the checklist are shown only above 80 %.</div>}</>}
           {st === 'idle' && <b>Sound ID</b>}
           {st === 'listening' && <><b>Listening… {Math.floor(secs / 60)}:{String(secs % 60).padStart(2, '0')}</b><div class="muted small">{sid.windows.value ? `${sid.windows.value} analyses · ${sid.lastMs.value} ms each` : 'first result in a few seconds'}</div><div class="level"><i style={`width:${Math.min(100, Math.round(sid.level.value * 300))}%`} /></div></>}
           {st === 'error' && <><b class="err">Sound ID unavailable</b><div class="small">{sid.errorMsg.value}</div><a class="btn sm secondary" style="margin-top:6px" href={href('settings')}>Settings</a> <button class="btn sm secondary" onClick={() => { sid.status.value = 'idle'; sid.load().catch(() => {}); }}>retry</button></>}
@@ -143,12 +143,28 @@ export function ListenView() {
           <button class="btn sm secondary" disabled={st !== 'listening'} onClick={() => sid.replayLast()}>Replay last 3 s</button>
         </div>
         {sid.selfTest.value && (
-          <div class={'lnote' + (sid.selfTest.value.state === 'failed' || /FAILS/.test(sid.selfTest.value.message) ? ' warn' : '')}>
+          <div class={'lnote' + (sid.selfTest.value.state === 'done' && sid.selfTest.value.ok ? '' : ' warn')}>
             <b>{sid.selfTest.value.message}</b>
             {sid.selfTest.value.windows.map((w, i) => <div class="small">window {i + 1}: target {Math.round(w.target * 100)} % · best guess {w.top} {Math.round(w.topConf * 100)} %</div>)}
+            {sid.selfTest.value.shader.length > 0 && <div class="small muted" style="margin-top:4px">Same recording with the spectrogram on the graphics chip (not used): {sid.selfTest.value.shader.map((w) => `${Math.round(w.target * 100)} %`).join(', ')}</div>}
           </div>
         )}
-        {sid.engineInfo.value && <p class="small muted">TensorFlow.js {sid.engineInfo.value.tf} · WebGL {String(sid.engineInfo.value.webgl)} · float32 textures {String(sid.engineInfo.value.float32)} / in use {String(sid.engineInfo.value.float32Enabled)}</p>}
+        {sid.engineInfo.value && (() => {
+          const e = sid.engineInfo.value!;
+          const pc = (v?: number) => (v == null ? 'not tried' : Math.round(v * 100) + ' %');
+          return (
+            <p class="small">
+              <b>Engine: {e.engine === 'webgl' ? 'graphics chip (fast)' : 'processor, WebAssembly (slower, exact)'}</b> · start-up check {e.verified ? 'passed' : <b class="err">FAILED</b>}<br />
+              <span class="muted">reference sound: graphics chip {pc(e.checks.webgl)}{e.checks.webglError ? ` (${e.checks.webglError})` : ''} · processor {pc(e.checks.wasm)}<br />
+              shader spectrogram on this device: {e.shaderError == null ? 'not measured' : e.shaderOk ? 'exact' : 'WRONG'}{e.shaderError != null ? ` (error ${(e.shaderError * 100).toFixed(2)} %)` : ''}<br />
+              TensorFlow.js {e.tf} · WebGL {String(e.webgl)} · float32 {String(e.float32)}/{String(e.float32Enabled)}{e.simd != null ? ` · SIMD ${String(e.simd)}` : ''}</span>
+            </p>
+          );
+        })()}
+        <div class="chips">
+          <button class={'chip' + (sid.enginePref.value === 'auto' ? ' on' : '')} disabled={st === 'loading'} onClick={() => sid.setEngine('auto')}>engine: automatic</button>
+          <button class={'chip' + (sid.enginePref.value === 'wasm' ? ' on' : '')} disabled={st === 'loading'} onClick={() => sid.setEngine('wasm')}>force processor</button>
+        </div>
         {st !== 'listening' && <p class="small muted">Start listening to see live values.</p>}
         {st === 'listening' && (
           <>

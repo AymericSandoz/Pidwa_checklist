@@ -35,7 +35,7 @@ export default defineConfig({
       },
       workbox: {
         // App shell + species data + photos are precached at install (~20 MB).
-        globPatterns: ['**/*.{js,css,html,ico,png,svg,webp,json,woff2}'],
+        globPatterns: ['**/*.{js,css,html,ico,png,svg,webp,json,woff2,wasm,pcm}'], // wasm + pcm: sound ID engine and its reference sound
         globIgnores: ['**/data/sounds/**', '**/data/map/**', '**/data/birdnet/**'],
         maximumFileSizeToCacheInBytes: 30 * 1024 * 1024,
         navigateFallback: base + 'index.html',

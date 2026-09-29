@@ -63,8 +63,20 @@ export const mic = signal<MicInfo | null>(null);
 export const lastTop = signal<{ name: string; conf: number; kind: 'list' | 'region' | 'impossible' | 'other' }[]>([]);
 /** level of the last analysed window: loudness, peak and share of clipped samples */
 export const lastStats = signal<{ rmsDb: number; peak: number; clipped: number } | null>(null);
-export const engineInfo = signal<{ tf: string; webgl: number | string; float32: boolean | string; float32Enabled: boolean | string; mobile: boolean } | null>(null);
-export interface SelfTest { state: 'running' | 'done' | 'failed'; message: string; windows: { target: number; top: string; topConf: number }[] }
+export interface EngineInfo {
+  tf: string;
+  engine: 'webgl' | 'wasm';            // graphics chip, or processor (WebAssembly)
+  verified: boolean;                   // the reference recording is recognised at start-up
+  checks: { webgl?: number; wasm?: number; webglError?: string };
+  webgl: number | string; float32: boolean | string; float32Enabled: boolean | string;
+  stft: 'cpu' | 'gpu'; shaderOk: boolean; shaderError: number | null; simd: boolean | string | null;
+}
+export const engineInfo = signal<EngineInfo | null>(null);
+/** user choice kept on the phone: 'auto' picks the graphics chip when it passes the start-up check */
+export const enginePref = signal<'auto' | 'wasm'>((localStorage.getItem('sidEngine') as 'auto' | 'wasm') || 'auto');
+interface TestRow { target: number; top: string; topConf: number }
+/** `windows`: spectrogram computed on the processor (what the app uses); `shader`: same recording through the WebGL shader */
+export interface SelfTest { state: 'running' | 'done' | 'failed'; ok: boolean; message: string; windows: TestRow[]; shader: TestRow[] }
 export const selfTest = signal<SelfTest | null>(null);
 
 let worker: Worker | null = null;
@@ -85,6 +97,11 @@ let wake: any = null;
 let recent: { confused: boolean; quiet: boolean }[] = [];
 let lastWin: Float32Array | null = null;   // copy of the last analysed window, for playback
 const pending = new Map<number, (top: [number, number][]) => void>();
+const stftWaiters: (() => void)[] = [];
+/** Choose where the spectrogram is computed: 'cpu' is exact on every device, 'gpu' is BirdNET Live's shader. */
+function setStft(mode: 'cpu' | 'gpu'): Promise<void> {
+  return new Promise((res) => { stftWaiters.push(res); worker!.postMessage({ type: 'stft', mode }); });
+}
 const isSpecies = (c: ClassRow) => c[0].includes(' ') && c[0] !== c[1]; // BirdNET also has classes like "Engine", "Dog", "Human vocal"
 const pidwaOf = (c: ClassRow) => (c[3] && byId.value.has(c[3]) ? c[3] : null);
 
@@ -118,13 +135,14 @@ export function load(): Promise<void> {
       if (d.type === 'progress') progress.value = { stage: d.stage, pct: d.pct };
       else if (d.type === 'ready') { geo = d.geo || null; engineInfo.value = d.info || null; status.value = 'ready'; progress.value = { stage: 'ready', pct: 100 }; resolve(); }
       else if (d.type === 'geo') geo = d.geo;
+      else if (d.type === 'stft') { if (engineInfo.value) engineInfo.value = { ...engineInfo.value, stft: d.mode }; stftWaiters.splice(0).forEach((f) => f()); }
       else if (d.type === 'result') { lastMs.value = d.ms; pending.get(d.id)?.(d.top); pending.delete(d.id); }
       else if (d.type === 'error') {
         if (d.id != null && pending.has(d.id)) { pending.get(d.id)!([]); pending.delete(d.id); console.warn('sound id:', d.message); }
         else fail(/fetch|load|404|network/i.test(d.message) ? 'The Sound ID pack is not on this phone. Download it in Settings while you have network.' : d.message);
       }
     };
-    worker.postMessage({ type: 'init', base: location.origin + BASE + 'data/birdnet/', ...HOME });
+    worker.postMessage({ type: 'init', base: location.origin + BASE + 'data/birdnet/', ...HOME, force: enginePref.value === 'wasm' ? 'wasm' : undefined });
   });
 }
 
@@ -186,6 +204,15 @@ export function interpret(top: [number, number][], now = Date.now(), quiet = fal
   const nq = recent.filter((r) => r.quiet).length, nc = recent.filter((r) => r.confused).length;
   noise.value = recent.length >= 4 && nq >= 4 ? 'quiet' : recent.length >= 4 && nc >= 4 ? 'noisy' : 'ok';
   windows.value++;
+}
+
+/** Switch engine and reload the model. */
+export async function setEngine(pref: 'auto' | 'wasm') {
+  enginePref.value = pref; localStorage.setItem('sidEngine', pref);
+  stop();
+  worker?.terminate(); worker = null; geo = null; engineInfo.value = null; selfTest.value = null;
+  status.value = 'idle';
+  await load().catch(() => {});
 }
 
 export function markLogged(key: string) { detections.value = detections.value.map((d) => (d.key === key ? { ...d, logged: true } : d)); }
@@ -312,8 +339,8 @@ export async function replayLast(): Promise<boolean> {
  */
 export async function runSelfTest(id = 'streptopelia-capicola') {
   const sp = byId.value.get(id);
-  if (!sp || !sp.bn || !sp.sounds.length) { selfTest.value = { state: 'failed', message: 'no reference recording for the test', windows: [] }; return; }
-  selfTest.value = { state: 'running', message: 'loading the model and the reference recording…', windows: [] };
+  if (!sp || !sp.bn || !sp.sounds.length) { selfTest.value = { state: 'failed', ok: false, message: 'no reference recording for the test', windows: [], shader: [] }; return; }
+  selfTest.value = { state: 'running', ok: false, message: 'loading the model and the reference recording…', windows: [], shader: [] };
   try {
     await load();
     const r = await fetch(dataUrl(sp.sounds[0].file));
@@ -323,22 +350,27 @@ export async function runSelfTest(id = 'streptopelia-capicola') {
     const wasRunning = running; running = false;      // keep the live loop out of the way
     while (busy) await new Promise((res) => setTimeout(res, 50));
     busy = true;
-    const rows: SelfTest['windows'] = [];
-    try {
+    const rows: TestRow[] = [], shader: TestRow[] = [];
+    const pass = async (into: TestRow[]) => {
       for (let w = 0; w < 3 && (w + 1) * WINDOW <= pcm.length; w++) {
         const top = await analyse(pcm.slice(w * WINDOW, (w + 1) * WINDOW));
         const t = top.find(([i]) => i === sp.bn!.index);
         const best = top.find(([i]) => classes[i] && isSpecies(classes[i]));
-        rows.push({ target: t ? t[1] : 0, top: best ? classes[best[0]][1] : 'nothing', topConf: best ? best[1] : 0 });
-        selfTest.value = { state: 'running', message: `analysing ${sp.en}…`, windows: rows.slice() };
+        into.push({ target: t ? t[1] : 0, top: best ? classes[best[0]][1] : 'nothing', topConf: best ? best[1] : 0 });
+        selfTest.value = { state: 'running', ok: false, message: `analysing ${sp.en}…`, windows: rows.slice(), shader: shader.slice() };
       }
-    } finally { busy = false; if (wasRunning && status.value === 'listening') { running = true; loop(); } }
-    const ok = rows.length > 0 && rows.filter((x) => x.target >= 0.5).length >= Math.ceil(rows.length / 2);
-    selfTest.value = { state: 'done', message: ok ? `Model OK on this phone: it recognises the reference ${sp.en}.` : `Model FAILS on this phone: it does not recognise a clean ${sp.en} recording.`, windows: rows };
+    };
+    try {
+      await setStft('cpu'); await pass(rows);
+      await setStft('gpu'); await pass(shader);   // for comparison only
+    } finally { await setStft('cpu'); busy = false; if (wasRunning && status.value === 'listening') { running = true; loop(); } }
+    const good = (r: TestRow[]) => r.length > 0 && r.filter((x) => x.target >= 0.5).length >= Math.ceil(r.length / 2);
+    const ok = good(rows);
+    selfTest.value = { state: 'done', ok, message: ok ? `Model OK on this phone: it recognises the reference ${sp.en}.` : `Model FAILS on this phone: it does not recognise a clean ${sp.en} recording.`, windows: rows, shader };
   } catch (e: any) {
-    selfTest.value = { state: 'failed', message: e?.message || String(e), windows: [] };
+    selfTest.value = { state: 'failed', ok: false, message: e?.message || String(e), windows: [], shader: [] };
   }
 }
 
 // for the headless tests and for debugging from the console
-(window as any).__soundid = { load, start, stop, analyse, interpret, clearDetections, setSensitivity, runSelfTest, selfTest, replayLast, engineInfo, lastStats, detections, status, lastMs, noise, mic, lastTop, windows, classes: () => classes, geo: () => geo };
+(window as any).__soundid = { load, start, stop, setEngine, enginePref, analyse, interpret, clearDetections, setSensitivity, runSelfTest, selfTest, replayLast, engineInfo, lastStats, detections, status, lastMs, noise, mic, lastTop, windows, classes: () => classes, geo: () => geo };

@@ -1,0 +1,12 @@
+{
+ "species": "Ring-necked Dove",
+ "scientific": "Streptopelia capicola",
+ "classIndex": 5745,
+ "sampleRate": 48000,
+ "samples": 144000,
+ "format": "int16le",
+ "recordist": "Justin Rayboun",
+ "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+ "source": "https://xeno-canto.org/1010152",
+ "minScore": 0.5
+}
