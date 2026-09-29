@@ -11,6 +11,8 @@ import type { Observation } from '../types';
 // Satellite-only map (Sentinel-2 cloudless, EOX). Tiles: z8–14 over the whole area, z15 over the reserve itself.
 const BBOX = { west: 30.4, south: -24.35, east: 30.9, north: -23.9 };
 const INNER = { west: 30.5, south: -24.25, east: 30.82, north: -23.98 };
+// fixed places shown on the map: [label, lon, lat]
+const PLACES: [string, number, number][] = [['Askari Camp', 30.55897, -24.0648]];
 const bounds = (b: typeof BBOX) => [b.west, b.south, b.east, b.north] as [number, number, number, number];
 
 function makeStyle(): maplibregl.StyleSpecification {
@@ -119,7 +121,7 @@ export function MapView() {
       caches.delete('pack-map').catch(() => {}); // old OpenStreetMap pack, no longer used
       try {
         map = new maplibregl.Map({
-          container: el.current!, style: makeStyle(), center: [30.65, -24.125], zoom: 11, minZoom: 9, maxZoom: 15, // beyond z15 Sentinel-2 (10 m/pixel) is just blur
+          container: el.current!, style: makeStyle(), center: [30.6, -24.08], zoom: 11, // opens around Askari Camp minZoom: 9, maxZoom: 15, // beyond z15 Sentinel-2 (10 m/pixel) is just blur
           maxBounds: [[BBOX.west - 0.05, BBOX.south - 0.05], [BBOX.east + 0.05, BBOX.north + 0.05]],
           attributionControl: { compact: true }, fadeDuration: 0, pitchWithRotate: false, dragRotate: false, touchPitch: false, maxPitch: 0,
           canvasContextAttributes: { preserveDrawingBuffer: location.search.includes('debug') },
@@ -137,6 +139,12 @@ export function MapView() {
         geo.on('error', () => setOutside(false));
         map.addControl(new maplibregl.ScaleControl({ unit: 'metric' }), 'bottom-left');
         map.on('error', (e) => { if (import.meta.env.DEV) console.debug(e.error?.message); });
+        for (const [label, lon, lat] of PLACES) {
+          const pin = document.createElement('div');
+          pin.className = 'place';
+          pin.textContent = '⛺ ' + label;
+          new maplibregl.Marker({ element: pin, anchor: 'bottom' }).setLngLat([lon, lat]).addTo(map);
+        }
         map.on('load', () => {
           map!.addSource('reserve', { type: 'geojson', data: reserve });
           map!.addLayer({ id: 'reserve-line', type: 'line', source: 'reserve', paint: { 'line-color': '#ffd54f', 'line-width': 2, 'line-dasharray': [3, 2] } });

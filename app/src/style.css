@@ -215,3 +215,7 @@ details.filters summary { font-weight: 600; padding: 8px 0; cursor: pointer; }
 .seg button.on { background: #fff; color: var(--green); box-shadow: 0 1px 2px #0002; }
 .maplegend { position: absolute; left: 10px; bottom: 34px; z-index: 4; display: flex; gap: 10px; background: #000a; color: #fff; font-size: 11px; font-weight: 600; border-radius: 999px; padding: 4px 10px; }
 .maplegend i { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 4px; border: 1.5px solid #fff; vertical-align: -1px; }
+
+/* fixed places on the map (camp) */
+.place { background: #fff; color: var(--green-dark); font-size: 12px; font-weight: 700; padding: 3px 8px; border-radius: 999px; box-shadow: 0 1px 4px #0006; white-space: nowrap; position: relative; margin-bottom: 6px; }
+.place::after { content: ''; position: absolute; left: 50%; bottom: -5px; margin-left: -5px; border: 5px solid transparent; border-bottom: 0; border-top-color: #fff; }
