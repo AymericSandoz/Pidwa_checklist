@@ -33,7 +33,7 @@ await page.screenshot({ path: 'scripts/shots/soundid-ready.png' });
 await page.click('.mic');
 for (let s = 0; s < seconds; s += 5) {
   await page.waitForTimeout(5000);
-  const d = await page.evaluate(() => ({ st: window.__soundid.status.value, ms: window.__soundid.lastMs.value, dets: window.__soundid.detections.value.filter((d) => d.pidwaId || d.count >= 2).map((d) => `${d.en} ${Math.round(d.best * 100)}% x${d.count}${d.pidwaId ? '' : ' [off-list]'}`) }));
+  const d = await page.evaluate(() => ({ st: window.__soundid.status.value, ms: window.__soundid.lastMs.value, dets: window.__soundid.detections.value.filter((d) => d.shown).map((d) => `${d.en} ${Math.round(d.best * 100)}% x${d.count}${d.pidwaId ? '' : ' [off-list]'}`) }));
   console.log(`t=${s + 5}s`, d.st, d.ms + 'ms', '|', d.dets.join(' ; '));
   if (s === 15) await page.screenshot({ path: 'scripts/shots/soundid-listening.png' });
 }

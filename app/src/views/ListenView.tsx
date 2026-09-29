@@ -10,6 +10,8 @@ import type { Detection, Sensitivity } from '../soundid/engine';
 const STAGE: Record<string, string> = { classes: 'reading the species list', backend: 'starting the graphics engine', model: 'loading the model', warmup: 'warming up', area: 'loading the range model', ready: 'ready' };
 const SENS: [Sensitivity, string][] = [['low', 'strict'], ['normal', 'normal'], ['high', 'sensitive']];
 const NOW_MS = 4000; // a species heard less than 4 s ago is shown as "singing now"
+const KIND: Record<string, string> = { list: 'checklist', region: 'region', impossible: 'not from here', other: '' };
+const onOff = (v: boolean | null) => (v == null ? '?' : v ? 'ON' : 'off');
 
 function Spectrogram() {
   const ref = useRef<HTMLCanvasElement>(null);
@@ -47,6 +49,8 @@ export function ListenView() {
   const dets = sid.detections.value;
   const seen = seenCount.value;
   const now = Date.now();
+  const m = sid.mic.value;
+  const lv = sid.LEVELS[sid.sensitivity.value];
 
   // keep the navigation dot and the "singing now" highlight fresh
   useEffect(() => { listening.value = st === 'listening'; }, [st]);
@@ -60,13 +64,13 @@ export function ListenView() {
     try { await sid.start(); } catch { /* message is in errorMsg */ }
   }
 
-  // Order of first detection, new species added at the bottom: rows never move under the finger.
-  // A species that is not on the checklist must be heard in two windows before it is shown (filters one-off false alarms).
-  const sorted = dets.filter((d) => d.pidwaId || d.count >= 2).sort((a, b) => a.first - b.first);
+  // Confirmed species only, in order of confirmation, new ones at the bottom: rows never move under the finger.
+  const sorted = dets.filter((d) => d.shown).sort((a, b) => a.first - b.first);
   const birds = species.value.filter((s) => s.group === 'bird');
   const uncovered = birds.filter((s) => !s.bn);
   const weak = birds.filter((s) => s.bn && soundIdGrade(s.bn.ref) === 'weak');
   const secs = st === 'listening' ? Math.floor((now - sid.startedAt.value) / 1000) : 0;
+  const processed = m && (m.echoCancellation || m.noiseSuppression || m.autoGainControl);
 
   return (
     <div class="listen">
@@ -79,11 +83,16 @@ export function ListenView() {
           {st === 'loading' && <><b>Preparing sound ID…</b><div class="muted small">{STAGE[sid.progress.value.stage] || sid.progress.value.stage}</div><div class="progress"><i style={`width:${sid.progress.value.pct}%`} /></div></>}
           {st === 'ready' && <><b>Tap to listen</b><div class="muted small">Hold the phone still, microphone towards the bird.</div>{!sid.hasRangeModel() && <div class="small err">Range model missing: species outside the checklist are shown only above 80 %.</div>}</>}
           {st === 'idle' && <b>Sound ID</b>}
-          {st === 'listening' && <><b>Listening… {Math.floor(secs / 60)}:{String(secs % 60).padStart(2, '0')}</b><div class="muted small">{sid.lastMs.value ? `analysis ${sid.lastMs.value} ms per 3 s` : 'first result in a few seconds'}</div><div class="level"><i style={`width:${Math.min(100, Math.round(sid.level.value * 300))}%`} /></div></>}
+          {st === 'listening' && <><b>Listening… {Math.floor(secs / 60)}:{String(secs % 60).padStart(2, '0')}</b><div class="muted small">{sid.windows.value ? `${sid.windows.value} analyses · ${sid.lastMs.value} ms each` : 'first result in a few seconds'}</div><div class="level"><i style={`width:${Math.min(100, Math.round(sid.level.value * 300))}%`} /></div></>}
           {st === 'error' && <><b class="err">Sound ID unavailable</b><div class="small">{sid.errorMsg.value}</div><a class="btn sm secondary" style="margin-top:6px" href={href('settings')}>Settings</a> <button class="btn sm secondary" onClick={() => { sid.status.value = 'idle'; sid.load().catch(() => {}); }}>retry</button></>}
           {st !== 'error' && sid.errorMsg.value && <div class="err small">{sid.errorMsg.value}</div>}
         </div>
       </div>
+
+      {st === 'listening' && sid.paused.value && <div class="lnote warn">Paused: the app is in the background and Android has cut the microphone. Play test sounds from another device, not from this phone.</div>}
+      {st === 'listening' && !sid.paused.value && secs > 4 && sid.windows.value === 0 && <div class="lnote warn">No sound is reaching the app. Stop and start again; if it persists, open the diagnostics below and tell me what it says.</div>}
+      {st === 'listening' && sid.noise.value === 'noisy' && <div class="lnote">Mostly noise right now (rain, wind, engine). Faint birds will be missed and results are less reliable.</div>}
+      {st === 'listening' && sid.noise.value === 'quiet' && <div class="lnote">Very quiet: nothing to identify at the moment.</div>}
 
       {st === 'listening' && <Spectrogram />}
 
@@ -124,8 +133,32 @@ export function ListenView() {
             </div>
           );
         })}
-        {sorted.length === 0 && st === 'listening' && <p class="muted center" style="min-height:0;padding:24px">Nothing recognised yet. Species appear here as soon as they are heard.</p>}
+        {sorted.length === 0 && st === 'listening' && <p class="muted center" style="min-height:0;padding:24px">Nothing confirmed yet. A species appears once it is heard clearly, or twice more faintly.</p>}
       </div>
+
+      <details class="card diag" style="margin-top:12px">
+        <summary><b>Diagnostics</b> <span class="muted small">what the model hears right now</span></summary>
+        {st !== 'listening' && <p class="small muted">Start listening to see live values.</p>}
+        {st === 'listening' && (
+          <>
+            <p class="small"><b>Last analysis, raw scores</b> (before any rule)</p>
+            {sid.lastTop.value.length === 0 && <p class="small muted">nothing above 3 %</p>}
+            {sid.lastTop.value.map((t) => (
+              <div class="stat small"><span>{t.name} <span class="muted">{KIND[t.kind]}</span></span><span>{Math.round(t.conf * 100)} %</span></div>
+            ))}
+            <p class="small" style="margin-top:8px">Rule in <b>{SENS.find(([k]) => k === sid.sensitivity.value)?.[1]}</b> mode: shown at once from {Math.round(lv.high * 100)} %, or after two hits from {Math.round(lv.mid * 100)} % within 12 s.</p>
+            {m && (
+              <p class="small">
+                Microphone: {m.label || 'default'}<br />
+                audio engine {m.contextRate} Hz, {m.contextState}{m.trackRate ? ` · microphone ${m.trackRate} Hz` : ''}<br />
+                echo cancellation {onOff(m.echoCancellation)} · noise suppression {onOff(m.noiseSuppression)} · automatic gain {onOff(m.autoGainControl)}
+                {processed && <><br /><span class="err">The phone is filtering the sound for voice calls: bird sounds may be removed.</span></>}
+              </p>
+            )}
+            <p class="small muted">{sid.windows.value} analyses, {sid.lastMs.value} ms each, range model {sid.hasRangeModel() ? 'loaded' : 'missing'}, noise state: {sid.noise.value}.</p>
+          </>
+        )}
+      </details>
 
       <details class="card" style="margin-top:12px">
         <summary><b>What sound ID can and cannot do</b></summary>

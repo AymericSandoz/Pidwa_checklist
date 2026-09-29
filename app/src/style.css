@@ -179,6 +179,9 @@ details.filters summary { font-weight: 600; padding: 8px 0; cursor: pointer; }
 .tag.ok { background: #e3f3e3; color: #1b5e20; }
 .fact.off { background: #eceff1; color: #546e7a; }
 .sp-row .en.tags { white-space: normal; overflow: visible; line-height: 1.5; }
+.lnote { background: #eef3f8; border: 1px solid #c9d8e8; border-radius: 8px; padding: 8px 10px; font-size: 13px; margin-bottom: 10px; }
+.lnote.warn { background: #fff8e1; border-color: #f0c36d; }
+.diag .stat { padding: 3px 0; }
 
 /* ID guide */
 .idg .fgroup .lab { font-size: 13px; font-weight: 600; color: var(--text); margin: 12px 0 6px; }

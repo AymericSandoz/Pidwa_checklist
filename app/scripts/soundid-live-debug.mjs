@@ -18,5 +18,5 @@ console.log('status', await page.evaluate(() => ({ s: window.__soundid.status.va
 const r = await page.evaluate(async () => { try { await window.__soundid.start(); return 'started'; } catch (e) { return 'start failed: ' + (e && (e.name + ' ' + e.message)); } });
 console.log(r, '| status', await page.evaluate(() => window.__soundid.status.value), '| panel:', (await page.textContent('.lstatus')).replace(/\s+/g, ' ').trim());
 await page.waitForTimeout(20000);
-console.log('detections:', (await page.evaluate(() => window.__soundid.detections.value.map((d) => `${d.en} ${Math.round(d.best * 100)}%`))).join(' ; '));
+console.log('detections:', (await page.evaluate(() => window.__soundid.detections.value.filter((d) => d.shown).map((d) => `${d.en} ${Math.round(d.best * 100)}%`))).join(' ; '));
 await browser.close();

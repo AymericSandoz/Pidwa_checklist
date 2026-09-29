@@ -39,7 +39,7 @@ console.log('OFFLINE model status:', await page.evaluate(() => window.__soundid.
 if (await page.evaluate(() => window.__soundid.status.value) === 'ready') {
   await page.click('.mic');
   await page.waitForTimeout(25000);
-  console.log('OFFLINE detections:', (await page.evaluate(() => window.__soundid.detections.value.map((d) => `${d.en} ${Math.round(d.best * 100)}% x${d.count}`))).join(' ; '));
+  console.log('OFFLINE detections:', (await page.evaluate(() => window.__soundid.detections.value.filter((d) => d.shown).map((d) => `${d.en} ${Math.round(d.best * 100)}% x${d.count}`))).join(' ; '));
 }
 await page.screenshot({ path: 'scripts/shots/soundid-offline.png' });
 await browser.close();
