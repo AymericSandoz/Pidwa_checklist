@@ -1,16 +1,21 @@
+import { signal } from '@preact/signals';
 import { species, observations, seenCount, firstSeen, totals, byId, name, obsInfo } from '../data';
 import { href } from '../router';
 import { dayKey, fmtDate } from '../util';
 import { familyEn } from '../taxa';
+
+const famGroup = signal<'bird' | 'mammal'>('bird');
+// rhino counts once, either species
+const BIG5: [string, string[]][] = [['Lion', ['panthera-leo']], ['Leopard', ['panthera-pardus']], ['Elephant', ['loxodonta-africana']], ['Buffalo', ['syncerus-caffer']], ['Rhino', ['ceratotherium-simum', 'diceros-bicornis']]];
 
 export function StatsView() {
   const t = totals.value;
   const seen = seenCount.value;
   const pct = (a: number, b: number) => (b ? Math.round((100 * a) / b) : 0);
 
-  // bird families, seen / total
+  // families of the selected group, seen / total
   const fam = new Map<string, { seen: number; total: number }>();
-  for (const s of species.value.filter((x) => x.group === 'bird')) {
+  for (const s of species.value.filter((x) => x.group === famGroup.value)) {
     const k = familyEn(s) || '?';
     const f = fam.get(k) || { seen: 0, total: 0 };
     f.total++; if (seen.has(s.id)) f.seen++;
@@ -35,6 +40,13 @@ export function StatsView() {
         <div><div class="big">{t.bird.seen}<span class="muted" style="font-size:16px">/{t.bird.total}</span></div><div class="muted small">birds · {pct(t.bird.seen, t.bird.total)} %</div></div>
         <div><div class="big">{t.mammal.seen}<span class="muted" style="font-size:16px">/{t.mammal.total}</span></div><div class="muted small">mammals · {pct(t.mammal.seen, t.mammal.total)} %</div></div>
         <div><div class="big">{observations.value.length}</div><div class="muted small">observations</div></div>
+      </div>
+
+      <div class="card">
+        <b>Big Five</b>
+        <div class="big5">
+          {BIG5.map(([label, ids]) => { const got = ids.some((i) => seen.has(i)); return <a class={'b5' + (got ? ' got' : '')} href={href('species/' + ids[0])}><span>{got ? '✓' : '·'}</span>{label}</a>; })}
+        </div>
       </div>
 
       {dayList.length > 0 && (
@@ -62,7 +74,12 @@ export function StatsView() {
       )}
 
       <div class="card">
-        <b>Bird families</b>
+        <div class="row" style="justify-content:space-between"><b>Families</b>
+          <div class="tabs" style="margin:0">
+            <button class={famGroup.value === 'bird' ? 'on' : ''} onClick={() => (famGroup.value = 'bird')}>Birds</button>
+            <button class={famGroup.value === 'mammal' ? 'on' : ''} onClick={() => (famGroup.value = 'mammal')}>Mammals</button>
+          </div>
+        </div>
         {fams.map(([k, f]) => (
           <div class="stat" style="display:block">
             <div class="row"><span style="flex:1">{k}</span><span class="muted">{f.seen}/{f.total}</span></div>

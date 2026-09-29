@@ -1,3 +1,4 @@
+import { Component, type ComponentChildren } from 'preact';
 import { route, href } from './router';
 import { loaded, loadError, totals } from './data';
 import { ListView } from './views/ListView';
@@ -8,6 +9,16 @@ import { MapLazy } from './views/MapLazy';
 import { StatsView } from './views/StatsView';
 import { SettingsView } from './views/SettingsView';
 import { ListenLazy, listening } from './views/ListenLazy';
+
+/** Keeps a crash inside one screen: the navigation still works and the next screen renders normally. */
+class ViewBoundary extends Component<{ children: ComponentChildren }, { err: string | null }> {
+  state = { err: null as string | null };
+  componentDidCatch(e: any) { this.setState({ err: e?.message || String(e) }); }
+  render() {
+    if (!this.state.err) return this.props.children;
+    return <div class="center"><div><p>This screen hit an error.</p><pre class="small muted" style="white-space:pre-wrap">{this.state.err}</pre><button class="btn" onClick={() => location.reload()}>Reload</button></div></div>;
+  }
+}
 
 const NAV = [
   ['list', 'List', '☑'],
@@ -45,7 +56,7 @@ export function App() {
           <a href={href('settings')} class="gear" aria-label="Settings">⚙</a>
         </header>
       )}
-      <main class="main">{view}</main>
+      <main class="main"><ViewBoundary key={r.path}>{view}</ViewBoundary></main>
       <nav class="bottom">
         {NAV.map(([p, label, icon]) => (
           <a href={href(p)} class={r.path === p || (p === 'list' && r.path === 'species') ? 'active' : ''}>

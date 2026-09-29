@@ -8,7 +8,7 @@ let cached: ComponentType | null = null;
 export const listening = signal(false);
 
 export function ListenLazy() {
-  const [C, setC] = useState<ComponentType | null>(cached);
+  const [C, setC] = useState<ComponentType | null>(() => cached); // wrapped: a bare function would be run as an initializer
   useEffect(() => {
     if (!C) import('./ListenView').then((m) => { cached = m.ListenView; setC(() => m.ListenView); });
   }, []);

@@ -195,3 +195,9 @@ details.filters summary { font-weight: 600; padding: 8px 0; cursor: pointer; }
 .idbar { position: sticky; top: var(--top-h); z-index: 5; display: flex; align-items: center; gap: 8px; background: var(--bg); padding: 8px 0; margin: 8px 0 4px; border-bottom: 1px solid var(--line); }
 .idbar b { flex: 1; }
 .idbar .chip { margin: 0; }
+
+/* stats */
+.big5 { display: flex; gap: 6px; margin-top: 8px; }
+.b5 { flex: 1; text-align: center; font-size: 12px; font-weight: 600; padding: 8px 2px; border-radius: 10px; background: #f0efe9; color: var(--muted); }
+.b5 span { display: block; font-size: 18px; line-height: 1.2; }
+.b5.got { background: var(--accent); color: #fff; }
