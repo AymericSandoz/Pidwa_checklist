@@ -1,4 +1,4 @@
-import { species, observations, seenCount, firstSeen, totals, byId, name } from '../data';
+import { species, observations, seenCount, firstSeen, totals, byId, name, obsInfo } from '../data';
 import { href } from '../router';
 import { dayKey, fmtDate } from '../util';
 import { familyEn } from '../taxa';
@@ -25,6 +25,9 @@ export function StatsView() {
 
   // lifers, most recent first
   const lifers = [...firstSeen.value.entries()].sort((a, b) => b[1] - a[1]).slice(0, 12);
+  // species logged that are not on the Pidwa checklist (from sound ID)
+  const extras = new Map<string, string>();
+  for (const o of observations.value) if (!byId.value.has(o.speciesId)) extras.set(o.speciesId, obsInfo(o).en);
 
   return (
     <div>
@@ -46,7 +49,15 @@ export function StatsView() {
       {lifers.length > 0 && (
         <div class="card">
           <b>Latest new species</b>
-          {lifers.map(([id, ts]) => { const s = byId.value.get(id); return <div class="stat"><a href={href('species/' + id)}>{s ? name(s) : id}</a><span class="muted">{fmtDate(ts)}</span></div>; })}
+          {lifers.map(([id, ts]) => { const s = byId.value.get(id); return <div class="stat">{s ? <a href={href('species/' + id)}>{name(s)}</a> : <span>{extras.get(id) || id} <span class="tag off">not on checklist</span></span>}<span class="muted">{fmtDate(ts)}</span></div>; })}
+        </div>
+      )}
+
+      {extras.size > 0 && (
+        <div class="card">
+          <b>Not on the Pidwa checklist ({extras.size})</b>
+          <p class="muted small" style="margin:4px 0">Logged from sound ID. They do not count in the score.</p>
+          {[...extras.values()].sort().map((n) => <div class="stat"><span>{n}</span></div>)}
         </div>
       )}
 

@@ -7,10 +7,12 @@ import { JournalView } from './views/JournalView';
 import { MapLazy } from './views/MapLazy';
 import { StatsView } from './views/StatsView';
 import { SettingsView } from './views/SettingsView';
+import { ListenLazy, listening } from './views/ListenLazy';
 
 const NAV = [
   ['list', 'List', '☑'],
   ['id', 'Guide', '🔍'],
+  ['listen', 'Listen', '🎤'],
   ['obs', 'Journal', '📓'],
   ['map', 'Map', '🗺'],
   ['stats', 'Stats', '📊'],
@@ -27,6 +29,7 @@ export function App() {
     case 'id': view = <IdGuideView />; break;
     case 'obs': view = <JournalView />; break;
     case 'map': view = <MapLazy />; break;
+    case 'listen': view = <ListenLazy />; break;
     case 'stats': view = <StatsView />; break;
     case 'settings': view = <SettingsView />; break;
     default: view = <ListView />;
@@ -46,7 +49,7 @@ export function App() {
       <nav class="bottom">
         {NAV.map(([p, label, icon]) => (
           <a href={href(p)} class={r.path === p || (p === 'list' && r.path === 'species') ? 'active' : ''}>
-            <span class="ico">{icon}</span><span>{label}</span>
+            <span class="ico">{icon}{p === 'listen' && listening.value && <i class="recdot" />}</span><span>{label}</span>
           </a>
         ))}
       </nav>

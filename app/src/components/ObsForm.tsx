@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState } from 'preact/hooks';
 import type { Observation, Species } from '../types';
 import { species, byId, name, name2, addObservation, updateObservation, deleteObservation } from '../data';
-import { downscalePhoto, matches } from '../util';
+import { downscalePhoto, matches, slug } from '../util';
 
-interface Props { speciesId?: string; obs?: Observation; onClose: () => void }
+type Extra = NonNullable<Observation['extra']>;
+interface Props { speciesId?: string; obs?: Observation; extra?: Extra; note?: string; onSaved?: () => void; onClose: () => void }
 
 function toLocalInput(ts: number) {
   const d = new Date(ts);
@@ -11,9 +12,10 @@ function toLocalInput(ts: number) {
   return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}T${p(d.getHours())}:${p(d.getMinutes())}`;
 }
 
-export function ObsForm({ speciesId, obs, onClose }: Props) {
+export function ObsForm({ speciesId, obs, extra: extraProp, note: noteProp, onSaved, onClose }: Props) {
   const editing = !!obs;
-  const [spId, setSpId] = useState<string | null>(obs?.speciesId ?? speciesId ?? null);
+  const extra: Extra | null = obs?.extra ?? extraProp ?? null;
+  const [spId, setSpId] = useState<string | null>(obs?.speciesId ?? speciesId ?? (extra ? 'x:' + slug(extra.sci) : null));
   const [q, setQ] = useState('');
   const [when, setWhen] = useState(toLocalInput(obs?.ts ?? Date.now()));
   const [lat, setLat] = useState<number | null>(obs?.lat ?? null);
@@ -22,7 +24,7 @@ export function ObsForm({ speciesId, obs, onClose }: Props) {
   const [gps, setGps] = useState<'idle' | 'wait' | 'ok' | 'coarse' | 'bad'>(editing && obs?.lat != null ? 'ok' : 'idle');
   const [gpsMsg, setGpsMsg] = useState('');
   const [count, setCount] = useState(obs?.count ?? 1);
-  const [note, setNote] = useState(obs?.note ?? '');
+  const [note, setNote] = useState(obs?.note ?? noteProp ?? '');
   const [photo, setPhoto] = useState<Blob | null>(obs?.photo ?? null);
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [saving, setSaving] = useState(false);
@@ -66,9 +68,10 @@ export function ObsForm({ speciesId, obs, onClose }: Props) {
   async function save() {
     if (!spId) return;
     setSaving(true);
-    const rec: Observation = { speciesId: spId, ts: new Date(when).getTime() || Date.now(), lat, lon, acc, count: Math.max(1, count | 0), note: note.trim(), photo };
+    const rec: Observation = { speciesId: spId, ts: new Date(when).getTime() || Date.now(), lat, lon, acc, count: Math.max(1, count | 0), note: note.trim(), photo, extra: spId.startsWith('x:') ? extra : null };
     if (editing && obs?.id != null) await updateObservation(obs.id, rec); else await addObservation(rec);
     setSaving(false);
+    onSaved?.();
     onClose();
   }
   async function remove() {
@@ -76,7 +79,8 @@ export function ObsForm({ speciesId, obs, onClose }: Props) {
   }
 
   const sp: Species | undefined = spId ? byId.value.get(spId) : undefined;
-  const cands = !sp && q.length >= 2 ? species.value.filter((s) => matches(s, q)).slice(0, 30) : [];
+  const isExtra = !sp && !!extra && !!spId && spId.startsWith('x:');
+  const cands = !sp && !isExtra && q.length >= 2 ? species.value.filter((s) => matches(s, q)).slice(0, 30) : [];
 
   return (
     <div class="modal-bg" onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}>
@@ -87,6 +91,8 @@ export function ObsForm({ speciesId, obs, onClose }: Props) {
           <label>Species</label>
           {sp ? (
             <div class="row"><b style="flex:1">{name(sp)} <span class="muted small">{name2(sp)}</span></b>{!editing && <button class="btn sm secondary" onClick={() => setSpId(null)}>change</button>}</div>
+          ) : isExtra ? (
+            <div><b>{extra!.en}</b> <span class="muted small">{extra!.fr} · <i>{extra!.sci}</i></span><br /><span class="tag off">not on the Pidwa checklist</span></div>
           ) : (
             <>
               <input type="text" placeholder="English, French or Latin name…" value={q} onInput={(e) => setQ((e.target as HTMLInputElement).value)} autoFocus />

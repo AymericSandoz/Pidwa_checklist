@@ -16,6 +16,9 @@ for (const sci of new Set([...Object.keys(IM_COMMONS), ...Object.keys(IM_INAT)])
 }
 const AV = readJson(path.join(RAW_DIR, 'avonet.json'), {});
 const SN = readJson(path.join(RAW_DIR, 'sounds.json'), {});
+const BN = readJson(path.join(RAW_DIR, 'birdnet_map.json'), {});
+// how well the model recognised our own reference clip of the species (optimistic: probably seen in training)
+const BENCH = readJson(path.join(RAW_DIR, 'birdnet_bench.json'), {});
 const CUR = readJson(path.join(RAW_DIR, '..', 'curated.json'), {}); // hand-written overrides / extra traits, optional
 const IOC = readJson(path.join(RAW_DIR, 'ioc_fr.json'), {});
 const isSci = (t) => !t || /^[A-Z][a-z]+ [a-z-]+$/.test(t.trim());
@@ -92,6 +95,8 @@ for (const s of species) {
   };
   if (s.group === 'bird') {
     rec.avonet = av ? { mass: av.mass, beak: av.beakCulmen, tarsus: av.tarsus, wing: av.wing, tail: av.tail, habitat: av.habitat, lifestyle: av.lifestyle, niche: av.trophicNiche, migration: av.migration, src: av.matched } : null;
+    const bench = BENCH[s.scientific];
+    rec.bn = BN[s.scientific] ? { ...BN[s.scientific], ref: bench ? Math.round(bench.ref * 100) / 100 : null, heardAs: bench && !bench.hit && bench.top1 ? bench.top1 : null } : null;
     rec.idk = av ? { size: sizeClass(av.mass), bill: billShape(av, wd.family), legs: legLength(av), habitat: av.habitat, lifestyle: av.lifestyle, niche: av.trophicNiche } : null;
   }
   if (!rec.fr) warnings.push(`${s.scientific}: no French name`);

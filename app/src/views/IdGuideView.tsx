@@ -1,76 +1,134 @@
 import { signal } from '@preact/signals';
-import { species, seenCount, name, name2, imgUrl } from '../data';
+import { species, byId, seenCount, name, name2, imgUrl } from '../data';
 import { href } from '../router';
 import { L, ORDER, lbl, matches } from '../util';
 import { BIRD_GROUPS, groupOf, familyEn } from '../taxa';
+import { COLOURS, BIRD_COLOURS } from '../colours';
+import type { Species } from '../types';
 
-type Key = 'size' | 'bill' | 'legs' | 'habitat' | 'lifestyle' | 'niche';
-const group = signal<string>('');
-const family = signal<string>('');
-const sel = signal<Partial<Record<Key, string>>>({});
+// Every criterion is multi-select: ticking several options means "one of these" (e.g. bill medium OR thin).
+// Colours rank the results: birds showing more of the ticked colours come first.
+type Key = 'group' | 'colour' | 'size' | 'bill' | 'legs' | 'habitat' | 'lifestyle' | 'niche';
+const sel = signal<Partial<Record<Key, string[]>>>({});
+const family = signal('');
 const q = signal('');
 const hideSeen = signal(false);
 
-const GROUPS: [Key, string][] = [['size', 'Size (by weight)'], ['bill', 'Bill'], ['legs', 'Legs'], ['habitat', 'Habitat'], ['lifestyle', 'Where you see it'], ['niche', 'Food']];
+const TRAITS: [Exclude<Key, 'group' | 'colour'>, string][] = [['size', 'Size'], ['bill', 'Bill'], ['legs', 'Legs']];
+const MORE: [Exclude<Key, 'group' | 'colour'>, string][] = [['habitat', 'Habitat'], ['lifestyle', 'Where you see it'], ['niche', 'Food']];
+
+// short tile labels + a typical bird for each group's photo
+const GROUP_TILE: Record<string, [string, string]> = {
+  raptors: ['Raptors', 'haliaeetus-vocifer'], vultures: ['Vultures', 'gyps-africanus'], owls: ['Owls, nightjars', 'bubo-africanus'],
+  herons: ['Herons, storks', 'ardea-goliath'], waterfowl: ['Ducks, geese', 'alopochen-aegyptiaca'], waders: ['Lapwings, plovers', 'vanellus-armatus'],
+  gamebirds: ['Francolins, guineafowl', 'numida-meleagris'], doves: ['Pigeons, doves', 'streptopelia-capicola'], cuckoos: ['Cuckoos, turacos', 'gallirex-porphyreolophus'],
+  swifts: ['Swifts, swallows', 'hirundo-rustica'], kingfishers: ['Kingfishers, rollers', 'coracias-caudatus'], hornbills: ['Hornbills', 'tockus-leucomelas'],
+  woodpeckers: ['Woodpeckers, barbets', 'lybius-torquatus'], shrikes: ['Shrikes, drongos', 'dicrurus-adsimilis'], thrushes: ['Thrushes, robins', 'cossypha-heuglini'],
+  warblers: ['Warblers, cisticolas', 'cisticola-chiniana'], starlings: ['Starlings, bulbuls', 'lamprotornis-nitens'], sunbirds: ['Sunbirds', 'chalcomitra-senegalensis'],
+  seedeaters: ['Weavers, finches', 'ploceus-velatus'], pipits: ['Pipits, wagtails', 'macronyx-croceus'],
+};
+
+const colours = (b: Species) => BIRD_COLOURS[b.id] || [];
+const valueOf = (b: Species, k: Key): string[] =>
+  k === 'group' ? [groupOf(b) || ''] : k === 'colour' ? colours(b) : [b.idk?.[k] || ''];
+
+function toggle(k: Key, v: string) {
+  const cur = sel.value[k] || [];
+  sel.value = { ...sel.value, [k]: cur.includes(v) ? cur.filter((x) => x !== v) : [...cur, v] };
+  if (k === 'group') family.value = '';
+}
 
 export function IdGuideView() {
   const birds = species.value.filter((s) => s.group === 'bird');
   const seen = seenCount.value;
   const s0 = sel.value;
-  const active = !!group.value || !!family.value || Object.values(s0).some(Boolean);
+  const nSel = Object.values(s0).reduce((a, v) => a + (v?.length || 0), 0);
+  const active = nSel > 0 || !!family.value || !!q.value;
 
-  const pass = (b: (typeof birds)[0], skip?: Key | 'group' | 'family') => {
-    if (skip !== 'group' && group.value && groupOf(b) !== group.value) return false;
+  const pass = (b: Species, skip?: Key | 'family') => {
+    for (const k of Object.keys(s0) as Key[]) {
+      const want = s0[k];
+      if (k === skip || !want?.length) continue;
+      if (!valueOf(b, k).some((v) => want.includes(v))) return false;
+    }
     if (skip !== 'family' && family.value && b.family !== family.value) return false;
-    for (const k of Object.keys(s0) as Key[]) if (k !== skip && s0[k] && b.idk?.[k] !== s0[k]) return false;
     if (hideSeen.value && seen.has(b.id)) return false;
     return matches(b, q.value);
   };
-  const result = birds.filter((b) => pass(b));
-  // count per option, computed with that criterion's own filter removed, so the user sees where the candidates are
-  const countFor = (k: Key, v: string) => birds.filter((b) => b.idk?.[k] === v && pass(b, k)).length;
-  const countGroup = (g: string) => birds.filter((b) => groupOf(b) === g && pass(b, 'group')).length;
-  // families available inside the current group (or all)
+  const wantCol = s0.colour || [];
+  const score = (b: Species) => colours(b).filter((c) => wantCol.includes(c)).length;
+  const result = birds.filter((b) => pass(b)).sort((a, b) => score(b) - score(a));
+  // count per option with that criterion's own filter removed, so you see where the candidates are
+  const countFor = (k: Key, v: string) => birds.filter((b) => valueOf(b, k).includes(v) && pass(b, k)).length;
   const fams = [...new Set(birds.filter((b) => pass(b, 'family')).map((b) => b.family || ''))].filter(Boolean).sort();
 
-  return (
-    <div>
-      <input class="search" type="search" placeholder="name (English, French, Latin)" value={q.value} onInput={(e) => (q.value = (e.target as HTMLInputElement).value)} />
-      <details class="filters" open>
-        <summary>Filters · {result.length} bird{result.length !== 1 ? 's' : ''} {active ? <button class="btn sm secondary" style="margin-left:8px" onClick={(e) => { e.preventDefault(); sel.value = {}; group.value = ''; family.value = ''; }}>clear</button> : null}</summary>
+  const chip = (k: Key, v: string, label: preact.ComponentChildren) => {
+    const on = !!s0[k]?.includes(v);
+    const n = countFor(k, v);
+    return (
+      <button class={'chip' + (on ? ' on' : '') + (!on && n === 0 ? ' empty' : '')} disabled={!on && n === 0} onClick={() => toggle(k, v)}>
+        {label} <span class="n">{n}</span>
+      </button>
+    );
+  };
+  const chipRow = ([k, label]: [Exclude<Key, 'group' | 'colour'>, string]) => (
+    <div class="fgroup">
+      <div class="lab">{label}</div>
+      <div class="chips">{ORDER[k].map((v) => chip(k, v, lbl(L[k], v)))}</div>
+    </div>
+  );
 
-        <div class="fgroup">
-          <div class="lab">What kind of bird</div>
-          <div class="chips">
-            {BIRD_GROUPS.map(([g, label]) => {
-              const n = countGroup(g);
-              const on = group.value === g;
-              return <button class={'chip' + (on ? ' on' : '')} disabled={!on && n === 0} style={!on && n === 0 ? 'opacity:.35' : ''} onClick={() => { group.value = on ? '' : g; family.value = ''; }}>{label} <span class="small" style="margin-left:4px;opacity:.7">{n}</span></button>;
-            })}
-          </div>
+  return (
+    <div class="idg">
+      <input class="search" type="search" placeholder="name (English, French, Latin)" value={q.value} onInput={(e) => (q.value = (e.target as HTMLInputElement).value)} />
+
+      <div class="fgroup">
+        <div class="lab">What kind of bird <span class="hint">tick one or several</span></div>
+        <div class="gtiles">
+          {BIRD_GROUPS.map(([g, full]) => {
+            const [short, rep] = GROUP_TILE[g] || [full, ''];
+            const s = byId.value.get(rep);
+            const u = s && imgUrl(s);
+            const on = !!s0.group?.includes(g);
+            const n = countFor('group', g);
+            return (
+              <button class={'gtile' + (on ? ' on' : '') + (!on && n === 0 ? ' empty' : '')} disabled={!on && n === 0} title={full} onClick={() => toggle('group', g)}>
+                {u ? <img src={u} loading="lazy" decoding="async" alt="" /> : <div class="noimg">🐦</div>}
+                <span class="gl">{short}</span>
+                <span class="n">{n}</span>
+              </button>
+            );
+          })}
         </div>
+      </div>
+
+      <div class="fgroup">
+        <div class="lab">Obvious colour <span class="hint">only for colourful birds</span></div>
+        <div class="chips">
+          {COLOURS.map(([c, label, sw]) => chip('colour', c, <><i class="sw" style={{ background: sw }} />{label}</>))}
+        </div>
+      </div>
+
+      {TRAITS.map(chipRow)}
+
+      <details class="filters">
+        <summary>More criteria</summary>
+        {MORE.map(chipRow)}
         <div class="fgroup row">
           <select class="search" style="flex:1" value={family.value} onChange={(e) => (family.value = (e.target as HTMLSelectElement).value)}>
-            <option value="">any family{group.value ? ' in this group' : ''}</option>
+            <option value="">any family</option>
             {fams.map((f) => <option value={f}>{familyEn({ family: f } as any)} ({f})</option>)}
           </select>
-          <button class={'chip' + (hideSeen.value ? ' on' : '')} style="margin:0" onClick={() => (hideSeen.value = !hideSeen.value)}>hide seen</button>
         </div>
-
-        {GROUPS.map(([k, label]) => (
-          <div class="fgroup">
-            <div class="lab">{label}</div>
-            <div class="chips">
-              {ORDER[k].map((v) => {
-                const n = countFor(k, v);
-                const on = s0[k] === v;
-                return <button class={'chip' + (on ? ' on' : '')} disabled={!on && n === 0} style={!on && n === 0 ? 'opacity:.35' : ''} onClick={() => (sel.value = { ...s0, [k]: on ? undefined : v })}>{lbl(L[k], v)} <span class="small" style="margin-left:4px;opacity:.7">{n}</span></button>;
-              })}
-            </div>
-          </div>
-        ))}
       </details>
-      <div class="grid" style="margin-top:8px">
+
+      <div class="idbar">
+        <b>{result.length} bird{result.length !== 1 ? 's' : ''}</b>
+        <button class={'chip' + (hideSeen.value ? ' on' : '')} onClick={() => (hideSeen.value = !hideSeen.value)}>hide seen</button>
+        {active && <button class="btn sm secondary" onClick={() => { sel.value = {}; family.value = ''; q.value = ''; }}>clear all</button>}
+      </div>
+
+      <div class="grid">
         {result.map((b) => {
           const u = imgUrl(b);
           return (
@@ -81,7 +139,7 @@ export function IdGuideView() {
           );
         })}
       </div>
-      <p class="credit" style="margin-top:12px">Size, bill and legs are derived from AVONET measurements (Tobias et al. 2022): indicative, not field-guide criteria. Groups are field groupings by family, not strict taxonomy.</p>
+      <p class="credit" style="margin-top:12px">Colours are hand-picked, and only for birds where they're obvious (adult, usually the male). Size, bill and legs come from AVONET measurements (Tobias et al. 2022): indicative, not field-guide criteria.</p>
     </div>
   );
 }

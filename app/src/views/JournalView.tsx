@@ -1,5 +1,5 @@
 import { useState } from 'preact/hooks';
-import { observations, byId, name, name2 } from '../data';
+import { observations, obsInfo } from '../data';
 import { href } from '../router';
 import { dayKey, fmtDate, fmtTime } from '../util';
 import { ObsForm } from '../components/ObsForm';
@@ -21,13 +21,13 @@ export function JournalView() {
           <div key={k}>
             <div class="day">{fmtDate(list[0].ts)} <span class="muted small" style="font-weight:400">· {list.length} obs · {distinct} species</span></div>
             {list.map((o) => {
-              const s = byId.value.get(o.speciesId);
+              const s = obsInfo(o);
               return (
                 <div class="obs" key={o.id} onClick={() => setForm({ obs: o })}>
                   <div class="time">{fmtTime(o.ts)}</div>
                   <div class="body">
-                    <div class="name">{s ? name(s) : o.speciesId}{o.count > 1 ? ` ×${o.count}` : ''} <a class="muted small" href={href('species/' + o.speciesId)} onClick={(e) => e.stopPropagation()}>page ›</a></div>
-                    <div class="meta">{s ? name2(s) : ''}{o.lat != null && o.lon != null ? ` · ${o.lat.toFixed(4)}, ${o.lon.toFixed(4)}${o.acc ? ` ±${o.acc} m` : ''}` : ' · no position'}</div>
+                    <div class="name">{s.en}{o.count > 1 ? ` ×${o.count}` : ''} {s.onList ? <a class="muted small" href={href('species/' + o.speciesId)} onClick={(e) => e.stopPropagation()}>page ›</a> : <span class="tag off">not on checklist</span>}</div>
+                    <div class="meta">{s.fr}{o.lat != null && o.lon != null ? ` · ${o.lat.toFixed(4)}, ${o.lon.toFixed(4)}${o.acc ? ` ±${o.acc} m` : ''}` : ' · no position'}</div>
                     {o.note && <div class="note">{o.note}</div>}
                   </div>
                   {o.photo && <PhotoImg blob={o.photo} />}

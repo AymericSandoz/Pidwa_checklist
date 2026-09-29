@@ -5,6 +5,10 @@ export const fmtTime = (ts: number) => new Date(ts).toLocaleTimeString('en-GB', 
 export const dayKey = (ts: number) => { const d = new Date(ts); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; };
 export const fmtBytes = (b: number) => (b >= 1e6 ? (b / 1e6).toFixed(1) + ' MB' : Math.round(b / 1e3) + ' kB');
 export const fmtCoord = (lat: number, lon: number) => `${lat.toFixed(5)}, ${lon.toFixed(5)}`;
+/** Reliability of sound ID for a species, from the benchmark on our reference clips. */
+export const soundIdGrade = (ref: number | null | undefined): 'good' | 'fair' | 'weak' | 'yes' => (ref == null ? 'yes' : ref >= 0.5 ? 'good' : ref >= 0.15 ? 'fair' : 'weak');
+/** "Dicrurus adsimilis" -> "dicrurus-adsimilis" (same rule as the data pipeline) */
+export const slug = (s: string) => s.toLowerCase().normalize('NFD').replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 
 /** Accent- and case-insensitive substring match on all names. */
 export const norm = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');

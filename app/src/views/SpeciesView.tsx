@@ -1,7 +1,7 @@
 import { useState } from 'preact/hooks';
 import { byId, imgUrl, name, name2, observations, dataUrl } from '../data';
 import { back, href } from '../router';
-import { fmtDate, fmtTime, L, lbl } from '../util';
+import { fmtDate, fmtTime, L, lbl, soundIdGrade } from '../util';
 import { familyEn, groupOf, groupLabel } from '../taxa';
 import { ObsForm } from '../components/ObsForm';
 import { PhotoImg } from '../components/PhotoImg';
@@ -38,6 +38,7 @@ export function SpeciesView({ id }: { id: string }) {
           {s.idk.lifestyle && <span class="fact">{lbl(L.lifestyle, s.idk.lifestyle)}</span>}
           {s.idk.niche && <span class="fact">{lbl(L.niche, s.idk.niche)}</span>}
           {a?.migration === 3 && <span class="fact">migrant</span>}
+          {s.group === 'bird' && (s.bn ? <span class={'fact' + (soundIdGrade(s.bn.ref) === 'weak' ? ' off' : '')}>🎤 sound ID <b>{soundIdGrade(s.bn.ref)}{s.bn.lumped ? ', as ' + s.bn.label.split('_')[1] : ''}</b></span> : <span class="fact off">🎤 sound ID <b>not covered</b></span>)}
         </div>
       )}
       {s.traits && s.traits.length > 0 && <ul class="summary">{s.traits.map((t) => <li>{t}</li>)}</ul>}

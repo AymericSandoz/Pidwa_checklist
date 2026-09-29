@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'preact/hooks';
-import { dataUrl, observations, byId, name, reloadObservations } from '../data';
+import { dataUrl, observations, obsInfo, reloadObservations } from '../data';
 import { db } from '../db';
 import { fmtBytes } from '../util';
 import type { Packs, Observation } from '../types';
 
-const PACK_LABEL: Record<string, string> = { sounds: 'Bird sounds (xeno-canto)', map: 'Reserve map (OpenStreetMap)', sat: 'Satellite layer (Sentinel-2)' };
+const PACK_LABEL: Record<string, string> = { sounds: 'Bird sounds (xeno-canto)', sat: 'Reserve map (satellite, Sentinel-2)', birdnet: 'Sound ID model (BirdNET)' };
 const cacheName = (p: string) => 'pack-' + p;
 
 interface PackState { total: number; cached: number; bytes: number; busy: boolean; error?: string }
@@ -74,13 +74,13 @@ export function SettingsView() {
   }
   function exportCsv() {
     const esc = (v: any) => `"${String(v ?? '').replace(/"/g, '""')}"`;
-    const head = ['date', 'time', 'species_en', 'species_fr', 'scientific', 'group', 'count', 'lat', 'lon', 'accuracy_m', 'note'];
-    const lines = observations.value.map((o) => { const s = byId.value.get(o.speciesId); const d = new Date(o.ts); return [d.toLocaleDateString('en-GB'), d.toLocaleTimeString('en-GB'), s ? name(s) : o.speciesId, s?.fr, s?.sci, s?.group, o.count, o.lat, o.lon, o.acc, o.note].map(esc).join(','); });
+    const head = ['date', 'time', 'species_en', 'species_fr', 'scientific', 'group', 'count', 'lat', 'lon', 'accuracy_m', 'note', 'on_checklist'];
+    const lines = observations.value.map((o) => { const s = obsInfo(o); const d = new Date(o.ts); return [d.toLocaleDateString('en-GB'), d.toLocaleTimeString('en-GB'), s.en, s.fr, s.sci, s.group, o.count, o.lat, o.lon, o.acc, o.note, s.onList ? 'yes' : 'no'].map(esc).join(','); });
     dl(`pidwa-observations-${stamp()}.csv`, '﻿' + head.join(',') + '\n' + lines.join('\n'), 'text/csv');
   }
   function exportGpx() {
     const esc = (v: string) => v.replace(/[<>&]/g, (c) => ({ '<': '&lt;', '>': '&gt;', '&': '&amp;' }[c]!));
-    const wpts = observations.value.filter((o) => o.lat != null && o.lon != null).map((o) => { const s = byId.value.get(o.speciesId); return `<wpt lat="${o.lat}" lon="${o.lon}"><time>${new Date(o.ts).toISOString()}</time><name>${esc(s ? name(s) : o.speciesId)}</name><desc>${esc((s?.sci || '') + (o.note ? ' - ' + o.note : ''))}</desc></wpt>`; });
+    const wpts = observations.value.filter((o) => o.lat != null && o.lon != null).map((o) => { const s = obsInfo(o); return `<wpt lat="${o.lat}" lon="${o.lon}"><time>${new Date(o.ts).toISOString()}</time><name>${esc(s.en)}</name><desc>${esc(s.sci + (o.note ? ' - ' + o.note : ''))}</desc></wpt>`; });
     dl(`pidwa-observations-${stamp()}.gpx`, `<?xml version="1.0" encoding="UTF-8"?>\n<gpx version="1.1" creator="Pidwa Checklist" xmlns="http://www.topografix.com/GPX/1/1">\n${wpts.join('\n')}\n</gpx>`, 'application/gpx+xml');
   }
   async function importJson(e: Event) {
@@ -142,7 +142,7 @@ export function SettingsView() {
 
       <div class="card credit">
         <b>Sources</b><br />
-        Species list: Pidwa Wilderness Reserve paper checklist. French bird names: IOC World Bird List. Names, families, summaries: Wikidata and Wikipedia. Photos: iNaturalist (Creative Commons) and Wikimedia Commons, credited on each page. Measurements: AVONET, Tobias et al. 2022, CC BY 4.0. Sounds: xeno-canto, CC licences. Map: OpenStreetMap via OpenFreeMap. Satellite: Sentinel-2 cloudless 2020 by EOX, CC BY-NC-SA 4.0.
+        Species list: Pidwa Wilderness Reserve paper checklist. French bird names: IOC World Bird List. Names, families, summaries: Wikidata and Wikipedia. Photos: iNaturalist (Creative Commons) and Wikimedia Commons, credited on each page. Measurements: AVONET, Tobias et al. 2022, CC BY 4.0. Sounds: xeno-canto, CC licences. Sound identification: BirdNET V2.4 by the K. Lisa Yang Center for Conservation Bioacoustics (Cornell Lab of Ornithology) and Chemnitz University of Technology, licence CC BY-NC-SA 4.0, unmodified, run on the phone with code from BirdNET Live (MIT licence). Map: Sentinel-2 cloudless 2023 satellite imagery by EOX, CC BY-NC-SA 4.0; reserve outline from OpenStreetMap contributors.
       </div>
     </div>
   );

@@ -31,6 +31,7 @@ app/               la PWA (Vite + Preact + TypeScript), `app/public/data` est un
 | 6 | `node data/scripts/06_build.mjs` | fusion → `data/out/species.json` + `data/out/preview.html` |
 | 9 | `node data/scripts/09_packs.mjs` | inventaire des packs à la demande → `data/out/packs.json` |
 | 10 | `node data/scripts/10_icons.mjs` | icônes de l'app |
+| 11 | `node data/scripts/11_birdnet.mjs` | modèle BirdNET V2.4 en TensorFlow.js + modèle de répartition, depuis le dépôt officiel `birdnet-team/real-time-pwa` ; correspondance des classes avec la liste Pidwa |
 
 Wikimedia limite fortement le débit depuis ce réseau (429 puis blocages de 10 min) : les étapes 2 et 3 attendent automatiquement, mais c'est lent. D'où iNaturalist pour les photos, et l'étape 3 gardée en secours.
 
@@ -49,3 +50,13 @@ npm run deploy     # optionnel : chaque push sur main déploie automatiquement (
 Base path : `/Pidwa_checklist/` par défaut (GitHub Pages), `VITE_BASE=/ npm run build` pour un hébergement à la racine.
 
 Hors ligne : le service worker précache l'app, `species.json` et les photos à l'installation. Les sons, la carte et le satellite sont des packs que l'on télécharge depuis l'écran Réglages (mis en cache par nom : `pack-sounds`, `pack-map`, `pack-sat`). Les observations sont dans IndexedDB (`pidwa` / `observations`), photos incluses.
+
+## Reconnaissance par le son
+
+Écran **Listen** : écoute continue, une fenêtre de 3 s analysée toutes les 1,5 s, entièrement sur le téléphone.
+
+- Moteur : BirdNET V2.4 (6 522 classes) exécuté par TensorFlow.js dans un web worker, accélération WebGL obligatoire. La couche de spectrogramme et le noyau STFT viennent de BirdNET Live (MIT), copiés tels quels dans `app/src/soundid/birdnet-kernel.js`.
+- 184 des 228 oiseaux de la liste sont couverts, dont 3 regroupés avec une espèce sœur. Les 44 autres sont marqués "sound ID not covered" sur leur fiche.
+- Espèces hors liste : affichées avec l'étiquette "not on the Pidwa checklist" si le modèle de répartition de BirdNET les juge plausibles à cet endroit et cette semaine, avec un seuil de confiance plus élevé et deux fenêtres positives au minimum. Elles peuvent être enregistrées, sans compter dans le score.
+- Le modèle (60 Mo) est un pack hors ligne, à télécharger dans Settings. Il est redistribué tel quel sous licence CC BY-NC-SA 4.0, voir `data/out/birdnet/README.md` ; usage personnel et non commercial.
+- Tests headless, Chrome jouant un fichier WAV comme micro : `node scripts/soundid-test.mjs <mic.wav>`, `node scripts/offline-soundid.mjs <mic.wav>`, et `node scripts/soundid-bench.mjs` pour mesurer la reconnaissance sur nos propres extraits de référence.

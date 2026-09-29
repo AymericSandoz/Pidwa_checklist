@@ -2278,6 +2278,7 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "chicken",
       "bill": "long",
@@ -2351,6 +2352,13 @@
       "niche": "Omnivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 6145,
+      "label": "Tricholaema leucomelas_Pied Barbet",
+      "lumped": false,
+      "ref": 0.96,
+      "heardAs": null
     },
     "idk": {
       "size": "sparrow",
@@ -2426,6 +2434,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 2514,
+      "label": "Glaucidium capense_African Barred Owlet",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
+    },
     "idk": {
       "size": "dove",
       "bill": "hooked",
@@ -2500,6 +2515,7 @@
       "migration": 2,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "thrush",
       "bill": "gape",
@@ -2574,6 +2590,7 @@
       "migration": 3,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "thrush",
       "bill": "fine",
@@ -2647,6 +2664,13 @@
       "niche": "Invertivore",
       "migration": 2,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 1717,
+      "label": "Cuculus gularis_African Cuckoo",
+      "lumped": false,
+      "ref": 0.83,
+      "heardAs": null
     },
     "idk": {
       "size": "thrush",
@@ -2722,6 +2746,7 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "dove",
       "bill": "hooked",
@@ -2796,6 +2821,7 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "chicken",
       "bill": "fine",
@@ -2869,6 +2895,13 @@
       "niche": "Granivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 3013,
+      "label": "Lagonosticta rubricata_African Firefinch",
+      "lumped": false,
+      "ref": 0.82,
+      "heardAs": null
     },
     "idk": {
       "size": "tiny",
@@ -2944,6 +2977,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 2669,
+      "label": "Haliaeetus vocifer_African Fish-Eagle",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
+    },
     "idk": {
       "size": "goose",
       "bill": "hooked",
@@ -3017,6 +3057,13 @@
       "niche": "Vertivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 37,
+      "label": "Accipiter tachiro_African Goshawk",
+      "lumped": false,
+      "ref": 0.94,
+      "heardAs": null
     },
     "idk": {
       "size": "dove",
@@ -3092,6 +3139,13 @@
       "migration": 2,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 6126,
+      "label": "Treron calvus_African Green-Pigeon",
+      "lumped": false,
+      "ref": 0.99,
+      "heardAs": null
+    },
     "idk": {
       "size": "dove",
       "bill": "fine",
@@ -3165,6 +3219,13 @@
       "niche": "Invertivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 3270,
+      "label": "Lophoceros nasutus_African Grey Hornbill",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
     },
     "idk": {
       "size": "dove",
@@ -3240,6 +3301,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 4823,
+      "label": "Polyboroides typus_African Harrier-Hawk",
+      "lumped": false,
+      "ref": 0.92,
+      "heardAs": null
+    },
     "idk": {
       "size": "chicken",
       "bill": "hooked",
@@ -3305,6 +3373,7 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "chicken",
       "bill": "hooked",
@@ -3378,6 +3447,13 @@
       "niche": "Invertivore",
       "migration": 3,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 6321,
+      "label": "Upupa epops_Eurasian Hoopoe",
+      "lumped": true,
+      "ref": 1,
+      "heardAs": null
     },
     "idk": {
       "size": "thrush",
@@ -3453,6 +3529,13 @@
       "migration": 2,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 84,
+      "label": "Actophilornis africanus_African Jacana",
+      "lumped": false,
+      "ref": 0.94,
+      "heardAs": null
+    },
     "idk": {
       "size": "dove",
       "bill": "fine",
@@ -3518,6 +3601,7 @@
       "migration": 2,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "chicken",
       "bill": "very-long",
@@ -3591,6 +3675,13 @@
       "niche": "Invertivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 1831,
+      "label": "Cypsiurus parvus_African Palm Swift",
+      "lumped": false,
+      "ref": 0.9,
+      "heardAs": null
     },
     "idk": {
       "size": "tiny",
@@ -3666,6 +3757,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 5964,
+      "label": "Terpsiphone viridis_African Paradise-Flycatcher",
+      "lumped": false,
+      "ref": 0.98,
+      "heardAs": null
+    },
     "idk": {
       "size": "tiny",
       "bill": "fine",
@@ -3739,6 +3837,13 @@
       "niche": "Invertivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 3665,
+      "label": "Motacilla aguimp_African Pied Wagtail",
+      "lumped": false,
+      "ref": 0.98,
+      "heardAs": null
     },
     "idk": {
       "size": "sparrow",
@@ -3814,6 +3919,13 @@
       "migration": 3,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 342,
+      "label": "Anthus cinnamomeus_African Pipit",
+      "lumped": false,
+      "ref": 0.93,
+      "heardAs": null
+    },
     "idk": {
       "size": "sparrow",
       "bill": "fine",
@@ -3888,6 +4000,7 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "tiny",
       "bill": "long",
@@ -3961,6 +4074,13 @@
       "niche": "Invertivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 4156,
+      "label": "Otus senegalensis_African Scops Owl",
+      "lumped": false,
+      "ref": 0.99,
+      "heardAs": null
     },
     "idk": {
       "size": "thrush",
@@ -4036,6 +4156,7 @@
       "migration": 2,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "goose",
       "bill": "very-long",
@@ -4109,6 +4230,13 @@
       "niche": "Invertivore",
       "migration": 2,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 5380,
+      "label": "Saxicola torquatus_African Stonechat",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
     },
     "idk": {
       "size": "tiny",
@@ -4184,6 +4312,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 6360,
+      "label": "Vanellus senegallus_Wattled Lapwing",
+      "lumped": false,
+      "ref": 0.98,
+      "heardAs": null
+    },
     "idk": {
       "size": "dove",
       "bill": "fine",
@@ -4257,6 +4392,13 @@
       "niche": "Invertivore",
       "migration": 3,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 425,
+      "label": "Apus melba_Alpine Swift",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
     },
     "idk": {
       "size": "thrush",
@@ -4332,6 +4474,13 @@
       "migration": 3,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 2287,
+      "label": "Falco amurensis_Amur Falcon",
+      "lumped": false,
+      "ref": 0.24,
+      "heardAs": "Bat Falcon"
+    },
     "idk": {
       "size": "dove",
       "bill": "hooked",
@@ -4405,6 +4554,13 @@
       "niche": "Invertivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 6214,
+      "label": "Turdoides jardineii_Arrow-marked Babbler",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
     },
     "idk": {
       "size": "thrush",
@@ -4480,6 +4636,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 2358,
+      "label": "Fraseria caerulescens_Ashy Flycatcher",
+      "lumped": false,
+      "ref": 0.99,
+      "heardAs": null
+    },
     "idk": {
       "size": "sparrow",
       "bill": "fine",
@@ -4553,6 +4716,13 @@
       "niche": "Invertivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 398,
+      "label": "Apalis thoracica_Bar-throated Apalis",
+      "lumped": false,
+      "ref": 0.97,
+      "heardAs": null
     },
     "idk": {
       "size": "tiny",
@@ -4628,6 +4798,13 @@
       "migration": 3,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 2802,
+      "label": "Hirundo rustica_Barn Swallow",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
+    },
     "idk": {
       "size": "sparrow",
       "bill": "gape",
@@ -4693,6 +4870,7 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "goose",
       "bill": "hooked",
@@ -4766,6 +4944,13 @@
       "niche": "Invertivore",
       "migration": 1,
       "src": "eBird"
+    },
+    "bn": {
+      "index": 1110,
+      "label": "Cercotrichas quadrivirgata_Bearded Scrub Robin",
+      "lumped": false,
+      "ref": 0.94,
+      "heardAs": null
     },
     "idk": {
       "size": "sparrow",
@@ -4841,6 +5026,13 @@
       "migration": 1,
       "src": "eBird"
     },
+    "bn": {
+      "index": 1242,
+      "label": "Chloropicus namaquus_Bearded Woodpecker",
+      "lumped": false,
+      "ref": 0.99,
+      "heardAs": null
+    },
     "idk": {
       "size": "thrush",
       "bill": "fine",
@@ -4915,6 +5107,7 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "thrush",
       "bill": "fine",
@@ -4988,6 +5181,13 @@
       "niche": "Aquatic predator",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 6457,
+      "label": "Zapornia flavirostra_Black Crake",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
     },
     "idk": {
       "size": "thrush",
@@ -5063,6 +5263,13 @@
       "migration": 3,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 1716,
+      "label": "Cuculus clamosus_Black Cuckoo",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
+    },
     "idk": {
       "size": "thrush",
       "bill": "medium",
@@ -5136,6 +5343,13 @@
       "niche": "Invertivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 906,
+      "label": "Campephaga flava_Black Cuckooshrike",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
     },
     "idk": {
       "size": "sparrow",
@@ -5211,6 +5425,7 @@
       "migration": 2,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "dove",
       "bill": "medium",
@@ -5284,6 +5499,13 @@
       "niche": "Aquatic predator",
       "migration": 3,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 1316,
+      "label": "Ciconia nigra_Black Stork",
+      "lumped": false,
+      "ref": 0.06,
+      "heardAs": "Red-winged Tinamou"
     },
     "idk": {
       "size": "goose",
@@ -5359,6 +5581,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 2010,
+      "label": "Dryoscopus cubla_Black-backed Puffback",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
+    },
     "idk": {
       "size": "sparrow",
       "bill": "fine",
@@ -5433,6 +5662,7 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "chicken",
       "bill": "fine",
@@ -5507,6 +5737,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 3312,
+      "label": "Lybius torquatus_Black-collared Barbet",
+      "lumped": false,
+      "ref": 0.99,
+      "heardAs": null
+    },
     "idk": {
       "size": "thrush",
       "bill": "stout",
@@ -5572,6 +5809,7 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "goose",
       "bill": "hooked",
@@ -5645,6 +5883,13 @@
       "niche": "Invertivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 5936,
+      "label": "Tchagra senegalus_Black-crowned Tchagra",
+      "lumped": false,
+      "ref": 0.99,
+      "heardAs": null
     },
     "idk": {
       "size": "thrush",
@@ -5720,6 +5965,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 4087,
+      "label": "Oriolus larvatus_African Black-headed Oriole",
+      "lumped": false,
+      "ref": 0.78,
+      "heardAs": null
+    },
     "idk": {
       "size": "thrush",
       "bill": "fine",
@@ -5793,6 +6045,13 @@
       "niche": "Aquatic predator",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 6347,
+      "label": "Vanellus armatus_Blacksmith Lapwing",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
     },
     "idk": {
       "size": "dove",
@@ -5868,6 +6127,13 @@
       "migration": 2,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 2074,
+      "label": "Elanus caeruleus_Black-winged Kite",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
+    },
     "idk": {
       "size": "dove",
       "bill": "hooked",
@@ -5941,6 +6207,13 @@
       "niche": "Granivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 6323,
+      "label": "Uraeginthus angolensis_Southern Cordonbleu",
+      "lumped": false,
+      "ref": 0.8,
+      "heardAs": null
     },
     "idk": {
       "size": "tiny",
@@ -6016,6 +6289,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 2281,
+      "label": "Eurystomus glaucurus_Broad-billed Roller",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
+    },
     "idk": {
       "size": "thrush",
       "bill": "medium",
@@ -6090,6 +6370,7 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "dove",
       "bill": "fine",
@@ -6155,6 +6436,7 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "goose",
       "bill": "hooked",
@@ -6228,6 +6510,13 @@
       "niche": "Invertivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 5935,
+      "label": "Tchagra australis_Brown-crowned Tchagra",
+      "lumped": false,
+      "ref": 0.09,
+      "heardAs": "Purple-banded Sunbird"
     },
     "idk": {
       "size": "sparrow",
@@ -6303,6 +6592,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 4804,
+      "label": "Poicephalus cryptoxanthus_Brown-headed Parrot",
+      "lumped": false,
+      "ref": 0.87,
+      "heardAs": "Meyer's Parrot"
+    },
     "idk": {
       "size": "dove",
       "bill": "hooked",
@@ -6376,6 +6672,13 @@
       "niche": "Invertivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 2653,
+      "label": "Halcyon albiventris_Brown-hooded Kingfisher",
+      "lumped": false,
+      "ref": 0.44,
+      "heardAs": null
     },
     "idk": {
       "size": "thrush",
@@ -6451,6 +6754,13 @@
       "migration": 2,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 5324,
+      "label": "Riparia paludicola_Plain Martin",
+      "lumped": false,
+      "ref": 0,
+      "heardAs": "Southern Red Bishop"
+    },
     "idk": {
       "size": "tiny",
       "bill": "gape",
@@ -6524,6 +6834,13 @@
       "niche": "Invertivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 3909,
+      "label": "Nilaus afer_Brubru",
+      "lumped": false,
+      "ref": 0.8,
+      "heardAs": null
     },
     "idk": {
       "size": "sparrow",
@@ -6599,6 +6916,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 1074,
+      "label": "Centropus superciliosus_White-browed Coucal",
+      "lumped": true,
+      "ref": 0.54,
+      "heardAs": "Rüppell's Starling"
+    },
     "idk": {
       "size": "dove",
       "bill": "fine",
@@ -6673,6 +6997,7 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "sparrow",
       "bill": "fine",
@@ -6747,6 +7072,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 3040,
+      "label": "Lamprotornis nitens_Cape Starling",
+      "lumped": false,
+      "ref": 0.97,
+      "heardAs": null
+    },
     "idk": {
       "size": "thrush",
       "bill": "fine",
@@ -6812,6 +7144,7 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "huge",
       "bill": "hooked",
@@ -6885,6 +7218,13 @@
       "niche": "Omnivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 6521,
+      "label": "Zosterops virens_Cape White-eye",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
     },
     "idk": {
       "size": "tiny",
@@ -6960,6 +7300,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 1239,
+      "label": "Chloropicus fuscescens_Cardinal Woodpecker",
+      "lumped": false,
+      "ref": 0.93,
+      "heardAs": null
+    },
     "idk": {
       "size": "sparrow",
       "bill": "fine",
@@ -7033,6 +7380,13 @@
       "niche": "Invertivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 667,
+      "label": "Batis molitor_Chinspot Batis",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
     },
     "idk": {
       "size": "tiny",
@@ -7108,6 +7462,13 @@
       "migration": 2,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 2117,
+      "label": "Emberiza tahapisi_Cinnamon-breasted Bunting",
+      "lumped": false,
+      "ref": 0.99,
+      "heardAs": null
+    },
     "idk": {
       "size": "tiny",
       "bill": "medium",
@@ -7181,6 +7542,13 @@
       "niche": "Invertivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 2691,
+      "label": "Hedydipna collaris_Collared Sunbird",
+      "lumped": false,
+      "ref": 0.99,
+      "heardAs": null
     },
     "idk": {
       "size": "tiny",
@@ -7256,6 +7624,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 6288,
+      "label": "Turnix sylvaticus_Small Buttonquail",
+      "lumped": false,
+      "ref": 0.57,
+      "heardAs": null
+    },
     "idk": {
       "size": "thrush",
       "bill": "fine",
@@ -7329,6 +7704,13 @@
       "niche": "Vertivore",
       "migration": 2,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 783,
+      "label": "Buteo buteo_Common Buzzard",
+      "lumped": false,
+      "ref": 0.95,
+      "heardAs": null
     },
     "idk": {
       "size": "chicken",
@@ -7404,6 +7786,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 5271,
+      "label": "Rhinopomastus cyanomelas_Common Scimitarbill",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
+    },
     "idk": {
       "size": "sparrow",
       "bill": "very-long",
@@ -7477,6 +7866,13 @@
       "niche": "Granivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 2194,
+      "label": "Estrilda astrild_Common Waxbill",
+      "lumped": false,
+      "ref": 0.92,
+      "heardAs": null
     },
     "idk": {
       "size": "tiny",
@@ -7552,6 +7948,7 @@
       "migration": 1,
       "src": "eBird"
     },
+    "bn": null,
     "idk": {
       "size": "dove",
       "bill": "fine",
@@ -7625,6 +8022,13 @@
       "niche": "Omnivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 6122,
+      "label": "Trachyphonus vaillantii_Crested Barbet",
+      "lumped": false,
+      "ref": 0.79,
+      "heardAs": "Guira Cuckoo"
     },
     "idk": {
       "size": "thrush",
@@ -7700,6 +8104,13 @@
       "migration": 1,
       "src": "eBird"
     },
+    "bn": {
+      "index": 4137,
+      "label": "Ortygornis sephaena_Crested Francolin",
+      "lumped": false,
+      "ref": 0.97,
+      "heardAs": null
+    },
     "idk": {
       "size": "dove",
       "bill": "medium",
@@ -7773,6 +8184,13 @@
       "niche": "Invertivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 1399,
+      "label": "Cisticola natalensis_Croaking Cisticola",
+      "lumped": false,
+      "ref": 0.99,
+      "heardAs": null
     },
     "idk": {
       "size": "sparrow",
@@ -7848,6 +8266,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 6351,
+      "label": "Vanellus coronatus_Crowned Lapwing",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
+    },
     "idk": {
       "size": "dove",
       "bill": "fine",
@@ -7922,6 +8347,7 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "sparrow",
       "bill": "stout",
@@ -7996,6 +8422,7 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "chicken",
       "bill": "hooked",
@@ -8069,6 +8496,13 @@
       "niche": "Frugivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 5134,
+      "label": "Pycnonotus barbatus_Common Bulbul",
+      "lumped": true,
+      "ref": 0.77,
+      "heardAs": null
     },
     "idk": {
       "size": "sparrow",
@@ -8144,6 +8578,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 1279,
+      "label": "Chrysococcyx caprius_Dideric Cuckoo",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
+    },
     "idk": {
       "size": "sparrow",
       "bill": "medium",
@@ -8217,6 +8658,13 @@
       "niche": "Granivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 6370,
+      "label": "Vidua funerea_Variable Indigobird",
+      "lumped": false,
+      "ref": 0.99,
+      "heardAs": null
     },
     "idk": {
       "size": "tiny",
@@ -8292,6 +8740,7 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "dove",
       "bill": "long",
@@ -8365,6 +8814,13 @@
       "niche": "Omnivore",
       "migration": 2,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 183,
+      "label": "Alopochen aegyptiaca_Egyptian Goose",
+      "lumped": false,
+      "ref": 0.97,
+      "heardAs": null
     },
     "idk": {
       "size": "goose",
@@ -8440,6 +8896,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 6293,
+      "label": "Turtur chalcospilos_Emerald-spotted Wood-Dove",
+      "lumped": false,
+      "ref": 0.98,
+      "heardAs": null
+    },
     "idk": {
       "size": "thrush",
       "bill": "fine",
@@ -8513,6 +8976,13 @@
       "niche": "Omnivore",
       "migration": 3,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 4090,
+      "label": "Oriolus oriolus_Eurasian Golden Oriole",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
     },
     "idk": {
       "size": "thrush",
@@ -8588,6 +9058,13 @@
       "migration": 3,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 2298,
+      "label": "Falco subbuteo_Eurasian Hobby",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
+    },
     "idk": {
       "size": "dove",
       "bill": "hooked",
@@ -8661,6 +9138,13 @@
       "niche": "Invertivore",
       "migration": 3,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 3529,
+      "label": "Merops apiaster_European Bee-eater",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
     },
     "idk": {
       "size": "thrush",
@@ -8736,6 +9220,13 @@
       "migration": 3,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 970,
+      "label": "Caprimulgus europaeus_Eurasian Nightjar",
+      "lumped": false,
+      "ref": 0.94,
+      "heardAs": null
+    },
     "idk": {
       "size": "thrush",
       "bill": "gape",
@@ -8809,6 +9300,13 @@
       "niche": "Invertivore",
       "migration": 3,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 1554,
+      "label": "Coracias garrulus_European Roller",
+      "lumped": false,
+      "ref": 0.97,
+      "heardAs": null
     },
     "idk": {
       "size": "dove",
@@ -8884,6 +9382,13 @@
       "migration": 2,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 979,
+      "label": "Caprimulgus pectoralis_Fiery-necked Nightjar",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
+    },
     "idk": {
       "size": "thrush",
       "bill": "gape",
@@ -8957,6 +9462,13 @@
       "niche": "Invertivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 1910,
+      "label": "Dicrurus adsimilis_Fork-tailed Drongo",
+      "lumped": false,
+      "ref": 0.6,
+      "heardAs": null
     },
     "idk": {
       "size": "thrush",
@@ -9032,6 +9544,13 @@
       "migration": 2,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 3571,
+      "label": "Micronisus gabar_Gabar Goshawk",
+      "lumped": false,
+      "ref": 0.32,
+      "heardAs": "Pale-tipped Tyrannulet"
+    },
     "idk": {
       "size": "dove",
       "bill": "hooked",
@@ -9105,6 +9624,13 @@
       "niche": "Aquatic predator",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 3405,
+      "label": "Megaceryle maxima_Giant Kingfisher",
+      "lumped": false,
+      "ref": 0.89,
+      "heardAs": null
     },
     "idk": {
       "size": "dove",
@@ -9180,6 +9706,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 917,
+      "label": "Campethera abingoni_Golden-tailed Woodpecker",
+      "lumped": false,
+      "ref": 0.88,
+      "heardAs": null
+    },
     "idk": {
       "size": "thrush",
       "bill": "fine",
@@ -9254,6 +9787,7 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "goose",
       "bill": "long",
@@ -9327,6 +9861,13 @@
       "niche": "Invertivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 5945,
+      "label": "Telophorus viridis_Four-coloured Bushshrike",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
     },
     "idk": {
       "size": "sparrow",
@@ -9402,6 +9943,13 @@
       "migration": 2,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 467,
+      "label": "Ardea alba_Great White Egret",
+      "lumped": false,
+      "ref": 0.99,
+      "heardAs": null
+    },
     "idk": {
       "size": "chicken",
       "bill": "very-long",
@@ -9475,6 +10023,13 @@
       "niche": "Omnivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 3036,
+      "label": "Lamprotornis chalybaeus_Greater Blue-eared Starling",
+      "lumped": false,
+      "ref": 0.78,
+      "heardAs": null
     },
     "idk": {
       "size": "thrush",
@@ -9550,6 +10105,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 1342,
+      "label": "Cinnyris afer_Greater Double-collared Sunbird",
+      "lumped": false,
+      "ref": 0.83,
+      "heardAs": "Scarlet-chested Sunbird"
+    },
     "idk": {
       "size": "tiny",
       "bill": "long",
@@ -9623,6 +10185,13 @@
       "niche": "Invertivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 2949,
+      "label": "Indicator indicator_Greater Honeyguide",
+      "lumped": false,
+      "ref": 0.99,
+      "heardAs": null
     },
     "idk": {
       "size": "thrush",
@@ -9698,6 +10267,13 @@
       "migration": 2,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 5329,
+      "label": "Rostratula benghalensis_Greater Painted-Snipe",
+      "lumped": false,
+      "ref": 0.86,
+      "heardAs": null
+    },
     "idk": {
       "size": "dove",
       "bill": "long",
@@ -9771,6 +10347,13 @@
       "niche": "Invertivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 4475,
+      "label": "Phoeniculus purpureus_Green Woodhoopoe",
+      "lumped": false,
+      "ref": 0.99,
+      "heardAs": null
     },
     "idk": {
       "size": "thrush",
@@ -9846,6 +10429,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 1611,
+      "label": "Corythaixoides concolor_Gray Go-away-bird",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
+    },
     "idk": {
       "size": "dove",
       "bill": "medium",
@@ -9919,6 +10509,13 @@
       "niche": "Aquatic predator",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 468,
+      "label": "Ardea cinerea_Grey Heron",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
     },
     "idk": {
       "size": "chicken",
@@ -9994,6 +10591,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 5200,
+      "label": "Pytilia melba_Green-winged Pytilia",
+      "lumped": false,
+      "ref": 0,
+      "heardAs": "Chestnut-capped Blackbird"
+    },
     "idk": {
       "size": "sparrow",
       "bill": "medium",
@@ -10067,6 +10671,13 @@
       "niche": "Invertivore",
       "migration": 2,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 2658,
+      "label": "Halcyon leucocephala_Grey-headed Kingfisher",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
     },
     "idk": {
       "size": "thrush",
@@ -10142,6 +10753,7 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "tiny",
       "bill": "medium",
@@ -10215,6 +10827,13 @@
       "niche": "Invertivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 2361,
+      "label": "Fraseria plumbea_Grey Tit-Flycatcher",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
     },
     "idk": {
       "size": "tiny",
@@ -10290,6 +10909,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 3354,
+      "label": "Malaconotus blanchoti_Grey-headed Bushshrike",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
+    },
     "idk": {
       "size": "thrush",
       "bill": "medium",
@@ -10363,6 +10989,13 @@
       "niche": "Invertivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 5024,
+      "label": "Psophocichla litsitsirupa_Groundscraper Thrush",
+      "lumped": false,
+      "ref": 0.8,
+      "heardAs": null
     },
     "idk": {
       "size": "thrush",
@@ -10438,6 +11071,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 702,
+      "label": "Bostrychia hagedash_Hadada Ibis",
+      "lumped": false,
+      "ref": 0.99,
+      "heardAs": null
+    },
     "idk": {
       "size": "chicken",
       "bill": "very-long",
@@ -10511,6 +11151,13 @@
       "niche": "Omnivore",
       "migration": 2,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 5425,
+      "label": "Scopus umbretta_Hamerkop",
+      "lumped": false,
+      "ref": 0.99,
+      "heardAs": null
     },
     "idk": {
       "size": "chicken",
@@ -10586,6 +11233,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 3960,
+      "label": "Numida meleagris_Helmeted Guineafowl",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
+    },
     "idk": {
       "size": "chicken",
       "bill": "stout",
@@ -10660,6 +11314,7 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "goose",
       "bill": "hooked",
@@ -10733,6 +11388,13 @@
       "niche": "Granivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 4245,
+      "label": "Passer domesticus_House Sparrow",
+      "lumped": false,
+      "ref": 0.5,
+      "heardAs": "Eurasian Tree Sparrow"
     },
     "idk": {
       "size": "sparrow",
@@ -10808,6 +11470,13 @@
       "migration": 3,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 1414,
+      "label": "Clamator jacobinus_Pied Cuckoo",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
+    },
     "idk": {
       "size": "thrush",
       "bill": "fine",
@@ -10881,6 +11550,13 @@
       "niche": "Granivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 3012,
+      "label": "Lagonosticta rhodopareia_Jameson's Firefinch",
+      "lumped": false,
+      "ref": 0.54,
+      "heardAs": null
     },
     "idk": {
       "size": "tiny",
@@ -10956,6 +11632,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 1281,
+      "label": "Chrysococcyx klaas_Klaas's Cuckoo",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
+    },
     "idk": {
       "size": "sparrow",
       "bill": "fine",
@@ -11030,6 +11713,7 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "goose",
       "bill": "medium",
@@ -11104,6 +11788,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 6248,
+      "label": "Turdus libonyana_Kurrichane Thrush",
+      "lumped": false,
+      "ref": 0.62,
+      "heardAs": "Olive Thrush"
+    },
     "idk": {
       "size": "thrush",
       "bill": "fine",
@@ -11159,6 +11850,7 @@
       "migration": 2,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "huge",
       "bill": "hooked",
@@ -11232,6 +11924,13 @@
       "niche": "Granivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 5753,
+      "label": "Streptopelia senegalensis_Laughing Dove",
+      "lumped": false,
+      "ref": 0.99,
+      "heardAs": null
     },
     "idk": {
       "size": "thrush",
@@ -11307,6 +12006,13 @@
       "migration": 3,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 3079,
+      "label": "Lanius minor_Lesser Grey Shrike",
+      "lumped": false,
+      "ref": 0.91,
+      "heardAs": null
+    },
     "idk": {
       "size": "thrush",
       "bill": "medium",
@@ -11380,6 +12086,13 @@
       "niche": "Invertivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 4735,
+      "label": "Ploceus intermedius_Lesser Masked-Weaver",
+      "lumped": false,
+      "ref": 0.97,
+      "heardAs": null
     },
     "idk": {
       "size": "sparrow",
@@ -11455,6 +12168,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 1040,
+      "label": "Cecropis abyssinica_Lesser Striped Swallow",
+      "lumped": false,
+      "ref": 0.99,
+      "heardAs": null
+    },
     "idk": {
       "size": "tiny",
       "bill": "gape",
@@ -11528,6 +12248,13 @@
       "niche": "Vertivore",
       "migration": 3,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 1417,
+      "label": "Clanga pomarina_Lesser Spotted Eagle",
+      "lumped": false,
+      "ref": 0.94,
+      "heardAs": null
     },
     "idk": {
       "size": "chicken",
@@ -11603,6 +12330,13 @@
       "migration": 3,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 1415,
+      "label": "Clamator levaillantii_Levaillant's Cuckoo",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
+    },
     "idk": {
       "size": "dove",
       "bill": "fine",
@@ -11676,6 +12410,13 @@
       "niche": "Omnivore",
       "migration": 2,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 1553,
+      "label": "Coracias caudatus_Lilac-breasted Roller",
+      "lumped": false,
+      "ref": 0.7,
+      "heardAs": "Gray Go-away-bird"
     },
     "idk": {
       "size": "thrush",
@@ -11751,6 +12492,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 3539,
+      "label": "Merops pusillus_Little Bee-eater",
+      "lumped": false,
+      "ref": 0.96,
+      "heardAs": null
+    },
     "idk": {
       "size": "sparrow",
       "bill": "long",
@@ -11824,6 +12572,13 @@
       "niche": "Aquatic predator",
       "migration": 2,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 2047,
+      "label": "Egretta garzetta_Little Egret",
+      "lumped": false,
+      "ref": 0.11,
+      "heardAs": "Grey Heron"
     },
     "idk": {
       "size": "dove",
@@ -11899,6 +12654,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 5867,
+      "label": "Tachybaptus ruficollis_Little Grebe",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
+    },
     "idk": {
       "size": "dove",
       "bill": "fine",
@@ -11972,6 +12734,13 @@
       "niche": "Vertivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 30,
+      "label": "Accipiter minullus_Little Sparrowhawk",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
     },
     "idk": {
       "size": "thrush",
@@ -12047,6 +12816,13 @@
       "migration": 3,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 422,
+      "label": "Apus affinis_Little Swift",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
+    },
     "idk": {
       "size": "sparrow",
       "bill": "gape",
@@ -12120,6 +12896,13 @@
       "niche": "Invertivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 2997,
+      "label": "Kaupifalco monogrammicus_Lizard Buzzard",
+      "lumped": false,
+      "ref": 0.66,
+      "heardAs": "African Fish-Eagle"
     },
     "idk": {
       "size": "dove",
@@ -12195,6 +12978,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 5806,
+      "label": "Sylvietta rufescens_Cape Crombec",
+      "lumped": false,
+      "ref": 0.09,
+      "heardAs": "Yellow-throated Bunting"
+    },
     "idk": {
       "size": "tiny",
       "bill": "fine",
@@ -12269,6 +13059,7 @@
       "migration": 1,
       "src": "eBird"
     },
+    "bn": null,
     "idk": {
       "size": "thrush",
       "bill": "medium",
@@ -12342,6 +13133,13 @@
       "niche": "Aquatic predator",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 1615,
+      "label": "Corythornis cristatus_Malachite Kingfisher",
+      "lumped": false,
+      "ref": 0,
+      "heardAs": "Yellow-olive Flatbill"
     },
     "idk": {
       "size": "sparrow",
@@ -12417,6 +13215,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 3178,
+      "label": "Leptoptilos crumenifer_Marabou Stork",
+      "lumped": false,
+      "ref": 0.51,
+      "heardAs": null
+    },
     "idk": {
       "size": "huge",
       "bill": "very-long",
@@ -12491,6 +13296,7 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "goose",
       "bill": "hooked",
@@ -12564,6 +13370,13 @@
       "niche": "Nectarivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 1355,
+      "label": "Cinnyris mariquensis_Marico Sunbird",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
     },
     "idk": {
       "size": "tiny",
@@ -12639,6 +13452,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 5985,
+      "label": "Thamnolaea cinnamomeiventris_Mocking Cliff-Chat",
+      "lumped": false,
+      "ref": 0.14,
+      "heardAs": "Oriental Magpie-Robin"
+    },
     "idk": {
       "size": "sparrow",
       "bill": "fine",
@@ -12712,6 +13532,13 @@
       "niche": "Herbivore terrestrial",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 5038,
+      "label": "Pternistis natalensis_Natal Spurfowl",
+      "lumped": false,
+      "ref": 0.94,
+      "heardAs": null
     },
     "idk": {
       "size": "chicken",
@@ -12787,6 +13614,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 5944,
+      "label": "Telophorus sulfureopectus_Sulphur-breasted Bushshrike",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
+    },
     "idk": {
       "size": "sparrow",
       "bill": "fine",
@@ -12861,6 +13695,7 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "sparrow",
       "bill": "fine",
@@ -12934,6 +13769,13 @@
       "niche": "Invertivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 2529,
+      "label": "Glaucidium perlatum_Pearl-spotted Owlet",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
     },
     "idk": {
       "size": "thrush",
@@ -13009,6 +13851,13 @@
       "migration": 2,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 2294,
+      "label": "Falco peregrinus_Peregrine Falcon",
+      "lumped": false,
+      "ref": 0.65,
+      "heardAs": null
+    },
     "idk": {
       "size": "chicken",
       "bill": "hooked",
@@ -13082,6 +13931,13 @@
       "niche": "Omnivore",
       "migration": 2,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 1574,
+      "label": "Corvus albus_Pied Crow",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
     },
     "idk": {
       "size": "chicken",
@@ -13157,6 +14013,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 1126,
+      "label": "Ceryle rudis_Pied Kingfisher",
+      "lumped": false,
+      "ref": 0.8,
+      "heardAs": null
+    },
     "idk": {
       "size": "thrush",
       "bill": "very-long",
@@ -13230,6 +14093,13 @@
       "niche": "Granivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 6371,
+      "label": "Vidua macroura_Pin-tailed Whydah",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
     },
     "idk": {
       "size": "sparrow",
@@ -13305,6 +14175,13 @@
       "migration": 3,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 473,
+      "label": "Ardea purpurea_Purple Heron",
+      "lumped": false,
+      "ref": 0.25,
+      "heardAs": "Grey Heron"
+    },
     "idk": {
       "size": "chicken",
       "bill": "long",
@@ -13379,6 +14256,7 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "dove",
       "bill": "fine",
@@ -13452,6 +14330,13 @@
       "niche": "Frugivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 5933,
+      "label": "Tauraco porphyreolophus_Purple-crested Turaco",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
     },
     "idk": {
       "size": "dove",
@@ -13527,6 +14412,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 1387,
+      "label": "Cisticola chiniana_Rattling Cisticola",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
+    },
     "idk": {
       "size": "sparrow",
       "bill": "fine",
@@ -13600,6 +14492,13 @@
       "niche": "Invertivore",
       "migration": 3,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 3070,
+      "label": "Lanius collurio_Red-backed Shrike",
+      "lumped": false,
+      "ref": 0.98,
+      "heardAs": null
     },
     "idk": {
       "size": "sparrow",
@@ -13675,6 +14574,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 740,
+      "label": "Bubalornis niger_Red-billed Buffalo-Weaver",
+      "lumped": false,
+      "ref": 0.81,
+      "heardAs": null
+    },
     "idk": {
       "size": "thrush",
       "bill": "medium",
@@ -13748,6 +14654,13 @@
       "niche": "Granivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 3014,
+      "label": "Lagonosticta senegala_Red-billed Firefinch",
+      "lumped": false,
+      "ref": 0.99,
+      "heardAs": null
     },
     "idk": {
       "size": "tiny",
@@ -13823,6 +14736,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 766,
+      "label": "Buphagus erythrorynchus_Red-billed Oxpecker",
+      "lumped": false,
+      "ref": 0.98,
+      "heardAs": null
+    },
     "idk": {
       "size": "thrush",
       "bill": "medium",
@@ -13896,6 +14816,13 @@
       "niche": "Granivore",
       "migration": 2,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 5201,
+      "label": "Quelea quelea_Red-billed Quelea",
+      "lumped": false,
+      "ref": 0.89,
+      "heardAs": null
     },
     "idk": {
       "size": "sparrow",
@@ -13971,6 +14898,13 @@
       "migration": 2,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 1724,
+      "label": "Cuculus solitarius_Red-chested Cuckoo",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
+    },
     "idk": {
       "size": "thrush",
       "bill": "fine",
@@ -14044,6 +14978,13 @@
       "niche": "Omnivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 2262,
+      "label": "Eupodotis ruficrista_Red-crested Bustard",
+      "lumped": false,
+      "ref": 0.9,
+      "heardAs": null
     },
     "idk": {
       "size": "chicken",
@@ -14119,6 +15060,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 5752,
+      "label": "Streptopelia semitorquata_Red-eyed Dove",
+      "lumped": false,
+      "ref": 0.96,
+      "heardAs": null
+    },
     "idk": {
       "size": "dove",
       "bill": "fine",
@@ -14192,6 +15140,13 @@
       "niche": "Invertivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 1390,
+      "label": "Cisticola erythrops_Red-faced Cisticola",
+      "lumped": false,
+      "ref": 0.93,
+      "heardAs": null
     },
     "idk": {
       "size": "tiny",
@@ -14267,6 +15222,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 6332,
+      "label": "Urocolius indicus_Red-faced Mousebird",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
+    },
     "idk": {
       "size": "thrush",
       "bill": "stout",
@@ -14341,6 +15303,7 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "sparrow",
       "bill": "medium",
@@ -14415,6 +15378,7 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "chicken",
       "bill": "fine",
@@ -14488,6 +15452,13 @@
       "niche": "Invertivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 4894,
+      "label": "Prionops retzii_Retz's Helmetshrike",
+      "lumped": false,
+      "ref": 0.68,
+      "heardAs": null
     },
     "idk": {
       "size": "thrush",
@@ -14563,6 +15534,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 5745,
+      "label": "Streptopelia capicola_Ring-necked Dove",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
+    },
     "idk": {
       "size": "dove",
       "bill": "fine",
@@ -14637,6 +15615,13 @@
       "migration": 3,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 3248,
+      "label": "Locustella fluviatilis_River Warbler",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
+    },
     "idk": {
       "size": "sparrow",
       "bill": "fine",
@@ -14692,6 +15677,7 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "huge",
       "bill": "very-long",
@@ -14765,6 +15751,13 @@
       "niche": "Omnivore",
       "migration": 2,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 1145,
+      "label": "Chalcomitra senegalensis_Scarlet-chested Sunbird",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
     },
     "idk": {
       "size": "tiny",
@@ -14840,6 +15833,13 @@
       "migration": 3,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 21,
+      "label": "Accipiter badius_Shikra",
+      "lumped": false,
+      "ref": 0.19,
+      "heardAs": "Tambourine Dove"
+    },
     "idk": {
       "size": "dove",
       "bill": "hooked",
@@ -14913,6 +15913,13 @@
       "niche": "Frugivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 291,
+      "label": "Andropadus importunus_Sombre Greenbul",
+      "lumped": false,
+      "ref": 0.8,
+      "heardAs": null
     },
     "idk": {
       "size": "sparrow",
@@ -14988,6 +15995,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 3439,
+      "label": "Melaenornis pammelaina_Southern Black-Flycatcher",
+      "lumped": false,
+      "ref": 0.98,
+      "heardAs": null
+    },
     "idk": {
       "size": "sparrow",
       "bill": "fine",
@@ -15061,6 +16075,13 @@
       "niche": "Invertivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 3468,
+      "label": "Melaniparus niger_Southern Black-Tit",
+      "lumped": false,
+      "ref": 0.73,
+      "heardAs": "Sombre Greenbul"
     },
     "idk": {
       "size": "sparrow",
@@ -15136,6 +16157,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 3051,
+      "label": "Laniarius ferrugineus_Southern Boubou",
+      "lumped": false,
+      "ref": 0.98,
+      "heardAs": null
+    },
     "idk": {
       "size": "thrush",
       "bill": "fine",
@@ -15209,6 +16237,13 @@
       "niche": "Granivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 4244,
+      "label": "Passer diffusus_Southern Grey-headed Sparrow",
+      "lumped": false,
+      "ref": 0.96,
+      "heardAs": null
     },
     "idk": {
       "size": "sparrow",
@@ -15284,6 +16319,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 763,
+      "label": "Bucorvus leadbeateri_Southern Ground-Hornbill",
+      "lumped": false,
+      "ref": 0.98,
+      "heardAs": null
+    },
     "idk": {
       "size": "goose",
       "bill": "very-long",
@@ -15357,6 +16399,13 @@
       "niche": "Omnivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 4748,
+      "label": "Ploceus velatus_Southern Masked-Weaver",
+      "lumped": false,
+      "ref": 0.92,
+      "heardAs": null
     },
     "idk": {
       "size": "sparrow",
@@ -15432,6 +16481,7 @@
       "migration": 2,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "chicken",
       "bill": "medium",
@@ -15505,6 +16555,13 @@
       "niche": "Invertivore",
       "migration": 1,
       "src": "eBird"
+    },
+    "bn": {
+      "index": 6073,
+      "label": "Tockus rufirostris_Southern Red-billed Hornbill",
+      "lumped": false,
+      "ref": 0.98,
+      "heardAs": null
     },
     "idk": {
       "size": "dove",
@@ -15580,6 +16637,7 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "thrush",
       "bill": "medium",
@@ -15645,6 +16703,7 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "dove",
       "bill": "hooked",
@@ -15718,6 +16777,13 @@
       "niche": "Invertivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 6072,
+      "label": "Tockus leucomelas_Southern Yellow-billed Hornbill",
+      "lumped": false,
+      "ref": 0.92,
+      "heardAs": null
     },
     "idk": {
       "size": "dove",
@@ -15793,6 +16859,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 1475,
+      "label": "Colius striatus_Speckled Mousebird",
+      "lumped": false,
+      "ref": 0,
+      "heardAs": "Silver-beaked Tanager"
+    },
     "idk": {
       "size": "thrush",
       "bill": "stout",
@@ -15866,6 +16939,13 @@
       "niche": "Granivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 1485,
+      "label": "Columba guinea_Speckled Pigeon",
+      "lumped": false,
+      "ref": 0.82,
+      "heardAs": "Common Woodpigeon"
     },
     "idk": {
       "size": "dove",
@@ -15941,6 +17021,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 741,
+      "label": "Bubo africanus_Spotted Eagle Owl",
+      "lumped": false,
+      "ref": 0.84,
+      "heardAs": null
+    },
     "idk": {
       "size": "chicken",
       "bill": "hooked",
@@ -16014,6 +17101,13 @@
       "niche": "Invertivore",
       "migration": 3,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 3685,
+      "label": "Muscicapa striata_Spotted Flycatcher",
+      "lumped": false,
+      "ref": 0.96,
+      "heardAs": null
     },
     "idk": {
       "size": "sparrow",
@@ -16089,6 +17183,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 768,
+      "label": "Burhinus capensis_Spotted Thick-knee",
+      "lumped": false,
+      "ref": 0.67,
+      "heardAs": "European Bee-eater"
+    },
     "idk": {
       "size": "chicken",
       "bill": "fine",
@@ -16163,6 +17264,7 @@
       "migration": 3,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "goose",
       "bill": "medium",
@@ -16236,6 +17338,13 @@
       "niche": "Aquatic predator",
       "migration": 3,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 483,
+      "label": "Ardeola ralloides_Squacco Heron",
+      "lumped": false,
+      "ref": 0.84,
+      "heardAs": null
     },
     "idk": {
       "size": "dove",
@@ -16311,6 +17420,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 836,
+      "label": "Calamonastes stierlingi_Stierling's Wren-Warbler",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
+    },
     "idk": {
       "size": "tiny",
       "bill": "fine",
@@ -16384,6 +17500,13 @@
       "niche": "Aquatic predator",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 803,
+      "label": "Butorides striata_Striated Heron",
+      "lumped": false,
+      "ref": 0.09,
+      "heardAs": "European Bee-eater"
     },
     "idk": {
       "size": "dove",
@@ -16459,6 +17582,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 2655,
+      "label": "Halcyon chelicuti_Striped Kingfisher",
+      "lumped": false,
+      "ref": 0.9,
+      "heardAs": null
+    },
     "idk": {
       "size": "thrush",
       "bill": "long",
@@ -16532,6 +17662,13 @@
       "niche": "Omnivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 5040,
+      "label": "Pternistis swainsonii_Swainson's Spurfowl",
+      "lumped": false,
+      "ref": 0.14,
+      "heardAs": "Helmeted Guineafowl"
     },
     "idk": {
       "size": "chicken",
@@ -16607,6 +17744,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 4887,
+      "label": "Prinia subflava_Tawny-flanked Prinia",
+      "lumped": false,
+      "ref": 0.97,
+      "heardAs": null
+    },
     "idk": {
       "size": "tiny",
       "bill": "fine",
@@ -16672,6 +17816,7 @@
       "migration": 3,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "goose",
       "bill": "hooked",
@@ -16745,6 +17890,13 @@
       "niche": "Aquatic predator",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 1180,
+      "label": "Charadrius tricollaris_Three-banded Plover",
+      "lumped": false,
+      "ref": 0.99,
+      "heardAs": null
     },
     "idk": {
       "size": "sparrow",
@@ -16820,6 +17972,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 807,
+      "label": "Bycanistes bucinator_Trumpeter Hornbill",
+      "lumped": false,
+      "ref": 0,
+      "heardAs": "Western Swamphen"
+    },
     "idk": {
       "size": "chicken",
       "bill": "very-long",
@@ -16893,6 +18052,13 @@
       "niche": "Vertivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 745,
+      "label": "Bubo lacteus_Verreaux's Eagle-Owl",
+      "lumped": false,
+      "ref": 0.76,
+      "heardAs": null
     },
     "idk": {
       "size": "goose",
@@ -16968,6 +18134,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 4732,
+      "label": "Ploceus cucullatus_Village Weaver",
+      "lumped": false,
+      "ref": 0.7,
+      "heardAs": null
+    },
     "idk": {
       "size": "sparrow",
       "bill": "stout",
@@ -17041,6 +18214,13 @@
       "niche": "Frugivore",
       "migration": 3,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 1341,
+      "label": "Cinnyricinclus leucogaster_Violet-backed Starling",
+      "lumped": false,
+      "ref": 0.04,
+      "heardAs": "Variable Oriole"
     },
     "idk": {
       "size": "thrush",
@@ -17116,6 +18296,7 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "chicken",
       "bill": "hooked",
@@ -17189,6 +18370,13 @@
       "niche": "Invertivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 774,
+      "label": "Burhinus vermiculatus_Water Thick-knee",
+      "lumped": false,
+      "ref": 0.99,
+      "heardAs": null
     },
     "idk": {
       "size": "dove",
@@ -17264,6 +18452,13 @@
       "migration": 2,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 1669,
+      "label": "Creatophora cinerea_Wattled Starling",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
+    },
     "idk": {
       "size": "thrush",
       "bill": "fine",
@@ -17337,6 +18532,13 @@
       "niche": "Omnivore",
       "migration": 2,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 750,
+      "label": "Bubulcus ibis_Western Cattle Egret",
+      "lumped": false,
+      "ref": 0.88,
+      "heardAs": null
     },
     "idk": {
       "size": "dove",
@@ -17412,6 +18614,7 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "huge",
       "bill": "hooked",
@@ -17485,6 +18688,13 @@
       "niche": "Nectarivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 1364,
+      "label": "Cinnyris talatala_White-breasted Sunbird",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
     },
     "idk": {
       "size": "tiny",
@@ -17560,6 +18770,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 1562,
+      "label": "Coracina pectoralis_White-breasted Cuckooshrike",
+      "lumped": false,
+      "ref": 0.76,
+      "heardAs": null
+    },
     "idk": {
       "size": "thrush",
       "bill": "medium",
@@ -17633,6 +18850,13 @@
       "niche": "Invertivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 1623,
+      "label": "Cossypha heuglini_White-browed Robin-Chat",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
     },
     "idk": {
       "size": "sparrow",
@@ -17708,6 +18932,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 1107,
+      "label": "Cercotrichas leucophrys_Red-backed Scrub Robin",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
+    },
     "idk": {
       "size": "sparrow",
       "bill": "fine",
@@ -17781,6 +19012,13 @@
       "niche": "Invertivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 4893,
+      "label": "Prionops plumatus_White Helmetshrike",
+      "lumped": false,
+      "ref": 0.86,
+      "heardAs": null
     },
     "idk": {
       "size": "sparrow",
@@ -17856,6 +19094,13 @@
       "migration": 2,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 1887,
+      "label": "Dendrocygna viduata_White-faced Whistling-Duck",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
+    },
     "idk": {
       "size": "chicken",
       "bill": "medium",
@@ -17930,6 +19175,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 3530,
+      "label": "Merops bullockoides_White-fronted Bee-eater",
+      "lumped": false,
+      "ref": 0.99,
+      "heardAs": null
+    },
     "idk": {
       "size": "sparrow",
       "bill": "long",
@@ -17985,6 +19237,7 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "goose",
       "bill": "hooked",
@@ -18058,6 +19311,13 @@
       "niche": "Invertivore",
       "migration": 3,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 424,
+      "label": "Apus caffer_White-rumped Swift",
+      "lumped": false,
+      "ref": 0.17,
+      "heardAs": "Thick-billed Kingbird"
     },
     "idk": {
       "size": "sparrow",
@@ -18133,6 +19393,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 1624,
+      "label": "Cossypha humeralis_White-throated Robin-Chat",
+      "lumped": false,
+      "ref": 0.22,
+      "heardAs": "Common Bulbul"
+    },
     "idk": {
       "size": "sparrow",
       "bill": "fine",
@@ -18206,6 +19473,13 @@
       "niche": "Omnivore",
       "migration": 3,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 1315,
+      "label": "Ciconia ciconia_White Stork",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
     },
     "idk": {
       "size": "goose",
@@ -18281,6 +19555,13 @@
       "migration": 3,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 4587,
+      "label": "Phylloscopus trochilus_Willow Warbler",
+      "lumped": false,
+      "ref": 0.9,
+      "heardAs": null
+    },
     "idk": {
       "size": "tiny",
       "bill": "fine",
@@ -18354,6 +19635,13 @@
       "niche": "Invertivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 2661,
+      "label": "Halcyon senegalensis_Woodland Kingfisher",
+      "lumped": false,
+      "ref": 0.99,
+      "heardAs": null
     },
     "idk": {
       "size": "thrush",
@@ -18429,6 +19717,7 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "goose",
       "bill": "long",
@@ -18502,6 +19791,13 @@
       "niche": "Omnivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 1224,
+      "label": "Chlorocichla flaviventris_Yellow-bellied Greenbul",
+      "lumped": false,
+      "ref": 0.99,
+      "heardAs": null
     },
     "idk": {
       "size": "sparrow",
@@ -18577,6 +19873,13 @@
       "migration": 2,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 765,
+      "label": "Buphagus africanus_Yellow-billed Oxpecker",
+      "lumped": false,
+      "ref": 0.84,
+      "heardAs": null
+    },
     "idk": {
       "size": "thrush",
       "bill": "medium",
@@ -18651,6 +19954,7 @@
       "migration": 2,
       "src": "BirdLife"
     },
+    "bn": null,
     "idk": {
       "size": "goose",
       "bill": "very-long",
@@ -18724,6 +20028,13 @@
       "niche": "Omnivore",
       "migration": 1,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 1683,
+      "label": "Crithagra mozambica_Yellow-fronted Canary",
+      "lumped": false,
+      "ref": 0.96,
+      "heardAs": null
     },
     "idk": {
       "size": "tiny",
@@ -18799,6 +20110,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 4797,
+      "label": "Pogoniulus chrysoconus_Yellow-fronted Tinkerbird",
+      "lumped": false,
+      "ref": 0.97,
+      "heardAs": "Red-fronted Tinkerbird"
+    },
     "idk": {
       "size": "tiny",
       "bill": "medium",
@@ -18873,6 +20191,13 @@
       "migration": 1,
       "src": "BirdLife"
     },
+    "bn": {
+      "index": 3339,
+      "label": "Macronyx croceus_Yellow-throated Longclaw",
+      "lumped": false,
+      "ref": 0.78,
+      "heardAs": null
+    },
     "idk": {
       "size": "thrush",
       "bill": "fine",
@@ -18946,6 +20271,13 @@
       "niche": "Invertivore",
       "migration": 3,
       "src": "BirdLife"
+    },
+    "bn": {
+      "index": 1395,
+      "label": "Cisticola juncidis_Zitting Cisticola",
+      "lumped": false,
+      "ref": 1,
+      "heardAs": null
     },
     "idk": {
       "size": "tiny",

@@ -36,17 +36,18 @@ export default defineConfig({
       workbox: {
         // App shell + species data + photos are precached at install (~20 MB).
         globPatterns: ['**/*.{js,css,html,ico,png,svg,webp,json,woff2}'],
-        globIgnores: ['**/data/sounds/**', '**/data/map/**'],
+        globIgnores: ['**/data/sounds/**', '**/data/map/**', '**/data/birdnet/**'],
         maximumFileSizeToCacheInBytes: 30 * 1024 * 1024,
         navigateFallback: base + 'index.html',
         // Sounds and map are "packs" downloaded on demand from the settings screen into these caches.
         runtimeCaching: [
           { urlPattern: ({ url }) => url.pathname.includes('/data/sounds/'), handler: 'CacheFirst', options: { cacheName: 'pack-sounds', rangeRequests: true } },
-          { urlPattern: ({ url }) => url.pathname.includes('/data/map/sat/'), handler: 'CacheFirst', options: { cacheName: 'pack-sat' } },
-          { urlPattern: ({ url }) => url.pathname.includes('/data/map/'), handler: 'CacheFirst', options: { cacheName: 'pack-map' } },
+          { urlPattern: ({ url }) => url.pathname.includes('/data/birdnet/'), handler: 'CacheFirst', options: { cacheName: 'pack-birdnet' } },
+          { urlPattern: ({ url }) => url.pathname.includes('/data/map/'), handler: 'CacheFirst', options: { cacheName: 'pack-sat' } },
         ],
       },
     }),
   ],
+  worker: { format: 'es' },
   build: { target: 'es2020', sourcemap: false },
 });

@@ -73,3 +73,11 @@ export const totals = computed(() => {
 export const name = (s: Species) => s.en;
 export const name2 = (s: Species) => s.fr || '';
 export const imgUrl = (s: Species) => (s.image ? dataUrl(s.image.file) : null);
+
+/** Names for an observation, whether its species is on the Pidwa checklist or an extra one (heard by sound ID). */
+export function obsInfo(o: Observation): { en: string; fr: string; sci: string; group: Group; onList: boolean } {
+  const s = byId.value.get(o.speciesId);
+  if (s) return { en: s.en, fr: s.fr || '', sci: s.sci, group: s.group, onList: true };
+  if (o.extra) return { en: o.extra.en, fr: o.extra.fr || '', sci: o.extra.sci, group: 'bird', onList: false };
+  return { en: o.speciesId, fr: '', sci: '', group: 'bird', onList: false };
+}

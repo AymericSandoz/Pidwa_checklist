@@ -20,6 +20,8 @@ export interface Species {
   traits: string[] | null;
   notes: string | null;
   avonet?: { mass: number | null; beak: number | null; tarsus: number | null; wing: number | null; tail: number | null; habitat: string | null; lifestyle: string | null; niche: string | null; migration: number | null; src: string } | null;
+  /** BirdNET class used by sound ID; null when the species is not covered */
+  bn?: { index: number; label: string; lumped: boolean; /** score on our own reference clip, 0..1 */ ref?: number | null; heardAs?: string | null } | null;
   idk?: { size: string | null; bill: string | null; legs: string | null; habitat: string | null; lifestyle: string | null; niche: string | null } | null;
 }
 
@@ -33,6 +35,8 @@ export interface Observation {
   count: number;
   note: string;
   photo?: Blob | null;
+  /** set when the species is not on the Pidwa checklist (logged from sound ID); speciesId is then "x:<slug>" */
+  extra?: { sci: string; en: string; fr: string | null } | null;
 }
 
 export interface PackFile { path: string; bytes: number }
