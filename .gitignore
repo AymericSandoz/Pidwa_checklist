@@ -1,0 +1,11 @@
+node_modules/
+app/dist/
+app/dev-dist/
+data/raw/
+data/tools/
+data/xc_key.txt
+*.log
+.DS_Store
+Thumbs.db
+app/public/data
+app/scripts/shots/

@@ -1,0 +1,30 @@
+{
+  "name": "pidwa-checklist",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "dev:https": "cross-env VITE_HTTPS=1 vite --host",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host",
+    "deploy": "vite build && npx gh-pages -d dist -t"
+  },
+  "dependencies": {
+    "@preact/signals": "^2.0.0",
+    "dexie": "^4.0.0",
+    "maplibre-gl": "^5.0.0",
+    "preact": "^10.25.0"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.10.0",
+    "@vitejs/plugin-basic-ssl": "^2.3.0",
+    "cross-env": "^10.1.0",
+    "mpg123-decoder": "^1.0.3",
+    "playwright-core": "^1.63.0",
+    "typescript": "^5.7.0",
+    "vite": "^6.0.0",
+    "vite-plugin-pwa": "^1.0.0",
+    "wasm-media-encoders": "^0.7.0"
+  }
+}
