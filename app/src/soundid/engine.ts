@@ -61,6 +61,11 @@ export const paused = signal(false);     // the app went to the background: Andr
 export const mic = signal<MicInfo | null>(null);
 /** what the model said about the last window, before any rule: for the diagnostics panel */
 export const lastTop = signal<{ name: string; conf: number; kind: 'list' | 'region' | 'impossible' | 'other' }[]>([]);
+/** level of the last analysed window: loudness, peak and share of clipped samples */
+export const lastStats = signal<{ rmsDb: number; peak: number; clipped: number } | null>(null);
+export const engineInfo = signal<{ tf: string; webgl: number | string; float32: boolean | string; float32Enabled: boolean | string; mobile: boolean } | null>(null);
+export interface SelfTest { state: 'running' | 'done' | 'failed'; message: string; windows: { target: number; top: string; topConf: number }[] }
+export const selfTest = signal<SelfTest | null>(null);
 
 let worker: Worker | null = null;
 let classes: ClassRow[] = [];
@@ -78,6 +83,7 @@ let running = false;
 let seq = 0;
 let wake: any = null;
 let recent: { confused: boolean; quiet: boolean }[] = [];
+let lastWin: Float32Array | null = null;   // copy of the last analysed window, for playback
 const pending = new Map<number, (top: [number, number][]) => void>();
 const isSpecies = (c: ClassRow) => c[0].includes(' ') && c[0] !== c[1]; // BirdNET also has classes like "Engine", "Dog", "Human vocal"
 const pidwaOf = (c: ClassRow) => (c[3] && byId.value.has(c[3]) ? c[3] : null);
@@ -104,12 +110,13 @@ export function load(): Promise<void> {
     } catch {
       return fail('The Sound ID pack is not on this phone. Download it in Settings while you have network.');
     }
-    worker = new Worker(new URL('./worker.ts', import.meta.url), { type: 'module' });
+    // classic worker with the prebuilt TensorFlow.js, exactly as BirdNET Live: see public/soundid/worker.js
+    worker = new Worker(BASE + 'soundid/worker.js');
     worker.onerror = (e) => fail(e.message || 'worker failed to start');
     worker.onmessage = (e: MessageEvent) => {
       const d = e.data;
       if (d.type === 'progress') progress.value = { stage: d.stage, pct: d.pct };
-      else if (d.type === 'ready') { geo = d.geo || null; status.value = 'ready'; progress.value = { stage: 'ready', pct: 100 }; resolve(); }
+      else if (d.type === 'ready') { geo = d.geo || null; engineInfo.value = d.info || null; status.value = 'ready'; progress.value = { stage: 'ready', pct: 100 }; resolve(); }
       else if (d.type === 'geo') geo = d.geo;
       else if (d.type === 'result') { lastMs.value = d.ms; pending.get(d.id)?.(d.top); pending.delete(d.id); }
       else if (d.type === 'error') {
@@ -203,9 +210,11 @@ async function tick() {
   busy = true;
   try {
     const win = lastWindow();
-    let sum = 0;
-    for (let i = 0; i < win.length; i++) { const v = win[i]; if (v > 1) win[i] = 1; else if (v < -1) win[i] = -1; if ((i & 7) === 0) sum += v * v; }
-    const rms = Math.sqrt(sum / (win.length / 8));
+    let sum = 0, peak = 0, clipped = 0;
+    for (let i = 0; i < win.length; i++) { const v = win[i], a = Math.abs(v); if (a >= 0.999) clipped++; if (a > peak) peak = a; if (v > 1) win[i] = 1; else if (v < -1) win[i] = -1; sum += v * v; }
+    const rms = Math.sqrt(sum / win.length);
+    lastStats.value = { rmsDb: Math.round(20 * Math.log10(Math.max(rms, 1e-7))), peak: Math.min(1, peak), clipped: clipped / win.length };
+    lastWin = win.slice(0);
     interpret(await analyse(win), Date.now(), rms < 0.0006);
   } finally { busy = false; }
 }
@@ -285,5 +294,51 @@ export function stop() {
   if (status.value === 'listening') status.value = 'ready';
 }
 
+/** Play back the last 3 s that were sent to the model, to hear what the microphone really captured. */
+export async function replayLast(): Promise<boolean> {
+  if (!lastWin) return false;
+  const pc = new AudioContext();
+  const buf = pc.createBuffer(1, lastWin.length, SAMPLE_RATE);
+  buf.copyToChannel(lastWin as Float32Array<ArrayBuffer>, 0);
+  const src = pc.createBufferSource(); src.buffer = buf; src.connect(pc.destination);
+  src.onended = () => pc.close();
+  src.start();
+  return true;
+}
+
+/**
+ * Run the model on a clean reference recording, without the microphone.
+ * Good scores here and bad ones when listening point at the microphone; bad scores here point at the phone's graphics engine.
+ */
+export async function runSelfTest(id = 'streptopelia-capicola') {
+  const sp = byId.value.get(id);
+  if (!sp || !sp.bn || !sp.sounds.length) { selfTest.value = { state: 'failed', message: 'no reference recording for the test', windows: [] }; return; }
+  selfTest.value = { state: 'running', message: 'loading the model and the reference recording…', windows: [] };
+  try {
+    await load();
+    const r = await fetch(dataUrl(sp.sounds[0].file));
+    if (!r.ok) throw new Error('reference recording not available: connect to the network or download the sounds pack');
+    const audio = await new OfflineAudioContext(1, 1, SAMPLE_RATE).decodeAudioData(await r.arrayBuffer());
+    const pcm = audio.getChannelData(0);
+    const wasRunning = running; running = false;      // keep the live loop out of the way
+    while (busy) await new Promise((res) => setTimeout(res, 50));
+    busy = true;
+    const rows: SelfTest['windows'] = [];
+    try {
+      for (let w = 0; w < 3 && (w + 1) * WINDOW <= pcm.length; w++) {
+        const top = await analyse(pcm.slice(w * WINDOW, (w + 1) * WINDOW));
+        const t = top.find(([i]) => i === sp.bn!.index);
+        const best = top.find(([i]) => classes[i] && isSpecies(classes[i]));
+        rows.push({ target: t ? t[1] : 0, top: best ? classes[best[0]][1] : 'nothing', topConf: best ? best[1] : 0 });
+        selfTest.value = { state: 'running', message: `analysing ${sp.en}…`, windows: rows.slice() };
+      }
+    } finally { busy = false; if (wasRunning && status.value === 'listening') { running = true; loop(); } }
+    const ok = rows.length > 0 && rows.filter((x) => x.target >= 0.5).length >= Math.ceil(rows.length / 2);
+    selfTest.value = { state: 'done', message: ok ? `Model OK on this phone: it recognises the reference ${sp.en}.` : `Model FAILS on this phone: it does not recognise a clean ${sp.en} recording.`, windows: rows };
+  } catch (e: any) {
+    selfTest.value = { state: 'failed', message: e?.message || String(e), windows: [] };
+  }
+}
+
 // for the headless tests and for debugging from the console
-(window as any).__soundid = { load, start, stop, analyse, interpret, clearDetections, setSensitivity, detections, status, lastMs, noise, mic, lastTop, windows, classes: () => classes, geo: () => geo };
+(window as any).__soundid = { load, start, stop, analyse, interpret, clearDetections, setSensitivity, runSelfTest, selfTest, replayLast, engineInfo, lastStats, detections, status, lastMs, noise, mic, lastTop, windows, classes: () => classes, geo: () => geo };

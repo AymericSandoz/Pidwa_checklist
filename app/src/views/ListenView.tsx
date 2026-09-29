@@ -138,6 +138,17 @@ export function ListenView() {
 
       <details class="card diag" style="margin-top:12px">
         <summary><b>Diagnostics</b> <span class="muted small">what the model hears right now</span></summary>
+        <div class="actions" style="margin:8px 0">
+          <button class="btn sm secondary" disabled={sid.selfTest.value?.state === 'running'} onClick={() => sid.runSelfTest()}>Test the model</button>
+          <button class="btn sm secondary" disabled={st !== 'listening'} onClick={() => sid.replayLast()}>Replay last 3 s</button>
+        </div>
+        {sid.selfTest.value && (
+          <div class={'lnote' + (sid.selfTest.value.state === 'failed' || /FAILS/.test(sid.selfTest.value.message) ? ' warn' : '')}>
+            <b>{sid.selfTest.value.message}</b>
+            {sid.selfTest.value.windows.map((w, i) => <div class="small">window {i + 1}: target {Math.round(w.target * 100)} % · best guess {w.top} {Math.round(w.topConf * 100)} %</div>)}
+          </div>
+        )}
+        {sid.engineInfo.value && <p class="small muted">TensorFlow.js {sid.engineInfo.value.tf} · WebGL {String(sid.engineInfo.value.webgl)} · float32 textures {String(sid.engineInfo.value.float32)} / in use {String(sid.engineInfo.value.float32Enabled)}</p>}
         {st !== 'listening' && <p class="small muted">Start listening to see live values.</p>}
         {st === 'listening' && (
           <>
@@ -155,6 +166,7 @@ export function ListenView() {
                 {processed && <><br /><span class="err">The phone is filtering the sound for voice calls: bird sounds may be removed.</span></>}
               </p>
             )}
+            {sid.lastStats.value && <p class="small">Sound level: {sid.lastStats.value.rmsDb} dB · peak {Math.round(sid.lastStats.value.peak * 100)} %{sid.lastStats.value.clipped > 0.001 ? <span class="err"> · saturated {(sid.lastStats.value.clipped * 100).toFixed(1)} %: too loud or too close</span> : ''}</p>}
             <p class="small muted">{sid.windows.value} analyses, {sid.lastMs.value} ms each, range model {sid.hasRangeModel() ? 'loaded' : 'missing'}, noise state: {sid.noise.value}.</p>
           </>
         )}
