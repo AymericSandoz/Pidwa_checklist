@@ -1,9 +1,12 @@
 import { useEffect, useRef, useState } from 'preact/hooks';
+import { signal } from '@preact/signals';
 import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
-import { observations, obsInfo, dataUrl } from '../data';
+import { observations, obsInfo, dataUrl, byId } from '../data';
 import { href } from '../router';
 import { fmtDate, fmtTime } from '../util';
+import { BIRD_GROUPS, MAMMAL_GROUPS, BIG5_IDS, groupOf, familyEn } from '../taxa';
+import type { Observation } from '../types';
 
 // Satellite-only map (Sentinel-2 cloudless, EOX). Tiles: z8–14 over the whole area, z15 over the reserve itself.
 const BBOX = { west: 30.4, south: -24.35, east: 30.9, north: -23.9 };
@@ -27,15 +30,64 @@ function makeStyle(): maplibregl.StyleSpecification {
   };
 }
 
-function toGeoJSON() {
+// ---- filters (module-level: kept when leaving and coming back to the map) ----
+type Kind = 'big5' | 'mammal' | 'bird' | 'off';
+const KIND_COLOUR: Record<Kind, string> = { big5: '#ff3b30', mammal: '#ff9f1c', bird: '#4fc3f7', off: '#b0b0b0' };
+const PERIODS: [string, string][] = [['all', 'All'], ['today', 'Today'], ['7d', '7 days'], ['30d', '30 days']];
+const TYPES: [string, string][] = [['all', 'All'], ['bird', 'Birds'], ['mammal', 'Mammals'], ['big5', 'Big Five']];
+const period = signal('all');
+const type = signal('all');
+const grp = signal('');
+const fam = signal('');
+const sp = signal('');
+const panelOpen = signal(false);
+const GROUP_LABEL = new Map([...BIRD_GROUPS, ...MAMMAL_GROUPS]);
+
+interface Row { o: Observation; name: string; group: string; family: string; kind: Kind; onList: boolean }
+function rows(): Row[] {
+  return observations.value
+    .filter((o) => o.lat != null && o.lon != null)
+    .map((o) => {
+      const i = obsInfo(o);
+      const s = byId.value.get(o.speciesId);
+      const kind: Kind = !i.onList ? 'off' : BIG5_IDS.has(o.speciesId) ? 'big5' : i.group;
+      return { o, name: i.en, group: (s && groupOf(s)) || '', family: s?.family || '', kind, onList: i.onList };
+    });
+}
+function since(p: string) {
+  if (p === 'today') { const d = new Date(); d.setHours(0, 0, 0, 0); return d.getTime(); }
+  if (p === '7d') return Date.now() - 7 * 864e5;
+  if (p === '30d') return Date.now() - 30 * 864e5;
+  return 0;
+}
+// Filters cascade group > family > species. `upTo` stops before that level, so each dropdown
+// counts its options under the filters above it only (picking a group resets family and species).
+function pass(r: Row, upTo?: 'grp' | 'fam' | 'sp') {
+  if (r.o.ts < since(period.value)) return false;
+  const t = type.value, g = r.kind === 'off' ? 'bird' : r.kind === 'big5' ? 'mammal' : r.kind;
+  if (t === 'big5' ? r.kind !== 'big5' : t !== 'all' && g !== t) return false;
+  if (upTo === 'grp') return true;
+  if (grp.value && r.group !== grp.value) return false;
+  if (upTo === 'fam') return true;
+  if (fam.value && r.family !== fam.value) return false;
+  if (upTo === 'sp') return true;
+  return !sp.value || r.o.speciesId === sp.value;
+}
+/** option value -> [label, observation count], sorted by label */
+function options(list: Row[], key: (r: Row) => string, label: (v: string, r: Row) => string) {
+  const m = new Map<string, [string, number]>();
+  for (const r of list) { const v = key(r); if (!v) continue; const e = m.get(v); if (e) e[1]++; else m.set(v, [label(v, r), 1]); }
+  return [...m.entries()].sort((a, b) => a[1][0].localeCompare(b[1][0]));
+}
+
+function toGeoJSON(list: Row[]) {
+  const rank: Record<Kind, number> = { off: 0, bird: 1, mammal: 2, big5: 3 };
   return {
     type: 'FeatureCollection',
-    features: observations.value
-      .filter((o) => o.lat != null && o.lon != null)
-      .map((o) => {
-        const s = obsInfo(o);
-        return { type: 'Feature', geometry: { type: 'Point', coordinates: [o.lon, o.lat] }, properties: { id: o.id, name: s.en, group: s.group, when: `${fmtDate(o.ts)} ${fmtTime(o.ts)}`, sp: o.speciesId, onList: s.onList } };
-      }),
+    features: list.map(({ o, name, kind, onList }) => ({
+      type: 'Feature', geometry: { type: 'Point', coordinates: [o.lon, o.lat] },
+      properties: { id: o.id, name, kind, rank: rank[kind], when: `${fmtDate(o.ts)} ${fmtTime(o.ts)}`, sp: o.speciesId, onList },
+    })),
   } as any;
 }
 
@@ -45,6 +97,14 @@ export function MapView() {
   const [state, setState] = useState<'loading' | 'nopack' | 'ok' | 'error'>('loading');
   const [err, setErr] = useState('');
   const [outside, setOutside] = useState(false);
+
+  const all = rows();
+  const shown = all.filter((r) => pass(r));
+  const nSpecies = new Set(shown.map((r) => r.o.speciesId)).size;
+  const filtered = period.value !== 'all' || type.value !== 'all' || !!grp.value || !!fam.value || !!sp.value;
+  const grpOpts = options(all.filter((r) => pass(r, 'grp')), (r) => r.group, (v) => GROUP_LABEL.get(v) || v);
+  const famOpts = options(all.filter((r) => pass(r, 'fam')), (r) => r.family, (v) => `${familyEn({ family: v } as any)} (${v})`);
+  const spOpts = options(all.filter((r) => pass(r, 'sp')), (r) => r.o.speciesId, (_, r) => r.name);
 
   useEffect(() => {
     let map: maplibregl.Map | null = null;
@@ -80,8 +140,15 @@ export function MapView() {
         map.on('load', () => {
           map!.addSource('reserve', { type: 'geojson', data: reserve });
           map!.addLayer({ id: 'reserve-line', type: 'line', source: 'reserve', paint: { 'line-color': '#ffd54f', 'line-width': 2, 'line-dasharray': [3, 2] } });
-          map!.addSource('obs', { type: 'geojson', data: toGeoJSON() });
-          map!.addLayer({ id: 'obs-pt', type: 'circle', source: 'obs', paint: { 'circle-radius': 7, 'circle-color': ['match', ['get', 'group'], 'mammal', '#8d5a2b', '#d98e2b'], 'circle-stroke-color': '#fff', 'circle-stroke-width': 2 } });
+          map!.addSource('obs', { type: 'geojson', data: toGeoJSON(rows().filter((r) => pass(r))) });
+          map!.addLayer({
+            id: 'obs-pt', type: 'circle', source: 'obs', layout: { 'circle-sort-key': ['get', 'rank'] },
+            paint: {
+              'circle-radius': ['match', ['get', 'kind'], 'big5', 9, 7],
+              'circle-color': ['match', ['get', 'kind'], 'big5', KIND_COLOUR.big5, 'mammal', KIND_COLOUR.mammal, 'off', KIND_COLOUR.off, KIND_COLOUR.bird],
+              'circle-stroke-color': '#fff', 'circle-stroke-width': 2,
+            },
+          });
           map!.on('click', 'obs-pt', (e) => {
             const f = e.features?.[0]; if (!f) return;
             const p = f.properties as any;
@@ -95,15 +162,63 @@ export function MapView() {
     return () => { map?.remove(); mapRef.current = null; };
   }, []);
 
-  // keep markers in sync with the observations signal
+  // keep markers in sync with the observations and the filters
+  const key = shown.map((r) => r.o.id).join(',');
   useEffect(() => {
     const m = mapRef.current; if (!m || state !== 'ok') return;
-    (m.getSource('obs') as maplibregl.GeoJSONSource | undefined)?.setData(toGeoJSON());
-  }, [observations.value, state]);
+    (m.getSource('obs') as maplibregl.GeoJSONSource | undefined)?.setData(toGeoJSON(shown));
+  }, [key, state]);
+
+  // narrowing to a group / family / species zooms onto its observations
+  useEffect(() => {
+    const m = mapRef.current; if (!m || state !== 'ok' || !shown.length || !(grp.value || fam.value || sp.value)) return;
+    const b = new maplibregl.LngLatBounds();
+    for (const r of shown) b.extend([r.o.lon!, r.o.lat!]);
+    m.fitBounds(b, { padding: { top: 90, bottom: 60, left: 40, right: 60 }, maxZoom: 14, duration: 500 });
+  }, [grp.value, fam.value, sp.value, state]);
+
+  const clear = () => { period.value = 'all'; type.value = 'all'; grp.value = ''; fam.value = ''; sp.value = ''; };
+  const seg = (opts: [string, string][], s: typeof period, reset = false) => (
+    <div class="seg">{opts.map(([v, l]) => <button class={s.value === v ? 'on' : ''} onClick={() => { s.value = v; if (reset) { grp.value = ''; fam.value = ''; sp.value = ''; } }}>{l}</button>)}</div>
+  );
+  const select = (s: typeof grp, first: string, opts: [string, [string, number]][], onPick?: () => void) => (
+    <select value={s.value} onChange={(e) => { s.value = (e.target as HTMLSelectElement).value; onPick?.(); }}>
+      <option value="">{first}</option>
+      {opts.map(([v, [l, n]]) => <option value={v}>{l} ({n})</option>)}
+      {s.value && !opts.some(([v]) => v === s.value) && <option value={s.value}>{s.value} (0)</option>}
+    </select>
+  );
 
   return (
     <div class="mapwrap">
       <div class="map" ref={el} />
+      {state === 'ok' && (
+        <div class="mapfilter">
+          <div class="mf-bar">
+            <button class={'mf-toggle' + (filtered ? ' on' : '')} onClick={() => (panelOpen.value = !panelOpen.value)}>
+              {panelOpen.value ? '▴' : '▾'} Filter
+            </button>
+            <span class="mf-count">{shown.length} obs · {nSpecies} species</span>
+            {filtered && <button class="mf-clear" onClick={clear} aria-label="clear filters">✕</button>}
+          </div>
+          {panelOpen.value && (
+            <div class="mf-panel">
+              {seg(PERIODS, period)}
+              {seg(TYPES, type, true)}
+              {select(grp, 'any group', grpOpts, () => { fam.value = ''; sp.value = ''; })}
+              {select(fam, 'any family', famOpts, () => { sp.value = ''; })}
+              {select(sp, 'any species', spOpts, () => (panelOpen.value = false))}
+            </div>
+          )}
+        </div>
+      )}
+      {state === 'ok' && (
+        <div class="maplegend">
+          <span><i style={{ background: KIND_COLOUR.bird }} />birds</span>
+          <span><i style={{ background: KIND_COLOUR.mammal }} />mammals</span>
+          <span><i style={{ background: KIND_COLOUR.big5 }} />Big Five</span>
+        </div>
+      )}
       {state === 'ok' && outside && <div class="mapnote">You are outside the mapped area (Makalali / Pidwa).</div>}
       {state === 'nopack' && <div class="mapmsg"><div><p>The map pack is not downloaded (or no network).</p><a class="btn" href={href('settings')}>Go to settings</a></div></div>}
       {state === 'error' && <div class="mapmsg"><div><p>Map error</p><pre>{err}</pre></div></div>}

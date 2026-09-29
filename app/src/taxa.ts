@@ -135,3 +135,17 @@ export const groupOf = (s: Species): string | null => {
 };
 export const familyEn = (s: Species): string => (s.family && FAMILY[s.family]?.en) || s.family || '';
 export const groupLabel = (g: string) => BIRD_GROUPS.find(([k]) => k === g)?.[1] || g;
+
+export const MAMMAL_GROUPS: [string, string][] = [
+  ['megaherbivores', 'Elephant, rhinos, hippo, giraffe, zebra, pigs'],
+  ['antelopes', 'Antelopes & buffalo'],
+  ['carnivores', 'Cats, dogs, hyenas'],
+  ['small-carnivores', 'Mongooses, genets, honey badger'],
+  ['primates', 'Monkeys, baboons, galagos'],
+  ['small-mammals', 'Hares, squirrels, porcupine, hyrax…'],
+  ['bats', 'Bats'],
+];
+
+/** Big Five; rhino counts once, either species. */
+export const BIG5: [string, string[]][] = [['Lion', ['panthera-leo']], ['Leopard', ['panthera-pardus']], ['Elephant', ['loxodonta-africana']], ['Buffalo', ['syncerus-caffer']], ['Rhino', ['ceratotherium-simum', 'diceros-bicornis']]];
+export const BIG5_IDS = new Set(BIG5.flatMap(([, ids]) => ids));

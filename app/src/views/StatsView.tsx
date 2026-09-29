@@ -2,11 +2,9 @@ import { signal } from '@preact/signals';
 import { species, observations, seenCount, firstSeen, totals, byId, name, obsInfo } from '../data';
 import { href } from '../router';
 import { dayKey, fmtDate } from '../util';
-import { familyEn } from '../taxa';
+import { familyEn, BIG5 } from '../taxa';
 
 const famGroup = signal<'bird' | 'mammal'>('bird');
-// rhino counts once, either species
-const BIG5: [string, string[]][] = [['Lion', ['panthera-leo']], ['Leopard', ['panthera-pardus']], ['Elephant', ['loxodonta-africana']], ['Buffalo', ['syncerus-caffer']], ['Rhino', ['ceratotherium-simum', 'diceros-bicornis']]];
 
 export function StatsView() {
   const t = totals.value;
