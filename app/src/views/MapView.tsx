@@ -34,7 +34,7 @@ function makeStyle(): maplibregl.StyleSpecification {
 
 // ---- filters (module-level: kept when leaving and coming back to the map) ----
 type Kind = 'big5' | 'mammal' | 'bird' | 'off';
-const KIND_COLOUR: Record<Kind, string> = { big5: '#ff3b30', mammal: '#ff9f1c', bird: '#4fc3f7', off: '#b0b0b0' };
+const KIND_COLOUR: Record<Kind, string> = { big5: '#ff3b30', mammal: '#ff9f1c', bird: '#c77dff', off: '#b0b0b0' };
 const PERIODS: [string, string][] = [['all', 'All'], ['today', 'Today'], ['7d', '7 days'], ['30d', '30 days']];
 const TYPES: [string, string][] = [['all', 'All'], ['bird', 'Birds'], ['mammal', 'Mammals'], ['big5', 'Big Five']];
 const period = signal('all');
@@ -130,8 +130,10 @@ export function MapView() {
         (window as any).__map = map; // handy for debugging from the console / smoke test
         map.touchZoomRotate.disableRotation();
         map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
-        const geo = new maplibregl.GeolocateControl({ positionOptions: { enableHighAccuracy: true, timeout: 45000, maximumAge: 0 }, trackUserLocation: true, showAccuracyCircle: true, fitBoundsOptions: { maxZoom: 15 } });
+        const geo = new maplibregl.GeolocateControl({ positionOptions: { enableHighAccuracy: true, timeout: 45000, maximumAge: 0 }, trackUserLocation: true, showAccuracyCircle: true, fitBoundsOptions: { maxZoom: 14 } });
         map.addControl(geo, 'top-right');
+        // show where you are straight away, but only if location was already allowed (no permission prompt on opening the map)
+        map.once('load', () => navigator.permissions?.query({ name: 'geolocation' }).then((p) => { if (p.state === 'granted') geo.trigger(); }).catch(() => {}));
         geo.on('geolocate', (e: any) => {
           const c = e?.coords;
           if (c) setOutside(c.longitude < BBOX.west || c.longitude > BBOX.east || c.latitude < BBOX.south || c.latitude > BBOX.north);
@@ -153,9 +155,9 @@ export function MapView() {
           map!.addLayer({
             id: 'obs-pt', type: 'circle', source: 'obs', layout: { 'circle-sort-key': ['get', 'rank'] },
             paint: {
-              'circle-radius': ['match', ['get', 'kind'], 'big5', 9, 7],
+              'circle-radius': ['match', ['get', 'kind'], 'big5', 6.5, 5],
               'circle-color': ['match', ['get', 'kind'], 'big5', KIND_COLOUR.big5, 'mammal', KIND_COLOUR.mammal, 'off', KIND_COLOUR.off, KIND_COLOUR.bird],
-              'circle-stroke-color': '#fff', 'circle-stroke-width': 2,
+              'circle-stroke-color': '#fff', 'circle-stroke-width': 1.5,
             },
           });
           map!.on('click', 'obs-pt', (e) => {

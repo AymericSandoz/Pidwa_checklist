@@ -217,5 +217,5 @@ details.filters summary { font-weight: 600; padding: 8px 0; cursor: pointer; }
 .maplegend i { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 4px; border: 1.5px solid #fff; vertical-align: -1px; }
 
 /* fixed places on the map (camp) */
-.place { background: #fff; font-size: 16px; line-height: 1; padding: 4px; border-radius: 50%; box-shadow: 0 1px 4px #0006; position: relative; margin-bottom: 6px; }
-.place::after { content: ''; position: absolute; left: 50%; bottom: -5px; margin-left: -5px; border: 5px solid transparent; border-bottom: 0; border-top-color: #fff; }
+.place { background: #fff; font-size: 12px; line-height: 1; padding: 3px; border-radius: 50%; box-shadow: 0 1px 4px #0006; position: relative; margin-bottom: 6px; }
+.place::after { content: ''; position: absolute; left: 50%; bottom: -4px; margin-left: -4px; border: 4px solid transparent; border-bottom: 0; border-top-color: #fff; }
