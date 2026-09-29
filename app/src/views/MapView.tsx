@@ -142,7 +142,8 @@ export function MapView() {
         for (const [label, lon, lat] of PLACES) {
           const pin = document.createElement('div');
           pin.className = 'place';
-          pin.textContent = '⛺ ' + label;
+          pin.textContent = '⛺';
+          pin.title = label;
           new maplibregl.Marker({ element: pin, anchor: 'bottom' }).setLngLat([lon, lat]).addTo(map);
         }
         map.on('load', () => {
