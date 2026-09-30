@@ -73,6 +73,8 @@ export const totals = computed(() => {
 export const name = (s: Species) => s.en;
 export const name2 = (s: Species) => s.fr || '';
 export const imgUrl = (s: Species) => (s.image ? dataUrl(s.image.file) : null);
+/** Small square version of the photo (data/scripts/13_thumbs.mjs), for map markers and other tiny uses. */
+export const thumbUrl = (s: Species) => (s.image ? dataUrl(s.image.file.replace(/^images\//, 'thumbs/')) : null);
 
 /** Names for an observation, whether its species is on the Pidwa checklist or an extra one (heard by sound ID). */
 export function obsInfo(o: Observation): { en: string; fr: string; sci: string; group: Group; onList: boolean } {

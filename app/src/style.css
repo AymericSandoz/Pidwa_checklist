@@ -248,21 +248,53 @@ details summary { cursor: pointer; }
 /* maplibre's own stylesheet sets .maplibregl-map { position: relative }, which would collapse the height: force ours */
 .mapwrap .map { position: absolute !important; inset: 0; width: 100%; height: 100%; font: inherit; }
 .mapmsg { position: absolute; inset: 0; display: grid; place-items: center; text-align: center; padding: 20px; background: var(--bg); }
-.mapnote { position: absolute; left: 10px; right: 10px; bottom: 70px; z-index: 5; background: var(--amber-soft); color: var(--amber); border-radius: 12px; padding: 8px 12px; font-size: 13px; font-weight: 600; }
-/* top bar: "more filters" button, then one chip per kind of marker (legend and filter at once) */
-.mapbar { position: absolute; top: calc(10px + env(safe-area-inset-top)); left: 10px; right: 62px; z-index: 5; display: flex; flex-wrap: wrap; gap: 6px; }
-.mchip { flex: none; display: inline-flex; align-items: center; gap: 7px; height: 40px; padding: 0 13px 0 11px; border: 0; border-radius: 999px; background: var(--card); color: var(--text); font-size: 13px; font-weight: 800; box-shadow: 0 1px 4px #0006; }
+.mapnote { position: absolute; left: 10px; right: 10px; bottom: calc(var(--strip-h, 0px) + 40px); z-index: 5; background: var(--amber-soft); color: var(--amber); border-radius: 12px; padding: 8px 12px; font-size: 13px; font-weight: 600; }
+/* top of the map: search among what has been seen, then one chip per kind of marker (legend and filter at once) */
+.mapbar { position: absolute; top: calc(10px + env(safe-area-inset-top)); left: 10px; right: 62px; z-index: 5; display: flex; flex-direction: column; }
+.mfind { display: flex; align-items: center; gap: 9px; height: 44px; border-radius: 22px; background: var(--card); color: var(--muted); padding: 0 8px 0 14px; box-shadow: 0 1px 4px #0006; }
+.mfind input { flex: 1; min-width: 0; height: 100%; border: 0; outline: 0; padding: 0; background: transparent; color: var(--text); font-size: 16px; font-weight: 600; }
+.mfind input::placeholder { color: var(--muted); opacity: 1; font-weight: 500; }
+.mfind input::-webkit-search-cancel-button { -webkit-appearance: none; }
+.mfind button { flex: none; width: 28px; height: 28px; border: 0; border-radius: 50%; background: var(--sand); color: var(--text); display: grid; place-items: center; padding: 0; }
+.mfind.open { border-radius: 18px 18px 0 0; box-shadow: none; border-bottom: 1px solid var(--line); }
+.mapbar:has(.mfind.open) { border-radius: 18px; box-shadow: 0 4px 16px #0007; }
+.msug { background: var(--card); border-radius: 0 0 18px 18px; padding: 4px 0 6px; }
+.msug button { display: flex; align-items: center; gap: 11px; width: 100%; border: 0; background: none; padding: 7px 12px; text-align: left; }
+.msug img, .msug .ph0 { flex: none; width: 44px; height: 44px; border-radius: 12px; object-fit: cover; background: var(--sand); color: var(--muted); display: grid; place-items: center; }
+.msug .ph0.fam { background: var(--green-light); color: var(--green-ink); }
+.msug button > span:last-child { display: flex; flex-direction: column; min-width: 0; }
+.msug b { font-size: 14.5px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.msug small { font-size: 12px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.msug p { margin: 0; padding: 10px 14px; font-size: 13.5px; color: var(--muted); }
+.mrow { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.mchip { flex: none; display: inline-flex; align-items: center; gap: 7px; height: 38px; padding: 0 13px 0 11px; border: 0; border-radius: 999px; background: var(--card); color: var(--text); font-size: 13px; font-weight: 800; box-shadow: 0 1px 4px #0006; }
 .mchip i { width: 11px; height: 11px; border-radius: 50%; border: 2px solid #fff; box-shadow: 0 0 0 1px #0004; }
 .mchip.on { background: var(--text); color: var(--bg); }
-.mchip.ico { position: relative; width: 40px; padding: 0; justify-content: center; }
-.mchip.ico.on { background: var(--green); color: var(--on-green); }
-.mchip .bdg { position: absolute; top: -4px; right: -4px; min-width: 18px; height: 18px; padding: 0 4px; border-radius: 9px; background: var(--text); color: var(--bg); font-size: 11px; font-weight: 800; line-height: 18px; text-align: center; }
-.mapcount { position: absolute; left: 10px; bottom: 36px; z-index: 4; display: flex; align-items: center; background: #0c0e0bcc; color: #fff; font-size: 12px; font-weight: 700; border-radius: 999px; padding: 5px 11px; }
-.mapcount button { border: 0; background: #ffffff38; color: #fff; border-radius: 50%; width: 20px; height: 20px; display: grid; place-items: center; padding: 0; margin: -2px -5px -2px 8px; }
-.modal-bg.soft { background: #0000004d; }
-/* the map is a fixed layer of its own: its sheet stays inside it, above the navigation bar */
-.mapwrap .modal-bg { position: absolute; }
-.mapwrap .modal { padding-bottom: 16px; }
+/* bottom of the map: the species seen, as photos; one tap shows only that species */
+.mstrip { position: absolute; left: 0; right: 0; bottom: 0; z-index: 5; height: var(--strip-h); overflow: hidden; transition: height .2s ease; touch-action: pan-x; background: var(--bg); border-radius: 22px 22px 0 0; box-shadow: 0 -4px 18px #0007; padding-top: 6px; }
+.mstrip .grab { display: block; width: 100%; height: 24px; margin-bottom: -10px; position: relative; z-index: 1; border: 0; background: none; padding: 0; }
+.mstrip .grab::before { content: ''; display: block; width: 40px; height: 4px; border-radius: 2px; background: var(--sand); margin: 0 auto; }
+.mstrip .sh { display: flex; align-items: center; justify-content: space-between; gap: 8px; height: 34px; padding: 0 12px; }
+.mstrip .seg { flex: none; }
+.mstrip .seg button { padding: 5px 10px; font-size: 12.5px; white-space: nowrap; }
+.mstrip .st { display: flex; align-items: center; gap: 5px; min-width: 0; font-size: 12.5px; font-weight: 600; color: var(--muted); white-space: nowrap; }
+.mstrip .st b { color: var(--green-ink); font-weight: 800; overflow: hidden; text-overflow: ellipsis; }
+.mstrip .st button { flex: none; width: 22px; height: 22px; border: 0; border-radius: 50%; background: var(--text); color: var(--bg); display: grid; place-items: center; padding: 0; }
+.mstrip .sc { display: flex; gap: 4px; padding: 10px 10px 0; overflow-x: auto; scrollbar-width: none; overscroll-behavior-x: contain; }
+.mstrip .sc::-webkit-scrollbar { display: none; }
+.mstrip .sc p { margin: 18px 6px; font-size: 13.5px; color: var(--muted); }
+.mstrip .it { flex: none; width: 76px; border: 0; background: none; padding: 3px 0 0; display: flex; flex-direction: column; align-items: center; gap: 5px; color: var(--text); }
+.mstrip .p { position: relative; width: 62px; height: 62px; border-radius: 18px; background: var(--sand); color: var(--muted); display: grid; place-items: center; }
+.mstrip .p img { width: 100%; height: 100%; border-radius: inherit; object-fit: cover; display: block; }
+.mstrip .p em { position: absolute; right: -6px; top: -5px; min-width: 20px; height: 20px; padding: 0 5px; border-radius: 10px; background: var(--text); color: var(--bg); font-style: normal; font-size: 11.5px; font-weight: 800; line-height: 20px; text-align: center; box-shadow: 0 0 0 2px var(--bg); }
+.mstrip .n { font-size: 11px; font-weight: 700; line-height: 1.15; text-align: center; height: 2.3em; overflow: hidden; }
+.mstrip .it.on .p { box-shadow: 0 0 0 2px var(--bg), 0 0 0 5px var(--green); }
+.mstrip .it.on .n { color: var(--green-ink); }
+.mstrip .it.off { opacity: .5; }
+/* slid down: only the handle stays, plus the line of filters while one of them is on */
+.mstrip.min .sc, .mstrip.gone .sh { visibility: hidden; }
+/* maplibre's scale and credit button sit above the strip */
+.mapwrap .maplibregl-ctrl-bottom-left, .mapwrap .maplibregl-ctrl-bottom-right { bottom: var(--strip-h, 0px); transition: bottom .2s ease; }
 /* maplibre's own buttons (zoom, my position), redrawn in the style of the app */
 .mapwrap .maplibregl-ctrl-top-right { top: env(safe-area-inset-top); }
 .mapwrap .maplibregl-ctrl-group { background: var(--card); border-radius: 14px; overflow: hidden; }

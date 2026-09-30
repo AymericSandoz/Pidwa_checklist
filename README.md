@@ -30,8 +30,9 @@ app/               la PWA (Vite + Preact + TypeScript), `app/public/data` est un
 | 8 | `node data/scripts/08_map.mjs --sat` | OpenFreeMap (tuiles vectorielles OSM, polices, sprites) + Sentinel-2 cloudless EOX pour la zone |
 | 6 | `node data/scripts/06_build.mjs` | fusion → `data/out/species.json` + `data/out/preview.html` |
 | 9 | `node data/scripts/09_packs.mjs` | inventaire des packs à la demande → `data/out/packs.json` |
-| 10 | `node data/scripts/10_icons.mjs` | icônes de l'app |
+| 10 | `node data/scripts/10_icons.mjs` | icônes de l'app, logo Askari et motif girafe |
 | 11 | `node data/scripts/11_birdnet.mjs` | modèle BirdNET V2.4 en TensorFlow.js + modèle de répartition, depuis le dépôt officiel `birdnet-team/real-time-pwa` ; correspondance des classes avec la liste Pidwa |
+| 13 | `node data/scripts/13_thumbs.mjs` | vignettes carrées des photos → `data/out/thumbs/` (repères de la carte, bandeau d'espèces) ; à relancer après l'étape 3b |
 
 Wikimedia limite fortement le débit depuis ce réseau (429 puis blocages de 10 min) : les étapes 2 et 3 attendent automatiquement, mais c'est lent. D'où iNaturalist pour les photos, et l'étape 3 gardée en secours.
 
