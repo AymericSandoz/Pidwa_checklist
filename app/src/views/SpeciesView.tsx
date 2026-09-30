@@ -1,87 +1,100 @@
 import { useState } from 'preact/hooks';
 import { byId, imgUrl, name, name2, observations, dataUrl } from '../data';
 import { back, href } from '../router';
-import { fmtDate, fmtTime, L, lbl, soundIdGrade } from '../util';
+import { fmtDay, fmtTime, L, lbl, soundIdGrade } from '../util';
 import { familyEn, groupOf, groupLabel } from '../taxa';
 import { ObsForm } from '../components/ObsForm';
 import { PhotoImg } from '../components/PhotoImg';
+import { Icon } from '../components/Icon';
+import { SoundPlayer } from '../components/SoundPlayer';
 import type { Observation } from '../types';
+
+const IUCN_TONE: Record<string, string> = { NT: ' warn', VU: ' warn', EN: ' bad', CR: ' bad' };
+const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 
 export function SpeciesView({ id }: { id: string }) {
   const s = byId.value.get(id);
   const [form, setForm] = useState<{ obs?: Observation } | null>(null);
   const [more, setMore] = useState(false);
-  if (!s) return <div class="center"><p>Unknown species.</p><a class="btn" href={href('list')}>Back to the list</a></div>;
+  if (!s) return <div class="center"><div><p>Unknown species.</p><a class="btn" href={href('list')}>Back to the list</a></div></div>;
   const img = imgUrl(s);
   const mine = observations.value.filter((o) => o.speciesId === s.id);
   const iucn = s.iucn ? lbl(L.iucn, s.iucn.toLowerCase()) : null;
   const a = s.avonet;
+  const k = s.idk;
   const grp = s.group === 'bird' ? groupOf(s) : null;
+  const grade = s.bn ? soundIdGrade(s.bn.ref) : null;
+
+  // [label, value, full width]
+  const specs = ([
+    ['Size', k?.size ? lbl(L.size, k.size) : null, true],
+    ['Weight', a?.mass != null ? (a.mass >= 1000 ? (a.mass / 1000).toFixed(1) + ' kg' : Math.round(a.mass) + ' g') : null],
+    ['Bill', k?.bill ? lbl(L.bill, k.bill) : null],
+    ['Legs', k?.legs ? lbl(L.legs, k.legs) : null],
+    ['Habitat', k?.habitat ? lbl(L.habitat, k.habitat) : null],
+    ['Usually', k?.lifestyle ? lbl(L.lifestyle, k.lifestyle) : null],
+    ['Food', k?.niche ? lbl(L.niche, k.niche) : null],
+    ['Presence', a?.migration === 3 ? 'migrant' : null],
+    ['Group', grp ? groupLabel(grp) : null, true],
+  ] as [string, string | null, boolean?][]).filter((x) => x[1]);
+  // an odd number of half-width cells would leave a hole: the last one takes the full row
+  const halves = specs.filter((x) => !x[2]);
+  if (halves.length % 2) halves[halves.length - 1][2] = true;
 
   return (
     <div class="has-fab">
-      <div class="hero">
+      <div class="hero" style={s.image ? `aspect-ratio:${s.image.w}/${s.image.h}` : ''}>
         {img ? <img src={img} alt={name(s)} /> : <div class="noimg">no photo</div>}
-        <button class="backbtn" onClick={back} aria-label="Back">‹</button>
+        <button class="backbtn" onClick={back} aria-label="Back"><Icon name="chevron-left" size={22} stroke={2.4} /></button>
+        {s.image && <span class="cred">{s.image.author || 'unknown author'}{s.image.license ? ' · ' + s.image.license : ''}</span>}
       </div>
-      <div class="sp-title">{name(s)}</div>
-      <div class="sp-sub">{name2(s)}{name2(s) ? ' · ' : ''}<i>{s.sci}</i></div>
-      <div class="sp-sub">{familyEn(s)} <span class="muted">({s.family})</span>{grp ? ` · ${groupLabel(grp)}` : ''} {iucn && <span class={'iucn ' + iucn}>{iucn}</span>}</div>
+      <div class="sheet">
+        <div class="eyebrow">{familyEn(s)}{s.family && familyEn(s) !== s.family ? ' · ' + s.family : ''}</div>
+        <h1 class="sp-title">{name(s)}</h1>
+        {name2(s) && <div class="sp-sub">{name2(s)}</div>}
+        <div class="sp-sci">{s.sci}</div>
 
-      {s.idk && (
-        <div class="facts">
-          {s.idk.size && <span class="fact">size <b>{lbl(L.size, s.idk.size)}</b></span>}
-          {a?.mass != null && <span class="fact"><b>{a.mass >= 1000 ? (a.mass / 1000).toFixed(1) + ' kg' : Math.round(a.mass) + ' g'}</b></span>}
-          {s.idk.bill && <span class="fact">bill <b>{lbl(L.bill, s.idk.bill)}</b></span>}
-          {s.idk.legs && <span class="fact">legs <b>{lbl(L.legs, s.idk.legs)}</b></span>}
-          {s.idk.habitat && <span class="fact">{lbl(L.habitat, s.idk.habitat)}</span>}
-          {s.idk.lifestyle && <span class="fact">{lbl(L.lifestyle, s.idk.lifestyle)}</span>}
-          {s.idk.niche && <span class="fact">{lbl(L.niche, s.idk.niche)}</span>}
-          {a?.migration === 3 && <span class="fact">migrant</span>}
-          {s.group === 'bird' && (s.bn ? <span class={'fact' + (soundIdGrade(s.bn.ref) === 'weak' ? ' off' : '')}>🎤 sound ID <b>{soundIdGrade(s.bn.ref)}{s.bn.lumped ? ', as ' + s.bn.label.split('_')[1] : ''}</b></span> : <span class="fact off">🎤 sound ID <b>not covered</b></span>)}
+        <div class="pills">
+          {mine.length > 0 ? <span class="pill ok"><Icon name="check" size={13} stroke={3} />Seen ×{mine.length}</span> : <span class="pill">Not seen yet</span>}
+          {iucn && <span class={'pill' + (IUCN_TONE[iucn] || '')}>{iucn} · {s.iucn}</span>}
+          {s.group === 'bird' && <span class="pill"><Icon name="mic" size={13} stroke={2.4} />{grade ? `sound ID ${grade}${s.bn!.lumped ? ', as ' + s.bn!.label.split('_')[1] : ''}` : 'no sound ID'}</span>}
         </div>
-      )}
-      {s.traits && s.traits.length > 0 && <ul class="summary">{s.traits.map((t) => <li>{t}</li>)}</ul>}
 
-      {(s.summary.en || s.summary.fr) && (
-        <div class="card" onClick={() => setMore(!more)}>
-          <p class={'summary' + (more ? '' : ' clamp')} style="margin:0">{s.summary.en || s.summary.fr}</p>
-          <span class="muted small">{more ? 'show less' : 'read more'} · Wikipedia{s.summary.en ? '' : ' (French)'}</span>
-        </div>
-      )}
+        {specs.length > 0 && <div class="specs">{specs.map(([label, value, wide]) => <div class={wide ? 'wide' : ''}><span>{label}</span><b>{value}</b></div>)}</div>}
+        {s.traits && s.traits.length > 0 && <div class="card"><ul class="traits">{s.traits.map((t) => <li>{t}</li>)}</ul></div>}
 
-      {s.sounds.length > 0 && (
-        <div class="card sounds">
-          <b>Sounds</b>
-          {s.sounds.map((sn) => (
-            <div>
-              <span class="small muted">{sn.type} · quality {sn.q} · {sn.len} · {sn.by}</span>
-              <audio controls preload="none" src={dataUrl(sn.file)} />
-            </div>
-          ))}
-          <span class="credit">xeno-canto · <a href={href('settings')}>sound pack not downloaded? → Settings</a></span>
-        </div>
-      )}
+        {(s.summary.en || s.summary.fr) && (
+          <div class="card" onClick={() => setMore(!more)}>
+            <p class={'summary' + (more ? '' : ' clamp')} style="margin:0">{s.summary.en || s.summary.fr}</p>
+            <span class="more">{more ? 'Show less' : 'Read more'}</span> <span class="muted small">· Wikipedia{s.summary.en ? '' : ' (French)'}</span>
+          </div>
+        )}
 
-      <div class="card">
-        <div class="row"><b style="flex:1">My observations ({mine.length})</b></div>
+        {s.sounds.length > 0 && (
+          <>
+            <div class="sec">Sounds</div>
+            {s.sounds.map((sn) => <SoundPlayer key={sn.file} src={dataUrl(sn.file)} title={cap(sn.type || 'recording')} len={sn.len} sub={`quality ${sn.q} · ${sn.by} · xeno-canto`} />)}
+          </>
+        )}
+
+        <div class="sec">My observations {mine.length > 0 && <span class="n">{mine.length}</span>}</div>
         {mine.map((o) => (
-          <div class="obs" style="box-shadow:none;padding:6px 0;border-bottom:1px solid var(--line);border-radius:0" onClick={() => setForm({ obs: o })}>
+          <div class="obs" onClick={() => setForm({ obs: o })}>
+            <div class="when"><b>{fmtDay(o.ts)}</b><span>{fmtTime(o.ts)}</span></div>
             <div class="body">
-              <div class="name">{fmtDate(o.ts)} · {fmtTime(o.ts)}{o.count > 1 ? ` · ×${o.count}` : ''}</div>
-              <div class="meta">{o.lat != null && o.lon != null ? `${o.lat.toFixed(4)}, ${o.lon.toFixed(4)}${o.acc ? ` ±${o.acc} m` : ''}` : 'no position'}</div>
-              {o.note && <div class="note">{o.note}</div>}
+              {o.note ? <div class="name">{o.note}</div> : <div class="name">{o.count > 1 ? `${o.count} individuals` : 'Observed'}</div>}
+              <div class="meta">{o.note && o.count > 1 ? `×${o.count} · ` : ''}{o.lat != null && o.lon != null ? <><Icon name="map-pin" size={12} stroke={2.2} />{o.lat.toFixed(4)}, {o.lon.toFixed(4)}{o.acc ? ` · ±${o.acc} m` : ''}</> : 'no position'}</div>
             </div>
             {o.photo && <PhotoImg blob={o.photo} />}
           </div>
         ))}
-        {mine.length === 0 && <p class="muted small">Not seen yet.</p>}
+        {mine.length === 0 && <p class="muted">Nothing logged for this species yet.</p>}
+
+        {s.image && <p class="credit" style="margin-top:18px">Photo: {s.image.author || 'unknown author'} · {s.image.license || ''} · {s.image.from || 'Wikimedia Commons'}{s.wiki.en && <> · <a href={s.wiki.en} target="_blank" rel="noopener">Wikipedia</a></>}{s.wiki.fr && <> · <a href={s.wiki.fr} target="_blank" rel="noopener">Wikipédia FR</a></>}</p>}
+        {s.notes && <p class="credit">Checklist note: {s.notes}</p>}
       </div>
 
-      {s.image && <p class="credit">Photo: {s.image.author || 'unknown author'} · {s.image.license || ''} · {s.image.from || 'Wikimedia Commons'}{s.wiki.en && <> · <a href={s.wiki.en} target="_blank" rel="noopener">Wikipedia</a></>}{s.wiki.fr && <> · <a href={s.wiki.fr} target="_blank" rel="noopener">Wikipédia FR</a></>}</p>}
-      {s.notes && <p class="credit">Checklist note: {s.notes}</p>}
-
-      <button class="fab" onClick={() => setForm({})}>+ Observe</button>
+      <button class="fab" onClick={() => setForm({})}><Icon name="plus" stroke={2.6} />Observe</button>
       {form && <ObsForm speciesId={s.id} obs={form.obs} onClose={() => setForm(null)} />}
     </div>
   );

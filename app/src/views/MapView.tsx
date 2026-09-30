@@ -6,6 +6,7 @@ import { observations, obsInfo, dataUrl, byId } from '../data';
 import { href } from '../router';
 import { fmtDate, fmtTime } from '../util';
 import { BIRD_GROUPS, MAMMAL_GROUPS, BIG5_IDS, groupOf, familyEn } from '../taxa';
+import { Icon, iconHtml } from '../components/Icon';
 import type { Observation } from '../types';
 
 // Satellite-only map (Sentinel-2 cloudless, EOX). Tiles: z8–14 over the whole area, z15 over the reserve itself.
@@ -25,7 +26,7 @@ function makeStyle(): maplibregl.StyleSpecification {
       sat15: { type: 'raster', tiles, tileSize: 256, minzoom: 15, maxzoom: 15, bounds: bounds(INNER) },
     },
     layers: [
-      { id: 'bg', type: 'background', paint: { 'background-color': '#1d2b1f' } },
+      { id: 'bg', type: 'background', paint: { 'background-color': '#11150f' } },
       { id: 'sat', type: 'raster', source: 'sat' },
       { id: 'sat15', type: 'raster', source: 'sat15', minzoom: 15 },
     ],
@@ -121,7 +122,8 @@ export function MapView() {
       caches.delete('pack-map').catch(() => {}); // old OpenStreetMap pack, no longer used
       try {
         map = new maplibregl.Map({
-          container: el.current!, style: makeStyle(), center: [30.6, -24.08], zoom: 11, // opens around Askari Camp minZoom: 9, maxZoom: 15, // beyond z15 Sentinel-2 (10 m/pixel) is just blur
+          container: el.current!, style: makeStyle(), center: [30.6, -24.08], zoom: 11, // opens around Askari Camp
+          minZoom: 9, maxZoom: 15, // beyond z15 Sentinel-2 (10 m/pixel) is just blur
           maxBounds: [[BBOX.west - 0.05, BBOX.south - 0.05], [BBOX.east + 0.05, BBOX.north + 0.05]],
           attributionControl: { compact: true }, fadeDuration: 0, pitchWithRotate: false, dragRotate: false, touchPitch: false, maxPitch: 0,
           canvasContextAttributes: { preserveDrawingBuffer: location.search.includes('debug') },
@@ -144,7 +146,7 @@ export function MapView() {
         for (const [label, lon, lat] of PLACES) {
           const pin = document.createElement('div');
           pin.className = 'place';
-          pin.textContent = '⛺';
+          pin.innerHTML = iconHtml('tent', 15, 2.2);
           pin.title = label;
           new maplibregl.Marker({ element: pin, anchor: 'bottom' }).setLngLat([lon, lat]).addTo(map);
         }
@@ -207,10 +209,10 @@ export function MapView() {
         <div class="mapfilter">
           <div class="mf-bar">
             <button class={'mf-toggle' + (filtered ? ' on' : '')} onClick={() => (panelOpen.value = !panelOpen.value)}>
-              {panelOpen.value ? '▴' : '▾'} Filter
+              <Icon name="sliders-horizontal" size={15} />Filter
             </button>
             <span class="mf-count">{shown.length} obs · {nSpecies} species</span>
-            {filtered && <button class="mf-clear" onClick={clear} aria-label="clear filters">✕</button>}
+            {filtered && <button class="mf-clear" onClick={clear} aria-label="clear filters"><Icon name="x" size={15} stroke={2.6} /></button>}
           </div>
           {panelOpen.value && (
             <div class="mf-panel">

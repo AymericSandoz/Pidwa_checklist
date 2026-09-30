@@ -3,13 +3,30 @@ import { species, observations, seenCount, firstSeen, totals, byId, name, obsInf
 import { href } from '../router';
 import { dayKey, fmtDate } from '../util';
 import { familyEn, BIG5 } from '../taxa';
+import { Icon, type IconName } from '../components/Icon';
 
 const famGroup = signal<'bird' | 'mammal'>('bird');
+const pct = (a: number, b: number) => (b ? Math.round((100 * a) / b) : 0);
+
+const R = 44, C = 2 * Math.PI * R;
+function Ring({ seen, total, label, icon }: { seen: number; total: number; label: string; icon: IconName }) {
+  return (
+    <div>
+      <div class="ringbox">
+        <svg width="104" height="104" viewBox="0 0 104 104">
+          <circle cx="52" cy="52" r={R} />
+          <circle class="fg" cx="52" cy="52" r={R} stroke-dasharray={C} stroke-dashoffset={C * (1 - (total ? seen / total : 0))} />
+        </svg>
+        <div class="in"><b>{seen}</b><span>of {total}</span></div>
+      </div>
+      <div class="cap"><Icon name={icon} size={15} />{label} · {pct(seen, total)} %</div>
+    </div>
+  );
+}
 
 export function StatsView() {
   const t = totals.value;
   const seen = seenCount.value;
-  const pct = (a: number, b: number) => (b ? Math.round((100 * a) / b) : 0);
 
   // families of the selected group, seen / total
   const fam = new Map<string, { seen: number; total: number }>();
@@ -34,16 +51,16 @@ export function StatsView() {
 
   return (
     <div>
-      <div class="card row" style="justify-content:space-around;text-align:center">
-        <div><div class="big">{t.bird.seen}<span class="muted" style="font-size:16px">/{t.bird.total}</span></div><div class="muted small">birds · {pct(t.bird.seen, t.bird.total)} %</div></div>
-        <div><div class="big">{t.mammal.seen}<span class="muted" style="font-size:16px">/{t.mammal.total}</span></div><div class="muted small">mammals · {pct(t.mammal.seen, t.mammal.total)} %</div></div>
-        <div><div class="big">{observations.value.length}</div><div class="muted small">observations</div></div>
+      <div class="card rings">
+        <Ring seen={t.bird.seen} total={t.bird.total} label="Birds" icon="bird" />
+        <Ring seen={t.mammal.seen} total={t.mammal.total} label="Mammals" icon="paw-print" />
+        <div class="solo"><b>{observations.value.length}</b><span class="muted">observations</span><b style="margin-top:8px">{days.size}</b><span class="muted">day{days.size === 1 ? '' : 's'} out</span></div>
       </div>
 
       <div class="card">
         <b>Big Five</b>
         <div class="big5">
-          {BIG5.map(([label, ids]) => { const got = ids.some((i) => seen.has(i)); return <a class={'b5' + (got ? ' got' : '')} href={href('species/' + ids[0])}><span>{got ? '✓' : '·'}</span>{label}</a>; })}
+          {BIG5.map(([label, ids]) => { const got = ids.some((i) => seen.has(i)); return <a class={'b5' + (got ? ' got' : '')} href={href('species/' + ids[0])}><span>{got && <Icon name="check" size={14} stroke={3.2} />}</span>{label}</a>; })}
         </div>
       </div>
 
@@ -51,7 +68,7 @@ export function StatsView() {
         <div class="card">
           <b>By day</b>
           {dayList.map(([k, set]) => (
-            <div class="stat"><span>{fmtDate(new Date(k + 'T12:00:00').getTime())}</span><span>{set.size} species</span></div>
+            <div class="stat"><span>{fmtDate(new Date(k + 'T12:00:00').getTime())}</span><span class="muted">{set.size} species</span></div>
           ))}
         </div>
       )}

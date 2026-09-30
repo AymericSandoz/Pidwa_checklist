@@ -15,18 +15,18 @@ export default defineConfig({
     ...(https ? [basicSsl()] : []),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['icons/*.png', 'icons/*.svg'],
+      includeAssets: ['icons/*.png'],
       manifest: {
-        name: 'Pidwa Checklist',
-        short_name: 'Pidwa',
+        name: 'Askari',
+        short_name: 'Askari',
         description: 'Offline checklist of the birds and mammals of Pidwa / Greater Makalali',
         lang: 'en',
         start_url: base,
         scope: base,
         display: 'standalone',
         orientation: 'portrait',
-        background_color: '#1d2b1f',
-        theme_color: '#2f4f2f',
+        background_color: '#1d231c', // launch screen: the icon on bush black
+        theme_color: '#f4f2ec',
         icons: [
           { src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png' },
           { src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png' },

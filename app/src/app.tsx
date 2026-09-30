@@ -1,6 +1,6 @@
 import { Component, type ComponentChildren } from 'preact';
 import { route, href } from './router';
-import { loaded, loadError, totals } from './data';
+import { loaded, loadError } from './data';
 import { ListView } from './views/ListView';
 import { SpeciesView } from './views/SpeciesView';
 import { IdGuideView } from './views/IdGuideView';
@@ -9,6 +9,8 @@ import { MapLazy } from './views/MapLazy';
 import { StatsView } from './views/StatsView';
 import { SettingsView } from './views/SettingsView';
 import { ListenLazy, listening } from './views/ListenLazy';
+import { Icon, type IconName } from './components/Icon';
+import './theme';
 
 /** Keeps a crash inside one screen: the navigation still works and the next screen renders normally. */
 class ViewBoundary extends Component<{ children: ComponentChildren }, { err: string | null }> {
@@ -20,19 +22,19 @@ class ViewBoundary extends Component<{ children: ComponentChildren }, { err: str
   }
 }
 
-const NAV = [
-  ['list', 'List', '☑'],
-  ['id', 'Guide', '🔍'],
-  ['listen', 'Listen', '🎤'],
-  ['obs', 'Journal', '📓'],
-  ['map', 'Map', '🗺'],
-  ['stats', 'Stats', '📊'],
-] as const;
+const NAV: [string, string, IconName][] = [
+  ['list', 'List', 'list-checks'],
+  ['id', 'Guide', 'binoculars'],
+  ['listen', 'Listen', 'mic'],
+  ['obs', 'Journal', 'notebook-pen'],
+  ['map', 'Map', 'map'],
+  ['stats', 'Stats', 'chart-no-axes-column'],
+];
 
 export function App() {
   const r = route.value;
   if (loadError.value) return <div class="center"><p>Could not load the species data.</p><pre>{loadError.value}</pre></div>;
-  if (!loaded.value) return <div class="center"><p>Loading…</p></div>;
+  if (!loaded.value) return <div class="splash"><div><div class="logo" /><p class="muted">Loading…</p></div></div>;
 
   let view;
   switch (r.path) {
@@ -45,22 +47,21 @@ export function App() {
     case 'settings': view = <SettingsView />; break;
     default: view = <ListView />;
   }
-  const t = totals.value;
   const fullscreen = r.path === 'map';
+  const bare = r.path === 'species'; // the species page starts with its photo, edge to edge
   return (
-    <div class={'shell' + (fullscreen ? ' fullscreen' : '')}>
-      {!fullscreen && (
+    <div class={'shell' + (fullscreen ? ' fullscreen' : '') + (bare ? ' bare' : '')}>
+      {!fullscreen && !bare && (
         <header class="top">
-          <a href={href('list')} class="brand">Pidwa</a>
-          <span class="score" title="species seen / total">🐦 {t.bird.seen}/{t.bird.total} · 🦌 {t.mammal.seen}/{t.mammal.total}</span>
-          <a href={href('settings')} class="gear" aria-label="Settings">⚙</a>
+          <a href={href('list')} class="brand"><i class="mark" /><span class="bn"><b>Askari</b><small>Pidwa Wilderness Reserve</small></span></a>
+          <a href={href('settings')} class="gear" aria-label="Settings"><Icon name="settings" /></a>
         </header>
       )}
       <main class="main"><ViewBoundary key={r.path}>{view}</ViewBoundary></main>
       <nav class="bottom">
         {NAV.map(([p, label, icon]) => (
           <a href={href(p)} class={r.path === p || (p === 'list' && r.path === 'species') ? 'active' : ''}>
-            <span class="ico">{icon}{p === 'listen' && listening.value && <i class="recdot" />}</span><span>{label}</span>
+            <span class="ico"><Icon name={icon} size={22} />{p === 'listen' && listening.value && <i class="recdot" />}</span><span>{label}</span>
           </a>
         ))}
       </nav>

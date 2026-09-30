@@ -5,6 +5,8 @@ import { href } from '../router';
 import { matches } from '../util';
 import { familyEn } from '../taxa';
 import { Thumb } from '../components/Thumb';
+import { Icon } from '../components/Icon';
+import { SearchBox } from '../components/SearchBox';
 import { ObsForm } from '../components/ObsForm';
 import type { Group } from '../types';
 
@@ -21,21 +23,26 @@ export function ListView() {
 
   return (
     <div>
-      <div class="tabs">
-        {(['bird', 'mammal'] as Group[]).map((g) => (
-          <button class={tab.value === g ? 'on' : ''} onClick={() => { tab.value = g; localStorage.setItem('tab', g); }}>
-            {g === 'bird' ? `Birds ${totals.value.bird.seen}/${totals.value.bird.total}` : `Mammals ${totals.value.mammal.seen}/${totals.value.mammal.total}`}
-          </button>
-        ))}
+      <div class="duo">
+        {(['bird', 'mammal'] as Group[]).map((g) => {
+          const tg = totals.value[g];
+          return (
+            <button class={tab.value === g ? 'on' : ''} onClick={() => { tab.value = g; localStorage.setItem('tab', g); }}>
+              <span class="l"><Icon name={g === 'bird' ? 'bird' : 'paw-print'} size={16} />{g === 'bird' ? 'Birds' : 'Mammals'}</span>
+              <span class="v">{tg.seen}<small>/{tg.total}</small></span>
+              <span class="bar"><i style={`width:${tg.total ? (100 * tg.seen) / tg.total : 0}%`} /></span>
+            </button>
+          );
+        })}
       </div>
-      <input class="search" type="search" placeholder="search (English, French, Latin, family)" value={q.value} onInput={(e) => (q.value = (e.target as HTMLInputElement).value)} />
+      <SearchBox value={q.value} onInput={(v) => (q.value = v)} placeholder="Name or family (English, French, Latin)" />
       <div class="listhead">
-        <div class="chips" style="margin-bottom:-6px">
+        <div class="chips" style="margin-bottom:-7px">
           {(['all', 'seen', 'unseen'] as const).map((f) => (
-            <button class={'chip' + (filter.value === f ? ' on' : '')} onClick={() => (filter.value = f)}>{f === 'all' ? 'all' : f === 'seen' ? `seen (${t.seen})` : `to see (${t.total - t.seen})`}</button>
+            <button class={'chip' + (filter.value === f ? ' on' : '')} onClick={() => (filter.value = f)}>{f === 'all' ? 'All' : f === 'seen' ? `Seen · ${t.seen}` : `To see · ${t.total - t.seen}`}</button>
           ))}
         </div>
-        <span class="muted count">{list.length}</span>
+        {q.value && <span class="muted count">{list.length}</span>}
       </div>
       <div class="list">
         {list.map((s) => {
@@ -43,18 +50,18 @@ export function ListView() {
           return (
             <div class={'sp-row' + (n ? ' seen' : '')} key={s.id}>
               <a href={href('species/' + s.id)} class="row" style="flex:1;min-width:0">
-                <Thumb s={s} />
+                <span class={'ph' + (n ? ' seen' : '')}><Thumb s={s} /></span>
                 <div class="names">
                   <div class="fr">{name(s)}</div>
-                  <div class="en">{name2(s)}{name2(s) ? ' · ' : ''}<i>{s.sci}</i> · {familyEn(s)}</div>
+                  <div class="en">{name2(s)}{name2(s) ? ' · ' : ''}{familyEn(s)}</div>
                 </div>
-                <span class={'badge' + (n ? '' : ' zero')}>{n || '–'}</span>
+                {n > 0 && <span class="cnt">×{n}</span>}
               </a>
-              <button class="add" aria-label="Log an observation" onClick={() => setAdding(s.id)}>+</button>
+              <button class="add" aria-label="Log an observation" onClick={() => setAdding(s.id)}><Icon name="plus" /></button>
             </div>
           );
         })}
-        {list.length === 0 && <p class="muted center">No species.</p>}
+        {list.length === 0 && <div class="empty"><div class="ring"><Icon name="search" size={26} /></div>No species matches.</div>}
       </div>
       {adding && <ObsForm speciesId={adding} onClose={() => setAdding(null)} />}
     </div>

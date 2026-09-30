@@ -4,6 +4,8 @@ import { href } from '../router';
 import { L, ORDER, lbl, matches } from '../util';
 import { BIRD_GROUPS, groupOf, familyEn } from '../taxa';
 import { COLOURS, BIRD_COLOURS } from '../colours';
+import { Icon } from '../components/Icon';
+import { SearchBox } from '../components/SearchBox';
 import type { Species } from '../types';
 
 // Every criterion is multi-select: ticking several options means "one of these" (e.g. bill medium OR thin).
@@ -80,7 +82,7 @@ export function IdGuideView() {
 
   return (
     <div class="idg">
-      <input class="search" type="search" placeholder="name (English, French, Latin)" value={q.value} onInput={(e) => (q.value = (e.target as HTMLInputElement).value)} />
+      <SearchBox value={q.value} onInput={(v) => (q.value = v)} placeholder="Name (English, French, Latin)" />
 
       <div class="fgroup">
         <div class="lab">What kind of bird <span class="hint">tick one or several</span></div>
@@ -93,7 +95,7 @@ export function IdGuideView() {
             const n = countFor('group', g);
             return (
               <button class={'gtile' + (on ? ' on' : '') + (!on && n === 0 ? ' empty' : '')} disabled={!on && n === 0} title={full} onClick={() => toggle('group', g)}>
-                {u ? <img src={u} loading="lazy" decoding="async" alt="" /> : <div class="noimg">🐦</div>}
+                {u ? <img src={u} loading="lazy" decoding="async" alt="" /> : <div class="noimg"><Icon name="bird" size={26} /></div>}
                 <span class="gl">{short}</span>
                 <span class="n">{n}</span>
               </button>
@@ -133,7 +135,7 @@ export function IdGuideView() {
           const u = imgUrl(b);
           return (
             <a class={'tile' + (seen.has(b.id) ? ' seen' : '')} href={href('species/' + b.id)} key={b.id} title={name2(b)}>
-              {u ? <img src={u} loading="lazy" decoding="async" alt="" /> : <div class="noimg">🐦</div>}
+              {u ? <img src={u} loading="lazy" decoding="async" alt="" /> : <div class="noimg"><Icon name="bird" size={26} /></div>}
               <div class="t">{name(b)}</div>
             </a>
           );

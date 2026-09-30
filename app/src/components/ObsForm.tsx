@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'preact/hooks';
 import type { Observation, Species } from '../types';
 import { species, byId, name, name2, addObservation, updateObservation, deleteObservation } from '../data';
 import { downscalePhoto, matches, slug } from '../util';
+import { Icon } from './Icon';
 
 type Extra = NonNullable<Observation['extra']>;
 interface Props { speciesId?: string; obs?: Observation; extra?: Extra; note?: string; onSaved?: () => void; onClose: () => void }
@@ -110,7 +111,7 @@ export function ObsForm({ speciesId, obs, extra: extraProp, note: noteProp, onSa
           <div class={'gps ' + gps}>
             <span class="dot" />
             <span style="flex:1">{lat != null && lon != null ? `${lat.toFixed(5)}, ${lon.toFixed(5)} · ` : ''}{gpsMsg || (lat != null ? 'position saved' : 'no position')}</span>
-            <button class="btn sm secondary" onClick={startGps}>{gps === 'wait' ? '…' : '↻ GPS'}</button>
+            <button class="btn sm secondary" onClick={startGps}>{gps === 'wait' ? '…' : <><Icon name="locate-fixed" size={14} />GPS</>}</button>
           </div>
         </div>
 
@@ -124,7 +125,7 @@ export function ObsForm({ speciesId, obs, extra: extraProp, note: noteProp, onSa
         <div class="field">
           <label>Photo</label>
           <div class="row">
-            <label class="btn sm secondary" style="flex:none">📷 Take / choose<input type="file" accept="image/*" capture="environment" style="display:none" onChange={onPhoto} /></label>
+            <label class="btn sm secondary" style="flex:none"><Icon name="camera" size={16} />Take / choose<input type="file" accept="image/*" capture="environment" style="display:none" onChange={onPhoto} /></label>
             {photo && <button class="btn sm danger" onClick={() => setPhoto(null)}>remove</button>}
           </div>
           {previewUrl && <img class="photo-prev" src={previewUrl} alt="" />}

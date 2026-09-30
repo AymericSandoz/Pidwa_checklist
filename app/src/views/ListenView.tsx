@@ -4,6 +4,7 @@ import { href } from '../router';
 import { ObsForm } from '../components/ObsForm';
 import { listening } from './ListenLazy';
 import { soundIdGrade } from '../util';
+import { Icon } from '../components/Icon';
 import * as sid from '../soundid/engine';
 import type { Detection, Sensitivity } from '../soundid/engine';
 
@@ -12,6 +13,15 @@ const SENS: [Sensitivity, string][] = [['low', 'strict'], ['normal', 'normal'], 
 const NOW_MS = 4000; // a species heard less than 4 s ago is shown as "singing now"
 const KIND: Record<string, string> = { list: 'checklist', region: 'region', impossible: 'not from here', other: '' };
 const onOff = (v: boolean | null) => (v == null ? '?' : v ? 'ON' : 'off');
+
+// spectrogram colours: bush black -> deep green -> Askari green -> pale yellow
+const RAMP: [number, number[]][] = [[0, [16, 24, 15]], [0.35, [21, 100, 52]], [0.7, [45, 184, 99]], [1, [232, 242, 130]]];
+function heat(t: number) {
+  let i = 0;
+  while (i < RAMP.length - 2 && t > RAMP[i + 1][0]) i++;
+  const [a, ca] = RAMP[i], [b, cb] = RAMP[i + 1], k = Math.min(1, Math.max(0, (t - a) / (b - a)));
+  return `rgb(${ca.map((v, j) => Math.round(v + (cb[j] - v) * k)).join(',')})`;
+}
 
 function Spectrogram() {
   const ref = useRef<HTMLCanvasElement>(null);
@@ -30,8 +40,7 @@ function Spectrogram() {
       const top = Math.floor(bins.length * (12000 / 24000));
       for (let y = 0; y < H; y++) {
         const v = bins[Math.floor(((H - 1 - y) / H) * top)] / 255;
-        const c = Math.pow(v, 1.5);
-        g.fillStyle = `rgb(${Math.round(20 + 235 * c)},${Math.round(30 + 190 * Math.sqrt(c))},${Math.round(20 + 60 * (1 - c))})`;
+        g.fillStyle = heat(Math.pow(v, 1.5));
         g.fillRect(W - 2, y, 2, 1);
       }
     };
@@ -78,7 +87,7 @@ export function ListenView() {
     <div class="listen">
       <div class="card lcard">
         <button class={'mic' + (st === 'listening' ? ' on' : '')} disabled={st === 'loading'} onClick={toggle} aria-label={st === 'listening' ? 'Stop listening' : 'Start listening'}>
-          {st === 'listening' ? '■' : '🎤'}
+          <Icon name={st === 'listening' ? 'square' : 'mic'} size={30} />
         </button>
         <div class="lstatus">
           {st === 'loading' && inPack !== null && inPack < 18 && <div class="small" style="margin-bottom:4px">The model is being fetched from the network (60 MB), this can take minutes. <a href={href('settings')}><b>Download the Sound ID pack in Settings</b></a> once and it starts in seconds, even offline.</div>}
@@ -113,7 +122,7 @@ export function ListenView() {
           const n = s ? seen.get(s.id) || 0 : 0;
           const body = (
             <>
-              {u ? <img class="thumb" src={u} loading="lazy" alt="" /> : <div class="thumb">🐦</div>}
+              {u ? <img class="thumb" src={u} loading="lazy" alt="" /> : <div class="thumb"><Icon name="bird" size={22} /></div>}
               <div class="names">
                 <div class="fr">{d.en}</div>
                 <div class="en">{d.fr}{d.fr ? ' · ' : ''}<i>{d.sci}</i></div>
