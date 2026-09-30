@@ -5,7 +5,7 @@ import { downscalePhoto, matches, slug } from '../util';
 import { Icon } from './Icon';
 
 type Extra = NonNullable<Observation['extra']>;
-interface Props { speciesId?: string; obs?: Observation; extra?: Extra; note?: string; onSaved?: () => void; onClose: () => void }
+interface Props { speciesId?: string; obs?: Observation; extra?: Extra; note?: string; /** position already known (logging from a place on the map) */ at?: { lat: number; lon: number }; onSaved?: () => void; onClose: () => void }
 
 function toLocalInput(ts: number) {
   const d = new Date(ts);
@@ -13,17 +13,17 @@ function toLocalInput(ts: number) {
   return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}T${p(d.getHours())}:${p(d.getMinutes())}`;
 }
 
-export function ObsForm({ speciesId, obs, extra: extraProp, note: noteProp, onSaved, onClose }: Props) {
+export function ObsForm({ speciesId, obs, extra: extraProp, note: noteProp, at, onSaved, onClose }: Props) {
   const editing = !!obs;
   const extra: Extra | null = obs?.extra ?? extraProp ?? null;
   const [spId, setSpId] = useState<string | null>(obs?.speciesId ?? speciesId ?? (extra ? 'x:' + slug(extra.sci) : null));
   const [q, setQ] = useState('');
   const [when, setWhen] = useState(toLocalInput(obs?.ts ?? Date.now()));
-  const [lat, setLat] = useState<number | null>(obs?.lat ?? null);
-  const [lon, setLon] = useState<number | null>(obs?.lon ?? null);
+  const [lat, setLat] = useState<number | null>(obs?.lat ?? at?.lat ?? null);
+  const [lon, setLon] = useState<number | null>(obs?.lon ?? at?.lon ?? null);
   const [acc, setAcc] = useState<number | null>(obs?.acc ?? null);
-  const [gps, setGps] = useState<'idle' | 'wait' | 'ok' | 'coarse' | 'bad'>(editing && obs?.lat != null ? 'ok' : 'idle');
-  const [gpsMsg, setGpsMsg] = useState('');
+  const [gps, setGps] = useState<'idle' | 'wait' | 'ok' | 'coarse' | 'bad'>((editing && obs?.lat != null) || at ? 'ok' : 'idle');
+  const [gpsMsg, setGpsMsg] = useState(at ? 'position of the place' : '');
   const [count, setCount] = useState(obs?.count ?? 1);
   const [note, setNote] = useState(obs?.note ?? noteProp ?? '');
   const [photo, setPhoto] = useState<Blob | null>(obs?.photo ?? null);
@@ -51,7 +51,7 @@ export function ObsForm({ speciesId, obs, extra: extraProp, note: noteProp, onSa
     if (watchId.current != null) { navigator.geolocation.clearWatch(watchId.current); watchId.current = null; }
   }
   useEffect(() => {
-    if (!editing) startGps();
+    if (!editing && !at) startGps();
     return () => stopGps();
   }, []);
   useEffect(() => {

@@ -92,7 +92,7 @@ h1, h2, h3 { margin: 0; }
 .btn.sm { padding: 6px 12px; font-size: 13px; border-radius: 10px; }
 .btn:disabled { opacity: .5; }
 .btn.block { width: 100%; }
-.chip { display: inline-flex; align-items: center; border: 1px solid var(--line); background: var(--card); color: var(--muted); border-radius: 999px; padding: 6px 13px; font-size: 13px; font-weight: 700; margin: 0 7px 7px 0; }
+.chip { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--line); background: var(--card); color: var(--muted); border-radius: 999px; padding: 6px 13px; font-size: 13px; font-weight: 700; margin: 0 7px 7px 0; }
 .chip.on { background: var(--green-light); border-color: var(--green); color: var(--green-ink); }
 .chips { display: flex; flex-wrap: wrap; }
 .search { width: 100%; padding: 11px 14px; border: 1px solid var(--line); border-radius: 14px; background: var(--card); font-size: 16px; }
@@ -199,6 +199,7 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 12px 0; }
 .modal h2 { font-size: 20px; font-weight: 800; letter-spacing: -.3px; margin-bottom: 12px; }
 .field { margin-bottom: 12px; min-width: 0; }
 .field label { display: block; font-size: 10.5px; font-weight: 700; letter-spacing: .9px; text-transform: uppercase; color: var(--muted); margin-bottom: 5px; }
+.field label .opt { text-transform: none; letter-spacing: 0; font-weight: 500; }
 .field label.btn { font-size: 13px; letter-spacing: 0; text-transform: none; color: var(--green-ink); margin: 0; display: inline-flex; }
 .field input[type=text], .field input[type=number], .field input[type=datetime-local], .field textarea, .field select { width: 100%; padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; font-size: 16px; background: var(--bg); }
 .field input:focus, .field textarea:focus { outline: 0; border-color: var(--green); }
@@ -244,7 +245,7 @@ details.filters summary { font-weight: 700; padding: 8px 0; cursor: pointer; }
 details summary { cursor: pointer; }
 
 /* ---- map ---- */
-.mapwrap { position: fixed; inset: 0; bottom: calc(var(--nav-h) + env(safe-area-inset-bottom)); }
+.mapwrap { position: fixed; inset: 0; bottom: calc(var(--nav-h) + env(safe-area-inset-bottom)); z-index: 30; /* above the navigation bar, so that its forms cover the whole screen */ }
 /* maplibre's own stylesheet sets .maplibregl-map { position: relative }, which would collapse the height: force ours */
 .mapwrap .map { position: absolute !important; inset: 0; width: 100%; height: 100%; font: inherit; }
 .mapmsg { position: absolute; inset: 0; display: grid; place-items: center; text-align: center; padding: 20px; background: var(--bg); }
@@ -310,6 +311,7 @@ details summary { cursor: pointer; }
 .mapwrap .maplibregl-ctrl-scale { background: #0c0e0b99; color: #fff; border: 1.5px solid #fff; border-top: 0; border-radius: 0 0 4px 4px; font: 700 10.5px/1.5 inherit; font-family: inherit; }
 .mapwrap .maplibregl-ctrl-attrib.maplibregl-compact { font-family: inherit; font-size: 11px; }
 /* card shown when a marker is tapped */
+.mapwrap .maplibregl-popup { z-index: 8; } /* above the chips, the search and the buttons */
 .mapwrap .maplibregl-popup-content { font-family: inherit; border-radius: 16px; background: var(--card); color: var(--text); padding: 8px 14px 8px 8px; box-shadow: 0 6px 20px #0007; }
 .mapwrap .maplibregl-popup-anchor-bottom .maplibregl-popup-tip { border-top-color: var(--card); }
 .mapwrap .maplibregl-popup-anchor-top .maplibregl-popup-tip { border-bottom-color: var(--card); }
@@ -322,9 +324,30 @@ details summary { cursor: pointer; }
 .pop b { font-size: 15px; font-weight: 800; line-height: 1.2; }
 .pop span { font-size: 12.5px; color: var(--muted); }
 .pop a { font-size: 13px; font-weight: 700; color: var(--green-ink); margin-top: 2px; }
-/* fixed places on the map (camp) */
-.place { width: 28px; height: 28px; border-radius: 50%; background: #209d50; color: #fff; border: 2px solid #fff; display: grid; place-items: center; box-shadow: 0 1px 4px #0008; position: relative; margin-bottom: 6px; }
-.place::after { content: ''; position: absolute; left: 50%; bottom: -7px; margin-left: -5px; border: 5px solid transparent; border-bottom: 0; border-top-color: #fff; }
+/* places of your own: dark rounded square with the icon of the kind, the name beneath from a middle zoom on */
+.plm { position: relative; width: 32px; height: 32px; cursor: pointer; }
+.plm b { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 10px; background: #1d231c; color: #fff; border: 2px solid #fff; box-shadow: 0 2px 6px #000c; }
+.plm span { position: absolute; top: 34px; left: 50%; transform: translateX(-50%); font-size: 11.5px; font-weight: 800; color: #fff; text-shadow: 0 0 3px #000, 0 1px 2px #000, 0 0 6px #000; white-space: nowrap; letter-spacing: .1px; pointer-events: none; }
+.mapwrap:not(.lbl) .plm span { display: none; }
+.dropped { color: #209d50; filter: drop-shadow(0 2px 3px #000c); }
+.dropped svg { fill: #fff; display: block; }
+.mapbanner { position: absolute; top: calc(10px + env(safe-area-inset-top)); left: 10px; right: 62px; z-index: 6; display: flex; align-items: center; gap: 9px; background: var(--text); color: var(--bg); border-radius: 22px; padding: 8px 8px 8px 14px; font-size: 13.5px; font-weight: 600; box-shadow: 0 1px 4px #0006; }
+.mapbanner span { flex: 1; min-width: 0; }
+.mapbanner b { font-weight: 800; }
+.mapbanner button { border: 0; border-radius: 999px; background: var(--bg); color: var(--text); font-size: 13px; font-weight: 800; padding: 7px 12px; }
+/* card of a place, inside a map popup */
+.pcard { width: 246px; padding: 4px 0 2px 4px; }
+.pch { display: flex; align-items: center; gap: 10px; }
+.pch .pi { flex: none; width: 40px; height: 40px; border-radius: 12px; background: var(--text); color: var(--bg); display: grid; place-items: center; }
+.pch div { display: flex; flex-direction: column; min-width: 0; }
+.pch div b { font-size: 17px; font-weight: 800; line-height: 1.1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pch div span { font-size: 12.5px; color: var(--muted); }
+.pcard p { margin: 10px 0 0; font-size: 14px; line-height: 1.4; }
+.pcard .dist { display: flex; align-items: center; gap: 6px; margin-top: 10px; font-size: 13.5px; color: var(--muted); }
+.pcard .dist b { color: var(--green-ink); font-weight: 800; }
+.pacts { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+.pacts button { display: inline-flex; align-items: center; gap: 5px; border: 0; font-size: 12.5px; font-weight: 800; color: var(--green-ink); background: var(--green-light); border-radius: 10px; padding: 8px 9px; }
+.pacts .del { color: var(--danger); background: var(--danger-soft); margin-left: auto; }
 
 /* ---- stats ---- */
 .stat { display: flex; justify-content: space-between; gap: 10px; padding: 7px 0; border-bottom: 1px solid var(--line); font-size: 14.5px; }

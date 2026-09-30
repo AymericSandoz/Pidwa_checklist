@@ -1,22 +1,27 @@
+import { render } from 'preact';
 import { useEffect, useRef, useState } from 'preact/hooks';
 import { signal } from '@preact/signals';
 import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
-import { observations, obsInfo, dataUrl, byId, imgUrl, thumbUrl } from '../data';
+import { observations, obsInfo, dataUrl, byId, imgUrl, thumbUrl, places, updatePlace, deletePlace } from '../data';
 import { href } from '../router';
-import { fmtDate, fmtTime, norm } from '../util';
+import { fmtDate, fmtDay, fmtTime, norm } from '../util';
 import { BIG5_IDS, familyEn } from '../taxa';
+import { placeType, distanceTo, fmtDistance } from '../places';
 import { Icon, iconHtml } from '../components/Icon';
-import type { Observation } from '../types';
+import { PlaceForm } from '../components/PlaceForm';
+import { ObsForm } from '../components/ObsForm';
+import type { Observation, Place } from '../types';
 
 // Satellite-only map (Sentinel-2 cloudless, EOX). Tiles: z8–14 over the whole area, z15 over the reserve itself.
 const BBOX = { west: 30.4, south: -24.35, east: 30.9, north: -23.9 };
 const INNER = { west: 30.5, south: -24.25, east: 30.82, north: -23.98 };
-// fixed places shown on the map: [label, lon, lat]
-const PLACES: [string, number, number][] = [['Askari Camp', 30.55897, -24.0648]];
 const bounds = (b: typeof BBOX) => [b.west, b.south, b.east, b.north] as [number, number, number, number];
 // Zoomed out, observations are small dots; from this zoom on they become round photos (grouped when they overlap).
 const PHOTO_ZOOM = 12.5;
+// Names of places are written from this zoom on (icons only when the whole reserve is in view)
+const LABEL_ZOOM = 11.5;
+const LONG_PRESS_MS = 550;
 
 function makeStyle(): maplibregl.StyleSpecification {
   const tiles = [location.origin + dataUrl('map/sat/{z}/{x}/{y}.jpg')];
@@ -143,6 +148,26 @@ function ensureIcon(map: maplibregl.Map, id: string) {
   } catch { /* map closed meanwhile */ }
 }
 
+type LatLon = { lat: number; lon: number };
+/** Card shown when a place is tapped: note, distance and direction from you, actions. */
+function PlaceCard({ place: p, here, onObs, onEdit, onMove, onDelete }: { place: Place; here: LatLon | null; onObs: () => void; onEdit: () => void; onMove: () => void; onDelete: () => void }) {
+  const [, label, icon] = placeType(p.type);
+  const d = here ? distanceTo(here.lat, here.lon, p.lat, p.lon) : null;
+  return (
+    <div class="pcard">
+      <div class="pch"><b class="pi"><Icon name={icon} size={18} stroke={2.2} /></b><div><b>{p.name}</b><span>{label} · added {fmtDay(p.ts)}</span></div></div>
+      {p.note && <p>{p.note}</p>}
+      {d && <div class="dist"><Icon name="navigation" size={15} stroke={2.2} /><b>{fmtDistance(d.m)}</b> {d.dir} of you</div>}
+      <div class="pacts">
+        <button onClick={onObs}><Icon name="plus" size={15} stroke={2.6} />Observation here</button>
+        <button onClick={onEdit}><Icon name="pencil" size={15} stroke={2.2} />Edit</button>
+        <button onClick={onMove}><Icon name="move" size={15} stroke={2.2} />Move</button>
+        <button class="del" onClick={onDelete} aria-label="Remove this place"><Icon name="trash-2" size={15} stroke={2.2} /></button>
+      </div>
+    </div>
+  );
+}
+
 export function MapView() {
   const el = useRef<HTMLDivElement>(null);
   const strip = useRef<HTMLDivElement>(null);
@@ -152,6 +177,15 @@ export function MapView() {
   const [err, setErr] = useState('');
   const [outside, setOutside] = useState(false);
   const [q, setQ] = useState('');
+  // places of your own
+  const [placeForm, setPlaceForm] = useState<{ place?: Place; lat: number; lon: number } | null>(null);
+  const [obsAt, setObsAt] = useState<(LatLon & { name: string }) | null>(null);
+  const [moving, setMoving] = useState<Place | null>(null);
+  const movingRef = useRef<Place | null>(null);
+  const [here, setHere] = useState<LatLon | null>(null);
+  const markers = useRef(new Map<number, maplibregl.Marker>());
+  const drop = useRef<maplibregl.Marker | null>(null); // the pin dropped by a long press, while its form is open
+  const showPlace = useRef<(id: number) => void>(() => {});
 
   const all = rows();
   const shown = all.filter((r) => pass(r));
@@ -198,19 +232,45 @@ export function MapView() {
         map.once('load', () => navigator.permissions?.query({ name: 'geolocation' }).then((p) => { if (p.state === 'granted') geo.trigger(); }).catch(() => {}));
         geo.on('geolocate', (e: any) => {
           const c = e?.coords;
-          if (c) setOutside(c.longitude < BBOX.west || c.longitude > BBOX.east || c.latitude < BBOX.south || c.latitude > BBOX.north);
+          if (c) { setHere({ lat: c.latitude, lon: c.longitude }); setOutside(c.longitude < BBOX.west || c.longitude > BBOX.east || c.latitude < BBOX.south || c.latitude > BBOX.north); }
         });
         geo.on('error', () => setOutside(false));
         map.addControl(new maplibregl.ScaleControl({ unit: 'metric' }), 'bottom-left');
         map.on('error', (e) => { if (import.meta.env.DEV) console.debug(e.error?.message); });
         map.on('styleimagemissing', (e) => ensureIcon(map!, e.id));
-        for (const [label, lon, lat] of PLACES) {
-          const pin = document.createElement('div');
-          pin.className = 'place';
-          pin.innerHTML = iconHtml('tent', 15, 2.2);
-          pin.title = label;
-          new maplibregl.Marker({ element: pin, anchor: 'bottom' }).setLngLat([lon, lat]).addTo(map);
-        }
+        // names of places only from a middle zoom on
+        const labels = () => el.current?.parentElement?.classList.toggle('lbl', map!.getZoom() >= LABEL_ZOOM);
+        map.on('zoom', labels); labels();
+        // a long press drops a pin and opens the form of a new place
+        const cc = map.getCanvasContainer();
+        let press: { x: number; y: number; t: number } | null = null;
+        const cancel = () => { if (press) { clearTimeout(press.t); press = null; } };
+        cc.addEventListener('pointerdown', (e) => {
+          cancel();
+          if (!e.isPrimary || movingRef.current) return;
+          const x = e.clientX, y = e.clientY;
+          press = { x, y, t: window.setTimeout(() => {
+            press = null;
+            const r = cc.getBoundingClientRect();
+            const ll = map!.unproject([x - r.left, y - r.top]);
+            navigator.vibrate?.(30);
+            drop.current?.remove();
+            const pin = document.createElement('div'); pin.className = 'dropped'; pin.innerHTML = iconHtml('map-pin', 34, 2);
+            drop.current = new maplibregl.Marker({ element: pin, anchor: 'bottom' }).setLngLat(ll).addTo(map!);
+            setPlaceForm({ lat: ll.lat, lon: ll.lng });
+          }, LONG_PRESS_MS) };
+        });
+        cc.addEventListener('pointermove', (e) => { if (press && Math.hypot(e.clientX - press.x, e.clientY - press.y) > 8) cancel(); });
+        cc.addEventListener('pointerup', cancel);
+        cc.addEventListener('pointercancel', cancel);
+        cc.addEventListener('contextmenu', (e) => e.preventDefault());
+        map.on('move', cancel);
+        // while moving a place, a tap on the map is its new spot
+        map.on('click', (e) => {
+          const p = movingRef.current; if (!p) return;
+          movingRef.current = null; setMoving(null);
+          updatePlace(p.id!, { lat: e.lngLat.lat, lon: e.lngLat.lng });
+        });
         map.on('load', () => {
           map!.addSource('reserve', { type: 'geojson', data: reserve });
           map!.addLayer({ id: 'reserve-line', type: 'line', source: 'reserve', paint: { 'line-color': '#ffd54f', 'line-width': 2, 'line-dasharray': [3, 2] } });
@@ -242,7 +302,7 @@ export function MapView() {
           });
           for (const [layer, offset] of [['obs-pt', 12], ['obs-photo', 26]] as [string, number][]) {
             map!.on('click', layer, (e) => {
-              const f = e.features?.[0]; if (!f) return;
+              const f = e.features?.[0]; if (!f || movingRef.current) return;
               popup.current?.remove();
               popup.current = new maplibregl.Popup({ offset, closeButton: false, maxWidth: '264px' }).setLngLat((f.geometry as any).coordinates).setHTML(popupHtml(f.properties)).addTo(map!);
             });
@@ -274,6 +334,45 @@ export function MapView() {
     (m.getSource('obs-c') as maplibregl.GeoJSONSource | undefined)?.setData(data);
   }, [key, state]);
 
+  // one marker per place; the card opens on tap
+  useEffect(() => {
+    const m = mapRef.current; if (!m || state !== 'ok') return;
+    const seen = new Set<number>();
+    for (const p of places.value) {
+      const id = p.id!;
+      seen.add(id);
+      let mk = markers.current.get(id);
+      if (!mk) {
+        const e = document.createElement('div');
+        e.className = 'plm';
+        e.addEventListener('click', (ev) => { ev.stopPropagation(); showPlace.current(id); });
+        mk = new maplibregl.Marker({ element: e, anchor: 'center' }).setLngLat([p.lon, p.lat]).addTo(m);
+        markers.current.set(id, mk);
+      } else mk.setLngLat([p.lon, p.lat]);
+      const [, , icon] = placeType(p.type);
+      mk.getElement().innerHTML = `<b>${iconHtml(icon, 16, 2.2)}</b><span>${esc(p.name)}</span>`;
+      mk.getElement().title = p.name;
+    }
+    for (const [id, mk] of markers.current) if (!seen.has(id)) { mk.remove(); markers.current.delete(id); }
+  }, [places.value, state]);
+  useEffect(() => { if (!placeForm) { drop.current?.remove(); drop.current = null; } }, [placeForm]);
+  showPlace.current = (id: number) => {
+    const m = mapRef.current; const p = places.value.find((x) => x.id === id);
+    if (!m || !p || movingRef.current) return;
+    popup.current?.remove();
+    const close = () => popup.current?.remove();
+    const div = document.createElement('div');
+    render(<PlaceCard place={p} here={here}
+      onObs={() => { close(); setObsAt({ lat: p.lat, lon: p.lon, name: p.name }); }}
+      onEdit={() => { close(); setPlaceForm({ place: p, lat: p.lat, lon: p.lon }); }}
+      onMove={() => { close(); movingRef.current = p; setMoving(p); }}
+      onDelete={() => { if (confirm(`Remove "${p.name}" from the map?`)) { close(); deletePlace(id); } }} />, div);
+    popup.current = new maplibregl.Popup({ offset: 24, closeButton: false, maxWidth: '300px' }).setLngLat([p.lon, p.lat]).setDOMContent(div).addTo(m);
+    // a place near the top of the screen would have its card under the search bar: bring it down a little
+    const pt = m.project([p.lon, p.lat]);
+    if (pt.y < 280) m.panBy([0, pt.y - 320], { duration: 300 });
+  };
+
   // picking a species or a family zooms onto its observations, and brings its photo into view in the strip
   useEffect(() => {
     const m = mapRef.current; if (!m || state !== 'ok' || !shown.length || !(fam.value || sp.value)) return;
@@ -301,7 +400,7 @@ export function MapView() {
   return (
     <div class="mapwrap" style={`--strip-h:${stripH}px`}>
       <div class="map" ref={el} />
-      {state === 'ok' && (
+      {state === 'ok' && !moving && (
         <div class="mapbar">
           <label class={'mfind' + (searching ? ' open' : '')}>
             <Icon name="search" size={18} />
@@ -359,7 +458,12 @@ export function MapView() {
           </div>
         </div>
       )}
-      {state === 'ok' && outside && <div class="mapnote">You are outside the mapped area (Makalali / Pidwa).</div>}
+      {state === 'ok' && outside && !moving && <div class="mapnote">You are outside the mapped area (Makalali / Pidwa).</div>}
+      {moving && (
+        <div class="mapbanner"><Icon name="move" size={18} stroke={2.2} /><span>Tap the new spot for <b>{moving.name}</b></span><button onClick={() => { movingRef.current = null; setMoving(null); }}>Cancel</button></div>
+      )}
+      {placeForm && <PlaceForm place={placeForm.place} lat={placeForm.lat} lon={placeForm.lon} onClose={() => setPlaceForm(null)} />}
+      {obsAt && <ObsForm at={obsAt} note={`At ${obsAt.name}`} onClose={() => setObsAt(null)} />}
       {state === 'nopack' && <div class="mapmsg"><div><p>The map pack is not downloaded (or no network).</p><a class="btn" href={href('settings')}>Go to settings</a></div></div>}
       {state === 'error' && <div class="mapmsg"><div><p>Map error</p><pre>{err}</pre></div></div>}
     </div>

@@ -50,7 +50,7 @@ npm run deploy     # optionnel : chaque push sur main déploie automatiquement (
 
 Base path : `/Pidwa_checklist/` par défaut (GitHub Pages), `VITE_BASE=/ npm run build` pour un hébergement à la racine.
 
-Hors ligne : le service worker précache l'app, `species.json` et les photos à l'installation. Les sons, la carte et le satellite sont des packs que l'on télécharge depuis l'écran Réglages (mis en cache par nom : `pack-sounds`, `pack-map`, `pack-sat`). Les observations sont dans IndexedDB (`pidwa` / `observations`), photos incluses.
+Hors ligne : le service worker précache l'app, `species.json` et les photos à l'installation. Les sons, la carte et le satellite sont des packs que l'on télécharge depuis l'écran Réglages (mis en cache par nom : `pack-sounds`, `pack-map`, `pack-sat`). Les observations sont dans IndexedDB (`pidwa` / `observations`), photos incluses ; les lieux ajoutés sur la carte dans `pidwa` / `places`.
 
 ## Reconnaissance par le son
 

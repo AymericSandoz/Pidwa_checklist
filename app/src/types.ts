@@ -39,5 +39,16 @@ export interface Observation {
   extra?: { sci: string; en: string; fr: string | null } | null;
 }
 
+/** A place of your own on the map (water hole, gate, hide…). Stays on the phone, like the observations. */
+export interface Place {
+  id?: number;
+  name: string;
+  type: string;      // key of PLACE_TYPES in places.ts
+  lat: number;
+  lon: number;
+  note: string;
+  ts: number;        // when it was added, epoch ms
+}
+
 export interface PackFile { path: string; bytes: number }
 export interface Packs { [name: string]: { files: PackFile[]; bytes: number } }

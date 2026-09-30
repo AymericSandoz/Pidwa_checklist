@@ -1,6 +1,6 @@
 import { signal, computed } from '@preact/signals';
 import { db } from './db';
-import type { Species, Observation, Group } from './types';
+import type { Species, Observation, Group, Place } from './types';
 
 export const BASE = import.meta.env.BASE_URL; // e.g. "/Pidwa_checklist/"
 export const dataUrl = (rel: string) => BASE + 'data/' + rel;
@@ -11,6 +11,7 @@ export const loadError = signal<string | null>(null);
 export const byId = computed(() => new Map(species.value.map((s) => [s.id, s])));
 
 export const observations = signal<Observation[]>([]);
+export const places = signal<Place[]>([]);
 
 export async function loadAll() {
   try {
@@ -21,6 +22,7 @@ export async function loadAll() {
     list.sort((a, b) => coll.compare(a.en, b.en));
     species.value = list;
     await reloadObservations();
+    await reloadPlaces();
     loaded.value = true;
   } catch (e: any) {
     loadError.value = e.message || String(e);
@@ -30,6 +32,19 @@ export async function loadAll() {
 export async function reloadObservations() {
   observations.value = await db.observations.orderBy('ts').reverse().toArray();
 }
+
+export async function reloadPlaces() {
+  places.value = await db.places.orderBy('ts').toArray();
+  // the camp is the first place; added once, so that it can be renamed or removed like any other
+  if (places.value.length === 0 && !localStorage.getItem('camp-seeded')) {
+    localStorage.setItem('camp-seeded', '1');
+    await db.places.add({ name: 'Askari Camp', type: 'camp', lat: -24.0648, lon: 30.55897, note: '', ts: Date.now() });
+    places.value = await db.places.orderBy('ts').toArray();
+  }
+}
+export async function addPlace(p: Place) { const id = await db.places.add(p); await reloadPlaces(); return id; }
+export async function updatePlace(id: number, patch: Partial<Place>) { await db.places.update(id, patch); await reloadPlaces(); }
+export async function deletePlace(id: number) { await db.places.delete(id); await reloadPlaces(); }
 
 export async function addObservation(o: Observation) {
   const id = await db.observations.add(o);

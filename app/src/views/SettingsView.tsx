@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'preact/hooks';
-import { dataUrl, observations, obsInfo, reloadObservations } from '../data';
+import { dataUrl, observations, obsInfo, reloadObservations, places, reloadPlaces } from '../data';
 import { db } from '../db';
 import { fmtBytes } from '../util';
 import { theme, setTheme, type Theme } from '../theme';
 import { Icon } from '../components/Icon';
-import type { Packs, Observation } from '../types';
+import type { Packs, Observation, Place } from '../types';
 
 const PACK_LABEL: Record<string, string> = { sounds: 'Bird sounds (xeno-canto)', sat: 'Reserve map (satellite, Sentinel-2)', birdnet: 'Sound ID model (BirdNET)' };
 const cacheName = (p: string) => 'pack-' + p;
@@ -74,7 +74,7 @@ export function SettingsView() {
   const stamp = () => new Date().toISOString().slice(0, 10);
   function exportJson() {
     const rows = observations.value.map(({ photo, ...o }) => o);
-    dl(`pidwa-observations-${stamp()}.json`, JSON.stringify(rows, null, 1), 'application/json');
+    dl(`pidwa-observations-${stamp()}.json`, JSON.stringify({ observations: rows, places: places.value }, null, 1), 'application/json');
   }
   function exportCsv() {
     const esc = (v: any) => `"${String(v ?? '').replace(/"/g, '""')}"`;
@@ -85,19 +85,27 @@ export function SettingsView() {
   function exportGpx() {
     const esc = (v: string) => v.replace(/[<>&]/g, (c) => ({ '<': '&lt;', '>': '&gt;', '&': '&amp;' }[c]!));
     const wpts = observations.value.filter((o) => o.lat != null && o.lon != null).map((o) => { const s = obsInfo(o); return `<wpt lat="${o.lat}" lon="${o.lon}"><time>${new Date(o.ts).toISOString()}</time><name>${esc(s.en)}</name><desc>${esc(s.sci + (o.note ? ' - ' + o.note : ''))}</desc></wpt>`; });
+    for (const p of places.value) wpts.push(`<wpt lat="${p.lat}" lon="${p.lon}"><time>${new Date(p.ts).toISOString()}</time><name>${esc(p.name)}</name><desc>${esc(p.note)}</desc><type>place: ${esc(p.type)}</type></wpt>`);
     dl(`pidwa-observations-${stamp()}.gpx`, `<?xml version="1.0" encoding="UTF-8"?>\n<gpx version="1.1" creator="Askari" xmlns="http://www.topografix.com/GPX/1/1">\n${wpts.join('\n')}\n</gpx>`, 'application/gpx+xml');
   }
   async function importJson(e: Event) {
     const f = (e.target as HTMLInputElement).files?.[0]; if (!f) return;
     try {
-      const rows = JSON.parse(await f.text()) as Observation[];
+      const parsed = JSON.parse(await f.text());
+      // older exports were a plain list of observations
+      const rows = (Array.isArray(parsed) ? parsed : parsed.observations || []) as Observation[];
+      const placeRows = (Array.isArray(parsed) ? [] : parsed.places || []) as Place[];
       const existing = await db.observations.toArray();
       const key = (o: Observation) => `${o.speciesId}|${o.ts}`;
       const have = new Set(existing.map(key));
       const add = rows.filter((o) => o.speciesId && o.ts && !have.has(key(o))).map(({ id, ...o }) => ({ ...o, count: o.count || 1, note: o.note || '', lat: o.lat ?? null, lon: o.lon ?? null, acc: o.acc ?? null }));
       await db.observations.bulkAdd(add);
       await reloadObservations();
-      setMsg(`${add.length} observation(s) imported, ${rows.length - add.length} already present.`);
+      const havePlaces = new Set((await db.places.toArray()).map((p) => `${p.name}|${p.lat}|${p.lon}`));
+      const addPlaces = placeRows.filter((p) => p.name && p.lat != null && p.lon != null && !havePlaces.has(`${p.name}|${p.lat}|${p.lon}`)).map(({ id, ...p }) => ({ ...p, type: p.type || 'other', note: p.note || '', ts: p.ts || Date.now() }));
+      await db.places.bulkAdd(addPlaces);
+      await reloadPlaces();
+      setMsg(`${add.length} observation(s) and ${addPlaces.length} place(s) imported, ${rows.length - add.length} observation(s) already present.`);
     } catch (err: any) { setMsg('Import failed: ' + err.message); }
   }
 
@@ -140,7 +148,7 @@ export function SettingsView() {
 
       <div class="card">
         <b>Backup of observations</b>
-        <p class="muted small" style="margin:4px 0 8px">{observations.value.length} observation(s). Photos stay on the phone, the export does not include them.</p>
+        <p class="muted small" style="margin:4px 0 8px">{observations.value.length} observation(s) and {places.value.length} place(s) on the map. Photos stay on the phone, the export does not include them.</p>
         <div class="actions">
           <button class="btn secondary" onClick={exportJson}>JSON</button>
           <button class="btn secondary" onClick={exportCsv}>CSV</button>
