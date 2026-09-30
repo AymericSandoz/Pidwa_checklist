@@ -246,29 +246,50 @@ details summary { cursor: pointer; }
 /* ---- map ---- */
 .mapwrap { position: fixed; inset: 0; bottom: calc(var(--nav-h) + env(safe-area-inset-bottom)); }
 /* maplibre's own stylesheet sets .maplibregl-map { position: relative }, which would collapse the height: force ours */
-.mapwrap .map { position: absolute !important; inset: 0; width: 100%; height: 100%; }
-.mapbtns { position: absolute; top: calc(10px + env(safe-area-inset-top)); left: 10px; z-index: 5; display: flex; flex-direction: column; gap: 6px; }
-.mapbtns button { background: var(--card); border: 0; border-radius: 10px; padding: 8px 10px; font-size: 13px; font-weight: 700; box-shadow: 0 1px 4px #0003; }
-.mapbtns button.on { background: var(--green); color: var(--on-green); }
+.mapwrap .map { position: absolute !important; inset: 0; width: 100%; height: 100%; font: inherit; }
 .mapmsg { position: absolute; inset: 0; display: grid; place-items: center; text-align: center; padding: 20px; background: var(--bg); }
-.mapnote { position: absolute; left: 10px; right: 10px; bottom: 40px; z-index: 5; background: var(--amber-soft); color: var(--amber); border-radius: 12px; padding: 8px 12px; font-size: 13px; font-weight: 600; }
-.maplibregl-popup-content { font-family: inherit; font-size: 13.5px; border-radius: 12px; background: var(--card); color: var(--text); padding: 10px 12px; }
-.maplibregl-popup-content a { color: var(--green-ink); font-weight: 700; }
-.maplibregl-popup-anchor-bottom .maplibregl-popup-tip { border-top-color: var(--card); }
-.maplibregl-popup-anchor-top .maplibregl-popup-tip { border-bottom-color: var(--card); }
-.maplibregl-popup-anchor-left .maplibregl-popup-tip { border-right-color: var(--card); }
-.maplibregl-popup-anchor-right .maplibregl-popup-tip { border-left-color: var(--card); }
-.mapfilter { position: absolute; top: calc(10px + env(safe-area-inset-top)); left: 10px; right: 56px; z-index: 5; }
-.mf-bar { display: flex; align-items: center; gap: 8px; }
-.mf-toggle, .mf-clear { display: inline-flex; align-items: center; gap: 6px; border: 0; border-radius: 999px; padding: 8px 14px 8px 12px; font-size: 13px; font-weight: 800; background: var(--card); color: var(--text); box-shadow: 0 1px 4px #0005; }
-.mf-clear { padding: 8px; }
-.mf-toggle.on { background: var(--green); color: var(--on-green); }
-.mf-count { font-size: 12px; font-weight: 700; color: #fff; text-shadow: 0 1px 3px #000; }
-.mf-panel { margin-top: 6px; background: var(--card); border-radius: 16px; padding: 10px; box-shadow: 0 2px 10px #0005; display: flex; flex-direction: column; gap: 8px; }
-.mf-panel select { width: 100%; padding: 9px 12px; border: 1px solid var(--line); border-radius: 12px; background: var(--bg); font-size: 14px; }
-.mf-panel .seg button { padding: 6px 2px; font-size: 12.5px; }
-.maplegend { position: absolute; left: 10px; bottom: 34px; z-index: 4; display: flex; gap: 10px; background: #0c0e0bcc; color: #fff; font-size: 11px; font-weight: 700; border-radius: 999px; padding: 4px 10px; }
-.maplegend i { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 4px; border: 1.5px solid #fff; vertical-align: -1px; }
+.mapnote { position: absolute; left: 10px; right: 10px; bottom: 70px; z-index: 5; background: var(--amber-soft); color: var(--amber); border-radius: 12px; padding: 8px 12px; font-size: 13px; font-weight: 600; }
+/* top bar: "more filters" button, then one chip per kind of marker (legend and filter at once) */
+.mapbar { position: absolute; top: calc(10px + env(safe-area-inset-top)); left: 10px; right: 62px; z-index: 5; display: flex; flex-wrap: wrap; gap: 6px; }
+.mchip { flex: none; display: inline-flex; align-items: center; gap: 7px; height: 40px; padding: 0 13px 0 11px; border: 0; border-radius: 999px; background: var(--card); color: var(--text); font-size: 13px; font-weight: 800; box-shadow: 0 1px 4px #0006; }
+.mchip i { width: 11px; height: 11px; border-radius: 50%; border: 2px solid #fff; box-shadow: 0 0 0 1px #0004; }
+.mchip.on { background: var(--text); color: var(--bg); }
+.mchip.ico { position: relative; width: 40px; padding: 0; justify-content: center; }
+.mchip.ico.on { background: var(--green); color: var(--on-green); }
+.mchip .bdg { position: absolute; top: -4px; right: -4px; min-width: 18px; height: 18px; padding: 0 4px; border-radius: 9px; background: var(--text); color: var(--bg); font-size: 11px; font-weight: 800; line-height: 18px; text-align: center; }
+.mapcount { position: absolute; left: 10px; bottom: 36px; z-index: 4; display: flex; align-items: center; background: #0c0e0bcc; color: #fff; font-size: 12px; font-weight: 700; border-radius: 999px; padding: 5px 11px; }
+.mapcount button { border: 0; background: #ffffff38; color: #fff; border-radius: 50%; width: 20px; height: 20px; display: grid; place-items: center; padding: 0; margin: -2px -5px -2px 8px; }
+.modal-bg.soft { background: #0000004d; }
+/* the map is a fixed layer of its own: its sheet stays inside it, above the navigation bar */
+.mapwrap .modal-bg { position: absolute; }
+.mapwrap .modal { padding-bottom: 16px; }
+/* maplibre's own buttons (zoom, my position), redrawn in the style of the app */
+.mapwrap .maplibregl-ctrl-top-right { top: env(safe-area-inset-top); }
+.mapwrap .maplibregl-ctrl-group { background: var(--card); border-radius: 14px; overflow: hidden; }
+.mapwrap .maplibregl-ctrl-group:not(:empty) { box-shadow: 0 1px 4px #0006; }
+.mapwrap .maplibregl-ctrl-group button { width: 40px; height: 40px; }
+.mapwrap .maplibregl-ctrl-group button + button { border-top: 1px solid var(--line); }
+.mapwrap .maplibregl-ctrl button .maplibregl-ctrl-icon { background-image: none !important; background-color: var(--text); -webkit-mask: var(--glyph) center / 20px no-repeat; mask: var(--glyph) center / 20px no-repeat; }
+.mapwrap .maplibregl-ctrl-zoom-in { --glyph: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M5 12h14M12 5v14'/%3E%3C/svg%3E"); }
+.mapwrap .maplibregl-ctrl-zoom-out { --glyph: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M5 12h14'/%3E%3C/svg%3E"); }
+.mapwrap .maplibregl-ctrl-geolocate { --glyph: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='round'%3E%3Cpath d='M2 12h3M19 12h3M12 2v3M12 19v3'/%3E%3Ccircle cx='12' cy='12' r='7'/%3E%3Ccircle cx='12' cy='12' r='2.6' fill='black'/%3E%3C/svg%3E"); }
+.mapwrap .maplibregl-ctrl-geolocate-active .maplibregl-ctrl-icon, .mapwrap .maplibregl-ctrl-geolocate-background .maplibregl-ctrl-icon { background-color: #1da1f2; }
+.mapwrap .maplibregl-ctrl-geolocate-active-error .maplibregl-ctrl-icon, .mapwrap .maplibregl-ctrl-geolocate-background-error .maplibregl-ctrl-icon { background-color: var(--danger); }
+.mapwrap .maplibregl-ctrl-scale { background: #0c0e0b99; color: #fff; border: 1.5px solid #fff; border-top: 0; border-radius: 0 0 4px 4px; font: 700 10.5px/1.5 inherit; font-family: inherit; }
+.mapwrap .maplibregl-ctrl-attrib.maplibregl-compact { font-family: inherit; font-size: 11px; }
+/* card shown when a marker is tapped */
+.mapwrap .maplibregl-popup-content { font-family: inherit; border-radius: 16px; background: var(--card); color: var(--text); padding: 8px 14px 8px 8px; box-shadow: 0 6px 20px #0007; }
+.mapwrap .maplibregl-popup-anchor-bottom .maplibregl-popup-tip { border-top-color: var(--card); }
+.mapwrap .maplibregl-popup-anchor-top .maplibregl-popup-tip { border-bottom-color: var(--card); }
+.mapwrap .maplibregl-popup-anchor-left .maplibregl-popup-tip { border-right-color: var(--card); }
+.mapwrap .maplibregl-popup-anchor-right .maplibregl-popup-tip { border-left-color: var(--card); }
+.pop { display: flex; align-items: center; gap: 10px; }
+.pop img { flex: none; width: 58px; height: 58px; border-radius: 11px; object-fit: cover; background: var(--sand); }
+.pop > div { display: flex; flex-direction: column; gap: 1px; min-width: 0; padding-left: 4px; }
+.pop img + div { padding-left: 0; }
+.pop b { font-size: 15px; font-weight: 800; line-height: 1.2; }
+.pop span { font-size: 12.5px; color: var(--muted); }
+.pop a { font-size: 13px; font-weight: 700; color: var(--green-ink); margin-top: 2px; }
 /* fixed places on the map (camp) */
 .place { width: 28px; height: 28px; border-radius: 50%; background: #209d50; color: #fff; border: 2px solid #fff; display: grid; place-items: center; box-shadow: 0 1px 4px #0008; position: relative; margin-bottom: 6px; }
 .place::after { content: ''; position: absolute; left: 50%; bottom: -7px; margin-left: -5px; border: 5px solid transparent; border-bottom: 0; border-top-color: #fff; }

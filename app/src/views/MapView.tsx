@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'preact/hooks';
 import { signal } from '@preact/signals';
 import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
-import { observations, obsInfo, dataUrl, byId } from '../data';
+import { observations, obsInfo, dataUrl, byId, imgUrl } from '../data';
 import { href } from '../router';
 import { fmtDate, fmtTime } from '../util';
 import { BIRD_GROUPS, MAMMAL_GROUPS, BIG5_IDS, groupOf, familyEn } from '../taxa';
@@ -37,7 +37,8 @@ function makeStyle(): maplibregl.StyleSpecification {
 type Kind = 'big5' | 'mammal' | 'bird' | 'off';
 const KIND_COLOUR: Record<Kind, string> = { big5: '#ff3b30', mammal: '#ff9f1c', bird: '#c77dff', off: '#b0b0b0' };
 const PERIODS: [string, string][] = [['all', 'All'], ['today', 'Today'], ['7d', '7 days'], ['30d', '30 days']];
-const TYPES: [string, string][] = [['all', 'All'], ['bird', 'Birds'], ['mammal', 'Mammals'], ['big5', 'Big Five']];
+// the three chips on the map are both the legend of the marker colours and a one-tap filter
+const TYPES: [Kind, string][] = [['bird', 'Birds'], ['mammal', 'Mammals'], ['big5', 'Big Five']];
 const period = signal('all');
 const type = signal('all');
 const grp = signal('');
@@ -87,11 +88,20 @@ function toGeoJSON(list: Row[]) {
   const rank: Record<Kind, number> = { off: 0, bird: 1, mammal: 2, big5: 3 };
   return {
     type: 'FeatureCollection',
-    features: list.map(({ o, name, kind, onList }) => ({
-      type: 'Feature', geometry: { type: 'Point', coordinates: [o.lon, o.lat] },
-      properties: { id: o.id, name, kind, rank: rank[kind], when: `${fmtDate(o.ts)} ${fmtTime(o.ts)}`, sp: o.speciesId, onList },
-    })),
+    features: list.map(({ o, name, kind, onList }) => {
+      const s = byId.value.get(o.speciesId);
+      return {
+        type: 'Feature', geometry: { type: 'Point', coordinates: [o.lon, o.lat] },
+        properties: { id: o.id, name, kind, rank: rank[kind], when: `${fmtDate(o.ts)} · ${fmtTime(o.ts)}`, sp: o.speciesId, onList, img: (s && imgUrl(s)) || '', count: o.count },
+      };
+    }),
   } as any;
+}
+const esc = (v: string) => v.replace(/[<>&"]/g, (c) => ({ '<': '&lt;', '>': '&gt;', '&': '&amp;', '"': '&quot;' }[c]!));
+/** Card shown when a marker is tapped: photo, name, date, link to the species page. */
+function popupHtml(p: any) {
+  return `<div class="pop">${p.img ? `<img src="${esc(p.img)}" alt="">` : ''}<div><b>${esc(p.name)}${p.count > 1 ? ' ×' + p.count : ''}</b><span>${esc(p.when)}</span>`
+    + (p.onList ? `<a href="${href('species/' + p.sp)}">Species page ›</a>` : '<span>not on the Pidwa checklist</span>') + '</div></div>';
 }
 
 export function MapView() {
@@ -154,20 +164,27 @@ export function MapView() {
           map!.addSource('reserve', { type: 'geojson', data: reserve });
           map!.addLayer({ id: 'reserve-line', type: 'line', source: 'reserve', paint: { 'line-color': '#ffd54f', 'line-width': 2, 'line-dasharray': [3, 2] } });
           map!.addSource('obs', { type: 'geojson', data: toGeoJSON(rows().filter((r) => pass(r))) });
+          // soft shadow under the markers, so that they stand out on the satellite image
+          map!.addLayer({
+            id: 'obs-shadow', type: 'circle', source: 'obs',
+            paint: { 'circle-radius': ['match', ['get', 'kind'], 'big5', 11, 9], 'circle-color': '#000', 'circle-opacity': 0.45, 'circle-blur': 0.7, 'circle-translate': [0, 1.5] },
+          });
           map!.addLayer({
             id: 'obs-pt', type: 'circle', source: 'obs', layout: { 'circle-sort-key': ['get', 'rank'] },
             paint: {
               'circle-radius': ['match', ['get', 'kind'], 'big5', 6.5, 5],
               'circle-color': ['match', ['get', 'kind'], 'big5', KIND_COLOUR.big5, 'mammal', KIND_COLOUR.mammal, 'off', KIND_COLOUR.off, KIND_COLOUR.bird],
-              'circle-stroke-color': '#fff', 'circle-stroke-width': 1.5,
+              'circle-stroke-color': '#fff', 'circle-stroke-width': 2,
             },
           });
           map!.on('click', 'obs-pt', (e) => {
             const f = e.features?.[0]; if (!f) return;
-            const p = f.properties as any;
-            new maplibregl.Popup({ offset: 12 }).setLngLat((f.geometry as any).coordinates).setHTML(`<b>${p.name}</b><br>${p.when}<br>` + (p.onList ? `<a href="${href('species/' + p.sp)}">species page ›</a>` : 'not on the Pidwa checklist')).addTo(map!);
+            new maplibregl.Popup({ offset: 12, closeButton: false, maxWidth: '264px' }).setLngLat((f.geometry as any).coordinates).setHTML(popupHtml(f.properties)).addTo(map!);
           });
           map!.on('mouseenter', 'obs-pt', () => (map!.getCanvas().style.cursor = 'pointer'));
+          // the credit line stays one tap away behind its "i" button instead of covering the bottom of the map
+          const credit = el.current?.querySelector('.maplibregl-ctrl-attrib');
+          credit?.classList.remove('maplibregl-compact-show'); credit?.removeAttribute('open');
           setState('ok');
         });
       } catch (e: any) { setErr(e.message || String(e)); setState('error'); }
@@ -191,9 +208,10 @@ export function MapView() {
   }, [grp.value, fam.value, sp.value, state]);
 
   const clear = () => { period.value = 'all'; type.value = 'all'; grp.value = ''; fam.value = ''; sp.value = ''; };
-  const seg = (opts: [string, string][], s: typeof period, reset = false) => (
-    <div class="seg">{opts.map(([v, l]) => <button class={s.value === v ? 'on' : ''} onClick={() => { s.value = v; if (reset) { grp.value = ''; fam.value = ''; sp.value = ''; } }}>{l}</button>)}</div>
-  );
+  // a chip shows only its kind; tapping it again shows everything
+  const pickType = (k: Kind) => { type.value = type.value === k ? 'all' : k; grp.value = ''; fam.value = ''; sp.value = ''; };
+  // filters set in the sheet (the chips show their own state)
+  const nSheet = (period.value !== 'all' ? 1 : 0) + (grp.value ? 1 : 0) + (fam.value ? 1 : 0) + (sp.value ? 1 : 0);
   const select = (s: typeof grp, first: string, opts: [string, [string, number]][], onPick?: () => void) => (
     <select value={s.value} onChange={(e) => { s.value = (e.target as HTMLSelectElement).value; onPick?.(); }}>
       <option value="">{first}</option>
@@ -206,30 +224,37 @@ export function MapView() {
     <div class="mapwrap">
       <div class="map" ref={el} />
       {state === 'ok' && (
-        <div class="mapfilter">
-          <div class="mf-bar">
-            <button class={'mf-toggle' + (filtered ? ' on' : '')} onClick={() => (panelOpen.value = !panelOpen.value)}>
-              <Icon name="sliders-horizontal" size={15} />Filter
-            </button>
-            <span class="mf-count">{shown.length} obs · {nSpecies} species</span>
-            {filtered && <button class="mf-clear" onClick={clear} aria-label="clear filters"><Icon name="x" size={15} stroke={2.6} /></button>}
-          </div>
-          {panelOpen.value && (
-            <div class="mf-panel">
-              {seg(PERIODS, period)}
-              {seg(TYPES, type, true)}
-              {select(grp, 'any group', grpOpts, () => { fam.value = ''; sp.value = ''; })}
-              {select(fam, 'any family', famOpts, () => { sp.value = ''; })}
-              {select(sp, 'any species', spOpts, () => (panelOpen.value = false))}
-            </div>
-          )}
+        <div class="mapbar">
+          <button class={'mchip ico' + (nSheet ? ' on' : '')} onClick={() => (panelOpen.value = true)} aria-label="More filters">
+            <Icon name="sliders-horizontal" size={18} />{nSheet > 0 && <b class="bdg">{nSheet}</b>}
+          </button>
+          {TYPES.map(([k, label]) => (
+            <button class={'mchip' + (type.value === k ? ' on' : '')} onClick={() => pickType(k)}><i style={{ background: KIND_COLOUR[k] }} />{label}</button>
+          ))}
         </div>
       )}
       {state === 'ok' && (
-        <div class="maplegend">
-          <span><i style={{ background: KIND_COLOUR.bird }} />birds</span>
-          <span><i style={{ background: KIND_COLOUR.mammal }} />mammals</span>
-          <span><i style={{ background: KIND_COLOUR.big5 }} />Big Five</span>
+        <div class="mapcount">
+          {shown.length ? `${shown.length} observation${shown.length === 1 ? '' : 's'} · ${nSpecies} species` : all.length ? 'Nothing matches these filters' : 'No observation with a position yet'}
+          {filtered && <button onClick={clear} aria-label="Clear the filters"><Icon name="x" size={13} stroke={2.8} /></button>}
+        </div>
+      )}
+      {state === 'ok' && panelOpen.value && (
+        <div class="modal-bg soft" onClick={(e) => { if (e.target === e.currentTarget) panelOpen.value = false; }}>
+          <div class="modal">
+            <h2>Filter the map</h2>
+            <div class="field">
+              <label>When</label>
+              <div class="seg">{PERIODS.map(([v, l]) => <button class={period.value === v ? 'on' : ''} onClick={() => (period.value = v)}>{l}</button>)}</div>
+            </div>
+            <div class="field"><label>Group</label>{select(grp, 'Any group', grpOpts, () => { fam.value = ''; sp.value = ''; })}</div>
+            <div class="field"><label>Family</label>{select(fam, 'Any family', famOpts, () => { sp.value = ''; })}</div>
+            <div class="field"><label>Species</label>{select(sp, 'Any species', spOpts)}</div>
+            <div class="actions">
+              <button class="btn secondary" disabled={!filtered} onClick={clear}>Clear all</button>
+              <button class="btn" style="flex:2" onClick={() => (panelOpen.value = false)}>Show {shown.length} observation{shown.length === 1 ? '' : 's'}</button>
+            </div>
+          </div>
         </div>
       )}
       {state === 'ok' && outside && <div class="mapnote">You are outside the mapped area (Makalali / Pidwa).</div>}
