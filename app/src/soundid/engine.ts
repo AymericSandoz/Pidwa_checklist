@@ -11,22 +11,28 @@ const RUMBLE_HZ = 200;           // high-pass before the model: wind, handling a
 const GEO_MIN = 0.03;            // a species is "plausible here" when the BirdNET range model gives it at least this
 const OFFLIST_PENALTY = 0.15;    // species outside the checklist need a higher confidence
 const OFFLIST_NO_RANGE = 0.8;    // without the range model nothing filters foreign species: only near-certain ones pass
-const VOTE_WINDOW_MS = 12000;    // two moderate hits must fall within this time to confirm a species
+const VOTE_WINDOW_MS = 20000;    // two faint hits must fall within this time to confirm a species
 const VOTE_GAP_MS = 1400;        // and be this far apart: windows analysed closer than that share most of their sound
 const JUNK_MIN = 0.2;            // an impossible species above this means the model is guessing on that window
+const SURE = 0.5;                // from this score a hit is taken at face value, whatever else the window contains
+export const POSSIBLE_TTL_MS = 120000; // an unconfirmed guess leaves the screen after two minutes without a new hit
 // centre of the Greater Makalali / Pidwa area, used until a GPS position is known
 const HOME = { lat: -24.12, lon: 30.66 };
 
-// Decision rule, chosen from experiments with rain noise (scripts/soundid-noise.mjs):
-//  - one window at or above `high` confirms a checklist species at once;
-//  - between `mid` and `high` it is only a vote, and it takes two votes within 12 s;
-//  - a vote is ignored when an impossible species scores higher on the same window (the model is guessing).
-// Rain, wind or silence make the model emit scattered 20-40 % scores: they rarely repeat on the same species.
+// Decision rule, chosen by measurement (scripts/soundid-faint.mjs records the model on 41 species mixed with
+// ambient noise at several levels, scripts/soundid-rules.mjs replays decision rules on those scores):
+//  - the model is close to all-or-nothing: on a faint bird it either answers above 30 % or sees nothing at all,
+//    and with a correct engine pure noise never produced a checklist species, even at 8 %;
+//  - so one window at or above `show` displays a checklist species at once (this does not depend on how fast
+//    the phone analyses), and the rule that needed two hits was costing 12 to 18 points of detection for nothing;
+//  - between `possible` and `show` the species is listed apart as a possible one, only when it is the best guess
+//    of its window and no impossible species beats it; two such hits within 20 s promote it;
+//  - species outside the checklist need 15 points more and always two hits.
 export type Sensitivity = 'low' | 'normal' | 'high';
-export const LEVELS: Record<Sensitivity, { high: number; mid: number }> = {
-  low: { high: 0.75, mid: 0.45 },
-  normal: { high: 0.6, mid: 0.3 },
-  high: { high: 0.45, mid: 0.2 },
+export const LEVELS: Record<Sensitivity, { show: number; possible: number }> = {
+  low: { show: 0.5, possible: 0.3 },
+  normal: { show: 0.3, possible: 0.12 },
+  high: { show: 0.15, possible: 0.07 },
 };
 
 /** [scientific, english, french, pidwaId | null] per BirdNET class */
@@ -40,7 +46,7 @@ export interface Detection {
   best: number;            // best confidence so far
   count: number;           // number of windows that voted for it
   votes: number[];         // times of the recent votes
-  shown: boolean;          // confirmed: displayed in the list
+  shown: boolean;          // confirmed: displayed in the main list; otherwise it is only a possible species
   first: number; last: number;
   logged: boolean;
 }
@@ -162,7 +168,8 @@ export function interpret(top: [number, number][], now = Date.now(), quiet = fal
   // best score of a species that cannot be here: when it beats a candidate, the model is guessing
   let junk = 0;
   if (geo) for (const [i, c] of sp) if (!plausible(i) && c > junk) junk = c;
-  let bestPlausible = 0;
+  let bestPlausible = 0, bestIndex = -1;
+  for (const [i, c] of sp) if ((pidwaOf(classes[i]) || (geo && geo[i] >= GEO_MIN)) && c > bestPlausible) { bestPlausible = c; bestIndex = i; }
 
   const list = detections.value.slice();
   let changed = false;
@@ -171,11 +178,11 @@ export function interpret(top: [number, number][], now = Date.now(), quiet = fal
     const pidwaId = pidwaOf(c);
     const ok = pidwaId ? true : geo ? geo[index] >= GEO_MIN : conf >= OFFLIST_NO_RANGE;
     if (!ok) continue;
-    if (conf > bestPlausible) bestPlausible = conf;
-    const high = pidwaId ? lv.high : Math.min(0.95, lv.high + OFFLIST_PENALTY);
-    const mid = pidwaId ? lv.mid : Math.min(0.9, lv.mid + OFFLIST_PENALTY);
-    if (conf < mid) continue;
-    if (conf < high && conf < junk) continue;
+    const show = pidwaId ? lv.show : Math.min(0.95, lv.show + OFFLIST_PENALTY);
+    const possible = pidwaId ? lv.possible : show;   // no "possible" tier outside the checklist
+    if (conf < possible) continue;
+    if (conf < SURE && conf < junk) continue;                 // an impossible species scores higher: the model is guessing
+    if (conf < show && index !== bestIndex) continue;        // a faint hit only counts when it is the best guess of its window
 
     const key = pidwaId || 'x:' + slug(c[0]);
     let i = list.findIndex((d) => d.key === key);
@@ -189,8 +196,8 @@ export function interpret(top: [number, number][], now = Date.now(), quiet = fal
     // windows analysed in quick succession overlap: they count as one vote
     const fresh = !kept.length || now - kept[kept.length - 1] >= VOTE_GAP_MS;
     const votes = fresh ? [...kept, now] : kept;
-    // a checklist species is confirmed by one strong window; anything else needs two votes close in time
-    const confirmed = d.shown || (!!pidwaId && conf >= high) || votes.length >= 2;
+    // a checklist species is shown by one window at `show`; anything else needs two hits close in time
+    const confirmed = d.shown || (!!pidwaId && conf >= show) || votes.length >= 2;
     list[i] = { ...d, best: Math.max(d.best, conf), count: d.count + (fresh ? 1 : 0), votes, shown: confirmed, first: d.shown || !confirmed ? d.first : now, last: now };
     changed = true;
   }

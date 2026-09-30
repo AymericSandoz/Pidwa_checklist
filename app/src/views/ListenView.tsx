@@ -64,8 +64,10 @@ export function ListenView() {
     try { await sid.start(); } catch { /* message is in errorMsg */ }
   }
 
-  // Confirmed species only, in order of confirmation, new ones at the bottom: rows never move under the finger.
+  // Confirmed species in order of confirmation, new ones at the bottom: rows never move under the finger.
   const sorted = dets.filter((d) => d.shown).sort((a, b) => a.first - b.first);
+  // Faint or single hits that did not reach the display level: shown apart, and only for a while.
+  const maybe = dets.filter((d) => !d.shown && d.pidwaId && now - d.last < sid.POSSIBLE_TTL_MS).sort((a, b) => b.best - a.best).slice(0, 6);
   const birds = species.value.filter((s) => s.group === 'bird');
   const uncovered = birds.filter((s) => !s.bn);
   const weak = birds.filter((s) => s.bn && soundIdGrade(s.bn.ref) === 'weak');
@@ -133,8 +135,28 @@ export function ListenView() {
             </div>
           );
         })}
-        {sorted.length === 0 && st === 'listening' && <p class="muted center" style="min-height:0;padding:24px">Nothing confirmed yet. A species appears once it is heard clearly, or twice more faintly.</p>}
+        {sorted.length === 0 && maybe.length === 0 && st === 'listening' && <p class="muted center" style="min-height:0;padding:24px">Nothing recognised yet. Species appear here as soon as they are heard.</p>}
       </div>
+
+      {maybe.length > 0 && (
+        <div class="maybe">
+          <div class="lab">Possible, too faint to be sure: compare with the reference sound</div>
+          {maybe.map((d) => {
+            const s = byId.value.get(d.pidwaId!);
+            return (
+              <div class="sp-row det possible" key={d.key}>
+                <a href={href('species/' + d.pidwaId)} class="row" style="flex:1;min-width:0">
+                  <div class="names">
+                    <div class="fr">{d.en} <span class="muted small">{Math.round(d.best * 100)} %{d.count > 1 ? ` ×${d.count}` : ''}</span></div>
+                    <div class="en">{d.fr}{s && s.bn?.lumped ? ' · lumped in BirdNET' : ''}</div>
+                  </div>
+                </a>
+                <button class="add" aria-label="Log this observation" onClick={() => setForm(d)}>+</button>
+              </div>
+            );
+          })}
+        </div>
+      )}
 
       <details class="card diag" style="margin-top:12px">
         <summary><b>Diagnostics</b> <span class="muted small">what the model hears right now</span></summary>
@@ -173,7 +195,7 @@ export function ListenView() {
             {sid.lastTop.value.map((t) => (
               <div class="stat small"><span>{t.name} <span class="muted">{KIND[t.kind]}</span></span><span>{Math.round(t.conf * 100)} %</span></div>
             ))}
-            <p class="small" style="margin-top:8px">Rule in <b>{SENS.find(([k]) => k === sid.sensitivity.value)?.[1]}</b> mode: shown at once from {Math.round(lv.high * 100)} %, or after two hits from {Math.round(lv.mid * 100)} % within 12 s.</p>
+            <p class="small" style="margin-top:8px">Rule in <b>{SENS.find(([k]) => k === sid.sensitivity.value)?.[1]}</b> mode: shown from {Math.round(lv.show * 100)} %; listed as possible from {Math.round(lv.possible * 100)} %, and promoted after two such hits within 20 s.</p>
             {m && (
               <p class="small">
                 Microphone: {m.label || 'default'}<br />

@@ -182,6 +182,11 @@ details.filters summary { font-weight: 600; padding: 8px 0; cursor: pointer; }
 .lnote { background: #eef3f8; border: 1px solid #c9d8e8; border-radius: 8px; padding: 8px 10px; font-size: 13px; margin-bottom: 10px; }
 .lnote.warn { background: #fff8e1; border-color: #f0c36d; }
 .diag .stat { padding: 3px 0; }
+.maybe { margin-top: 12px; }
+.maybe .lab { font-size: 12px; color: var(--muted); margin: 0 0 6px 2px; }
+.det.possible { background: #f6f6f1; box-shadow: none; border: 1px dashed var(--line); padding: 4px 8px; margin-bottom: 5px; }
+.det.possible .fr { font-weight: 500; font-size: 14px; }
+.det.possible .add { width: 32px; height: 32px; font-size: 18px; }
 
 /* ID guide */
 .idg .fgroup .lab { font-size: 13px; font-weight: 600; color: var(--text); margin: 12px 0 6px; }
