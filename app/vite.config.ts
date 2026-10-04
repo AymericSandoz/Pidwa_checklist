@@ -40,8 +40,10 @@ export default defineConfig({
         maximumFileSizeToCacheInBytes: 30 * 1024 * 1024,
         navigateFallback: base + 'index.html',
         // Sounds and map are "packs" downloaded on demand from the settings screen into these caches.
+        // ignoreVary: GitHub Pages answers "Vary: Accept-Encoding" and the audio player asks with its own Accept-Encoding,
+        // so without it the sound saved by the settings screen is never found again once offline.
         runtimeCaching: [
-          { urlPattern: ({ url }) => url.pathname.includes('/data/sounds/'), handler: 'CacheFirst', options: { cacheName: 'pack-sounds', rangeRequests: true } },
+          { urlPattern: ({ url }) => url.pathname.includes('/data/sounds/'), handler: 'CacheFirst', options: { cacheName: 'pack-sounds', rangeRequests: true, matchOptions: { ignoreVary: true } } },
           { urlPattern: ({ url }) => url.pathname.includes('/data/birdnet/'), handler: 'CacheFirst', options: { cacheName: 'pack-birdnet' } },
           { urlPattern: ({ url }) => url.pathname.includes('/data/map/'), handler: 'CacheFirst', options: { cacheName: 'pack-sat' } },
         ],
