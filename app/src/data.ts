@@ -29,7 +29,11 @@ export async function loadAll() {
   }
 }
 
+// species ids renamed in the checklist: old id -> new id (observations logged before the rename follow)
+const RENAMED: Record<string, string> = { 'giraffa-camelopardalis': 'giraffa-giraffa' }; // 2026-10-10: the Pidwa giraffe is the southern giraffe
+
 export async function reloadObservations() {
+  for (const [from, to] of Object.entries(RENAMED)) await db.observations.where('speciesId').equals(from).modify({ speciesId: to });
   observations.value = await db.observations.orderBy('ts').reverse().toArray();
 }
 

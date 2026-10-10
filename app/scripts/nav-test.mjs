@@ -11,7 +11,7 @@ page.on('console', (m) => { if (m.type() === 'error') errors.push(m.text().slice
 
 await page.goto(base + '#/list', { waitUntil: 'load' });
 await page.waitForSelector('.sp-row');
-const order = ['map', 'list', 'listen', 'map', 'id', 'listen', 'stats', 'map', 'obs', 'listen', 'list'];
+const order = ['map', 'list', 'listen', 'map', 'id', 'listen', 'stats', 'map', 'learn', 'listen', 'list'];
 let failed = 0;
 for (const view of order) {
   await page.click(`nav.bottom a[href="#/${view}"]`);

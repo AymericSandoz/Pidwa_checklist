@@ -4,9 +4,9 @@ import { loaded, loadError } from './data';
 import { ListView } from './views/ListView';
 import { SpeciesView } from './views/SpeciesView';
 import { IdGuideView } from './views/IdGuideView';
-import { JournalView } from './views/JournalView';
 import { MapLazy } from './views/MapLazy';
 import { StatsView } from './views/StatsView';
+import { LearnView } from './views/LearnView';
 import { SettingsView } from './views/SettingsView';
 import { ListenLazy, listening } from './views/ListenLazy';
 import { Icon, type IconName } from './components/Icon';
@@ -26,9 +26,9 @@ const NAV: [string, string, IconName][] = [
   ['list', 'List', 'list-checks'],
   ['id', 'Guide', 'binoculars'],
   ['listen', 'Listen', 'mic'],
-  ['obs', 'Journal', 'notebook-pen'],
   ['map', 'Map', 'map'],
   ['stats', 'Stats', 'chart-no-axes-column'],
+  ['learn', 'Learn', 'book-open'],
 ];
 
 export function App() {
@@ -40,10 +40,11 @@ export function App() {
   switch (r.path) {
     case 'species': view = <SpeciesView id={r.parts[1]} />; break;
     case 'id': view = <IdGuideView />; break;
-    case 'obs': view = <JournalView />; break;
+    case 'obs': view = <StatsView journal />; break; // old journal link: the journal now lives under Stats
     case 'map': view = <MapLazy />; break;
     case 'listen': view = <ListenLazy />; break;
     case 'stats': view = <StatsView />; break;
+    case 'learn': view = <LearnView />; break;
     case 'settings': view = <SettingsView />; break;
     default: view = <ListView />;
   }
@@ -60,7 +61,7 @@ export function App() {
       <main class="main"><ViewBoundary key={r.path}>{view}</ViewBoundary></main>
       <nav class="bottom">
         {NAV.map(([p, label, icon]) => (
-          <a href={href(p)} class={r.path === p || (p === 'list' && r.path === 'species') ? 'active' : ''}>
+          <a href={href(p)} class={r.path === p || (p === 'list' && r.path === 'species') || (p === 'stats' && r.path === 'obs') ? 'active' : ''}>
             <span class="ico"><Icon name={icon} size={22} />{p === 'listen' && listening.value && <i class="recdot" />}</span><span>{label}</span>
           </a>
         ))}

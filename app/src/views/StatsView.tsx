@@ -4,8 +4,11 @@ import { href } from '../router';
 import { dayKey, fmtDate } from '../util';
 import { familyEn, BIG5 } from '../taxa';
 import { Icon, type IconName } from '../components/Icon';
+import { JournalView } from './JournalView';
 
 const famGroup = signal<'bird' | 'mammal'>('bird');
+// Stats and the journal share one tab; the chosen segment survives leaving and coming back (a signal, not component state)
+const statsTab = signal<'stats' | 'journal'>('stats');
 const pct = (a: number, b: number) => (b ? Math.round((100 * a) / b) : 0);
 
 const R = 44, C = 2 * Math.PI * R;
@@ -24,7 +27,12 @@ function Ring({ seen, total, label, icon }: { seen: number; total: number; label
   );
 }
 
-export function StatsView() {
+export function StatsView({ journal }: { journal?: boolean } = {}) {
+  if (journal && statsTab.peek() !== 'journal') statsTab.value = 'journal';
+  const seg = (
+    <div class="tabs"><button class={statsTab.value === 'stats' ? 'on' : ''} onClick={() => (statsTab.value = 'stats')}>Stats</button><button class={statsTab.value === 'journal' ? 'on' : ''} onClick={() => (statsTab.value = 'journal')}>Journal</button></div>
+  );
+  if (statsTab.value === 'journal') return <div>{seg}<JournalView /></div>;
   const t = totals.value;
   const seen = seenCount.value;
 
@@ -51,6 +59,7 @@ export function StatsView() {
 
   return (
     <div>
+      {seg}
       <div class="card rings">
         <Ring seen={t.bird.seen} total={t.bird.total} label="Birds" icon="bird" />
         <Ring seen={t.mammal.seen} total={t.mammal.total} label="Mammals" icon="paw-print" />

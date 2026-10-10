@@ -22,7 +22,7 @@
   "Taurotragus oryx": { "fr": "Éland du Cap", "traits": ["Plus grande antilope, fanon sous la gorge", "1,5-1,8 m au garrot, 400-900 kg", "Cornes droites torsadées chez les deux sexes"] },
   "Redunca arundinum": { "fr": "Cobe des roseaux", "traits": ["Herbes hautes et zones humides", "80-90 cm au garrot, 50-80 kg", "Tache noire sous les oreilles, cornes courbées vers l'avant chez le mâle"] },
   "Helogale parvula": { "fr": "Mangouste naine", "traits": ["Plus petite mangouste, environ 300 g", "Groupes autour des termitières", "Pelage brun uni, diurne"] },
-  "Giraffa camelopardalis": { "fr": "Girafe", "traits": ["4-5,5 m de haut, 800-1200 kg", "Motif de taches propre à chaque individu", "Ossicônes ; les mâles foncent avec l'âge"] },
+  "Giraffa giraffa": { "fr": "Girafe", "traits": ["4-5,5 m de haut, 800-1200 kg", "Motif de taches propre à chaque individu", "Ossicônes ; les mâles foncent avec l'âge"] },
   "Thryonomys swinderianus": { "fr": "Grand aulacode", "traits": ["Gros rongeur des roselières et bords d'eau", "4-8 kg", "Nocturne, poils raides ; souvent seulement traces et crottes"] },
   "Smutsia temminckii": { "fr": "Pangolin de Temminck", "traits": ["Corps couvert d'écailles, se roule en boule", "5-15 kg", "Nocturne et très rare à observer"] },
   "Hippopotamus amphibius": { "fr": "Hippopotame", "traits": ["Passe la journée dans l'eau, pâture la nuit", "1,5 m au garrot, 1300-1800 kg", "Grognements caractéristiques"] },

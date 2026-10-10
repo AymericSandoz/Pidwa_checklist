@@ -858,9 +858,9 @@
     "notes": null
   },
   {
-    "id": "giraffa-camelopardalis",
+    "id": "giraffa-giraffa",
     "group": "mammal",
-    "sci": "Giraffa camelopardalis",
+    "sci": "Giraffa giraffa",
     "en": "Giraffe",
     "fr": "Girafe",
     "fr_source": "curated",
@@ -868,24 +868,24 @@
     "family_fr": "Giraffidae",
     "order": "Artiodactyla",
     "order_fr": null,
-    "iucn": "vulnerable",
-    "qid": "Q15083",
+    "iucn": null,
+    "qid": "Q26840221",
     "wiki": {
-      "fr": "https://fr.wikipedia.org/wiki/Girafe_du_Nord",
-      "en": "https://en.wikipedia.org/wiki/Northern_giraffe"
+      "fr": "https://fr.wikipedia.org/wiki/Girafe_du_Sud",
+      "en": "https://en.wikipedia.org/wiki/Southern_giraffe"
     },
     "summary": {
-      "fr": "La Girafe du Nord est une espèce de girafes comprenant quatre sous-espèces.",
-      "en": "The northern giraffe, also known as the three-horned giraffe, is a species of giraffe native to North Africa."
+      "fr": "La Girafe du Sud, est une espèce proposée de girafe comprenant deux sous-espèces, la Girafe du Cap et la Girafe d'Angola. Dans la classification traditionnelle ces deux taxons sont des sous-espèces de Giraffa camelopardalis.",
+      "en": "The southern giraffe, also known as two-horned giraffe, is a species of giraffe native to Southern Africa. The IUCN recognises four giraffe species, with several recognised subspecies."
     },
     "image": {
-      "file": "images/giraffa-camelopardalis.webp",
+      "file": "images/giraffa-giraffa.webp",
       "w": 900,
-      "h": 600,
-      "author": "Oumarou HAMADOU",
+      "h": 643,
+      "author": "Andre Harmse",
       "license": "CC-BY-NC",
       "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
-      "source": "https://www.inaturalist.org/photos/103812012",
+      "source": "https://www.inaturalist.org/photos/399596604",
       "from": "iNaturalist"
     },
     "sounds": [],
@@ -894,7 +894,7 @@
       "Motif de taches propre à chaque individu",
       "Ossicônes ; les mâles foncent avec l'âge"
     ],
-    "notes": null
+    "notes": "paper uses the old single-species name; Pidwa has the southern giraffe (G. g. giraffa)"
   },
   {
     "id": "thryonomys-swinderianus",

@@ -8,6 +8,8 @@ import { PhotoImg } from '../components/PhotoImg';
 import { Icon } from '../components/Icon';
 import { SoundPlayer } from '../components/SoundPlayer';
 import type { Observation } from '../types';
+import { popById, fmtN } from '../learn/populations';
+import { DropChart } from './LearnView';
 
 const IUCN_TONE: Record<string, string> = { NT: ' warn', VU: ' warn', EN: ' bad', CR: ' bad' };
 const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
@@ -69,6 +71,17 @@ export function SpeciesView({ id }: { id: string }) {
             <span class="more">{more ? 'Show less' : 'Read more'}</span> <span class="muted small">· Wikipedia{s.summary.en ? '' : ' (French)'}</span>
           </div>
         )}
+
+        {popById.has(s.id) && (() => { const p = popById.get(s.id)!; return (
+          <>
+            <div class="sec">In the world</div>
+            <a class="card" href={href('learn/left/' + p.id)} style="display:block">
+              <div class="bignum"><b>{fmtN(p.today.n)}</b><span>{p.today.year}, Africa-wide</span></div>
+              <DropChart p={p} h={150} />
+              <div class="row" style="justify-content:space-between;margin-top:4px"><span class="muted small">{p.est1800 ? 'Around 1800: roughly ' + fmtN(p.est1800.mid) + ', our estimate' : 'No historical estimate'}</span><span class="more" style="display:flex;align-items:center;gap:2px">Countries and sources<Icon name="chevron-right" size={14} /></span></div>
+            </a>
+          </>
+        ); })()}
 
         {s.sounds.length > 0 && (
           <>
