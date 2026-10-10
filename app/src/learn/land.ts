@@ -71,19 +71,8 @@ export const TIMELINE = [
   { y: 2030, t: '30 × 30', d: 'The commitment: 30 % of the land protected. Today 9.8 %, plus 6.8 % of looser conservation areas.' },
 ];
 
-export interface Prov { k: string; name: string; game: number | null; prot: number | null; col: number; row: number; pidwa?: boolean }
-/** Tiles laid out roughly like the map. game = % of the province under fenced game ranches (2014, exempt farms), prot = % protected (2020). */
-export const PROVINCES: Prov[] = [
-  { k: 'LP', name: 'Limpopo', game: 44, prot: 19, col: 2, row: 1, pidwa: true },
-  { k: 'NW', name: 'North West', game: 12, prot: null, col: 1, row: 2 },
-  { k: 'GP', name: 'Gauteng', game: 5, prot: null, col: 2, row: 2 },
-  { k: 'MP', name: 'Mpumalanga', game: 11, prot: 22, col: 3, row: 2 },
-  { k: 'NC', name: 'Northern Cape', game: 8, prot: 5.5, col: 1, row: 3 },
-  { k: 'FS', name: 'Free State', game: 3, prot: null, col: 2, row: 3 },
-  { k: 'KZN', name: 'KwaZulu-Natal', game: 5, prot: null, col: 3, row: 3 },
-  { k: 'WC', name: 'Western Cape', game: 5, prot: null, col: 1, row: 4 },
-  { k: 'EC', name: 'Eastern Cape', game: 4, prot: null, col: 2, row: 4 },
-];
+// Province figures (fenced game ranches 2014, protected 2020) were shown as tiles until 2026-10-10; dropped as too much for the screen.
+// Limpopo: 3 366 fenced farms, 5.5 M ha ≈ 44 % of the province; 19 % protected. Northern Cape 8 % / 5.5 %; Mpumalanga 11 % / 22 %.
 
 export const LAND_SOURCES = [
   { t: 'South African National Land Cover 2020 (DFFE), national shares via Stats SA natural capital accounts', url: 'https://www.statssa.gov.za/documents/NCA2022/Accounts_for_SWSAs_1990_2020_Luvuyo_Kani.pdf' },

@@ -1,7 +1,7 @@
 import { useState } from 'preact/hooks';
 import { back } from '../router';
 import { Icon } from '../components/Icon';
-import { LAND_USE, PROTECTED, RANCHING, TIMELINE, PROVINCES, LAND_SOURCES } from '../learn/land';
+import { LAND_USE, PROTECTED, RANCHING, TIMELINE, LAND_SOURCES } from '../learn/land';
 
 /** Chapter "Land in South Africa". Each block is a card; colours come from --lu-* variables (light and dark sets in style.css). */
 export function LandView() {
@@ -49,22 +49,6 @@ export function LandView() {
         <b>Hunting, in numbers</b>
         <div class="tiles in" style="margin-top:10px">{RANCHING.hunting.map((t) => <div class="tile"><b>{t.n}</b><span>{t.l}</span><small>{t.s}</small></div>)}</div>
         <p class="muted small" style="margin:8px 0 0;line-height:1.4">Trophy hunting pays little of the national economy but a lot per hectare on dry land where nothing else does. Whether it helps or harms wildlife is argued over; a separate chapter will lay out both sides.</p>
-      </div>
-
-      <div class="sec">By province</div>
-      <div class="card">
-        <div class="provmap">
-          {PROVINCES.map((p) => (
-            <div class={'prov' + (p.pidwa ? ' pidwa' : '')} style={`grid-column:${p.col};grid-row:${p.row}`}>
-              <b>{p.name}</b>
-              <span><i class="lu-game" />{p.game != null ? p.game + ' %' : '–'}</span>
-              <span><i class="lu-parks" />{p.prot != null ? p.prot + ' %' : '?'}</span>
-              {p.pidwa && <small>Pidwa</small>}
-            </div>
-          ))}
-        </div>
-        <div class="lulegend" style="margin-top:8px"><span class="lul"><i class="lu-game" /><span>fenced game ranches, 2014</span></span><span class="lul"><i class="lu-parks" /><span>protected, 2020</span></span></div>
-        <p class="muted small" style="margin:8px 0 0;line-height:1.4">Half of all game ranches are in Limpopo: 3 400 fenced farms, 5.5 M ha, about 44 % of the province. The protected share is only published for three provinces.</p>
       </div>
 
       <div class="sec">How it got this way</div>
