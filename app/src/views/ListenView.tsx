@@ -85,6 +85,7 @@ export function ListenView() {
 
   return (
     <div class="listen">
+      <div class="lnote warn"><b>Very experimental.</b> Sound ID works on clean, close recordings but still misses most birds in the field and can be wrong. Treat every result as a hint to check by eye, not as an observation. Get close, hold the phone still, microphone towards the bird.</div>
       <div class="card lcard">
         <button class={'mic' + (st === 'listening' ? ' on' : '')} disabled={st === 'loading'} onClick={toggle} aria-label={st === 'listening' ? 'Stop listening' : 'Start listening'}>
           <Icon name={st === 'listening' ? 'square' : 'mic'} size={30} />
@@ -204,7 +205,7 @@ export function ListenView() {
             {sid.lastTop.value.map((t) => (
               <div class="stat small"><span>{t.name} <span class="muted">{KIND[t.kind]}</span></span><span>{Math.round(t.conf * 100)} %</span></div>
             ))}
-            <p class="small" style="margin-top:8px">Rule in <b>{SENS.find(([k]) => k === sid.sensitivity.value)?.[1]}</b> mode: shown from {Math.round(lv.show * 100)} %; listed as possible from {Math.round(lv.possible * 100)} %, and promoted after two such hits within 20 s.</p>
+            <p class="small" style="margin-top:8px">Rule in <b>{SENS.find(([k]) => k === sid.sensitivity.value)?.[1]}</b> mode: shown by one analysis from 70 %, or by two analyses at {Math.round(lv.show * 100)} % or more within 20 s; listed as possible from {Math.round(lv.possible * 100)} %.</p>
             {m && (
               <p class="small">
                 Microphone: {m.label || 'default'}<br />

@@ -15,6 +15,7 @@ const VOTE_WINDOW_MS = 20000;    // two faint hits must fall within this time to
 const VOTE_GAP_MS = 1400;        // and be this far apart: windows analysed closer than that share most of their sound
 const JUNK_MIN = 0.2;            // an impossible species above this means the model is guessing on that window
 const SURE = 0.5;                // from this score a hit is taken at face value, whatever else the window contains
+const ONE_HIT = 0.7;             // a single window shows a species only from this score; below it, two hits are needed (field use: fewer detections, almost no false ones)
 export const POSSIBLE_TTL_MS = 120000; // an unconfirmed guess leaves the screen after two minutes without a new hit
 // centre of the Greater Makalali / Pidwa area, used until a GPS position is known
 const HOME = { lat: -24.12, lon: 30.66 };
@@ -23,8 +24,9 @@ const HOME = { lat: -24.12, lon: 30.66 };
 // ambient noise at several levels, scripts/soundid-rules.mjs replays decision rules on those scores):
 //  - the model is close to all-or-nothing: on a faint bird it either answers above 30 % or sees nothing at all,
 //    and with a correct engine pure noise never produced a checklist species, even at 8 %;
-//  - so one window at or above `show` displays a checklist species at once (this does not depend on how fast
-//    the phone analyses), and the rule that needed two hits was costing 12 to 18 points of detection for nothing;
+//  - in the field however (phone microphone, wind, distance) a single window above `show` invented species too
+//    often, so a checklist species is shown by one window only from `ONE_HIT`; otherwise two hits at or above
+//    `show` within 20 s are required. This costs 12 to 18 points of detection but removes most false species;
 //  - between `possible` and `show` the species is listed apart as a possible one, only when it is the best guess
 //    of its window and no impossible species beats it; two such hits within 20 s promote it;
 //  - species outside the checklist need 15 points more and always two hits.
@@ -57,7 +59,7 @@ export const status = signal<'idle' | 'loading' | 'ready' | 'listening' | 'error
 export const progress = signal<{ stage: string; pct: number }>({ stage: '', pct: 0 });
 export const errorMsg = signal('');
 export const detections = signal<Detection[]>([]);
-export const sensitivity = signal<Sensitivity>((localStorage.getItem('sidSens') as Sensitivity) || 'normal');
+export const sensitivity = signal<Sensitivity>((localStorage.getItem('sidSens') as Sensitivity) || 'low');
 export const lastMs = signal(0);         // duration of the last inference
 export const level = signal(0);          // microphone level 0..1
 export const startedAt = signal(0);
@@ -196,8 +198,9 @@ export function interpret(top: [number, number][], now = Date.now(), quiet = fal
     // windows analysed in quick succession overlap: they count as one vote
     const fresh = !kept.length || now - kept[kept.length - 1] >= VOTE_GAP_MS;
     const votes = fresh ? [...kept, now] : kept;
-    // a checklist species is shown by one window at `show`; anything else needs two hits close in time
-    const confirmed = d.shown || (!!pidwaId && conf >= show) || votes.length >= 2;
+    // a checklist species is shown by one very confident window; anything else needs two hits at `show` close in time
+    const strong = kept.length ? Math.max(d.best, conf) : conf;
+    const confirmed = d.shown || (!!pidwaId && conf >= ONE_HIT) || (votes.length >= 2 && strong >= show);
     list[i] = { ...d, best: Math.max(d.best, conf), count: d.count + (fresh ? 1 : 0), votes, shown: confirmed, first: d.shown || !confirmed ? d.first : now, last: now };
     changed = true;
   }
