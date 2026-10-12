@@ -8,6 +8,7 @@ const WD = readJson(path.join(RAW_DIR, 'wikidata.json'), {});
 const WP = readJson(path.join(RAW_DIR, 'wikipedia.json'), {});
 const IM_COMMONS = readJson(path.join(RAW_DIR, 'images.json'), {});
 const IM_INAT = readJson(path.join(RAW_DIR, 'images_inat.json'), {});
+const PH = readJson(path.join(RAW_DIR, 'photos_inat.json'), {}); // extra photos (14_photos.mjs), shipped in the on-demand "photos" pack
 // photo preference: iNaturalist (field photo, CC) over Commons (Wikidata P18, sometimes a drawing); the webp must exist
 const IM = {};
 for (const sci of new Set([...Object.keys(IM_COMMONS), ...Object.keys(IM_INAT)])) {
@@ -89,6 +90,7 @@ for (const s of species) {
     wiki: { fr: wp.fr?.url || null, en: wp.en?.url || null },
     summary: { fr: wp.fr?.extract || null, en: wp.en?.extract || null },
     image: im && fs.existsSync(path.join(OUT_DIR, 'images', `${s.id}.webp`)) ? { file: `images/${s.id}.webp`, w: im.width, h: im.height, author: im.author, license: im.license, licenseUrl: im.licenseUrl, source: im.page, from: im.source } : null,
+    photos: (PH[s.scientific] || []).filter((p) => fs.existsSync(path.join(OUT_DIR, 'photos', p.file))).map((p) => ({ file: `photos/${p.file}`, w: p.width, h: p.height, author: p.author, license: p.license, licenseUrl: p.licenseUrl, source: p.page })),
     sounds: (SN[s.scientific] || []).map((x) => ({ file: `sounds/${x.file}`, type: x.type, q: x.quality, len: x.length, by: x.recordist, license: x.license, url: x.url })),
     traits: cur.traits || null,
     notes: s.notes || null,
@@ -106,7 +108,7 @@ for (const s of species) {
 }
 writeJson(path.join(OUT_DIR, 'species.json'), out);
 console.log(`species.json: ${out.length} species (${out.filter((x) => x.group === 'bird').length} birds, ${out.filter((x) => x.group === 'mammal').length} mammals)`);
-console.log(`with image: ${out.filter((x) => x.image).length}, with FR summary: ${out.filter((x) => x.summary.fr).length}, with sounds: ${out.filter((x) => x.sounds.length).length}, birds with AVONET: ${out.filter((x) => x.avonet).length}`);
+console.log(`with image: ${out.filter((x) => x.image).length}, with FR summary: ${out.filter((x) => x.summary.fr).length}, with sounds: ${out.filter((x) => x.sounds.length).length}, with extra photos: ${out.filter((x) => x.photos.length).length}, birds with AVONET: ${out.filter((x) => x.avonet).length}`);
 if (warnings.length) console.log('warnings:\n  ' + warnings.join('\n  '));
 
 // ---- distribution of derived classes, to sanity check the thresholds --------

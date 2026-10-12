@@ -18,6 +18,7 @@ export async function loadAll() {
     const r = await fetch(dataUrl('species.json'));
     if (!r.ok) throw new Error('species.json HTTP ' + r.status);
     const list = (await r.json()) as Species[];
+    for (const s of list) s.photos ||= []; // species.json built before the photos pack existed
     const coll = new Intl.Collator('en');
     list.sort((a, b) => coll.compare(a.en, b.en));
     species.value = list;

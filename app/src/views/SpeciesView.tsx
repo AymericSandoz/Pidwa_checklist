@@ -7,9 +7,32 @@ import { ObsForm } from '../components/ObsForm';
 import { PhotoImg } from '../components/PhotoImg';
 import { Icon } from '../components/Icon';
 import { SoundPlayer } from '../components/SoundPlayer';
-import type { Observation } from '../types';
+import type { Observation, Species } from '../types';
 import { popById, fmtN } from '../learn/populations';
 import { DropChart } from './LearnView';
+
+/** The extra field photos (photos pack). A photo that is not on the phone yet simply does not show. */
+function Gallery({ s }: { s: Species }) {
+  const [failed, setFailed] = useState<Set<string>>(new Set());
+  const [open, setOpen] = useState<number | null>(null);
+  const shown = s.photos.filter((p) => !failed.has(p.file));
+  const fail = (f: string) => setFailed((prev) => new Set(prev).add(f));
+  const p = open != null ? s.photos[open] : null;
+  return (
+    <>
+      <div class="gallery" style={shown.length ? '' : 'display:none'}>
+        {s.photos.map((ph, i) => <button key={ph.file} style={failed.has(ph.file) ? 'display:none' : ''} onClick={() => setOpen(i)} aria-label="Photo"><img src={dataUrl(ph.file)} alt="" loading="lazy" onError={() => fail(ph.file)} /></button>)}
+      </div>
+      {p && (
+        <div class="lightbox" onClick={() => setOpen(null)}>
+          <button class="x" aria-label="Close"><Icon name="x" size={20} /></button>
+          <img src={dataUrl(p.file)} alt={name(s)} />
+          <div class="cred">{p.author || 'unknown author'} · {p.license || ''} · <a href={p.source || '#'} target="_blank" rel="noopener" onClick={(e) => e.stopPropagation()}>iNaturalist</a></div>
+        </div>
+      )}
+    </>
+  );
+}
 
 const IUCN_TONE: Record<string, string> = { NT: ' warn', VU: ' warn', EN: ' bad', CR: ' bad' };
 const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
@@ -61,6 +84,8 @@ export function SpeciesView({ id }: { id: string }) {
           {iucn && <span class={'pill' + (IUCN_TONE[iucn] || '')}>{iucn} · {s.iucn}</span>}
           {s.group === 'bird' && <span class="pill"><Icon name="mic" size={13} stroke={2.4} />{grade ? `sound ID ${grade}${s.bn!.lumped ? ', as ' + s.bn!.label.split('_')[1] : ''}` : 'no sound ID'}</span>}
         </div>
+
+        {s.photos.length > 0 && <Gallery s={s} />}
 
         {specs.length > 0 && <div class="specs">{specs.map(([label, value, wide]) => <div class={wide ? 'wide' : ''}><span>{label}</span><b>{value}</b></div>)}</div>}
         {s.traits && s.traits.length > 0 && <div class="card"><ul class="traits">{s.traits.map((t) => <li>{t}</li>)}</ul></div>}

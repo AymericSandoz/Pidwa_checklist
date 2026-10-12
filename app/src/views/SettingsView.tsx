@@ -6,7 +6,7 @@ import { theme, setTheme, type Theme } from '../theme';
 import { Icon } from '../components/Icon';
 import type { Packs, Observation, Place } from '../types';
 
-const PACK_LABEL: Record<string, string> = { sounds: 'Bird sounds (xeno-canto)', sat: 'Reserve map (satellite, Sentinel-2)', birdnet: 'Sound ID model (BirdNET)' };
+const PACK_LABEL: Record<string, string> = { sounds: 'Bird sounds (xeno-canto)', sat: 'Reserve map (satellite, Sentinel-2)', birdnet: 'Sound ID model (BirdNET)', photos: 'More photos per species (iNaturalist), for the quiz' };
 const cacheName = (p: string) => 'pack-' + p;
 const THEMES: [Theme, string][] = [['auto', 'Automatic'], ['light', 'Day'], ['dark', 'Night']];
 const tick = <Icon name="check" size={13} stroke={3} class="inl" />;

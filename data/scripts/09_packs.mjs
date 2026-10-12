@@ -19,6 +19,7 @@ const mapAll = walk(path.join(OUT_DIR, 'map'), 'map');
 const sat = mapAll.filter((f) => f.path.startsWith('map/sat/') || f.path === 'map/makalali.geojson');
 const pack = (files) => ({ files: files.map((f) => ({ path: f.path.replace(/\\/g, '/'), bytes: f.bytes })), bytes: files.reduce((a, f) => a + f.bytes, 0) });
 const birdnet = walk(path.join(OUT_DIR, 'birdnet'), 'birdnet');
-const packs = { sounds: pack(sounds), sat: pack(sat), birdnet: pack(birdnet) };
+const photos = walk(path.join(OUT_DIR, 'photos'), 'photos'); // extra species photos for the quiz and the galleries (14_photos.mjs)
+const packs = { sounds: pack(sounds), sat: pack(sat), birdnet: pack(birdnet), photos: pack(photos) };
 writeJson(path.join(OUT_DIR, 'packs.json'), packs);
 for (const [k, v] of Object.entries(packs)) console.log(k.padEnd(8), v.files.length, 'files', (v.bytes / 1e6).toFixed(1), 'MB');

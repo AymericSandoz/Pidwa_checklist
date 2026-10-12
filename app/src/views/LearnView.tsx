@@ -5,6 +5,7 @@ import { Icon } from '../components/Icon';
 import { POPS, popById, fmtN, type Pop } from '../learn/populations';
 import { LandView } from './LandView';
 import { FencesView } from './FencesView';
+import { QuizView } from './QuizView';
 
 /* ---------- charts: linear, from the c.1800 estimate down to today ---------- */
 
@@ -70,9 +71,15 @@ export function LearnView() {
   if (parts[1] === 'left') return <LearnChapter />;
   if (parts[1] === 'land') return <LandView />;
   if (parts[1] === 'fences') return <FencesView />;
+  if (parts[1] === 'quiz') return <QuizView />;
   return (
     <div>
       <div class="learn-hero"><b>Learn</b><p>Short, sourced chapters on what you see at Pidwa and the bigger picture behind it. Every number links to where it comes from.</p></div>
+      <a class="chap quiz" href={href('learn/quiz')}>
+        <div class="ill"><Icon name="eye" size={26} /></div>
+        <div class="tx"><b>Quiz: name that species</b><span>A photo, sometimes the call, and you type the name. Starts with what you have already seen.</span><span class="tag ok">practice</span></div>
+        <Icon name="chevron-right" size={20} />
+      </a>
       {CHAPTERS.map((c) => (
         <a class={'chap' + (c.ready ? '' : ' soon')} href={c.ready ? href('learn/' + c.id) : undefined}>
           <div class="ill">{c.id === 'fences' ? <span class="minfence"><i /><i /><i /><i class="l" /><i /><i class="t" /></span> : c.id === 'land' ? <span class="minwaffle">{['game','game','graze','graze','graze','graze','graze','communal','communal','parks','parks','urban','crops','crops','water','timber'].map((k) => <i class={'lu-' + k} />)}</span> : c.ready ? POPS.slice(0, 4).map((p) => { const s = byId.value.get(p.id); const u = s && thumbUrl(s); return u ? <i style={`background-image:url(${u})`} /> : <i />; }) : <Icon name="book-open" size={26} />}</div>

@@ -16,6 +16,8 @@ export interface Species {
   wiki: { fr: string | null; en: string | null };
   summary: { fr: string | null; en: string | null };
   image: { file: string; w: number; h: number; author: string | null; license: string | null; licenseUrl: string | null; source: string | null; from?: string } | null;
+  /** extra field photos (iNaturalist) in the on-demand "photos" pack: quiz and species-page gallery */
+  photos: { file: string; w: number; h: number; author: string | null; license: string | null; licenseUrl: string | null; source: string | null }[];
   sounds: { file: string; type: string; q: string; len: string; by: string; license: string; url: string }[];
   traits: string[] | null;
   notes: string | null;
@@ -48,6 +50,16 @@ export interface Place {
   lon: number;
   note: string;
   ts: number;        // when it was added, epoch ms
+}
+
+/** Spaced-repetition state of one species in the quiz (Leitner boxes). Stays on the phone. */
+export interface QuizCard {
+  speciesId: string;
+  box: number;       // 0 = just failed or new … 5 = known for weeks
+  due: number;       // epoch ms: when to ask again
+  asked: number;
+  right: number;
+  last: number;      // epoch ms of the last answer
 }
 
 export interface PackFile { path: string; bytes: number }
