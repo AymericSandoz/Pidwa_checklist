@@ -850,6 +850,14 @@
         "bytes": 84888
       },
       {
+        "path": "sounds/gallinula-chloropus-1.mp3",
+        "bytes": 150336
+      },
+      {
+        "path": "sounds/gallinula-chloropus-2.mp3",
+        "bytes": 35856
+      },
+      {
         "path": "sounds/gallirex-porphyreolophus-1.mp3",
         "bytes": 91152
       },
@@ -1196,6 +1204,14 @@
       {
         "path": "sounds/micronisus-gabar-2.mp3",
         "bytes": 49032
+      },
+      {
+        "path": "sounds/milvus-aegyptius-1.mp3",
+        "bytes": 93312
+      },
+      {
+        "path": "sounds/milvus-aegyptius-2.mp3",
+        "bytes": 61992
       },
       {
         "path": "sounds/motacilla-aguimp-1.mp3",
@@ -1766,7 +1782,7 @@
         "bytes": 134352
       }
     ],
-    "bytes": 41275495
+    "bytes": 41616991
   },
   "sat": {
     "files": [
@@ -8321,7 +8337,7 @@
       },
       {
         "path": "birdnet/classes.json",
-        "bytes": 476402
+        "bytes": 476433
       },
       {
         "path": "birdnet/group1-shard10of13.bin",
@@ -8384,7 +8400,7 @@
         "bytes": 1213
       }
     ],
-    "bytes": 59778587
+    "bytes": 59778618
   },
   "photos": {
     "files": [
@@ -10909,6 +10925,26 @@
         "bytes": 46514
       },
       {
+        "path": "photos/gallinula-chloropus-1.webp",
+        "bytes": 26492
+      },
+      {
+        "path": "photos/gallinula-chloropus-2.webp",
+        "bytes": 25468
+      },
+      {
+        "path": "photos/gallinula-chloropus-3.webp",
+        "bytes": 21914
+      },
+      {
+        "path": "photos/gallinula-chloropus-4.webp",
+        "bytes": 46898
+      },
+      {
+        "path": "photos/gallinula-chloropus-5.webp",
+        "bytes": 34980
+      },
+      {
         "path": "photos/gallirex-porphyreolophus-1.webp",
         "bytes": 6330
       },
@@ -12129,6 +12165,26 @@
         "bytes": 42944
       },
       {
+        "path": "photos/milvus-aegyptius-1.webp",
+        "bytes": 7602
+      },
+      {
+        "path": "photos/milvus-aegyptius-2.webp",
+        "bytes": 6706
+      },
+      {
+        "path": "photos/milvus-aegyptius-3.webp",
+        "bytes": 15174
+      },
+      {
+        "path": "photos/milvus-aegyptius-4.webp",
+        "bytes": 23378
+      },
+      {
+        "path": "photos/milvus-aegyptius-5.webp",
+        "bytes": 3276
+      },
+      {
         "path": "photos/motacilla-aguimp-1.webp",
         "bytes": 22976
       },
@@ -12487,6 +12543,26 @@
       {
         "path": "photos/papio-ursinus-5.webp",
         "bytes": 56398
+      },
+      {
+        "path": "photos/parahyaena-brunnea-1.webp",
+        "bytes": 27142
+      },
+      {
+        "path": "photos/parahyaena-brunnea-2.webp",
+        "bytes": 42126
+      },
+      {
+        "path": "photos/parahyaena-brunnea-3.webp",
+        "bytes": 26278
+      },
+      {
+        "path": "photos/parahyaena-brunnea-4.webp",
+        "bytes": 6712
+      },
+      {
+        "path": "photos/parahyaena-brunnea-5.webp",
+        "bytes": 52612
       },
       {
         "path": "photos/paraxerus-cepapi-1.webp",
@@ -14089,6 +14165,6 @@
         "bytes": 52056
       }
     ],
-    "bytes": 34284182
+    "bytes": 34650940
   }
 }

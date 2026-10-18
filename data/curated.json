@@ -45,6 +45,7 @@
   "Herpestes sanguineus": { "fr": "Mangouste rouge", "traits": ["Petite, élancée, queue à bout noir souvent relevée", "0,5-0,8 kg", "Solitaire, diurne, traverse les pistes en courant"] },
   "Genetta genetta": { "fr": "Genette commune", "traits": ["Petites taches, queue annelée à bout blanc", "1,5-2,5 kg", "Nocturne, arboricole et terrestre"] },
   "Galago moholi": { "fr": "Galago de Moholi", "traits": ["Petit primate nocturne aux grands yeux", "150-200 g", "Bonds spectaculaires entre les branches, cris perçants"] },
+  "Parahyaena brunnea": { "fr": "Hyène brune", "traits": ["Long pelage brun hirsute, cape plus claire sur le cou et les épaules", "75-80 cm au garrot, 35-50 kg", "Nocturne et solitaire, pattes rayées ; oreilles pointues, plus petite que la tachetée"] },
   "Crocuta crocuta": { "fr": "Hyène tachetée", "traits": ["Dos incliné, pelage tacheté, oreilles rondes", "80 cm au garrot, 45-80 kg", "Ricanements et hurlements nocturnes"] },
   "Raphicerus campestris": { "fr": "Steenbok", "traits": ["Petite antilope rousse à grandes oreilles", "50 cm au garrot, 10-15 kg", "Solitaire ou en couple, cornes droites chez le mâle"] },
   "Otolemur crassicaudatus": { "fr": "Grand galago", "traits": ["Nocturne, taille d'un chat, queue touffue", "1-1,5 kg", "Cri semblable à un bébé qui pleure"] },

@@ -57,7 +57,7 @@ Hors ligne : le service worker précache l'app, `species.json` et les photos à 
 Écran **Listen** : écoute continue, une fenêtre de 3 s analysée toutes les 1,5 s, entièrement sur le téléphone.
 
 - Moteur : BirdNET V2.4 (6 522 classes) exécuté par TensorFlow.js dans un web worker, accélération WebGL obligatoire. La couche de spectrogramme et le noyau STFT viennent de BirdNET Live (MIT), copiés tels quels dans `app/src/soundid/birdnet-kernel.js`.
-- 184 des 228 oiseaux de la liste sont couverts, dont 3 regroupés avec une espèce sœur. Les 44 autres sont marqués "sound ID not covered" sur leur fiche.
+- 186 des 230 oiseaux de la liste sont couverts, dont 4 regroupés avec une espèce sœur. Les 44 autres sont marqués "sound ID not covered" sur leur fiche.
 - Règle d’affichage : une espèce est montrée par une seule fenêtre à partir de 70 %, sinon il faut deux fenêtres au seuil du mode choisi (« strict » par défaut, 50 %) à moins de 20 s d’écart. Moins de détections, presque plus d’inventions : sur le terrain, le micro du téléphone donne des résultats bien moins fiables qu’un enregistrement propre.
 - Espèces hors liste : affichées avec l'étiquette "not on the Pidwa checklist" si le modèle de répartition de BirdNET les juge plausibles à cet endroit et cette semaine, avec un seuil de confiance plus élevé et deux fenêtres positives au minimum. Elles peuvent être enregistrées, sans compter dans le score.
 - Le modèle (60 Mo) est un pack hors ligne, à télécharger dans Settings. Il est redistribué tel quel sous licence CC BY-NC-SA 4.0, voir `data/out/birdnet/README.md` ; usage personnel et non commercial.

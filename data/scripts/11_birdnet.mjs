@@ -62,7 +62,7 @@ const SYN = {
   'Aquila spilogaster': ['Hieraaetus spilogaster'], 'Clanga pomarina': ['Aquila pomarina'], 'Ixobrychus sturmii': ['Botaurus sturmii'], 'Ispidina picta': ['Ceyx pictus'], 'Emberiza tahapisi': ['Fringillaria tahapisi'],
 };
 // Species that BirdNET lumps with a sister species: the class is the closest available, flagged in the app.
-const LUMPED = { 'Pycnonotus tricolor': 'Pycnonotus barbatus', 'Upupa africana': 'Upupa epops', 'Centropus burchellii': 'Centropus superciliosus' };
+const LUMPED = { 'Pycnonotus tricolor': 'Pycnonotus barbatus', 'Upupa africana': 'Upupa epops', 'Centropus burchellii': 'Centropus superciliosus', 'Milvus aegyptius': 'Milvus migrans' };
 
 const sciIdx = new Map(labels.en_uk.map((l, i) => [l.split('_')[0].toLowerCase(), i]));
 const norm = (s) => s.toLowerCase().replace(/grey/g, 'gray').replace(/[^a-z]/g, '');

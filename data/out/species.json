@@ -860,6 +860,92 @@
     "notes": null
   },
   {
+    "id": "parahyaena-brunnea",
+    "group": "mammal",
+    "sci": "Parahyaena brunnea",
+    "en": "Brown Hyena",
+    "fr": "Hyène brune",
+    "fr_source": "curated",
+    "family": "Hyaenidae",
+    "family_fr": "Hyenidae",
+    "order": "Carnivora",
+    "order_fr": "carnivores",
+    "iucn": "near threatened",
+    "qid": "Q28157482",
+    "wiki": {
+      "fr": "https://fr.wikipedia.org/wiki/Hy%C3%A8ne_brune",
+      "en": "https://en.wikipedia.org/wiki/Brown_hyena"
+    },
+    "summary": {
+      "fr": "L’hyène brune, est une espèce de mammifère carnivore de la famille des Hyénidés. Bien qu’elle ressemble superficiellement à l’hyène rayée, des études récentes l’ont classée au sein d’un genre à part : Parahyaena. Cette espèce de hyène est présente en Namibie, au Botswana, dans l’ouest et le sud du Zimbabwe, dans le sud du Mozambique, l’ouest de l’Eswatini et en Afrique du Sud. Il s’agit actuellement de l’espèce d’hyène la plus rare au monde. La plus grande population subsistante d’hyènes brunes se trouve dans le sud du désert du Kalahari et dans les zones côtières du sud-ouest de l’Afrique, d’où le nom qui lui est parfois donné de strandwolf, « loup des plages ». La population mondiale d’hyènes brunes est estimée par l’UICN entre 4 000 et 10 000 individus, et son statut de conservation est classé comme quasi menacée sur la Liste rouge de l'UICN.",
+      "en": "The brown hyena, also called the strandwolf, is a species of hyena found in Namibia, Botswana, western and southern Zimbabwe, southern Mozambique, western Eswatini, and South Africa. It is the only extant species in the genus Parahyaena. It is currently the rarest species of hyena. The largest remaining brown hyena population is located in the southern Kalahari Desert and coastal areas in Southwest Africa. The global population of brown hyena is estimated by IUCN at a number between 4,000 and 10,000 and its conservation status is marked as near threatened in the IUCN Red List."
+    },
+    "image": {
+      "file": "images/parahyaena-brunnea.webp",
+      "w": 900,
+      "h": 506,
+      "author": "petermcintyre",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/295583609",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/parahyaena-brunnea-1.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Sharon Louw",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/352169128"
+      },
+      {
+        "file": "photos/parahyaena-brunnea-2.webp",
+        "w": 416,
+        "h": 500,
+        "author": "petermcintyre",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/295970463"
+      },
+      {
+        "file": "photos/parahyaena-brunnea-3.webp",
+        "w": 500,
+        "h": 362,
+        "author": "tanyahattingh",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/594313088"
+      },
+      {
+        "file": "photos/parahyaena-brunnea-4.webp",
+        "w": 500,
+        "h": 385,
+        "author": "Keith Newnham",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/606669702"
+      },
+      {
+        "file": "photos/parahyaena-brunnea-5.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Lynne Correia",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/182763019"
+      }
+    ],
+    "sounds": [],
+    "traits": [
+      "Long pelage brun hirsute, cape plus claire sur le cou et les épaules",
+      "75-80 cm au garrot, 35-50 kg",
+      "Nocturne et solitaire, pattes rayées ; oreilles pointues, plus petite que la tachetée"
+    ],
+    "notes": "added by hand: not on the paper list"
+  },
+  {
     "id": "tragelaphus-sylvaticus",
     "group": "mammal",
     "sci": "Tragelaphus sylvaticus",
@@ -13688,6 +13774,134 @@
       "habitat": "Grassland",
       "lifestyle": "Insessorial",
       "niche": "Vertivore"
+    }
+  },
+  {
+    "id": "gallinula-chloropus",
+    "group": "bird",
+    "sci": "Gallinula chloropus",
+    "en": "Common Moorhen",
+    "fr": "Gallinule poule-d’eau",
+    "fr_source": "IOC",
+    "family": "Rallidae",
+    "family_fr": null,
+    "order": "Gruiformes",
+    "order_fr": null,
+    "iucn": "least concern",
+    "qid": "Q18847",
+    "wiki": {
+      "fr": "https://fr.wikipedia.org/wiki/Gallinule_poule-d'eau",
+      "en": "https://en.wikipedia.org/wiki/Common_moorhen"
+    },
+    "summary": {
+      "fr": "La Gallinule poule-d'eau ou plus simplement Poule d'eau, est une espèce d'oiseaux de la famille des Rallidae. Comme ces derniers, la poule d’eau est capable de voler. Elle est très fréquente dans les étangs et les mares, ainsi que dans les cours d'eau où la végétation est suffisamment dense.",
+      "en": "The common moorhen, also known as the waterhen, is a bird species in the rail family (Rallidae). It is distributed across many parts of the Old World, across Africa, Europe, and Asia. It lives around well-vegetated marshes, ponds, canals and other wetlands. The species is not found in the polar regions or many tropical rainforests; generally it is one of the most common Old World rail species, together with the Eurasian coot in some regions."
+    },
+    "image": {
+      "file": "images/gallinula-chloropus.webp",
+      "w": 900,
+      "h": 634,
+      "author": "Alexis Lours",
+      "license": "CC-BY",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "https://www.inaturalist.org/photos/171773229",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/gallinula-chloropus-1.webp",
+        "w": 375,
+        "h": 500,
+        "author": "jean hirons",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/416126665"
+      },
+      {
+        "file": "photos/gallinula-chloropus-2.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Heather and Andrew Hodgson",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/652658528"
+      },
+      {
+        "file": "photos/gallinula-chloropus-3.webp",
+        "w": 500,
+        "h": 281,
+        "author": "ruanlamprechtphoto",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/608358318"
+      },
+      {
+        "file": "photos/gallinula-chloropus-4.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Gigi Laidler",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/435403908"
+      },
+      {
+        "file": "photos/gallinula-chloropus-5.webp",
+        "w": 500,
+        "h": 333,
+        "author": "jandutoit",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/326855982"
+      }
+    ],
+    "sounds": [
+      {
+        "file": "sounds/gallinula-chloropus-1.mp3",
+        "type": "alarm call",
+        "q": "A",
+        "len": "0:28",
+        "by": "Tony Archer",
+        "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "url": "https://xeno-canto.org/635298"
+      },
+      {
+        "file": "sounds/gallinula-chloropus-2.mp3",
+        "type": "nocturnal flight call",
+        "q": "A",
+        "len": "0:07",
+        "by": "Roger Ahlman",
+        "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "url": "https://xeno-canto.org/1103572"
+      }
+    ],
+    "traits": null,
+    "notes": "added by hand: not on the paper list",
+    "avonet": {
+      "mass": 339.63,
+      "beak": 33.9,
+      "tarsus": 45.9,
+      "wing": 165.5,
+      "tail": 69,
+      "habitat": "Wetland",
+      "lifestyle": "Terrestrial",
+      "niche": "Omnivore",
+      "migration": 1,
+      "src": "BirdLife"
+    },
+    "bn": {
+      "index": 2420,
+      "label": "Gallinula chloropus_Common Moorhen",
+      "lumped": false,
+      "ref": null,
+      "heardAs": null
+    },
+    "idk": {
+      "size": "dove",
+      "bill": "fine",
+      "legs": "medium",
+      "habitat": "Wetland",
+      "lifestyle": "Terrestrial",
+      "niche": "Omnivore"
     }
   },
   {
@@ -32918,6 +33132,134 @@
       "legs": "medium",
       "habitat": "Forest",
       "lifestyle": "Insessorial",
+      "niche": "Omnivore"
+    }
+  },
+  {
+    "id": "milvus-aegyptius",
+    "group": "bird",
+    "sci": "Milvus aegyptius",
+    "en": "Yellow-billed Kite",
+    "fr": "Milan d'Afrique",
+    "fr_source": "IOC",
+    "family": "Accipitridae",
+    "family_fr": "Accipitridae",
+    "order": "Accipitriformes",
+    "order_fr": "Accipitriformes",
+    "iucn": "least concern",
+    "qid": "Q32840",
+    "wiki": {
+      "fr": "https://fr.wikipedia.org/wiki/Milvus_aegyptius",
+      "en": "https://en.wikipedia.org/wiki/Yellow-billed_kite"
+    },
+    "summary": {
+      "fr": "Milvus aegyptius, aussi appelé Milan à bec jaune, est une espèce d'oiseaux de la famille des Accipitridae. Elle était et est encore parfois considérée comme une sous-espèce du Milan noir.",
+      "en": "The yellow-billed kite is the Afrotropical counterpart of the black kite, of which it is most often considered a subspecies. However, DNA studies suggest that the yellow-billed kite differs significantly from black kites in the Eurasian clade, and should be considered as a separate, allopatric species."
+    },
+    "image": {
+      "file": "images/milvus-aegyptius.webp",
+      "w": 900,
+      "h": 578,
+      "author": "Paul Cools",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/547540505",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/milvus-aegyptius-1.webp",
+        "w": 500,
+        "h": 281,
+        "author": "petermcintyre",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/443104376"
+      },
+      {
+        "file": "photos/milvus-aegyptius-2.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Heather and Andrew Hodgson",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/339021450"
+      },
+      {
+        "file": "photos/milvus-aegyptius-3.webp",
+        "w": 500,
+        "h": 357,
+        "author": "Kobus Lubbe",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/249769418"
+      },
+      {
+        "file": "photos/milvus-aegyptius-4.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Peter Lupton",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/257325085"
+      },
+      {
+        "file": "photos/milvus-aegyptius-5.webp",
+        "w": 500,
+        "h": 327,
+        "author": "Louise Creed",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/272634000"
+      }
+    ],
+    "sounds": [
+      {
+        "file": "sounds/milvus-aegyptius-1.mp3",
+        "type": "song",
+        "q": "A",
+        "len": "0:18",
+        "by": "isaac kilusu",
+        "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "url": "https://xeno-canto.org/1095968"
+      },
+      {
+        "file": "sounds/milvus-aegyptius-2.mp3",
+        "type": "call",
+        "q": "B",
+        "len": "0:10",
+        "by": "Peter Boesman",
+        "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "url": "https://xeno-canto.org/346896"
+      }
+    ],
+    "traits": null,
+    "notes": "added by hand: not on the paper list; asked as Yellow billed eagle",
+    "avonet": {
+      "mass": 734.1,
+      "beak": 40,
+      "tarsus": 51.4,
+      "wing": 457.4,
+      "tail": 269.5,
+      "habitat": "Woodland",
+      "lifestyle": "Aerial",
+      "niche": "Omnivore",
+      "migration": 3,
+      "src": "BirdLife"
+    },
+    "bn": {
+      "index": 3584,
+      "label": "Milvus migrans_Black Kite",
+      "lumped": true,
+      "ref": null,
+      "heardAs": null
+    },
+    "idk": {
+      "size": "chicken",
+      "bill": "hooked",
+      "legs": "medium",
+      "habitat": "Woodland",
+      "lifestyle": "Aerial",
       "niche": "Omnivore"
     }
   },
