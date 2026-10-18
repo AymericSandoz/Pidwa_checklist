@@ -20,6 +20,7 @@ const sat = mapAll.filter((f) => f.path.startsWith('map/sat/') || f.path === 'ma
 const pack = (files) => ({ files: files.map((f) => ({ path: f.path.replace(/\\/g, '/'), bytes: f.bytes })), bytes: files.reduce((a, f) => a + f.bytes, 0) });
 const birdnet = walk(path.join(OUT_DIR, 'birdnet'), 'birdnet');
 const photos = walk(path.join(OUT_DIR, 'photos'), 'photos'); // extra species photos for the quiz and the galleries (14_photos.mjs)
-const packs = { sounds: pack(sounds), sat: pack(sat), birdnet: pack(birdnet), photos: pack(photos) };
+const signs = walk(path.join(OUT_DIR, 'signs'), 'signs').filter((f) => f.path.endsWith('.webp')); // field photos of tracks and dung (15_signs.mjs); index.json stays in the app
+const packs = { sounds: pack(sounds), sat: pack(sat), birdnet: pack(birdnet), photos: pack(photos), signs: pack(signs) };
 writeJson(path.join(OUT_DIR, 'packs.json'), packs);
 for (const [k, v] of Object.entries(packs)) console.log(k.padEnd(8), v.files.length, 'files', (v.bytes / 1e6).toFixed(1), 'MB');

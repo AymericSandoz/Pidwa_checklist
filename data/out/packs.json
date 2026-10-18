@@ -14166,5 +14166,1242 @@
       }
     ],
     "bytes": 34650940
+  },
+  "signs": {
+    "files": [
+      {
+        "path": "signs/acinonyx-jubatus-scat-6125158.webp",
+        "bytes": 46538
+      },
+      {
+        "path": "signs/acinonyx-jubatus-scat-720235141.webp",
+        "bytes": 47856
+      },
+      {
+        "path": "signs/acinonyx-jubatus-track-172865699.webp",
+        "bytes": 45050
+      },
+      {
+        "path": "signs/acinonyx-jubatus-track-172865724.webp",
+        "bytes": 62134
+      },
+      {
+        "path": "signs/acinonyx-jubatus-track-403163412.webp",
+        "bytes": 54606
+      },
+      {
+        "path": "signs/aepyceros-melampus-scat-204117922.webp",
+        "bytes": 17360
+      },
+      {
+        "path": "signs/aepyceros-melampus-scat-204347851.webp",
+        "bytes": 61498
+      },
+      {
+        "path": "signs/aepyceros-melampus-scat-597474504.webp",
+        "bytes": 55172
+      },
+      {
+        "path": "signs/aepyceros-melampus-track-169882030.webp",
+        "bytes": 23104
+      },
+      {
+        "path": "signs/aepyceros-melampus-track-342935162.webp",
+        "bytes": 75984
+      },
+      {
+        "path": "signs/aepyceros-melampus-track-342935832.webp",
+        "bytes": 70642
+      },
+      {
+        "path": "signs/aepyceros-melampus-track-739808756.webp",
+        "bytes": 34138
+      },
+      {
+        "path": "signs/aonyx-capensis-scat-321555311.webp",
+        "bytes": 43728
+      },
+      {
+        "path": "signs/aonyx-capensis-scat-362226577.webp",
+        "bytes": 26532
+      },
+      {
+        "path": "signs/aonyx-capensis-scat-56819210.webp",
+        "bytes": 36602
+      },
+      {
+        "path": "signs/aonyx-capensis-track-178010027.webp",
+        "bytes": 35504
+      },
+      {
+        "path": "signs/aonyx-capensis-track-267314800.webp",
+        "bytes": 42744
+      },
+      {
+        "path": "signs/aonyx-capensis-track-425470276.webp",
+        "bytes": 43546
+      },
+      {
+        "path": "signs/aonyx-capensis-track-711638428.webp",
+        "bytes": 62418
+      },
+      {
+        "path": "signs/atilax-paludinosus-scat-179352531.webp",
+        "bytes": 53948
+      },
+      {
+        "path": "signs/atilax-paludinosus-scat-37373445.webp",
+        "bytes": 41076
+      },
+      {
+        "path": "signs/atilax-paludinosus-scat-465852151.webp",
+        "bytes": 31990
+      },
+      {
+        "path": "signs/atilax-paludinosus-track-161913050.webp",
+        "bytes": 65186
+      },
+      {
+        "path": "signs/atilax-paludinosus-track-258799179.webp",
+        "bytes": 61874
+      },
+      {
+        "path": "signs/atilax-paludinosus-track-360367149.webp",
+        "bytes": 22310
+      },
+      {
+        "path": "signs/atilax-paludinosus-track-545124678.webp",
+        "bytes": 74472
+      },
+      {
+        "path": "signs/caracal-caracal-scat-175061634.webp",
+        "bytes": 58944
+      },
+      {
+        "path": "signs/caracal-caracal-scat-267794464.webp",
+        "bytes": 57348
+      },
+      {
+        "path": "signs/caracal-caracal-scat-347787233.webp",
+        "bytes": 45928
+      },
+      {
+        "path": "signs/caracal-caracal-track-200018858.webp",
+        "bytes": 49736
+      },
+      {
+        "path": "signs/caracal-caracal-track-345566923.webp",
+        "bytes": 25832
+      },
+      {
+        "path": "signs/caracal-caracal-track-91246152.webp",
+        "bytes": 41898
+      },
+      {
+        "path": "signs/ceratotherium-simum-scat-138924291.webp",
+        "bytes": 42856
+      },
+      {
+        "path": "signs/ceratotherium-simum-scat-519124076.webp",
+        "bytes": 71578
+      },
+      {
+        "path": "signs/ceratotherium-simum-scat-577256510.webp",
+        "bytes": 59126
+      },
+      {
+        "path": "signs/ceratotherium-simum-track-566469039.webp",
+        "bytes": 48778
+      },
+      {
+        "path": "signs/ceratotherium-simum-track-614500316.webp",
+        "bytes": 61072
+      },
+      {
+        "path": "signs/ceratotherium-simum-track-629696481.webp",
+        "bytes": 65180
+      },
+      {
+        "path": "signs/ceratotherium-simum-track-729241102.webp",
+        "bytes": 28160
+      },
+      {
+        "path": "signs/chlorocebus-pygerythrus-scat-155120761.webp",
+        "bytes": 31648
+      },
+      {
+        "path": "signs/chlorocebus-pygerythrus-scat-15603794.webp",
+        "bytes": 25632
+      },
+      {
+        "path": "signs/chlorocebus-pygerythrus-track-297702624.webp",
+        "bytes": 12316
+      },
+      {
+        "path": "signs/chlorocebus-pygerythrus-track-360719490.webp",
+        "bytes": 81298
+      },
+      {
+        "path": "signs/chlorocebus-pygerythrus-track-413407622.webp",
+        "bytes": 73734
+      },
+      {
+        "path": "signs/chlorocebus-pygerythrus-track-92149402.webp",
+        "bytes": 25150
+      },
+      {
+        "path": "signs/civettictis-civetta-scat-265916125.webp",
+        "bytes": 62508
+      },
+      {
+        "path": "signs/civettictis-civetta-scat-351195453.webp",
+        "bytes": 71002
+      },
+      {
+        "path": "signs/civettictis-civetta-scat-407028942.webp",
+        "bytes": 74128
+      },
+      {
+        "path": "signs/civettictis-civetta-track-365013138.webp",
+        "bytes": 38438
+      },
+      {
+        "path": "signs/civettictis-civetta-track-366314381.webp",
+        "bytes": 20296
+      },
+      {
+        "path": "signs/civettictis-civetta-track-568483837.webp",
+        "bytes": 97420
+      },
+      {
+        "path": "signs/civettictis-civetta-track-613693913.webp",
+        "bytes": 42512
+      },
+      {
+        "path": "signs/connochaetes-taurinus-scat-204342254.webp",
+        "bytes": 22150
+      },
+      {
+        "path": "signs/connochaetes-taurinus-scat-204388519.webp",
+        "bytes": 64632
+      },
+      {
+        "path": "signs/connochaetes-taurinus-scat-320084080.webp",
+        "bytes": 51484
+      },
+      {
+        "path": "signs/connochaetes-taurinus-track-169997548.webp",
+        "bytes": 57664
+      },
+      {
+        "path": "signs/connochaetes-taurinus-track-297691466.webp",
+        "bytes": 37412
+      },
+      {
+        "path": "signs/connochaetes-taurinus-track-595838120.webp",
+        "bytes": 48164
+      },
+      {
+        "path": "signs/connochaetes-taurinus-track-717168982.webp",
+        "bytes": 34200
+      },
+      {
+        "path": "signs/crocuta-crocuta-scat-271269664.webp",
+        "bytes": 58064
+      },
+      {
+        "path": "signs/crocuta-crocuta-scat-471994739.webp",
+        "bytes": 39136
+      },
+      {
+        "path": "signs/crocuta-crocuta-scat-584235062.webp",
+        "bytes": 78942
+      },
+      {
+        "path": "signs/crocuta-crocuta-track-351257164.webp",
+        "bytes": 67682
+      },
+      {
+        "path": "signs/crocuta-crocuta-track-445429205.webp",
+        "bytes": 64190
+      },
+      {
+        "path": "signs/crocuta-crocuta-track-472484742.webp",
+        "bytes": 61526
+      },
+      {
+        "path": "signs/crocuta-crocuta-track-580896740.webp",
+        "bytes": 60558
+      },
+      {
+        "path": "signs/damaliscus-lunatus-scat-189380184.webp",
+        "bytes": 18898
+      },
+      {
+        "path": "signs/damaliscus-lunatus-scat-204337993.webp",
+        "bytes": 18594
+      },
+      {
+        "path": "signs/damaliscus-lunatus-scat-204346851.webp",
+        "bytes": 62186
+      },
+      {
+        "path": "signs/diceros-bicornis-scat-102385494.webp",
+        "bytes": 43844
+      },
+      {
+        "path": "signs/diceros-bicornis-scat-15648802.webp",
+        "bytes": 55948
+      },
+      {
+        "path": "signs/diceros-bicornis-scat-560928198.webp",
+        "bytes": 50498
+      },
+      {
+        "path": "signs/diceros-bicornis-track-181284109.webp",
+        "bytes": 59826
+      },
+      {
+        "path": "signs/diceros-bicornis-track-593120294.webp",
+        "bytes": 74400
+      },
+      {
+        "path": "signs/equus-quagga-scat-135325170.webp",
+        "bytes": 56998
+      },
+      {
+        "path": "signs/equus-quagga-scat-165127078.webp",
+        "bytes": 70540
+      },
+      {
+        "path": "signs/equus-quagga-scat-178435006.webp",
+        "bytes": 66140
+      },
+      {
+        "path": "signs/equus-quagga-track-301156517.webp",
+        "bytes": 74070
+      },
+      {
+        "path": "signs/equus-quagga-track-414180739.webp",
+        "bytes": 64110
+      },
+      {
+        "path": "signs/equus-quagga-track-497335614.webp",
+        "bytes": 70368
+      },
+      {
+        "path": "signs/equus-quagga-track-499874035.webp",
+        "bytes": 51546
+      },
+      {
+        "path": "signs/felis-lybica-scat-56118204.webp",
+        "bytes": 57108
+      },
+      {
+        "path": "signs/felis-lybica-scat-593134295.webp",
+        "bytes": 68842
+      },
+      {
+        "path": "signs/felis-lybica-track-15990725.webp",
+        "bytes": 96862
+      },
+      {
+        "path": "signs/felis-lybica-track-465511231.webp",
+        "bytes": 86360
+      },
+      {
+        "path": "signs/felis-lybica-track-628542961.webp",
+        "bytes": 43648
+      },
+      {
+        "path": "signs/felis-lybica-track-731189344.webp",
+        "bytes": 46956
+      },
+      {
+        "path": "signs/genetta-genetta-scat-186273317.webp",
+        "bytes": 70292
+      },
+      {
+        "path": "signs/genetta-genetta-scat-213707192.webp",
+        "bytes": 44016
+      },
+      {
+        "path": "signs/genetta-genetta-scat-337456820.webp",
+        "bytes": 63926
+      },
+      {
+        "path": "signs/genetta-genetta-track-348431869.webp",
+        "bytes": 56038
+      },
+      {
+        "path": "signs/genetta-genetta-track-353543699.webp",
+        "bytes": 51972
+      },
+      {
+        "path": "signs/genetta-genetta-track-353631959.webp",
+        "bytes": 38014
+      },
+      {
+        "path": "signs/genetta-genetta-track-579511418.webp",
+        "bytes": 40926
+      },
+      {
+        "path": "signs/genetta-tigrina-scat-125378811.webp",
+        "bytes": 57722
+      },
+      {
+        "path": "signs/genetta-tigrina-scat-587469929.webp",
+        "bytes": 41258
+      },
+      {
+        "path": "signs/genetta-tigrina-scat-618981828.webp",
+        "bytes": 41870
+      },
+      {
+        "path": "signs/genetta-tigrina-track-157328312.webp",
+        "bytes": 53902
+      },
+      {
+        "path": "signs/genetta-tigrina-track-205256531.webp",
+        "bytes": 21014
+      },
+      {
+        "path": "signs/genetta-tigrina-track-460721537.webp",
+        "bytes": 52376
+      },
+      {
+        "path": "signs/genetta-tigrina-track-678833290.webp",
+        "bytes": 77262
+      },
+      {
+        "path": "signs/giraffa-giraffa-scat-175627691.webp",
+        "bytes": 57898
+      },
+      {
+        "path": "signs/giraffa-giraffa-scat-175677833.webp",
+        "bytes": 62534
+      },
+      {
+        "path": "signs/giraffa-giraffa-scat-204121349.webp",
+        "bytes": 19208
+      },
+      {
+        "path": "signs/giraffa-giraffa-track-291244204.webp",
+        "bytes": 67416
+      },
+      {
+        "path": "signs/giraffa-giraffa-track-291978578.webp",
+        "bytes": 60610
+      },
+      {
+        "path": "signs/giraffa-giraffa-track-477388333.webp",
+        "bytes": 67718
+      },
+      {
+        "path": "signs/giraffa-giraffa-track-630492186.webp",
+        "bytes": 58300
+      },
+      {
+        "path": "signs/herpestes-sanguineus-scat-179687640.webp",
+        "bytes": 18660
+      },
+      {
+        "path": "signs/herpestes-sanguineus-scat-221790351.webp",
+        "bytes": 59494
+      },
+      {
+        "path": "signs/herpestes-sanguineus-scat-372779420.webp",
+        "bytes": 65202
+      },
+      {
+        "path": "signs/herpestes-sanguineus-track-353271129.webp",
+        "bytes": 43596
+      },
+      {
+        "path": "signs/herpestes-sanguineus-track-353271162.webp",
+        "bytes": 82806
+      },
+      {
+        "path": "signs/herpestes-sanguineus-track-82859352.webp",
+        "bytes": 97948
+      },
+      {
+        "path": "signs/herpestes-sanguineus-track-82859568.webp",
+        "bytes": 44918
+      },
+      {
+        "path": "signs/hippopotamus-amphibius-scat-15635336.webp",
+        "bytes": 31258
+      },
+      {
+        "path": "signs/hippopotamus-amphibius-scat-240864651.webp",
+        "bytes": 58720
+      },
+      {
+        "path": "signs/hippopotamus-amphibius-scat-574150789.webp",
+        "bytes": 68268
+      },
+      {
+        "path": "signs/hippopotamus-amphibius-track-36724184.webp",
+        "bytes": 72938
+      },
+      {
+        "path": "signs/hippopotamus-amphibius-track-592215313.webp",
+        "bytes": 48112
+      },
+      {
+        "path": "signs/hystrix-africaeaustralis-scat-161515214.webp",
+        "bytes": 64682
+      },
+      {
+        "path": "signs/hystrix-africaeaustralis-scat-18466976.webp",
+        "bytes": 52348
+      },
+      {
+        "path": "signs/hystrix-africaeaustralis-scat-225815819.webp",
+        "bytes": 41152
+      },
+      {
+        "path": "signs/hystrix-africaeaustralis-track-116918748.webp",
+        "bytes": 30028
+      },
+      {
+        "path": "signs/hystrix-africaeaustralis-track-161862273.webp",
+        "bytes": 23924
+      },
+      {
+        "path": "signs/hystrix-africaeaustralis-track-177028538.webp",
+        "bytes": 57092
+      },
+      {
+        "path": "signs/hystrix-africaeaustralis-track-497256164.webp",
+        "bytes": 67036
+      },
+      {
+        "path": "signs/ichneumia-albicauda-scat-318433773.webp",
+        "bytes": 75282
+      },
+      {
+        "path": "signs/ichneumia-albicauda-scat-421997956.webp",
+        "bytes": 68322
+      },
+      {
+        "path": "signs/ichneumia-albicauda-scat-702888897.webp",
+        "bytes": 67046
+      },
+      {
+        "path": "signs/ichneumia-albicauda-track-16327290.webp",
+        "bytes": 71166
+      },
+      {
+        "path": "signs/ichneumia-albicauda-track-174969939.webp",
+        "bytes": 42370
+      },
+      {
+        "path": "signs/ichneumia-albicauda-track-353272475.webp",
+        "bytes": 43904
+      },
+      {
+        "path": "signs/ichneumia-albicauda-track-434065847.webp",
+        "bytes": 54860
+      },
+      {
+        "path": "signs/kobus-ellipsiprymnus-scat-41158318.webp",
+        "bytes": 43668
+      },
+      {
+        "path": "signs/kobus-ellipsiprymnus-scat-432976521.webp",
+        "bytes": 55874
+      },
+      {
+        "path": "signs/kobus-ellipsiprymnus-scat-469353875.webp",
+        "bytes": 66502
+      },
+      {
+        "path": "signs/kobus-ellipsiprymnus-track-16330988.webp",
+        "bytes": 64992
+      },
+      {
+        "path": "signs/kobus-ellipsiprymnus-track-291978262.webp",
+        "bytes": 77980
+      },
+      {
+        "path": "signs/kobus-ellipsiprymnus-track-317439835.webp",
+        "bytes": 60428
+      },
+      {
+        "path": "signs/kobus-ellipsiprymnus-track-66726775.webp",
+        "bytes": 58244
+      },
+      {
+        "path": "signs/leptailurus-serval-scat-246448038.webp",
+        "bytes": 61052
+      },
+      {
+        "path": "signs/leptailurus-serval-scat-355315461.webp",
+        "bytes": 76848
+      },
+      {
+        "path": "signs/leptailurus-serval-scat-355316101.webp",
+        "bytes": 84186
+      },
+      {
+        "path": "signs/leptailurus-serval-track-514521799.webp",
+        "bytes": 43962
+      },
+      {
+        "path": "signs/leptailurus-serval-track-599809093.webp",
+        "bytes": 69220
+      },
+      {
+        "path": "signs/leptailurus-serval-track-629665979.webp",
+        "bytes": 55818
+      },
+      {
+        "path": "signs/leptailurus-serval-track-629669059.webp",
+        "bytes": 58888
+      },
+      {
+        "path": "signs/lepus-saxatilis-scat-229234337.webp",
+        "bytes": 64966
+      },
+      {
+        "path": "signs/lepus-saxatilis-scat-548544436.webp",
+        "bytes": 56440
+      },
+      {
+        "path": "signs/lepus-saxatilis-scat-609420123.webp",
+        "bytes": 54998
+      },
+      {
+        "path": "signs/lepus-saxatilis-track-252903385.webp",
+        "bytes": 49162
+      },
+      {
+        "path": "signs/lepus-saxatilis-track-297700336.webp",
+        "bytes": 29410
+      },
+      {
+        "path": "signs/lepus-saxatilis-track-639173090.webp",
+        "bytes": 70450
+      },
+      {
+        "path": "signs/loxodonta-africana-scat-131333543.webp",
+        "bytes": 62980
+      },
+      {
+        "path": "signs/loxodonta-africana-scat-15189853.webp",
+        "bytes": 53656
+      },
+      {
+        "path": "signs/loxodonta-africana-scat-588146755.webp",
+        "bytes": 49664
+      },
+      {
+        "path": "signs/loxodonta-africana-track-114740792.webp",
+        "bytes": 34416
+      },
+      {
+        "path": "signs/loxodonta-africana-track-15644420.webp",
+        "bytes": 58078
+      },
+      {
+        "path": "signs/loxodonta-africana-track-292066708.webp",
+        "bytes": 15184
+      },
+      {
+        "path": "signs/loxodonta-africana-track-701680192.webp",
+        "bytes": 45846
+      },
+      {
+        "path": "signs/lupulella-mesomelas-scat-137194720.webp",
+        "bytes": 47356
+      },
+      {
+        "path": "signs/lupulella-mesomelas-scat-179387685.webp",
+        "bytes": 76494
+      },
+      {
+        "path": "signs/lupulella-mesomelas-scat-664889819.webp",
+        "bytes": 57162
+      },
+      {
+        "path": "signs/lupulella-mesomelas-track-178010170.webp",
+        "bytes": 49778
+      },
+      {
+        "path": "signs/lupulella-mesomelas-track-461830126.webp",
+        "bytes": 31078
+      },
+      {
+        "path": "signs/lupulella-mesomelas-track-623863874.webp",
+        "bytes": 61246
+      },
+      {
+        "path": "signs/lupulella-mesomelas-track-646704880.webp",
+        "bytes": 32118
+      },
+      {
+        "path": "signs/lycaon-pictus-scat-197759201.webp",
+        "bytes": 73312
+      },
+      {
+        "path": "signs/lycaon-pictus-scat-197759219.webp",
+        "bytes": 74134
+      },
+      {
+        "path": "signs/lycaon-pictus-track-149031581.webp",
+        "bytes": 45210
+      },
+      {
+        "path": "signs/lycaon-pictus-track-203779176.webp",
+        "bytes": 28048
+      },
+      {
+        "path": "signs/lycaon-pictus-track-57900111.webp",
+        "bytes": 41600
+      },
+      {
+        "path": "signs/lycaon-pictus-track-715410037.webp",
+        "bytes": 82282
+      },
+      {
+        "path": "signs/mellivora-capensis-track-15709241.webp",
+        "bytes": 46864
+      },
+      {
+        "path": "signs/mellivora-capensis-track-244071061.webp",
+        "bytes": 32906
+      },
+      {
+        "path": "signs/mellivora-capensis-track-432671158.webp",
+        "bytes": 31378
+      },
+      {
+        "path": "signs/mellivora-capensis-track-595590017.webp",
+        "bytes": 71522
+      },
+      {
+        "path": "signs/mungos-mungo-scat-141874182.webp",
+        "bytes": 53930
+      },
+      {
+        "path": "signs/mungos-mungo-scat-32830871.webp",
+        "bytes": 50418
+      },
+      {
+        "path": "signs/mungos-mungo-scat-42579343.webp",
+        "bytes": 55372
+      },
+      {
+        "path": "signs/mungos-mungo-track-296456894.webp",
+        "bytes": 44240
+      },
+      {
+        "path": "signs/mungos-mungo-track-315882497.webp",
+        "bytes": 70870
+      },
+      {
+        "path": "signs/mungos-mungo-track-600820936.webp",
+        "bytes": 33090
+      },
+      {
+        "path": "signs/oreotragus-oreotragus-scat-207797092.webp",
+        "bytes": 41472
+      },
+      {
+        "path": "signs/oreotragus-oreotragus-scat-244082407.webp",
+        "bytes": 34032
+      },
+      {
+        "path": "signs/oreotragus-oreotragus-scat-31969335.webp",
+        "bytes": 68236
+      },
+      {
+        "path": "signs/oreotragus-oreotragus-track-134239209.webp",
+        "bytes": 53662
+      },
+      {
+        "path": "signs/oreotragus-oreotragus-track-155170140.webp",
+        "bytes": 42612
+      },
+      {
+        "path": "signs/oreotragus-oreotragus-track-366060932.webp",
+        "bytes": 68606
+      },
+      {
+        "path": "signs/oreotragus-oreotragus-track-669115910.webp",
+        "bytes": 44892
+      },
+      {
+        "path": "signs/orycteropus-afer-scat-16175139.webp",
+        "bytes": 25532
+      },
+      {
+        "path": "signs/orycteropus-afer-scat-200997178.webp",
+        "bytes": 53898
+      },
+      {
+        "path": "signs/orycteropus-afer-scat-591972211.webp",
+        "bytes": 23418
+      },
+      {
+        "path": "signs/orycteropus-afer-track-158137300.webp",
+        "bytes": 25804
+      },
+      {
+        "path": "signs/orycteropus-afer-track-200996197.webp",
+        "bytes": 67366
+      },
+      {
+        "path": "signs/orycteropus-afer-track-200997051.webp",
+        "bytes": 51428
+      },
+      {
+        "path": "signs/orycteropus-afer-track-663892223.webp",
+        "bytes": 71166
+      },
+      {
+        "path": "signs/panthera-leo-scat-416538652.webp",
+        "bytes": 46884
+      },
+      {
+        "path": "signs/panthera-leo-scat-432992960.webp",
+        "bytes": 73978
+      },
+      {
+        "path": "signs/panthera-leo-scat-562711726.webp",
+        "bytes": 60258
+      },
+      {
+        "path": "signs/panthera-leo-track-255108257.webp",
+        "bytes": 70362
+      },
+      {
+        "path": "signs/panthera-leo-track-445425554.webp",
+        "bytes": 68812
+      },
+      {
+        "path": "signs/panthera-leo-track-504349594.webp",
+        "bytes": 67494
+      },
+      {
+        "path": "signs/panthera-leo-track-571944546.webp",
+        "bytes": 58866
+      },
+      {
+        "path": "signs/panthera-pardus-scat-178593319.webp",
+        "bytes": 24842
+      },
+      {
+        "path": "signs/panthera-pardus-scat-187525786.webp",
+        "bytes": 52376
+      },
+      {
+        "path": "signs/panthera-pardus-scat-254317546.webp",
+        "bytes": 38498
+      },
+      {
+        "path": "signs/panthera-pardus-track-140661115.webp",
+        "bytes": 57930
+      },
+      {
+        "path": "signs/panthera-pardus-track-480212910.webp",
+        "bytes": 56324
+      },
+      {
+        "path": "signs/panthera-pardus-track-487044871.webp",
+        "bytes": 56744
+      },
+      {
+        "path": "signs/panthera-pardus-track-487047217.webp",
+        "bytes": 63832
+      },
+      {
+        "path": "signs/papio-ursinus-scat-125963194.webp",
+        "bytes": 47420
+      },
+      {
+        "path": "signs/papio-ursinus-scat-201598999.webp",
+        "bytes": 42218
+      },
+      {
+        "path": "signs/papio-ursinus-scat-70887157.webp",
+        "bytes": 31898
+      },
+      {
+        "path": "signs/papio-ursinus-track-150229654.webp",
+        "bytes": 52008
+      },
+      {
+        "path": "signs/papio-ursinus-track-150229663.webp",
+        "bytes": 11292
+      },
+      {
+        "path": "signs/papio-ursinus-track-15531356.webp",
+        "bytes": 53412
+      },
+      {
+        "path": "signs/papio-ursinus-track-276597184.webp",
+        "bytes": 56900
+      },
+      {
+        "path": "signs/parahyaena-brunnea-scat-175638080.webp",
+        "bytes": 63236
+      },
+      {
+        "path": "signs/parahyaena-brunnea-scat-237845231.webp",
+        "bytes": 67352
+      },
+      {
+        "path": "signs/parahyaena-brunnea-scat-610422830.webp",
+        "bytes": 77138
+      },
+      {
+        "path": "signs/parahyaena-brunnea-track-181058563.webp",
+        "bytes": 67598
+      },
+      {
+        "path": "signs/parahyaena-brunnea-track-347955617.webp",
+        "bytes": 70410
+      },
+      {
+        "path": "signs/parahyaena-brunnea-track-375709640.webp",
+        "bytes": 55026
+      },
+      {
+        "path": "signs/parahyaena-brunnea-track-375709702.webp",
+        "bytes": 75230
+      },
+      {
+        "path": "signs/phacochoerus-africanus-scat-290732177.webp",
+        "bytes": 61544
+      },
+      {
+        "path": "signs/phacochoerus-africanus-scat-318433496.webp",
+        "bytes": 62786
+      },
+      {
+        "path": "signs/phacochoerus-africanus-scat-412679210.webp",
+        "bytes": 18264
+      },
+      {
+        "path": "signs/phacochoerus-africanus-track-345567315.webp",
+        "bytes": 45082
+      },
+      {
+        "path": "signs/phacochoerus-africanus-track-434879381.webp",
+        "bytes": 57406
+      },
+      {
+        "path": "signs/phacochoerus-africanus-track-629667213.webp",
+        "bytes": 55274
+      },
+      {
+        "path": "signs/potamochoerus-larvatus-scat-193063366.webp",
+        "bytes": 52574
+      },
+      {
+        "path": "signs/potamochoerus-larvatus-scat-220624162.webp",
+        "bytes": 83282
+      },
+      {
+        "path": "signs/potamochoerus-larvatus-scat-267837474.webp",
+        "bytes": 61088
+      },
+      {
+        "path": "signs/potamochoerus-larvatus-track-143633691.webp",
+        "bytes": 63828
+      },
+      {
+        "path": "signs/potamochoerus-larvatus-track-499876786.webp",
+        "bytes": 58892
+      },
+      {
+        "path": "signs/potamochoerus-larvatus-track-709731576.webp",
+        "bytes": 85224
+      },
+      {
+        "path": "signs/procavia-capensis-scat-146650435.webp",
+        "bytes": 34648
+      },
+      {
+        "path": "signs/procavia-capensis-scat-354119060.webp",
+        "bytes": 47836
+      },
+      {
+        "path": "signs/procavia-capensis-scat-471721108.webp",
+        "bytes": 40610
+      },
+      {
+        "path": "signs/procavia-capensis-track-366815267.webp",
+        "bytes": 43054
+      },
+      {
+        "path": "signs/proteles-cristatus-scat-340312866.webp",
+        "bytes": 99666
+      },
+      {
+        "path": "signs/proteles-cristatus-scat-588401437.webp",
+        "bytes": 71264
+      },
+      {
+        "path": "signs/proteles-cristatus-scat-588401481.webp",
+        "bytes": 51214
+      },
+      {
+        "path": "signs/proteles-cristatus-track-516866508.webp",
+        "bytes": 56370
+      },
+      {
+        "path": "signs/proteles-cristatus-track-544065492.webp",
+        "bytes": 60556
+      },
+      {
+        "path": "signs/proteles-cristatus-track-639436400.webp",
+        "bytes": 44028
+      },
+      {
+        "path": "signs/raphicerus-campestris-scat-15830292.webp",
+        "bytes": 25002
+      },
+      {
+        "path": "signs/raphicerus-campestris-scat-586650910.webp",
+        "bytes": 53358
+      },
+      {
+        "path": "signs/raphicerus-campestris-scat-686411715.webp",
+        "bytes": 66470
+      },
+      {
+        "path": "signs/raphicerus-campestris-track-172391355.webp",
+        "bytes": 40384
+      },
+      {
+        "path": "signs/raphicerus-campestris-track-286863617.webp",
+        "bytes": 53308
+      },
+      {
+        "path": "signs/raphicerus-campestris-track-286863707.webp",
+        "bytes": 44674
+      },
+      {
+        "path": "signs/raphicerus-campestris-track-578337197.webp",
+        "bytes": 60512
+      },
+      {
+        "path": "signs/raphicerus-sharpei-scat-204111266.webp",
+        "bytes": 40276
+      },
+      {
+        "path": "signs/raphicerus-sharpei-scat-204111300.webp",
+        "bytes": 16788
+      },
+      {
+        "path": "signs/raphicerus-sharpei-scat-204111304.webp",
+        "bytes": 63448
+      },
+      {
+        "path": "signs/smutsia-temminckii-track-507806191.webp",
+        "bytes": 66884
+      },
+      {
+        "path": "signs/smutsia-temminckii-track-507806236.webp",
+        "bytes": 60094
+      },
+      {
+        "path": "signs/sylvicapra-grimmia-scat-142153822.webp",
+        "bytes": 65308
+      },
+      {
+        "path": "signs/sylvicapra-grimmia-scat-155719838.webp",
+        "bytes": 52458
+      },
+      {
+        "path": "signs/sylvicapra-grimmia-scat-177802634.webp",
+        "bytes": 20770
+      },
+      {
+        "path": "signs/sylvicapra-grimmia-track-154278606.webp",
+        "bytes": 60182
+      },
+      {
+        "path": "signs/sylvicapra-grimmia-track-273267038.webp",
+        "bytes": 52760
+      },
+      {
+        "path": "signs/sylvicapra-grimmia-track-291554455.webp",
+        "bytes": 73528
+      },
+      {
+        "path": "signs/sylvicapra-grimmia-track-684264778.webp",
+        "bytes": 55126
+      },
+      {
+        "path": "signs/syncerus-caffer-scat-371844467.webp",
+        "bytes": 59564
+      },
+      {
+        "path": "signs/syncerus-caffer-scat-462861610.webp",
+        "bytes": 33762
+      },
+      {
+        "path": "signs/syncerus-caffer-scat-618230199.webp",
+        "bytes": 46444
+      },
+      {
+        "path": "signs/syncerus-caffer-track-154487441.webp",
+        "bytes": 39570
+      },
+      {
+        "path": "signs/syncerus-caffer-track-173090166.webp",
+        "bytes": 36684
+      },
+      {
+        "path": "signs/syncerus-caffer-track-527002842.webp",
+        "bytes": 61416
+      },
+      {
+        "path": "signs/syncerus-caffer-track-83988039.webp",
+        "bytes": 80856
+      },
+      {
+        "path": "signs/taurotragus-oryx-scat-189381763.webp",
+        "bytes": 24126
+      },
+      {
+        "path": "signs/taurotragus-oryx-scat-499876613.webp",
+        "bytes": 58410
+      },
+      {
+        "path": "signs/taurotragus-oryx-scat-68920454.webp",
+        "bytes": 55126
+      },
+      {
+        "path": "signs/taurotragus-oryx-track-146329845.webp",
+        "bytes": 65776
+      },
+      {
+        "path": "signs/taurotragus-oryx-track-149700897.webp",
+        "bytes": 61644
+      },
+      {
+        "path": "signs/taurotragus-oryx-track-499876879.webp",
+        "bytes": 48992
+      },
+      {
+        "path": "signs/taurotragus-oryx-track-655551257.webp",
+        "bytes": 41486
+      },
+      {
+        "path": "signs/thryonomys-swinderianus-scat-202135272.webp",
+        "bytes": 30146
+      },
+      {
+        "path": "signs/thryonomys-swinderianus-scat-35755171.webp",
+        "bytes": 31094
+      },
+      {
+        "path": "signs/thryonomys-swinderianus-scat-480128113.webp",
+        "bytes": 67906
+      },
+      {
+        "path": "signs/thryonomys-swinderianus-track-513261988.webp",
+        "bytes": 54362
+      },
+      {
+        "path": "signs/thryonomys-swinderianus-track-513262032.webp",
+        "bytes": 66138
+      },
+      {
+        "path": "signs/thryonomys-swinderianus-track-529179591.webp",
+        "bytes": 41038
+      },
+      {
+        "path": "signs/tragelaphus-angasii-scat-337896342.webp",
+        "bytes": 72034
+      },
+      {
+        "path": "signs/tragelaphus-angasii-scat-576583116.webp",
+        "bytes": 47878
+      },
+      {
+        "path": "signs/tragelaphus-angasii-scat-61659771.webp",
+        "bytes": 50526
+      },
+      {
+        "path": "signs/tragelaphus-angasii-track-317180853.webp",
+        "bytes": 65332
+      },
+      {
+        "path": "signs/tragelaphus-angasii-track-392334044.webp",
+        "bytes": 41636
+      },
+      {
+        "path": "signs/tragelaphus-angasii-track-410956427.webp",
+        "bytes": 43728
+      },
+      {
+        "path": "signs/tragelaphus-angasii-track-487710135.webp",
+        "bytes": 18782
+      },
+      {
+        "path": "signs/tragelaphus-strepsiceros-scat-177799100.webp",
+        "bytes": 23986
+      },
+      {
+        "path": "signs/tragelaphus-strepsiceros-scat-186717724.webp",
+        "bytes": 57120
+      },
+      {
+        "path": "signs/tragelaphus-strepsiceros-scat-189391624.webp",
+        "bytes": 71680
+      },
+      {
+        "path": "signs/tragelaphus-strepsiceros-track-291253728.webp",
+        "bytes": 75720
+      },
+      {
+        "path": "signs/tragelaphus-strepsiceros-track-291255066.webp",
+        "bytes": 73178
+      },
+      {
+        "path": "signs/tragelaphus-strepsiceros-track-499876651.webp",
+        "bytes": 29026
+      },
+      {
+        "path": "signs/tragelaphus-strepsiceros-track-551514529.webp",
+        "bytes": 58718
+      },
+      {
+        "path": "signs/tragelaphus-sylvaticus-scat-241926593.webp",
+        "bytes": 67824
+      },
+      {
+        "path": "signs/tragelaphus-sylvaticus-scat-337992341.webp",
+        "bytes": 17244
+      },
+      {
+        "path": "signs/tragelaphus-sylvaticus-scat-660205694.webp",
+        "bytes": 56760
+      },
+      {
+        "path": "signs/tragelaphus-sylvaticus-track-155923732.webp",
+        "bytes": 57034
+      },
+      {
+        "path": "signs/tragelaphus-sylvaticus-track-328191227.webp",
+        "bytes": 27070
+      },
+      {
+        "path": "signs/tragelaphus-sylvaticus-track-720624824.webp",
+        "bytes": 46888
+      },
+      {
+        "path": "signs/tragelaphus-sylvaticus-track-741557163.webp",
+        "bytes": 37406
+      }
+    ],
+    "bytes": 16311192
   }
 }

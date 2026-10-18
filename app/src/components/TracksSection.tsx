@@ -8,10 +8,10 @@ import { spoorById, SHAPE_LABEL } from '../learn/tracks';
 import type { Spoor } from '../learn/tracks';
 
 /** A field photo of a track or dung (iNaturalist, Creative Commons), from data/out/signs/index.json. */
-interface SignPhoto { file: string; kind: 'track' | 'scat'; w: number; h: number; author: string; license: string; source: string }
+export interface SignPhoto { file: string; kind: 'track' | 'scat'; w: number; h: number; author: string; license: string; source: string }
 
 let cache: Record<string, SignPhoto[]> | null = null;
-async function loadSigns(): Promise<Record<string, SignPhoto[]>> {
+export async function loadSigns(): Promise<Record<string, SignPhoto[]>> {
   if (cache) return cache;
   try { cache = await (await fetch(dataUrl('signs/index.json'))).json(); } catch { cache = {}; }
   return cache!;
@@ -34,7 +34,8 @@ function SignGallery({ photos, label }: { photos: SignPhoto[]; label: string }) 
   return (
     <>
       <div class="gallery signs">
-        {photos.map((ph, i) => <button key={ph.file} onClick={() => setOpen(i)} aria-label={label}><img src={dataUrl(ph.file)} alt="" loading="lazy" /></button>)}
+        {/* offline without the signs pack the photo is not there: drop its button rather than show a broken image */}
+        {photos.map((ph, i) => <button key={ph.file} onClick={() => setOpen(i)} aria-label={label}><img src={dataUrl(ph.file)} alt="" loading="lazy" onError={(e) => ((e.currentTarget.parentElement as HTMLElement).style.display = 'none')} /></button>)}
       </div>
       {p && (
         <div class="lightbox" onClick={() => setOpen(null)}>

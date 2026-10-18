@@ -1,114 +1,2875 @@
 {
- "giraffa-giraffa": [
-  {
-   "file": "signs/giraffa-giraffa-track-354483818.webp",
-   "kind": "track",
-   "w": 375,
-   "h": 500,
-   "author": "Connor Ryan",
-   "license": "CC-BY-NC",
-   "source": "https://www.inaturalist.org/observations/354483818"
-  },
-  {
-   "file": "signs/giraffa-giraffa-track-334942202.webp",
-   "kind": "track",
-   "w": 500,
-   "h": 375,
-   "author": "Paula Pebsworth",
-   "license": "CC-BY-NC",
-   "source": "https://www.inaturalist.org/observations/334942202"
-  },
-  {
-   "file": "signs/giraffa-giraffa-track-106252951.webp",
-   "kind": "track",
-   "w": 375,
-   "h": 500,
-   "author": "Dewald du Plessis",
-   "license": "CC-BY-NC",
-   "source": "https://www.inaturalist.org/observations/106252951"
-  },
-  {
-   "file": "signs/giraffa-giraffa-scat-105902310.webp",
-   "kind": "scat",
-   "w": 375,
-   "h": 500,
-   "author": "timojaeg",
-   "license": "CC-BY-NC",
-   "source": "https://www.inaturalist.org/observations/105902310"
-  },
-  {
-   "file": "signs/giraffa-giraffa-scat-21237151.webp",
-   "kind": "scat",
-   "w": 281,
-   "h": 500,
-   "author": "BenJee",
-   "license": "CC-BY-NC",
-   "source": "https://www.inaturalist.org/observations/21237151"
-  },
-  {
-   "file": "signs/giraffa-giraffa-scat-170877079.webp",
-   "kind": "scat",
-   "w": 375,
-   "h": 500,
-   "author": "corky777",
-   "license": "CC-BY-NC",
-   "source": "https://www.inaturalist.org/observations/170877079"
-  }
- ],
- "crocuta-crocuta": [
-  {
-   "file": "signs/crocuta-crocuta-track-166611370.webp",
-   "kind": "track",
-   "w": 375,
-   "h": 500,
-   "author": "matyd",
-   "license": "CC-BY-NC",
-   "source": "https://www.inaturalist.org/observations/166611370"
-  },
-  {
-   "file": "signs/crocuta-crocuta-track-321218449.webp",
-   "kind": "track",
-   "w": 500,
-   "h": 333,
-   "author": "Frédéric Bacuez",
-   "license": "CC-BY-NC",
-   "source": "https://www.inaturalist.org/observations/321218449"
-  },
-  {
-   "file": "signs/crocuta-crocuta-track-189383321.webp",
-   "kind": "track",
-   "w": 500,
-   "h": 375,
-   "author": "jorisddc",
-   "license": "CC-BY-NC",
-   "source": "https://www.inaturalist.org/observations/189383321"
-  },
-  {
-   "file": "signs/crocuta-crocuta-scat-99243097.webp",
-   "kind": "scat",
-   "w": 236,
-   "h": 500,
-   "author": "Joshua Rains",
-   "license": "CC-BY-NC",
-   "source": "https://www.inaturalist.org/observations/99243097"
-  },
-  {
-   "file": "signs/crocuta-crocuta-scat-384558715.webp",
-   "kind": "scat",
-   "w": 281,
-   "h": 500,
-   "author": "koenbetjes",
-   "license": "CC-BY-NC",
-   "source": "https://www.inaturalist.org/observations/384558715"
-  },
-  {
-   "file": "signs/crocuta-crocuta-scat-322751072.webp",
-   "kind": "scat",
-   "w": 225,
-   "h": 500,
-   "author": "Peter Munga Kanyi",
-   "license": "CC-BY-NC",
-   "source": "https://www.inaturalist.org/observations/322751072"
-  }
- ]
+  "giraffa-giraffa": [
+    {
+      "file": "signs/giraffa-giraffa-track-291244204.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "W. Terry Hunefeld",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/168077532"
+    },
+    {
+      "file": "signs/giraffa-giraffa-track-630492186.webp",
+      "kind": "track",
+      "w": 376,
+      "h": 500,
+      "author": "grietjie",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/345928874"
+    },
+    {
+      "file": "signs/giraffa-giraffa-track-477388333.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "buggsbalmer",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/265746823"
+    },
+    {
+      "file": "signs/giraffa-giraffa-track-291978578.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "W. Terry Hunefeld",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/168473053"
+    },
+    {
+      "file": "signs/giraffa-giraffa-scat-175677833.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "timojaeg",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/104768385"
+    },
+    {
+      "file": "signs/giraffa-giraffa-scat-204121349.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "timojaeg",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/120671158"
+    },
+    {
+      "file": "signs/giraffa-giraffa-scat-175627691.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "timojaeg",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/104768385"
+    }
+  ],
+  "crocuta-crocuta": [
+    {
+      "file": "signs/crocuta-crocuta-track-351257164.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 447,
+      "author": "magdastlucia",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/199211028"
+    },
+    {
+      "file": "signs/crocuta-crocuta-track-472484742.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 375,
+      "author": "Malcolm Douglas",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/263045161"
+    },
+    {
+      "file": "signs/crocuta-crocuta-track-445429205.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "olwensands",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/249210471"
+    },
+    {
+      "file": "signs/crocuta-crocuta-track-580896740.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 333,
+      "author": "Frédéric Bacuez",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/321218449"
+    },
+    {
+      "file": "signs/crocuta-crocuta-scat-271269664.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "Copris",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/156854821"
+    },
+    {
+      "file": "signs/crocuta-crocuta-scat-471994739.webp",
+      "kind": "scat",
+      "w": 231,
+      "h": 500,
+      "author": "Richard McKibbin",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/262800273"
+    },
+    {
+      "file": "signs/crocuta-crocuta-scat-584235062.webp",
+      "kind": "scat",
+      "w": 376,
+      "h": 500,
+      "author": "Simon Musila",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/322911027"
+    }
+  ],
+  "panthera-leo": [
+    {
+      "file": "signs/panthera-leo-track-445425554.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "olwensands",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/249210456"
+    },
+    {
+      "file": "signs/panthera-leo-track-504349594.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Matthew McGettigan",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/280793639"
+    },
+    {
+      "file": "signs/panthera-leo-track-571944546.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Callum Evans",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/316557089"
+    },
+    {
+      "file": "signs/panthera-leo-track-255108257.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "allanweideman",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/148171878"
+    },
+    {
+      "file": "signs/panthera-leo-scat-416538652.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 375,
+      "author": "Sascha Schumann",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/234317897"
+    },
+    {
+      "file": "signs/panthera-leo-scat-432992960.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "Jo Roberts",
+      "license": "CC-BY",
+      "source": "https://www.inaturalist.org/observations/242863004"
+    },
+    {
+      "file": "signs/panthera-leo-scat-562711726.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "alanbedfordshaw",
+      "license": "CC-BY-SA",
+      "source": "https://www.inaturalist.org/observations/311707572"
+    }
+  ],
+  "lupulella-mesomelas": [
+    {
+      "file": "signs/lupulella-mesomelas-track-646704880.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Connor Ryan",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/354513184"
+    },
+    {
+      "file": "signs/lupulella-mesomelas-track-178010170.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Christiaan Viljoen",
+      "license": "CC-BY",
+      "source": "https://www.inaturalist.org/observations/106015368"
+    },
+    {
+      "file": "signs/lupulella-mesomelas-track-623863874.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Connor Ryan",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/342573155"
+    },
+    {
+      "file": "signs/lupulella-mesomelas-track-461830126.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "scampers783",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/257446063"
+    },
+    {
+      "file": "signs/lupulella-mesomelas-scat-664889819.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "Sarel van Wyk",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/364217069"
+    },
+    {
+      "file": "signs/lupulella-mesomelas-scat-179387685.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "allanweideman",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/106746090"
+    },
+    {
+      "file": "signs/lupulella-mesomelas-scat-137194720.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "Richard Gill",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/83531112"
+    }
+  ],
+  "hippopotamus-amphibius": [
+    {
+      "file": "signs/hippopotamus-amphibius-track-592215313.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Eon Grobler",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/326937185"
+    },
+    {
+      "file": "signs/hippopotamus-amphibius-track-36724184.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Dennis Laidler",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/23731188"
+    },
+    {
+      "file": "signs/hippopotamus-amphibius-scat-574150789.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "Eon Grobler",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/317721020"
+    },
+    {
+      "file": "signs/hippopotamus-amphibius-scat-240864651.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "Bongani",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/140690203"
+    },
+    {
+      "file": "signs/hippopotamus-amphibius-scat-15635336.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 375,
+      "author": "magdastlucia",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/11076671"
+    }
+  ],
+  "connochaetes-taurinus": [
+    {
+      "file": "signs/connochaetes-taurinus-track-717168982.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Richard Johnstone",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/391397528"
+    },
+    {
+      "file": "signs/connochaetes-taurinus-track-169997548.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Manuel R Popp",
+      "license": "CC-BY",
+      "source": "https://www.inaturalist.org/observations/101766121"
+    },
+    {
+      "file": "signs/connochaetes-taurinus-track-297691466.webp",
+      "kind": "track",
+      "w": 243,
+      "h": 500,
+      "author": "Eon Grobler",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/171547860"
+    },
+    {
+      "file": "signs/connochaetes-taurinus-track-595838120.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Blessing Hlongwana",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/328776241"
+    },
+    {
+      "file": "signs/connochaetes-taurinus-scat-204388519.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "timojaeg",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/120819361"
+    },
+    {
+      "file": "signs/connochaetes-taurinus-scat-320084080.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "Jenny",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/183463372"
+    },
+    {
+      "file": "signs/connochaetes-taurinus-scat-204342254.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "timojaeg",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/120793367"
+    }
+  ],
+  "raphicerus-campestris": [
+    {
+      "file": "signs/raphicerus-campestris-track-286863707.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "ekuyler",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/165700942"
+    },
+    {
+      "file": "signs/raphicerus-campestris-track-286863617.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "ekuyler",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/165700941"
+    },
+    {
+      "file": "signs/raphicerus-campestris-track-578337197.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 375,
+      "author": "Kim Daniels",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/319911515"
+    },
+    {
+      "file": "signs/raphicerus-campestris-track-172391355.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Dewald du Plessis",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/103052113"
+    },
+    {
+      "file": "signs/raphicerus-campestris-scat-686411715.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "Benodette Hanekom",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/375470240"
+    },
+    {
+      "file": "signs/raphicerus-campestris-scat-586650910.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 375,
+      "author": "no rights reserved",
+      "license": "CC0",
+      "source": "https://www.inaturalist.org/observations/324153866"
+    },
+    {
+      "file": "signs/raphicerus-campestris-scat-15830292.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 375,
+      "author": "Jannie Groenewald",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/11176220"
+    }
+  ],
+  "civettictis-civetta": [
+    {
+      "file": "signs/civettictis-civetta-track-613693913.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "alexsoethoudt",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/337571557"
+    },
+    {
+      "file": "signs/civettictis-civetta-track-568483837.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 500,
+      "author": "Malcolm Douglas",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/314733072"
+    },
+    {
+      "file": "signs/civettictis-civetta-track-366314381.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 500,
+      "author": "Malcolm Douglas",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/207113317"
+    },
+    {
+      "file": "signs/civettictis-civetta-track-365013138.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 182,
+      "author": "Malcolm Douglas",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/206383384"
+    },
+    {
+      "file": "signs/civettictis-civetta-scat-407028942.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "alexsoethoudt",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/229313206"
+    },
+    {
+      "file": "signs/civettictis-civetta-scat-265916125.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 375,
+      "author": "Duncan McKenzie",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/153926556"
+    },
+    {
+      "file": "signs/civettictis-civetta-scat-351195453.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 375,
+      "author": "Simon Musila",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/199170806"
+    }
+  ],
+  "ichneumia-albicauda": [
+    {
+      "file": "signs/ichneumia-albicauda-track-353272475.webp",
+      "kind": "track",
+      "w": 250,
+      "h": 500,
+      "author": "Malcolm Douglas",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/200251699"
+    },
+    {
+      "file": "signs/ichneumia-albicauda-track-434065847.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Sunčana Bradley",
+      "license": "CC-BY",
+      "source": "https://www.inaturalist.org/observations/243429198"
+    },
+    {
+      "file": "signs/ichneumia-albicauda-track-16327290.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 375,
+      "author": "Mathias D'haen",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/11445275"
+    },
+    {
+      "file": "signs/ichneumia-albicauda-track-174969939.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Dewald du Plessis",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/104424743"
+    },
+    {
+      "file": "signs/ichneumia-albicauda-scat-421997956.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "no rights reserved",
+      "license": "CC0",
+      "source": "https://www.inaturalist.org/observations/237144707"
+    },
+    {
+      "file": "signs/ichneumia-albicauda-scat-702888897.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 375,
+      "author": "Connor Ryan",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/384016730"
+    },
+    {
+      "file": "signs/ichneumia-albicauda-scat-318433773.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "Athol Ferguson",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/182614184"
+    }
+  ],
+  "lepus-saxatilis": [
+    {
+      "file": "signs/lepus-saxatilis-track-639173090.webp",
+      "kind": "track",
+      "w": 376,
+      "h": 500,
+      "author": "grietjie",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/350323828"
+    },
+    {
+      "file": "signs/lepus-saxatilis-track-252903385.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Richard McKibbin",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/147019323"
+    },
+    {
+      "file": "signs/lepus-saxatilis-track-297700336.webp",
+      "kind": "track",
+      "w": 243,
+      "h": 500,
+      "author": "Eon Grobler",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/171552745"
+    },
+    {
+      "file": "signs/lepus-saxatilis-scat-609420123.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 451,
+      "author": "Jane Trembath",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/335462578"
+    },
+    {
+      "file": "signs/lepus-saxatilis-scat-548544436.webp",
+      "kind": "scat",
+      "w": 281,
+      "h": 500,
+      "author": "William (Go Expanse)",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/304296226"
+    },
+    {
+      "file": "signs/lepus-saxatilis-scat-229234337.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "Athol Ferguson",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/134483108"
+    }
+  ],
+  "panthera-pardus": [
+    {
+      "file": "signs/panthera-pardus-track-480212910.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "MB",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/267231585"
+    },
+    {
+      "file": "signs/panthera-pardus-track-140661115.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Alan Lee",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/85488919"
+    },
+    {
+      "file": "signs/panthera-pardus-track-487044871.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "christie_roux",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/270794619"
+    },
+    {
+      "file": "signs/panthera-pardus-track-487047217.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "christie_roux",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/270794619"
+    },
+    {
+      "file": "signs/panthera-pardus-scat-187525786.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 333,
+      "author": "Justin Hawthorne",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/111114870"
+    },
+    {
+      "file": "signs/panthera-pardus-scat-178593319.webp",
+      "kind": "scat",
+      "w": 225,
+      "h": 500,
+      "author": "Santie Gouws",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/106326588"
+    },
+    {
+      "file": "signs/panthera-pardus-scat-254317546.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 333,
+      "author": "Heather and Andrew Hodgson",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/147763723"
+    }
+  ],
+  "proteles-cristatus": [
+    {
+      "file": "signs/proteles-cristatus-track-516866508.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 376,
+      "author": "Alldays Wildlife and Communities Research Centre",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/287456301"
+    },
+    {
+      "file": "signs/proteles-cristatus-track-639436400.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 500,
+      "author": "Jean Frederik",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/350459133"
+    },
+    {
+      "file": "signs/proteles-cristatus-track-544065492.webp",
+      "kind": "track",
+      "w": 473,
+      "h": 500,
+      "author": "Johan Huisamen",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/301908284"
+    },
+    {
+      "file": "signs/proteles-cristatus-scat-588401437.webp",
+      "kind": "scat",
+      "w": 376,
+      "h": 500,
+      "author": "grietjie",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/325023692"
+    },
+    {
+      "file": "signs/proteles-cristatus-scat-588401481.webp",
+      "kind": "scat",
+      "w": 376,
+      "h": 500,
+      "author": "grietjie",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/325023692"
+    },
+    {
+      "file": "signs/proteles-cristatus-scat-340312866.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 500,
+      "author": "Mark Heystek",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/193711316"
+    }
+  ],
+  "syncerus-caffer": [
+    {
+      "file": "signs/syncerus-caffer-track-527002842.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 333,
+      "author": "i_c_riddell",
+      "license": "CC-BY",
+      "source": "https://www.inaturalist.org/observations/292826331"
+    },
+    {
+      "file": "signs/syncerus-caffer-track-83988039.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 500,
+      "author": "congonaturalist",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/52797032"
+    },
+    {
+      "file": "signs/syncerus-caffer-track-154487441.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 333,
+      "author": "Richard Gill",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/93228440"
+    },
+    {
+      "file": "signs/syncerus-caffer-track-173090166.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 375,
+      "author": "Dewald du Plessis",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/103425271"
+    },
+    {
+      "file": "signs/syncerus-caffer-scat-371844467.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "Natalie Vos",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/210209759"
+    },
+    {
+      "file": "signs/syncerus-caffer-scat-618230199.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 333,
+      "author": "Cajá-manga",
+      "license": "CC-BY",
+      "source": "https://www.inaturalist.org/observations/339805134"
+    },
+    {
+      "file": "signs/syncerus-caffer-scat-462861610.webp",
+      "kind": "scat",
+      "w": 399,
+      "h": 500,
+      "author": "Alex Rebelo",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/258017832"
+    }
+  ],
+  "kobus-ellipsiprymnus": [
+    {
+      "file": "signs/kobus-ellipsiprymnus-track-317439835.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 375,
+      "author": "Jonathan Poppele",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/182100425"
+    },
+    {
+      "file": "signs/kobus-ellipsiprymnus-track-16330988.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 375,
+      "author": "Mathias D'haen",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/11447371"
+    },
+    {
+      "file": "signs/kobus-ellipsiprymnus-track-66726775.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 500,
+      "author": "congonaturalist",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/42042430"
+    },
+    {
+      "file": "signs/kobus-ellipsiprymnus-track-291978262.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "W. Terry Hunefeld",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/168250981"
+    },
+    {
+      "file": "signs/kobus-ellipsiprymnus-scat-432976521.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 250,
+      "author": "Yasalde Massingue",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/242851016"
+    },
+    {
+      "file": "signs/kobus-ellipsiprymnus-scat-41158318.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "congonaturalist",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/26502558"
+    },
+    {
+      "file": "signs/kobus-ellipsiprymnus-scat-469353875.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "Mark Brown",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/261270158"
+    }
+  ],
+  "aepyceros-melampus": [
+    {
+      "file": "signs/aepyceros-melampus-track-342935162.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 500,
+      "author": "Eon Grobler",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/195001371"
+    },
+    {
+      "file": "signs/aepyceros-melampus-track-342935832.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Eon Grobler",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/195001743"
+    },
+    {
+      "file": "signs/aepyceros-melampus-track-169882030.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Manuel R Popp",
+      "license": "CC-BY",
+      "source": "https://www.inaturalist.org/observations/101706088"
+    },
+    {
+      "file": "signs/aepyceros-melampus-track-739808756.webp",
+      "kind": "track",
+      "w": 281,
+      "h": 500,
+      "author": "Tobias Gratzer",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/402963397"
+    },
+    {
+      "file": "signs/aepyceros-melampus-scat-204347851.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "timojaeg",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/120796097"
+    },
+    {
+      "file": "signs/aepyceros-melampus-scat-204117922.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "timojaeg",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/120669159"
+    },
+    {
+      "file": "signs/aepyceros-melampus-scat-597474504.webp",
+      "kind": "scat",
+      "w": 281,
+      "h": 500,
+      "author": "Africa Gomez",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/329589507"
+    }
+  ],
+  "genetta-tigrina": [
+    {
+      "file": "signs/genetta-tigrina-track-460721537.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Luke Goddard",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/256903122"
+    },
+    {
+      "file": "signs/genetta-tigrina-track-678833290.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "dreyeraiden",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/371534042"
+    },
+    {
+      "file": "signs/genetta-tigrina-track-205256531.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 333,
+      "author": "Tony Rebelo",
+      "license": "CC-BY-SA",
+      "source": "https://www.inaturalist.org/observations/121313558"
+    },
+    {
+      "file": "signs/genetta-tigrina-track-157328312.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Eileen",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/94815758"
+    },
+    {
+      "file": "signs/genetta-tigrina-scat-618981828.webp",
+      "kind": "scat",
+      "w": 281,
+      "h": 500,
+      "author": "Santie Gouws",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/340168580"
+    },
+    {
+      "file": "signs/genetta-tigrina-scat-587469929.webp",
+      "kind": "scat",
+      "w": 333,
+      "h": 500,
+      "author": "Heather and Andrew Hodgson",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/324563527"
+    },
+    {
+      "file": "signs/genetta-tigrina-scat-125378811.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "elle_hutchings",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/76615099"
+    }
+  ],
+  "aonyx-capensis": [
+    {
+      "file": "signs/aonyx-capensis-track-178010027.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Christiaan Viljoen",
+      "license": "CC-BY",
+      "source": "https://www.inaturalist.org/observations/106015310"
+    },
+    {
+      "file": "signs/aonyx-capensis-track-711638428.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "MFC",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/388547105"
+    },
+    {
+      "file": "signs/aonyx-capensis-track-267314800.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "mfbrett",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/154690510"
+    },
+    {
+      "file": "signs/aonyx-capensis-track-425470276.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Callum Evans",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/238939472"
+    },
+    {
+      "file": "signs/aonyx-capensis-scat-56819210.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 375,
+      "author": "Jeremy Gilmore",
+      "license": "CC-BY",
+      "source": "https://www.inaturalist.org/observations/35984676"
+    },
+    {
+      "file": "signs/aonyx-capensis-scat-362226577.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 333,
+      "author": "Sandra Falanga",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/204901139"
+    },
+    {
+      "file": "signs/aonyx-capensis-scat-321555311.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 333,
+      "author": "Luc Strydom",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/184229592"
+    }
+  ],
+  "thryonomys-swinderianus": [
+    {
+      "file": "signs/thryonomys-swinderianus-track-513261988.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 311,
+      "author": "Malcolm Douglas",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/285544204"
+    },
+    {
+      "file": "signs/thryonomys-swinderianus-track-529179591.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 333,
+      "author": "OFFAP TOGO",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/259754493"
+    },
+    {
+      "file": "signs/thryonomys-swinderianus-track-513262032.webp",
+      "kind": "track",
+      "w": 333,
+      "h": 500,
+      "author": "Malcolm Douglas",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/285544204"
+    },
+    {
+      "file": "signs/thryonomys-swinderianus-scat-480128113.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "Ricky Taylor",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/267185166"
+    },
+    {
+      "file": "signs/thryonomys-swinderianus-scat-202135272.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "Siegwalt U Küsel",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/119564296"
+    },
+    {
+      "file": "signs/thryonomys-swinderianus-scat-35755171.webp",
+      "kind": "scat",
+      "w": 485,
+      "h": 500,
+      "author": "Ricky Taylor",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/23065009"
+    }
+  ],
+  "acinonyx-jubatus": [
+    {
+      "file": "signs/acinonyx-jubatus-track-172865699.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Manuel R Popp",
+      "license": "CC-BY",
+      "source": "https://www.inaturalist.org/observations/103306124"
+    },
+    {
+      "file": "signs/acinonyx-jubatus-track-403163412.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Juan",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/227270381"
+    },
+    {
+      "file": "signs/acinonyx-jubatus-track-172865724.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Manuel R Popp",
+      "license": "CC-BY",
+      "source": "https://www.inaturalist.org/observations/103306124"
+    },
+    {
+      "file": "signs/acinonyx-jubatus-scat-720235141.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 375,
+      "author": "Lola Lewis",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/392973259"
+    },
+    {
+      "file": "signs/acinonyx-jubatus-scat-6125158.webp",
+      "kind": "scat",
+      "w": 281,
+      "h": 500,
+      "author": "action4cheetahs",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/5009004"
+    }
+  ],
+  "tragelaphus-strepsiceros": [
+    {
+      "file": "signs/tragelaphus-strepsiceros-track-551514529.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "no rights reserved",
+      "license": "CC0",
+      "source": "https://www.inaturalist.org/observations/305858578"
+    },
+    {
+      "file": "signs/tragelaphus-strepsiceros-track-291253728.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 375,
+      "author": "W. Terry Hunefeld",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/168076354"
+    },
+    {
+      "file": "signs/tragelaphus-strepsiceros-track-291255066.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "W. Terry Hunefeld",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/168076354"
+    },
+    {
+      "file": "signs/tragelaphus-strepsiceros-track-499876651.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 333,
+      "author": "Ulrich Oberprieler",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/278396540"
+    },
+    {
+      "file": "signs/tragelaphus-strepsiceros-scat-177799100.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "timojaeg",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/105902907"
+    },
+    {
+      "file": "signs/tragelaphus-strepsiceros-scat-186717724.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "timojaeg",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/110662320"
+    },
+    {
+      "file": "signs/tragelaphus-strepsiceros-scat-189391624.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "timojaeg",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/112136897"
+    }
+  ],
+  "oreotragus-oreotragus": [
+    {
+      "file": "signs/oreotragus-oreotragus-track-669115910.webp",
+      "kind": "track",
+      "w": 281,
+      "h": 500,
+      "author": "Debbie Wall Smith",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/366442253"
+    },
+    {
+      "file": "signs/oreotragus-oreotragus-track-366060932.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Justin Hawthorne",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/206979793"
+    },
+    {
+      "file": "signs/oreotragus-oreotragus-track-155170140.webp",
+      "kind": "track",
+      "w": 237,
+      "h": 500,
+      "author": "Santie Gouws",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/93609588"
+    },
+    {
+      "file": "signs/oreotragus-oreotragus-track-134239209.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Santie Gouws",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/81825719"
+    },
+    {
+      "file": "signs/oreotragus-oreotragus-scat-244082407.webp",
+      "kind": "scat",
+      "w": 225,
+      "h": 500,
+      "author": "Santie Gouws",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/142379684"
+    },
+    {
+      "file": "signs/oreotragus-oreotragus-scat-31969335.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "Tony Rebelo",
+      "license": "CC-BY-SA",
+      "source": "https://www.inaturalist.org/observations/20735070"
+    },
+    {
+      "file": "signs/oreotragus-oreotragus-scat-207797092.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "Justin Hawthorne",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/122715355"
+    }
+  ],
+  "genetta-genetta": [
+    {
+      "file": "signs/genetta-genetta-track-348431869.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Álvaro Alemany",
+      "license": "CC-BY-NC-SA",
+      "source": "https://www.inaturalist.org/observations/197781072"
+    },
+    {
+      "file": "signs/genetta-genetta-track-353543699.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 281,
+      "author": "Pablo Silvestre Pérez",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/200390521"
+    },
+    {
+      "file": "signs/genetta-genetta-track-353631959.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 375,
+      "author": "José Jiménez Higuera",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/200437917"
+    },
+    {
+      "file": "signs/genetta-genetta-track-579511418.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 315,
+      "author": "NaturOsca Biodiversidad",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/320514641"
+    },
+    {
+      "file": "signs/genetta-genetta-scat-213707192.webp",
+      "kind": "scat",
+      "w": 281,
+      "h": 500,
+      "author": "bixaurin",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/125983260"
+    },
+    {
+      "file": "signs/genetta-genetta-scat-186273317.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 477,
+      "author": "Jofre",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/110424109"
+    },
+    {
+      "file": "signs/genetta-genetta-scat-337456820.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "Joan Ventura",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/192253256"
+    }
+  ],
+  "mellivora-capensis": [
+    {
+      "file": "signs/mellivora-capensis-track-595590017.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 500,
+      "author": "wurm123",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/328653737"
+    },
+    {
+      "file": "signs/mellivora-capensis-track-15709241.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 375,
+      "author": "Callum Evans",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/11113630"
+    },
+    {
+      "file": "signs/mellivora-capensis-track-432671158.webp",
+      "kind": "track",
+      "w": 281,
+      "h": 500,
+      "author": "Marisa Langton",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/242691195"
+    },
+    {
+      "file": "signs/mellivora-capensis-track-244071061.webp",
+      "kind": "track",
+      "w": 225,
+      "h": 500,
+      "author": "Kayla Knight",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/142372982"
+    }
+  ],
+  "hystrix-africaeaustralis": [
+    {
+      "file": "signs/hystrix-africaeaustralis-track-177028538.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "timojaeg",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/105500316"
+    },
+    {
+      "file": "signs/hystrix-africaeaustralis-track-497256164.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Jordan",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/276920931"
+    },
+    {
+      "file": "signs/hystrix-africaeaustralis-track-161862273.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "linkie",
+      "license": "CC-BY",
+      "source": "https://www.inaturalist.org/observations/97335567"
+    },
+    {
+      "file": "signs/hystrix-africaeaustralis-track-116918748.webp",
+      "kind": "track",
+      "w": 237,
+      "h": 500,
+      "author": "Nic Knott-Craig",
+      "license": "CC-BY-SA",
+      "source": "https://www.inaturalist.org/observations/71778605"
+    },
+    {
+      "file": "signs/hystrix-africaeaustralis-scat-161515214.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "Justin Hawthorne",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/97165309"
+    },
+    {
+      "file": "signs/hystrix-africaeaustralis-scat-18466976.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 455,
+      "author": "magdastlucia",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/12748536"
+    },
+    {
+      "file": "signs/hystrix-africaeaustralis-scat-225815819.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "Christine Ridge-Schnaufer",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/132604909"
+    }
+  ],
+  "leptailurus-serval": [
+    {
+      "file": "signs/leptailurus-serval-track-599809093.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 472,
+      "author": "Wade Matthew Kilian",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/330733156"
+    },
+    {
+      "file": "signs/leptailurus-serval-track-629665979.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Connor Ryan",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/345505955"
+    },
+    {
+      "file": "signs/leptailurus-serval-track-514521799.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Richard McKibbin",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/286215131"
+    },
+    {
+      "file": "signs/leptailurus-serval-track-629669059.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Connor Ryan",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/345507339"
+    },
+    {
+      "file": "signs/leptailurus-serval-scat-355315461.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 500,
+      "author": "Elena Reljic",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/201297914"
+    },
+    {
+      "file": "signs/leptailurus-serval-scat-355316101.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 500,
+      "author": "Elena Reljic",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/201297910"
+    },
+    {
+      "file": "signs/leptailurus-serval-scat-246448038.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "bosmuis",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/143677878"
+    }
+  ],
+  "parahyaena-brunnea": [
+    {
+      "file": "signs/parahyaena-brunnea-track-181058563.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "no rights reserved",
+      "license": "CC0",
+      "source": "https://www.inaturalist.org/observations/107629133"
+    },
+    {
+      "file": "signs/parahyaena-brunnea-track-347955617.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 375,
+      "author": "Lukas Lindenthal",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/197542313"
+    },
+    {
+      "file": "signs/parahyaena-brunnea-track-375709640.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "kleinkanaan",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/212604024"
+    },
+    {
+      "file": "signs/parahyaena-brunnea-track-375709702.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "kleinkanaan",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/212604024"
+    },
+    {
+      "file": "signs/parahyaena-brunnea-scat-175638080.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 375,
+      "author": "Manuel R Popp",
+      "license": "CC-BY",
+      "source": "https://www.inaturalist.org/observations/104774528"
+    },
+    {
+      "file": "signs/parahyaena-brunnea-scat-237845231.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "cobenna1",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/139097489"
+    },
+    {
+      "file": "signs/parahyaena-brunnea-scat-610422830.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 375,
+      "author": "Gwili Gibbon",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/335960451"
+    }
+  ],
+  "taurotragus-oryx": [
+    {
+      "file": "signs/taurotragus-oryx-track-655551257.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 375,
+      "author": "Natalie Vos",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/359311074"
+    },
+    {
+      "file": "signs/taurotragus-oryx-track-146329845.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "photogenie",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/88669977"
+    },
+    {
+      "file": "signs/taurotragus-oryx-track-499876879.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 334,
+      "author": "Ulrich Oberprieler",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/278396572"
+    },
+    {
+      "file": "signs/taurotragus-oryx-track-149700897.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "ChristianRM",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/90570567"
+    },
+    {
+      "file": "signs/taurotragus-oryx-scat-499876613.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 334,
+      "author": "Ulrich Oberprieler",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/278396541"
+    },
+    {
+      "file": "signs/taurotragus-oryx-scat-189381763.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "timojaeg",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/112131150"
+    },
+    {
+      "file": "signs/taurotragus-oryx-scat-68920454.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 335,
+      "author": "dangerranger",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/43436938"
+    }
+  ],
+  "tragelaphus-angasii": [
+    {
+      "file": "signs/tragelaphus-angasii-track-392334044.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Juan",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/221536498"
+    },
+    {
+      "file": "signs/tragelaphus-angasii-track-487710135.webp",
+      "kind": "track",
+      "w": 225,
+      "h": 500,
+      "author": "Joao Armando Francisco Francisco",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/271147510"
+    },
+    {
+      "file": "signs/tragelaphus-angasii-track-317180853.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Jonathan Poppele",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/181966953"
+    },
+    {
+      "file": "signs/tragelaphus-angasii-track-410956427.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Juan",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/231384861"
+    },
+    {
+      "file": "signs/tragelaphus-angasii-scat-576583116.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "Eon Grobler",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/318995497"
+    },
+    {
+      "file": "signs/tragelaphus-angasii-scat-61659771.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 375,
+      "author": "magdastlucia",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/38766660"
+    },
+    {
+      "file": "signs/tragelaphus-angasii-scat-337896342.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "Dewald du Plessis",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/192497358"
+    }
+  ],
+  "hippotragus-niger": [],
+  "mungos-mungo": [
+    {
+      "file": "signs/mungos-mungo-track-296456894.webp",
+      "kind": "track",
+      "w": 281,
+      "h": 500,
+      "author": "Nic Knott-Craig",
+      "license": "CC-BY-SA",
+      "source": "https://www.inaturalist.org/observations/170871093"
+    },
+    {
+      "file": "signs/mungos-mungo-track-315882497.webp",
+      "kind": "track",
+      "w": 442,
+      "h": 500,
+      "author": "Lucas Lennon",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/181264770"
+    },
+    {
+      "file": "signs/mungos-mungo-track-600820936.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 375,
+      "author": "Dewald Swanepoel",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/331226316"
+    },
+    {
+      "file": "signs/mungos-mungo-scat-141874182.webp",
+      "kind": "scat",
+      "w": 281,
+      "h": 500,
+      "author": "Glen Goddard",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/86149722"
+    },
+    {
+      "file": "signs/mungos-mungo-scat-42579343.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 375,
+      "author": "Dewald du Plessis",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/27370224"
+    },
+    {
+      "file": "signs/mungos-mungo-scat-32830871.webp",
+      "kind": "scat",
+      "w": 281,
+      "h": 500,
+      "author": "BenJee",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/21237147"
+    }
+  ],
+  "procavia-capensis": [
+    {
+      "file": "signs/procavia-capensis-track-366815267.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Justin Hawthorne",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/207379321"
+    },
+    {
+      "file": "signs/procavia-capensis-scat-471721108.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 374,
+      "author": "Hugh Sussens",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/262664309"
+    },
+    {
+      "file": "signs/procavia-capensis-scat-354119060.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 375,
+      "author": "magdastlucia",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/200686247"
+    },
+    {
+      "file": "signs/procavia-capensis-scat-146650435.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 333,
+      "author": "Tony Rebelo",
+      "license": "CC-BY-SA",
+      "source": "https://www.inaturalist.org/observations/88854627"
+    }
+  ],
+  "caracal-caracal": [
+    {
+      "file": "signs/caracal-caracal-track-345566923.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 357,
+      "author": "Andre Harmse",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/196304986"
+    },
+    {
+      "file": "signs/caracal-caracal-track-200018858.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Justin Hawthorne",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/118389125"
+    },
+    {
+      "file": "signs/caracal-caracal-track-91246152.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 375,
+      "author": "no rights reserved",
+      "license": "CC0",
+      "source": "https://www.inaturalist.org/observations/57217237"
+    },
+    {
+      "file": "signs/caracal-caracal-scat-175061634.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "Santie Gouws",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/104473955"
+    },
+    {
+      "file": "signs/caracal-caracal-scat-347787233.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 333,
+      "author": "Diana Studer",
+      "license": "CC-BY",
+      "source": "https://www.inaturalist.org/observations/197459612"
+    },
+    {
+      "file": "signs/caracal-caracal-scat-267794464.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "Johan October",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/154953399"
+    }
+  ],
+  "loxodonta-africana": [
+    {
+      "file": "signs/loxodonta-africana-track-15644420.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 333,
+      "author": "Callum Evans",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/11081126"
+    },
+    {
+      "file": "signs/loxodonta-africana-track-114740792.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 304,
+      "author": "magdastlucia",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/70570264"
+    },
+    {
+      "file": "signs/loxodonta-africana-track-292066708.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 375,
+      "author": "Dewald du Plessis",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/168523484"
+    },
+    {
+      "file": "signs/loxodonta-africana-track-701680192.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 282,
+      "author": "Gordon Hurley",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/383382254"
+    },
+    {
+      "file": "signs/loxodonta-africana-scat-15189853.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 375,
+      "author": "Marge",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/10836685"
+    },
+    {
+      "file": "signs/loxodonta-africana-scat-131333543.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 375,
+      "author": "Rouxne Botha",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/80146141"
+    },
+    {
+      "file": "signs/loxodonta-africana-scat-588146755.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 375,
+      "author": "Ian A W Macdonald",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/324906987"
+    }
+  ],
+  "equus-quagga": [
+    {
+      "file": "signs/equus-quagga-track-414180739.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 375,
+      "author": "Beau Harger",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/233079322"
+    },
+    {
+      "file": "signs/equus-quagga-track-497335614.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Sarel van Wyk",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/276966188"
+    },
+    {
+      "file": "signs/equus-quagga-track-499874035.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 333,
+      "author": "Ulrich Oberprieler",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/278393251"
+    },
+    {
+      "file": "signs/equus-quagga-track-301156517.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "W. Terry Hunefeld",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/172840558"
+    },
+    {
+      "file": "signs/equus-quagga-scat-165127078.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 426,
+      "author": "slivesey",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/99096821"
+    },
+    {
+      "file": "signs/equus-quagga-scat-178435006.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 375,
+      "author": "Dewald du Plessis",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/106239369"
+    },
+    {
+      "file": "signs/equus-quagga-scat-135325170.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 375,
+      "author": "magdastlucia",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/82460727"
+    }
+  ],
+  "tragelaphus-sylvaticus": [
+    {
+      "file": "signs/tragelaphus-sylvaticus-track-741557163.webp",
+      "kind": "track",
+      "w": 281,
+      "h": 500,
+      "author": "Elize Geraghty",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/403851951"
+    },
+    {
+      "file": "signs/tragelaphus-sylvaticus-track-155923732.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 375,
+      "author": "Martjie Fia Fourie",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/94028242"
+    },
+    {
+      "file": "signs/tragelaphus-sylvaticus-track-328191227.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Desiree du Preez",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/187639916"
+    },
+    {
+      "file": "signs/tragelaphus-sylvaticus-track-720624824.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Craig Widdows",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/393169617"
+    },
+    {
+      "file": "signs/tragelaphus-sylvaticus-scat-337992341.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 334,
+      "author": "Christine Ridge-Schnaufer",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/192524734"
+    },
+    {
+      "file": "signs/tragelaphus-sylvaticus-scat-660205694.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 375,
+      "author": "Richard Johnstone",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/361760968"
+    },
+    {
+      "file": "signs/tragelaphus-sylvaticus-scat-241926593.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 385,
+      "author": "Sandra Falanga",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/141245025"
+    }
+  ],
+  "damaliscus-lunatus": [
+    {
+      "file": "signs/damaliscus-lunatus-scat-189380184.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "timojaeg",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/112131138"
+    },
+    {
+      "file": "signs/damaliscus-lunatus-scat-204337993.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "timojaeg",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/120790830"
+    },
+    {
+      "file": "signs/damaliscus-lunatus-scat-204346851.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "timojaeg",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/120795607"
+    }
+  ],
+  "helogale-parvula": [],
+  "papio-ursinus": [
+    {
+      "file": "signs/papio-ursinus-track-276597184.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 375,
+      "author": "Gareth Bain",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/160075252"
+    },
+    {
+      "file": "signs/papio-ursinus-track-15531356.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Benjamin Walton",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/11015820"
+    },
+    {
+      "file": "signs/papio-ursinus-track-150229654.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 375,
+      "author": "Marian Oliver",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/90871635"
+    },
+    {
+      "file": "signs/papio-ursinus-track-150229663.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Marian Oliver",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/90871635"
+    },
+    {
+      "file": "signs/papio-ursinus-scat-125963194.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "Santie Gouws",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/77024476"
+    },
+    {
+      "file": "signs/papio-ursinus-scat-201598999.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "Athol Ferguson",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/119268696"
+    },
+    {
+      "file": "signs/papio-ursinus-scat-70887157.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 375,
+      "author": "treespirit51",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/44713075"
+    }
+  ],
+  "felis-lybica": [
+    {
+      "file": "signs/felis-lybica-track-628542961.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 375,
+      "author": "Connor Ryan",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/344935471"
+    },
+    {
+      "file": "signs/felis-lybica-track-731189344.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 333,
+      "author": "Alexander Shienok",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/398584815"
+    },
+    {
+      "file": "signs/felis-lybica-track-15990725.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 416,
+      "author": "Angela Noske",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/11256173"
+    },
+    {
+      "file": "signs/felis-lybica-track-465511231.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 500,
+      "author": "Kudaibergen Amirekul",
+      "license": "CC-BY-SA",
+      "source": "https://www.inaturalist.org/observations/259335195"
+    },
+    {
+      "file": "signs/felis-lybica-scat-56118204.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 375,
+      "author": "emoq",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/35580362"
+    },
+    {
+      "file": "signs/felis-lybica-scat-593134295.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "Connor Ryan",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/327401812"
+    }
+  ],
+  "diceros-bicornis": [
+    {
+      "file": "signs/diceros-bicornis-track-181284109.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 333,
+      "author": "Pete Woodall",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/107750070"
+    },
+    {
+      "file": "signs/diceros-bicornis-track-593120294.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Johan Huisamen",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/327347049"
+    },
+    {
+      "file": "signs/diceros-bicornis-scat-102385494.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 375,
+      "author": "no rights reserved",
+      "license": "CC0",
+      "source": "https://www.inaturalist.org/observations/63760729"
+    },
+    {
+      "file": "signs/diceros-bicornis-scat-560928198.webp",
+      "kind": "scat",
+      "w": 281,
+      "h": 500,
+      "author": "Jeffrey H. Skevington",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/310775002"
+    },
+    {
+      "file": "signs/diceros-bicornis-scat-15648802.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 333,
+      "author": "Callum Evans",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/11083601"
+    }
+  ],
+  "potamochoerus-larvatus": [
+    {
+      "file": "signs/potamochoerus-larvatus-track-709731576.webp",
+      "kind": "track",
+      "w": 407,
+      "h": 500,
+      "author": "Dave U",
+      "license": "CC-BY-SA",
+      "source": "https://www.inaturalist.org/observations/387577259"
+    },
+    {
+      "file": "signs/potamochoerus-larvatus-track-499876786.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 333,
+      "author": "Ulrich Oberprieler",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/278396554"
+    },
+    {
+      "file": "signs/potamochoerus-larvatus-track-143633691.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 375,
+      "author": "Colin Ralston",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/87156904"
+    },
+    {
+      "file": "signs/potamochoerus-larvatus-scat-267837474.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "RCSwart",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/154978025"
+    },
+    {
+      "file": "signs/potamochoerus-larvatus-scat-193063366.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "Martjie Fia Fourie",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/114323633"
+    },
+    {
+      "file": "signs/potamochoerus-larvatus-scat-220624162.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 500,
+      "author": "Martjie Fia Fourie",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/129793398"
+    }
+  ],
+  "sylvicapra-grimmia": [
+    {
+      "file": "signs/sylvicapra-grimmia-track-154278606.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 314,
+      "author": "Peter Vos",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/93115107"
+    },
+    {
+      "file": "signs/sylvicapra-grimmia-track-273267038.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Sunčana Bradley",
+      "license": "CC-BY",
+      "source": "https://www.inaturalist.org/observations/158094797"
+    },
+    {
+      "file": "signs/sylvicapra-grimmia-track-684264778.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "no rights reserved",
+      "license": "CC0",
+      "source": "https://www.inaturalist.org/observations/374368588"
+    },
+    {
+      "file": "signs/sylvicapra-grimmia-track-291554455.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "W. Terry Hunefeld",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/168244626"
+    },
+    {
+      "file": "signs/sylvicapra-grimmia-scat-177802634.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 375,
+      "author": "timojaeg",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/105904633"
+    },
+    {
+      "file": "signs/sylvicapra-grimmia-scat-155719838.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 375,
+      "author": "no rights reserved",
+      "license": "CC0",
+      "source": "https://www.inaturalist.org/observations/93917521"
+    },
+    {
+      "file": "signs/sylvicapra-grimmia-scat-142153822.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "Dave Richardson",
+      "license": "CC-BY",
+      "source": "https://www.inaturalist.org/observations/86303202"
+    }
+  ],
+  "orycteropus-afer": [
+    {
+      "file": "signs/orycteropus-afer-track-200996197.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 375,
+      "author": "Robyn Phillips",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/118930871"
+    },
+    {
+      "file": "signs/orycteropus-afer-track-200997051.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 375,
+      "author": "Robyn Phillips",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/118930871"
+    },
+    {
+      "file": "signs/orycteropus-afer-track-663892223.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "mickybaker",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/363688231"
+    },
+    {
+      "file": "signs/orycteropus-afer-track-158137300.webp",
+      "kind": "track",
+      "w": 225,
+      "h": 500,
+      "author": "Nic Knott-Craig",
+      "license": "CC-BY-SA",
+      "source": "https://www.inaturalist.org/observations/95267808"
+    },
+    {
+      "file": "signs/orycteropus-afer-scat-200997178.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 375,
+      "author": "Robyn Phillips",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/118930871"
+    },
+    {
+      "file": "signs/orycteropus-afer-scat-591972211.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "stephen hardcastle",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/326791673"
+    },
+    {
+      "file": "signs/orycteropus-afer-scat-16175139.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 396,
+      "author": "Tony Rebelo",
+      "license": "CC-BY-SA",
+      "source": "https://www.inaturalist.org/observations/11353394"
+    }
+  ],
+  "herpestes-sanguineus": [
+    {
+      "file": "signs/herpestes-sanguineus-track-353271162.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 500,
+      "author": "Malcolm Douglas",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/200250984"
+    },
+    {
+      "file": "signs/herpestes-sanguineus-track-82859568.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 500,
+      "author": "congonaturalist",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/52134154"
+    },
+    {
+      "file": "signs/herpestes-sanguineus-track-82859352.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 500,
+      "author": "congonaturalist",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/52134154"
+    },
+    {
+      "file": "signs/herpestes-sanguineus-track-353271129.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 250,
+      "author": "Malcolm Douglas",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/200250984"
+    },
+    {
+      "file": "signs/herpestes-sanguineus-scat-179687640.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 328,
+      "author": "Doug Charlton",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/106901631"
+    },
+    {
+      "file": "signs/herpestes-sanguineus-scat-221790351.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 418,
+      "author": "Jane Trembath",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/130419682"
+    },
+    {
+      "file": "signs/herpestes-sanguineus-scat-372779420.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "Jessica Howard",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/210785892"
+    }
+  ],
+  "chlorocebus-pygerythrus": [
+    {
+      "file": "signs/chlorocebus-pygerythrus-track-413407622.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Beau Harger",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/232677653"
+    },
+    {
+      "file": "signs/chlorocebus-pygerythrus-track-360719490.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "faithsphylogeny",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/204105755"
+    },
+    {
+      "file": "signs/chlorocebus-pygerythrus-track-297702624.webp",
+      "kind": "track",
+      "w": 243,
+      "h": 500,
+      "author": "Eon Grobler",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/171553803"
+    },
+    {
+      "file": "signs/chlorocebus-pygerythrus-track-92149402.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Mark Heystek",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/57752553"
+    },
+    {
+      "file": "signs/chlorocebus-pygerythrus-scat-155120761.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "Stephan and Unelle Knoetze",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/93580820"
+    },
+    {
+      "file": "signs/chlorocebus-pygerythrus-scat-15603794.webp",
+      "kind": "scat",
+      "w": 492,
+      "h": 500,
+      "author": "magdastlucia",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/11060351"
+    }
+  ],
+  "lycaon-pictus": [
+    {
+      "file": "signs/lycaon-pictus-track-203779176.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 375,
+      "author": "Peter Erb",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/120479646"
+    },
+    {
+      "file": "signs/lycaon-pictus-track-57900111.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 375,
+      "author": "mlouw",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/36615117"
+    },
+    {
+      "file": "signs/lycaon-pictus-track-715410037.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Stephanie Dolrenry",
+      "license": "CC-BY-SA",
+      "source": "https://www.inaturalist.org/observations/390491894"
+    },
+    {
+      "file": "signs/lycaon-pictus-track-149031581.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 375,
+      "author": "thierry_aebischer_chinko",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/90192276"
+    },
+    {
+      "file": "signs/lycaon-pictus-scat-197759219.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "Siegwalt U Küsel",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/117118568"
+    },
+    {
+      "file": "signs/lycaon-pictus-scat-197759201.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "Siegwalt U Küsel",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/117118568"
+    }
+  ],
+  "ceratotherium-simum": [
+    {
+      "file": "signs/ceratotherium-simum-track-629696481.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 375,
+      "author": "mateo_espinosa",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/345522181"
+    },
+    {
+      "file": "signs/ceratotherium-simum-track-566469039.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Jeffrey H. Skevington",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/313672367"
+    },
+    {
+      "file": "signs/ceratotherium-simum-track-729241102.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 375,
+      "author": "carsten_renker",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/397590321"
+    },
+    {
+      "file": "signs/ceratotherium-simum-track-614500316.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Timothy Hedges",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/337964599"
+    },
+    {
+      "file": "signs/ceratotherium-simum-scat-519124076.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "Luke Goddard",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/288652534"
+    },
+    {
+      "file": "signs/ceratotherium-simum-scat-577256510.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 333,
+      "author": "Kobus Lubbe",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/319346592"
+    },
+    {
+      "file": "signs/ceratotherium-simum-scat-138924291.webp",
+      "kind": "scat",
+      "w": 333,
+      "h": 500,
+      "author": "Richard Gill",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/84518710"
+    }
+  ],
+  "phacochoerus-africanus": [
+    {
+      "file": "signs/phacochoerus-africanus-track-434879381.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Nic Knott-Craig",
+      "license": "CC-BY-SA",
+      "source": "https://www.inaturalist.org/observations/243850180"
+    },
+    {
+      "file": "signs/phacochoerus-africanus-track-629667213.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Connor Ryan",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/345506538"
+    },
+    {
+      "file": "signs/phacochoerus-africanus-track-345567315.webp",
+      "kind": "track",
+      "w": 357,
+      "h": 500,
+      "author": "Andre Harmse",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/196304998"
+    },
+    {
+      "file": "signs/phacochoerus-africanus-scat-290732177.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "W. Terry Hunefeld",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/167800990"
+    },
+    {
+      "file": "signs/phacochoerus-africanus-scat-318433496.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "Athol Ferguson",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/182614001"
+    },
+    {
+      "file": "signs/phacochoerus-africanus-scat-412679210.webp",
+      "kind": "scat",
+      "w": 281,
+      "h": 500,
+      "author": "Reuben Heydenrych",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/232295978"
+    }
+  ],
+  "raphicerus-sharpei": [
+    {
+      "file": "signs/raphicerus-sharpei-scat-204111300.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "timojaeg",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/120665772"
+    },
+    {
+      "file": "signs/raphicerus-sharpei-scat-204111266.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "timojaeg",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/120665772"
+    },
+    {
+      "file": "signs/raphicerus-sharpei-scat-204111304.webp",
+      "kind": "scat",
+      "w": 375,
+      "h": 500,
+      "author": "timojaeg",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/120665772"
+    }
+  ],
+  "smutsia-temminckii": [
+    {
+      "file": "signs/smutsia-temminckii-track-507806191.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "margaridah",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/282639069"
+    },
+    {
+      "file": "signs/smutsia-temminckii-track-507806236.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "margaridah",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/282639069"
+    }
+  ],
+  "atilax-paludinosus": [
+    {
+      "file": "signs/atilax-paludinosus-track-360367149.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 375,
+      "author": "no rights reserved",
+      "license": "CC0",
+      "source": "https://www.inaturalist.org/observations/203924491"
+    },
+    {
+      "file": "signs/atilax-paludinosus-track-545124678.webp",
+      "kind": "track",
+      "w": 500,
+      "h": 500,
+      "author": "no rights reserved",
+      "license": "CC0",
+      "source": "https://www.inaturalist.org/observations/302477472"
+    },
+    {
+      "file": "signs/atilax-paludinosus-track-161913050.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "Lood IJlst",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/97363400"
+    },
+    {
+      "file": "signs/atilax-paludinosus-track-258799179.webp",
+      "kind": "track",
+      "w": 375,
+      "h": 500,
+      "author": "caramiburger",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/150124961"
+    },
+    {
+      "file": "signs/atilax-paludinosus-scat-465852151.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 279,
+      "author": "jasonjams",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/259507511"
+    },
+    {
+      "file": "signs/atilax-paludinosus-scat-37373445.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 375,
+      "author": "linkie",
+      "license": "CC-BY",
+      "source": "https://www.inaturalist.org/observations/24167348"
+    },
+    {
+      "file": "signs/atilax-paludinosus-scat-179352531.webp",
+      "kind": "scat",
+      "w": 500,
+      "h": 375,
+      "author": "Siegwalt U Küsel",
+      "license": "CC-BY-NC",
+      "source": "https://www.inaturalist.org/observations/106727653"
+    }
+  ],
+  "galago-moholi": []
 }
