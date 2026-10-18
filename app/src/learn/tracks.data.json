@@ -1,0 +1,1996 @@
+[
+ {
+  "id": "panthera-leo",
+  "shape": "cat",
+  "front": {
+   "l": 13.8,
+   "w": 12.3
+  },
+  "hind": {
+   "l": 14.1,
+   "w": 11.7
+  },
+  "toes": 4,
+  "claws": false,
+  "clawsNote": "usually hidden",
+  "dew": false,
+  "track": "Four large oval toes ahead of a broad main pad whose posterior edge shows three lobes in most substrates; the leading edge may carry a slight indentation. Claws stay retracted and only print when the lion runs, turns sharply, jumps or walks in mud; the first toe (high on the leg) and the dewclaw never register. The main pad is more symmetrical than a hyaena's and slopes slightly down towards the outside of the track. Front tracks are broader than hind: larger toes, more splayed, wider main pad with a broad leading edge; hind tracks are narrower, with toes bunched tighter and a sharper, more angular posterior edge whose three lobes are often more clearly defined.",
+  "trail": "At a very slow walk the hind foot lands behind the front; while stalking it registers directly on top; at a medium pace it lands just ahead, and the lead grows to about 120 mm before the lion breaks into a trot. In a normal walk the front-hind gap averages 2-25 mm (lionesses on a road) and the two prints of the same side sit together, slightly left or right of the straddle centre; front feet often point slightly outward. At a gallop the weight goes onto the toes so only toes and claw marks print, with no main pad.",
+  "dung": "Segmented, 32-40 mm in diameter, light to dark (even black and loose after a meal of flesh, blood and innards), with bone fragments, hooves and hair; twisted and knotted when much skin was eaten, and turning white when dry if bone-rich. Dropped near kills and at random through the territory, not in latrines like hyaena.",
+  "signs": [
+   "Territorial scrape: males rake the ground with the hind feet and spray urine, usually beside game paths or roads near a prominent bush; looks very like a hyaena scrape",
+   "Face-rubbing on bushes after a scrape (magic guarri Euclea divinorum favoured in southern Kruger); wet, sticky urine that dries fast helps age the tracks",
+   "Claw marks on tree trunks (e.g. leadwood), often the same tree repeatedly: scent-marking with interdigital glands and claw sharpening",
+   "Rolling in buffalo and hippo dung, leaving flattened dung with lion hairs stuck in it",
+   "Kill site: greenish stomach contents, bone fragments, an odd hoof, clumps of hair and widely flattened grass",
+   "Trail of bent or dew-brushed grass; residual sand left on logs stepped on; roaring after sunset, at dawn and reportedly after rainstorms, repeated roaring all night suggesting a territorial dispute or takeover"
+  ],
+  "facts": [
+   "Londolozi measurements: male front 138 mm, hind 141 mm; lioness front 127 mm, hind 116 mm; a male's toes are broader and rounder than the female's more oval toes and his main pad fuller, broader and less angular (one male's right hind: 3rd toe 37 x 23 mm, 4th toe 31 x 24 mm).",
+   "To tell left from right, lay your own hand (thumb hidden) beside the track: your finger lengths mirror the toe arrangement on the same side of the body.",
+   "Dominant males strut, flicking the front feet so the front track is often smudged; prides of 4-25 leave several sets of tracks, while a male marking territory may travel alone, covering several km a night along roads and game paths."
+  ],
+  "confuse": [
+   "panthera-pardus",
+   "crocuta-crocuta",
+   "equus-quagga"
+  ],
+  "why": {
+   "panthera-pardus": "Lion cub tracks resemble leopard tracks, but the cub's toes are marginally broader and slightly more splayed and the middle lobe of its main pad's posterior edge is sharper with steeper edges than the leopard's.",
+   "crocuta-crocuta": "The lion's territorial hind-foot scrape beside a path or bush looks very similar to a hyaena scrape; the lion's main pad is more symmetrical than the hyaena's and lion dung lies scattered rather than in latrines.",
+   "equus-quagga": "Zebra and other animals leave similar-sized trails of bent grass, so look for the actual tracks under the vegetation."
+  }
+ },
+ {
+  "id": "panthera-pardus",
+  "shape": "cat",
+  "front": {
+   "l": 9.5,
+   "w": 10.5
+  },
+  "hind": {
+   "l": 10,
+   "w": 8.6
+  },
+  "toes": 4,
+  "claws": false,
+  "clawsNote": "usually hidden",
+  "dew": false,
+  "track": "Classic cat pug mark: four oval toes in front of a large main pad, no claw marks unless the animal is running or in deep mud. The leading edge of the main pad carries a small indentation (often faint in the field) and its rear edge shows three fairly well-defined lobes, clearest on the hind print. The front foot is broader but shorter than the hind, with toes slightly splayed; the hind is narrower with the toes bunched tightly together. Males leave longer, wider prints with toes 3-7 mm broader than females' and a more bulging outer rear lobe, where the female's pad is more angular; on firm ground often only the main pad registers clearly with four faint toes.",
+  "trail": "In a normal walk the hind foot lands 20-40 mm ahead of the front; at a very slow walk it falls behind the front, when stalking or slightly faster it registers directly on top, and with acceleration it lands progressively further ahead. Front and hind of the same side register together, slightly left or right of the trail centre line, so viewing the trail from behind separates left from right feet; laying a hand (thumb hidden) beside the print matches finger lengths to the toes of that side.",
+  "dung": "Light brown to black, loose or firm and segmented, commonly full of hair; 24-30 mm in diameter. Male droppings are lumpy and segmented, female ones slimmer.",
+  "signs": [
+   "Scrapes made with the hind feet (interdigital-gland scent), usually beside a game path or road; urine sprayed on prominent bushes.",
+   "Claw marks on tree trunks, from climbing and as territorial marking.",
+   "Tufts of plucked fur under a large tree: fur is plucked from a carcass before feeding, so a kill may be hoisted above.",
+   "Kills hoisted into trees (often evergreens); an adult feeds on an impala for 2-3 days, leaving to rest or drink.",
+   "Rasping call/roar used to reaffirm territory.",
+   "Alarm calls of birds (white-crested helmetshrike, fork-tailed drongo, grey go-away-bird, chinspot batis, black-backed puffback, Burchell's coucal, francolin, Wahlberg's eagle), tree squirrels, vervets and antelope betray a leopard; hyaena tracks frequently follow leopard tracks (at Londolozi hyaenas rob ~35% of leopard kills)."
+  ],
+  "facts": [
+   "Londolozi measurements: 'Camp Pan' male front 95 x 93 mm, hind 100 x 91 mm; 'Tamboti' female front 77 x 73 mm, hind 80 x 65 mm, but variation is large and one female matched an average male.",
+   "Light weight and small feet make the prints indistinct: unless the substrate is very soft, leopards are nearly impossible to follow by spoor alone.",
+   "A female's tracks going in and out of the same thicket can indicate a den (termite-mound holes, rocky outcrops, dense thickets, reused for successive litters)."
+  ],
+  "confuse": [
+   "crocuta-crocuta",
+   "panthera-leo",
+   "acinonyx-jubatus"
+  ],
+  "why": {
+   "crocuta-crocuta": "Subadult hyaena tracks are a similar size but show claw marks.",
+   "panthera-leo": "Lion cub tracks (four-month-old cub is close to an adult female leopard in size) are broader, with toes slightly more splayed and a sharper, more distinctly inset three-lobed rear edge on the main pad.",
+   "acinonyx-jubatus": "Cheetah tracks usually show claw marks and have more sharply defined ridges and lobes on the rear edge of the main pad."
+  },
+  "widthMm": {
+   "front": 73,
+   "hind": 65
+  }
+ },
+ {
+  "id": "acinonyx-jubatus",
+  "shape": "cat",
+  "front": {
+   "l": 9.5,
+   "w": 8.2
+  },
+  "hind": {
+   "l": 10.5,
+   "w": 7.9
+  },
+  "toes": 4,
+  "claws": true,
+  "clawsNote": "show",
+  "dew": false,
+  "track": "A typical large-cat print of four toes and a three-lobed main pad, but the claws cannot be fully sheathed, so blunt claw marks usually sit just ahead of each toe (not always crisp). The three lobes on the rear edge of the main pad run a short way up the pad as distinct ridges, far more pronounced than in leopard or lion; the leading edge of the main pad has a slight notch. Toes are set asymmetrically. Hind print: main pad square or box-shaped on its leading edge and slightly longer than the front (105 vs 95 mm); front toes are broader but shorter than hind toes.",
+  "trail": "At a normal walk the hind foot lands 40-60 mm ahead of the front print (overstep). Trails run between open areas, climbing termite mounds and stumps as lookout points; seldom followed on foot because of the open terrain.",
+  "dung": "Short cylindrical tubes, segmented but still joined, about 30 mm in diameter, light green to black, dense with little hair. Often placed on vantage points such as the top of a boulder or termite mound.",
+  "signs": [
+   "Scrapes made with the hind feet, plus clawed and urine-sprayed tree trunks; the same prominent trees are marked repeatedly (a male was seen climbing a tree to defecate and spray the branches)",
+   "Kills: feeding starts between the hind legs and moves to the abdomen; few bones and little skin eaten, skeleton left largely intact",
+   "Bite marks on prey with 32-35 mm between the canines",
+   "A telltale cut on the prey's hind leg from the dewclaw 'ankle-tap' used to trip it",
+   "Tufts of prey fur on logs or ground where an impala was chased and tripped",
+   "Bird-like chirps or tweets and loud purring; cannot roar"
+  ],
+  "facts": [
+   "Measurements from adults at Samara Game Reserve (Karoo): front 95 mm, hind 105 mm.",
+   "Diurnal; rests mid-day in shade, often in the middle of a clearing with good visibility; also hunts on full-moon nights.",
+   "Kills in about 50% of chases at 90-110 km/h; loses many kills to lion, hyaena and leopard; listens for their calls and avoids them."
+  ],
+  "confuse": [
+   "panthera-pardus",
+   "lycaon-pictus",
+   "panthera-leo"
+  ],
+  "why": {
+   "panthera-pardus": "Leopard front tracks are similar but show no claw marks, have broader toes and a broader main pad, and the lobes and ridges on the rear of the main pad are much less defined.",
+   "lycaon-pictus": "Wild dog toes are arranged symmetrically (cheetah's are asymmetric) and its main pad is narrower and more triangular.",
+   "panthera-leo": "Lion tracks lack the sharply defined posterior ridges on the main pad that cheetah shows."
+  }
+ },
+ {
+  "id": "leptailurus-serval",
+  "shape": "cat",
+  "front": {
+   "l": 5,
+   "w": 3.7
+  },
+  "hind": {
+   "l": 4.5,
+   "w": 2.8
+  },
+  "toes": 4,
+  "claws": false,
+  "clawsNote": "usually hidden",
+  "dew": false,
+  "track": "Four oval toes on both feet with a main pad whose rear edge carries three fairly well-defined lobes. The main pad is narrow, especially along its leading edge, which is the main thing separating it from the broader caracal pad. On the hind foot the toes sit well ahead of the main pad, so a straight line can be drawn between the toe row and the pad without touching any part of the print (not always visible on hard ground). Front about 50 mm, hind about 45 mm; one individual measured 45 mm on both.",
+  "trail": "Claw marks appear only when the cat jumps, which it does regularly when pouncing on rodents in long grass.",
+  "dung": "Surprisingly large segmented droppings 20-22 mm in diameter, dark green to black with much rodent hair, seldom covered; they dry to a light grey resembling old steel wool.",
+  "signs": [
+   "Both sexes spray urine on prominent bushes",
+   "Occasionally scrapes the ground with the feet and sprays urine (uncommon)",
+   "Sometimes rakes droppings with the hind feet after defecating",
+   "High-pitched chirping call and quiet grunts",
+   "Kills of larger prey left with organs, intestines, fur and feathers uneaten"
+  ],
+  "facts": [
+   "Can leap 2-3 m vertically and 3-3.5 m horizontally from a standstill",
+   "Hunts mainly by hearing in thick grassland and reedbeds near water",
+   "The toes-ahead-of-pad gap on the hind foot cannot be drawn on a caracal track"
+  ],
+  "confuse": [
+   "caracal-caracal",
+   "acinonyx-jubatus",
+   "felis-lybica"
+  ],
+  "why": {
+   "caracal-caracal": "Caracal hind track is about 5-10 mm longer, its main pad is much broader on the leading edge and sits higher and tighter against the toes, its toes are broader and the front toes more splayed, and its front feet point slightly outward; droppings of the two are similar.",
+   "acinonyx-jubatus": "A young cheetah's print is also narrow with well-defined rear pad lobes, but cheetah usually shows claw marks.",
+   "felis-lybica": "Serval track is about 20 mm longer with a comparatively narrower leading edge to the main pad; wildcat toes are rounder."
+  }
+ },
+ {
+  "id": "caracal-caracal",
+  "shape": "cat",
+  "front": {
+   "l": 5.2,
+   "w": 4.5
+  },
+  "hind": {
+   "l": 5.8,
+   "w": 4
+  },
+  "toes": 4,
+  "claws": false,
+  "clawsNote": "usually hidden",
+  "dew": false,
+  "track": "Four relatively large oval toes on both feet above a broad main pad with three distinctive rear lobes. The outer toes on both feet extend lower down on either side of the main pad, most obviously on the hind foot. The front print is broader but shorter than the hind and its main pad sometimes shows a slight indentation on the leading edge; hair between toes and pad can partly blur the print. Measured at Samara: front 50-53 mm, hind slightly longer at 58 mm.",
+  "trail": "At a normal walk the hind foot registers partly on top of the front; as in lion and leopard the front foot often lands angled slightly outward. After a leap for prey the tracks show protracted claws and splayed toes.",
+  "dung": "Droppings 22-25 mm in diameter, partially segmented and usually tapering to a point; they turn white as they dry.",
+  "signs": [
+   "Territorial scrape: patch of ground raked clear among leaf litter",
+   "Bite marks about 28 mm wide (upper canines) and 23 mm (lower canines) on either side of the prey's throat or spine",
+   "Claw and scratch marks on the rump and flanks of prey",
+   "Vervet monkeys alarm-call vociferously for caracal (Karoo)",
+   "Track evidence shows an individual uses an area for weeks (up to two months) before moving on"
+  ],
+  "facts": [
+   "Largest of Africa's small cats; leaps 2-3 m from a standstill to take birds in mid-air",
+   "Readily kills antelope up to bushbuck or springbok size",
+   "Front feet turn outward at a gallop, visible in the trail"
+  ],
+  "confuse": [
+   "leptailurus-serval",
+   "panthera-pardus"
+  ],
+  "why": {
+   "leptailurus-serval": "Serval track is similar in length but narrower, its hind-foot toes usually sit further forward of the main pad, and the leading edge of its main pad is narrower.",
+   "panthera-pardus": "Female leopard tracks are about 25 mm longer with comparatively broader toes and main pad."
+  }
+ },
+ {
+  "id": "felis-lybica",
+  "shape": "cat",
+  "front": {
+   "l": 3.4,
+   "w": 2.9
+  },
+  "hind": {
+   "l": 3.7,
+   "w": 2.7
+  },
+  "toes": 4,
+  "claws": false,
+  "clawsNote": "usually hidden",
+  "dew": false,
+  "track": "Four oval toes on both feet, almost identical to a domestic cat, with three clearly separate lobes on the rear edge of the main pad. The front print is slightly broader but shorter than the hind, with a larger main pad and a considerably broader leading edge; the front outer toes sit low, flanking the pad on either side. The hind foot has more elongated toes, a narrower main pad and toes lying forward of the pad. Londolozi measurements: front 34 mm, hind 37 mm; hair between the toes may show in some substrates.",
+  "trail": "Typical cat gait: at a slow walk the hind foot lands behind or directly on top of the front; the usual gait puts the hind 20-50 mm ahead of the front, and the hind lands further ahead as the cat speeds up. Claws are sheathed and show only when accelerating, running or jumping.",
+  "dung": "Segmented, light green droppings 18 mm in diameter, often partly covered by scraping soil over them.",
+  "signs": [
+   "Urine sprayed on low branches and small bushes",
+   "Scrape marks in soil around partially covered droppings (territorial demarcation)",
+   "Drag furrow in sand where a killed hare was hauled away",
+   "Shelters in holes dug by other animals, among rocks or under tree roots where cover is poor"
+  ],
+  "facts": [
+   "Book treats it as Felis silvestris cafra",
+   "Prefers good cover such as Acacia senegal scrub, tall grass and riverine habitats; a good climber when hunting or threatened",
+   "Hind registering 20-50 mm ahead of the front is the commonest trail pattern"
+  ],
+  "confuse": [
+   "leptailurus-serval",
+   "civettictis-civetta"
+  ],
+  "why": {
+   "leptailurus-serval": "Serval track is about 20 mm longer, with a wider gap between the main pad and toes and a narrower leading edge to the main pad.",
+   "civettictis-civetta": "Civet track is about 20 mm longer with larger, rounder toes, and its unsheathed claws usually show whereas the wildcat's mostly do not."
+  }
+ },
+ {
+  "id": "lycaon-pictus",
+  "shape": "dog",
+  "front": {
+   "l": 8.8,
+   "w": 5.9
+  },
+  "hind": {
+   "l": 7.9,
+   "w": 5
+  },
+  "toes": 4,
+  "claws": true,
+  "clawsNote": "show",
+  "dew": false,
+  "track": "A classic large dog print: four fairly uniform toes with sturdy claws that usually register clearly, on both front and hind feet. The two middle toes sit side by side, parallel, with a small gap between them, and the toes are arranged symmetrically. The main pad is triangular with a narrow, un-notched leading edge and two faint, symmetrical lobes on its rear edge. The front print is broader than the hind, with broader toes; measured lengths run 86-90 mm front and 77-82 mm hind.",
+  "trail": "At a walk the hind foot lands behind or on top of the front print; at a trot it lands on top of the front with a longer stride. As speed rises the hind foot falls progressively further ahead of the front until the pack breaks into a gallop. Packs trot continuously while hunting, pausing only for seconds to listen, so trails show many overlapping prints.",
+  "dung": "Brown to dark-brown scats about 25 mm in diameter containing hair, dropped at random along the route of travel rather than in latrines.",
+  "signs": [
+   "Dens in disused aardvark or warthog burrows in termite mounds (southern Kruger), occupied about three months but moved every 3-4 weeks; porcupines sometimes share them",
+   "Carcass almost entirely consumed, leaving only the larger bones, neck and head; prey killed by disembowelling after a chase of several kilometres",
+   "Alpha pair urine-marks a home range of 600-1,100 km2",
+   "Calls: chirping and squeaking during the hunt, and a far-carrying drawn-out 'whoo, whoo, whoo' contact call"
+  ],
+  "facts": [
+   "Measured track ranges: front 86-90 mm, hind 77-82 mm; drawings 88 mm front, 79 mm hind",
+   "The tracks of a hunting pack show the dogs trotting continuously, stopping only for a few seconds to listen",
+   "Lions pirate kills and kill pups in the den; if lions disturb a den the pack moves at once"
+  ],
+  "confuse": [
+   "crocuta-crocuta",
+   "acinonyx-jubatus"
+  ],
+  "why": {
+   "crocuta-crocuta": "The hyaena's toe arrangement and main pad are clearly asymmetrical, with kidney-shaped outer toes, whereas the wild dog's toes are uniform in shape and symmetrically placed.",
+   "acinonyx-jubatus": "Wild dog toes are positioned symmetrically, unlike the cheetah's, and the wild dog's main pad is narrower and more triangular."
+  }
+ },
+ {
+  "id": "lupulella-mesomelas",
+  "shape": "dog",
+  "front": {
+   "l": 6.4,
+   "w": 4.3
+  },
+  "hind": {
+   "l": 6,
+   "w": 3.6
+  },
+  "toes": 4,
+  "claws": true,
+  "clawsNote": "show",
+  "dew": false,
+  "track": "Four oval toes on both feet, set well ahead of a triangular main pad; the front foot's first toe and dewclaw never print. Claws are short, thick and relatively long, with the two middle claws placed well forward. The toe layout and overall symmetry are diagnostic: the two middle toes sit well forward and parallel, and the two outer toes lie roughly level with each other, most obviously on the hind foot, which trackers liken to a Christmas tree. The main pad's rear edge has three lobes, the middle one widest. An imaginary X can be drawn through the print without touching any toe or the pad.",
+  "trail": "Walking, the hind foot registers on top of the front; at a fast trot the hind lands about 120 mm ahead of the front. Like many dogs the jackal often side-trots with its body angled, so both front prints fall on one side of the straddle centre line and both hind prints on the other.",
+  "dung": "Scats 18-22 mm in diameter, black when fresh and bleaching white as they dry (especially when full of bone fragments), usually containing hair or feathers; characteristically placed on top of small bushes, shrubs, rocks or grass tufts.",
+  "signs": [
+   "Droppings deposited conspicuously on top of bushes, rocks or grass clumps, presumably so air movement spreads the scent",
+   "Urine marks with ground scratched by both front and hind feet; rolling spots with hair left around them",
+   "Dens in abandoned aardvark holes in termite mounds, in bushveld and Karoo alike",
+   "Raided ostrich nests with scattered eggshell; caches of food",
+   "Jackal tracks at a carcass do not prove a jackal kill: claw marks on the prey's rump and neck rule jackals out, as they kill by running prey down, biting the flanks and disembowelling",
+   "Barking alarm call at leopards and lions; howling through the night to rivals and mates"
+  ],
+  "facts": [
+   "Drawings measure 64 mm front and 60 mm hind; the hind print's outline recalls a Christmas tree",
+   "Fast trot: hind foot lands about 120 mm ahead of the front foot",
+   "The imaginary-X test: lines through the track should pass between toes and pad without touching them"
+  ],
+  "confuse": [
+   "ichneumia-albicauda",
+   "aardwolf",
+   "Cape fox",
+   "bat-eared fox",
+   "caracal-caracal"
+  ],
+  "why": {
+   "ichneumia-albicauda": "The mongoose's toes are much smaller and set in a semicircular arc, whereas the jackal's two parallel middle toes sit forward with the outer pair slightly back, giving a more symmetrical print.",
+   "aardwolf": "The jackal's toes are significantly bigger than the aardwolf's.",
+   "Cape fox": "The jackal's toes are significantly bigger than the Cape fox's.",
+   "bat-eared fox": "The jackal's toes are significantly bigger than the bat-eared fox's.",
+   "caracal-caracal": "Droppings are easily confused, but the jackal's usually contain more hair and feathers and are more segmented."
+  }
+ },
+ {
+  "id": "proteles-cristatus",
+  "shape": "dog",
+  "front": {
+   "l": 5.4,
+   "w": 4.4
+  },
+  "hind": {
+   "l": 4.5,
+   "w": 3.8
+  },
+  "toes": 4,
+  "claws": true,
+  "clawsNote": "show",
+  "dew": false,
+  "track": "Four toes packed so tightly they fit together like puzzle pieces, with long sturdy digging claws registering on all four feet. The main pad has an elongated leading edge that pushes up between the two outer toes, most obviously on the front foot; its rear edge is asymmetrical, the outer lobe reaching further back than the inner one. The front foot (54mm) is broader than the hind (45mm), and the hind main pad seldom prints clearly, especially on hard ground. Outer toes are kidney-shaped as in the other hyaenas.",
+  "trail": "Hyaena-family gait: the hind leg swings across the line of travel and lands close to the opposite front foot (right hind near left front, left hind near right front), falling behind, beside or slightly on top of it depending on speed. The hind foot registers turned outwards while the front foot usually points in the direction of travel.",
+  "dung": "Surprisingly large droppings, about 40mm in diameter, dark, with a pine/eucalyptus smell, made up mostly of sand and termite heads; deposited and partly buried in middens.",
+  "signs": [
+   "Middens of partly buried droppings",
+   "Anal-gland 'pasting' on grass stems to mark territory",
+   "Occupies springhare and aardvark burrows; stays underground for long spells in cold weather",
+   "No digging for food: termites are licked off the ground surface"
+  ],
+  "facts": [
+   "Measurements (hind 45mm, front 54mm) were taken in the Karoo",
+   "Hind foot lands facing outwards and near the opposite-side front track, a hyaena-family trait",
+   "Eats almost nothing but two termite species, hundreds of thousands a night; cheek teeth are greatly reduced"
+  ],
+  "confuse": [
+   "crocuta-crocuta",
+   "lupulella-mesomelas"
+  ],
+  "why": {
+   "crocuta-crocuta": "Kidney-shaped outer toes look like those of the spotted hyaena, but the aardwolf's track is far smaller (54/45mm vs 106/101mm).",
+   "lupulella-mesomelas": "Aardwolf track is about 10mm shorter than the black-backed jackal's (54mm vs 64mm front) and its main pad is markedly narrower; the jackal sheet adds that jackal toes are significantly bigger than those of aardwolf, Cape fox and bat-eared fox."
+  }
+ },
+ {
+  "id": "crocuta-crocuta",
+  "shape": "hyena",
+  "front": {
+   "l": 10.6,
+   "w": 7.2
+  },
+  "hind": {
+   "l": 10.1,
+   "w": 6.5
+  },
+  "toes": 4,
+  "claws": true,
+  "clawsNote": "show",
+  "dew": false,
+  "track": "Large dog-like print with four toes and stout, blunt claws that register clearly on front and hind feet in most substrates. The two outer toes are kidney-shaped, and the toes sit tightly against the main pad; in mud or wet sand thin ridges of soil often rise between toes and pad to form a 'peak' in the centre of the print, whereas lion and leopard leave wider gaps. The main pad is asymmetrical: one of its two rear lobes extends further back than the other. Front print (106 mm at Londolozi) is larger and rounder than the narrower, more oval hind (101 mm).",
+  "trail": "Hyena-family gait unlike any cat: the hind leg swings across the midline and lands next to the opposite front foot, so the right hind registers just behind the left front. Depending on speed the hind lands behind, beside or slightly on top of the front print, and it is always turned outwards about 25 degrees while the front foot points along the line of travel.",
+  "dung": "Cylindrical, segmented scats 35-40 mm in diameter, dark green or brown when fresh but quickly bleaching chalk-white as the bone content dries; generally larger than brown hyena scats. Deposited in latrines (40-50 m2 in Sabi Sands) scattered through the territory and along its boundaries, often with scrape marks from the front feet.",
+  "signs": [
+   "White, dried droppings act as a visual territorial marker.",
+   "Scent marks: drops of strong-smelling dark-yellow anal-gland paste (turning black) smeared on grass stems, concentrated at latrines and along boundaries.",
+   "Scrapes made with the front feet at latrine sites.",
+   "Fresh and old tracks going back and forth on a well-used game path suggest a den nearby.",
+   "Chorus of high-pitched giggling and laughing when a clan contests a carcass."
+  ],
+  "facts": [
+   "Measured at Londolozi: front 106 mm, hind 101 mm; front feet are larger to match the heavy forequarters.",
+   "The bigger females are thought to leave larger tracks than males, though the evidence is still being gathered.",
+   "The hind foot lands angled about 25 degrees off the direction of travel, a cue shared by all hyenas."
+  ],
+  "confuse": [
+   "parahyaena-brunnea",
+   "proteles-cristatus",
+   "panthera-pardus"
+  ],
+  "why": {
+   "parahyaena-brunnea": "Brown hyena is smaller with a hind print about 20 mm shorter than its front, marginally longer front claws, more tightly bunched toes, visible hair impressions around the foot edges in soft ground, and a less lopsided rear edge to the main pad.",
+   "proteles-cristatus": "Aardwolf track is much smaller.",
+   "panthera-pardus": "Leopard (and lion) show wider gaps between the toes and no claw marks; hyena toes are crowded against the pad with a central sand peak."
+  }
+ },
+ {
+  "id": "parahyaena-brunnea",
+  "shape": "hyena",
+  "front": {
+   "l": 9.7,
+   "w": 7.1
+  },
+  "hind": {
+   "l": 7.8,
+   "w": 5.3
+  },
+  "toes": 4,
+  "claws": true,
+  "clawsNote": "show",
+  "dew": false,
+  "track": "Four toes with thick, heavy claws on both feet; the outer toes are kidney-shaped as in the spotted hyena. Toes are packed tightly together, especially on the hind foot, so the print looks almost like a jigsaw puzzle. A dense mat of hair around the foot often leaves a fringe of hair marks in soft substrate and can partly obscure the claw marks. The main pad's rear edge is slightly asymmetrical but less so than in the spotted hyena. The hind print (78 mm, Northern Tuli) is markedly smaller, up to 25 mm shorter, than the front (97 mm) with its relatively long claws - the diagnostic feature.",
+  "trail": "Typical hyena gait: the hind leg crosses the midline to land beside the opposite front foot (right hind just behind left front), either behind, next to or partly on top of it depending on speed. The hind foot points outwards at about 25 degrees while the front foot faces the direction of travel.",
+  "dung": "Light to dark brown-green when fresh, 30-40 mm in diameter and less segmented than spotted hyena scats; they dry white within days because of the very high bone content, and may contain tsamma melon seeds. Deposited in middens set in slight depressions throughout the territory, with the scats lying closer together than in spotted hyena middens.",
+  "signs": [
+   "Two-part anal-gland paste on grass stalks and thin branches, placed high by walking over the vegetation: a pale, long-lasting smear ('territory occupied') and a dark brown one lasting only days (social information for the clan).",
+   "Pastings along territorial borders and throughout the range.",
+   "Den entrances (narrow) in rocky hilltops or remote dunes, with bones, skulls, hooves and porcupine quills carried back and scattered around them.",
+   "Hair impressions around prints in soft sand."
+  ],
+  "facts": [
+   "Measured in the Northern Tuli Game Reserve, Botswana: front 97 mm, hind 78 mm - the hind is up to 25 mm shorter, unlike the near-equal feet of the spotted hyena.",
+   "Hind foot registers about 25 degrees outwards while the front points straight ahead.",
+   "Tends to avoid areas frequented by spotted hyenas."
+  ],
+  "confuse": [
+   "crocuta-crocuta",
+   "panthera-pardus"
+  ],
+  "why": {
+   "crocuta-crocuta": "Brown hyena shows a much bigger size gap between front and hind prints (hind up to 25 mm shorter), hair marks around the foot edges that the spotted hyena lacks, and longer front claws.",
+   "panthera-pardus": "Leopard print shows no claws and more open toe spacing; the brown hyena's tightly bunched toes and heavy claw marks separate them (book photo compares the two side by side)."
+  }
+ },
+ {
+  "id": "loxodonta-africana",
+  "shape": "round",
+  "front": {
+   "l": 44.6,
+   "w": 35.1
+  },
+  "hind": {
+   "l": 49.2,
+   "w": 33.1
+  },
+  "toes": 5,
+  "claws": true,
+  "clawsNote": "sometimes",
+  "dew": false,
+  "track": "Unmistakable huge round prints: the front foot is broad and almost circular (adult cow 446 x 347 mm) with five toes that cannot be told apart; the hind foot is narrower and more oval (492 x 284 mm) with four toes. The rough, cracked sole leaves a wrinkled mosaic of creases unique to the animal. Thicker cartilage at the rear edge means the heel area shows fewer cracks: that smoother section, together with faint toenail scuff marks at the front edge, gives the direction of travel.",
+  "trail": "At a normal walk the hind foot registers partly on top of the front print; as speed increases the hind lands progressively further forward, and at full speed well ahead of the front. Trunk drag marks, especially from bulls, make a serpentine line along the trail. Elephants move surprisingly silently on their cushioned soles.",
+  "dung": "Large, coarse, fibrous boluses of brown dung full of small twigs, bark, leaves and sometimes fruit (marula), reflecting inefficient digestion; brown and coarser in texture than rhino dung. Scattered where the animal walks or feeds, not in middens.",
+  "signs": [
+   "Shallow divots of soil as wide as a foot, kicked loose by the front feet to spray dust on the back and behind the ears; no other animal does this.",
+   "Thick caked mud rubbed onto mature trees after wallowing; mud smeared on leaves or trees 2-3 m above ground.",
+   "Bark stripped from trees, tusk gouges on trunks (marula), chewed wood, small branches stripped of bark, felled trees, flattened grass.",
+   "Holes dug in dry riverbeds to reach water.",
+   "Musth bulls: droplets of penis fluid alongside the tracks and a pungent lingering smell; urine and droppings along the trail.",
+   "Sounds: breaking branches, rumbling, trumpeting and squealing; but a herd can also be dead silent when disturbed."
+  ],
+  "facts": [
+   "Measured on 20 bulls and 20 cows: adult bull front 505 x 472 mm, hind 566 x 354 mm (bull medians 475 x 355 front, 502 x 318 hind); adult cow front 446 x 347 mm, hind 492 x 284 mm (cow medians 427 x 332 front, 480 x 308 hind).",
+   "Shoulder height: front-foot circumference x 2.5 (Skinner); or hind-foot length x 5.8 for a bull, x 5.5 for a cow (Peter Apps).",
+   "The smoother heel of the print and the toenail scuffs point the way the elephant went; foraging herds ignore game paths and move at 3-10 km/h, so check moisture in dung and tracks for freshness."
+  ],
+  "widthMm": {
+   "front": 347,
+   "hind": 284
+  }
+ },
+ {
+  "id": "diceros-bicornis",
+  "shape": "round",
+  "front": {
+   "l": 24,
+   "w": 20.3
+  },
+  "hind": {
+   "l": 23,
+   "w": 20.5
+  },
+  "toes": 3,
+  "claws": true,
+  "clawsNote": "show",
+  "dew": false,
+  "track": "Large three-toed print (front 240 mm, hind 230 mm): one broad middle toe flanked by two small, narrow outer toes, all with thick sturdy toenails, and an overall oval outline likened to the silhouette of someone wearing headphones. The rear edge has only a shallow indentation. The front print is slightly broader than the hind and its outer toes sit closer to the middle toe; on the hind foot the outer toes are placed noticeably lower (further back) than on a white rhino. On hard ground often only the big middle toenail and a faint scuff register.",
+  "trail": "Walking, the hind foot lands just behind the front at a slight angle; moving faster it registers on top of the front print. At a run or gallop the weight shifts onto the toes and the toenails dig in deeper. Treads lightly for its size, so tracks can be faint on some substrates. The inside toe sits further forward than the outside toe and the middle toe slopes towards the outside, which tells left from right.",
+  "dung": "Dark lumps made up of fragments of small branches, twigs and leaves, with the woody twig ends cut at 45 degrees; deposited in territorial middens where males (sometimes females) kick and scrape it backwards with the hind feet. Darker than elephant dung and blackening with age.",
+  "signs": [
+   "Long, winding scrape marks from the hind feet at middens: bulls make longer, more sinuous scrapes than the shorter, straighter ones of white rhino bulls; parallel scrapes can run several metres.",
+   "Browse twigs and branches bitten off cleanly at a characteristic 45-degree angle; large branches pulled down and medium trees pushed over.",
+   "Mature males spray urine into bushes; both sexes leave urine and scrapes along the way.",
+   "Mud wallows, then rubbing on trees, rocks and stumps; favourite rubbing posts become perfectly smooth and shiny.",
+   "On hard ground, scuff marks where the feet dragged expose darker soil; also trampled or bruised grass, wet mud on bushes.",
+   "Sounds: sighing, snorting, foot stamping against flies, hide scraped through thorn bush; oxpeckers calling or flying up in alarm give the rhino away."
+  ],
+  "facts": [
+   "Front 240 mm, hind 230 mm; the calf walks behind its mother (white rhino calf runs ahead), and twigs bitten at 45 degrees mark its feeding spots.",
+   "Follows familiar trails to water, drinking early morning and late evening; a fresh trail mid-morning usually leads to shade in a dry riverbed or dense woodland.",
+   "Where the two rhino species overlap they may use the same midden; youngsters copy their mothers' dung kicking."
+  ],
+  "confuse": [
+   "ceratotherium-simum"
+  ],
+  "why": {
+   "ceratotherium-simum": "White rhino tracks are about 50-70 mm longer, box-shaped rather than oval, with larger outer toes set closer to the middle toe, more creases on clear substrate and a more distinct notch in the rear edge; black rhino outer toes are smaller, narrower and further from the middle toe, and on the hind foot sit lower down."
+  }
+ },
+ {
+  "id": "ceratotherium-simum",
+  "shape": "round",
+  "front": {
+   "l": 29,
+   "w": 24.8
+  },
+  "hind": {
+   "l": 27.5,
+   "w": 21.6
+  },
+  "toes": 3,
+  "claws": false,
+  "dew": false,
+  "track": "A huge three-toed print: a broad middle toe flanked by two smaller outer toes that sit close against it, each toe tipped by a thick, sturdy nail. Behind the toes a wide, rounded sole leaves an indistinct pad often marked, in soft ground, by a random mosaic of creases (little blocks) unique to that rhino. The rear edge carries a distinctive two-lobed indentation, hard to see on hard ground where often only the middle toenail and a few scuffs register. Front foot larger and rounder than the hind; the inside toe sits slightly further forward than the outside toe and the middle toe angles down towards the outside of the print, which tells left from right.",
+  "trail": "Walks duck-footed with feet turned slightly out; the hind lands just behind the front and moves onto it as pace increases. At a run or gallop weight shifts forward and the toenails dig in deeper. Feet are sometimes dragged, leaving scuffs that expose darker soil, and the bottom lip is occasionally dragged, leaving a drag mark about 200mm wide.",
+  "dung": "Large boluses of relatively fine-textured grass, darker than elephant dung and turning black with age (elephant dung is browner and coarser). Territorial bulls deposit on middens (piles of old and fresh dung) that they scrape with the hind feet, leaving two striking drag marks; cows defecate on or near middens but generally do not scrape. Middens lie near waterholes, beside roads and along game paths and swarm with dung beetles in summer.",
+  "signs": [
+   "Middens with scrape marks from the hind feet; black and white rhino may share one midden, and young sausage trees (Kigelia africana) often sprout from them",
+   "Dominant bulls spray urine and leave scrape marks as they move",
+   "Rubbing posts, rocks and tree trunks polished smooth by years of use, plus mud wallows",
+   "Hide texture pressed into sand or dried mud marks a resting place; dried exfoliated mud may contain ticks",
+   "Scuff marks exposing darker soil, dislodged stones, snapped branches and stumps, bruised grass along game paths and between termite mounds",
+   "Sounds: sighing, snorting, ground-stomping against biting flies, thorn bushes rasping on the hide; oxpeckers calling and flying up in alarm"
+  ],
+  "facts": [
+   "Bull measured front 290mm long x 280mm wide, hind 275 x 260mm; a cow 260 x 250mm front and 270 x 220mm hind. From 22 bulls and 22 cows, bull tracks average 20mm longer and 15-20mm broader (medians: bull front 294 x 287mm, cow front 275 x 265mm).",
+   "Toes carry 14 kg/cm2 and the spongy cartilage pad only 3 kg/cm2, so the toenails print first; pressure is heaviest on the inside edge of the foot.",
+   "When fleeing, calves run ahead of their mothers; a disturbed rhino raises its ears and faces the threat, and with its poor eyesight may bolt towards you."
+  ],
+  "confuse": [
+   "diceros-bicornis",
+   "hippopotamus-amphibius"
+  ],
+  "why": {
+   "diceros-bicornis": "Black rhino track is 50-70mm shorter, its much smaller outside toes sit further away from the middle toe, and its rear edge shows only one slight indistinct lobe where the white rhino shows a clear two-lobed indentation.",
+   "hippopotamus-amphibius": "Both may drag the lip on the ground leaving a wide drag mark, but the hippo does so less often and leaves coarse lower-lip hairs in the soil."
+  },
+  "widthMm": {
+   "front": 280,
+   "hind": 260
+  }
+ },
+ {
+  "id": "hippopotamus-amphibius",
+  "shape": "round",
+  "front": {
+   "l": 25,
+   "w": 31.4
+  },
+  "hind": {
+   "l": 23,
+   "w": 25.9
+  },
+  "toes": 4,
+  "claws": false,
+  "dew": false,
+  "track": "Four distinct oval toes fanned in front of a broad, rounded pad: the two middle toes are large and point forward, the two outer toes are smaller, set well out to the sides and a little further back. The heavy toenails press deeper than the toes themselves and the pad impression is often faint. In some substrates the two middle toes merge so the print looks three-toed like a rhino's. Front foot 250mm, with larger toes and pad than the 230mm hind.",
+  "trail": "Left and right feet land either side of the straddle centre, so regular routes wear into a double-rutted path with a central ridge of sand or grass found nowhere else. Feet are regularly dragged, leaving scuff marks; in the photographed trail the hind print sits ahead of the front.",
+  "dung": "Bulls spray their dung by wagging the tail rapidly while defecating, spattering it over prominent bushes and tree trunks (e.g. marula) beside their paths. Cows and young simply drop boluses 60-100mm in diameter, usually where they rested during the night's grazing.",
+  "signs": [
+   "Well-worn paths with a middle ridge, on land and underwater, leading from water to grazing up to 30km away",
+   "Dung sprayed onto bushes and tree trunks along paths",
+   "Wide hairy drag mark where the mouth was scraped along the ground",
+   "Bits of chewed grass dropped along the route; dried stringy black aquatic plants carried on the back and shed along game paths",
+   "Loud roars, grunts, screams and croaks; alarm calls when a predator nears the water's edge"
+  ],
+  "facts": [
+   "Front 250mm and hind 230mm long; when the two middle toes fuse in soft ground the print can pass for a three-toed rhino.",
+   "A hippo needs about 1.5m of water to submerge, eats up to 40kg of grass a night, and despite its build easily outruns a human.",
+   "The central ridge in a hippo path is unique to the species: no other animal leaves it."
+  ],
+  "confuse": [
+   "ceratotherium-simum",
+   "diceros-bicornis"
+  ],
+  "why": {
+   "ceratotherium-simum": "Rhino outside toes are tucked tightly against the middle toe, whereas the hippo's two outer toes stand wide of the middle pair; a hippo lip-scrape drag mark shows coarse lower-lip hairs, the rhino's does not.",
+   "diceros-bicornis": "Same as white rhino: both rhinos have tightly set outside toes, unlike the hippo's widely spaced outer toes."
+  }
+ },
+ {
+  "id": "syncerus-caffer",
+  "shape": "cloven",
+  "front": {
+   "l": 17,
+   "w": 15.6
+  },
+  "hind": {
+   "l": 20,
+   "w": 17
+  },
+  "toes": 2,
+  "claws": false,
+  "dew": true,
+  "track": "Large cloven hoof: two broad, strongly curved halves, often with a small gap between them at the leading edge. The leading edge is symmetrical in outline, unlike the offset tips of eland. The hind print is marginally longer but narrower than the front, usually with less of a gap at the tip, and its false hooves sit further back than those of the front foot; width is about the same for both feet. False hooves impress only in soft substrate. Hoof length measured at Londolozi (excluding false hooves) is 122 mm front and 126 mm hind; the drawings, which include the false hooves, measure 170 mm front and 200 mm hind.",
+  "trail": "At a normal walk the hind foot registers directly on top of the front. Herds move purposefully along game paths to water and meander more while feeding; lone bulls shuttle between wallows, grazing areas and dense thickets.",
+  "dung": "A single pile resembling a large cowpat; consistency changes with season, becoming loose when green summer grass is abundant.",
+  "signs": [
+   "Mud wallows, with wet mud smeared on bushes along the trail after wallowing",
+   "Bark stripped from tree trunks where bulls rub their foreheads and horns; thrashed small bushes and broken branches",
+   "Conspicuous trails of trampled grass and droppings left by large herds",
+   "Herds are heard long before being seen: constant grunting and other calls",
+   "Oxpecker churring and chirping, with starlings and fork-tailed drongos hawking insects flushed by the herd",
+   "Lion tracks following a buffalo herd are a warning sign; surprised lone bulls charge without provocation"
+  ],
+  "facts": [
+   "Average track lengths were measured at Londolozi: 122 mm front, 126 mm hind, excluding false hooves; the drawings including false hooves are 170 mm and 200 mm",
+   "Heavy bulls weigh up to 800 kg; herds number hundreds, sometimes thousands, while old bulls are solitary",
+   "Trackers should note wind direction and listen for bird calls when following buffalo; snorting with the head held high and tossed signals aggression"
+  ],
+  "confuse": [
+   "taurotragus-oryx",
+   "domestic cow"
+  ],
+  "why": {
+   "taurotragus-oryx": "Eland track is marginally narrower with straighter hoof edges and regularly shows an offset (mismatched) gap between the hoof tips, and its hind foot is clearly narrower than the front, whereas buffalo is broader, more curved and wider at the leading edge with both feet of similar width.",
+   "domestic cow": "Cow tracks can look the same as buffalo tracks."
+  }
+ },
+ {
+  "id": "giraffa-giraffa",
+  "shape": "cloven",
+  "front": {
+   "l": 19.5,
+   "w": 13.8
+  },
+  "hind": {
+   "l": 19,
+   "w": 13.9
+  },
+  "toes": 2,
+  "claws": false,
+  "dew": false,
+  "track": "Very large, broad, rectangular cloven hoof: the width stays almost constant along the print because the hoof edges are straight. The front foot has a wide, blunt leading edge, while the hind foot is more pointed at the tip. The two halves lie close together towards the rear with a gap near the front through which soil is pushed up as a small ridge. Hooves are perfectly flat underneath, giving a smooth-textured print. Front 195 mm, hind 190 mm.",
+  "trail": "Rocking gait: both feet on one side move together, then the other side, so the prints fall in close succession as left hind, left front, then right hind, right front. In heavy rain giraffes keep to firm ground such as worn game paths, roads and sandy crests to avoid slipping.",
+  "dung": "Dark brown round pellets 21 mm in diameter, pointed at one end and indented at the other; scattered over a wide area because they fall from height and are dropped on the move, and in summer they may form shapeless clumps.",
+  "signs": [
+   "Browse-lines on acacias such as knobthorn, with saliva on leaves and tracks beneath the tree",
+   "Odd circular marks on the ground about 130 mm across where the animal has turned around",
+   "Scuff marks and grooves in the soil from drawn-out necking contests between males",
+   "Sound of breaking branches in woodland (usually attributed to elephant); bushes and small trees walked over to scratch the belly, and neck-rubbing on trees",
+   "Front feet splayed wide at the water's edge when drinking, usually mid-morning",
+   "Chewed bones (osteophagia)"
+  ],
+  "facts": [
+   "Males reach 5 m, the tallest land animal; ossicones on both sexes, thicker and less hairy on males",
+   "Flat hoof soles give a smooth print but make the animal slip on wet rock",
+   "When a predator is spotted giraffes stand still and stare towards it for a long time, occasionally blowing"
+  ]
+ },
+ {
+  "id": "taurotragus-oryx",
+  "shape": "cloven",
+  "front": {
+   "l": 12.7,
+   "w": 10.1
+  },
+  "hind": {
+   "l": 11.5,
+   "w": 8.8
+  },
+  "toes": 2,
+  "claws": false,
+  "dew": false,
+  "track": "Large cloven hoof whose tips are often offset where the two halves meet, so the foot appears to point inwards; this asymmetry is seldom seen in buffalo. The front print is distinctly wider and more curved than the narrower, less curved hind, with a clear gap between the halves where soil is pushed up as a ridge. The hind foot is about 10 mm shorter than the front. Measured at Samara (Karoo): front 127 mm, hind 115 mm.",
+  "trail": "Typical gait leaves the hind foot registering partly on top of the front. Feeding animals meander and often cross their own path several times within a short distance.",
+  "dung": "Relatively large pellets 18-20 mm in diameter, slightly smaller than giraffe pellets; fall in large clumps when the diet is moist.",
+  "signs": [
+   "Branches broken off with the horns to reach leaves",
+   "Clicking sounds from the knee tendon of some individuals when approached, thought to signal the size and dominance of a bull",
+   "In the Karoo they move up into the mountains in summer during the day"
+  ],
+  "facts": [
+   "Front foot much broader than the hind is the diagnostic feature; tracks measured at Samara Game Reserve, Karoo",
+   "Second largest antelope: up to 1.6 m tall and 900 kg, bulls darker and much bigger than cows",
+   "Does not mark or defend territories; can go long periods without drinking"
+  ],
+  "confuse": [
+   "syncerus-caffer",
+   "domestic cow"
+  ],
+  "why": {
+   "syncerus-caffer": "Buffalo front track has a symmetrical leading edge, is broader at the tip and more curved, and more often shows false hooves, whereas the eland tip is offset and its hind foot is markedly narrower than the front.",
+   "domestic cow": "Cow tracks are very similar in appearance to eland tracks."
+  }
+ },
+ {
+  "id": "equus-quagga",
+  "shape": "hoof",
+  "front": {
+   "l": 8.5,
+   "w": 8.5
+  },
+  "hind": {
+   "l": 9,
+   "w": 6.4
+  },
+  "toes": 1,
+  "claws": false,
+  "dew": false,
+  "track": "Single rounded hoof with a horseshoe-shaped wall and an open heel; recorded track lengths range 85-110 mm. Drawings give front 85 mm and hind 90 mm: the front is shorter and broader, the hind longer, narrower and more oval. The hoof wall (edge) prints crisply, especially on hard ground, and in soft substrate the triangular frog shows as a wedge from the heel toward the centre. Preliminary width data on males: front 85 mm, hind 75 mm; several adult mares had hooves wider than the herd stallion.",
+  "trail": "At a walk the hind foot typically lands ahead of the front print (overstep). Running tracks are elongated with the toe dug in; a line of galloping zebra tracks often shows where predators moved the previous evening.",
+  "dung": "Kidney-shaped, finely textured pellets about 40 mm across, green when fresh drying to light brown and grey; dropped at random, since stallions do not mark or defend a territory.",
+  "signs": [
+   "Bare circular dust-bath patches",
+   "Scuff marks on the ground from fighting stallions (biting and kicking)",
+   "High-pitched barking alarm call when lions or other predators are detected",
+   "Tracks of a running herd often mark the route of last night's predators"
+  ],
+  "facts": [
+   "Front 85 mm, hind 90 mm; hoof width front 85 mm, hind 75 mm in males",
+   "Hind lands ahead of front at a walk (overstep)",
+   "Frog impression only in soft ground; crisp rim on hard ground"
+  ],
+  "confuse": [
+   "horse",
+   "donkey",
+   "mountain zebra",
+   "phacochoerus-africanus"
+  ],
+  "why": {
+   "horse": "Same horseshoe shape but the zebra print is smaller and narrower.",
+   "donkey": "Similar shape and size to a zebra track (the guide notes this for mountain zebra).",
+   "mountain zebra": "Separated by habitat; Cape mountain zebra tracks are marginally smaller (front 75 mm, hind 80 mm) with a visibly thicker hoof wall, while Burchell's prints a thinner rim.",
+   "phacochoerus-africanus": "Warthog droppings look like zebra droppings but are slightly smaller (30-40 mm vs about 40 mm)."
+  },
+  "widthMm": {
+   "front": 85,
+   "hind": 75
+  }
+ },
+ {
+  "id": "potamochoerus-larvatus",
+  "shape": "cloven",
+  "front": {
+   "l": 7.5,
+   "w": 7.3
+  },
+  "hind": {
+   "l": 7,
+   "w": 5
+  },
+  "toes": 2,
+  "claws": false,
+  "dew": true,
+  "track": "Cloven pig track; the front foot averages 75 mm with the false hooves, or 53 mm for the hooves alone, the hind about 70 mm. The front leading edge is much wider than the hind and the two front hooves splay away from each other in a V, often likened to a mopane leaf. The false hooves sit close behind the hooves, so they print far more regularly than in warthog, landing behind the hooves roughly in line with the outer margins; one may sit offset. Hind hooves are narrower and closer together.",
+  "trail": "The hind foot normally registers on top of the front print. Groups use the same paths repeatedly, so well-worn trails run through dense riverine or thicket cover.",
+  "dung": "Loosely formed, distinctly fibrous droppings 25-50 mm across, usually dark brown or black, that crumble to reveal bulb and root fragments; left at random and also in middens.",
+  "signs": [
+   "Ploughed-looking patches where the hard upper edge of the snout has turned soil for bulbs, rhizomes and roots",
+   "Mud wallows in thick cover near water",
+   "Tusk and body rubbing on trees, leaving mud and coarse hair on trunks and fallen logs; scent from glands between the hooves and on the face",
+   "Regularly used paths through damp forest, riverbank and wetland thickets",
+   "Alarm call is a single loud, deep grunt; groups of 6-8 led by a dominant boar and sow"
+  ],
+  "facts": [
+   "Front 75 mm with dew claws, 53 mm without; hind 70 mm",
+   "Front hooves splay in a V like a mopane leaf",
+   "Feeds in one area for several days before moving on"
+  ],
+  "confuse": [
+   "phacochoerus-africanus"
+  ],
+  "why": {
+   "phacochoerus-africanus": "Bushpig hind hooves are broader and more splayed on the leading edge than warthog's, the gap between bushpig hooves is much bigger, and bushpig false hooves show far more often because they sit closer to the hooves."
+  }
+ },
+ {
+  "id": "phacochoerus-africanus",
+  "shape": "cloven",
+  "front": {
+   "l": 8,
+   "w": 7.9
+  },
+  "hind": {
+   "l": 7,
+   "w": 5.8
+  },
+  "toes": 2,
+  "claws": false,
+  "dew": true,
+  "track": "Small cloven-hoofed print of about 45 mm when the animal walks calmly on firm ground and the false hooves stay off the surface; in wet mud, deep sand or at a run the dewclaws register well behind and wide apart, almost doubling the length (80 mm front, 70 mm hind in the drawings). The front foot is broader on the leading edge and looks box-like; the hind is narrower and more pointed. A small gap opens between the two halves at the leading edge, much smaller than in bushpig.",
+  "trail": "Normal walk puts the hind foot close to or partly on top of the front. Warthogs, especially youngsters, often drag their feet, leaving slight drag marks between prints.",
+  "dung": "Dark brown, finely textured, rounded lumps 30-40 mm across, dropped at random across the range rather than in middens; slightly shorter than zebra dung, with which they are often confused.",
+  "signs": [
+   "Round impressions 40-50 mm in diameter where the animal knelt to graze; parallel lines of 'knee tracks' where it shuffled forward on its knees",
+   "Large burrows, usually taken-over aardvark holes enlarged with the front feet; tusk marks at the entrance",
+   "Rubbing posts on trees, termite mounds and other surfaces, sometimes with warthog hair stuck to them",
+   "Mud wallows, with mud smeared around the vicinity",
+   "Diggings where roots, bulbs and rhizomes were rooted out with snout and tusks"
+  ],
+  "facts": [
+   "Track length nearly doubles (45 mm to about 80 mm) once the dewclaws print, so running or wet-ground tracks look like a different animal",
+   "Strictly diurnal and cold-sensitive: may not leave the burrow at all on cold or rainy days; reverses into the burrow so it can bolt out tusks first",
+   "Males weigh up to 100 kg; both sexes carry two pairs of upward-curving tusks, the lower pair ground razor-sharp against the upper"
+  ],
+  "confuse": [
+   "potamochoerus-larvatus",
+   "tragelaphus-angasii",
+   "sylvicapra-grimmia",
+   "orycteropus-afer",
+   "equus-quagga"
+  ],
+  "why": {
+   "potamochoerus-larvatus": "Bushpig hooves are longer and broader, with a more pronounced V-shaped gap on the leading edge and false hooves set closer together than the warthog's.",
+   "tragelaphus-angasii": "Nyala tracks are much more pointed.",
+   "sylvicapra-grimmia": "Young warthog prints can pass for common duiker in unclear substrate.",
+   "orycteropus-afer": "When the hind registers on top of the front the combined print looks like a three-toed aardvark track.",
+   "equus-quagga": "Droppings are regularly confused with zebra's, but warthog's are slightly shorter."
+  }
+ },
+ {
+  "id": "connochaetes-taurinus",
+  "shape": "cloven",
+  "front": {
+   "l": 10.2,
+   "w": 8
+  },
+  "hind": {
+   "l": 9.5,
+   "w": 8
+  },
+  "toes": 2,
+  "claws": false,
+  "dew": false,
+  "track": "Large, often rectangular cloven print with broad hooves, a wide rounded posterior edge and a characteristically blunt leading edge that shows a marked gap between the hoof tips. The front foot (average 102 mm at Londolozi; one bull 108 mm) splays readily, sometimes until the halves lie parallel; the hind (95 mm; bull 104 mm) is slightly shorter and more pointed. In some substrates a 'step' appears: a transverse line across the central ridge marking where the proximal part of the hoof prints deeper. False hooves occasionally show in soft substrate.",
+  "trail": "At a normal walk the hind foot lands ahead of the front (overstep); it seldom registers directly on top of the front print.",
+  "dung": "Pellets 12-15 mm in diameter and 20 mm long, pointed at one end and blunt at the other, dropped as single pellets, in strings, or clumped into a soft mass in the wet season.",
+  "signs": [
+   "Territorial middens of bulls in the breeding season, in open clearings: scattered droppings, hoof scrape marks and rolling patches",
+   "Pre-orbital gland rubbing marks on the ground, rocks and tree trunks (e.g. worn, darkened bark on marula)",
+   "Pawed and horned ground on territory boundaries where bulls clash; they drop to their knees when locking horns",
+   "Alarm call a blowing grunt, given for lions, leopards and wild dogs; the lion version is more drawn out"
+  ],
+  "facts": [
+   "Measured at Londolozi Game Reserve: average front 102 mm, hind 95 mm; a large bull gave 108 mm front and 104 mm hind",
+   "Bluntness of the leading edge is the key feature against other antelope of similar size",
+   "Newborn calves can move with the herd within half an hour of birth"
+  ],
+  "confuse": [
+   "kobus-ellipsiprymnus",
+   "black wildebeest"
+  ],
+  "why": {
+   "kobus-ellipsiprymnus": "Waterbuck prints are 10-20 mm shorter, narrower and more pointed, with sharper hoof tips that show less of a gap, and their smaller false hooves register far less often.",
+   "black wildebeest": "Black wildebeest tracks are smaller (78-93 mm, drawings 90/82 mm, up to 114 mm with false hooves) and its alarm is a high-pitched whistle rather than the blue's low grunt; dung pellets only 8-10 mm across."
+  }
+ },
+ {
+  "id": "kobus-ellipsiprymnus",
+  "shape": "cloven",
+  "front": {
+   "l": 8,
+   "w": 5.8
+  },
+  "hind": {
+   "l": 7.5,
+   "w": 5.1
+  },
+  "toes": 2,
+  "claws": false,
+  "dew": false,
+  "track": "Narrow, pointed cloven print with straight hoof edges, the hind foot especially slender and its two halves grouped tightly together. The front is slightly broader and may show a small gap between the hoof tips on the leading edge; it splays on slippery or uneven ground. A 'step' line across the central ridge (deeper-printing proximal hoof) may appear in some substrates, and in thick sand the false hooves can imprint directly behind the posterior edge. Londolozi female: front 80 mm, hind 75 mm; bull: front 87 mm, hind 80 mm.",
+  "trail": "The hind foot commonly registers on top of the front print at a walk.",
+  "dung": "Medium to large dark brown pellets about 18 mm in diameter, falling as separate pellets in the dry season or as clumped masses in the wet season; territorial bulls simply drop dung under mature trees.",
+  "signs": [
+   "Dung deposits under mature trees inside a bull's territory; no other specific marking behaviour recorded",
+   "Strong, unpleasant lingering musky odour from oily skin secretions",
+   "Almost always within 2 km of permanent water; animals take refuge in water when pursued"
+  ],
+  "facts": [
+   "Female track at Londolozi 80 mm front / 75 mm hind; bull 87 mm / 80 mm",
+   "Front print visibly broader than the slim hind print, a quick way to tell which foot is which in a trail",
+   "Dominant bulls hold the territories closest to water"
+  ],
+  "confuse": [
+   "connochaetes-taurinus"
+  ],
+  "why": {
+   "connochaetes-taurinus": "Blue wildebeest prints are 10-20 mm longer, broader and blunter with a broader leading edge; waterbuck hooves are more pointed and more tightly grouped, though both can push up a mound of soil between and in front of the hooves."
+  }
+ },
+ {
+  "id": "tragelaphus-strepsiceros",
+  "shape": "cloven",
+  "front": {
+   "l": 7.7,
+   "w": 4.5
+  },
+  "hind": {
+   "l": 7.7,
+   "w": 4.3
+  },
+  "toes": 2,
+  "claws": false,
+  "dew": false,
+  "track": "A neat, oval, rugby-ball-shaped print, tightly arranged and surprisingly small for such a large antelope. Its widest point lies near the middle (about five-eighths back from the hoof tip), unlike most antelope which are widest near the posterior edge; this is shared with nyala and bushbuck. The front track has a more rounded, blunt leading edge and may show a slight gap between the cloven hooves; the hind is more pointed and narrower (46 vs 51 mm). The extended posterior edge may or may not print, which changes the apparent length.",
+  "trail": "Walks flat-footed and cautiously, usually placing the hind foot directly on top of the front (direct register). The track 'irons the ground', leaving a smooth texture in certain substrates (tracker Renias Mhlongo).",
+  "dung": "Medium-sized olive-green to dark brown pellets 15-20 mm long and 13-15 mm in diameter, dropped as individual pellets or in small clumps.",
+  "signs": [
+   "Ground horned up by bulls as a social display.",
+   "Bark stripped from trees; small branches broken by bulls with their horns to reach leaves.",
+   "Loud, deep barking alarm call; a kudu staring fixedly with ears forward and barking is a reliable predator indicator for trackers."
+  ],
+  "facts": [
+   "Londolozi male: front 77 x 51 mm, hind 77 x 46 mm; across 10 bulls and 10 cows, bull tracks were 7.5-11 mm longer and 8.5-12 mm wider than cows'.",
+   "Widest point at five-eighths from the hoof tip is the Tragelaphus hallmark.",
+   "Males weigh up to 300 kg; only males carry the long spiral horns."
+  ],
+  "confuse": [
+   "tragelaphus-angasii"
+  ],
+  "why": {
+   "tragelaphus-angasii": "Similar shape but the nyala track is about 15-20 mm shorter, regularly shows a larger gap between the cloven hooves, and its hoof tips are more pointed on the leading edge."
+  },
+  "widthMm": {
+   "front": 51,
+   "hind": 46
+  }
+ },
+ {
+  "id": "tragelaphus-angasii",
+  "shape": "cloven",
+  "front": {
+   "l": 6.2,
+   "w": 4.4
+  },
+  "hind": {
+   "l": 5.4,
+   "w": 3.8
+  },
+  "toes": 2,
+  "claws": false,
+  "dew": false,
+  "track": "The defining feature is a pronounced gap between the two cloven hooves, which in moist substrate forms a prominent straight ridge of soil down the centre (less obvious in dry sand). The widest point is near the middle of the track (five-eighths from the hoof tip), as in kudu and bushbuck. The front foot is broader with a curved leading edge; the hind is narrower and more pointed. On slippery ground the hooves can splay so widely that the track becomes hard to identify.",
+  "trail": "The hind foot typically registers partially or directly on top of the front foot; the hoof tips tend to dig into the ground.",
+  "dung": "Dark brown, small to medium pellets 12-14 mm in diameter, sometimes scattered rather than piled.",
+  "signs": [
+   "Ground horned by males, especially in mud.",
+   "Chewed bones (osteophagia) for minerals.",
+   "Regurgitated torchwood (Balanites maughamii) fruits.",
+   "Not territorial, so no scent-marking; reacts to alarm calls of impala, baboon and kudu."
+  ],
+  "facts": [
+   "Londolozi averages: male front 62 mm, hind 54 mm; female front 54 mm, hind 50 mm (the drawings show the male at 62/54).",
+   "A straight central soil ridge between the hooves in wet sand is the quickest tell.",
+   "Males display side by side, stiff-legged, with the white dorsal mane raised; fights are rare."
+  ],
+  "confuse": [
+   "tragelaphus-strepsiceros",
+   "aepyceros-melampus",
+   "tragelaphus-sylvaticus"
+  ],
+  "why": {
+   "tragelaphus-strepsiceros": "Kudu track is 15-20 mm longer, hooves grouped much more tightly, does not splay, and the kudu walks more flat-footed whereas nyala hoof tips dig in.",
+   "aepyceros-melampus": "Male impala tracks are marginally shorter, much more pointed and widest at the posterior edge; impala hind-foot hoof edges are often concave whereas nyala's are convex.",
+   "tragelaphus-sylvaticus": "Bushbuck track is similar in shape but smaller, more pointed near the front and shows little gap between the hooves."
+  }
+ },
+ {
+  "id": "tragelaphus-sylvaticus",
+  "shape": "cloven",
+  "front": {
+   "l": 4.5,
+   "w": 2.9
+  },
+  "hind": {
+   "l": 3.8,
+   "w": 2.4
+  },
+  "toes": 2,
+  "claws": false,
+  "dew": false,
+  "track": "A small rugby-ball-shaped track resembling nyala and common duiker, widest near the middle (five-eighths from the hoof tip) like the other Tragelaphus. The hoof tips at the leading edge are typically of uneven length and asymmetrical (offset), and they dig in deeper than the rest of the hoof, as if the animal walked on tiptoes or in stilettos, so the full outline is seldom printed. The outside edge of each hoof is rounded, the inside edge straighter. The front foot splays more often than the hind.",
+  "trail": "The feet land at a slight outward angle and twist as the animal steps, often scuffing the leading edge; in its regular gait the hind foot registers directly on top of the front.",
+  "dung": "Slightly elongated dark brown to almost black pellets about 15 mm long and 10 mm in diameter, deposited in small piles.",
+  "signs": [
+   "Males rub head and neck against plants and trees.",
+   "Loud dog-like bark as alarm call, a reliable predator warning.",
+   "Feeds beneath baboon and monkey troops on dropped fruits and flowers.",
+   "Neither sex territorial; no scent-marking described."
+  ],
+  "facts": [
+   "Londolozi: front 45 mm, hind 38 mm.",
+   "Offset hoof tips and outward-pointing, twisted placement are the field cues; one hoof tip usually leads the other.",
+   "Strong swimmer; tolerates agricultural and built-up areas given dense cover and water."
+  ],
+  "confuse": [
+   "sylvicapra-grimmia",
+   "tragelaphus-angasii"
+  ],
+  "why": {
+   "sylvicapra-grimmia": "Duiker track is marginally shorter, prints its full extent more often (flat-footed walk), points in the direction of travel rather than at an angle, has more tightly grouped, symmetrical hooves and a characteristic V-shaped posterior edge that bushbuck lacks.",
+   "tragelaphus-angasii": "Nyala tracks average 20 mm longer, are broader and often show a wider gap between the cloven hooves."
+  }
+ },
+ {
+  "id": "sylvicapra-grimmia",
+  "shape": "cloven",
+  "front": {
+   "l": 3.8,
+   "w": 2.8
+  },
+  "hind": {
+   "l": 3.8,
+   "w": 2.5
+  },
+  "toes": 2,
+  "claws": false,
+  "dew": false,
+  "track": "A clean, symmetrical cloven print, usually rounded and broad at the front with curved outer hoof edges, the two hooves held tightly together and rarely splayed unless the animal is moving fast. The rear edge is broad and is the widest point of the print, with a well-defined V-shaped notch between the hooves. Shape varies a lot: Samara (Karoo) prints are pointed and Kalahari ones elongated with straighter edges, while Kruger and Londolozi prints are more rounded. Length 35-40 mm, average 38 mm; front marginally broader than hind.",
+  "trail": "Walks flat-footed with the print pointing more or less in the direction of travel; the hind foot registers partially on top of the front. The cautious gait leaves few scuff marks. When running it zigzags, so the outer hoof edge digs in, and in a bounding gallop all four feet land in a tight group, groups 2-6 m apart depending on speed.",
+  "dung": "Oval pellets about 10 mm long and 5-8 mm across, dark brown to almost black, varying from elongated to round, dropped in small piles that may lie close together.",
+  "signs": [
+   "Territorial males scent-mark small branches with the pre-orbital glands below the eyes",
+   "Diggings for underground bulbs",
+   "Bounding-run groups of four closely set prints spaced 2-6 m apart",
+   "Territories of 1-3 km2 defended by dominant males"
+  ],
+  "facts": [
+   "Measured at Samara Game Reserve, Karoo: 35-40 mm, average 38 mm; front and hind both drawn at 38 mm",
+   "Famous for the variety of its print: Kalahari prints elongated with straight edges, Karoo prints pointed, Kruger prints rounded",
+   "Also eats frogs, eggs and carrion, and digs for bulbs"
+  ],
+  "confuse": [
+   "raphicerus-campestris",
+   "tragelaphus-sylvaticus",
+   "red duiker",
+   "raphicerus-sharpei"
+  ],
+  "why": {
+   "raphicerus-campestris": "Steenbok print is usually narrower and sharper with straighter hoof edges, and a marked gap of up to 3 mm between the hooves leaves a soil ridge, whereas duiker hooves sit tightly together; confusion usually comes from variation in the duiker's print, not the steenbok's.",
+   "tragelaphus-sylvaticus": "Bushbuck hoof tips dig in with a slight twist and tend to point outwards, while duiker prints face the direction of travel.",
+   "red duiker": "Red duiker print has the same shape but measured 5-8 mm shorter (28-32 mm), with straighter and sometimes more pointed hoof edges and occasionally uneven, asymmetrical hoof tips where the common duiker's are symmetrical (from the red duiker sheet; more research needed).",
+   "raphicerus-sharpei": "Sharpe's grysbok print is about 12 mm shorter (25-26 mm) with sharply pointed tips (from the grysbok sheet)."
+  }
+ },
+ {
+  "id": "raphicerus-sharpei",
+  "shape": "cloven",
+  "front": {
+   "l": 2.5,
+   "w": 1.5
+  },
+  "hind": {
+   "l": 2.6,
+   "w": 1.7
+  },
+  "toes": 2,
+  "claws": false,
+  "dew": false,
+  "track": "A very small, narrow cloven print, 25 mm front and 26 mm hind, with the two teardrop hooves held tightly together and sharply pointed on the leading edge. The hind is marginally longer than the front.",
+  "trail": "Normal walking gait places the hind foot on top of the front. Tracks are found on rocky slopes and hilly ground in thick bush.",
+  "dung": "Oval pellets 9-14 mm long and 5-6 mm across, light brown to dark, deposited in a midden.",
+  "signs": [
+   "Dung middens marking the territory",
+   "Browse on young leaves, shoots of small plants, seedpods and flowers; occasionally grazes"
+  ],
+  "facts": [
+   "Measured in northern Kruger National Park: front 25 mm, hind 26 mm",
+   "Only 7 kg, solitary and mainly nocturnal; restricted to the far north-east of South Africa, Zimbabwe and southern Mozambique"
+  ],
+  "confuse": [
+   "sylvicapra-grimmia",
+   "raphicerus-campestris"
+  ],
+  "why": {
+   "sylvicapra-grimmia": "Grysbok print is about 12 mm shorter than the common duiker's.",
+   "raphicerus-campestris": "Grysbok print is about 12 mm shorter than the steenbok's."
+  }
+ },
+ {
+  "id": "raphicerus-campestris",
+  "shape": "cloven",
+  "front": {
+   "l": 3.8,
+   "w": 2.1
+  },
+  "hind": {
+   "l": 4,
+   "w": 2.2
+  },
+  "toes": 2,
+  "claws": false,
+  "dew": false,
+  "track": "A small (±40 mm, recorded 35-44 mm) cloven-hoof print with narrow, strikingly sharp and pointed teardrop hooves. A distinctive ridge of soil stands between the two cleaves, and in some substrates a transverse 'step' line marks off the rear part of the hoof, which prints more deeply. Hind hoof edges are slightly concave compared with the straighter front hooves. The hooves splay apart when the animal runs.",
+  "trail": "When walking the hind foot usually registers directly on top of the front print; this direct register breaks up as the pace increases. A running steenbok leaves splayed prints in bounding groups.",
+  "dung": "Pellets 5 mm in diameter and 10-12 mm long, light to dark brown, round, oval or elongate. The only antelope that buries its dung: it scrapes a spot with the front hooves, urinates, defecates and covers it over; deposited in territorial middens.",
+  "signs": [
+   "Patches of fresh hoof scrapes in loose soil where droppings have been covered over, often at a midden",
+   "Territorial middens (both sexes hold 1-2 km2 territories with fixed resting and feeding places)",
+   "Scent-marking with pre-orbital glands below the eyes and interdigital (pedal) glands between the hooves",
+   "Diggings for bulbs"
+  ],
+  "facts": [
+   "Tracks measured at Samara (Karoo) were smaller in both length and width than at Londolozi, possibly because of substrate and heavy digging wearing the hooves",
+   "Hind hoof edges are slightly concave; the hind print sitting on top of the front one often shows this",
+   "Cheetah is its most successful predator; steenbok kills are rarely found"
+  ],
+  "confuse": [
+   "sylvicapra-grimmia"
+  ],
+  "why": {
+   "sylvicapra-grimmia": "Duiker hooves are often broader, more rounded and blunt at the leading edge, and the two cleaves sit tightly together, whereas the steenbok shows a distinct ridge of soil between its sharp, pointed cleaves; duiker also has a different diving run."
+  }
+ },
+ {
+  "id": "aepyceros-melampus",
+  "shape": "cloven",
+  "front": {
+   "l": 4.7,
+   "w": 2.7
+  },
+  "hind": {
+   "l": 4.7,
+   "w": 2.7
+  },
+  "toes": 2,
+  "claws": false,
+  "dew": false,
+  "track": "A triangular cloven print, widest at the rear (posterior) edge and tapering to a sharp hoof tip at the front, especially on the hind foot. Front and hind are about the same length (females 42-46 mm, males 46-51 mm and slightly broader); the front is broader with fairly straight hoof edges, the hind is more pointed with slightly concave edges near the tip. On hard ground the hoof rims print as distinct lines ('rim walker'), and some substrates show a transverse 'step' marking off the deeper-printing rear part of the hoof. The cleaves splay when the animal moves fast or on slippery ground.",
+  "trail": "At a normal walk the hind foot lands 60-80 mm ahead of the front print, up to 120 mm ahead as pace increases. Impala commonly drag their hind feet, leaving short drag marks among the tracks, and being gregarious several sets of tracks usually run together.",
+  "dung": "Pellets 8-10 mm in diameter and 15-20 mm long, pointed at one end and rounded at the other, black to surprisingly light brown in winter. Deposited in territorial middens by rutting males (May-June) or scattered randomly through the territory.",
+  "signs": [
+   "Large territorial middens of male dung during the rut",
+   "Small bushes thrashed with the horns, often with bark stripped off",
+   "Wet mud horned by rutting males (as nyala also do)",
+   "Trampled paths where large herds have passed",
+   "Very loud growling or coughing roars of territorial males in the rut, similar to the snorting alarm call"
+  ],
+  "facts": [
+   "Female tracks 42-46 mm long, male 46-51 mm and slightly broader; drawings show 47 mm for both front and hind",
+   "Called the 'rim walker' because the hoof edges print so distinctly on hard ground",
+   "A lone set of tracks may be a territorial male, but sign of other impala is usually close by"
+  ],
+  "confuse": [
+   "tragelaphus-angasii"
+  ],
+  "why": {
+   "tragelaphus-angasii": "Nyala track has a larger gap between the cleaves, is rounder and broader at the leading edge, lacks the 'step', and is widest near the middle whereas the impala print is widest at the rear edge."
+  }
+ },
+ {
+  "id": "oreotragus-oreotragus",
+  "shape": "cloven",
+  "front": {
+   "l": 2,
+   "w": 1.6
+  },
+  "hind": {
+   "l": 2,
+   "w": 2.4
+  },
+  "toes": 2,
+  "claws": false,
+  "dew": false,
+  "track": "A tiny, unmistakable print of two separate oval hoof tips, each like a raindrop or a gemstone hanging from an earring: rounded at the leading edge and pointed at the rear, with the outer edges much more curved than the inner edges and a clear gap between the cleaves. The animal walks ballerina-style on the very tips of its shortened hooves, so only the front ±20 mm of the hoof touches the ground; front and hind are the same size and shape, about 20 mm long. In dry sand the track is just two indistinct holes side by side.",
+  "trail": "A stiff, bouncing gait; standing, all four feet fit into a very small area. Tracks are mostly found where the animal leaves the rocks to drink or cross between koppies.",
+  "dung": "Pellets 5-10 mm in diameter and 15 mm long, usually pointed at one end, deposited in middens scattered through the pair's territory.",
+  "signs": [
+   "Dung middens among the rocks throughout the territory",
+   "Small blobs of oily black pre-orbital gland secretion on twig tips and branches, left by both sexes",
+   "Loud whistling alarm calls given in duet by the pair",
+   "Tracks in riverbeds and dongas next to rocky areas, at waterholes or elephant-dug water holes"
+  ],
+  "facts": [
+   "Front and hind tracks both 20 mm; the light grey curved lines in the drawings show the narrow soles",
+   "Association with koppies, rocky outcrops and mountain edges helps identification, but at Londolozi males have been tracked far from any rocks, one even on the soccer field",
+   "Females are larger than males and only the ram has horns"
+  ],
+  "confuse": [
+   "baby warthog"
+  ],
+  "why": {
+   "baby warthog": "A klipspringer print has a larger gap between the two cleaves than a warthog piglet's."
+  }
+ },
+ {
+  "id": "hippotragus-niger",
+  "shape": "cloven",
+  "front": {
+   "l": 9,
+   "w": 5.6
+  },
+  "hind": {
+   "l": 8.5,
+   "w": 5.9
+  },
+  "toes": 2,
+  "claws": false,
+  "dew": false,
+  "track": "A long, narrow cloven print, noticeably slimmer than other antelope of the same size, with a sharply pointed leading edge (a blunter, rounded variant also occurs) and a rounded but not broad rear. The outer hoof edges are often concave, and the hard rim of the hoof leaves a characteristic grooved impression around the print. The gap between the two halves is small, though the hooves splay in mud or at speed. In some substrates a transverse 'step' line marks off the deeper-printing rear part of the hoof. Hind (85 mm) slightly shorter than front (90 mm).",
+  "trail": "Bull trails in sand show paired slim prints with a slight splay; the sheet gives no register or stride figures.",
+  "dung": "Dark brown round or oval pellets about 20 mm long and 15 mm across, dropped in loose piles.",
+  "signs": [
+   "Grazing of medium to tall grass; browse lines in winter",
+   "Alarm call: a loud, horse-like snort",
+   "Herds of 20-30 cows with young and one dominant bull; bachelor groups of 8-12 or lone bulls",
+   "Never far from water and cover"
+  ],
+  "facts": [
+   "There is tremendous variation in sable tracks, so the hoof-rim groove and narrow pointed shape are the most reliable cues",
+   "The 'step' feature is drawn as a light grey transverse line in the drawings and only shows in certain substrates",
+   "Bulls turn black after 3-5 years; cows and young stay chestnut to dark brown"
+  ],
+  "confuse": [
+   "roan",
+   "damaliscus-lunatus"
+  ],
+  "why": {
+   "roan": "Roan print is larger and broader-hooved, and seldom shows the marked hoof rim common in sable; sable is slightly smaller and sharper-pointed.",
+   "damaliscus-lunatus": "Tsessebe print is 10-18 mm shorter but marginally broader than sable (from the tsessebe sheet)."
+  }
+ },
+ {
+  "id": "damaliscus-lunatus",
+  "shape": "cloven",
+  "front": {
+   "l": 9,
+   "w": 5.9
+  },
+  "hind": {
+   "l": 8.2,
+   "w": 5.4
+  },
+  "toes": 2,
+  "claws": false,
+  "dew": false,
+  "track": "Front print 90-95 mm, broad across the rear with a wide, obvious gap between the two hooves, which readily splay apart. Hind print 80-82 mm, clearly narrower and much more pointed than the front. The hard hoof rim often leaves a grooved edge impression, and in some substrates a transverse 'step' line separates the deeper-printing rear part of the hoof.",
+  "trail": "In a normal walk the hind foot oversteps and registers ahead of the front print.",
+  "dung": "Dark brown elongated pellets, 11-14 mm in diameter and 22-30 mm long.",
+  "signs": [
+   "Bulls paw the ground with front feet, leaving interdigital-gland scent in scrapes",
+   "Pre-orbital gland marks on grass stems",
+   "Bulls stand on termite mounds and other raised spots to advertise and mark territory",
+   "Well-worn game paths to water and favoured grazing used routinely",
+   "Grazes tall grass almost exclusively, plus fresh green flush after fires"
+  ],
+  "facts": [
+   "One bull measured 97 mm front and 87 mm hind, above the usual 90-95 / 80-82 mm",
+   "Front and hind are easy to tell apart: broad splayed front versus narrow pointed hind",
+   "Reputedly Africa's fastest antelope, up to 83 km/h"
+  ],
+  "confuse": [
+   "hippotragus-niger",
+   "red hartebeest"
+  ],
+  "why": {
+   "hippotragus-niger": "Tsessebe print is 10-18 mm shorter but marginally broader than the sable's.",
+   "red hartebeest": "Red hartebeest print is slightly broader on the posterior edge than the tsessebe's."
+  }
+ },
+ {
+  "id": "orycteropus-afer",
+  "shape": "digger",
+  "front": {
+   "l": 8,
+   "w": 5.7
+  },
+  "hind": {
+   "l": 10,
+   "w": 8
+  },
+  "toes": 3,
+  "claws": true,
+  "clawsNote": "show",
+  "dew": false,
+  "track": "Three long toes with thick, heavy claws on both feet; the animal walks on its toes so the main pad leaves no impression. Front print 75-85 mm with the three digits held tightly together; hind print 90-110 mm, larger, with the toes more splayed. In soft ground an extra claw mark from the fifth front toe and from the first and fifth hind toes may show.",
+  "trail": "Normally the hind foot lands just behind the front print; partial register of hind on top of front also occurs. In very soft ground, when walking slowly, a tail drag appears. The trail meanders from one exploratory dig to the next and ends at a burrow.",
+  "dung": "Sandy-coloured lumps made mostly of compressed sand with termite and ant fragments, almost always buried under the excavated soil of a dig, so rarely seen in the open.",
+  "signs": [
+   "Large permanent burrows 5-8 m deep with several entrances; entrance partly closed from inside during daytime rest",
+   "Fresh night tracks plus flies on the upper inner wall of the entrance indicate an animal in residence",
+   "Small exploratory digs and diggings into termite mounds along the foraging route",
+   "Dug-up aardvark cucumber (underground melon-like fruit)",
+   "Anal-gland scent marks in the home range (no territory defended)",
+   "Disused burrows reused by wild dog, hyaena, honey badger, warthog, snakes and birds"
+  ],
+  "facts": [
+   "Hind print is the bigger one (90-110 mm vs 75-85 mm front), the reverse of most mammals",
+   "A 60 kg animal with heavy claws leaves an unusually clear trail; one was followed for 4 hours over about 5 km to its burrow",
+   "Nocturnal, but may forage by day in winter or drought"
+  ],
+  "confuse": [
+   "phacochoerus-africanus",
+   "potamochoerus-larvatus",
+   "tragelaphus-angasii"
+  ],
+  "why": {
+   "phacochoerus-africanus": "Confusable only when the full print is not visible; look for the three clawed toes rather than two hoof halves.",
+   "potamochoerus-larvatus": "Same as warthog: a partial print can be mistaken, but the complete aardvark print shows three clawed toes.",
+   "tragelaphus-angasii": "Two antelope hoof prints registered together can mimic three toes; the full aardvark print is longer (hind to 110 mm) and claw-tipped."
+  }
+ },
+ {
+  "id": "smutsia-temminckii",
+  "shape": "digger",
+  "front": {
+   "l": 5,
+   "w": 4
+  },
+  "hind": {
+   "l": 5,
+   "w": 4.2
+  },
+  "toes": 5,
+  "claws": true,
+  "clawsNote": "show",
+  "dew": false,
+  "track": "Hind print is a broad, blunt-triangular padded sole about 50 mm long with five toes along a scalloped front edge. Front feet have five toes but the first and fifth are reduced, leaving three long curved digging claws; when the front foot touches down it prints only the upper surfaces of these three claws, which curl under the foot, as short parallel streaks.",
+  "trail": "Walks bipedally on the hind feet and seldom puts the front feet down, so the trail is a single slightly staggered line of hind prints, sometimes with a tail-drag furrow and scuff marks.",
+  "dung": "Dark brown to black cylinders 20 mm in diameter and 30-55 mm long, foul-smelling, left in the open or under its own diggings in the soil.",
+  "signs": [
+   "Shallow scrapes dug to open ant nests",
+   "Uses abandoned aardvark and springhare burrows; also rests in thick low vegetation",
+   "Noxious-smelling anal-gland acid when threatened",
+   "Rolls into an armoured ball and thrashes the tail if handled"
+  ],
+  "facts": [
+   "Only pangolin species in southern Africa; all pangolins are Vulnerable",
+   "Young ride on the mother's back or the base of her tail",
+   "The front-foot drawing shows only three claw streaks and no pad, which is all a front foot normally leaves"
+  ]
+ },
+ {
+  "id": "civettictis-civetta",
+  "shape": "small",
+  "front": {
+   "l": 5.3,
+   "w": 4.4
+  },
+  "hind": {
+   "l": 5.5,
+   "w": 4.4
+  },
+  "toes": 4,
+  "claws": true,
+  "clawsNote": "show",
+  "dew": false,
+  "track": "Very cat-like at first sight although the civet is not a cat. Five toes per foot but only four register, front and hind. Front print is round overall, with particularly round toes packed tightly against the main pad; the hind is 2-4mm longer, its two middle toes are oval and its main pad is narrower, especially along the leading edge, with a rear edge that can look asymmetrical. Claws are present on both feet and usually mark, but they can be hard to pick out in hard or very loose soil, so they are not a guaranteed feature.",
+  "trail": "In the normal gait the hind foot lands partly or fully on top of the front print.",
+  "dung": "Surprisingly large for the animal, mostly dark brown with a consistency that follows the diet; fruit, grass, insect and millipede fragments inside and a characteristic plug of tightly folded dry grass at one end. Dropped in extensive, strongly scented latrines (civetries), usually beside game paths and roads.",
+  "signs": [
+   "Civetries: large communal latrines next to roads and game paths, with a distinctive smell",
+   "Black gel-like anal-gland secretion smeared on tree stumps, small harvester-termite mounds and rocks",
+   "Rests by day in dense vegetation or in holes in termite mounds"
+  ],
+  "facts": [
+   "Front 53mm, hind 55mm; hind is 2-4mm longer than front",
+   "Nocturnal, most active 2-3 hours after sunset until early morning; generally solitary and can climb trees"
+  ],
+  "confuse": [
+   "lupulella-mesomelas",
+   "panthera-pardus"
+  ],
+  "why": {
+   "lupulella-mesomelas": "Jackal hind print has a bigger gap between toes and main pad, longer claws, and distinctly oval outer toes on both feet, whereas the civet's are round.",
+   "panthera-pardus": "Leopard cub prints are the same size but narrower, with a larger toe-to-pad gap, oval toes, no claws unless running, and toes that splay more when the cub runs or plays; suspect civet unless a female is denning nearby or you are on a sandy riverbed leopards use."
+  }
+ },
+ {
+  "id": "genetta-tigrina",
+  "shape": "small",
+  "front": {
+   "l": 2.7,
+   "w": 2.5
+  },
+  "hind": {
+   "l": 3,
+   "w": 2.5
+  },
+  "toes": 4,
+  "claws": true,
+  "clawsNote": "sometimes",
+  "dew": false,
+  "track": "Looks like a miniature cat print: four round toes front and hind (the fifth, inner toe and its claw seldom print). The main pad is large for the size of the track, which is the key feature, and has two distinct outer lobes on its rear edge on both feet. Front print is slightly shorter but broader than the hind with more splayed toes; the hind main pad is marginally longer and its two middle toes are more oval than the round middle toes of the front. Claws print only when the genet runs, jumps or walks in mud, when a small oval proximal-pad mark can also appear behind the main pad.",
+  "trail": "Normal walk has the hind foot registering on top of the front. Tracks that show running, jumping and skidding are common and point to an attempted kill or an encounter with another genet; trails follow roads and game paths over long distances.",
+  "dung": "Dark droppings about 12-16mm in diameter, of variable length and consistency and commonly containing hair; usually deposited in latrines.",
+  "signs": [
+   "Latrines with dark, hair-filled droppings",
+   "Anal-gland scent marks that smell of burnt popcorn, similar to leopard marks",
+   "Day rests in tree holes, hollow logs and under exposed tree roots"
+  ],
+  "facts": [
+   "Measured at Londolozi: front 27mm, hind 30mm",
+   "The oversized main pad is the diagnostic feature of the track",
+   "Kills prey well above its own body weight; solitary and nocturnal"
+  ],
+  "confuse": [
+   "felis-lybica",
+   "herpestes-sanguineus",
+   "genetta-genetta"
+  ],
+  "why": {
+   "felis-lybica": "Wild cat print is about 10mm longer, its main pad is broad on the leading edge with three distinct rear lobes, and its toes are oval rather than round.",
+   "herpestes-sanguineus": "Slender mongoose has smaller toes and usually shows claw marks.",
+   "genetta-genetta": "No published criterion separates large-spotted and small-spotted genet tracks."
+  }
+ },
+ {
+  "id": "genetta-genetta",
+  "shape": "small",
+  "front": {
+   "l": 2.7,
+   "w": 2.5
+  },
+  "hind": {
+   "l": 3,
+   "w": 2.5
+  },
+  "toes": 4,
+  "claws": true,
+  "clawsNote": "sometimes",
+  "dew": false,
+  "track": "The book has a single genet sheet (large-spotted genet) and states that no published information separates large- and small-spotted genet tracks, so the same description applies. Looks like a miniature cat print: four round toes front and hind (the fifth, inner toe and its claw seldom print). The main pad is large for the size of the track, which is the key feature, and has two distinct outer lobes on its rear edge on both feet. Front print is slightly shorter but broader than the hind with more splayed toes; the hind main pad is marginally longer and its two middle toes are more oval than the round middle toes of the front. Claws print only when the genet runs, jumps or walks in mud, when a small oval proximal-pad mark can also appear behind the main pad.",
+  "trail": "Normal walk has the hind foot registering on top of the front. Tracks that show running, jumping and skidding are common and point to an attempted kill or an encounter with another genet; trails follow roads and game paths over long distances.",
+  "dung": "Dark droppings about 12-16mm in diameter, of variable length and consistency and commonly containing hair; usually deposited in latrines.",
+  "signs": [
+   "Latrines with dark, hair-filled droppings",
+   "Anal-gland scent marks that smell of burnt popcorn, similar to leopard marks",
+   "Day rests in tree holes, hollow logs and under exposed tree roots"
+  ],
+  "facts": [
+   "Measurements are those of the large-spotted genet at Londolozi: front 27mm, hind 30mm",
+   "The oversized main pad is the diagnostic feature of the track"
+  ],
+  "confuse": [
+   "felis-lybica",
+   "herpestes-sanguineus",
+   "genetta-tigrina"
+  ],
+  "why": {
+   "felis-lybica": "Wild cat print is about 10mm longer, its main pad is broad on the leading edge with three distinct rear lobes, and its toes are oval rather than round.",
+   "herpestes-sanguineus": "Slender mongoose has smaller toes and usually shows claw marks.",
+   "genetta-tigrina": "No published criterion separates large-spotted and small-spotted genet tracks."
+  }
+ },
+ {
+  "id": "mungos-mungo",
+  "shape": "small",
+  "front": {
+   "l": 5,
+   "w": 4.4
+  },
+  "hind": {
+   "l": 3.2,
+   "w": 3.4
+  },
+  "toes": 5,
+  "claws": true,
+  "clawsNote": "show",
+  "dew": false,
+  "track": "Five toes on each foot, but the first toe, its claw and the proximal pad of the front foot print only when the animal walks slowly over soft fine substrate, and in the hind print these normally never show, so most prints look four-toed. The long front claws are the giveaway: they print clearly in almost any substrate and are what catches the eye; toes and claws of the front foot can merge into what look like continuous connected digits until examined closely. Front toes are slightly more splayed than the hind. Front measures 39mm without proximal pad and first toe (50mm drawn with them), hind 32mm.",
+  "trail": "Walking, the hind foot lands behind (occasionally on top of) the front; when hurrying the mongooses bound. A single set of tracks is unusual, up to 20 sets together is normal, and they retrace the same route to and from the burrow.",
+  "dung": "About 12mm in diameter, much larger than dwarf mongoose droppings; light brown to very dark and usually full of insect fragments. Left in latrines as well as scattered at random across the range.",
+  "signs": [
+   "Many small scratchings and diggings where the pack foraged, small logs turned over",
+   "Elephant and rhino dung pulled apart for beetles and millipedes",
+   "Shallow diggings into harvester-termite mounds near the surface",
+   "Anal-gland scent marks on logs and stones",
+   "Constant twittering contact calls from the foraging group; animals standing upright on hind legs"
+  ],
+  "facts": [
+   "Front 39mm without proximal pad and first toe (drawing 50mm including them), hind 32mm",
+   "Diurnal and highly social: groups of up to 30, change burrows (old termite mounds, crevices) regularly",
+   "Expect many parallel trails; a lone track is unusual"
+  ],
+  "confuse": [
+   "herpestes-sanguineus",
+   "ichneumia-albicauda"
+  ],
+  "why": {
+   "herpestes-sanguineus": "Slender mongoose track is about 14mm smaller.",
+   "ichneumia-albicauda": "White-tailed mongoose track is 10-20mm bigger and shows no claws."
+  }
+ },
+ {
+  "id": "helogale-parvula",
+  "shape": "small",
+  "front": {
+   "l": 3.1,
+   "w": 2.3
+  },
+  "hind": {
+   "l": 2.5,
+   "w": 1.5
+  },
+  "toes": 5,
+  "claws": true,
+  "clawsNote": "show",
+  "dew": false,
+  "track": "The smallest mongoose track in the Kruger area: four small forward-facing toes tipped with long, thin, sharp digging claws in front of a conventionally shaped main pad whose rear edge is asymmetrical. Both feet have five toes but the fifth toe and the proximal pad register only when the animal moves slowly over perfect substrate. Front claws are longer than hind claws, and the front toes and claws sometimes merge into what looks like one long single digit without gaps, as in the banded mongoose.",
+  "trail": "Usually a bounding trail of several animals that have run, skidded and jumped together, so individual details are hard to read; hind feet land ahead of the front feet and usually do not register on top of them, and when bounding the two front feet land one behind the other. Tail drag marks are sometimes visible.",
+  "dung": "Dark brown tubes 6-8 mm in diameter, surprisingly large for the animal, packed with insect fragments. Latrines sit on the eastern side of termite mounds where the group basks in the morning sun, especially in winter.",
+  "signs": [
+   "Small diggings a few centimetres across where insects were dug out, often alongside the tracks",
+   "Excavated termite emergence holes with discarded alate wings scattered around",
+   "Latrines on the eastern edge of occupied termite mounds",
+   "High-pitched hissed alarm calls from sentries and faint hissing or whistling contact calls",
+   "Yellow-billed hornbills gathered on a termite mound at dawn betray a resident group"
+  ],
+  "facts": [
+   "Track lengths measured at Londolozi: front 31 mm, hind 25 mm; Africa's smallest carnivore",
+   "The group changes den almost every night, so tracks lead between termite mounds",
+   "Diminutive size plus evidence of long claws is the key to identifying this track"
+  ],
+  "confuse": [
+   "paraxerus-cepapi",
+   "mungos-mungo",
+   "rodent"
+  ],
+  "why": {
+   "paraxerus-cepapi": "Same bounding gait and size, but the squirrel's front feet land side by side or overlapping (mongoose front feet one behind the other), the squirrel usually shows five hind toes with the three middle ones bunched tightly, a square tread-patterned main pad and shorter claws.",
+   "mungos-mungo": "Banded mongoose track is larger (front 39 mm vs 31 mm) and its droppings are much larger (about 12 mm vs 6-8 mm).",
+   "rodent": "Dwarf mongoose tracks are so small they are often taken for a rodent's; look for the four long claw marks."
+  }
+ },
+ {
+  "id": "herpestes-sanguineus",
+  "shape": "small",
+  "front": {
+   "l": 3.6,
+   "w": 2.5
+  },
+  "hind": {
+   "l": 2.8,
+   "w": 2.1
+  },
+  "toes": 5,
+  "claws": true,
+  "clawsNote": "show",
+  "dew": false,
+  "track": "A small track with four clearly showing oval toes and sharp claw marks that register in almost any substrate. Front toes are more splayed; hind toes are bunched more closely, and the hind first toe sits so high on the foot that it never prints and its claw only rarely does. The rear edge of the front main pad is asymmetrical, one lobe extending lower than the other. The front proximal pad, first toe and claw appear occasionally, but not when the animal is moving fast.",
+  "trail": "In a normal walk the hind foot lands in front of, or occasionally on top of, the front foot. At speed it bounds, leaving a pattern like a hare's: two hind feet side by side ahead of the front feet, which land one behind the other.",
+  "dung": "Dark brown to almost black, one or two thin cylindrical tubes 7-11 mm in diameter and 30-40 mm long, with insect remains.",
+  "signs": [
+   "Tracks follow road edges, open clearings and game paths through long grass or thick vegetation",
+   "Tracks in mud at the edges of waterholes and small pans, which it visits regularly",
+   "Climbs trees when hunting or disturbed",
+   "Dives into adjacent cover when startled"
+  ],
+  "facts": [
+   "Track lengths measured at Londolozi: front 36 mm, hind 28 mm",
+   "Diurnal but stays in cover in cold cloudy weather; solitary or in pairs",
+   "Characteristically travels along the edges of roads and clearings"
+  ],
+  "confuse": [
+   "genetta-tigrina",
+   "genetta-genetta",
+   "paraxerus-cepapi",
+   "mungos-mungo"
+  ],
+  "why": {
+   "genetta-tigrina": "Genet has a much larger main pad, round rather than oval toes, and seldom shows claws unless moving fast.",
+   "genetta-genetta": "Genet has a much larger main pad, round rather than oval toes, and seldom shows claws unless moving fast.",
+   "paraxerus-cepapi": "Squirrel shows five hind toes with the three middle ones grouped tightly and a differently shaped main pad; mongoose toes are more evenly spaced (see tree squirrel sheet, p225).",
+   "mungos-mungo": "Banded mongoose track is about 14 mm larger (front 50 mm with proximal pad vs 36 mm)."
+  }
+ },
+ {
+  "id": "atilax-paludinosus",
+  "shape": "small",
+  "front": {
+   "l": 7,
+   "w": 5.3
+  },
+  "hind": {
+   "l": 6.2,
+   "w": 4.2
+  },
+  "toes": 5,
+  "claws": true,
+  "clawsNote": "show",
+  "dew": false,
+  "track": "A large mongoose track with long, broad, widely splayed toes typical of a wetland animal, yet no webbing between them, and short thick claws sitting close to the toe tips. Front toes splay more than hind toes. Five toes on each foot, but the first toe and its claw are not always clear, and the proximal pad prints only when the animal moves very slowly on soft ground, in which case the front first toe and claw do show. Without first toe and proximal pad the front print (46 mm) looks shorter than the hind (52 mm). The rear edge of the front main pad has two distinct outer lobes, the outer one extending much lower than the inner one, giving it a lopsided form.",
+  "trail": "The usual gait puts the hind foot on top of the front foot, though several gaits are used. Trails run long distances up and down river banks, even where little water is visible.",
+  "dung": "Latrines near the water's edge; droppings 50-100 mm long and about 20 mm in diameter, smaller than the Cape clawless otter's, containing crab carapaces, hair and fragments of small aquatic animals. Unlike otters it leaves crab shells only partly broken up.",
+  "signs": [
+   "Latrines on rocks and banks beside rivers, dams and swamps",
+   "Crab fragments scattered along river edges where it fed",
+   "Resting places in grass patches and on floating vegetation",
+   "Tracks in mud along water margins"
+  ],
+  "facts": [
+   "Track lengths measured at Samara Game Reserve: front 46 mm, hind 52 mm (without first toe and proximal pad); drawings 70 mm front and 62 mm hind with them",
+   "Occurs in large numbers at Samara in the semi-arid Karoo, far from obvious water",
+   "Nocturnal and crepuscular; solitary, in mating pairs, or a female with young"
+  ],
+  "confuse": [
+   "ichneumia-albicauda",
+   "aonyx-capensis"
+  ],
+  "why": {
+   "ichneumia-albicauda": "White-tailed mongoose has shorter toes set more tightly together, longer claws, and its large first toe and claw do not show in the track.",
+   "aonyx-capensis": "Otter droppings are larger and the crab carapaces in them are completely demolished, while water mongoose droppings (about 20 mm wide) hold recognisable shell pieces."
+  }
+ },
+ {
+  "id": "ichneumia-albicauda",
+  "shape": "small",
+  "front": {
+   "l": 5.2,
+   "w": 3.2
+  },
+  "hind": {
+   "l": 5.1,
+   "w": 3.2
+  },
+  "toes": 4,
+  "claws": true,
+  "clawsNote": "show",
+  "dew": false,
+  "track": "Five toes on each foot but normally only four register; the first toe is seldom seen, although the claw of the front first toe can leave a mark in mud or soft fine soil. The four toes sit in a semicircular arc with the two middle toes close together, most tightly on the hind foot. Long, obvious claws print on both feet. The front main pad has an asymmetrical rear edge, its outer lobe reaching lower than the inner; the hind main pad is roughly square along its leading edge.",
+  "trail": "In the walking sequence the hind foot lands ahead of or over the front foot. Now and then the hind claws are dragged very lightly across the ground.",
+  "dung": "Droppings 12-16mm in diameter, holding insect fragments, fruit and even leaves (buffalo thorn berries and leaves recorded); left in latrines as well as scattered at random through the territory.",
+  "signs": [
+   "Latrines with fruit- and insect-filled droppings, often with Ziziphus mucronata berry remains",
+   "Diggings made with the strong front claws for burrowing insects, beetles and larvae",
+   "Occupies termite-mound holes dug by aardvark and other animals rather than digging its own",
+   "Anal-gland scent marks on territory; known to raid chicken runs"
+  ],
+  "facts": [
+   "Measured at Londolozi Game Reserve: front 52mm, hind 51mm, nearly equal in length.",
+   "Nocturnal and mostly solitary; long legs and a bright white bushy tail."
+  ],
+  "confuse": [
+   "lupulella-mesomelas",
+   "atilax-paludinosus"
+  ],
+  "why": {
+   "lupulella-mesomelas": "Jackal toes are much larger and its front and hind tracks run roughly 5-8mm longer; jackal middle and outer toes lie in parallel pairs and its main pad has a symmetrical rear edge, whereas the mongoose toes form an arc and its pad rear is slightly asymmetrical.",
+   "atilax-paludinosus": "The water mongoose has shorter claws and longer, more widely splayed toes, and its big first toe and claw often show, which they never do in the white-tailed track."
+  }
+ },
+ {
+  "id": "aonyx-capensis",
+  "shape": "small",
+  "front": {
+   "l": 11,
+   "w": 9.4
+  },
+  "hind": {
+   "l": 11.8,
+   "w": 9.6
+  },
+  "toes": 5,
+  "claws": false,
+  "clawsNote": "never show",
+  "dew": false,
+  "track": "Five large, round-tipped toes on both feet that usually mark clearly, with no claw marks at all (only three hind toes carry small claws, and these do not print). The hind foot is larger than the front, with bigger, more splayed toes; the webbing is not visible in the track. A big main pad shows, and a proximal pad behind it in soft ground, though the proximal pad is often indistinct; the full outline of the foot rarely prints.",
+  "trail": "At a walk the hind foot lands on top of the front or just beside it. The faster lope gives a 1-2-1 pattern: front, then a half-registered front/hind pair, then hind; a side lope with the body turned leaves a diagonal row of four prints repeated each stride. Otters cover long distances, often following dry riverbeds between water sources.",
+  "dung": "Droppings 22-28mm in diameter and 30-50mm long, made mostly of crab-shell fragments, deposited in latrines on open ground; also small 'spraint' deposits of fish scales and bones bound in black jelly-like anal-gland secretion.",
+  "signs": [
+   "Latrines on open ground near water with shell-filled droppings",
+   "Fragmented crab or mussel shells and fish scales left on the bank where prey was eaten",
+   "Burrows in river banks under dense vegetation or rocks close to the water's edge",
+   "Scent marks from a pair of glands under the tail"
+  ],
+  "facts": [
+   "Measured at Londolozi: front 110mm, hind 118mm; the hind foot is the larger, built for swimming.",
+   "Most active early morning and late afternoon; solitary or in small family groups."
+  ],
+  "confuse": [
+   "atilax-paludinosus",
+   "panthera-pardus",
+   "chlorocebus-pygerythrus"
+  ],
+  "why": {
+   "atilax-paludinosus": "A water mongoose feeding in the same spot confuses the picture, but the mongoose usually leaves larger shell fragments than the otter.",
+   "panthera-pardus": "In riverbeds where prints are blurred, the clawless five-toed otter track with its big main pad is sometimes taken for a leopard, especially by trackers expecting leopard there.",
+   "chlorocebus-pygerythrus": "When all five long toes print clearly the otter track can look like a vervet monkey's."
+  }
+ },
+ {
+  "id": "mellivora-capensis",
+  "shape": "digger",
+  "front": {
+   "l": 11,
+   "w": 6.7
+  },
+  "hind": {
+   "l": 8.5,
+   "w": 5.6
+  },
+  "toes": 5,
+  "claws": true,
+  "clawsNote": "show",
+  "dew": false,
+  "track": "Five large oval, sausage-shaped toes on each foot, although the first toe and its claw sometimes fail to print. Front claws are exceptionally long (25-30mm); the middle three usually show clearly and can strike up to 20mm ahead of the toes, while hind claws are much shorter. On the hind foot the three middle toes sit so close together they often look fused. The main pad is large and unsegmented, with a single proximal pad set to the outside behind it, half-moon shaped on the hind foot and hard to make out on hard ground.",
+  "trail": "Hind foot lands behind the front foot, sometimes at a slight angle, occasionally on top of it; at a faster walk the hind lands ahead of the front. Front feet often point slightly inwards (pigeon-toed) while hind feet face the line of travel or turn outwards. Tracks of a pair are not unusual.",
+  "dung": "Dark, coarse droppings 15-20mm in diameter and 60-80mm long, containing hair, feathers, insect remains and seeds.",
+  "signs": [
+   "Deep excavations dug with the front claws for hibernating snakes (puff adder), scorpions, dung-beetle larvae, mice, bulbs and lizards",
+   "Dug-up mocca bee (Trigona) hives with comb and larvae scattered on the ground",
+   "Will climb trees to scavenge a leopard's kill",
+   "Generally diurnal but turns nocturnal where it feels threatened"
+  ],
+  "facts": [
+   "Measured at Londolozi: hind foot 80-93mm long, main pad 50mm wide; front foot 108-112mm including claws (drawings 110mm front, 85mm hind).",
+   "Front claws alone reach 25-30mm and can print up to 20mm ahead of the toes.",
+   "Front feet turn in, hind feet straight or out: a useful cue for which foot is which."
+  ],
+  "confuse": [
+   "hystrix-africaeaustralis",
+   "panthera-pardus"
+  ],
+  "why": {
+   "hystrix-africaeaustralis": "Porcupine toes are smaller, rounder and more splayed (front usually four toes, hind sometimes five) with short stubby claws, a main pad split into three by faint ridges, usually two proximal pads, a 70-80mm track against the badger's 80-110mm, hind on top of or just behind the front, and sometimes quill drag marks.",
+   "panthera-pardus": "In unclear substrate the badger's big unsegmented main pad can suggest leopard, but the long claw marks and five sausage-shaped toes separate it."
+  },
+  "widthMm": {
+   "front": null,
+   "hind": 50
+  }
+ },
+ {
+  "id": "procavia-capensis",
+  "shape": "small",
+  "front": {
+   "l": 3.7,
+   "w": 2
+  },
+  "hind": {
+   "l": 4.8,
+   "w": 2.1
+  },
+  "toes": 4,
+  "claws": true,
+  "clawsNote": "sometimes",
+  "dew": false,
+  "track": "Front foot has four toes and is about 37 mm long; the larger hind foot has three distinct toes and is about 48 mm. The giveaway is the long main sole pad: the soles are big, soft, rubbery and segmented (kept moist by glandular secretions for grip on rock), and in soft ground the segmentation of the front main pad shows. Front feet are plantigrade (flat-footed), hind feet semi-digitigrade. The hind inner toe carries a grooming claw that may or may not print; hind tracks usually register more clearly than fronts.",
+  "trail": "Bounding gait like a hare or other rodent-type hopper, with hind feet landing ahead of the fronts. Look on roads and paths right next to rocky outcrops and koppies.",
+  "dung": "Pellets 7-10 mm in diameter, dark brown, easily taken for a small antelope's. Deposited in communal latrines that can grow very large, with white streaks of crystallised calcium carbonate from the urine on the rock beside them.",
+  "signs": [
+   "Latrines on and below rock ledges with white crystallised urine stains running down the rock face",
+   "Dorsal scent gland (patch of long black hair mid-back) used for social and territorial marking",
+   "Sentries on vantage points giving sharp bark alarm calls; at least 20 distinct vocal signals",
+   "Bark stripped from branches of trees they climb; browsing on buffalo thorn and Combretum leaves",
+   "Natural rock crevices used as dens; they do not dig"
+  ],
+  "facts": [
+   "Three toes behind, four in front: an odd combination for a mammal this size",
+   "Crepuscular; feeds twice a day in bouts of under 30 minutes and lives in herds of 10-80",
+   "Crystallised hyrax urine is sold at muti markets in Johannesburg and Durban as a stomach remedy"
+  ]
+ },
+ {
+  "id": "papio-ursinus",
+  "shape": "hand",
+  "front": {
+   "l": 7.5,
+   "w": 7
+  },
+  "hind": {
+   "l": 15,
+   "w": 9
+  },
+  "toes": 5,
+  "claws": false,
+  "clawsNote": "usually hidden",
+  "dew": false,
+  "track": "Human-like tracks, especially the hind foot with its characteristic big toe. Both feet have five digits with an opposable thumb or big toe; the hand's thumb stands off from the index finger and often does not print. The hind foot (142-155 mm at Londolozi) is twice the length of the front (70-80 mm) with a broad, rounded heel, and the large round joint of the big toe between the main pad and the toe itself is diagnostic. The front foot is short with long, thick, parallel digits held tightly together and short nails; in soft ground the fingerprint creases show.",
+  "trail": "Normal walk is an understep: the hind foot registers just behind the front foot of the same side. Baboons walk flat-footed and leave tail drag marks only where they sit.",
+  "dung": "Lumpy droppings 30-50 mm in diameter, light or dark brown to dark green, texture coarse-grainy to fine depending on diet.",
+  "signs": [
+   "Extensive shallow diggings over large areas for roots, bulbs and insects, with logs and rocks turned over and vegetation stripped",
+   "Loud barking alarm calls, mainly for lion and leopard, given from treetops while staring at the threat (easily confused with troop squabbles)",
+   "Roosts in tall evergreen trees or secluded rocky outcrops at night",
+   "Remains of hunted small mammals such as impala fawns in the lambing season"
+  ],
+  "facts": [
+   "Measurements from Londolozi: front 70-80 mm, hind 142-155 mm, varying with age",
+   "Hind foot is double the length of the hand, with a broad rounded heel",
+   "Tail drag only appears where the baboon has sat down"
+  ],
+  "confuse": [
+   "potamochoerus-larvatus",
+   "chlorocebus-pygerythrus"
+  ],
+  "why": {
+   "potamochoerus-larvatus": "Baboon soil diggings look like bushpig rootings but are shallower.",
+   "chlorocebus-pygerythrus": "Baboon hind heel is broad and rounded while the vervet's is narrow and pointed (V-shaped); an adult baboon hind foot is 40-50 mm longer; baboon hand digits lie tight and parallel whereas vervet digits splay; vervets grip the soil leaving little mounds of sand and often drag their tails, baboons walk flat-footed; young baboon tracks can be confused with adult monkey tracks."
+  }
+ },
+ {
+  "id": "chlorocebus-pygerythrus",
+  "shape": "hand",
+  "front": {
+   "l": 6.5,
+   "w": 3.9
+  },
+  "hind": {
+   "l": 8.5,
+   "w": 4.5
+  },
+  "toes": 5,
+  "claws": false,
+  "clawsNote": "usually hidden",
+  "dew": false,
+  "track": "Small primate hand and foot, five digits each with an opposable thumb or big toe; the hand's thumb sits at just under 70 degrees to the other digits. Digits are long with short nails that rarely print. Front digits (55-70 mm foot) are longer and splay more than the hind, especially at speed; hind digits (80-93 mm foot) are shorter and bunched together, splaying only when the monkey hurries or turns. The hind heel is a relatively narrow, pointed V, unlike a baboon of similar size.",
+  "trail": "Walking, the hind foot is placed next to the front foot. Tail drag marks are common from both walking and sitting, and the varied movement and gait make the trail very hard to follow.",
+  "dung": "Cylindrical droppings from very short to quite long, 15-25 mm in diameter and 50-100 mm long; dark green to brown depending on diet, darkening with age, often with berries, seeds and insect fragments.",
+  "signs": [
+   "Little mounds of soil raised at the base of the digits where the monkey grips the ground",
+   "Tail drag lines between tracks",
+   "Distinct alarm calls for leopard, snake and eagle, given while staring at the predator",
+   "Retires to trees at night; troops of up to 40 with a clear dominance order"
+  ],
+  "facts": [
+   "Londolozi measurements: front 55-70 mm, hind 80-93 mm, depending on age",
+   "Hand thumb set at just under 70 degrees to the fingers",
+   "Measurements and drawings show great variation in the length and shape of monkey tracks"
+  ],
+  "confuse": [
+   "papio-ursinus"
+  ],
+  "why": {
+   "papio-ursinus": "Vervet tracks are easily confused with a young baboon's: monkey digits splay more often, the baboon heel is wider and bolder, and the monkey leaves little soil mounds at the base of its digits whereas the baboon walks flat-footed."
+  }
+ },
+ {
+  "id": "galago-moholi",
+  "shape": "hand",
+  "front": {
+   "l": 2,
+   "w": 1.7
+  },
+  "hind": {
+   "l": 2.5,
+   "w": 2.9
+  },
+  "toes": 5,
+  "claws": false,
+  "dew": false,
+  "track": "Tiny five-digit prints, rarely found. The hind track is 25-30 mm long with an unusually large opposable big toe set well apart from the other four toes, which prints clearly; the front foot (about 20 mm) is of similar length but seldom shows unless the animal is moving slowly on all fours. Digits, palms and soles are cushioned with subcutaneous tissue for travelling through thorny branches.",
+  "trail": "On the ground the lesser bushbaby hops bipedally on its hind feet, so the left and right hind tracks register close beside each other with no front prints; quadrupedal movement is rare.",
+  "dung": "Unsegmented, irregular, elongated droppings about 5 mm in diameter and 15 mm long, light to dark brown, usually with visible insect fragments.",
+  "signs": [
+   "Scent marks of chest-gland secretion and urine rubbed onto hands and feet and deposited on branches along the route",
+   "Males urinate on females to mark them",
+   "Feeding on gum of Senegalia and Vachellia (acacia) trees, especially in winter",
+   "Loud chattering alarm call, plaintive defensive call and a territorial call",
+   "Communal daytime rest in tree holes or dense foliage"
+  ],
+  "facts": [
+   "Weighs about 150 g and leaps 3-5 m between branches; far more arboreal than the thick-tailed bushbaby",
+   "Hind track 25-30 mm, front about 20 mm, but tracks are rarely seen",
+   "Takes all its water from food"
+  ],
+  "confuse": [
+   "chlorocebus-pygerythrus",
+   "otolemur-crassicaudatus"
+  ],
+  "why": {
+   "chlorocebus-pygerythrus": "Can be confused with a young vervet monkey (no separating criterion given on the sheet).",
+   "otolemur-crassicaudatus": "Thick-tailed bushbaby tracks are up to 30 mm larger and usually show both front and hind feet, whereas the lesser mostly leaves only hind prints."
+  }
+ },
+ {
+  "id": "lepus-saxatilis",
+  "shape": "small",
+  "front": {
+   "l": 3,
+   "w": 2.2
+  },
+  "hind": {
+   "l": 3.7,
+   "w": 2.4
+  },
+  "toes": 4,
+  "claws": true,
+  "clawsNote": "sometimes",
+  "dew": false,
+  "track": "Thick hair under the feet and between the toes blurs almost everything, so the print is usually a soft smudge with no clear toes, claws or main pad. In mud the four toes, claw tips and single pad sink in and show, and the print can then pass for a small jackal. Hind foot (37 mm) is slightly larger and longer than the front (30 mm); when the hare sits up on its hocks the two hind prints lengthen and imprint in full. Claws only register when it accelerates or turns sharply.",
+  "trail": "Classic hare bound: one front foot down, the other directly ahead of it, then both hind feet swing around and land side by side a few centimetres apart, ahead of the fronts. Bound length grows with speed.",
+  "dung": "Pale green to yellow oval pellets about 12 mm long, left in small heaps; marginally bigger than Cape hare pellets. A second, dark mucus-coated caecal pellet is re-ingested straight from the anus and is seldom found.",
+  "signs": [
+   "Lies up in a 'form', a shallow natural depression under long grass or a small bush, which may keep the body impression in the soil",
+   "Does not normally use other animals' burrows or holes",
+   "Grazes short green grass, turning to leaves, rhizomes, roots and small shrub stems when grass is scarce"
+  ],
+  "facts": [
+   "Nocturnal but also out in early morning and late afternoon; mostly solitary, though several males trail a female in oestrus and groups gather on good grazing",
+   "Prefers open savanna woodland with grass and scrub"
+  ],
+  "confuse": [
+   "Cape hare",
+   "sylvicapra-grimmia",
+   "lupulella-mesomelas"
+  ],
+  "why": {
+   "Cape hare": "Nearly identical, but the scrub hare hind print is marginally smaller; where both occur (Karoo) the scrub hare keeps to denser scrub and the Cape hare to more open ground.",
+   "sylvicapra-grimmia": "A single smudged hare print can be mistaken for a small antelope print such as a duiker's; look for the bounding group of four and the absence of a cleft hoof.",
+   "lupulella-mesomelas": "In mud, where toes, claws and pad show, the hare print resembles a jackal's; the hare's trail pattern (paired hind prints ahead of the fronts) gives it away."
+  }
+ },
+ {
+  "id": "thryonomys-swinderianus",
+  "shape": "small",
+  "front": {
+   "l": 4,
+   "w": 1.5
+  },
+  "hind": {
+   "l": 5,
+   "w": 2.5
+  },
+  "toes": 4,
+  "claws": true,
+  "clawsNote": "show",
+  "dew": false,
+  "track": "Four toes on every foot, but usually only three long toes with long thick claws imprint clearly, so the track looks like a fork pressed into the soil; on perfect substrate all four toes and claws show. The main pad is often indistinct, though the hind foot has a noticeably larger, extended main pad. Front about 40 mm, hind about 50 mm.",
+  "trail": "Walks along habitual routes; the book gives no gait pattern, only that tracks are found on its regular runs.",
+  "dung": "Dark brown pellets about 20 mm long with a characteristic groove running along the length of each pellet.",
+  "signs": [
+   "Well-worn paths or 'runs' 80-100 mm wide through grassy areas and vleis, used regularly",
+   "Little piles of cut, discarded grass or reed stems where it has been feeding",
+   "Teeth-chattering sound while cutting grass with the upper incisors",
+   "Grass nests above ground or shallow burrows in marshy areas and along river and lake banks",
+   "Grunts or hisses when alarmed and bolts for water or thicket"
+  ],
+  "facts": [
+   "Heavily built rodent of up to 10 kg, nocturnal, living in small groups led by one male",
+   "Regarded as a pest in sugar cane plantations; preyed on by leopards and smaller carnivores in the Sabi Sands"
+  ],
+  "confuse": [
+   "mungos-mungo"
+  ],
+  "why": {
+   "mungos-mungo": "Both leave similarly sized long claw marks, but the banded mongoose shows four clearly marked toes and claws where the cane rat regularly shows only three."
+  }
+ },
+ {
+  "id": "hystrix-africaeaustralis",
+  "shape": "digger",
+  "front": {
+   "l": 8,
+   "w": 6.1
+  },
+  "hind": {
+   "l": 7.6,
+   "w": 3.8
+  },
+  "toes": 5,
+  "claws": true,
+  "clawsNote": "show",
+  "dew": false,
+  "track": "A strange print to match the animal: the main pad is split into three segments by faint ridges, and two further proximal pads sit directly behind it; spotting these two proximal pads is the key to the track. Both feet carry five toes but usually only four round toes with short stubby claws register, the first toe often missing; toes are more splayed than a honey badger's and very indistinct in loose sand. Track length 70-80 mm (drawings: front 80 mm, hind 76 mm), measured at Samara in the Karoo and Londolozi near southern Kruger; some individuals have unusually long front claws.",
+  "trail": "At a normal walk the hind foot registers on top of, or just behind, the front foot. Dragging quill marks often run alongside the prints.",
+  "dung": "Black droppings 16-23 mm in diameter, either small round pellets or longer cylinders, often clumped and strung together, full of root and bark fibre. Dropped at random, occasionally in a midden.",
+  "signs": [
+   "Shed quills lying about; a scatter of quills over a small area marks a confrontation",
+   "Narrow diggings for bulbs and roots, with the eaten root exposed at the bottom of the hole",
+   "Bark stripped from the lower trunk of trees such as tamboti (Spirostachys africana)",
+   "Bones and bone fragments carried into burrows (osteophagia)",
+   "Scent marks rubbed with the anal gland on rocks, the ground and small plants, sometimes with quill marks below the rock",
+   "Occupies burrows taken over from aardvarks, also rock crevices and caves"
+  ],
+  "facts": [
+   "Africa's largest rodent; mainly nocturnal, monogamous, and may travel very long distances in a night's foraging",
+   "Comparison table: honey badger five toes always show, porcupine front usually four and hind occasionally five",
+   "When threatened it raises its quills and reverses into the attacker, leaving quills behind"
+  ],
+  "confuse": [
+   "mellivora-capensis"
+  ],
+  "why": {
+   "mellivora-capensis": "Honey badger prints are larger (80-110 mm vs 70-80 mm) with big oval sausage-shaped toes, the three middle toes bunched tightly (especially on the hind foot), very long thick front claws, one unsegmented main pad and a single proximal pad; the porcupine has smaller rounder evenly spread toes, short claws, a three-segment main pad and usually two proximal pads, and its hind foot lands on top of the front whereas the badger's lands behind."
+  }
+ }
+]

@@ -1,0 +1,114 @@
+{
+ "giraffa-giraffa": [
+  {
+   "file": "signs/giraffa-giraffa-track-354483818.webp",
+   "kind": "track",
+   "w": 375,
+   "h": 500,
+   "author": "Connor Ryan",
+   "license": "CC-BY-NC",
+   "source": "https://www.inaturalist.org/observations/354483818"
+  },
+  {
+   "file": "signs/giraffa-giraffa-track-334942202.webp",
+   "kind": "track",
+   "w": 500,
+   "h": 375,
+   "author": "Paula Pebsworth",
+   "license": "CC-BY-NC",
+   "source": "https://www.inaturalist.org/observations/334942202"
+  },
+  {
+   "file": "signs/giraffa-giraffa-track-106252951.webp",
+   "kind": "track",
+   "w": 375,
+   "h": 500,
+   "author": "Dewald du Plessis",
+   "license": "CC-BY-NC",
+   "source": "https://www.inaturalist.org/observations/106252951"
+  },
+  {
+   "file": "signs/giraffa-giraffa-scat-105902310.webp",
+   "kind": "scat",
+   "w": 375,
+   "h": 500,
+   "author": "timojaeg",
+   "license": "CC-BY-NC",
+   "source": "https://www.inaturalist.org/observations/105902310"
+  },
+  {
+   "file": "signs/giraffa-giraffa-scat-21237151.webp",
+   "kind": "scat",
+   "w": 281,
+   "h": 500,
+   "author": "BenJee",
+   "license": "CC-BY-NC",
+   "source": "https://www.inaturalist.org/observations/21237151"
+  },
+  {
+   "file": "signs/giraffa-giraffa-scat-170877079.webp",
+   "kind": "scat",
+   "w": 375,
+   "h": 500,
+   "author": "corky777",
+   "license": "CC-BY-NC",
+   "source": "https://www.inaturalist.org/observations/170877079"
+  }
+ ],
+ "crocuta-crocuta": [
+  {
+   "file": "signs/crocuta-crocuta-track-166611370.webp",
+   "kind": "track",
+   "w": 375,
+   "h": 500,
+   "author": "matyd",
+   "license": "CC-BY-NC",
+   "source": "https://www.inaturalist.org/observations/166611370"
+  },
+  {
+   "file": "signs/crocuta-crocuta-track-321218449.webp",
+   "kind": "track",
+   "w": 500,
+   "h": 333,
+   "author": "Frédéric Bacuez",
+   "license": "CC-BY-NC",
+   "source": "https://www.inaturalist.org/observations/321218449"
+  },
+  {
+   "file": "signs/crocuta-crocuta-track-189383321.webp",
+   "kind": "track",
+   "w": 500,
+   "h": 375,
+   "author": "jorisddc",
+   "license": "CC-BY-NC",
+   "source": "https://www.inaturalist.org/observations/189383321"
+  },
+  {
+   "file": "signs/crocuta-crocuta-scat-99243097.webp",
+   "kind": "scat",
+   "w": 236,
+   "h": 500,
+   "author": "Joshua Rains",
+   "license": "CC-BY-NC",
+   "source": "https://www.inaturalist.org/observations/99243097"
+  },
+  {
+   "file": "signs/crocuta-crocuta-scat-384558715.webp",
+   "kind": "scat",
+   "w": 281,
+   "h": 500,
+   "author": "koenbetjes",
+   "license": "CC-BY-NC",
+   "source": "https://www.inaturalist.org/observations/384558715"
+  },
+  {
+   "file": "signs/crocuta-crocuta-scat-322751072.webp",
+   "kind": "scat",
+   "w": 225,
+   "h": 500,
+   "author": "Peter Munga Kanyi",
+   "license": "CC-BY-NC",
+   "source": "https://www.inaturalist.org/observations/322751072"
+  }
+ ]
+}

@@ -7,6 +7,7 @@ import { ObsForm } from '../components/ObsForm';
 import { PhotoImg } from '../components/PhotoImg';
 import { Icon } from '../components/Icon';
 import { SoundPlayer } from '../components/SoundPlayer';
+import { TracksSection } from '../components/TracksSection';
 import type { Observation, Species } from '../types';
 import { popById, fmtN } from '../learn/populations';
 import { DropChart } from './LearnView';
@@ -96,6 +97,8 @@ export function SpeciesView({ id }: { id: string }) {
             <span class="more">{more ? 'Show less' : 'Read more'}</span> <span class="muted small">· Wikipedia{s.summary.en ? '' : ' (French)'}</span>
           </div>
         )}
+
+        {s.group === 'mammal' && <TracksSection id={s.id} />}
 
         {popById.has(s.id) && (() => { const p = popById.get(s.id)!; return (
           <>

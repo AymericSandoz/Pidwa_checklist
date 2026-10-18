@@ -622,3 +622,81 @@ details summary { cursor: pointer; }
 .lightbox .cred { color: #fffc; font-size: 12px; margin-top: 10px; text-align: center; }
 .lightbox .cred a { text-decoration: underline; }
 .lightbox .x { position: absolute; top: calc(12px + env(safe-area-inset-top)); right: 12px; width: 40px; height: 40px; border-radius: 50%; border: 0; background: #fff2; color: #fff; display: grid; place-items: center; }
+
+/* Learn: reading the grass. One colour per grass group, borrowed from the land-use set. */
+.gr-d { --g: var(--lu-game); } .gr-i1 { --g: var(--lu-water); } .gr-i2 { --g: var(--lu-crops); } .gr-i3 { --g: var(--lu-urban); }
+.gdot { display: block; width: 10px; height: 10px; border-radius: 50%; background: var(--g); margin-top: 4px; }
+.card.grp { border-left: 4px solid var(--g); }
+.grp > b { display: block; font-size: 16px; font-weight: 800; }
+.grp > em { display: block; font-style: normal; font-size: 12.5px; font-weight: 700; color: var(--muted); margin-top: 1px; }
+.look { display: flex; gap: 6px; align-items: flex-start; margin: 8px 0 0; font-size: 13px; line-height: 1.4; }
+.why { margin: 8px 0 0; font-size: 13px; font-weight: 700; line-height: 1.4; }
+.why .gtag { margin-left: 4px; }
+.look .ic { flex: none; margin-top: 3px; color: var(--green-ink); }
+.gtag { display: inline-block; font-size: 10.5px; font-weight: 800; padding: 1px 7px; border-radius: 999px; border: 1.5px solid var(--g); white-space: nowrap; }
+.sward .lbl { fill: var(--text); }
+.sward .grit { fill: var(--muted); }
+.sward .arrow { fill: none; stroke: var(--muted); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.tuft path, .tuft line { fill: none; stroke: var(--g); stroke-width: 1.7; stroke-linecap: round; }
+.tuft.hard line { stroke-width: 2.1; }
+.tuft.dim { opacity: .45; }
+.gbar { display: flex; gap: 2px; height: 26px; border-radius: 7px; overflow: hidden; margin-top: 8px; }
+.gbar i { display: block; background: var(--g); }
+.gbar i.oth, .lul i.oth { background: var(--sand); }
+.lul i[class^='gr-'] { background: var(--g); }
+.diet { padding: 10px 0; border-bottom: 1px solid var(--line); }
+.diet > b { font-size: 14px; font-weight: 800; }
+.diet p { margin: 6px 0 0; font-size: 13px; color: var(--muted); line-height: 1.35; }
+.diet .who { display: flex; flex-wrap: wrap; gap: 6px 10px; margin-top: 6px; }
+.diet .who a { display: inline-flex; align-items: center; gap: 5px; font-size: 12.5px; font-weight: 700; }
+.diet .who i { display: block; width: 26px; height: 26px; border-radius: 8px; background: var(--sand) center / cover; }
+.chap .ill .mingrass { grid-column: 1 / -1; display: flex; align-items: flex-end; gap: 4px; height: 40px; }
+.chap .ill .mingrass i { width: 4px; height: 100%; border-radius: 2px; background: var(--green-ink); }
+.chap .ill .mingrass i:nth-child(2), .chap .ill .mingrass i:nth-child(5) { height: 55%; }
+.chap .ill .mingrass i:nth-child(3) { height: 25%; } .chap .ill .mingrass i:nth-child(6) { height: 75%; }
+
+/* Learn: bush encroachment drawings. */
+.bushdraw .trunk { stroke: var(--muted); stroke-width: 3; stroke-linecap: round; }
+.bushdraw .trunk.dead { stroke-width: 2; opacity: .5; stroke-dasharray: 3 3; }
+.bushdraw .crown, .bushdraw .shrub circle { fill: var(--lu-parks); }
+.bushdraw .shrub circle { opacity: .75; }
+.bushdraw .shoot { stroke: var(--lu-parks); stroke-width: 1.8; stroke-linecap: round; }
+.bushdraw .flame { fill: var(--lu-graze); opacity: .2; }
+.bushdraw .flameline { stroke: var(--lu-crops); stroke-width: 1.5; stroke-dasharray: 5 3; }
+.chap .ill .minbush { grid-column: 1 / -1; width: 46px; height: 38px; }
+.minbush circle { fill: var(--green-ink); } .minbush line { stroke: var(--green-ink); stroke-width: 3; stroke-linecap: round; }
+.sec .tag { margin-left: 0; }
+
+/* Learn: climate chapter bars. */
+.cty .b i.hot { background: var(--lu-crops); }
+.cty .b i.loss { background: var(--danger); }
+
+/* ---- tracks and signs (species page) ---- */
+.spoor { display: block; width: 100%; height: auto; font-family: inherit; }
+.spoor .foot path, .spoor .foot ellipse { fill: var(--text); opacity: .82; }
+.spoor .foot .claw { opacity: .55; }
+.spoor .foot.book path { opacity: .86; }
+.spoor .foot.book path.lt { opacity: .3; }
+.spoor .foot.book path.hole { fill: var(--card); opacity: .45; }   /* cracks of an elephant or rhino sole: lighter, not empty */
+.cmp > .me .foot.book path.hole { fill: var(--green-light); }
+.spoor .lbl { font-size: 12px; font-weight: 800; fill: var(--text); }
+.spoor .dim { font-size: 11px; font-weight: 700; fill: var(--muted); font-variant-numeric: tabular-nums; }
+.spoor .bar { stroke: var(--muted); stroke-width: 1.5; }
+.spoor.mini { width: auto; }
+.spoorcard .specs.flat { box-shadow: none; margin: 10px 0 4px; }
+.spoorcard .tx, .card .tx { margin: 8px 0 0; font-size: 14px; line-height: 1.45; color: var(--muted); }
+.card .tx b { color: var(--text); }
+.card .ttl { font-size: 15px; font-weight: 800; }
+.cmp { display: flex; gap: 6px; margin-top: 10px; overflow-x: auto; padding-bottom: 2px; scrollbar-width: none; }
+.cmp::-webkit-scrollbar { display: none; }
+.cmp > a, .cmp > .me { flex: none; display: flex; flex-direction: column; align-items: center; gap: 3px; min-width: 56px; padding: 6px 4px 8px; border-radius: 12px; color: inherit; }
+.cmp > .me { background: var(--green-light); }
+.cmp > .me .foot path, .cmp > .me .foot ellipse { fill: var(--green-ink); }
+.cmp .nm { display: flex; align-items: center; gap: 4px; font-size: 11.5px; font-weight: 800; white-space: nowrap; }
+.cmp .nm i { width: 16px; height: 16px; border-radius: 50%; background: var(--sand) center / cover; flex: none; }
+.cmp .sz { font-size: 11px; font-weight: 700; color: var(--muted); font-variant-numeric: tabular-nums; }
+.cmpcard .why { margin-top: 10px; font-size: 14px; color: var(--muted); }
+.cmpcard .why b { color: var(--text); }
+.gallery.signs { margin: 0 0 10px; padding: 0 0 4px; }
+.gallery.signs button { width: 132px; height: 132px; border-radius: 12px; }
+.card .ttl + .gallery.signs { margin-top: 8px; }
