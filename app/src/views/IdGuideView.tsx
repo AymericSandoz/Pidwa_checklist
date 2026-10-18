@@ -1,6 +1,6 @@
 import { signal } from '@preact/signals';
 import { species, byId, seenCount, name, name2, imgUrl } from '../data';
-import { href } from '../router';
+import { href, route, navigate } from '../router';
 import { L, ORDER, lbl, matches } from '../util';
 import { BIRD_GROUPS, groupOf, familyEn } from '../taxa';
 import { COLOURS, BIRD_COLOURS } from '../colours';
@@ -38,6 +38,17 @@ function toggle(k: Key, v: string) {
   const cur = sel.value[k] || [];
   sel.value = { ...sel.value, [k]: cur.includes(v) ? cur.filter((x) => x !== v) : [...cur, v] };
   if (k === 'group') family.value = '';
+}
+
+/** Birds by look, or mammals by their prints: the two keys of the Guide tab. */
+export function GuideSwitch() {
+  const tracks = route.value.parts[1] === 'tracks';
+  return (
+    <div class="seg gswitch">
+      <button class={tracks ? '' : 'on'} onClick={() => navigate('id')}><Icon name="bird" size={16} />Birds</button>
+      <button class={tracks ? 'on' : ''} onClick={() => navigate('id/tracks')}><Icon name="paw-print" size={16} />Tracks</button>
+    </div>
+  );
 }
 
 export function IdGuideView() {
@@ -82,6 +93,7 @@ export function IdGuideView() {
 
   return (
     <div class="idg">
+      <GuideSwitch />
       <SearchBox value={q.value} onInput={(v) => (q.value = v)} placeholder="Name (English, French, Latin)" />
 
       <div class="fgroup">

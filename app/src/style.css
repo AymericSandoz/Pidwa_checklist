@@ -700,3 +700,55 @@ details summary { cursor: pointer; }
 .gallery.signs { margin: 0 0 10px; padding: 0 0 4px; }
 .gallery.signs button { width: 132px; height: 132px; border-radius: 12px; }
 .card .ttl + .gallery.signs { margin-top: 8px; }
+
+/* Guide: birds / tracks switch, and the footprint key */
+.gswitch { margin-bottom: 12px; }
+.gswitch button { display: inline-flex; align-items: center; justify-content: center; gap: 6px; }
+.tg .gtile .pr { display: flex; align-items: center; justify-content: center; height: 64px; background: var(--sand); }
+.tg .gtile.on .pr { background: var(--green-light); }
+.tg .gtile.on .pr .foot path, .tg .gtile.on .pr .foot ellipse { fill: var(--green-ink); }
+.tlen { display: flex; align-items: center; gap: 10px; }
+.tlen input { flex: 1; accent-color: var(--green); }
+.tlen input.off { opacity: .45; }
+.tlen b { min-width: 52px; text-align: right; font-size: 15px; font-weight: 800; font-variant-numeric: tabular-nums; }
+.tlen .chip { margin: 0; }
+.tg .tref { margin: 6px 0 0; }
+.tg .tpick { margin: 0 0 8px; }
+.tgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); gap: 8px; }
+.ttile { position: relative; display: flex; flex-direction: column; background: var(--card); border-radius: 14px; box-shadow: 0 1px 0 var(--line); overflow: hidden; }
+.ttile .pr { display: flex; align-items: flex-end; justify-content: center; min-height: 86px; padding: 6px 4px 2px; border: 0; background: transparent; font: inherit; color: inherit; overflow: hidden; }
+.ttile.on { outline: 3px solid var(--green); outline-offset: -3px; }
+.ttile.on .pr { background: var(--green-light); }
+.ttile.on .pr .foot path, .ttile.on .pr .foot ellipse { fill: var(--green-ink); }
+.ttile.seen::after { content: ''; position: absolute; right: 6px; top: 6px; width: 8px; height: 8px; border-radius: 50%; background: var(--green); }
+.ttile .nm { display: flex; align-items: center; gap: 4px; padding: 4px 6px 0 7px; font-size: 12px; font-weight: 800; color: var(--text); line-height: 1.15; }
+.ttile .nm span { flex: 1; min-width: 0; }
+.ttile .nm i { width: 16px; height: 16px; border-radius: 50%; background: var(--sand) center / cover; flex: none; }
+.ttile .nm svg { flex: none; color: var(--muted); }
+.ttile .sz { padding: 1px 7px 7px; font-size: 11px; font-weight: 700; color: var(--muted); font-variant-numeric: tabular-nums; }
+.duel { position: relative; margin-bottom: 10px; }
+.duel .x { position: absolute; top: 8px; right: 8px; border: 0; background: var(--sand); color: var(--muted); border-radius: 50%; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; }
+.duel .dcols { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px; }
+.duel .dcol + .dcol { border-left: 1px solid var(--line); padding-left: 10px; }
+.duel .dn { display: flex; align-items: center; gap: 2px; font-size: 14px; font-weight: 800; color: var(--text); margin-bottom: 6px; }
+.duel .dfeet { display: flex; gap: 6px; align-items: flex-end; }
+.duel .dfeet > div { display: flex; flex-direction: column; align-items: center; gap: 2px; }
+.duel .dfeet span { font-size: 11px; font-weight: 700; color: var(--muted); font-variant-numeric: tabular-nums; }
+.duel .dfacts { display: flex; flex-direction: column; gap: 1px; margin-top: 6px; font-size: 12px; color: var(--muted); }
+
+/* Spoor quiz: four names to pick from */
+.qopts { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; }
+.qopt { display: flex; align-items: center; gap: 8px; min-height: 52px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 14px; background: var(--card); color: var(--text); font: inherit; font-size: 14.5px; font-weight: 700; text-align: left; line-height: 1.2; }
+.qopt i { width: 28px; height: 28px; border-radius: 50%; background: var(--sand) center / cover; flex: none; }
+.qopt:disabled { opacity: 1; }
+.qopt.out { opacity: .3; text-decoration: line-through; }
+.qopt.ok { border: 2px solid var(--green); background: var(--green-light); color: var(--green-ink); }
+.qopt.bad { border: 2px solid var(--danger); }
+.qopt.dim { opacity: .45; }
+.qhint .spoor { margin-top: 6px; background: var(--card); border-radius: 12px; }
+.qres .tx { margin: 10px 0 0; font-size: 14px; line-height: 1.45; color: var(--muted); }
+.qres .tx b { color: var(--text); }
+.qres .spoor { margin-top: 8px; }
+.tquiz { gap: 12px; margin-top: 14px; color: inherit; }
+.tquiz > div { flex: 1; }
+.tquiz b { font-size: 15px; }

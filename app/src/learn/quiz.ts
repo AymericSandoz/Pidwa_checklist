@@ -22,12 +22,16 @@ export async function record(speciesId: string, prev: QuizCard | undefined, v: V
   return card;
 }
 
-export async function resetCards() { await db.quiz.clear(); }
+/** Forget the progress of one quiz: keys with that prefix ("spoor:", "scat:"), or with none for the photo quiz. */
+export async function resetCards(prefixes: string[] = []) {
+  const keys = (await db.quiz.toArray()).map((c) => c.speciesId);
+  await db.quiz.bulkDelete(keys.filter((k) => (prefixes.length ? prefixes.some((p) => k.startsWith(p)) : !k.includes(':'))));
+}
 
 /** Build a round: species due for review first, then never-asked ones, then the rest (those known best last), shuffled a little. */
-export function pickRound(pool: Species[], cards: Map<string, QuizCard>, n: number): Species[] {
+export function pickRound<T extends { id: string }>(pool: T[], cards: Map<string, QuizCard>, n: number): T[] {
   const now = Date.now();
-  const due: Species[] = [], fresh: Species[] = [], later: Species[] = [];
+  const due: T[] = [], fresh: T[] = [], later: T[] = [];
   for (const s of pool) {
     const c = cards.get(s.id);
     if (!c) fresh.push(s);
@@ -46,7 +50,7 @@ export function shuffle<T>(a: T[]): T[] {
 }
 
 /** Summary for the quiz home: how many species are in each state. */
-export function progress(pool: Species[], cards: Map<string, QuizCard>) {
+export function progress(pool: { id: string }[], cards: Map<string, QuizCard>) {
   const now = Date.now();
   let known = 0, learning = 0, due = 0, fresh = 0;
   for (const s of pool) {

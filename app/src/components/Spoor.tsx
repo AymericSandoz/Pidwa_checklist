@@ -61,7 +61,8 @@ export const bookDims = (b: BookFoot): Foot => ({ l: b.mm / 10, w: +((b.mm / 10)
 /** A traced print as an SVG group in cm units, toes up, centred on 0,0. Right feet are mirrored to show a left foot. */
 function BookShape({ b }: { b: BookFoot }) {
   const s = b.mm / 10 / b.h;   // cm per crop pixel
-  const t = `scale(${f1(b.mirror ? -s : s)} ${f1(s)}) translate(${f1(-b.x - b.w / 2)} ${f1(-b.y - b.h / 2)})`;
+  const p = (n: number) => +n.toPrecision(4);   // s is ~0.01: two decimals would round it by up to 50 %
+  const t = `scale(${p(b.mirror ? -s : s)} ${p(s)}) translate(${f1(-b.x - b.w / 2)} ${f1(-b.y - b.h / 2)})`;
   return (
     <g class="foot book" transform={t}>
       <path d={b.d} fill-rule="evenodd" />

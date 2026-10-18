@@ -50,3 +50,30 @@ export const SHAPE_LABEL: Record<Shape, string> = {
   cloven: 'cloven hoof', cat: 'cat paw', dog: 'dog paw', hyena: 'hyena paw', hoof: 'single hoof', round: 'round sole',
   hand: 'hand-like', digger: 'clawed paw', small: 'small paw',
 };
+
+/** What a print looks like at first glance, for the footprint key and the quiz: label and a typical species for the tile.
+    Some species sit in two families because the book says they are taken for either (the civet's print reads as a cat's to
+    a novice and is confused with a jackal's). */
+export const LOOKS: [string, string, string][] = [
+  ['cloven', 'Split hoof', 'aepyceros-melampus'],
+  ['hoof', 'Single hoof', 'equus-quagga'],
+  ['giant', 'Giant foot', 'ceratotherium-simum'],
+  ['cat', 'Cat-like paw', 'panthera-pardus'],
+  ['dog', 'Dog-like paw', 'lupulella-mesomelas'],
+  ['five', 'Five toes', 'atilax-paludinosus'],
+  ['hand', 'Hand-like', 'papio-ursinus'],
+  ['other', 'Hare, hyrax, rat', 'lepus-saxatilis'],
+];
+const EXTRA_LOOK: Record<string, string[]> = {
+  'civettictis-civetta': ['cat', 'dog'], 'genetta-tigrina': ['cat'], 'genetta-genetta': ['cat'], 'ichneumia-albicauda': ['dog'],
+};
+export function looksOf(e: Spoor): string[] {
+  if (EXTRA_LOOK[e.id]) return EXTRA_LOOK[e.id];
+  switch (e.shape) {
+    case 'cloven': case 'hoof': case 'cat': case 'dog': case 'hand': return [e.shape];
+    case 'hyena': return ['dog'];
+    case 'round': return ['giant'];
+    case 'digger': return ['five'];
+    default: return e.toes >= 5 ? ['five'] : ['other'];
+  }
+}

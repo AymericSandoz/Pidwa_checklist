@@ -6,6 +6,7 @@ import { POPS, popById, fmtN, type Pop } from '../learn/populations';
 import { LandView } from './LandView';
 import { FencesView } from './FencesView';
 import { QuizView } from './QuizView';
+import { SpoorQuizView } from './SpoorQuizView';
 import { VeldView } from './VeldView';
 import { BushView } from './BushView';
 import { ClimateView } from './ClimateView';
@@ -84,12 +85,18 @@ export function LearnView() {
   if (parts[1] === 'bush') return <BushView />;
   if (parts[1] === 'climate') return <ClimateView />;
   if (parts[1] === 'quiz') return <QuizView />;
+  if (parts[1] === 'spoorquiz') return <SpoorQuizView />;
   return (
     <div>
       <div class="learn-hero"><b>Learn</b><p>Short, sourced chapters on what you see at Pidwa and the bigger picture behind it. Every number links to where it comes from.</p></div>
       <a class="chap quiz" href={href('learn/quiz')}>
         <div class="ill"><Icon name="eye" size={26} /></div>
         <div class="tx"><b>Quiz: name that species</b><span>A photo, sometimes the call, and you type the name. Starts with what you have already seen.</span><span class="tag ok">practice</span></div>
+        <Icon name="chevron-right" size={20} />
+      </a>
+      <a class="chap quiz" href={href('learn/spoorquiz')}>
+        <div class="ill"><Icon name="paw-print" size={26} /></div>
+        <div class="tx"><b>Quiz: whose track?</b><span>A field photo of a print or of dung, four names, and hints that teach you what to look at.</span><span class="tag ok">practice</span></div>
         <Icon name="chevron-right" size={20} />
       </a>
       {CHAPTERS.map((c) => (
