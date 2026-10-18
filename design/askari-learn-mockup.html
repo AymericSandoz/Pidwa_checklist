@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Askari · onglet Learn, maquettes</title><style>
+@font-face{font-family:'Urbanist';font-weight:400 800;src:url('../app/src/fonts/urbanist-latin.woff2') format('woff2')}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:#d9d6cf;color:#1D231C;font-family:'Urbanist',system-ui,sans-serif;font-weight:500;padding:34px 28px 60px}
+h1{font-size:32px;font-weight:800;letter-spacing:-.6px;margin:0 0 4px}
+h1 span{color:#15753A}
+.lead{margin:0 auto 28px;font-size:16px;color:#4d534a;max-width:1300px}
+.frames{display:flex;flex-wrap:wrap;gap:30px;justify-content:center;align-items:flex-start}
+figure{margin:0;width:410px}
+figcaption{margin-top:14px;font-size:14px;color:#3d4339;line-height:1.45}
+figcaption b.t{display:block;font-size:19px;font-weight:800;color:#1D231C;margin-bottom:4px}
+figcaption ul{margin:8px 0 0;padding:0;list-style:none}
+figcaption li{display:grid;grid-template-columns:22px 1fr}
+figcaption li i{font-style:normal;font-weight:800}
+figcaption li.p i{color:#15753A}
+figcaption li.m i{color:#B3261E}
+svg.i{flex:none;display:block;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.phone{width:410px;height:840px;border:10px solid #0c0e0b;border-radius:44px;background:#F4F2EC;position:relative;overflow:hidden;box-shadow:0 34px 60px -24px #0007;color:#1D231C}
+.scr{position:absolute;inset:0 0 74px 0;overflow:hidden;padding:0 14px}
+.top{display:flex;align-items:center;gap:10px;padding:22px 2px 12px}
+.top .mark{width:42px;height:34px;background:#1D231C;-webkit-mask:url('../app/src/assets/askari-mark.png') center/contain no-repeat;mask:url('../app/src/assets/askari-mark.png') center/contain no-repeat}
+.top .bn{flex:1;display:flex;flex-direction:column;line-height:1}
+.top .bn b{font-size:26px;font-weight:800;letter-spacing:-.6px}
+.top .bn small{font-size:9.5px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:#61675E;margin-top:4px}
+.top .gear{width:40px;height:40px;border-radius:50%;border:1px solid #E6E3DC;background:#fff;display:grid;place-items:center}
+.sub{display:flex;align-items:center;gap:8px;padding:18px 0 10px}
+.sub .bk{width:36px;height:36px;border-radius:50%;background:#fff;border:1px solid #E6E3DC;display:grid;place-items:center}
+.sub h2{font-size:22px;font-weight:800;letter-spacing:-.4px;line-height:1.05}
+.sub small{display:block;font-size:12px;color:#61675E;font-weight:600;margin-top:2px}
+.nav{position:absolute;left:0;right:0;bottom:0;height:74px;display:flex;background:#fff;border-top:1px solid #E6E3DC;padding:8px 4px 0}
+.nav a{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;font-size:11px;font-weight:600;color:#61675E}
+.nav .pill{width:52px;height:30px;border-radius:15px;display:grid;place-items:center}
+.nav .on{color:#1D231C;font-weight:800}.nav .on .pill{background:#E1F0E6;color:#15753A}
+.nav .new .pill{outline:2px dashed #209D50;outline-offset:2px}
+.card{background:#fff;border-radius:16px;box-shadow:0 1px 0 #E6E3DC;padding:14px;margin-bottom:10px}
+.card>b:first-child{font-size:16px;font-weight:800}
+.muted{color:#61675E;font-size:13px}
+.small{font-size:12.5px}
+.tabs{display:flex;background:#E1DFD9;border-radius:12px;padding:3px;margin-bottom:10px}
+.tabs b{flex:1;text-align:center;padding:7px 10px;border-radius:9px;font-size:13px;font-weight:700;color:#61675E}
+.tabs b.on{background:#fff;color:#1D231C;box-shadow:0 1px 2px #0002}
+.row{display:flex;align-items:center;gap:10px}
+.stat{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid #E6E3DC;font-size:14.5px}
+.stat:last-child{border:0}
+.bar{display:block;height:5px;background:#E1DFD9;border-radius:3px;overflow:hidden;margin-top:4px}
+.bar i{display:block;height:100%;background:#209D50;border-radius:3px}
+.rings{display:flex;justify-content:space-around;align-items:center}
+.ring{position:relative;width:88px;height:88px}
+.ring svg{transform:rotate(-90deg)}
+.ring circle{fill:none;stroke:#E1DFD9;stroke-width:9}
+.ring circle.fg{stroke:#209D50;stroke-linecap:round}
+.ring .in{position:absolute;inset:0;display:grid;place-content:center;text-align:center;line-height:1}
+.ring .in b{font-size:22px;font-weight:800}.ring .in span{font-size:10.5px;color:#61675E}
+.cap{text-align:center;font-size:12px;font-weight:700;color:#61675E;margin-top:6px}
+.obs{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid #E6E3DC}
+.obs .time{width:40px;font-size:12px;color:#61675E;font-weight:700;padding-top:3px}
+.th{width:46px;height:46px;border-radius:13px;background-size:cover;background-position:center;flex:none}
+.obs .name{font-weight:700;font-size:14.5px}.obs .meta{font-size:12px;color:#61675E}
+.day{display:flex;justify-content:space-between;align-items:baseline;font-weight:800;font-size:15px;margin:12px 2px 4px}
+.fab{position:absolute;right:16px;bottom:90px;height:46px;padding:0 18px 0 14px;border-radius:23px;background:#209D50;color:#fff;font-weight:800;font-size:14px;display:flex;align-items:center;gap:6px;box-shadow:0 8px 20px -6px #209D5099}
+/* learn */
+.chap{display:flex;gap:12px;align-items:center;padding:14px;background:#fff;border-radius:16px;box-shadow:0 1px 0 #E6E3DC;margin-bottom:10px}
+.chap .ill{width:64px;height:64px;border-radius:16px;flex:none;background:#E1F0E6;color:#15753A;display:grid;place-items:center;overflow:hidden;position:relative}
+.chap .ill .p{position:absolute;width:50%;height:50%;background-size:cover;background-position:center}
+.chap .tx{flex:1;min-width:0}
+.chap .tx b{display:block;font-size:16px;font-weight:800;line-height:1.15}
+.chap .tx span{display:block;font-size:12.5px;color:#61675E;margin-top:3px}
+.chap.soon{opacity:.55}
+.chap.soon .ill{background:#E1DFD9;color:#61675E}
+.tag{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;padding:2px 7px;border-radius:999px;background:#E1DFD9;color:#61675E;margin-top:5px}
+.tag.est{background:#FBEFD3;color:#8F5D05}
+.hero{background:#1D231C;color:#F4F2EC;border-radius:18px;padding:16px 16px 14px;margin-bottom:10px}
+.hero b{font-size:17px;font-weight:800}
+.hero p{margin:4px 0 0;font-size:13px;color:#b9bfb5;line-height:1.4}
+.sp{display:grid;grid-template-columns:46px 1fr auto;gap:10px;align-items:center;padding:9px 0;border-bottom:1px solid #E6E3DC}
+.sp:last-child{border:0}
+.sp .nm{font-weight:800;font-size:14.5px;line-height:1.1}
+.sp .nm small{display:block;font-weight:600;font-size:11.5px;color:#61675E;margin-top:2px}
+.sp .nums{text-align:right;line-height:1.1}
+.sp .nums b{font-size:15px;font-weight:800}
+.sp .nums span{display:block;font-size:11px;color:#61675E;margin-top:2px}
+.rem{display:flex;align-items:center;gap:6px;margin-top:5px}
+.rem .tr{flex:1;height:6px;border-radius:3px;background:#E1DFD9;overflow:hidden;position:relative}
+.rem .tr i{position:absolute;left:0;top:0;bottom:0;background:#209D50;border-radius:3px;min-width:3px}
+.rem em{font-style:normal;font-size:11px;font-weight:800;color:#15753A;width:38px;text-align:right}
+.rem em.lo{color:#B3261E}
+.legend{display:flex;gap:12px;font-size:11.5px;color:#61675E;font-weight:600;padding:4px 2px 10px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;vertical-align:-1px;margin-right:4px}
+/* detail chart */
+.chart{position:relative;margin:8px -4px 0}
+.chart svg{display:block;width:100%;height:auto}
+.axis{font-size:10.5px;fill:#61675E;font-weight:700}
+.pt{fill:#209D50}
+.lbl{font-size:11px;font-weight:800;fill:#1D231C}
+.est{fill:#F5C518;opacity:.28}
+.esttxt{font-size:10.5px;font-weight:800;fill:#8F5D05}
+.big{display:flex;align-items:baseline;gap:8px}
+.big b{font-size:34px;font-weight:800;letter-spacing:-.8px}
+.big span{font-size:13px;color:#61675E}
+.cty{display:grid;grid-template-columns:1fr auto;gap:2px 10px;font-size:13.5px;padding:6px 0;border-bottom:1px solid #E6E3DC;align-items:center}
+.cty:last-child{border:0}
+.cty .b{grid-column:1/-1;height:4px;border-radius:2px;background:#E1DFD9;overflow:hidden}
+.cty .b i{display:block;height:100%;background:#209D50}
+.cty b{font-weight:800}
+.cty small{color:#61675E;font-size:11px;margin-left:4px}
+.src{font-size:11.5px;color:#61675E;line-height:1.4;margin-top:8px}
+.src u{text-decoration:none;color:#15753A;font-weight:700}
+.sw{display:inline-block;width:9px;height:9px;border-radius:3px;margin-right:6px;vertical-align:0}
+.r{text-align:right;padding:6px 0 6px 6px;border-top:1px solid #E6E3DC;white-space:nowrap}
+.sl{font-size:10.5px;font-weight:800}
+.sw{display:inline-block;width:9px;height:9px;border-radius:3px;margin-right:6px;vertical-align:0}
+.r{text-align:right;padding:6px 0 6px 6px;border-top:1px solid #E6E3DC;white-space:nowrap}
+.sl{font-size:10.5px;font-weight:800}
+.sw{display:inline-block;width:9px;height:9px;border-radius:3px;margin-right:6px;vertical-align:0}
+.r{text-align:right;padding:6px 0 6px 6px;border-top:1px solid #E6E3DC;white-space:nowrap}
+.sl{font-size:10.5px;font-weight:800}
+.sec{font-size:17px;font-weight:800;margin:18px 2px 8px}
+</style></head><body>
+<h1>Askari · <span>un onglet pour apprendre</span></h1>
+<p class="lead">Journal fusionne dans Stats, ce qui libère la sixième place pour une section « Learn » faite de chapitres. Le premier chapitre est celui qu'on vient de documenter : les grands animaux de Pidwa à l'échelle de l'Afrique, aujourd'hui et depuis 1800. Les suivants (argent, tourisme, chasse aux trophées, usage des terres) viendront dans la même structure. Quatre écrans, dans l'ordre où on les parcourt.</p>
+
+<div class="frames">
+
+<!-- 1 · Stats + Journal -->
+<figure>
+<div class="phone"><div class="scr">
+  <div class="top"><i class="mark"></i><span class="bn"><b>Askari</b><small>Pidwa Wilderness Reserve</small></span><span class="gear"><svg class="i" width="20" height="20" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/></svg></span></div>
+  <div class="tabs"><b>Stats</b><b class="on">Journal</b></div>
+  <div class="card rings" style="padding:12px 8px">
+    <div><div class="ring"><svg width="88" height="88" viewBox="0 0 88 88"><circle cx="44" cy="44" r="38"/><circle class="fg" cx="44" cy="44" r="38" stroke-dasharray="238.8" stroke-dashoffset="176"/></svg><div class="in"><b>64</b><span>of 241</span></div></div><div class="cap">Birds · 27 %</div></div>
+    <div><div class="ring"><svg width="88" height="88" viewBox="0 0 88 88"><circle cx="44" cy="44" r="38"/><circle class="fg" cx="44" cy="44" r="38" stroke-dasharray="238.8" stroke-dashoffset="112"/></svg><div class="in"><b>29</b><span>of 55</span></div></div><div class="cap">Mammals · 53 %</div></div>
+    <div style="text-align:center;line-height:1.1"><b style="font-size:22px">118</b><div class="muted small">observations</div><b style="font-size:22px;display:block;margin-top:8px">9</b><div class="muted small">days out</div></div>
+  </div>
+  <div class="day">Thu 9 Oct<span class="muted small">14 obs · 11 species</span></div>
+  <div class="card" style="padding:4px 14px">
+    <div class="obs"><div class="time">17:42</div><i class="th" style="background-image:url(../data/out/thumbs/lycaon-pictus.webp)"></i><div><div class="name">African wild dog ×7</div><div class="meta">Lycaon · Nkele dam, pack resting</div><div class="meta">-24.1032, 30.9201 · ±8 m</div></div></div>
+    <div class="obs"><div class="time">16:05</div><i class="th" style="background-image:url(../data/out/thumbs/ceratotherium-simum.webp)"></i><div><div class="name">White rhinoceros ×2</div><div class="meta">Rhinocéros blanc</div><div class="meta">-24.0987, 30.9140 · ±6 m</div></div></div>
+    <div class="obs" style="border:0"><div class="time">06:50</div><i class="th" style="background-image:url(../data/out/thumbs/melierax-metabates.webp)"></i><div><div class="name">Dark chanting goshawk</div><div class="meta">Autour sombre</div><div class="meta">no position</div></div></div>
+  </div>
+  <div class="day">Wed 8 Oct<span class="muted small">9 obs · 8 species</span></div>
+  <div class="card" style="padding:4px 14px">
+    <div class="obs" style="border:0"><div class="time">18:10</div><i class="th" style="background-image:url(../data/out/thumbs/panthera-leo.webp)"></i><div><div class="name">Lion ×3</div><div class="meta">Lion · two females, one cub</div><div class="meta">-24.1101, 30.9302 · ±12 m</div></div></div>
+  </div>
+  <div class="fab"><svg class="i" width="18" height="18" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></svg>Observation</div>
+</div>
+<div class="nav">
+  <a><span class="pill"><svg class="i" width="22" height="22" viewBox="0 0 24 24"><path d="m3 17 2 2 4-4"/><path d="m3 7 2 2 4-4"/><path d="M13 6h8"/><path d="M13 12h8"/><path d="M13 18h8"/></svg></span>List</a>
+  <a><span class="pill"><svg class="i" width="22" height="22" viewBox="0 0 24 24"><path d="M10 10h4"/><path d="M19 7V4a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v3"/><path d="M20 21a2 2 0 0 0 2-2v-3.851c0-1.39-2-2.962-2-4.829V8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v11a2 2 0 0 0 2 2z"/><path d="M 22 16 L 2 16"/><path d="M4 21a2 2 0 0 1-2-2v-3.851c0-1.39 2-2.962 2-4.829V8a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v11a2 2 0 0 1-2 2z"/><path d="M9 7V4a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1v3"/></svg></span>Guide</a>
+  <a><span class="pill"><svg class="i" width="22" height="22" viewBox="0 0 24 24"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg></span>Listen</a>
+  <a><span class="pill"><svg class="i" width="22" height="22" viewBox="0 0 24 24"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"/><path d="M15 5.764v15"/><path d="M9 3.236v15"/></svg></span>Map</a>
+  <a class="on"><span class="pill"><svg class="i" width="22" height="22" viewBox="0 0 24 24"><path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4"/><path d="M2 6h4"/><path d="M2 10h4"/><path d="M2 14h4"/><path d="M2 18h4"/><path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"/></svg></span>Journal</a>
+  <a class="new"><span class="pill"><svg class="i" width="22" height="22" viewBox="0 0 24 24"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg></span>Learn</a>
+</div></div>
+<figcaption><b class="t">1 · Journal et Stats réunis</b>
+Un seul onglet, nommé <b>Journal</b> avec son icône carnet, parce que c'est l'usage terrain qui doit rester à un tap. Un segment en haut bascule entre les observations et les stats. Le bouton Observation reste. Le nouvel onglet <b>Learn</b> prend la sixième place (pointillé vert, juste pour la maquette).
+<ul><li class="p"><i>+</i>Rien ne disparaît, les deux écrans existants restent tels quels sous un segment.</li><li class="m"><i>−</i>Les stats sont à deux taps au lieu d'un. Elles se consultent rarement sur le terrain, ça me paraît acceptable.</li></ul>
+Autres noms possibles pour l'onglet : « Field », « Me », ou garder « Stats ».</figcaption>
+</figure>
+
+<!-- 2 · Learn home -->
+<figure>
+<div class="phone"><div class="scr">
+  <div class="top"><i class="mark"></i><span class="bn"><b>Askari</b><small>Pidwa Wilderness Reserve</small></span><span class="gear"><svg class="i" width="20" height="20" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/></svg></span></div>
+  <div class="hero"><b>Learn</b><p>Short, sourced chapters on what you see at Pidwa and the bigger picture behind it. Every number links to where it comes from.</p></div>
+  <div class="chap">
+    <div class="ill"><i class="p" style="left:0;top:0;background-image:url(../data/out/thumbs/diceros-bicornis.webp)"></i><i class="p" style="right:0;top:0;background-image:url(../data/out/thumbs/panthera-leo.webp)"></i><i class="p" style="left:0;bottom:0;background-image:url(../data/out/thumbs/lycaon-pictus.webp)"></i><i class="p" style="right:0;bottom:0;background-image:url(../data/out/thumbs/giraffa-camelopardalis.webp)"></i></div>
+    <div class="tx"><b>How many are left?</b><span>Nine of Pidwa's big animals counted across Africa, by country, and what the continent held in 1800.</span><span class="tag">9 species · 2024-2025 data</span></div>
+    <svg class="i" width="20" height="20" viewBox="0 0 24 24" style="color:#61675E"><path d="m9 18 6-6-6-6"/></svg>
+  </div>
+  <div class="chap soon">
+    <div class="ill"><svg class="i" width="28" height="28" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></svg></div>
+    <div class="tx"><b>Who pays for the wild?</b><span>Park budgets, tourism revenue, donors and what a rhino costs to protect.</span><span class="tag">coming</span></div>
+  </div>
+  <div class="chap soon">
+    <div class="ill"><svg class="i" width="28" height="28" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+    <div class="tx"><b>Trophy hunting</b><span>What is hunted, where the money goes, and what the science says.</span><span class="tag">coming</span></div>
+  </div>
+  <div class="chap soon">
+    <div class="ill"><svg class="i" width="28" height="28" viewBox="0 0 24 24"><path d="M10 10v.2A3 3 0 0 1 8.9 16H5a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z"/><path d="M7 16v6"/><path d="M13 19v3"/><path d="M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-1.4 1.5"/></svg></div>
+    <div class="tx"><b>Land in South Africa</b><span>Farms, game reserves, national parks and communal land: who owns what, and how it changed.</span><span class="tag">coming</span></div>
+  </div>
+</div>
+<div class="nav">
+  <a><span class="pill"><svg class="i" width="22" height="22" viewBox="0 0 24 24"><path d="m3 17 2 2 4-4"/><path d="m3 7 2 2 4-4"/><path d="M13 6h8"/><path d="M13 12h8"/><path d="M13 18h8"/></svg></span>List</a>
+  <a><span class="pill"><svg class="i" width="22" height="22" viewBox="0 0 24 24"><path d="M10 10h4"/><path d="M19 7V4a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v3"/><path d="M20 21a2 2 0 0 0 2-2v-3.851c0-1.39-2-2.962-2-4.829V8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v11a2 2 0 0 0 2 2z"/><path d="M 22 16 L 2 16"/><path d="M4 21a2 2 0 0 1-2-2v-3.851c0-1.39 2-2.962 2-4.829V8a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v11a2 2 0 0 1-2 2z"/><path d="M9 7V4a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1v3"/></svg></span>Guide</a>
+  <a><span class="pill"><svg class="i" width="22" height="22" viewBox="0 0 24 24"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg></span>Listen</a>
+  <a><span class="pill"><svg class="i" width="22" height="22" viewBox="0 0 24 24"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"/><path d="M15 5.764v15"/><path d="M9 3.236v15"/></svg></span>Map</a>
+  <a><span class="pill"><svg class="i" width="22" height="22" viewBox="0 0 24 24"><path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4"/><path d="M2 6h4"/><path d="M2 10h4"/><path d="M2 14h4"/><path d="M2 18h4"/><path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"/></svg></span>Journal</a>
+  <a class="on"><span class="pill"><svg class="i" width="22" height="22" viewBox="0 0 24 24"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg></span>Learn</a>
+</div></div>
+<figcaption><b class="t">2 · L'onglet Learn : des chapitres</b>
+Une liste de chapitres, chacun avec une illustration, un titre en forme de question et une phrase. Le premier est prêt, les trois autres sont des exemples de ce que tu as cité, grisés « coming ». Ajouter un chapitre plus tard, c'est ajouter une carte ici et un écran.
+<ul><li class="p"><i>+</i>Structure extensible sans retoucher la navigation.</li><li class="p"><i>+</i>Le texte d'intro annonce la règle : chaque chiffre a sa source.</li><li class="m"><i>−</i>Tant qu'il n'y a qu'un chapitre, l'écran paraît un peu vide. Je peux afficher les chapitres à venir grisés comme ici, ou ne montrer que ceux qui existent.</li></ul></figcaption>
+</figure>
+
+<!-- 3 · Chapter overview -->
+<figure>
+<div class="phone"><div class="scr">
+  <div class="sub"><span class="bk"><svg class="i" width="20" height="20" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg></span><div><h2>How many are left?</h2><small>Africa-wide · tap a species for countries and sources</small></div></div>
+  <div class="legend"><span><i style="background:#209D50"></i>today</span><span><i style="background:#E1DFD9"></i>around 1800, our estimate</span></div>
+  <div class="card" style="padding:4px 14px">
+    <div class="sp"><i class="th" style="background-image:url(../data/out/thumbs/loxodonta-africana.webp)"></i><div><div class="nm">Savanna elephant<small>≈ 20 million around 1800</small></div><div class="rem"><span class="tr"><i style="width:2%"></i></span><em class="lo">2 %</em></div></div><div class="nums"><b>415 000</b><span>2016</span></div></div>
+    <div class="sp"><i class="th" style="background-image:url(../data/out/thumbs/syncerus-caffer.webp)"></i><div><div class="nm">African buffalo<small>several million before rinderpest</small></div><div class="rem"><span class="tr"><i style="width:8%"></i></span><em class="lo">≈ 8 %</em></div></div><div class="nums"><b>564 000</b><span>2022</span></div></div>
+    <div class="sp"><i class="th" style="background-image:url(../data/out/thumbs/giraffa-camelopardalis.webp)"></i><div><div class="nm">Giraffe, 4 species<small>1 to 3 million around 1800</small></div><div class="rem"><span class="tr"><i style="width:7%"></i></span><em class="lo">≈ 7 %</em></div></div><div class="nums"><b>140 700</b><span>2025</span></div></div>
+    <div class="sp"><i class="th" style="background-image:url(../data/out/thumbs/panthera-pardus.webp)"></i><div><div class="nm">Leopard<small>no historical estimate</small></div><div class="rem"><span class="tr" style="background:repeating-linear-gradient(90deg,#E1DFD9 0 4px,#fff 4px 7px)"></span><em style="color:#61675E">?</em></div></div><div class="nums"><b>≈ 80 000</b><span>2026, 45 to 143 k</span></div></div>
+    <div class="sp"><i class="th" style="background-image:url(../data/out/thumbs/panthera-leo.webp)"></i><div><div class="nm">Lion<small>200 to 500 thousand around 1800</small></div><div class="rem"><span class="tr"><i style="width:7%"></i></span><em class="lo">≈ 7 %</em></div></div><div class="nums"><b>23 000</b><span>2023</span></div></div>
+    <div class="sp"><i class="th" style="background-image:url(../data/out/thumbs/ceratotherium-simum.webp)"></i><div><div class="nm">White rhinoceros<small>0.3 to 1 million around 1800</small></div><div class="rem"><span class="tr"><i style="width:2.5%"></i></span><em class="lo">≈ 2 %</em></div></div><div class="nums"><b>15 750</b><span>2024</span></div></div>
+    <div class="sp"><i class="th" style="background-image:url(../data/out/thumbs/acinonyx-jubatus.webp)"></i><div><div class="nm">Cheetah<small>50 to 150 thousand around 1800</small></div><div class="rem"><span class="tr"><i style="width:7%"></i></span><em class="lo">≈ 7 %</em></div></div><div class="nums"><b>7 100</b><span>2017</span></div></div>
+    <div class="sp"><i class="th" style="background-image:url(../data/out/thumbs/diceros-bicornis.webp)"></i><div><div class="nm">Black rhinoceros<small>0.5 to 1.5 million around 1800</small></div><div class="rem"><span class="tr"><i style="width:1%"></i></span><em class="lo">&lt; 1 %</em></div></div><div class="nums"><b>6 788</b><span>2024</span></div></div>
+    <div class="sp"><i class="th" style="background-image:url(../data/out/thumbs/lycaon-pictus.webp)"></i><div><div class="nm">African wild dog<small>65 to 200 thousand around 1800</small></div><div class="rem"><span class="tr"><i style="width:5%"></i></span><em class="lo">≈ 5 %</em></div></div><div class="nums"><b>6 600</b><span>2012, adults</span></div></div>
+  </div>
+  <div class="card"><b>How to read this</b><p class="muted" style="margin:4px 0 0;line-height:1.4">Today's figures are the latest IUCN or national counts. The 1800 figures are our own order-of-magnitude estimate, historic range × density, with the assumptions shown on each species. Treat the bar as a story, not a measurement.</p></div>
+</div>
+<div class="nav">
+  <a><span class="pill"><svg class="i" width="22" height="22" viewBox="0 0 24 24"><path d="m3 17 2 2 4-4"/><path d="m3 7 2 2 4-4"/><path d="M13 6h8"/><path d="M13 12h8"/><path d="M13 18h8"/></svg></span>List</a>
+  <a><span class="pill"><svg class="i" width="22" height="22" viewBox="0 0 24 24"><path d="M10 10h4"/><path d="M19 7V4a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v3"/><path d="M20 21a2 2 0 0 0 2-2v-3.851c0-1.39-2-2.962-2-4.829V8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v11a2 2 0 0 0 2 2z"/><path d="M 22 16 L 2 16"/><path d="M4 21a2 2 0 0 1-2-2v-3.851c0-1.39 2-2.962 2-4.829V8a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v11a2 2 0 0 1-2 2z"/><path d="M9 7V4a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1v3"/></svg></span>Guide</a>
+  <a><span class="pill"><svg class="i" width="22" height="22" viewBox="0 0 24 24"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg></span>Listen</a>
+  <a><span class="pill"><svg class="i" width="22" height="22" viewBox="0 0 24 24"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"/><path d="M15 5.764v15"/><path d="M9 3.236v15"/></svg></span>Map</a>
+  <a><span class="pill"><svg class="i" width="22" height="22" viewBox="0 0 24 24"><path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4"/><path d="M2 6h4"/><path d="M2 10h4"/><path d="M2 14h4"/><path d="M2 18h4"/><path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"/></svg></span>Journal</a>
+  <a class="on"><span class="pill"><svg class="i" width="22" height="22" viewBox="0 0 24 24"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg></span>Learn</a>
+</div></div>
+<figcaption><b class="t">3 · Le chapitre : neuf espèces, une barre chacune</b>
+L'écran qu'on montre aux copains. Une ligne par espèce : photo, nom, l'ordre de grandeur de 1800 en petit, la barre « ce qu'il en reste », le chiffre d'aujourd'hui avec son année. Triées de la plus nombreuse à la plus rare. Le léopard a une barre hachurée et un point d'interrogation, parce qu'on n'a rien d'honnête à mettre.
+<ul><li class="p"><i>+</i>Un seul coup d'œil raconte toute l'histoire : il reste 1 à 8 % de presque tout.</li><li class="m"><i>−</i>Toutes les barres sont presque vides, donc elles se ressemblent. C'est voulu, mais le détail par espèce (écran 4) doit apporter la nuance : qui remonte, qui baisse encore.</li></ul>
+La carte « How to read this » en bas est importante : elle dit que 1800 est notre estimation, pas une mesure.</figcaption>
+</figure>
+
+<!-- 4 · Species detail -->
+<figure>
+<div class="phone"><div class="scr">
+  <div class="sub"><span class="bk"><svg class="i" width="20" height="20" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg></span><i class="th" style="width:40px;height:40px;background-image:url(../data/out/thumbs/ceratotherium-simum.webp)"></i><div><h2>White rhinoceros</h2><small>Ceratotherium simum · Africa-wide</small></div></div>
+  <div class="card">
+    <div class="big"><b>15 750</b><span>end of 2024, IUCN rhino group</span></div>
+    <div class="row" style="gap:6px;margin-top:6px;flex-wrap:wrap"><span class="tag" style="background:#FBE9E7;color:#B3261E">−25 % since the 2012 peak</span><span class="tag">61 % on private land in South Africa</span></div>
+    <div class="chart" id="c1"></div>
+    <div class="row" style="justify-content:space-between;margin-top:2px"><span class="tag est">1800 · our estimate</span><span class="muted small">tap a point for its source</span></div>
+  </div>
+  <div class="sec">By country, end of 2024</div>
+  <div class="card" style="padding:6px 14px">
+    <div class="cty"><span>South Africa <small>12 082 · 39 % state land, 61 % private</small></span><b>77 %</b><span class="b"><i style="width:77%"></i></span></div>
+    <div class="cty"><span>Namibia</span><b>1 500</b><span class="b"><i style="width:9.5%"></i></span></div>
+    <div class="cty"><span>Kenya <small>incl. the last 2 northern white rhinos</small></span><b>1 043</b><span class="b"><i style="width:6.6%"></i></span></div>
+    <div class="cty"><span>Zimbabwe</span><b>536</b><span class="b"><i style="width:3.4%"></i></span></div>
+    <div class="cty"><span>Botswana</span><b>320</b><span class="b"><i style="width:2%"></i></span></div>
+    <div class="cty"><span>Eswatini, Zambia, Uganda, Mozambique, Rwanda, rest</span><b>271</b><span class="b"><i style="width:1.7%"></i></span></div>
+  </div>
+  <div class="card"><b>Where the numbers come from</b>
+    <p class="src">Today and by country: IUCN SSC African Rhino Specialist Group, report to CITES CoP20 (2025), table 3. <u>Open</u><br>1895 to 1997: Emslie &amp; Brooks 1999, IUCN; the 1895 figure of 20 is contested (Rookmaaker 2002: probably ≥ 200). <u>Open</u><br>Around 1800: our estimate, 2 to 2.8 million km² of historic range × 50 to 100 per 100 km² on a quarter of it, 5 to 10 elsewhere. <u>Assumptions</u></p>
+  </div>
+</div>
+<div class="nav">
+  <a><span class="pill"><svg class="i" width="22" height="22" viewBox="0 0 24 24"><path d="m3 17 2 2 4-4"/><path d="m3 7 2 2 4-4"/><path d="M13 6h8"/><path d="M13 12h8"/><path d="M13 18h8"/></svg></span>List</a>
+  <a><span class="pill"><svg class="i" width="22" height="22" viewBox="0 0 24 24"><path d="M10 10h4"/><path d="M19 7V4a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v3"/><path d="M20 21a2 2 0 0 0 2-2v-3.851c0-1.39-2-2.962-2-4.829V8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v11a2 2 0 0 0 2 2z"/><path d="M 22 16 L 2 16"/><path d="M4 21a2 2 0 0 1-2-2v-3.851c0-1.39 2-2.962 2-4.829V8a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v11a2 2 0 0 1-2 2z"/><path d="M9 7V4a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1v3"/></svg></span>Guide</a>
+  <a><span class="pill"><svg class="i" width="22" height="22" viewBox="0 0 24 24"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg></span>Listen</a>
+  <a><span class="pill"><svg class="i" width="22" height="22" viewBox="0 0 24 24"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"/><path d="M15 5.764v15"/><path d="M9 3.236v15"/></svg></span>Map</a>
+  <a><span class="pill"><svg class="i" width="22" height="22" viewBox="0 0 24 24"><path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4"/><path d="M2 6h4"/><path d="M2 10h4"/><path d="M2 14h4"/><path d="M2 18h4"/><path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"/></svg></span>Journal</a>
+  <a class="on"><span class="pill"><svg class="i" width="22" height="22" viewBox="0 0 24 24"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg></span>Learn</a>
+</div></div>
+<figcaption><b class="t">4 · Une espèce : la chute, les pays, les sources</b>
+Le chiffre d'aujourd'hui en grand, deux étiquettes, puis la courbe en échelle normale <b>qui part de 1800</b> : le point ambré est notre estimation avec sa barre d'incertitude, le pointillé descend jusqu'au premier vrai comptage, puis le trait vert mesuré reste au ras du sol. La chute saute aux yeux, c'est le but. Le détail des 130 dernières années (creux, pic de 2012, recul) se lit mal à cette échelle : un tap sur la courbe pourrait zoomer sur 1890 à aujourd'hui.
+<ul><li class="p"><i>+</i>La même carte peut s'afficher sur la fiche espèce, sous les traits, pour les neuf espèces concernées.</li><li class="p"><i>+</i>Chaque bloc de sources a son lien, et les hypothèses de 1800 sont écrites en clair.</li><li class="m"><i>−</i>Le bandeau 1800 prend une ligne, mais c'est lui qui donne la mesure du reste.</li></ul>
+Ma recommandation : les quatre écrans tels quels, avec la carte de l'écran 4 reprise sur la fiche espèce.</figcaption>
+</figure>
+
+<!-- 5 · All species on one chart -->
+<figure>
+<div class="phone"><div class="scr">
+  <div class="sub"><span class="bk"><svg class="i" width="20" height="20" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg></span><div><h2>All together</h2><small>From 1800 to today, one chart each</small></div></div>
+  <div class="tabs"><b class="on">Curves</b><b>Table</b></div>
+  <div class="card" style="padding:8px">
+    <div class="chart" id="c2" style="margin:0"></div>
+    <p class="muted small" style="margin:6px 6px 0;line-height:1.35">The amber point is our 1800 estimate with its range; dotted until the first real count. Each chart has its own scale. Leopard has no usable history and is in the table only.</p>
+  </div>
+  <div class="sec">Same thing, as numbers</div>
+  <div class="card" style="padding:4px 12px;overflow:hidden">
+    <table style="width:100%;border-collapse:collapse;font-size:12.5px">
+      <tr style="color:#61675E;font-size:10.5px;text-transform:uppercase;letter-spacing:.6px"><th style="text-align:left;padding:8px 0 6px;font-weight:800">Species</th><th style="text-align:right;font-weight:800">1800*</th><th style="text-align:right;font-weight:800">~1975</th><th style="text-align:right;font-weight:800">~2000</th><th style="text-align:right;font-weight:800">Now</th></tr>
+      <tr><td style="padding:6px 0;border-top:1px solid #E6E3DC"><i class="sw" style="background:#2a78d6"></i>Elephant</td><td class="r">20 M</td><td class="r">1.3 M</td><td class="r">580 k</td><td class="r"><b>415 k</b></td></tr><tr><td style="padding:6px 0;border-top:1px solid #E6E3DC"><i class="sw" style="background:#eb6834"></i>Buffalo</td><td class="r">9.5 M</td><td class="r">–</td><td class="r">625 k</td><td class="r"><b>564 k</b></td></tr><tr><td style="padding:6px 0;border-top:1px solid #E6E3DC"><i class="sw" style="background:#1baf7a"></i>Giraffe</td><td class="r">1.9 M</td><td class="r">158 k</td><td class="r">164 k</td><td class="r"><b>141 k</b></td></tr><tr><td style="padding:6px 0;border-top:1px solid #E6E3DC"><i class="sw" style="background:#eda100"></i>Lion</td><td class="r">340 k</td><td class="r">92 k</td><td class="r">31 k</td><td class="r"><b>23 k</b></td></tr><tr><td style="padding:6px 0;border-top:1px solid #E6E3DC"><i class="sw" style="background:#e87ba4"></i>Cheetah</td><td class="r">100 k</td><td class="r">15 k</td><td class="r">10 k</td><td class="r"><b>7 100</b></td></tr><tr><td style="padding:6px 0;border-top:1px solid #E6E3DC"><i class="sw" style="background:#008300"></i>Wild dog</td><td class="r">130 k</td><td class="r">–</td><td class="r">4 200</td><td class="r"><b>6 600</b></td></tr><tr><td style="padding:6px 0;border-top:1px solid #E6E3DC"><i class="sw" style="background:#4a3aa7"></i>Black rhino</td><td class="r">1 M</td><td class="r">65 k</td><td class="r">2 400</td><td class="r"><b>6 788</b></td></tr><tr><td style="padding:6px 0;border-top:1px solid #E6E3DC"><i class="sw" style="background:#e34948"></i>White rhino</td><td class="r">600 k</td><td class="r">1 800</td><td class="r">7 500</td><td class="r"><b>15 750</b></td></tr><tr><td style="padding:6px 0;border-top:1px solid #E6E3DC"><i class="sw" style="background:#E1DFD9"></i>Leopard</td><td class="r">?</td><td class="r">?</td><td class="r">?</td><td class="r"><b>≈ 80 k</b></td></tr>
+    </table>
+    <p class="muted" style="font-size:11px;margin:6px 0 8px">* our estimate, central value of a wide range.</p>
+  </div>
+</div>
+<div class="nav">
+  <a><span class="pill"><svg class="i" width="22" height="22" viewBox="0 0 24 24"><path d="m3 17 2 2 4-4"/><path d="m3 7 2 2 4-4"/><path d="M13 6h8"/><path d="M13 12h8"/><path d="M13 18h8"/></svg></span>List</a>
+  <a><span class="pill"><svg class="i" width="22" height="22" viewBox="0 0 24 24"><path d="M10 10h4"/><path d="M19 7V4a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v3"/><path d="M20 21a2 2 0 0 0 2-2v-3.851c0-1.39-2-2.962-2-4.829V8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v11a2 2 0 0 0 2 2z"/><path d="M 22 16 L 2 16"/><path d="M4 21a2 2 0 0 1-2-2v-3.851c0-1.39 2-2.962 2-4.829V8a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v11a2 2 0 0 1-2 2z"/><path d="M9 7V4a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1v3"/></svg></span>Guide</a>
+  <a><span class="pill"><svg class="i" width="22" height="22" viewBox="0 0 24 24"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg></span>Listen</a>
+  <a><span class="pill"><svg class="i" width="22" height="22" viewBox="0 0 24 24"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"/><path d="M15 5.764v15"/><path d="M9 3.236v15"/></svg></span>Map</a>
+  <a><span class="pill"><svg class="i" width="22" height="22" viewBox="0 0 24 24"><path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4"/><path d="M2 6h4"/><path d="M2 10h4"/><path d="M2 14h4"/><path d="M2 18h4"/><path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"/></svg></span>Journal</a>
+  <a class="on"><span class="pill"><svg class="i" width="22" height="22" viewBox="0 0 24 24"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg></span>Learn</a>
+</div></div>
+
+<figcaption><b class="t">5 · Toutes les espèces, chacune sa chute</b>
+Huit vignettes, une par espèce, chacune en échelle normale depuis 1800. Le point ambré est l'estimation de 1800, le pointillé la descente jusqu'au premier comptage, le trait vert la période mesurée. Toutes les courbes font la même chose, tomber, et c'est le message. Le tableau en dessous donne les valeurs et accueille le léopard.
+<ul><li class="p"><i>+</i>Lisible sans explication : une courbe qui monte, c'est une espèce qui va mieux.</li><li class="p"><i>+</i>Les deux rhinos et le lycaon remontent, le lion et l'éléphant baissent, ça se voit en une seconde.</li><li class="m"><i>−</i>On ne compare pas les hauteurs entre vignettes, seulement les formes. Le tableau en dessous donne les valeurs.</li></ul>
+Je placerais cet écran en tête du chapitre, avant la liste des neuf espèces de l'écran 3.</figcaption>
+</figure>
+
+</div>
+
+<script>
+// Screen 4: southern white rhino, LINEAR, with the 1800 estimate plotted so the fall is visible.
+(function(){
+  const est={lo:280000,mid:600000,hi:1000000};
+  const pts=[[1895,200],[1929,150],[1948,550],[1968,1800],[1984,3800],[1995,7530],[2001,11640],[2010,20160],[2012,20424],[2017,18064],[2024,15750]];
+  const W=372,H=210,L=40,R=14,T=16,B=26,X0=1800,X1=2026,YM=1050000;
+  const x=y=>L+(y-X0)/(X1-X0)*(W-L-R);
+  const ly=v=>T+(1-v/YM)*(H-T-B);
+  let s='<svg viewBox="0 0 '+W+' '+H+'">';
+  [0,250000,500000,750000,1000000].forEach(v=>{s+='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+ly(v)+'" y2="'+ly(v)+'" stroke="#E6E3DC"/><text class="axis" x="'+(L-5)+'" y="'+(ly(v)+3.5)+'" text-anchor="end">'+(v?(v/1000)+'k':'0')+'</text>';});
+  // 1800: uncertainty bar + point
+  s+='<line x1="'+x(1800)+'" x2="'+x(1800)+'" y1="'+ly(est.hi)+'" y2="'+ly(est.lo)+'" stroke="#8F5D05" stroke-width="6" stroke-linecap="round" opacity=".35"/>';
+  s+='<circle cx="'+x(1800)+'" cy="'+ly(est.mid)+'" r="5" fill="#F5C518" stroke="#8F5D05" stroke-width="2"/>';
+  s+='<text class="esttxt" x="'+(x(1800)+12)+'" y="'+(ly(est.mid)-6)+'">≈ 600 000 around 1800</text>';
+  s+='<text class="axis" x="'+(x(1800)+12)+'" y="'+(ly(est.mid)+8)+'">our estimate, 0.3 to 1 M</text>';
+  // dotted fall to the first count
+  s+='<path d="M'+x(1800)+' '+ly(est.mid)+' L'+x(1895)+' '+ly(200)+'" stroke="#8F5D05" stroke-width="2" stroke-dasharray="3 5" fill="none"/>';
+  // measured line
+  s+='<path d="'+pts.map((p,i)=>(i?'L':'M')+x(p[0])+' '+ly(p[1])).join(' ')+'" stroke="#209D50" stroke-width="2.4" fill="none" stroke-linejoin="round"/>';
+  s+='<circle class="pt" cx="'+x(1895)+'" cy="'+ly(200)+'" r="4" stroke="#fff" stroke-width="2"/>';
+  s+='<circle class="pt" cx="'+x(2024)+'" cy="'+ly(15750)+'" r="4" stroke="#fff" stroke-width="2"/>';
+  s+='<text class="lbl" x="'+(x(1895)-2)+'" y="'+(ly(200)-9)+'" text-anchor="middle">≈ 200</text>';
+  s+='<text class="lbl" x="'+(x(2024))+'" y="'+(ly(15750)-10)+'" text-anchor="end">15 750 today</text>';
+  [1800,1850,1900,1950,2000].forEach(v=>{s+='<text class="axis" x="'+x(v)+'" y="'+(H-8)+'" text-anchor="middle">'+v+'</text>';});
+  s+='</svg>';
+  document.getElementById('c1').innerHTML=s;
+})();
+// Screen 5: small multiples, each linear from the 1800 estimate down to today.
+(function(){
+  const S=[
+    ['Elephant',20000,[13500,27000],[[1900,5000],[1979,1340],[1995,580],[2016,415]],'20 M','415 k'],
+    ['Buffalo',9500,[4600,15800],[[1998,625],[2014,487],[2022,564]],'9.5 M','564 k'],
+    ['Giraffe',1900,[700,3700],[[1985,158],[1995,164],[2015,98],[2025,141]],'1.9 M','141 k'],
+    ['Lion',340,[175,550],[[1970,92],[2002,31],[2023,23]],'340 k','23 k'],
+    ['Cheetah',100,[48,165],[[1975,15],[1995,10.5],[2008,7.5],[2017,7.1]],'100 k','7 100'],
+    ['Wild dog',130,[65,220],[[1988,5],[1997,4.2],[2012,6.6]],'130 k','6 600'],
+    ['Black rhino',1000,[500,1750],[[1970,65],[1980,14.8],[1995,2.4],[2010,4.9],[2024,6.8]],'1 M','6 788'],
+    ['White rhino',600,[280,1000],[[1895,0.2],[1968,1.8],[1995,7.5],[2012,20.4],[2024,15.75]],'600 k','15 750'],
+  ];
+  const W=372, cw=180, ch=112, gx=12, gy=10, pad={l:8,r:8,t:22,b:16};
+  const X0=1800,X1=2026;
+  let out='<svg viewBox="0 0 '+W+' '+(4*(ch+gy))+'">';
+  S.forEach(([n,mid,rng,p,estTxt,now],i)=>{
+    const ox=(i%2)*(cw+gx), oy=Math.floor(i/2)*(ch+gy);
+    const ym=rng[1]*1.05;
+    const x=y=>ox+pad.l+(y-X0)/(X1-X0)*(cw-pad.l-pad.r);
+    const ly=v=>oy+pad.t+(1-v/ym)*(ch-pad.t-pad.b);
+    out+='<rect x="'+ox+'" y="'+oy+'" width="'+cw+'" height="'+ch+'" rx="12" fill="#F4F2EC"/>';
+    out+='<text x="'+(ox+10)+'" y="'+(oy+15)+'" style="font-size:12px;font-weight:800" fill="#1D231C">'+n+'</text>';
+    out+='<line x1="'+(ox+pad.l)+'" x2="'+(ox+cw-pad.r)+'" y1="'+ly(0)+'" y2="'+ly(0)+'" stroke="#E1DFD9"/>';
+    out+='<line x1="'+x(1800)+'" x2="'+x(1800)+'" y1="'+ly(rng[1])+'" y2="'+ly(rng[0])+'" stroke="#8F5D05" stroke-width="5" stroke-linecap="round" opacity=".35"/>';
+    out+='<circle cx="'+x(1800)+'" cy="'+ly(mid)+'" r="3.5" fill="#F5C518" stroke="#8F5D05" stroke-width="1.5"/>';
+    out+='<text class="esttxt" x="'+(x(1800)+9)+'" y="'+(ly(mid)+4)+'">'+estTxt+'</text>';
+    out+='<path d="M'+x(1800)+' '+ly(mid)+' L'+x(p[0][0])+' '+ly(p[0][1])+'" stroke="#8F5D05" stroke-width="1.5" stroke-dasharray="2 4" fill="none"/>';
+    out+='<path d="'+p.map((q,j)=>(j?'L':'M')+x(q[0])+' '+ly(q[1])).join(' ')+'" stroke="#209D50" stroke-width="2.2" fill="none" stroke-linejoin="round"/>';
+    out+='<circle cx="'+x(p[p.length-1][0])+'" cy="'+ly(p[p.length-1][1])+'" r="3" fill="#209D50" stroke="#fff" stroke-width="1.2"/>';
+    out+='<text x="'+(ox+cw-8)+'" y="'+(ly(0)-7)+'" text-anchor="end" style="font-size:11.5px;font-weight:800" fill="#15753A">'+now+'</text>';
+    out+='<text class="axis" x="'+x(1800)+'" y="'+(oy+ch-4)+'" text-anchor="start">1800</text><text class="axis" x="'+x(1900)+'" y="'+(oy+ch-4)+'" text-anchor="middle">1900</text><text class="axis" x="'+x(2024)+'" y="'+(oy+ch-4)+'" text-anchor="end">now</text>';
+  });
+  out+='</svg>';
+  document.getElementById('c2').innerHTML=out;
+})();
+</script>
+</body></html>

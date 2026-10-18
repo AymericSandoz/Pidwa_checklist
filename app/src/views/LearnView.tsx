@@ -6,6 +6,9 @@ import { POPS, popById, fmtN, type Pop } from '../learn/populations';
 import { LandView } from './LandView';
 import { FencesView } from './FencesView';
 import { QuizView } from './QuizView';
+import { VeldView } from './VeldView';
+import { BushView } from './BushView';
+import { ClimateView } from './ClimateView';
 
 /* ---------- charts: linear, from the c.1800 estimate down to today ---------- */
 
@@ -61,6 +64,12 @@ const CHAPTERS = [
   { id: 'left', title: 'How many are left?', blurb: "Nine of Pidwa's big animals counted across Africa, by country, and what the continent held in 1800.", tag: '9 species · 2024-2025 data', ready: true },
   { id: 'land', title: 'Land in South Africa', blurb: 'Farms, game ranches, parks and communal land: who uses what, who protects what, and how it got this way.', tag: '122 M ha · 2014-2024 data', ready: true },
   { id: 'fences', title: 'Fences', blurb: 'Why the bush is full of wire, what it costs, how the shock works, and who dies on it.', tag: 'short read', ready: true },
+  { id: 'veld', title: 'Reading the grass', blurb: 'Decreasers, Increasers I, II and III: what the grasses under your feet say about how the veld has been used.', tag: '18 key grasses · Kruger method', ready: true },
+  { id: 'bush', title: 'Bush encroachment', blurb: 'Too many trees or not enough? Why the bush thickens, and the argument over what to do about it.', tag: 'fire, elephants, CO2 · with Pidwa', ready: true },
+  { id: 'climate', title: 'Climate change', blurb: 'Heat, drought and rain in the Lowveld: what is already changing and what it does to the bush.', tag: 'Kruger drought 2015-16 in detail', ready: true },
+  { id: 'tracks', title: 'Tracks and signs', blurb: 'Spoor, dung, feeding signs and what they tell you about who passed and when.', ready: false },
+  { id: 'firstaid', title: 'First aid: bites and stings', blurb: 'Snakes, spiders and scorpions: which ones matter, and what to do and not do.', ready: false },
+  { id: 'vehicles', title: 'Safari vehicles', blurb: 'Land Rover, Toyota and the rest: what a game viewer is built from and why.', ready: false },
   { id: 'money', title: 'Who pays for the wild?', blurb: 'Park budgets, tourism revenue, donors and what a rhino costs to protect.', ready: false },
   { id: 'hunting', title: 'Trophy hunting', blurb: 'What is hunted, where the money goes, and what the science says.', ready: false },
 ];
@@ -71,6 +80,9 @@ export function LearnView() {
   if (parts[1] === 'left') return <LearnChapter />;
   if (parts[1] === 'land') return <LandView />;
   if (parts[1] === 'fences') return <FencesView />;
+  if (parts[1] === 'veld') return <VeldView />;
+  if (parts[1] === 'bush') return <BushView />;
+  if (parts[1] === 'climate') return <ClimateView />;
   if (parts[1] === 'quiz') return <QuizView />;
   return (
     <div>
@@ -82,7 +94,7 @@ export function LearnView() {
       </a>
       {CHAPTERS.map((c) => (
         <a class={'chap' + (c.ready ? '' : ' soon')} href={c.ready ? href('learn/' + c.id) : undefined}>
-          <div class="ill">{c.id === 'fences' ? <span class="minfence"><i /><i /><i /><i class="l" /><i /><i class="t" /></span> : c.id === 'land' ? <span class="minwaffle">{['game','game','graze','graze','graze','graze','graze','communal','communal','parks','parks','urban','crops','crops','water','timber'].map((k) => <i class={'lu-' + k} />)}</span> : c.ready ? POPS.slice(0, 4).map((p) => { const s = byId.value.get(p.id); const u = s && thumbUrl(s); return u ? <i style={`background-image:url(${u})`} /> : <i />; }) : <Icon name="book-open" size={26} />}</div>
+          <div class="ill">{c.id === 'climate' ? <Icon name="sun" size={28} /> : c.id === 'bush' ? <svg class="minbush" viewBox="0 0 46 38"><circle cx="9" cy="29" r="7" /><circle cx="22" cy="30" r="6" /><circle cx="15" cy="23" r="6" /><line x1="35" y1="36" x2="35" y2="14" /><ellipse cx="35" cy="11" rx="11" ry="6" fill="currentColor" /></svg> : c.id === 'veld' ? <span class="mingrass"><i /><i /><i /><i /><i /><i /></span> : c.id === 'fences' ? <span class="minfence"><i /><i /><i /><i class="l" /><i /><i class="t" /></span> : c.id === 'land' ? <span class="minwaffle">{['game','game','graze','graze','graze','graze','graze','communal','communal','parks','parks','urban','crops','crops','water','timber'].map((k) => <i class={'lu-' + k} />)}</span> : c.ready ? POPS.slice(0, 4).map((p) => { const s = byId.value.get(p.id); const u = s && thumbUrl(s); return u ? <i style={`background-image:url(${u})`} /> : <i />; }) : <Icon name="book-open" size={26} />}</div>
           <div class="tx"><b>{c.title}</b><span>{c.blurb}</span><span class="tag">{c.ready ? c.tag : 'coming'}</span></div>
           {c.ready && <Icon name="chevron-right" size={20} />}
         </a>
