@@ -1,6 +1,6 @@
 import { species } from '../data';
 import { href } from '../router';
-import { birdInfo, STATUS_LABEL, hereNow, migKind, rarity, RARITY_LABEL, fmtCommon } from '../learn/birds';
+import { birdInfo, STATUS_LABEL, hereNow, migKind, rarity, RARITY_LABEL, fmtCommon, birdSort, SORT_LABEL, NEXT_SORT } from '../learn/birds';
 import type { BirdInfo } from '../learn/birds';
 import { Icon } from './Icon';
 import { Thumb } from './Thumb';
@@ -76,6 +76,24 @@ export function MigBadge({ id }: { id: string }) {
 }
 
 const RARITY_TONE = { 'very-common': ' ok', 'common': ' ok', 'uncommon': '', 'scarce': ' warn', 'rare': ' warn' };
+
+/** The sort button of the bird list and the ID guide: A-Z, rarest, commonest, round and round. */
+export function SortButton({ class: cls = '' }: { class?: string }) {
+  const v = birdSort.value;
+  return (
+    <button class={'chip sortbtn ' + cls + (v !== 'az' ? ' on' : '')} aria-label={'Sort: ' + SORT_LABEL[v]}
+      onClick={() => { birdSort.value = NEXT_SORT[v]; localStorage.setItem('sort', birdSort.value); }}>
+      <Icon name="arrow-down-up" size={14} stroke={2.4} />{SORT_LABEL[v]}
+    </button>
+  );
+}
+
+/** "Rare, 0.4%": the level and rate shown in place of the family when a list is sorted by rarity. */
+export const rarityText = (id: string) => {
+  const b = birdInfo.value.get(id);
+  const r = b && rarity(b);
+  return r ? `${RARITY_LABEL[r]}, ${fmtCommon(b!.common!)}` : null;
+};
 
 /** How common the bird is around Pidwa, for the pills of the species page. */
 export function RarityPill({ id }: { id: string }) {

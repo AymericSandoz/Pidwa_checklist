@@ -6,6 +6,8 @@ import { BIRD_GROUPS, groupOf, familyEn } from '../taxa';
 import { COLOURS, BIRD_COLOURS } from '../colours';
 import { Icon } from '../components/Icon';
 import { SearchBox } from '../components/SearchBox';
+import { SortButton, rarityText } from '../components/BirdSection';
+import { birdInfo, birdSort, rarityCompare } from '../learn/birds';
 import type { Species } from '../types';
 
 // Every criterion is multi-select: ticking several options means "one of these" (e.g. bill medium OR thin).
@@ -70,7 +72,9 @@ export function IdGuideView() {
   };
   const wantCol = s0.colour || [];
   const score = (b: Species) => colours(b).filter((c) => wantCol.includes(c)).length;
-  const result = birds.filter((b) => pass(b)).sort((a, b) => score(b) - score(a));
+  // the colour match comes first; the chosen sort (rarest, commonest) orders the birds within it
+  const cmp = rarityCompare(birdSort.value, birdInfo.value);
+  const result = birds.filter((b) => pass(b)).sort((a, b) => score(b) - score(a) || (cmp ? cmp(a, b) : 0));
   // count per option with that criterion's own filter removed, so you see where the candidates are
   const countFor = (k: Key, v: string) => birds.filter((b) => valueOf(b, k).includes(v) && pass(b, k)).length;
   const fams = [...new Set(birds.filter((b) => pass(b, 'family')).map((b) => b.family || ''))].filter(Boolean).sort();
@@ -139,16 +143,19 @@ export function IdGuideView() {
       <div class="idbar">
         <b>{result.length} bird{result.length !== 1 ? 's' : ''}</b>
         <button class={'chip' + (hideSeen.value ? ' on' : '')} onClick={() => (hideSeen.value = !hideSeen.value)}>hide seen</button>
+        <SortButton />
         {active && <button class="btn sm secondary" onClick={() => { sel.value = {}; family.value = ''; q.value = ''; }}>clear all</button>}
       </div>
 
       <div class="grid">
         {result.map((b) => {
           const u = imgUrl(b);
+          const rt = cmp && rarityText(b.id);
           return (
             <a class={'tile' + (seen.has(b.id) ? ' seen' : '')} href={href('species/' + b.id)} key={b.id} title={name2(b)}>
               {u ? <img src={u} loading="lazy" decoding="async" alt="" /> : <div class="noimg"><Icon name="bird" size={26} /></div>}
               <div class="t">{name(b)}</div>
+              {rt && <div class="rr">{rt}</div>}
             </a>
           );
         })}

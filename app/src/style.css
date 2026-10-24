@@ -779,3 +779,4 @@ details summary { cursor: pointer; }
 .monthstrip .now i { outline: 2px solid var(--text); outline-offset: 1px; }
 .listhead .sortbtn { margin: 0 0 0 auto; flex: none; }
 .listhead .count + .sortbtn { margin-left: 0; }
+.grid .tile .rr { font-size: 11px; font-weight: 600; color: var(--muted); padding: 0 8px 7px; margin-top: -4px; line-height: 1.2; }

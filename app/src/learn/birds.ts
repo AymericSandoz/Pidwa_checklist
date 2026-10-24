@@ -40,6 +40,18 @@ export const rarity = (b: BirdInfo): Rarity | null => b.common == null ? null
   : b.common >= 0.3 ? 'very-common' : b.common >= 0.1 ? 'common' : b.common >= 0.03 ? 'uncommon' : b.common >= 0.01 ? 'scarce' : 'rare';
 export const fmtCommon = (c: number) => (c < 0.01 ? (c * 100).toFixed(1) : Math.round(c * 100)) + '%';
 
+/** Bird order of the list and the ID guide, shared and remembered: as they come (A-Z), rarest or commonest first. */
+export type BirdSort = 'az' | 'rare' | 'common';
+export const SORT_LABEL: Record<BirdSort, string> = { az: 'A–Z', rare: 'Rarest', common: 'Commonest' };
+export const NEXT_SORT: Record<BirdSort, BirdSort> = { az: 'rare', rare: 'common', common: 'az' };
+export const birdSort = signal<BirdSort>((localStorage.getItem('sort') as BirdSort) || 'az');
+/** Comparator by rarity for the current sort; birds without an atlas rate go last. Null for A-Z. */
+export function rarityCompare(sort: BirdSort, info: Map<string, BirdInfo>) {
+  if (sort === 'az') return null;
+  const c = (id: string) => info.get(id)?.common ?? (sort === 'rare' ? Infinity : -Infinity);
+  return (a: { id: string }, b: { id: string }) => (sort === 'rare' ? c(a.id) - c(b.id) : c(b.id) - c(a.id));
+}
+
 export const birdInfo = signal(new Map<string, BirdInfo>());
 import('./birds.data.json').then((m) => { birdInfo.value = new Map((m.default as BirdInfo[]).map((b) => [b.id, b])); });
 
