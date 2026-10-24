@@ -6,7 +6,7 @@ import { BIRD_GROUPS, groupOf, familyEn } from '../taxa';
 import { COLOURS, BIRD_COLOURS } from '../colours';
 import { Icon } from '../components/Icon';
 import { SearchBox } from '../components/SearchBox';
-import { SortButton, rarityText } from '../components/BirdSection';
+import { SortButton, rarityText, MigBadge } from '../components/BirdSection';
 import { birdInfo, birdSort, rarityCompare } from '../learn/birds';
 import type { Species } from '../types';
 
@@ -160,6 +160,7 @@ export function IdGuideView() {
           return (
             <a class={'tile' + (seen.has(b.id) ? ' seen' : '')} href={href('species/' + b.id)} key={b.id} title={name2(b)}>
               {u ? <img src={u} loading="lazy" decoding="async" alt="" /> : <div class="noimg"><Icon name="bird" size={26} /></div>}
+              <MigBadge id={b.id} />
               <div class="t">{name(b)}</div>
               {rt && <div class="rr">{rt}</div>}
             </a>
