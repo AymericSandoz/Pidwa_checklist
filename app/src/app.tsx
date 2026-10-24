@@ -11,6 +11,8 @@ import { LearnView } from './views/LearnView';
 import { SettingsView } from './views/SettingsView';
 import { ListenLazy, listening } from './views/ListenLazy';
 import { Icon, type IconName } from './components/Icon';
+import { PackBanner } from './components/PackBanner';
+import { missing } from './packs';
 import './theme';
 
 /** Keeps a crash inside one screen: the navigation still works and the next screen renders normally. */
@@ -56,10 +58,10 @@ export function App() {
       {!fullscreen && !bare && (
         <header class="top">
           <a href={href('list')} class="brand"><i class="mark" /><span class="bn"><b>Askari</b><small>Pidwa Wilderness Reserve</small></span></a>
-          <a href={href('settings')} class="gear" aria-label="Settings"><Icon name="settings" /></a>
+          <a href={href('settings')} class="gear" aria-label="Settings"><Icon name="settings" />{missing.value.keys.length > 0 && <i class="dot" />}</a>
         </header>
       )}
-      <main class="main"><ViewBoundary key={r.path}>{view}</ViewBoundary></main>
+      <main class="main">{!fullscreen && !bare && r.path !== 'settings' && <PackBanner />}<ViewBoundary key={r.path}>{view}</ViewBoundary></main>
       <nav class="bottom">
         {NAV.map(([p, label, icon]) => (
           <a href={href(p)} class={r.path === p || (p === 'list' && r.path === 'species') || (p === 'stats' && r.path === 'obs') ? 'active' : ''}>

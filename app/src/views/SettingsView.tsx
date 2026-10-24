@@ -1,68 +1,34 @@
 import { useEffect, useState } from 'preact/hooks';
-import { dataUrl, observations, obsInfo, reloadObservations, places, reloadPlaces } from '../data';
+import { observations, obsInfo, reloadObservations, places, reloadPlaces } from '../data';
 import { db } from '../db';
 import { fmtBytes } from '../util';
 import { theme, setTheme, type Theme } from '../theme';
 import { Icon } from '../components/Icon';
-import type { Packs, Observation, Place } from '../types';
+import type { Observation, Place } from '../types';
+import { packs, packState, packsError, missing, autoPacks, setAutoPacks, loadPacks, downloadPack, downloadAll, stopPack, stopAll, removePack, PACK_LABEL } from '../packs';
 
-const PACK_LABEL: Record<string, string> = { sounds: 'Bird sounds (xeno-canto)', sat: 'Reserve map (satellite, Sentinel-2)', birdnet: 'Sound ID model (BirdNET)', photos: 'More photos per species (iNaturalist), for the quiz', signs: 'Track and dung photos (iNaturalist)' };
-const cacheName = (p: string) => 'pack-' + p;
 const THEMES: [Theme, string][] = [['auto', 'Automatic'], ['light', 'Day'], ['dark', 'Night']];
 const tick = <Icon name="check" size={13} stroke={3} class="inl" />;
 
-interface PackState { total: number; cached: number; bytes: number; busy: boolean; error?: string }
-
 export function SettingsView() {
-  const [packs, setPacks] = useState<Packs | null>(null);
-  const [st, setSt] = useState<Record<string, PackState>>({});
   const [quota, setQuota] = useState<{ usage: number; quota: number } | null>(null);
   const [persisted, setPersisted] = useState<boolean | null>(null);
   const [msg, setMsg] = useState('');
-  const aborts: Record<string, AbortController> = {};
 
-  async function refresh(p: Packs) {
-    const next: Record<string, PackState> = {};
-    for (const [k, v] of Object.entries(p)) {
-      let cached = 0;
-      try { cached = (await (await caches.open(cacheName(k))).keys()).length; } catch {}
-      next[k] = { total: v.files.length, cached, bytes: v.bytes, busy: false };
-    }
-    setSt(next);
+  async function refresh() {
+    await loadPacks();
     try { const e = await navigator.storage.estimate(); setQuota({ usage: e.usage || 0, quota: e.quota || 0 }); } catch {}
     try { setPersisted(await navigator.storage.persisted()); } catch {}
   }
-  useEffect(() => {
-    fetch(dataUrl('packs.json')).then((r) => r.json()).then((p: Packs) => { setPacks(p); refresh(p); }).catch(() => setMsg('packs.json not found'));
-  }, []);
+  useEffect(() => { refresh(); }, []);
+  // storage use changes as packs come in
+  const busy = missing.value.busy;
+  useEffect(() => { if (!busy) refresh(); }, [busy]);
 
-  async function download(k: string) {
-    if (!packs) return;
-    const files = packs[k].files;
-    const cache = await caches.open(cacheName(k));
-    const ctrl = new AbortController(); aborts[k] = ctrl;
-    setSt((s) => ({ ...s, [k]: { ...s[k], busy: true, error: undefined } }));
-    let done = (await cache.keys()).length;
-    const todo: string[] = [];
-    for (const f of files) { const u = location.origin + dataUrl(f.path); if (!(await cache.match(u))) todo.push(u); }
-    let i = 0, failed = 0;
-    const worker = async () => {
-      while (i < todo.length && !ctrl.signal.aborted) {
-        const u = todo[i++];
-        try {
-          const r = await fetch(u, { signal: ctrl.signal, cache: 'no-store' });
-          if (r.ok) { await cache.put(u, r); done++; } else failed++;
-        } catch (e: any) { if (ctrl.signal.aborted) return; failed++; }
-        if (done % 20 === 0) setSt((s) => ({ ...s, [k]: { ...s[k], cached: done } }));
-      }
-    };
-    await Promise.all([worker(), worker(), worker(), worker()]);
-    setSt((s) => ({ ...s, [k]: { ...s[k], cached: done, busy: false, error: failed ? `${failed} file(s) failed, run again to complete` : undefined } }));
-  }
   async function remove(k: string) {
     if (!confirm('Remove this pack from the phone?')) return;
-    await caches.delete(cacheName(k));
-    if (packs) refresh(packs);
+    await removePack(k);
+    refresh();
   }
   async function persist() { try { setPersisted(await navigator.storage.persist()); } catch {} }
 
@@ -119,9 +85,16 @@ export function SettingsView() {
 
       <div class="card">
         <b>Offline packs</b>
-        <p class="muted small" style="margin:4px 0 6px">Species pages and photos are already in the app. Download the rest once, with network, before going into the field.</p>
-        {packs && Object.keys(packs).map((k) => {
-          const s = st[k]; if (!s) return null;
+        <p class="muted small" style="margin:4px 0 6px">Species pages and main photos are already in the app. Sounds, the map, Sound ID and the extra photos work offline only once downloaded: do it with network, before going into the field.</p>
+        <label class="row small" style="gap:8px;margin:6px 0 4px"><input type="checkbox" checked={autoPacks.value} onChange={(e) => setAutoPacks((e.target as HTMLInputElement).checked)} />Download automatically on Wi-Fi</label>
+        {packs.value && missing.value.keys.length > 0 && (
+          <div class="actions" style="margin:6px 0 4px">
+            {missing.value.busy ? <button class="btn sm secondary" onClick={stopAll}>stop</button>
+              : <button class="btn sm" onClick={() => downloadAll()}>Download all ({fmtBytes(missing.value.left)})</button>}
+          </div>
+        )}
+        {packs.value && Object.keys(packs.value).map((k) => {
+          const s = packState.value[k]; if (!s) return null;
           const complete = s.cached >= s.total && s.total > 0;
           return (
             <div class="pack" key={k}>
@@ -131,13 +104,13 @@ export function SettingsView() {
                 {(s.busy || (s.cached > 0 && !complete)) && <div class="progress"><i style={`width:${Math.round((100 * s.cached) / Math.max(1, s.total))}%`} /></div>}
                 {s.error && <div class="err small">{s.error}</div>}
               </div>
-              {s.busy ? <button class="btn sm secondary" onClick={() => aborts[k]?.abort()}>stop</button>
+              {s.busy ? <button class="btn sm secondary" onClick={() => stopPack(k)}>stop</button>
                 : complete ? <button class="btn sm danger" onClick={() => remove(k)}>remove</button>
-                : <button class="btn sm" onClick={() => download(k)}>{s.cached ? 'complete' : 'download'}</button>}
+                : <button class="btn sm" onClick={() => downloadPack(k)}>{s.cached ? 'complete' : 'download'}</button>}
             </div>
           );
         })}
-        {!packs && <p class="muted small">{msg || 'loading…'}</p>}
+        {!packs.value && <p class="muted small">{packsError.value || 'loading…'}</p>}
       </div>
 
       <div class="card">
