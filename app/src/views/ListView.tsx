@@ -8,6 +8,7 @@ import { Thumb } from '../components/Thumb';
 import { Icon } from '../components/Icon';
 import { SearchBox } from '../components/SearchBox';
 import { ObsForm } from '../components/ObsForm';
+import { MigBadge } from '../components/BirdSection';
 import type { Group } from '../types';
 
 // module-level so the list keeps its state when coming back from a species page
@@ -50,7 +51,7 @@ export function ListView() {
           return (
             <div class={'sp-row' + (n ? ' seen' : '')} key={s.id}>
               <a href={href('species/' + s.id)} class="row" style="flex:1;min-width:0">
-                <span class={'ph' + (n ? ' seen' : '')}><Thumb s={s} /></span>
+                <span class={'ph' + (n ? ' seen' : '')}><Thumb s={s} />{s.group === 'bird' && <MigBadge id={s.id} />}</span>
                 <div class="names">
                   <div class="fr">{name(s)}</div>
                   <div class="en">{name2(s)}{name2(s) ? ' · ' : ''}{familyEn(s)}</div>

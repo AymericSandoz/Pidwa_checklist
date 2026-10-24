@@ -8,6 +8,8 @@ import { PhotoImg } from '../components/PhotoImg';
 import { Icon } from '../components/Icon';
 import { SoundPlayer } from '../components/SoundPlayer';
 import { TracksSection } from '../components/TracksSection';
+import { BirdSection } from '../components/BirdSection';
+import { birdInfo } from '../learn/birds';
 import type { Observation, Species } from '../types';
 import { popById, fmtN } from '../learn/populations';
 import { DropChart } from './LearnView';
@@ -60,7 +62,7 @@ export function SpeciesView({ id }: { id: string }) {
     ['Habitat', k?.habitat ? lbl(L.habitat, k.habitat) : null],
     ['Usually', k?.lifestyle ? lbl(L.lifestyle, k.lifestyle) : null],
     ['Food', k?.niche ? lbl(L.niche, k.niche) : null],
-    ['Presence', a?.migration === 3 ? 'migrant' : null],
+    ['Presence', a?.migration === 3 && !birdInfo.value.has(s.id) ? 'migrant' : null],
     ['Group', grp ? groupLabel(grp) : null, true],
   ] as [string, string | null, boolean?][]).filter((x) => x[1]);
   // an odd number of half-width cells would leave a hole: the last one takes the full row
@@ -99,6 +101,7 @@ export function SpeciesView({ id }: { id: string }) {
         )}
 
         {s.group === 'mammal' && <TracksSection id={s.id} />}
+        {s.group === 'bird' && <BirdSection id={s.id} />}
 
         {popById.has(s.id) && (() => { const p = popById.get(s.id)!; return (
           <>
