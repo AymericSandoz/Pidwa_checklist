@@ -101,7 +101,7 @@
       "https://www.africawild-forum.com/viewtopic.php?p=161559",
       "https://citizen.co.za/highway-mail/?p=437368"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "accipiter-tachiro",
@@ -245,7 +245,7 @@
       "https://www.oiseaux.net/oiseaux/gobemouche.pale.html",
       "https://www.niall.co.za/Species/bird-pages/696.htm"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "alopochen-aegyptiaca",
@@ -760,7 +760,7 @@
       "https://www.oiseaux.net/oiseaux/martinet.des.maisons.html",
       "https://thebdi.org/?p=20071"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "apus-barbatus",
@@ -1056,7 +1056,7 @@
       "https://www.oiseaux.net/oiseaux/heron.cendre.html",
       "https://birding.krugerpark.co.za/best-birding-olifants-to-letaba.html"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "ardea-goliath",
@@ -1147,7 +1147,7 @@
       "http://www.biodiversityexplorer.info/birds/ardeidae/ardea_purpurea.htm",
       "https://www.oiseaux.net/oiseaux/heron.pourpre.html"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "ardeola-ralloides",
@@ -1326,7 +1326,7 @@
       "https://www.oiseaux.net/oiseaux/ibis.hagedash.html",
       "https://dewetswild.com/tag/hadeda-ibis/"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "bubalornis-niger",
@@ -1368,7 +1368,7 @@
       "https://www.oiseaux.net/oiseaux/alecto.a.bec.rouge.html",
       "https://fr.wikipedia.org/wiki/Alecto_à_bec_rouge"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "bubo-africanus",
@@ -1589,7 +1589,7 @@
       "https://www.niall.co.za/Species/bird-pages/772.htm",
       "https://en.wikipedia.org/wiki/Yellow-billed_oxpecker"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "burhinus-capensis",
@@ -2466,7 +2466,7 @@
       "https://www.oiseaux.net/oiseaux/martin-pecheur.pie.html",
       "http://www.biodiversityexplorer.info/birds/cerylidae/ceryle_rudis.htm"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "chalcomitra-senegalensis",
@@ -2642,7 +2642,7 @@
       "https://www.oiseaux.net/birds/orange-breasted.bushshrike.html",
       "https://www.oiseaux.net/oiseaux/gonolek.soufre.html"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "chloropicus-namaquus",
@@ -3116,7 +3116,7 @@
       "https://en.wikipedia.org/wiki/Marico_sunbird",
       "https://www.niall.co.za/Species/bird-pages/779.htm"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "cinnyris-talatala",
@@ -3311,7 +3311,7 @@
       "https://www.oiseaux.net/oiseaux/cisticole.grincante.html",
       "https://fr.wikipedia.org/wiki/Cisticole_grinçante"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "cisticola-erythrops",
@@ -3730,7 +3730,7 @@
       "https://www.oiseaux.net/oiseaux/rollier.a.longs.brins.html",
       "http://www.biodiversityexplorer.info/birds/coraciidae/coracias_caudatus.htm"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "coracias-garrulus",
@@ -3831,7 +3831,7 @@
       "http://www.biodiversityexplorer.info/birds/coraciidae/coracias_naevius.htm",
       "https://www.oiseaux.net/oiseaux/rollier.varie.html"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "corvus-albus",
@@ -3867,7 +3867,7 @@
       "https://www.oiseaux.net/oiseaux/corbeau.pie.html",
       "http://www.biodiversityexplorer.info/birds/corvidae/corvus_albus.htm"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "corythornis-cristatus",
@@ -3913,7 +3913,7 @@
       "https://thebdi.org/?p=21927",
       "https://www.oiseaux.net/birds/malachite.kingfisher.html"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "cossypha-heuglini",
@@ -4094,7 +4094,7 @@
       "https://www.krugerpark.co.za/Kruger-National-Park-Wildlife/images-of-kruger-birdlife.html",
       "https://dsae.co.za/entry/kwêvoël/e04177"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "crithagra-mozambica",
@@ -4517,7 +4517,7 @@
       "https://birding.krugerpark.co.za/birding-in-kruger-by-region-around-pretoriuskop.html",
       "https://en.wikipedia.org/wiki/Southern_black_flycatcher"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "dryoscopus-cubla",
@@ -4613,7 +4613,7 @@
       "https://www.discoverwildlife.com/plant-facts/animal-facts/birds/why-do-little-egrets-have-yellow-feet",
       "https://dewetswild.com/blogposts/page/136/"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "elanus-caeruleus",
@@ -5205,7 +5205,7 @@
       "http://www.biodiversityexplorer.info/birds/musophagidae/gallirex_porphyreolophus.htm",
       "https://www.oiseaux.net/oiseaux/touraco.a.huppe.splendide.html"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "glaucidium-capense",
@@ -5301,7 +5301,7 @@
       "http://www.biodiversityexplorer.info/birds/strigidae/glaucidium_perlatum.htm",
       "https://www.oiseaux.net/oiseaux/chevechette.perlee.html"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "gyps-africanus",
@@ -5987,7 +5987,7 @@
       "https://birding.krugerpark.co.za/birding-in-kruger-raptor-buzzards.html",
       "https://www.oiseaux-birds.com/card-lizard-buzzard.html"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "ketupa-lactea",
@@ -6082,7 +6082,7 @@
       "https://en.wikipedia.org/wiki/African_firefinch",
       "https://en.wikipedia.org/wiki/Purple_indigobird"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "lagonosticta-rubricata",
@@ -6175,7 +6175,7 @@
       "https://en.wikipedia.org/wiki/African_firefinch",
       "https://en.wikipedia.org/wiki/Village_indigobird"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "lamprotornis-chalybaeus",
@@ -6407,7 +6407,7 @@
       "http://www.biodiversityexplorer.info/birds/laniidae/corvinella_melanoleuca.htm",
       "https://www.oiseaux-birds.com/card-magpie-shrike.html"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "lanius-minor",
@@ -6816,7 +6816,7 @@
       "https://www.safari.com/blog/unique-names-of-the-kruger-birds",
       "https://www.niall.co.za/Species/bird-pages/751.htm"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "megaceryle-maxima",
@@ -7134,7 +7134,7 @@
       "https://www.oiseaux.net/oiseaux/guepier.nain.html",
       "http://www.biodiversityexplorer.info/birds/meropidae/merops_pusillus.htm"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "microcarbo-africanus",
@@ -7589,7 +7589,7 @@
       "https://www.oiseaux.net/oiseaux/pintade.de.numidie.html",
       "https://www.sabisabi.com/blog/20334/helmeted-guineafowl"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "oriolus-larvatus",
@@ -7911,7 +7911,7 @@
       "https://naturebackin.com/2019/01/17/the-cackling-presence-of-the-green-wood-hoopoe/",
       "https://www.oiseaux.net/oiseaux/irrisor.moqueur.html"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "phylloscopus-trochilus",
@@ -8144,7 +8144,7 @@
       "https://www.oiseaux.net/oiseaux/tisserin.intermediaire.html",
       "https://en.wikipedia.org/wiki/Southern_masked_weaver"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "ploceus-velatus",
@@ -8334,7 +8334,7 @@
       "https://www.oiseaux.net/birds/martial.eagle.html",
       "https://www.niall.co.za/Species/bird-pages/140.htm"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "polyboroides-typus",
@@ -8562,7 +8562,7 @@
       "https://www.oiseaux.net/birds/natal.spurfowl.html",
       "http://www.biodiversityexplorer.info/birds/phasianidae/pternistis_natalensis.htm"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "pternistis-swainsonii",
@@ -8740,7 +8740,7 @@
       "https://www.oiseaux.net/en/green-winged.pytilia.html",
       "https://en.wikipedia.org/wiki/Eastern_paradise_whydah"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "quelea-quelea",
@@ -9144,7 +9144,7 @@
       "http://www.biodiversityexplorer.info/birds/columbidae/streptopelia_senegalensis.htm",
       "https://www.oiseaux.net/birds/laughing.dove.html"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "streptopelia-capicola",
@@ -9285,7 +9285,7 @@
       "https://www.oiseaux.net/oiseaux/crombec.a.long.bec.html",
       "https://www.oiseaux-birds.com/card-long-billed-crombec.html"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "tachybaptus-ruficollis",
@@ -9327,7 +9327,7 @@
       "http://www.biodiversityexplorer.info/birds/podicipedidae/tachybaptus_ruficollis.htm",
       "https://besgroup.org/2014/06/21/little-grebe-whinny-trill-calls-courtship/"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "tachymarptis-melba",
@@ -9648,7 +9648,7 @@
       "http://www.biodiversityexplorer.info/birds/muscicapidae/thamnolaea_cinnamomeiventris.htm",
       "https://www.niall.co.za/Species/bird-pages/593.htm"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "tockus-leucomelas",
@@ -9746,18 +9746,18 @@
     "id": "torgos-tracheliotos",
     "status": "resident",
     "months": [
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
     ],
     "migration": "Resident but very wide-ranging: pairs hold huge territories and tracked birds have travelled hundreds of kilometres from the nest, so it is seen at Pidwa irregularly in any month. In southern Africa eggs are laid mainly from May to January, in a big stick nest on top of an acacia.",
     "size": "95-115 cm tall, wingspan 2.5-2.9 m: the largest vulture in Kruger, clearly bigger and heavier-billed than the White-backed Vultures around it.",
@@ -9790,7 +9790,7 @@
       "https://birding.krugerpark.co.za/birding-in-kruger-raptor-vultures.html",
       "https://www.wildlifeact.com/blog/what-are-the-six-vulture-species-of-south-africa"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "trachyphonus-vaillantii",
@@ -10055,7 +10055,7 @@
       "https://wilkinsonsworld.com/2012/10/bird-of-the-week-week-134-kurrichane-thrush/",
       "https://www.tanzaniabirds.net/African_birds/thrush_groundscraper/gt.htm"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "turdus-litsitsirupa",
@@ -10185,7 +10185,7 @@
       "http://www.biodiversityexplorer.info/birds/columbidae/turtur_chalcospilos.htm",
       "https://mpala.org/field_guide/view/emerald-spotted-wood-dove/"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "upupa-africana",
@@ -10542,7 +10542,7 @@
       "http://www.biodiversityexplorer.info/birds/viduidae/vidua_macroura.htm",
       "https://www.oiseaux.net/oiseaux/veuve.dominicaine.html"
     ],
-    "atlas": false
+    "atlas": true
   },
   {
     "id": "zapornia-flavirostra",
