@@ -5,13 +5,17 @@
 // research texts. Rewrites app/src/learn/birds.data.json in place and lists the statuses the atlas contradicts.
 
 import path from 'node:path';
-import { readJson, writeJson, OUT_DIR, DATA_DIR } from './lib.mjs';
+import { readJson, writeJson, OUT_DIR, DATA_DIR, RAW_DIR } from './lib.mjs';
 
 const BIRDS = path.join(DATA_DIR, '..', 'app', 'src', 'learn', 'birds.data.json');
 const MIN = 0.03;
 const score = (r, peak) => (r >= 0.35 * peak ? 2 : r >= 0.08 * peak ? 1 : 0);
 
 const atlas = readJson(path.join(OUT_DIR, 'sabap2_months.json'), {});
+// a code set back to null means the atlas has no usable data for that bird (Dark-capped Bulbul: its code 11491 is
+// barely used in South Africa), even if an old entry is still in sabap2_months.json
+const codes = readJson(path.join(RAW_DIR, 'sabap2', 'codes.json'), {});
+for (const [id, c] of Object.entries(codes)) if (c === null) delete atlas[id];
 const birds = readJson(BIRDS);
 const pct = (a) => a.map((r) => String(Math.round(r * 100)).padStart(3)).join('');
 let used = 0;
