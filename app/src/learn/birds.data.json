@@ -202,7 +202,8 @@
       "https://www.birdingecotours.com/know-your-birds-african-jacana/"
     ],
     "atlas": true,
-    "common": 0.269
+    "common": 0.269,
+    "water": true
   },
   {
     "id": "agricola-pallidus",
@@ -297,7 +298,8 @@
       "https://africageographic.com/stories/whos-been-sleeping-in-my-bed-hamerkop/"
     ],
     "atlas": true,
-    "common": 0.66
+    "common": 0.66,
+    "water": true
   },
   {
     "id": "amadina-fasciata",
@@ -447,7 +449,8 @@
       "https://birding.krugerpark.co.za/birding-in-kruger-summer-visitors.html"
     ],
     "atlas": true,
-    "common": 0.087
+    "common": 0.087,
+    "water": true
   },
   {
     "id": "andropadus-importunus",
@@ -538,7 +541,8 @@
       "https://dewetswild.com/2017/05/19/african-darter/"
     ],
     "atlas": true,
-    "common": 0.131
+    "common": 0.131,
+    "water": true
   },
   {
     "id": "anthoscopus-caroli",
@@ -1027,7 +1031,8 @@
       "https://www.oiseaux.net/oiseaux/grande.aigrette.html"
     ],
     "atlas": true,
-    "common": 0.218
+    "common": 0.218,
+    "water": true
   },
   {
     "id": "ardea-cinerea",
@@ -1078,7 +1083,8 @@
       "https://birding.krugerpark.co.za/best-birding-olifants-to-letaba.html"
     ],
     "atlas": true,
-    "common": 0.376
+    "common": 0.376,
+    "water": true
   },
   {
     "id": "ardea-goliath",
@@ -1125,7 +1131,8 @@
       "https://latestsightings.com/single-post/3-hungry-birds-crocodile-fight-over-1-fish-kruger-national-park"
     ],
     "atlas": true,
-    "common": 0.138
+    "common": 0.138,
+    "water": true
   },
   {
     "id": "ardea-purpurea",
@@ -1171,7 +1178,8 @@
       "https://www.oiseaux.net/oiseaux/heron.pourpre.html"
     ],
     "atlas": true,
-    "common": 0.058
+    "common": 0.058,
+    "water": true
   },
   {
     "id": "ardeola-ralloides",
@@ -1221,7 +1229,8 @@
       "https://www.oiseaux.net/oiseaux/crabier.chevelu.html"
     ],
     "atlas": true,
-    "common": 0.091
+    "common": 0.091,
+    "water": true
   },
   {
     "id": "aviceda-cuculoides",
@@ -1712,7 +1721,8 @@
       "https://en.wikipedia.org/wiki/Spotted_thick-knee"
     ],
     "atlas": true,
-    "common": 0.393
+    "common": 0.393,
+    "water": true
   },
   {
     "id": "buteo-buteo",
@@ -1811,7 +1821,8 @@
       "https://dewetswild.com/tag/wildlife/page/110/"
     ],
     "atlas": false,
-    "common": 0.005
+    "common": 0.005,
+    "water": true
   },
   {
     "id": "bycanistes-bucinator",
@@ -2519,7 +2530,8 @@
       "http://www.biodiversityexplorer.info/birds/cerylidae/ceryle_rudis.htm"
     ],
     "atlas": true,
-    "common": 0.351
+    "common": 0.351,
+    "water": true
   },
   {
     "id": "chalcomitra-senegalensis",
@@ -2603,7 +2615,8 @@
       "https://www.oiseaux.net/oiseaux/pluvier.a.triple.collier.html"
     ],
     "atlas": true,
-    "common": 0.414
+    "common": 0.414,
+    "water": true
   },
   {
     "id": "chlorocichla-flaviventris",
@@ -2982,7 +2995,8 @@
       "https://www.oiseaux.net/oiseaux/cigogne.episcopale.html"
     ],
     "atlas": false,
-    "common": 0.016
+    "common": 0.016,
+    "water": true
   },
   {
     "id": "ciconia-nigra",
@@ -3033,7 +3047,8 @@
       "https://dewetswild.com/2020/07/13/black-stork/"
     ],
     "atlas": true,
-    "common": 0.055
+    "common": 0.055,
+    "water": true
   },
   {
     "id": "cinnyricinclus-leucogaster",
@@ -3997,7 +4012,8 @@
       "https://www.oiseaux.net/birds/malachite.kingfisher.html"
     ],
     "atlas": true,
-    "common": 0.109
+    "common": 0.109,
+    "water": true
   },
   {
     "id": "cossypha-heuglini",
@@ -4467,7 +4483,8 @@
       "https://www.greglasley.com/content/BirdsofSouthernAfrica/White-facedWhistling-Duck.php"
     ],
     "atlas": true,
-    "common": 0.271
+    "common": 0.271,
+    "water": true
   },
   {
     "id": "dendropicos-fuscescens",
@@ -4712,7 +4729,8 @@
       "https://dewetswild.com/blogposts/page/136/"
     ],
     "atlas": true,
-    "common": 0.168
+    "common": 0.168,
+    "water": true
   },
   {
     "id": "elanus-caeruleus",
@@ -4842,7 +4860,8 @@
       "https://blog.londolozi.com/2023/06/14/the-big-5-of-the-sky/"
     ],
     "atlas": true,
-    "common": 0.152
+    "common": 0.152,
+    "water": true
   },
   {
     "id": "estrilda-astrild",
@@ -5275,7 +5294,8 @@
       "https://www.oiseaux.net/oiseaux/gallinule.poule-d.eau.html"
     ],
     "atlas": true,
-    "common": 0.044
+    "common": 0.044,
+    "water": true
   },
   {
     "id": "gallirex-porphyreolophus",
@@ -5771,7 +5791,8 @@
       "https://www.niall.co.za/Species/bird-pages/148.htm"
     ],
     "atlas": true,
-    "common": 0.482
+    "common": 0.482,
+    "water": true
   },
   {
     "id": "hedydipna-collaris",
@@ -6063,7 +6084,8 @@
       "https://www.oiseaux.net/oiseaux/blongios.de.sturm.html"
     ],
     "atlas": true,
-    "common": 0.029
+    "common": 0.029,
+    "water": true
   },
   {
     "id": "kaupifalco-monogrammicus",
@@ -7006,7 +7028,8 @@
       "https://tolweb.org/Megaceryle_maxima"
     ],
     "atlas": true,
-    "common": 0.181
+    "common": 0.181,
+    "water": true
   },
   {
     "id": "melaenornis-pammelaina",
@@ -7330,7 +7353,8 @@
       "https://en.wikipedia.org/wiki/African_darter"
     ],
     "atlas": true,
-    "common": 0.16
+    "common": 0.16,
+    "water": true
   },
   {
     "id": "micronisus-gabar",
@@ -7469,7 +7493,8 @@
       "https://dewetswild.com/tag/african-pied-wagtail/"
     ],
     "atlas": true,
-    "common": 0.36
+    "common": 0.36,
+    "water": true
   },
   {
     "id": "muscicapa-striata",
@@ -7563,7 +7588,8 @@
       "https://birding.krugerpark.co.za/birding-in-kruger-summer-visitors.html"
     ],
     "atlas": true,
-    "common": 0.218
+    "common": 0.218,
+    "water": true
   },
   {
     "id": "necrosyrtes-monachus",
@@ -7666,7 +7692,8 @@
       "https://fr.wikipedia.org/wiki/Nette_brune"
     ],
     "atlas": false,
-    "common": 0.005
+    "common": 0.005,
+    "water": true
   },
   {
     "id": "nilaus-afer",
@@ -8178,7 +8205,8 @@
       "https://www.krugerpark.co.za/africa_spoonbill.html"
     ],
     "atlas": true,
-    "common": 0.186
+    "common": 0.186,
+    "water": true
   },
   {
     "id": "plectropterus-gambensis",
@@ -8226,7 +8254,8 @@
       "https://www.niall.co.za/Species/bird-pages/116.htm"
     ],
     "atlas": true,
-    "common": 0.082
+    "common": 0.082,
+    "water": true
   },
   {
     "id": "ploceus-cucullatus",
@@ -9111,7 +9140,8 @@
       "https://www.oiseaux.net/oiseaux/hirondelle.paludicole.html"
     ],
     "atlas": true,
-    "common": 0.108
+    "common": 0.108,
+    "water": true
   },
   {
     "id": "rostratula-benghalensis",
@@ -9150,7 +9180,8 @@
       "https://birding.krugerpark.co.za/best-birding-olifants-to-letaba.html"
     ],
     "atlas": true,
-    "common": 0.029
+    "common": 0.029,
+    "water": true
   },
   {
     "id": "sarkidiornis-melanotos",
@@ -9198,7 +9229,8 @@
       "https://birdingplaces.eu/birdingplaces/south-africa/leeupan"
     ],
     "atlas": true,
-    "common": 0.147
+    "common": 0.147,
+    "water": true
   },
   {
     "id": "saxicola-torquatus",
@@ -9289,7 +9321,8 @@
       "https://dewetswild.com/tag/hamerkop/"
     ],
     "atlas": true,
-    "common": 0.315
+    "common": 0.315,
+    "water": true
   },
   {
     "id": "spilopelia-senegalensis",
@@ -9527,7 +9560,8 @@
       "https://besgroup.org/2014/06/21/little-grebe-whinny-trill-calls-courtship/"
     ],
     "atlas": true,
-    "common": 0.107
+    "common": 0.107,
+    "water": true
   },
   {
     "id": "tachymarptis-melba",
@@ -10576,7 +10610,8 @@
       "https://blog.londolozi.com/2016/04/24/survival-at-taylors-dam/"
     ],
     "atlas": true,
-    "common": 0.607
+    "common": 0.607,
+    "water": true
   },
   {
     "id": "vanellus-coronatus",
@@ -10670,7 +10705,8 @@
       "https://ebird.org/species/watlap1"
     ],
     "atlas": true,
-    "common": 0.03
+    "common": 0.03,
+    "water": true
   },
   {
     "id": "vidua-funerea",
@@ -10815,7 +10851,8 @@
       "https://oiseaux-birds.com/card-black-crake.html"
     ],
     "atlas": true,
-    "common": 0.263
+    "common": 0.263,
+    "water": true
   },
   {
     "id": "zosterops-virens",

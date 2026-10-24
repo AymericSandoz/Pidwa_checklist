@@ -31,6 +31,9 @@ export interface BirdInfo {
   atlas?: boolean;
   /** how common around Pidwa: SABAP2 reporting rate of its 3 best months, 0..1; missing when the atlas has no usable data */
   common?: number;
+  /** lives in or right by the water (ducks, herons, storks, Hamerkop, water kingfishers…), not just coming to drink;
+   *  hand-picked from AVONET's wetland birds, for the "Water birds" filter of the ID guide */
+  water?: boolean;
 }
 
 export type Rarity = 'very-common' | 'common' | 'uncommon' | 'scarce' | 'rare';

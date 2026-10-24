@@ -12,14 +12,14 @@ import type { Species } from '../types';
 
 // Every criterion is multi-select: ticking several options means "one of these" (e.g. bill medium OR thin).
 // Colours rank the results: birds showing more of the ticked colours come first.
-type Key = 'group' | 'colour' | 'size' | 'bill' | 'legs' | 'habitat' | 'lifestyle' | 'niche';
+type Key = 'group' | 'colour' | 'water' | 'size' | 'bill' | 'legs' | 'habitat' | 'lifestyle' | 'niche';
 const sel = signal<Partial<Record<Key, string[]>>>({});
 const family = signal('');
 const q = signal('');
 const hideSeen = signal(false);
 
-const TRAITS: [Exclude<Key, 'group' | 'colour'>, string][] = [['size', 'Size'], ['bill', 'Bill'], ['legs', 'Legs']];
-const MORE: [Exclude<Key, 'group' | 'colour'>, string][] = [['habitat', 'Habitat'], ['lifestyle', 'Where you see it'], ['niche', 'Food']];
+const TRAITS: [Exclude<Key, 'group' | 'colour' | 'water'>, string][] = [['size', 'Size'], ['bill', 'Bill'], ['legs', 'Legs']];
+const MORE: [Exclude<Key, 'group' | 'colour' | 'water'>, string][] = [['habitat', 'Habitat'], ['lifestyle', 'Where you see it'], ['niche', 'Food']];
 
 // short tile labels + a typical bird for each group's photo
 const GROUP_TILE: Record<string, [string, string]> = {
@@ -34,7 +34,8 @@ const GROUP_TILE: Record<string, [string, string]> = {
 
 const colours = (b: Species) => BIRD_COLOURS[b.id] || [];
 const valueOf = (b: Species, k: Key): string[] =>
-  k === 'group' ? [groupOf(b) || ''] : k === 'colour' ? colours(b) : [b.idk?.[k] || ''];
+  k === 'group' ? [groupOf(b) || ''] : k === 'colour' ? colours(b) : k === 'water' ? (birdInfo.value.get(b.id)?.water ? ['yes'] : [])
+  : [b.idk?.[k] || ''];
 
 function toggle(k: Key, v: string) {
   const cur = sel.value[k] || [];
@@ -88,7 +89,7 @@ export function IdGuideView() {
       </button>
     );
   };
-  const chipRow = ([k, label]: [Exclude<Key, 'group' | 'colour'>, string]) => (
+  const chipRow = ([k, label]: [Exclude<Key, 'group' | 'colour' | 'water'>, string]) => (
     <div class="fgroup">
       <div class="lab">{label}</div>
       <div class="chips">{ORDER[k].map((v) => chip(k, v, lbl(L[k], v)))}</div>
@@ -125,6 +126,11 @@ export function IdGuideView() {
         <div class="chips">
           {COLOURS.map(([c, label, sw]) => chip('colour', c, <><i class="sw" style={{ background: sw }} />{label}</>))}
         </div>
+      </div>
+
+      <div class="fgroup">
+        <div class="lab">Water <span class="hint">lives in or right by the water, not just coming to drink</span></div>
+        <div class="chips">{chip('water', 'yes', <><Icon name="droplet" size={14} stroke={2.4} />Water birds</>)}</div>
       </div>
 
       {TRAITS.map(chipRow)}
