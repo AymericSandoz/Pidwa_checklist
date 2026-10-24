@@ -29,7 +29,16 @@ export interface BirdInfo {
   sources: string[];
   /** true when the months are the SABAP2 reporting rates, false when they are estimated from the texts */
   atlas?: boolean;
+  /** how common around Pidwa: SABAP2 reporting rate of its 3 best months, 0..1; missing when the atlas has no usable data */
+  common?: number;
 }
+
+export type Rarity = 'very-common' | 'common' | 'uncommon' | 'scarce' | 'rare';
+export const RARITY_LABEL: Record<Rarity, string> = { 'very-common': 'Very common', 'common': 'Common', 'uncommon': 'Uncommon', 'scarce': 'Scarce', 'rare': 'Rare' };
+/** Level from the share of the atlas cards that list the bird in its best months. */
+export const rarity = (b: BirdInfo): Rarity | null => b.common == null ? null
+  : b.common >= 0.3 ? 'very-common' : b.common >= 0.1 ? 'common' : b.common >= 0.03 ? 'uncommon' : b.common >= 0.01 ? 'scarce' : 'rare';
+export const fmtCommon = (c: number) => (c < 0.01 ? (c * 100).toFixed(1) : Math.round(c * 100)) + '%';
 
 export const birdInfo = signal(new Map<string, BirdInfo>());
 import('./birds.data.json').then((m) => { birdInfo.value = new Map((m.default as BirdInfo[]).map((b) => [b.id, b])); });

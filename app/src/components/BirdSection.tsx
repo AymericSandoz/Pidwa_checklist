@@ -1,6 +1,6 @@
 import { species } from '../data';
 import { href } from '../router';
-import { birdInfo, STATUS_LABEL, hereNow, migKind } from '../learn/birds';
+import { birdInfo, STATUS_LABEL, hereNow, migKind, rarity, RARITY_LABEL, fmtCommon } from '../learn/birds';
 import type { BirdInfo } from '../learn/birds';
 import { Icon } from './Icon';
 import { Thumb } from './Thumb';
@@ -73,4 +73,14 @@ export function MigBadge({ id }: { id: string }) {
   const k = b && migKind(b);
   if (!k) return null;
   return <span class={'migb ' + k + (hereNow(b!) ? '' : ' away')} title={STATUS_LABEL[b!.status]}>M</span>;
+}
+
+const RARITY_TONE = { 'very-common': ' ok', 'common': ' ok', 'uncommon': '', 'scarce': ' warn', 'rare': ' warn' };
+
+/** How common the bird is around Pidwa, for the pills of the species page. */
+export function RarityPill({ id }: { id: string }) {
+  const b = birdInfo.value.get(id);
+  const r = b && rarity(b);
+  if (!r) return null;
+  return <span class={'pill' + RARITY_TONE[r]} title="Share of the SABAP2 atlas cards around Pidwa that list it, in its best months">{RARITY_LABEL[r]} · {fmtCommon(b!.common!)} of atlas cards</span>;
 }

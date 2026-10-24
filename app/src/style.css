@@ -777,3 +777,5 @@ details summary { cursor: pointer; }
 .monthstrip span { font-size: 10.5px; font-weight: 700; color: var(--muted); }
 .monthstrip .now span { color: var(--text); }
 .monthstrip .now i { outline: 2px solid var(--text); outline-offset: 1px; }
+.listhead .sortbtn { margin: 0 0 0 auto; flex: none; }
+.listhead .count + .sortbtn { margin-left: 0; }
