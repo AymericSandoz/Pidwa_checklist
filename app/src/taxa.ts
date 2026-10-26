@@ -1,4 +1,5 @@
-import type { Species } from './types';
+import type { Species, Group } from './types';
+import type { IconName } from './components/Icon';
 
 /** English family names and coarse field groups (what a birder would call "what kind of bird is it"). */
 export const FAMILY: Record<string, { en: string; group: string }> = {
@@ -98,6 +99,49 @@ export const FAMILY: Record<string, { en: string; group: string }> = {
   Manidae: { en: 'Pangolins', group: 'small-mammals' },
   Pteropodidae: { en: 'Fruit bats', group: 'bats' },
   Emballonuridae: { en: 'Sheath-tailed bats', group: 'bats' },
+  // ---- snakes ----
+  Pythonidae: { en: 'Pythons', group: 'snakes' },
+  Viperidae: { en: 'Adders', group: 'snakes' },
+  Elapidae: { en: 'Cobras, mambas & allies', group: 'snakes' },
+  Colubridae: { en: 'Typical snakes', group: 'snakes' },
+  Atractaspididae: { en: 'Stiletto snakes & allies', group: 'snakes' },
+  Psammophiidae: { en: 'Sand & grass snakes', group: 'snakes' },
+  Lamprophiidae: { en: 'House, wolf & file snakes', group: 'snakes' },
+  Typhlopidae: { en: 'Blind snakes', group: 'snakes' },
+  Leptotyphlopidae: { en: 'Thread snakes', group: 'snakes' },
+  // ---- plants ----
+  Fabaceae: { en: 'Acacias, peas & pods', group: 'plants' },
+  Combretaceae: { en: 'Bushwillows & cluster-leaves', group: 'plants' },
+  Anacardiaceae: { en: 'Marula family', group: 'plants' },
+  Ebenaceae: { en: 'Ebony family', group: 'plants' },
+  Rhamnaceae: { en: 'Buffalo thorn family', group: 'plants' },
+  Moraceae: { en: 'Figs', group: 'plants' },
+  Malvaceae: { en: 'Baobab & mallow family', group: 'plants' },
+  Capparaceae: { en: 'Caper family', group: 'plants' },
+  Burseraceae: { en: 'Corkwoods', group: 'plants' },
+  Zygophyllaceae: { en: "Torchwood & devil's thorn family", group: 'plants' },
+  Meliaceae: { en: 'Mahogany family', group: 'plants' },
+  Sapindaceae: { en: 'Litchi family', group: 'plants' },
+  Celastraceae: { en: 'Spike-thorn family', group: 'plants' },
+  Euphorbiaceae: { en: 'Euphorbias', group: 'plants' },
+  Rubiaceae: { en: 'Coffee family', group: 'plants' },
+  Bignoniaceae: { en: 'Sausage tree family', group: 'plants' },
+  Apocynaceae: { en: 'Impala lily family', group: 'plants' },
+  Olacaceae: { en: 'Sourplums', group: 'plants' },
+  Loganiaceae: { en: 'Monkey oranges', group: 'plants' },
+  Arecaceae: { en: 'Palms', group: 'plants' },
+  Cannabaceae: { en: 'Stinkwood family', group: 'plants' },
+  Polygalaceae: { en: 'Milkwort family', group: 'plants' },
+  Asphodelaceae: { en: 'Aloes', group: 'plants' },
+  Poaceae: { en: 'Grasses', group: 'plants' },
+  Colchicaceae: { en: 'Flame lily family', group: 'plants' },
+  Amaryllidaceae: { en: 'Bulbs (amaryllis family)', group: 'plants' },
+  Pedaliaceae: { en: 'Sesame family', group: 'plants' },
+  Scrophulariaceae: { en: 'Figwort family', group: 'plants' },
+  Amaranthaceae: { en: 'Amaranth family', group: 'plants' },
+  Acanthaceae: { en: 'Acanthus family', group: 'plants' },
+  Asparagaceae: { en: 'Asparagus family', group: 'plants' },
+  Verbenaceae: { en: 'Verbena family', group: 'plants' },
 };
 
 /** Genus-level overrides where a family mixes very different-looking birds. */
@@ -145,6 +189,11 @@ export const MAMMAL_GROUPS: [string, string][] = [
   ['small-mammals', 'Hares, squirrels, porcupine, hyrax…'],
   ['bats', 'Bats'],
 ];
+
+/** Tab label and icon of each group. */
+export const GROUP_LABEL: Record<Group, string> = { bird: 'Birds', mammal: 'Mammals', snake: 'Snakes', plant: 'Plants' };
+export const GROUP_ICON: Record<Group, IconName> = { bird: 'bird', mammal: 'paw-print', snake: 'snake', plant: 'tree' };
+export const GROUPS = Object.keys(GROUP_LABEL) as Group[];
 
 /** Big Five; rhino counts once, either species. */
 export const BIG5: [string, string[]][] = [['Lion', ['panthera-leo']], ['Leopard', ['panthera-pardus']], ['Elephant', ['loxodonta-africana']], ['Buffalo', ['syncerus-caffer']], ['Rhino', ['ceratotherium-simum', 'diceros-bicornis']]];

@@ -2,11 +2,12 @@ import { signal } from '@preact/signals';
 import { species, observations, seenCount, firstSeen, totals, byId, name, obsInfo } from '../data';
 import { href } from '../router';
 import { dayKey, fmtDate } from '../util';
-import { familyEn, BIG5 } from '../taxa';
+import { familyEn, BIG5, GROUPS, GROUP_LABEL } from '../taxa';
+import type { Group } from '../types';
 import { Icon, type IconName } from '../components/Icon';
 import { JournalView } from './JournalView';
 
-const famGroup = signal<'bird' | 'mammal'>('bird');
+const famGroup = signal<Group>('bird');
 // Stats and the journal share one tab; the chosen segment survives leaving and coming back (a signal, not component state)
 const statsTab = signal<'stats' | 'journal'>('stats');
 const pct = (a: number, b: number) => (b ? Math.round((100 * a) / b) : 0);
@@ -65,6 +66,10 @@ export function StatsView({ journal }: { journal?: boolean } = {}) {
         <Ring seen={t.mammal.seen} total={t.mammal.total} label="Mammals" icon="paw-print" />
         <div class="solo"><b>{observations.value.length}</b><span class="muted">observations</span><b style="margin-top:8px">{days.size}</b><span class="muted">day{days.size === 1 ? '' : 's'} out</span></div>
       </div>
+      <div class="card rings">
+        <Ring seen={t.snake.seen} total={t.snake.total} label="Snakes" icon="snake" />
+        <Ring seen={t.plant.seen} total={t.plant.total} label="Plants" icon="tree" />
+      </div>
 
       <div class="card">
         <b>Big Five</b>
@@ -100,8 +105,7 @@ export function StatsView({ journal }: { journal?: boolean } = {}) {
       <div class="card">
         <div class="row" style="justify-content:space-between"><b>Families</b>
           <div class="tabs" style="margin:0">
-            <button class={famGroup.value === 'bird' ? 'on' : ''} onClick={() => (famGroup.value = 'bird')}>Birds</button>
-            <button class={famGroup.value === 'mammal' ? 'on' : ''} onClick={() => (famGroup.value = 'mammal')}>Mammals</button>
+            {GROUPS.map((g) => <button class={famGroup.value === g ? 'on' : ''} onClick={() => (famGroup.value = g)}>{GROUP_LABEL[g]}</button>)}
           </div>
         </div>
         {fams.map(([k, f]) => (

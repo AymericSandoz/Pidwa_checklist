@@ -129,7 +129,7 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 12px 0; }
 .err { color: var(--danger); }
 .sec { display: flex; align-items: center; gap: 8px; font-size: 17px; font-weight: 800; margin: 18px 2px 8px; }
 .sec .n { font-size: 12px; font-weight: 800; background: var(--text); color: var(--bg); border-radius: 999px; padding: 1px 8px; }
-.empty { text-align: center; color: var(--muted); padding: 36px 20px; }
+.empty:not(.chip) { text-align: center; color: var(--muted); padding: 36px 20px; }
 .empty .ring { width: 64px; height: 64px; border-radius: 50%; background: var(--green-light); color: var(--green-ink); display: grid; place-items: center; margin: 0 auto 12px; }
 .bar, .progress, .level, .conf { display: block; height: 5px; background: var(--sand); border-radius: 3px; overflow: hidden; }
 .bar i, .progress i, .level i, .conf i { display: block; height: 100%; background: var(--green); border-radius: 3px; }
@@ -789,3 +789,37 @@ details summary { cursor: pointer; }
 .listhead .count + .sortbtn { margin-left: 0; }
 .grid .tile .rr { font-size: 11px; font-weight: 600; color: var(--muted); padding: 0 8px 7px; margin-top: -4px; line-height: 1.2; }
 .grid .tile .migb { left: 6px; top: 6px; right: auto; }
+
+/* four groups in the list header: label over the count */
+.duo.quad { gap: 6px; }
+.duo.quad button { grid-template-columns: 1fr; padding: 8px 9px 9px; row-gap: 5px; border-radius: 14px; }
+.duo.quad .l { font-size: 12px; gap: 4px; white-space: nowrap; overflow: hidden; }
+.duo.quad .v { font-size: 17px; }
+.duo.quad .v small { font-size: 11.5px; }
+.duo.quad .bar { grid-column: 1; }
+@media (max-width: 360px) { .duo.quad .l .ic { display: none; } }
+
+/* snake bite card, coloured by danger */
+.bite p { font-size: 14.5px; line-height: 1.5; }
+.bite.deadly { background: var(--danger-soft); color: var(--danger); }
+.bite.deadly p { color: var(--text); }
+.bite.venomous { background: var(--amber-soft); }
+.bite.venomous b { color: var(--amber); }
+.firstaid summary { display: flex; justify-content: space-between; align-items: center; list-style: none; }
+.firstaid summary::-webkit-details-marker { display: none; }
+.firstaid[open] summary { margin-bottom: 8px; }
+.firstaid[open] summary .ic { transform: rotate(180deg); }
+
+/* flowers and fruit strips of a plant */
+.yearrow { display: grid; grid-template-columns: 52px 1fr; align-items: end; gap: 6px; }
+.yearrow .lb { font-size: 12px; font-weight: 700; color: var(--muted); padding-bottom: 18px; }
+.yearrow .monthstrip { margin-top: 10px; }
+.behave b { font-weight: 700; }
+.graze p { margin: 6px 0 0; font-size: 14px; color: var(--muted); line-height: 1.45; }
+.graze .gv.high { color: var(--green-ink); }
+.graze .gv.low { color: var(--amber); }
+/* venomous corner on the snake key tiles */
+.tile .dgb { position: absolute; top: 5px; left: 5px; width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; color: #fff; box-shadow: 0 1px 3px #0005; }
+.tile .dgb.deadly { background: var(--danger); }
+.tile .dgb.venomous { background: var(--amber); }
+.gswitch button { padding-left: 6px; padding-right: 6px; }

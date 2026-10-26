@@ -4,7 +4,7 @@ import { href, route, navigate } from '../router';
 import { L, ORDER, lbl, matches } from '../util';
 import { BIRD_GROUPS, groupOf, familyEn } from '../taxa';
 import { COLOURS, BIRD_COLOURS } from '../colours';
-import { Icon } from '../components/Icon';
+import { Icon, type IconName } from '../components/Icon';
 import { SearchBox } from '../components/SearchBox';
 import { SortButton, rarityText, MigBadge } from '../components/BirdSection';
 import { birdInfo, birdSort, rarityCompare } from '../learn/birds';
@@ -43,13 +43,13 @@ function toggle(k: Key, v: string) {
   if (k === 'group') family.value = '';
 }
 
-/** Birds by look, or mammals by their prints: the two keys of the Guide tab. */
+/** The keys of the Guide tab: birds by look, mammals by their prints, snakes and plants by look. */
+const GUIDES: [string, string, IconName][] = [['', 'Birds', 'bird'], ['tracks', 'Tracks', 'paw-print'], ['snakes', 'Snakes', 'snake'], ['plants', 'Plants', 'tree']];
 export function GuideSwitch() {
-  const tracks = route.value.parts[1] === 'tracks';
+  const cur = route.value.parts[1] || '';
   return (
     <div class="seg gswitch">
-      <button class={tracks ? '' : 'on'} onClick={() => navigate('id')}><Icon name="bird" size={16} />Birds</button>
-      <button class={tracks ? 'on' : ''} onClick={() => navigate('id/tracks')}><Icon name="paw-print" size={16} />Tracks</button>
+      {GUIDES.map(([k, label, icon]) => <button class={cur === k ? 'on' : ''} onClick={() => navigate(k ? 'id/' + k : 'id')}><Icon name={icon} size={16} />{label}</button>)}
     </div>
   );
 }

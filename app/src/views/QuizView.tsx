@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import { species, seenCount, dataUrl, imgUrl } from '../data';
 import { back, href } from '../router';
 import { Icon } from '../components/Icon';
-import { familyEn } from '../taxa';
+import { familyEn, GROUPS, GROUP_LABEL } from '../taxa';
 import { judge, loadCards, record, resetCards, pickRound, progress, type Verdict } from '../learn/quiz';
 import type { Species, QuizCard, Group } from '../types';
 
@@ -62,9 +62,8 @@ export function QuizView() {
           <button class={scope === 'all' ? 'on' : ''} onClick={() => choose('quiz-scope', 'all', setScope)}>Whole checklist</button>
         </div>
         <div class="seg">
-          <button class={groups === 'both' ? 'on' : ''} onClick={() => choose('quiz-groups', 'both', setGroups)}>Both</button>
-          <button class={groups === 'bird' ? 'on' : ''} onClick={() => choose('quiz-groups', 'bird', setGroups)}>Birds</button>
-          <button class={groups === 'mammal' ? 'on' : ''} onClick={() => choose('quiz-groups', 'mammal', setGroups)}>Mammals</button>
+          <button class={groups === 'both' ? 'on' : ''} onClick={() => choose('quiz-groups', 'both', setGroups)}>All</button>
+          {GROUPS.map((g) => <button class={groups === g ? 'on' : ''} onClick={() => choose('quiz-groups', g, setGroups)}>{GROUP_LABEL[g]}</button>)}
         </div>
         {p && (
           <div class="qprog">

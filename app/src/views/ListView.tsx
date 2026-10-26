@@ -3,43 +3,56 @@ import { useState } from 'preact/hooks';
 import { species, seenCount, name, name2, totals } from '../data';
 import { href } from '../router';
 import { matches } from '../util';
-import { familyEn } from '../taxa';
+import { familyEn, GROUPS, GROUP_LABEL, GROUP_ICON } from '../taxa';
 import { Thumb } from '../components/Thumb';
 import { Icon } from '../components/Icon';
 import { SearchBox } from '../components/SearchBox';
 import { ObsForm } from '../components/ObsForm';
-import { MigBadge, SortButton, rarityText } from '../components/BirdSection';
-import { birdInfo, birdSort, rarityCompare } from '../learn/birds';
+import { MigBadge, SortButton } from '../components/BirdSection';
+import { birdSort } from '../learn/birds';
+import { abundanceCompare, abundanceText } from '../learn/abundance';
+import { plantInfo, type PlantKind } from '../learn/plants';
 import type { Group } from '../types';
 
 // module-level so the list keeps its state when coming back from a species page
-const tab = signal<Group>((localStorage.getItem('tab') as Group) || 'bird');
+const saved = localStorage.getItem('tab') as Group;
+const tab = signal<Group>(GROUPS.includes(saved) ? saved : 'bird');
 const q = signal('');
 const filter = signal<'all' | 'seen' | 'unseen'>('all');
+// plants only: trees (with shrubs and succulents), grasses, wildflowers
+const PLANT_KINDS: [string, string, PlantKind[]][] = [['all', 'All', []], ['trees', 'Trees & shrubs', ['tree', 'shrub', 'succulent']], ['grass', 'Grasses', ['grass']], ['herb', 'Wildflowers', ['herb']]];
+const plantKind = signal('all');
 
 export function ListView() {
   const [adding, setAdding] = useState<string | null>(null);
   const seen = seenCount.value;
-  // birds only: mammals have no atlas rate
-  const cmp = tab.value === 'bird' ? rarityCompare(birdSort.value, birdInfo.value) : null;
+  // mammals have no level: no sort
+  const cmp = tab.value !== 'mammal' ? abundanceCompare(birdSort.value) : null;
   let list = species.value.filter((s) => s.group === tab.value && matches(s, q.value) && (filter.value === 'all' || (filter.value === 'seen') === seen.has(s.id)));
+  const kinds = tab.value === 'plant' ? PLANT_KINDS.find(([k]) => k === plantKind.value)![2] : [];
+  if (kinds.length) list = list.filter((s) => kinds.includes(plantInfo.value.get(s.id)?.kind as PlantKind));
   if (cmp) list = [...list].sort(cmp);
   const t = totals.value[tab.value];
 
   return (
     <div>
-      <div class="duo">
-        {(['bird', 'mammal'] as Group[]).map((g) => {
+      <div class="duo quad">
+        {GROUPS.map((g) => {
           const tg = totals.value[g];
           return (
             <button class={tab.value === g ? 'on' : ''} onClick={() => { tab.value = g; localStorage.setItem('tab', g); }}>
-              <span class="l"><Icon name={g === 'bird' ? 'bird' : 'paw-print'} size={16} />{g === 'bird' ? 'Birds' : 'Mammals'}</span>
+              <span class="l"><Icon name={GROUP_ICON[g]} size={15} />{GROUP_LABEL[g]}</span>
               <span class="v">{tg.seen}<small>/{tg.total}</small></span>
               <span class="bar"><i style={`width:${tg.total ? (100 * tg.seen) / tg.total : 0}%`} /></span>
             </button>
           );
         })}
       </div>
+      {tab.value === 'plant' && (
+        <div class="chips" style="margin-bottom:8px">
+          {PLANT_KINDS.map(([k, label]) => <button class={'chip' + (plantKind.value === k ? ' on' : '')} onClick={() => (plantKind.value = k)}>{label}</button>)}
+        </div>
+      )}
       <SearchBox value={q.value} onInput={(v) => (q.value = v)} placeholder="Name or family (English, French, Latin)" />
       <div class="listhead">
         <div class="chips" style="margin-bottom:-7px">
@@ -48,12 +61,12 @@ export function ListView() {
           ))}
         </div>
         {q.value && <span class="muted count">{list.length}</span>}
-        {tab.value === 'bird' && <SortButton />}
+        {tab.value !== 'mammal' && <SortButton />}
       </div>
       <div class="list">
         {list.map((s) => {
           const n = seen.get(s.id) || 0;
-          const rt = cmp && rarityText(s.id);
+          const rt = cmp && abundanceText(s.id);
           return (
             <div class={'sp-row' + (n ? ' seen' : '')} key={s.id}>
               <a href={href('species/' + s.id)} class="row" style="flex:1;min-width:0">

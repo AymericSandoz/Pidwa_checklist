@@ -107,7 +107,7 @@ for (const s of species) {
   out.push(rec);
 }
 writeJson(path.join(OUT_DIR, 'species.json'), out);
-console.log(`species.json: ${out.length} species (${out.filter((x) => x.group === 'bird').length} birds, ${out.filter((x) => x.group === 'mammal').length} mammals)`);
+console.log(`species.json: ${out.length} species (${['bird', 'mammal', 'snake', 'plant'].map((g) => `${out.filter((x) => x.group === g).length} ${g}s`).join(', ')})`);
 console.log(`with image: ${out.filter((x) => x.image).length}, with FR summary: ${out.filter((x) => x.summary.fr).length}, with sounds: ${out.filter((x) => x.sounds.length).length}, with extra photos: ${out.filter((x) => x.photos.length).length}, birds with AVONET: ${out.filter((x) => x.avonet).length}`);
 if (warnings.length) console.log('warnings:\n  ' + warnings.join('\n  '));
 
@@ -151,10 +151,8 @@ h2{grid-column:1/-1;margin:16px 0 0;color:#2f4f2f}
 </style></head><body>
 <header><b>Pidwa</b> · ${out.length} espèces · <input id="q" placeholder="filtrer (nom fr/en/sci, famille)"></header>
 <main>
-<h2>Mammifères (${out.filter((x) => x.group === 'mammal').length})</h2>
-${out.filter((x) => x.group === 'mammal').map(card).join('')}
-<h2>Oiseaux (${out.filter((x) => x.group === 'bird').length})</h2>
-${out.filter((x) => x.group === 'bird').map(card).join('')}
+${[['mammal', 'Mammifères'], ['bird', 'Oiseaux'], ['snake', 'Serpents'], ['plant', 'Plantes']].map(([g, t]) => `<h2>${t} (${out.filter((x) => x.group === g).length})</h2>
+${out.filter((x) => x.group === g).map(card).join('')}`).join('')}
 </main>
 <script>
 const q=document.getElementById('q');q.addEventListener('input',()=>{const v=q.value.toLowerCase();for(const c of document.querySelectorAll('.card'))c.style.display=c.textContent.toLowerCase().includes(v)?'':'none'});
