@@ -30,7 +30,7 @@ export function QuizView() {
   const [havePack, setHavePack] = useState(true);
 
   useEffect(() => { loadCards().then(setCards); }, []);
-  useEffect(() => { caches.open('pack-photos').then((c) => c.keys()).then((k) => setHavePack(k.length > 0)).catch(() => {}); }, []);
+  useEffect(() => { self.caches?.open('pack-photos').then((c) => c.keys()).then((k) => setHavePack(k.length > 0)).catch(() => {}); }, []);
 
   const pool = useMemo(() => species.value.filter((s) => (groups === 'both' || s.group === groups) && (scope === 'all' || seenCount.value.has(s.id)) && (s.image || s.photos.length)), [scope, groups, species.value, seenCount.value]);
 

@@ -213,7 +213,8 @@ export function MapView() {
         if (!r.ok) throw new Error();
         reserve = await r.json();
       } catch { setState('nopack'); return; }
-      caches.delete('pack-map').catch(() => {}); // old OpenStreetMap pack, no longer used
+      // old OpenStreetMap pack, no longer used; `caches` is missing outside https and localhost (a dev server opened by IP)
+      self.caches?.delete('pack-map').catch(() => {});
       try {
         map = new maplibregl.Map({
           container: el.current!, style: makeStyle(), center: [30.6, -24.08], zoom: 11, // opens around Askari Camp
