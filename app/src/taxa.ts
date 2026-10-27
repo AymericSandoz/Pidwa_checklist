@@ -100,15 +100,15 @@ export const FAMILY: Record<string, { en: string; group: string }> = {
   Pteropodidae: { en: 'Fruit bats', group: 'bats' },
   Emballonuridae: { en: 'Sheath-tailed bats', group: 'bats' },
   // ---- snakes ----
-  Pythonidae: { en: 'Pythons', group: 'snakes' },
-  Viperidae: { en: 'Adders', group: 'snakes' },
-  Elapidae: { en: 'Cobras, mambas & allies', group: 'snakes' },
-  Colubridae: { en: 'Typical snakes', group: 'snakes' },
-  Atractaspididae: { en: 'Stiletto snakes & allies', group: 'snakes' },
-  Psammophiidae: { en: 'Sand & grass snakes', group: 'snakes' },
-  Lamprophiidae: { en: 'House, wolf & file snakes', group: 'snakes' },
-  Typhlopidae: { en: 'Blind snakes', group: 'snakes' },
-  Leptotyphlopidae: { en: 'Thread snakes', group: 'snakes' },
+  Pythonidae: { en: 'Pythons', group: 'python' },
+  Viperidae: { en: 'Adders', group: 'adders' },
+  Elapidae: { en: 'Cobras, mambas & allies', group: 'cobras' },
+  Colubridae: { en: 'Typical snakes', group: 'colubrids' },
+  Atractaspididae: { en: 'Stiletto snakes & allies', group: 'stilettos' },
+  Psammophiidae: { en: 'Sand & grass snakes', group: 'sandsnakes' },
+  Lamprophiidae: { en: 'House, wolf & file snakes', group: 'housesnakes' },
+  Typhlopidae: { en: 'Blind snakes', group: 'blindsnakes' },
+  Leptotyphlopidae: { en: 'Thread snakes', group: 'blindsnakes' },
   // ---- other reptiles ----
   Crocodylidae: { en: 'Crocodiles', group: 'croc' },
   Varanidae: { en: 'Monitors', group: 'monitors' },
@@ -213,6 +213,7 @@ export const FAMILY: Record<string, { en: string; group: string }> = {
 const GENUS_GROUP: Record<string, string> = {
   Gyps: 'vultures', Necrosyrtes: 'vultures', Torgos: 'vultures', Trigonoceps: 'vultures',
   Pyxicephalus: 'bullfrog', Tomopterna: 'burrowers', // the bullfrog stands apart; sand frogs dig like rain frogs
+  Amblyodipsas: 'stilettos', Aparallactus: 'stilettos', // Wikidata files them under Lamprophiidae; they are the stiletto snakes' relatives
   Parabuthus: 'scorpions-danger', // thick-tailed: the dangerous ones, in the same family as the harmless lesser-thicktails
 };
 
@@ -256,6 +257,32 @@ export const MAMMAL_GROUPS: [string, string][] = [
   ['small-mammals', 'Hares, squirrels, porcupine, hyrax…'],
   ['bats', 'Bats'],
 ];
+
+/** Plain-language groups of the snakes (taxa group of the family or genus, see groupOf), for the snake key's tiles. */
+export const SNAKE_GROUPS: [string, string][] = [
+  ['python', 'Python'], ['adders', 'Adders'], ['cobras', 'Cobras, mambas & garter snakes'], ['colubrids', 'Boomslang, bush, tree & egg-eaters'],
+  ['sandsnakes', 'Sand & grass snakes'], ['housesnakes', 'House, wolf & file snakes'], ['stilettos', 'Stiletto, purple-glossed & centipede-eaters'],
+  ['blindsnakes', 'Blind & thread snakes'],
+];
+
+/** Plant groups for the plant key's tiles: the big tree families, the small ones together, and grasses, wildflowers and
+ *  succulents by what they are. Acacias are the two genera Vachellia (straight thorns) and Senegalia (hooks). */
+export const PLANT_GROUPS: [string, string][] = [
+  ['acacias', 'Acacias (thorn trees)'], ['legumes', 'Other pea-pod trees'], ['combretums', 'Bushwillows & cluster-leaves'], ['figs', 'Figs'],
+  ['mallows', 'Baobab, raisins & wild pear'], ['euphorbias', 'Euphorbias & tamboti'], ['rhamnaceae', 'Buffalo thorn & ivories'],
+  ['rubiaceae', 'Gardenia & matumi'], ['otherfam', 'Other families (1–2 species each)'], ['succulents', 'Aloe & succulents'],
+  ['grasses', 'Grasses'], ['flowers', 'Wildflowers'],
+];
+const PLANT_FAMILY_GROUP: Record<string, string> = { Fabaceae: 'legumes', Combretaceae: 'combretums', Moraceae: 'figs', Malvaceae: 'mallows', Euphorbiaceae: 'euphorbias', Rhamnaceae: 'rhamnaceae', Rubiaceae: 'rubiaceae' };
+/** kind: the plant's kind in plants.data.json (tree, shrub, succulent, grass, herb) */
+export function plantGroup(s: Species, kind: string | undefined): string {
+  if (kind === 'grass') return 'grasses';
+  if (kind === 'herb') return 'flowers';
+  const genus = s.sci.split(' ')[0];
+  if (genus === 'Vachellia' || genus === 'Senegalia') return 'acacias';
+  if (s.family && PLANT_FAMILY_GROUP[s.family]) return PLANT_FAMILY_GROUP[s.family];
+  return kind === 'succulent' ? 'succulents' : 'otherfam';
+}
 
 /** Plain-language groups inside each category of the Others tab (taxa group of the family or genus, see groupOf):
  *  the list headers and the "kind" filter of the Others key. */

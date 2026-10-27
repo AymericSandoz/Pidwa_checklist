@@ -1,13 +1,13 @@
 import { signal, type Signal } from '@preact/signals';
 import { species, seenCount, name, name2, imgUrl, byId } from '../data';
-import { groupOf, OTHER_GROUPS, otherGroupLabel } from '../taxa';
+import { groupOf, OTHER_GROUPS, otherGroupLabel, SNAKE_GROUPS, PLANT_GROUPS, plantGroup } from '../taxa';
 import { href } from '../router';
 import { matches } from '../util';
 import { Icon, type IconName } from '../components/Icon';
 import { SearchBox } from '../components/SearchBox';
 import { SortButton } from '../components/BirdSection';
 import { birdSort } from '../learn/birds';
-import { abundanceCompare, abundanceText } from '../learn/abundance';
+import { abundance, abundanceCompare, abundanceText } from '../learn/abundance';
 import { snakeInfo, DANGER_LABEL, type Danger } from '../learn/snakes';
 import { plantInfo, KIND_LABEL, LEAF_LABEL } from '../learn/plants';
 import { otherInfo, CAT_LABEL, WHERE_LABEL, type OtherCat, type Where } from '../learn/others';
@@ -27,6 +27,7 @@ interface Criterion {
   more?: boolean;   // under "More criteria"
   hideEmpty?: boolean;   // drop the options no species has (categories not filled yet)
   clears?: string;       // criterion whose options depend on this one: emptied when this one changes
+  tiles?: boolean;       // photo tiles, like the bird groups: the photo is the group's commonest species
 }
 
 interface KeyState { sel: Signal<Record<string, string[]>>; q: Signal<string>; hideSeen: Signal<boolean> }
@@ -66,6 +67,31 @@ function KeyGuide({ group, st, criteria, icon, noun, badge, sub, credit }: {
   const row = (c: Criterion) => {
     const opts = typeof c.options === 'function' ? c.options(s0) : c.options;
     if (!opts.length) return null;
+    if (c.tiles) {
+      // the commonest species of each group, with a photo, stands for it
+      const rep = (v: string) => all.filter((s) => s.image && c.valueOf(s.id).includes(v)).sort((a, b) => (abundance(b.id)?.rate ?? 0) - (abundance(a.id)?.rate ?? 0))[0];
+      return (
+        <div class="fgroup">
+          <div class="lab">{c.label}{c.hint && <span class="hint">{c.hint}</span>}</div>
+          <div class="gtiles">
+            {opts.map(([v, label]) => {
+              if (!all.some((s) => c.valueOf(s.id).includes(v))) return null;
+              const on = !!s0[c.key]?.includes(v);
+              const n = countFor(c, v);
+              const r = rep(v);
+              const u = r && imgUrl(r);
+              return (
+                <button class={'gtile' + (on ? ' on' : '') + (!on && n === 0 ? ' empty' : '')} disabled={!on && n === 0} onClick={() => toggle(c.key, v)}>
+                  {u ? <img src={u} loading="lazy" decoding="async" alt="" /> : <div class="noimg"><Icon name={icon} size={26} /></div>}
+                  <span class="gl">{label}</span>
+                  <span class="n">{n}</span>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      );
+    }
     return (
     <div class="fgroup">
       <div class="lab">{c.label}{c.hint && <span class="hint">{c.hint}</span>}</div>
@@ -128,6 +154,7 @@ const DANGER_SHORT: Record<Danger, string> = { deadly: 'Potentially deadly', ven
 const sw = (c: string) => <i class="sw" style={{ background: c }} />;
 
 const SNAKE_KEY: Criterion[] = [
+  { key: 'grp', label: 'Which family', hint: 'tick one or several', tiles: true, options: SNAKE_GROUPS, valueOf: (id) => { const s = byId.value.get(id); const g = s && groupOf(s); return g ? [g] : []; } },
   { key: 'col', label: 'Main colour', options: [['green', <>{sw('#4caf50')}Green</>], ['brown', <>{sw('#9a8566')}Brown, grey or olive</>], ['dark', <>{sw('#2b2530')}Black or dark purple</>], ['orange', <>{sw('#d9793b')}Orange, red or pink</>]], valueOf: (id) => sn(id)?.col || [] },
   { key: 'pat', label: 'Pattern', options: [['plain', 'Plain'], ['stripes', 'Stripes along'], ['bands', 'Bands across'], ['blotches', 'Blotches, spots, chevrons']], valueOf: (id) => sn(id)?.pat || [] },
   { key: 'len', label: 'Length', hint: 'adults; guesses run long, tick two if unsure', options: LEN.map(([k, l]) => [k, l]), valueOf: (id) => { const n = sn(id)?.len; return n == null ? [] : LEN.filter(([, , a, b]) => n >= a && n < b).map(([k]) => k); } },
@@ -141,8 +168,10 @@ const dangerBadge = (id: string) => {
   return d === 'deadly' || d === 'venomous' ? <span class={'dgb ' + d} title={DANGER_LABEL[d]}><Icon name="triangle-alert" size={13} stroke={2.6} /></span> : null;
 };
 
+const snakeSub = (id: string) => { const s = byId.value.get(id); const g = s && groupOf(s); return SNAKE_GROUPS.find(([k]) => k === g)?.[1] || ''; };
+
 export function SnakeGuideView() {
-  return <KeyGuide group="snake" st={snakeState} criteria={SNAKE_KEY} icon="snake" noun={['snake', 'snakes']} badge={dangerBadge}
+  return <KeyGuide group="snake" st={snakeState} criteria={SNAKE_KEY} icon="snake" noun={['snake', 'snakes']} badge={dangerBadge} sub={snakeSub}
     credit="Colours and patterns are those of adults; young ones can differ (garter snakes, mambas). Never go close to check: a photo from a few metres is enough." />;
 }
 
@@ -150,6 +179,7 @@ export function SnakeGuideView() {
 const pl = (id: string) => plantInfo.value.get(id);
 const thisMonth = new Date().getMonth();
 const PLANT_KEY: Criterion[] = [
+  { key: 'grp', label: 'Which family', hint: 'tick one or several', tiles: true, options: PLANT_GROUPS, valueOf: (id) => { const s = byId.value.get(id); return s ? [plantGroup(s, pl(id)?.kind)] : []; } },
   { key: 'kind', label: 'What it is', options: (['tree', 'shrub', 'succulent', 'grass', 'herb'] as const).map((k) => [k, KIND_LABEL[k] + (k === 'herb' ? 's' : k === 'grass' ? 'es' : 's')]), valueOf: (id) => { const k = pl(id)?.kind; return k ? [k] : []; } },
   { key: 'leaf', label: 'Leaves', hint: 'not for grasses', options: (['simple', 'pinnate', 'bipinnate', 'trifoliate', 'twin', 'palmate', 'none'] as const).map((k) => [k, LEAF_LABEL[k]]), valueOf: (id) => { const l = pl(id)?.leaf; return l && l !== 'blade' ? [l] : []; } },
   { key: 'spines', label: 'Thorns or spines', options: [['yes', 'Yes'], ['no', 'No']], valueOf: (id) => { const p = pl(id); return p && p.kind !== 'grass' ? [p.spines ? 'yes' : 'no'] : []; } },
@@ -159,8 +189,10 @@ const PLANT_KEY: Criterion[] = [
   { key: 'graze', label: 'Grazing value', more: true, hint: 'grasses', options: [['high', 'High'], ['average', 'Average'], ['low', 'Low']], valueOf: (id) => { const g = pl(id)?.graze; return g ? [g] : []; } },
 ];
 
+const plantSub = (id: string) => { const s = byId.value.get(id); return s ? PLANT_GROUPS.find(([k]) => k === plantGroup(s, pl(id)?.kind))?.[1] || '' : ''; };
+
 export function PlantGuideView() {
-  return <KeyGuide group="plant" st={plantState} criteria={PLANT_KEY} icon="tree" noun={['plant', 'plants']}
+  return <KeyGuide group="plant" st={plantState} criteria={PLANT_KEY} icon="tree" noun={['plant', 'plants']} sub={plantSub}
     credit="Flower colour is the colour seen from a few metres. Figs hide their flowers. Many trees flower on bare branches before the leaves." />;
 }
 
@@ -169,7 +201,7 @@ const ot = (id: string) => otherInfo.value.get(id);
 const OTHER_KEY: Criterion[] = [
   { key: 'cat', label: 'What it is', hideEmpty: true, clears: 'kind', options: (Object.keys(CAT_LABEL) as OtherCat[]).map((c) => [c, CAT_LABEL[c]]), valueOf: (id) => { const c = ot(id)?.cat; return c ? [c] : []; } },
   // the groups of the ticked categories (all of them when none is ticked), e.g. skinks, geckos, monitors for the reptiles
-  { key: 'kind', label: 'Which group', hint: 'the families, in plain words', options: (sel) => ((sel.cat?.length ? sel.cat : Object.keys(OTHER_GROUPS)) as OtherCat[]).flatMap((c) => OTHER_GROUPS[c]),
+  { key: 'kind', label: 'Which group', hint: 'the families, in plain words', tiles: true, options: (sel) => ((sel.cat?.length ? sel.cat : Object.keys(OTHER_GROUPS)) as OtherCat[]).flatMap((c) => OTHER_GROUPS[c]),
     valueOf: (id) => { const s = byId.value.get(id); const g = s && groupOf(s); return g ? [g] : []; } },
   { key: 'where', label: 'Where', options: (Object.keys(WHERE_LABEL) as Where[]).map((w) => [w, WHERE_LABEL[w]]), valueOf: (id) => ot(id)?.where || [] },
   { key: 'when', label: 'When', options: [['day', 'By day'], ['night', 'At night']], valueOf: (id) => ot(id)?.when || [] },
