@@ -1,6 +1,6 @@
 import { signal, type Signal } from '@preact/signals';
 import { species, seenCount, name, name2, imgUrl, byId } from '../data';
-import { FAMILY, INSECT_GROUPS } from '../taxa';
+import { groupOf, OTHER_GROUPS, otherGroupLabel } from '../taxa';
 import { href } from '../router';
 import { matches } from '../util';
 import { Icon, type IconName } from '../components/Icon';
@@ -21,10 +21,12 @@ interface Criterion {
   key: string;
   label: string;
   hint?: string;
-  options: [string, preact.ComponentChildren][];
+  /** fixed, or depending on what is ticked elsewhere (the kinds of the chosen categories) */
+  options: [string, preact.ComponentChildren][] | ((sel: Record<string, string[]>) => [string, preact.ComponentChildren][]);
   valueOf: (id: string) => string[];
   more?: boolean;   // under "More criteria"
   hideEmpty?: boolean;   // drop the options no species has (categories not filled yet)
+  clears?: string;       // criterion whose options depend on this one: emptied when this one changes
 }
 
 interface KeyState { sel: Signal<Record<string, string[]>>; q: Signal<string>; hideSeen: Signal<boolean> }
@@ -33,9 +35,9 @@ const snakeState = state();
 const plantState = state();
 const otherState = state();
 
-function KeyGuide({ group, st, criteria, icon, noun, badge, credit }: {
+function KeyGuide({ group, st, criteria, icon, noun, badge, sub, credit }: {
   group: Group; st: KeyState; criteria: Criterion[]; icon: IconName; noun: [string, string];
-  badge?: (id: string) => preact.ComponentChildren; credit: string;
+  badge?: (id: string) => preact.ComponentChildren; sub?: (id: string) => string; credit: string;
 }) {
   const all = species.value.filter((s) => s.group === group);
   const seen = seenCount.value;
@@ -57,14 +59,18 @@ function KeyGuide({ group, st, criteria, icon, noun, badge, credit }: {
   const countFor = (c: Criterion, v: string) => all.filter((s) => c.valueOf(s.id).includes(v) && pass(s, c.key)).length;
   const toggle = (k: string, v: string) => {
     const cur = s0[k] || [];
-    st.sel.value = { ...s0, [k]: cur.includes(v) ? cur.filter((x) => x !== v) : [...cur, v] };
+    const c = byKey.get(k);
+    st.sel.value = { ...s0, [k]: cur.includes(v) ? cur.filter((x) => x !== v) : [...cur, v], ...(c?.clears ? { [c.clears]: [] } : {}) };
   };
 
-  const row = (c: Criterion) => (
+  const row = (c: Criterion) => {
+    const opts = typeof c.options === 'function' ? c.options(s0) : c.options;
+    if (!opts.length) return null;
+    return (
     <div class="fgroup">
       <div class="lab">{c.label}{c.hint && <span class="hint">{c.hint}</span>}</div>
       <div class="chips">
-        {c.options.map(([v, label]) => {
+        {opts.map(([v, label]) => {
           const on = !!s0[c.key]?.includes(v);
           const n = countFor(c, v);
           if (c.hideEmpty && !all.some((s) => c.valueOf(s.id).includes(v))) return null;
@@ -72,7 +78,8 @@ function KeyGuide({ group, st, criteria, icon, noun, badge, credit }: {
         })}
       </div>
     </div>
-  );
+    );
+  };
 
   return (
     <div class="idg">
@@ -102,6 +109,7 @@ function KeyGuide({ group, st, criteria, icon, noun, badge, credit }: {
               {u ? <img src={u} loading="lazy" decoding="async" alt="" /> : <div class="noimg"><Icon name={icon} size={26} /></div>}
               {badge?.(s.id)}
               <div class="t">{name(s)}</div>
+              {sub && !cmp && <div class="rr">{sub(s.id)}</div>}
               {rt && <div class="rr">{rt}</div>}
             </a>
           );
@@ -159,8 +167,10 @@ export function PlantGuideView() {
 // ---- others: reptiles, spiders and scorpions ----
 const ot = (id: string) => otherInfo.value.get(id);
 const OTHER_KEY: Criterion[] = [
-  { key: 'cat', label: 'What it is', hideEmpty: true, options: (Object.keys(CAT_LABEL) as OtherCat[]).map((c) => [c, CAT_LABEL[c]]), valueOf: (id) => { const c = ot(id)?.cat; return c ? [c] : []; } },
-  { key: 'insect', label: 'Kind of insect', hint: 'insects only', options: INSECT_GROUPS, valueOf: (id) => { const s = byId.value.get(id); const g = s && ot(id)?.cat === 'insect' ? s.family && FAMILY[s.family]?.group : null; return g ? [g] : []; } },
+  { key: 'cat', label: 'What it is', hideEmpty: true, clears: 'kind', options: (Object.keys(CAT_LABEL) as OtherCat[]).map((c) => [c, CAT_LABEL[c]]), valueOf: (id) => { const c = ot(id)?.cat; return c ? [c] : []; } },
+  // the groups of the ticked categories (all of them when none is ticked), e.g. skinks, geckos, monitors for the reptiles
+  { key: 'kind', label: 'Which group', hint: 'the families, in plain words', options: (sel) => ((sel.cat?.length ? sel.cat : Object.keys(OTHER_GROUPS)) as OtherCat[]).flatMap((c) => OTHER_GROUPS[c]),
+    valueOf: (id) => { const s = byId.value.get(id); const g = s && groupOf(s); return g ? [g] : []; } },
   { key: 'where', label: 'Where', options: (Object.keys(WHERE_LABEL) as Where[]).map((w) => [w, WHERE_LABEL[w]]), valueOf: (id) => ot(id)?.where || [] },
   { key: 'when', label: 'When', options: [['day', 'By day'], ['night', 'At night']], valueOf: (id) => ot(id)?.when || [] },
   { key: 'danger', label: 'Danger', more: true, options: DANGERS.map((d) => [d, DANGER_SHORT[d]]), valueOf: (id) => { const d = ot(id)?.danger; return d ? [d] : []; } },
@@ -170,7 +180,10 @@ const otherBadge = (id: string) => {
   return d === 'deadly' || d === 'venomous' ? <span class={'dgb ' + d} title={DANGER_LABEL[d]}><Icon name="triangle-alert" size={13} stroke={2.6} /></span> : null;
 };
 
+/** Under each tile: its group in plain words, to learn who is related to whom. */
+const otherSub = (id: string) => { const s = byId.value.get(id); return s ? otherGroupLabel(groupOf(s) || '') : ''; };
+
 export function OtherGuideView() {
-  return <KeyGuide group="other" st={otherState} criteria={OTHER_KEY} icon="bug" noun={['animal', 'animals']} badge={otherBadge}
+  return <KeyGuide group="other" st={otherState} criteria={OTHER_KEY} icon="bug" noun={['animal', 'animals']} badge={otherBadge} sub={otherSub}
     credit="Thick tail and thin pincers on a scorpion means dangerous; big pincers and a thin tail, mostly harmless. Look, don't touch." />;
 }

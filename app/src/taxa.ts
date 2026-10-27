@@ -110,42 +110,42 @@ export const FAMILY: Record<string, { en: string; group: string }> = {
   Typhlopidae: { en: 'Blind snakes', group: 'snakes' },
   Leptotyphlopidae: { en: 'Thread snakes', group: 'snakes' },
   // ---- other reptiles ----
-  Crocodylidae: { en: 'Crocodiles', group: 'reptiles' },
-  Varanidae: { en: 'Monitors', group: 'reptiles' },
-  Testudinidae: { en: 'Tortoises', group: 'reptiles' },
-  Pelomedusidae: { en: 'Terrapins', group: 'reptiles' },
-  Chamaeleonidae: { en: 'Chameleons', group: 'reptiles' },
-  Agamidae: { en: 'Agamas', group: 'reptiles' },
-  Scincidae: { en: 'Skinks', group: 'reptiles' },
-  Gekkonidae: { en: 'Geckos', group: 'reptiles' },
-  Gerrhosauridae: { en: 'Plated lizards', group: 'reptiles' },
-  Lacertidae: { en: 'Sand lizards', group: 'reptiles' },
-  Cordylidae: { en: 'Girdled & flat lizards', group: 'reptiles' },
+  Crocodylidae: { en: 'Crocodiles', group: 'croc' },
+  Varanidae: { en: 'Monitors', group: 'monitors' },
+  Testudinidae: { en: 'Tortoises', group: 'chelonians' },
+  Pelomedusidae: { en: 'Terrapins', group: 'chelonians' },
+  Chamaeleonidae: { en: 'Chameleons', group: 'chameleons' },
+  Agamidae: { en: 'Agamas', group: 'agamas' },
+  Scincidae: { en: 'Skinks', group: 'skinks' },
+  Gekkonidae: { en: 'Geckos', group: 'geckos' },
+  Gerrhosauridae: { en: 'Plated lizards', group: 'plated' },
+  Lacertidae: { en: 'Sand lizards', group: 'sandlizards' },
+  Cordylidae: { en: 'Girdled & flat lizards', group: 'plated' },
   // ---- spiders, scorpions & ticks ----
-  Buthidae: { en: 'Thick-tailed scorpions', group: 'arachnids' },
-  Scorpionidae: { en: 'Burrowing scorpions', group: 'arachnids' },
-  Liochelidae: { en: 'Rock & creeping scorpions', group: 'arachnids' },
-  Araneidae: { en: 'Orb-web spiders', group: 'arachnids' },
-  Theraphosidae: { en: 'Baboon spiders', group: 'arachnids' },
-  Theridiidae: { en: 'Button spiders', group: 'arachnids' },
-  Sicariidae: { en: 'Violin spiders', group: 'arachnids' },
-  Cheiracanthiidae: { en: 'Sac spiders', group: 'arachnids' },
-  Sparassidae: { en: 'Huntsman & rain spiders', group: 'arachnids' },
-  Eresidae: { en: 'Velvet spiders', group: 'arachnids' },
-  Phrynichidae: { en: 'Whip spiders', group: 'arachnids' },
-  Ixodidae: { en: 'Ticks', group: 'arachnids' },
+  Buthidae: { en: 'Thick-tailed scorpions', group: 'scorpions' },
+  Scorpionidae: { en: 'Burrowing scorpions', group: 'scorpions' },
+  Liochelidae: { en: 'Rock & creeping scorpions', group: 'scorpions' },
+  Araneidae: { en: 'Orb-web spiders', group: 'webs' },
+  Theraphosidae: { en: 'Baboon spiders', group: 'baboon' },
+  Theridiidae: { en: 'Button spiders', group: 'webs' },
+  Sicariidae: { en: 'Violin spiders', group: 'hunters' },
+  Cheiracanthiidae: { en: 'Sac spiders', group: 'hunters' },
+  Sparassidae: { en: 'Huntsman & rain spiders', group: 'hunters' },
+  Eresidae: { en: 'Velvet spiders', group: 'webs' },
+  Phrynichidae: { en: 'Whip spiders', group: 'whip' },
+  Ixodidae: { en: 'Ticks', group: 'ticks' },
   // ---- frogs ----
-  Rhacophoridae: { en: 'Foam nest frogs', group: 'frogs' },
-  Hyperoliidae: { en: 'Reed frogs & kassinas', group: 'frogs' },
-  Arthroleptidae: { en: 'Tree frogs', group: 'frogs' },
-  Microhylidae: { en: 'Rubber frogs', group: 'frogs' },
-  Pyxicephalidae: { en: 'Bullfrogs, river & sand frogs', group: 'frogs' },
-  Bufonidae: { en: 'Toads', group: 'frogs' },
-  Brevicipitidae: { en: 'Rain frogs', group: 'frogs' },
-  Hemisotidae: { en: 'Shovel-nosed frogs', group: 'frogs' },
-  Ptychadenidae: { en: 'Ridged frogs', group: 'frogs' },
-  Phrynobatrachidae: { en: 'Puddle frogs', group: 'frogs' },
-  Pipidae: { en: 'Clawed frogs', group: 'frogs' },
+  Rhacophoridae: { en: 'Foam nest frogs', group: 'treefrogs' },
+  Hyperoliidae: { en: 'Reed frogs & kassinas', group: 'treefrogs' },
+  Arthroleptidae: { en: 'Tree frogs', group: 'treefrogs' },
+  Microhylidae: { en: 'Rubber frogs', group: 'burrowers' },
+  Pyxicephalidae: { en: 'Bullfrogs, river & sand frogs', group: 'jumpers' },
+  Bufonidae: { en: 'Toads', group: 'toads' },
+  Brevicipitidae: { en: 'Rain frogs', group: 'burrowers' },
+  Hemisotidae: { en: 'Shovel-nosed frogs', group: 'burrowers' },
+  Ptychadenidae: { en: 'Ridged frogs', group: 'jumpers' },
+  Phrynobatrachidae: { en: 'Puddle frogs', group: 'jumpers' },
+  Pipidae: { en: 'Clawed frogs', group: 'clawed' },
   // ---- insects: the group is the big family the guide filters on ----
   Scarabaeidae: { en: 'Dung beetles & chafers', group: 'beetles' },
   Tenebrionidae: { en: 'Darkling beetles', group: 'beetles' },
@@ -212,6 +212,8 @@ export const FAMILY: Record<string, { en: string; group: string }> = {
 /** Genus-level overrides where a family mixes very different-looking birds. */
 const GENUS_GROUP: Record<string, string> = {
   Gyps: 'vultures', Necrosyrtes: 'vultures', Torgos: 'vultures', Trigonoceps: 'vultures',
+  Pyxicephalus: 'bullfrog', Tomopterna: 'burrowers', // the bullfrog stands apart; sand frogs dig like rain frogs
+  Parabuthus: 'scorpions-danger', // thick-tailed: the dangerous ones, in the same family as the harmless lesser-thicktails
 };
 
 export const BIRD_GROUPS: [string, string][] = [
@@ -255,11 +257,19 @@ export const MAMMAL_GROUPS: [string, string][] = [
   ['bats', 'Bats'],
 ];
 
-/** Big families of insects, for the Others key (taxa group of their family). */
-export const INSECT_GROUPS: [string, string][] = [
-  ['beetles', 'Beetles'], ['termites', 'Termites'], ['ants', 'Ants, bees & wasps'], ['butterflies', 'Butterflies & moths'],
-  ['dragonflies', 'Dragonflies'], ['grasshoppers', 'Grasshoppers & crickets'], ['mantids', 'Mantids'], ['bugs', 'Bugs & cicadas'], ['flies', 'Mosquitoes & flies'],
-];
+/** Plain-language groups inside each category of the Others tab (taxa group of the family or genus, see groupOf):
+ *  the list headers and the "kind" filter of the Others key. */
+export const OTHER_GROUPS: Record<'reptile' | 'arachnid' | 'frog' | 'insect', [string, string][]> = {
+  reptile: [['croc', 'Crocodile'], ['monitors', 'Monitors'], ['chelonians', 'Tortoises & terrapins'], ['chameleons', 'Chameleons'], ['agamas', 'Agamas'],
+    ['skinks', 'Skinks'], ['geckos', 'Geckos'], ['plated', 'Plated, girdled & flat lizards'], ['sandlizards', 'Sand lizards']],
+  frog: [['toads', 'Toads'], ['treefrogs', 'Tree & reed frogs'], ['burrowers', 'Rain, sand & burrowing frogs'], ['jumpers', 'River, ridged & puddle frogs'],
+    ['bullfrog', 'Bullfrog'], ['clawed', 'Clawed frog']],
+  arachnid: [['scorpions-danger', 'Thick-tailed scorpions (dangerous)'], ['scorpions', 'Other scorpions'], ['baboon', 'Baboon spiders'],
+    ['webs', 'Web spiders'], ['hunters', 'Hunting spiders'], ['whip', 'Whip spider (not a spider)'], ['ticks', 'Ticks']],
+  insect: [['beetles', 'Beetles'], ['termites', 'Termites'], ['ants', 'Ants, bees & wasps'], ['butterflies', 'Butterflies & moths'],
+    ['dragonflies', 'Dragonflies'], ['grasshoppers', 'Grasshoppers & crickets'], ['mantids', 'Mantids'], ['bugs', 'Bugs & cicadas'], ['flies', 'Mosquitoes & flies']],
+};
+export const otherGroupLabel = (g: string) => Object.values(OTHER_GROUPS).flat().find(([k]) => k === g)?.[1] || '';
 
 /** Tab label and icon of each group. */
 export const GROUP_LABEL: Record<Group, string> = { bird: 'Birds', mammal: 'Mammals', snake: 'Snakes', plant: 'Plants', other: 'Others' };
