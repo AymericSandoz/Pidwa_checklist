@@ -81,7 +81,7 @@ export const firstSeen = computed(() => {
   return m;
 });
 export const totals = computed(() => {
-  const t: Record<Group, { seen: number; total: number }> = { bird: { seen: 0, total: 0 }, mammal: { seen: 0, total: 0 }, snake: { seen: 0, total: 0 }, plant: { seen: 0, total: 0 } };
+  const t: Record<Group, { seen: number; total: number }> = { bird: { seen: 0, total: 0 }, mammal: { seen: 0, total: 0 }, snake: { seen: 0, total: 0 }, plant: { seen: 0, total: 0 }, other: { seen: 0, total: 0 } };
   for (const s of species.value) {
     t[s.group].total++;
     if (seenCount.value.has(s.id)) t[s.group].seen++;

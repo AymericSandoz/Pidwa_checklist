@@ -1,4 +1,4 @@
-export type Group = 'bird' | 'mammal' | 'snake' | 'plant';
+export type Group = 'bird' | 'mammal' | 'snake' | 'plant' | 'other';
 
 export interface Species {
   id: string;

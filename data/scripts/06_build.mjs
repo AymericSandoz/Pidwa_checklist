@@ -81,7 +81,7 @@ for (const s of species) {
     en: s.common_en,
     fr: cur.fr || IOC[s.scientific]?.fr || vern(wp.fr?.title) || vern(wd.label_fr) || null,
     fr_source: cur.fr ? 'curated' : IOC[s.scientific]?.fr ? 'IOC' : vern(wp.fr?.title) ? 'frwiki' : vern(wd.label_fr) ? 'wikidata' : null,
-    family: wd.family || av?.family || null,
+    family: cur.family || wd.family || av?.family || null,
     family_fr: wd.family_fr || null,
     order: wd.order || av?.order || null,
     order_fr: wd.order_fr || null,
@@ -107,7 +107,7 @@ for (const s of species) {
   out.push(rec);
 }
 writeJson(path.join(OUT_DIR, 'species.json'), out);
-console.log(`species.json: ${out.length} species (${['bird', 'mammal', 'snake', 'plant'].map((g) => `${out.filter((x) => x.group === g).length} ${g}s`).join(', ')})`);
+console.log(`species.json: ${out.length} species (${['bird', 'mammal', 'snake', 'plant', 'other'].map((g) => `${out.filter((x) => x.group === g).length} ${g}s`).join(', ')})`);
 console.log(`with image: ${out.filter((x) => x.image).length}, with FR summary: ${out.filter((x) => x.summary.fr).length}, with sounds: ${out.filter((x) => x.sounds.length).length}, with extra photos: ${out.filter((x) => x.photos.length).length}, birds with AVONET: ${out.filter((x) => x.avonet).length}`);
 if (warnings.length) console.log('warnings:\n  ' + warnings.join('\n  '));
 
@@ -151,7 +151,7 @@ h2{grid-column:1/-1;margin:16px 0 0;color:#2f4f2f}
 </style></head><body>
 <header><b>Pidwa</b> · ${out.length} espèces · <input id="q" placeholder="filtrer (nom fr/en/sci, famille)"></header>
 <main>
-${[['mammal', 'Mammifères'], ['bird', 'Oiseaux'], ['snake', 'Serpents'], ['plant', 'Plantes']].map(([g, t]) => `<h2>${t} (${out.filter((x) => x.group === g).length})</h2>
+${[['mammal', 'Mammifères'], ['bird', 'Oiseaux'], ['snake', 'Serpents'], ['plant', 'Plantes'], ['other', 'Autres']].map(([g, t]) => `<h2>${t} (${out.filter((x) => x.group === g).length})</h2>
 ${out.filter((x) => x.group === g).map(card).join('')}`).join('')}
 </main>
 <script>

@@ -109,6 +109,31 @@ export const FAMILY: Record<string, { en: string; group: string }> = {
   Lamprophiidae: { en: 'House, wolf & file snakes', group: 'snakes' },
   Typhlopidae: { en: 'Blind snakes', group: 'snakes' },
   Leptotyphlopidae: { en: 'Thread snakes', group: 'snakes' },
+  // ---- other reptiles ----
+  Crocodylidae: { en: 'Crocodiles', group: 'reptiles' },
+  Varanidae: { en: 'Monitors', group: 'reptiles' },
+  Testudinidae: { en: 'Tortoises', group: 'reptiles' },
+  Pelomedusidae: { en: 'Terrapins', group: 'reptiles' },
+  Chamaeleonidae: { en: 'Chameleons', group: 'reptiles' },
+  Agamidae: { en: 'Agamas', group: 'reptiles' },
+  Scincidae: { en: 'Skinks', group: 'reptiles' },
+  Gekkonidae: { en: 'Geckos', group: 'reptiles' },
+  Gerrhosauridae: { en: 'Plated lizards', group: 'reptiles' },
+  Lacertidae: { en: 'Sand lizards', group: 'reptiles' },
+  Cordylidae: { en: 'Girdled & flat lizards', group: 'reptiles' },
+  // ---- spiders, scorpions & ticks ----
+  Buthidae: { en: 'Thick-tailed scorpions', group: 'arachnids' },
+  Scorpionidae: { en: 'Burrowing scorpions', group: 'arachnids' },
+  Liochelidae: { en: 'Rock & creeping scorpions', group: 'arachnids' },
+  Araneidae: { en: 'Orb-web spiders', group: 'arachnids' },
+  Theraphosidae: { en: 'Baboon spiders', group: 'arachnids' },
+  Theridiidae: { en: 'Button spiders', group: 'arachnids' },
+  Sicariidae: { en: 'Violin spiders', group: 'arachnids' },
+  Cheiracanthiidae: { en: 'Sac spiders', group: 'arachnids' },
+  Sparassidae: { en: 'Huntsman & rain spiders', group: 'arachnids' },
+  Eresidae: { en: 'Velvet spiders', group: 'arachnids' },
+  Phrynichidae: { en: 'Whip spiders', group: 'arachnids' },
+  Ixodidae: { en: 'Ticks', group: 'arachnids' },
   // ---- plants ----
   Fabaceae: { en: 'Acacias, peas & pods', group: 'plants' },
   Combretaceae: { en: 'Bushwillows & cluster-leaves', group: 'plants' },
@@ -191,8 +216,8 @@ export const MAMMAL_GROUPS: [string, string][] = [
 ];
 
 /** Tab label and icon of each group. */
-export const GROUP_LABEL: Record<Group, string> = { bird: 'Birds', mammal: 'Mammals', snake: 'Snakes', plant: 'Plants' };
-export const GROUP_ICON: Record<Group, IconName> = { bird: 'bird', mammal: 'paw-print', snake: 'snake', plant: 'tree' };
+export const GROUP_LABEL: Record<Group, string> = { bird: 'Birds', mammal: 'Mammals', snake: 'Snakes', plant: 'Plants', other: 'Others' };
+export const GROUP_ICON: Record<Group, IconName> = { bird: 'bird', mammal: 'paw-print', snake: 'snake', plant: 'tree', other: 'bug' };
 export const GROUPS = Object.keys(GROUP_LABEL) as Group[];
 
 /** Big Five; rhino counts once, either species. */

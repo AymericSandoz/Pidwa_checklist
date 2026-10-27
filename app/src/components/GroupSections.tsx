@@ -3,6 +3,7 @@ import { href } from '../router';
 import { snakeInfo, DANGER_LABEL, DANGER_TONE } from '../learn/snakes';
 import { plantInfo, LEAF_LABEL, KIND_LABEL, GRAZE_LABEL, VELD_LABEL } from '../learn/plants';
 import { abundance } from '../learn/abundance';
+import { otherInfo, WHERE_LABEL } from '../learn/others';
 import { RARITY_LABEL } from '../learn/birds';
 import { Icon, type IconName } from './Icon';
 import { Thumb } from './Thumb';
@@ -34,8 +35,8 @@ export function LevelPill({ id }: { id: string }) {
 }
 
 export function DangerPill({ id }: { id: string }) {
-  const b = snakeInfo.value.get(id);
-  if (!b) return null;
+  const b = snakeInfo.value.get(id) || otherInfo.value.get(id);
+  if (!b?.danger) return null;
   return <span class={'pill' + DANGER_TONE[b.danger]}>{b.danger !== 'harmless' && <Icon name="triangle-alert" size={13} stroke={2.4} />}{DANGER_LABEL[b.danger]}</span>;
 }
 
@@ -84,6 +85,37 @@ export function SnakeSection({ id }: { id: string }) {
       </div>
       {(b.danger === 'deadly' || b.danger === 'venomous') && <FirstAid />}
       <p class="credit">Written from Marais, <i>A Complete Guide to Snakes of Southern Africa</i> (2022) and the <a href="https://www.africansnakebiteinstitute.com" target="_blank" rel="noopener">African Snakebite Institute</a>. How common: our estimate from iNaturalist records within 60 km. Not a medical guide: after any bite, hospital.</p>
+    </>
+  );
+}
+
+/** Reptiles, spiders and scorpions: recognition, look-alikes, behaviour and, when there is one, the risk. */
+export function OtherSection({ id }: { id: string }) {
+  const b = otherInfo.value.get(id);
+  if (!b) return null;
+  return (
+    <>
+      <div class="sec">How to recognise it</div>
+      <div class="card idcard">
+        <div class="size"><Icon name="eye" size={16} />{b.size}</div>
+        <ul class="traits">{b.keys.map((k) => <li>{k}</li>)}</ul>
+        <p class="voice"><Icon name="sun" size={15} />{b.when.map((w) => (w === 'day' ? 'By day' : 'At night')).join(' and ')} · {b.where.map((w) => WHERE_LABEL[w]).join(', ')}</p>
+      </div>
+      <Confuse list={b.confuse} icon="bug" />
+      <div class="card behave">
+        <p>{b.behaviour}</p>
+        <p class="memo"><Icon name="zap" size={15} />{b.memo}</p>
+      </div>
+      {b.bite && (
+        <>
+          <div class="sec">{b.cat === 'reptile' ? 'Risk' : b.danger ? 'Bite or sting' : 'Health'}</div>
+          <div class={'card bite ' + (b.danger || 'mild')}>
+            {b.danger && <div class="row" style="justify-content:space-between;gap:8px;margin-bottom:6px"><b>{DANGER_LABEL[b.danger]}</b>{b.venom && <span class="tag">{b.venom}</span>}</div>}
+            <p style="margin:0">{b.bite}</p>
+          </div>
+        </>
+      )}
+      <p class="credit">Written from the standard field guides (Branch; Alexander &amp; Marais; Leeming; Dippenaar-Schoeman). How common: our estimate from iNaturalist records within 60 km. Not a medical guide.</p>
     </>
   );
 }

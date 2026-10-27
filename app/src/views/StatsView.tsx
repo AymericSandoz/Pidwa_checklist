@@ -69,6 +69,7 @@ export function StatsView({ journal }: { journal?: boolean } = {}) {
       <div class="card rings">
         <Ring seen={t.snake.seen} total={t.snake.total} label="Snakes" icon="snake" />
         <Ring seen={t.plant.seen} total={t.plant.total} label="Plants" icon="tree" />
+        <Ring seen={t.other.seen} total={t.other.total} label="Others" icon="bug" />
       </div>
 
       <div class="card">

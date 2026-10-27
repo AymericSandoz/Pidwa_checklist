@@ -9,7 +9,7 @@ import { Icon } from '../components/Icon';
 import { SoundPlayer } from '../components/SoundPlayer';
 import { TracksSection } from '../components/TracksSection';
 import { BirdSection, RarityPill } from '../components/BirdSection';
-import { SnakeSection, PlantSection, LevelPill, DangerPill } from '../components/SnakePlantSections';
+import { SnakeSection, PlantSection, OtherSection, LevelPill, DangerPill } from '../components/GroupSections';
 import { birdInfo } from '../learn/birds';
 import type { Observation, Species } from '../types';
 import { popById, fmtN } from '../learn/populations';
@@ -85,9 +85,9 @@ export function SpeciesView({ id }: { id: string }) {
 
         <div class="pills">
           {mine.length > 0 ? <span class="pill ok"><Icon name="check" size={13} stroke={3} />Seen ×{mine.length}</span> : <span class="pill">Not seen yet</span>}
-          {s.group === 'snake' && <DangerPill id={s.id} />}
+          {(s.group === 'snake' || s.group === 'other') && <DangerPill id={s.id} />}
           {s.group === 'bird' && <RarityPill id={s.id} />}
-          {(s.group === 'snake' || s.group === 'plant') && <LevelPill id={s.id} />}
+          {(s.group === 'snake' || s.group === 'plant' || s.group === 'other') && <LevelPill id={s.id} />}
           {iucn && <span class={'pill' + (IUCN_TONE[iucn] || '')}>{iucn} · {s.iucn}</span>}
           {s.group === 'bird' && <span class="pill"><Icon name="mic" size={13} stroke={2.4} />{grade ? `sound ID ${grade}${s.bn!.lumped ? ', as ' + s.bn!.label.split('_')[1] : ''}` : 'no sound ID'}</span>}
         </div>
@@ -108,6 +108,7 @@ export function SpeciesView({ id }: { id: string }) {
         {s.group === 'bird' && <BirdSection id={s.id} />}
         {s.group === 'snake' && <SnakeSection id={s.id} />}
         {s.group === 'plant' && <PlantSection id={s.id} />}
+        {s.group === 'other' && <OtherSection id={s.id} />}
 
         {popById.has(s.id) && (() => { const p = popById.get(s.id)!; return (
           <>

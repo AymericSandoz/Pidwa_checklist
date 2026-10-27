@@ -41792,7 +41792,53 @@
       "source": "https://www.inaturalist.org/photos/60057720",
       "from": "iNaturalist"
     },
-    "photos": [],
+    "photos": [
+      {
+        "file": "photos/spirostachys-africana-1.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Reuben Heydenrych",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/177418264"
+      },
+      {
+        "file": "photos/spirostachys-africana-2.webp",
+        "w": 375,
+        "h": 500,
+        "author": "janet_taylor",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/580204157"
+      },
+      {
+        "file": "photos/spirostachys-africana-3.webp",
+        "w": 375,
+        "h": 500,
+        "author": "sharinamdluli",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/309259015"
+      },
+      {
+        "file": "photos/spirostachys-africana-4.webp",
+        "w": 500,
+        "h": 334,
+        "author": "Tony Rebelo",
+        "license": "CC-BY-SA",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://www.inaturalist.org/photos/672366948"
+      },
+      {
+        "file": "photos/spirostachys-africana-5.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Sascha Schumann",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/411867072"
+      }
+    ],
     "sounds": [],
     "traits": null,
     "notes": null
@@ -45536,6 +45582,3933 @@
         "license": "CC0",
         "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
         "source": "https://www.inaturalist.org/photos/334183965"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "crocodylus-niloticus",
+    "group": "other",
+    "sci": "Crocodylus niloticus",
+    "en": "Nile Crocodile",
+    "fr": "Crocodile du Nil",
+    "fr_source": "frwiki",
+    "family": "Crocodylidae",
+    "family_fr": "Crocodylidae",
+    "order": "Crocodilia",
+    "order_fr": "Crocodilia",
+    "iucn": "least concern",
+    "qid": "Q168745",
+    "wiki": {
+      "fr": "https://fr.wikipedia.org/wiki/Crocodile_du_Nil",
+      "en": "https://en.wikipedia.org/wiki/Nile_crocodile"
+    },
+    "summary": {
+      "fr": "Le Crocodile du Nil est une espèce de crocodiliens de la famille des Crocodylidae.",
+      "en": "The Nile crocodile is a large crocodilian native to freshwater habitats in Africa, where it is present in 26 countries. It is widely distributed in sub-Saharan Africa, occurring mostly in the eastern, southern, and central regions of the continent, and lives in different types of aquatic environments such as lakes, rivers, swamps and marshlands. It occasionally inhabits deltas, brackish lakes and rarely also saltwater. Its range once stretched from the Nile Delta throughout the Nile River. Lake Turkana in Kenya has one of the largest undisturbed Nile crocodile populations."
+    },
+    "image": {
+      "file": "images/crocodylus-niloticus.webp",
+      "w": 900,
+      "h": 600,
+      "author": "Stephen Temple",
+      "license": "CC-BY-SA",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://www.inaturalist.org/photos/288027350",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/crocodylus-niloticus-1.webp",
+        "w": 500,
+        "h": 362,
+        "author": "copper",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/13983120"
+      },
+      {
+        "file": "photos/crocodylus-niloticus-2.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Siegwalt U Küsel",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/202135957"
+      },
+      {
+        "file": "photos/crocodylus-niloticus-3.webp",
+        "w": 500,
+        "h": 375,
+        "author": "jean hirons",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/265896142"
+      },
+      {
+        "file": "photos/crocodylus-niloticus-4.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Yolande Oelsen",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/243424094"
+      },
+      {
+        "file": "photos/crocodylus-niloticus-5.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Cat Abbott",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/29375499"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "varanus-niloticus",
+    "group": "other",
+    "sci": "Varanus niloticus",
+    "en": "Water Monitor",
+    "fr": "Varan du Nil",
+    "fr_source": "frwiki",
+    "family": "Varanidae",
+    "family_fr": "Varanidae",
+    "order": "Squamata",
+    "order_fr": null,
+    "iucn": "least concern",
+    "qid": "Q737896",
+    "wiki": {
+      "fr": "https://fr.wikipedia.org/wiki/Varan_du_Nil",
+      "en": "https://en.wikipedia.org/wiki/Nile_monitor"
+    },
+    "summary": {
+      "fr": "Le Varan du Nil, Varanus niloticus, est une espèce africaine de sauriens de la famille des Varanidae. En langage Kroumen, on le nomme \"Pahwein\", comme on nomme aussi d'ailleurs le Varan orné, qui n'est pas la même espèce que V. niloticus même si cela varie selon les sources.",
+      "en": "The Nile monitor is a large member of the monitor family (Varanidae) found throughout most of Sub-Saharan Africa, particularly in drier regions, and along the Nile River and its tributaries in East Africa. Additionally, there are modern, invasive populations in North America. The population found in West African forests and savannahs is sometimes recognized as a separate species, the West African Nile monitor and Ornate monitor. While it is dwarfed by its larger relatives, such as the Komodo dragon, the Asian water monitor or the crocodile monitor, it is still one of the largest lizards in the world, reaching Australia's perentie in size. Other common names include the African small-grain lizard, as well as iguana and various forms derived from it, such as guana, water leguaan or river leguaan."
+    },
+    "image": {
+      "file": "images/varanus-niloticus.webp",
+      "w": 900,
+      "h": 600,
+      "author": "Bart Wursten",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/144153390",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/varanus-niloticus-1.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Saskia Thomas",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/582581432"
+      },
+      {
+        "file": "photos/varanus-niloticus-2.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Garrett Craig",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/316999349"
+      },
+      {
+        "file": "photos/varanus-niloticus-3.webp",
+        "w": 500,
+        "h": 295,
+        "author": "Marion Holmes",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/246110209"
+      },
+      {
+        "file": "photos/varanus-niloticus-4.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Pieter Kotze",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/216724570"
+      },
+      {
+        "file": "photos/varanus-niloticus-5.webp",
+        "w": 500,
+        "h": 357,
+        "author": "Andre Harmse",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/377379249"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "varanus-albigularis",
+    "group": "other",
+    "sci": "Varanus albigularis",
+    "en": "Rock Monitor",
+    "fr": null,
+    "fr_source": null,
+    "family": "Varanidae",
+    "family_fr": "Varanidae",
+    "order": "Squamata",
+    "order_fr": null,
+    "iucn": "least concern",
+    "qid": "Q935868",
+    "wiki": {
+      "fr": "https://fr.wikipedia.org/wiki/Varanus_albigularis",
+      "en": "https://en.wikipedia.org/wiki/Rock_monitor"
+    },
+    "summary": {
+      "fr": "Le Varan des steppes d'Afrique orientale, Varanus albigularis, est une espèce de sauriens de la famille des Varanidae.",
+      "en": "The rock monitor is a species of monitor lizard in the family Varanidae. The species is endemic to Sub-Saharan Africa, where, on average, it is the largest lizard found on the continent. It is called leguaan or likkewaan in some areas."
+    },
+    "image": {
+      "file": "images/varanus-albigularis.webp",
+      "w": 900,
+      "h": 702,
+      "author": "Ricky Taylor",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/15787473",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/varanus-albigularis-1.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Alex Rebelo",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/13484385"
+      },
+      {
+        "file": "photos/varanus-albigularis-2.webp",
+        "w": 500,
+        "h": 333,
+        "author": "sitszasadam",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/80493916"
+      },
+      {
+        "file": "photos/varanus-albigularis-3.webp",
+        "w": 500,
+        "h": 257,
+        "author": "qgrobler",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/327371503"
+      },
+      {
+        "file": "photos/varanus-albigularis-4.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Courtney Hundermark",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/444039690"
+      },
+      {
+        "file": "photos/varanus-albigularis-5.webp",
+        "w": 500,
+        "h": 297,
+        "author": "Helen Badenhorst",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/622324166"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "stigmochelys-pardalis",
+    "group": "other",
+    "sci": "Stigmochelys pardalis",
+    "en": "Leopard Tortoise",
+    "fr": "Tortue léopard",
+    "fr_source": "frwiki",
+    "family": "Testudinidae",
+    "family_fr": "Testudinidae",
+    "order": "Testudines",
+    "order_fr": "tortue",
+    "iucn": "least concern",
+    "qid": "Q640955",
+    "wiki": {
+      "fr": "https://fr.wikipedia.org/wiki/Tortue_l%C3%A9opard",
+      "en": "https://en.wikipedia.org/wiki/Leopard_tortoise"
+    },
+    "summary": {
+      "fr": "La Tortue léopard, unique représentant du genre Stigmochelys, est une espèce de tortues terrestres, de la famille des Testudinidae.",
+      "en": "The leopard tortoise is a large and attractively marked tortoise found in the savannas of eastern and southern Africa, from Sudan to the southern Cape Province. It is the only extant member of the genus Stigmochelys, although in the past, it was commonly placed in Geochelone. This tortoise is a grazing species that favors semiarid, thorny to grassland habitats. In both very hot and very cold weather, it may dwell in abandoned fox, jackal, or aardvark burrows. The leopard tortoise does not dig other than to make nests in which to lay eggs. Given its propensity for grassland habitats, it grazes extensively upon mixed grasses. It also favors succulents and thistles."
+    },
+    "image": {
+      "file": "images/stigmochelys-pardalis.webp",
+      "w": 900,
+      "h": 675,
+      "author": "Bernard DUPONT",
+      "license": "CC-BY-SA",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://www.inaturalist.org/photos/12902301",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/stigmochelys-pardalis-1.webp",
+        "w": 500,
+        "h": 375,
+        "author": "jean hirons",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/290177291"
+      },
+      {
+        "file": "photos/stigmochelys-pardalis-2.webp",
+        "w": 500,
+        "h": 333,
+        "author": "amfarrell",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/94080326"
+      },
+      {
+        "file": "photos/stigmochelys-pardalis-3.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Martine Robinson",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/393163123"
+      },
+      {
+        "file": "photos/stigmochelys-pardalis-4.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Johan Huisamen",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/225410925"
+      },
+      {
+        "file": "photos/stigmochelys-pardalis-5.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Collette Hurt",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/242371491"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "kinixys-spekii",
+    "group": "other",
+    "sci": "Kinixys spekii",
+    "en": "Speke's Hinged Tortoise",
+    "fr": null,
+    "fr_source": null,
+    "family": "Testudinidae",
+    "family_fr": "Testudinidae",
+    "order": "Testudines",
+    "order_fr": "tortue",
+    "iucn": null,
+    "qid": "Q2192332",
+    "wiki": {
+      "fr": "https://fr.wikipedia.org/wiki/Kinixys_spekii",
+      "en": "https://en.wikipedia.org/wiki/Speke's_hinge-back_tortoise"
+    },
+    "summary": {
+      "fr": "Kinixys spekii est une espèce de tortues de la famille des Testudinidae.",
+      "en": "Speke's hinge-back tortoise, also known commonly as Speke's hingeback tortoise, is a species of turtle in the family Testudinidae. The species is endemic to Africa."
+    },
+    "image": {
+      "file": "images/kinixys-spekii.webp",
+      "w": 900,
+      "h": 531,
+      "author": "Alex Rebelo",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/53456537",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/kinixys-spekii-1.webp",
+        "w": 500,
+        "h": 309,
+        "author": "Alex Rebelo",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/59222675"
+      },
+      {
+        "file": "photos/kinixys-spekii-2.webp",
+        "w": 500,
+        "h": 361,
+        "author": "copper",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/59592563"
+      },
+      {
+        "file": "photos/kinixys-spekii-3.webp",
+        "w": 500,
+        "h": 320,
+        "author": "Ryan van Huyssteen",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/722787604"
+      },
+      {
+        "file": "photos/kinixys-spekii-4.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Africa Gomez",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/599555388"
+      },
+      {
+        "file": "photos/kinixys-spekii-5.webp",
+        "w": 500,
+        "h": 384,
+        "author": "leuli",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/163425087"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "pelusios-sinuatus",
+    "group": "other",
+    "sci": "Pelusios sinuatus",
+    "en": "Serrated Hinged Terrapin",
+    "fr": null,
+    "fr_source": null,
+    "family": "Pelomedusidae",
+    "family_fr": "Pelomedusidae",
+    "order": "Testudines",
+    "order_fr": "tortue",
+    "iucn": null,
+    "qid": "Q2210326",
+    "wiki": {
+      "fr": "https://fr.wikipedia.org/wiki/Pelusios_sinuatus",
+      "en": "https://en.wikipedia.org/wiki/Serrated_hinged_terrapin"
+    },
+    "summary": {
+      "fr": "Pelusios sinuatus est une espèce de tortues de la famille des Pelomedusidae.",
+      "en": "The serrated hinged terrapin is a species of turtle in the family Pelomedusidae. The species is native to East Africa and Southern Africa. There are two recognised subspecies."
+    },
+    "image": {
+      "file": "images/pelusios-sinuatus.webp",
+      "w": 900,
+      "h": 541,
+      "author": "Bernard DUPONT",
+      "license": "CC-BY-SA",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://www.inaturalist.org/photos/12902672",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/pelusios-sinuatus-1.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Cole Wolf",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/32734582"
+      },
+      {
+        "file": "photos/pelusios-sinuatus-2.webp",
+        "w": 500,
+        "h": 287,
+        "author": "maritzasouthafrica",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/13096543"
+      },
+      {
+        "file": "photos/pelusios-sinuatus-3.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Sean Daniels",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/58563031"
+      },
+      {
+        "file": "photos/pelusios-sinuatus-4.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Mahomed Desai",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/70328835"
+      },
+      {
+        "file": "photos/pelusios-sinuatus-5.webp",
+        "w": 500,
+        "h": 375,
+        "author": "ymcampbell",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/12644557"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "pelomedusa-subrufa",
+    "group": "other",
+    "sci": "Pelomedusa subrufa",
+    "en": "Marsh Terrapin",
+    "fr": null,
+    "fr_source": null,
+    "family": "Pelomedusidae",
+    "family_fr": "Pelomedusidae",
+    "order": "Testudines",
+    "order_fr": "tortue",
+    "iucn": null,
+    "qid": "Q913795",
+    "wiki": {
+      "fr": "https://fr.wikipedia.org/wiki/Pelomedusa_subrufa",
+      "en": "https://en.wikipedia.org/wiki/African_helmeted_turtle"
+    },
+    "summary": {
+      "fr": "Pelomedusa subrufa aussi appelée Péloméduse rousse, Péloméduse roussâtre ou plus communément Tortue à cou caché d'Afrique est l'une des espèces de tortues de la famille des Pelomedusidae, présentes dans une grande aire africaine.",
+      "en": "The African helmeted turtle, also commonly known as the marsh terrapin, the crocodile turtle, or in the pet trade as the African side-necked turtle, is a species of omnivorous side-necked terrapin in the family Pelomedusidae. The species naturally occurs in fresh and stagnant water bodies throughout much of Sub-Saharan Africa, and in southern Yemen."
+    },
+    "image": {
+      "file": "images/pelomedusa-subrufa.webp",
+      "w": 900,
+      "h": 600,
+      "author": "Charlotte Kirchner",
+      "license": "CC-BY",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "https://www.inaturalist.org/photos/27265694",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/pelomedusa-subrufa-1.webp",
+        "w": 500,
+        "h": 331,
+        "author": "no rights reserved",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source": "https://www.inaturalist.org/photos/86647321"
+      },
+      {
+        "file": "photos/pelomedusa-subrufa-2.webp",
+        "w": 500,
+        "h": 334,
+        "author": "copper",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/13955769"
+      },
+      {
+        "file": "photos/pelomedusa-subrufa-3.webp",
+        "w": 500,
+        "h": 341,
+        "author": "calebcam",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/12149015"
+      },
+      {
+        "file": "photos/pelomedusa-subrufa-4.webp",
+        "w": 500,
+        "h": 346,
+        "author": "Alex Rebelo",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/449708961"
+      },
+      {
+        "file": "photos/pelomedusa-subrufa-5.webp",
+        "w": 281,
+        "h": 500,
+        "author": "Yandisa Ndzeku",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/486920724"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "chamaeleo-dilepis",
+    "group": "other",
+    "sci": "Chamaeleo dilepis",
+    "en": "Flap-necked Chameleon",
+    "fr": null,
+    "fr_source": null,
+    "family": "Chamaeleonidae",
+    "family_fr": "Chamaeleonidae",
+    "order": "Squamata",
+    "order_fr": null,
+    "iucn": "least concern",
+    "qid": "Q1805816",
+    "wiki": {
+      "fr": "https://fr.wikipedia.org/wiki/Chamaeleo_dilepis",
+      "en": "https://en.wikipedia.org/wiki/Flap-necked_chameleon"
+    },
+    "summary": {
+      "fr": "Chamaeleo dilepis, le Caméléon Bilobé, est une espèce de squamates de la famille des Chamaeleonidae.",
+      "en": "The flap-necked chameleon is a species of arboreal chameleon, a lizard in the family Chamaeleonidae. The species is native to sub-Saharan Africa. There are eight recognized subspecies, including the nominotypical subspecies."
+    },
+    "image": {
+      "file": "images/chamaeleo-dilepis.webp",
+      "w": 900,
+      "h": 540,
+      "author": "tjeerd",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/31735957",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/chamaeleo-dilepis-1.webp",
+        "w": 374,
+        "h": 277,
+        "author": "Chris Vynbos",
+        "license": "CC-BY-SA",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://www.inaturalist.org/photos/12659770"
+      },
+      {
+        "file": "photos/chamaeleo-dilepis-2.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Sunčana Bradley",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/62416393"
+      },
+      {
+        "file": "photos/chamaeleo-dilepis-3.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Ricky Taylor",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/14921288"
+      },
+      {
+        "file": "photos/chamaeleo-dilepis-4.webp",
+        "w": 383,
+        "h": 500,
+        "author": "Colin Ralston",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/15896658"
+      },
+      {
+        "file": "photos/chamaeleo-dilepis-5.webp",
+        "w": 500,
+        "h": 357,
+        "author": "Andre Harmse",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/377363349"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "acanthocercus-atricollis",
+    "group": "other",
+    "sci": "Acanthocercus atricollis",
+    "en": "Southern Tree Agama",
+    "fr": null,
+    "fr_source": null,
+    "family": "Agamidae",
+    "family_fr": "Agamidae",
+    "order": "Squamata",
+    "order_fr": null,
+    "iucn": "least concern",
+    "qid": "Q653785",
+    "wiki": {
+      "fr": "https://fr.wikipedia.org/wiki/Acanthocercus_atricollis",
+      "en": "https://en.wikipedia.org/wiki/Acanthocercus_atricollis"
+    },
+    "summary": {
+      "fr": "Acanthocercus atricollis est une espèce de sauriens de la famille des Agamidae.",
+      "en": "Acanthocercus atricollis, the black-necked agama or southern tree agama, is a species of tree agama that is native to East, Central and southern Africa. Its largest continuous range is in southeastern Africa, and it occurs at high densities in the Kruger National Park."
+    },
+    "image": {
+      "file": "images/acanthocercus-atricollis.webp",
+      "w": 900,
+      "h": 600,
+      "author": "Paul Pratt",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/58597635",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/acanthocercus-atricollis-1.webp",
+        "w": 500,
+        "h": 331,
+        "author": "thinus",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/57934027"
+      },
+      {
+        "file": "photos/acanthocercus-atricollis-2.webp",
+        "w": 333,
+        "h": 500,
+        "author": "Jenna Cheramie",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/58634418"
+      },
+      {
+        "file": "photos/acanthocercus-atricollis-3.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Moagi Maloka",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/601688063"
+      },
+      {
+        "file": "photos/acanthocercus-atricollis-4.webp",
+        "w": 500,
+        "h": 375,
+        "author": "brianrode",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/687033985"
+      },
+      {
+        "file": "photos/acanthocercus-atricollis-5.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Malcolm Douglas",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/192907737"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "agama-aculeata",
+    "group": "other",
+    "sci": "Agama aculeata",
+    "en": "Ground Agama",
+    "fr": null,
+    "fr_source": null,
+    "family": "Agamidae",
+    "family_fr": "Agamidae",
+    "order": "Squamata",
+    "order_fr": null,
+    "iucn": "least concern",
+    "qid": "Q1873231",
+    "wiki": {
+      "fr": "https://fr.wikipedia.org/wiki/Agama_aculeata",
+      "en": "https://en.wikipedia.org/wiki/Agama_aculeata"
+    },
+    "summary": {
+      "fr": "Agama aculeata est une espèce de sauriens de la famille des Agamidae.",
+      "en": "Agama aculeata, the ground agama, is a species of lizard from the family Agamidae, found in most of sub-Saharan Africa."
+    },
+    "image": {
+      "file": "images/agama-aculeata.webp",
+      "w": 900,
+      "h": 880,
+      "author": "Joubert Heymans",
+      "license": "CC-BY-NC-ND",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "source": "https://www.inaturalist.org/photos/29307611",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/agama-aculeata-1.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Pieter Theron",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/80634701"
+      },
+      {
+        "file": "photos/agama-aculeata-2.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Felix Riegel",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/227528531"
+      },
+      {
+        "file": "photos/agama-aculeata-3.webp",
+        "w": 281,
+        "h": 500,
+        "author": "juliecoetzee",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/137620622"
+      },
+      {
+        "file": "photos/agama-aculeata-4.webp",
+        "w": 491,
+        "h": 500,
+        "author": "elizetheron",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/250554746"
+      },
+      {
+        "file": "photos/agama-aculeata-5.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Lynne Correia",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/182761296"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "trachylepis-margaritifer",
+    "group": "other",
+    "sci": "Trachylepis margaritifer",
+    "en": "Rainbow Skink",
+    "fr": null,
+    "fr_source": null,
+    "family": "Scincidae",
+    "family_fr": "Scincidae",
+    "order": "Squamata",
+    "order_fr": null,
+    "iucn": "least concern",
+    "qid": "Q978417",
+    "wiki": {
+      "fr": "https://fr.wikipedia.org/wiki/Trachylepis_margaritifera",
+      "en": "https://en.wikipedia.org/wiki/Trachylepis_margaritifera"
+    },
+    "summary": {
+      "fr": "Trachylepis margaritifera est une espèce de sauriens de la famille des Scincidae.",
+      "en": "Trachylepis margaritifera, the rainbow skink, is a species of Afro-Malagasy mabuya or skink in the subfamily Lygosominae."
+    },
+    "image": {
+      "file": "images/trachylepis-margaritifer.webp",
+      "w": 900,
+      "h": 675,
+      "author": "Phillip Nieuwoudt",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/492723440",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/trachylepis-margaritifer-1.webp",
+        "w": 500,
+        "h": 333,
+        "author": "andrewhart266",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/395763339"
+      },
+      {
+        "file": "photos/trachylepis-margaritifer-2.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Rafael Tosi",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/75654238"
+      },
+      {
+        "file": "photos/trachylepis-margaritifer-3.webp",
+        "w": 500,
+        "h": 400,
+        "author": "Jesse Fagan",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/56355860"
+      },
+      {
+        "file": "photos/trachylepis-margaritifer-4.webp",
+        "w": 500,
+        "h": 350,
+        "author": "no rights reserved",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source": "https://www.inaturalist.org/photos/670236290"
+      },
+      {
+        "file": "photos/trachylepis-margaritifer-5.webp",
+        "w": 500,
+        "h": 488,
+        "author": "Noeleen du Toit",
+        "license": "CC-BY-SA",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://www.inaturalist.org/photos/249812348"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "trachylepis-striata",
+    "group": "other",
+    "sci": "Trachylepis striata",
+    "en": "Striped Skink",
+    "fr": "Scinque strié",
+    "fr_source": "wikidata",
+    "family": "Scincidae",
+    "family_fr": "Scincidae",
+    "order": "Squamata",
+    "order_fr": null,
+    "iucn": "least concern",
+    "qid": "Q978388",
+    "wiki": {
+      "fr": "https://fr.wikipedia.org/wiki/Trachylepis_striata",
+      "en": "https://en.wikipedia.org/wiki/Trachylepis_striata"
+    },
+    "summary": {
+      "fr": "Trachylepis striata, Scinque strié, est une espèce de sauriens de la famille des Scincidae.",
+      "en": "The African striped skink, commonly called the striped skink, is a species of lizard in the skink family (Scincidae). The species is widespread in East Africa and Southern Africa. It is not a close relation to the Australian striped skink, Ctenotus taeniolatus."
+    },
+    "image": {
+      "file": "images/trachylepis-striata.webp",
+      "w": 900,
+      "h": 596,
+      "author": "no rights reserved, uploaded by Marius Burger",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source": "https://www.inaturalist.org/photos/86654266",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/trachylepis-striata-1.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Mahomed Desai",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/387769975"
+      },
+      {
+        "file": "photos/trachylepis-striata-2.webp",
+        "w": 500,
+        "h": 397,
+        "author": "Peter Vos",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/11777639"
+      },
+      {
+        "file": "photos/trachylepis-striata-3.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Daniel France",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/223502844"
+      },
+      {
+        "file": "photos/trachylepis-striata-4.webp",
+        "w": 270,
+        "h": 500,
+        "author": "Malcolm Douglas",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/192903061"
+      },
+      {
+        "file": "photos/trachylepis-striata-5.webp",
+        "w": 375,
+        "h": 500,
+        "author": "$.Msiyane",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/475753785"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "trachylepis-varia",
+    "group": "other",
+    "sci": "Trachylepis varia",
+    "en": "Variable Skink",
+    "fr": null,
+    "fr_source": null,
+    "family": "Scincidae",
+    "family_fr": "Scincidae",
+    "order": "Squamata",
+    "order_fr": null,
+    "iucn": "least concern",
+    "qid": "Q5126879",
+    "wiki": {
+      "fr": "https://fr.wikipedia.org/wiki/Trachylepis_varia",
+      "en": "https://en.wikipedia.org/wiki/Trachylepis_varia"
+    },
+    "summary": {
+      "fr": "Trachylepis varia est une espèce de sauriens de la famille des Scincidae.",
+      "en": "The eastern variable skink is a species of skink found in East Africa."
+    },
+    "image": {
+      "file": "images/trachylepis-varia.webp",
+      "w": 733,
+      "h": 900,
+      "author": "Peter Vos",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/11496079",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/trachylepis-varia-1.webp",
+        "w": 500,
+        "h": 413,
+        "author": "Alex Rebelo",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/185210694"
+      },
+      {
+        "file": "photos/trachylepis-varia-2.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Marie Delport",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/353201907"
+      },
+      {
+        "file": "photos/trachylepis-varia-3.webp",
+        "w": 500,
+        "h": 335,
+        "author": "copper",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/30355727"
+      },
+      {
+        "file": "photos/trachylepis-varia-4.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Deon du Plessis",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/260371752"
+      },
+      {
+        "file": "photos/trachylepis-varia-5.webp",
+        "w": 500,
+        "h": 500,
+        "author": "Henry de Lange",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/477530929"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "mochlus-sundevallii",
+    "group": "other",
+    "sci": "Mochlus sundevallii",
+    "en": "Sundevall's Writhing Skink",
+    "fr": null,
+    "fr_source": null,
+    "family": "Scincidae",
+    "family_fr": "Scincidae",
+    "order": "Squamata",
+    "order_fr": null,
+    "iucn": "least concern",
+    "qid": "Q2626584",
+    "wiki": {
+      "fr": "https://fr.wikipedia.org/wiki/Mochlus_sundevalli",
+      "en": "https://en.wikipedia.org/wiki/Mochlus_sundevallii"
+    },
+    "summary": {
+      "fr": "Mochlus sundevalli est une espèce de sauriens de la famille des Scincidae.",
+      "en": "Mochlus sundevallii, also known commonly as Peters' eyelid skink, Peters' writhing skink, and Sundevall's writhing skink, is a species of lizard in the family Scincidae. The species is endemic to Sub-Saharan Africa."
+    },
+    "image": {
+      "file": "images/mochlus-sundevallii.webp",
+      "w": 900,
+      "h": 600,
+      "author": "Joubert Heymans",
+      "license": "CC-BY-NC-ND",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "source": "https://www.inaturalist.org/photos/244610395",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/mochlus-sundevallii-1.webp",
+        "w": 500,
+        "h": 354,
+        "author": "Justin Ponder",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/172080707"
+      },
+      {
+        "file": "photos/mochlus-sundevallii-2.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Shane Ngwenya",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/612533636"
+      },
+      {
+        "file": "photos/mochlus-sundevallii-3.webp",
+        "w": 281,
+        "h": 500,
+        "author": "fearlessshrew",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/573979086"
+      },
+      {
+        "file": "photos/mochlus-sundevallii-4.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Dylan Leonard",
+        "license": "CC-BY-SA",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://www.inaturalist.org/photos/438930680"
+      },
+      {
+        "file": "photos/mochlus-sundevallii-5.webp",
+        "w": 500,
+        "h": 333,
+        "author": "herpking_",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/248814076"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "acontias-plumbeus",
+    "group": "other",
+    "sci": "Acontias plumbeus",
+    "en": "Giant Legless Skink",
+    "fr": null,
+    "fr_source": null,
+    "family": "Scincidae",
+    "family_fr": "Scincidae",
+    "order": "Squamata",
+    "order_fr": null,
+    "iucn": "least concern",
+    "qid": "Q2823406",
+    "wiki": {
+      "fr": "https://fr.wikipedia.org/wiki/Acontias_plumbeus",
+      "en": "https://en.wikipedia.org/wiki/Acontias_plumbeus"
+    },
+    "summary": {
+      "fr": "Acontias plumbeus est une espèce de sauriens de la famille des Scincidae.",
+      "en": "Acontias plumbeus, the giant legless skink or giant lance skink, is a species of lizard in the family Scincidae. It is found in South Africa, Eswatini, Mozambique, and Zimbabwe."
+    },
+    "image": {
+      "file": "images/acontias-plumbeus.webp",
+      "w": 900,
+      "h": 639,
+      "author": "Alex Rebelo",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/11627853",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/acontias-plumbeus-1.webp",
+        "w": 500,
+        "h": 327,
+        "author": "Wynand Uys",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/344285979"
+      },
+      {
+        "file": "photos/acontias-plumbeus-2.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Dylan Leonard",
+        "license": "CC-BY-SA",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://www.inaturalist.org/photos/373817707"
+      },
+      {
+        "file": "photos/acontias-plumbeus-3.webp",
+        "w": 471,
+        "h": 500,
+        "author": "brian fisher",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/18056316"
+      },
+      {
+        "file": "photos/acontias-plumbeus-4.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Daniel Mciver",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/492683216"
+      },
+      {
+        "file": "photos/acontias-plumbeus-5.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Sibahle Precious Gumede",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/117329873"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "panaspis-wahlbergii",
+    "group": "other",
+    "sci": "Panaspis wahlbergii",
+    "en": "Wahlberg's Snake-eyed Skink",
+    "fr": null,
+    "fr_source": null,
+    "family": "Scincidae",
+    "family_fr": null,
+    "order": null,
+    "order_fr": null,
+    "iucn": null,
+    "qid": null,
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/panaspis-wahlbergii.webp",
+      "w": 900,
+      "h": 596,
+      "author": "peterwebb",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/23431370",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/panaspis-wahlbergii-1.webp",
+        "w": 500,
+        "h": 331,
+        "author": "peterwebb",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/23431297"
+      },
+      {
+        "file": "photos/panaspis-wahlbergii-2.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Moagi Maloka",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/453015961"
+      },
+      {
+        "file": "photos/panaspis-wahlbergii-3.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Richard Gill",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/52030217"
+      },
+      {
+        "file": "photos/panaspis-wahlbergii-4.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Richard McKibbin",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/240548394"
+      },
+      {
+        "file": "photos/panaspis-wahlbergii-5.webp",
+        "w": 500,
+        "h": 318,
+        "author": "Byron Goris",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/30586101"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "lygodactylus-capensis",
+    "group": "other",
+    "sci": "Lygodactylus capensis",
+    "en": "Cape Dwarf Gecko",
+    "fr": null,
+    "fr_source": null,
+    "family": "Gekkonidae",
+    "family_fr": "Gekkonidae",
+    "order": "Squamata",
+    "order_fr": null,
+    "iucn": "least concern",
+    "qid": "Q3005690",
+    "wiki": {
+      "fr": "https://fr.wikipedia.org/wiki/Lygodactylus_capensis",
+      "en": "https://en.wikipedia.org/wiki/Cape_dwarf_gecko"
+    },
+    "summary": {
+      "fr": "Lygodactylus capensis est une espèce de geckos de la famille des Gekkonidae.",
+      "en": "The Cape dwarf gecko is a species of dwarf gecko found in the woodlands and forests of central and southern Africa. It also occurs commonly in towns and cities and is sometimes kept as a pet."
+    },
+    "image": {
+      "file": "images/lygodactylus-capensis.webp",
+      "w": 900,
+      "h": 551,
+      "author": "Rudolph Steenkamp",
+      "license": "CC-BY-SA",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://www.inaturalist.org/photos/236812866",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/lygodactylus-capensis-1.webp",
+        "w": 376,
+        "h": 500,
+        "author": "sallyhey",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/65760528"
+      },
+      {
+        "file": "photos/lygodactylus-capensis-2.webp",
+        "w": 479,
+        "h": 500,
+        "author": "Colin Ralston",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/170311834"
+      },
+      {
+        "file": "photos/lygodactylus-capensis-3.webp",
+        "w": 500,
+        "h": 342,
+        "author": "Wynand Uys",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/22552026"
+      },
+      {
+        "file": "photos/lygodactylus-capensis-4.webp",
+        "w": 333,
+        "h": 500,
+        "author": "Ockert van Schalkwyk",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/14841221"
+      },
+      {
+        "file": "photos/lygodactylus-capensis-5.webp",
+        "w": 500,
+        "h": 333,
+        "author": "wickus_",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/348157140"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "chondrodactylus-turneri",
+    "group": "other",
+    "sci": "Chondrodactylus turneri",
+    "en": "Turner's Thick-toed Gecko",
+    "fr": null,
+    "fr_source": null,
+    "family": "Gekkonidae",
+    "family_fr": "Gekkonidae",
+    "order": "Squamata",
+    "order_fr": null,
+    "iucn": "least concern",
+    "qid": "Q5071913",
+    "wiki": {
+      "fr": "https://fr.wikipedia.org/wiki/Chondrodactylus_turneri",
+      "en": "https://en.wikipedia.org/wiki/Turner's_thick-toed_gecko"
+    },
+    "summary": {
+      "fr": "Chondrodactylus turneri est une espèce de geckos de la famille des Gekkonidae.",
+      "en": "Turner's thick-toed gecko is a species of lizard in the family Gekkonidae. The species is endemic to southern Africa."
+    },
+    "image": {
+      "file": "images/chondrodactylus-turneri.webp",
+      "w": 900,
+      "h": 642,
+      "author": "Joubert Heymans",
+      "license": "CC-BY-NC-ND",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "source": "https://www.inaturalist.org/photos/12713803",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/chondrodactylus-turneri-1.webp",
+        "w": 500,
+        "h": 365,
+        "author": "Wynand Uys",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/28516878"
+      },
+      {
+        "file": "photos/chondrodactylus-turneri-2.webp",
+        "w": 500,
+        "h": 335,
+        "author": "Tia Offner",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/12946655"
+      },
+      {
+        "file": "photos/chondrodactylus-turneri-3.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Karen Eichholz",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/51133096"
+      },
+      {
+        "file": "photos/chondrodactylus-turneri-4.webp",
+        "w": 500,
+        "h": 375,
+        "author": "crazysnakeman",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/34809616"
+      },
+      {
+        "file": "photos/chondrodactylus-turneri-5.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Alex Rebelo",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/61634135"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "hemidactylus-mabouia",
+    "group": "other",
+    "sci": "Hemidactylus mabouia",
+    "en": "Tropical House Gecko",
+    "fr": null,
+    "fr_source": null,
+    "family": "Gekkonidae",
+    "family_fr": "Gekkonidae",
+    "order": "Squamata",
+    "order_fr": null,
+    "iucn": "least concern",
+    "qid": "Q2703241",
+    "wiki": {
+      "fr": "https://fr.wikipedia.org/wiki/Hemidactylus_mabouia",
+      "en": "https://en.wikipedia.org/wiki/Tropical_house_gecko"
+    },
+    "summary": {
+      "fr": "Hemidactylus mabouia est une espèce de geckos de la famille des Gekkonidae. En français elle est nommée hémidactyle commun, gecko des maisons, gecko gris des jardins ou encore aux Antilles, mabouya domestique",
+      "en": "The tropical house gecko, also called the cosmopolitan house gecko, is a species of lizard in the family Gekkonidae. The species is native to sub-Saharan Africa. However, it is also found in North, Central and South America and the Caribbean, where it has been inadvertently introduced by humans."
+    },
+    "image": {
+      "file": "images/hemidactylus-mabouia.webp",
+      "w": 900,
+      "h": 734,
+      "author": "David Torres",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/148226455",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/hemidactylus-mabouia-1.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Cole Wolf",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/32760238"
+      },
+      {
+        "file": "photos/hemidactylus-mabouia-2.webp",
+        "w": 500,
+        "h": 270,
+        "author": "tjeerd",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/211408567"
+      },
+      {
+        "file": "photos/hemidactylus-mabouia-3.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Johan Heyns",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/323615780"
+      },
+      {
+        "file": "photos/hemidactylus-mabouia-4.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Sean Botha",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/332074516"
+      },
+      {
+        "file": "photos/hemidactylus-mabouia-5.webp",
+        "w": 500,
+        "h": 500,
+        "author": "Sunčana Bradley",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/19243914"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "homopholis-wahlbergii",
+    "group": "other",
+    "sci": "Homopholis wahlbergii",
+    "en": "Wahlberg's Velvet Gecko",
+    "fr": null,
+    "fr_source": null,
+    "family": "Gekkonidae",
+    "family_fr": "Gekkonidae",
+    "order": "Squamata",
+    "order_fr": null,
+    "iucn": "least concern",
+    "qid": "Q58326354",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": null,
+    "photos": [
+      {
+        "file": "photos/homopholis-wahlbergii-1.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Courtney Hundermark",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/110093019"
+      },
+      {
+        "file": "photos/homopholis-wahlbergii-2.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Gus Benson",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/191328836"
+      },
+      {
+        "file": "photos/homopholis-wahlbergii-3.webp",
+        "w": 361,
+        "h": 500,
+        "author": "copper",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/62702841"
+      },
+      {
+        "file": "photos/homopholis-wahlbergii-4.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Nico Lubcker",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/437581321"
+      },
+      {
+        "file": "photos/homopholis-wahlbergii-5.webp",
+        "w": 237,
+        "h": 500,
+        "author": "Luke Kemp",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/588319744"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "pachydactylus-punctatus",
+    "group": "other",
+    "sci": "Pachydactylus punctatus",
+    "en": "Speckled Thick-toed Gecko",
+    "fr": null,
+    "fr_source": null,
+    "family": "Gekkonidae",
+    "family_fr": "Gekkonidae",
+    "order": "Squamata",
+    "order_fr": null,
+    "iucn": "least concern",
+    "qid": "Q3360117",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/pachydactylus-punctatus.webp",
+      "w": 900,
+      "h": 440,
+      "author": "Joubert Heymans",
+      "license": "CC-BY-NC-ND",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "source": "https://www.inaturalist.org/photos/14724261",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/pachydactylus-punctatus-1.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Stan Hitchcock",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/620177679"
+      },
+      {
+        "file": "photos/pachydactylus-punctatus-2.webp",
+        "w": 446,
+        "h": 500,
+        "author": "Shaun Swanepoel",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/319120822"
+      },
+      {
+        "file": "photos/pachydactylus-punctatus-3.webp",
+        "w": 500,
+        "h": 262,
+        "author": "Luke Verburgt",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/722162456"
+      },
+      {
+        "file": "photos/pachydactylus-punctatus-4.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Ryan van Huyssteen",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/722738797"
+      },
+      {
+        "file": "photos/pachydactylus-punctatus-5.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Courtney Hundermark",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/470556642"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "afroedura-langi",
+    "group": "other",
+    "sci": "Afroedura langi",
+    "en": "Lowveld Flat Gecko",
+    "fr": null,
+    "fr_source": null,
+    "family": "Gekkonidae",
+    "family_fr": "Gekkonidae",
+    "order": "Squamata",
+    "order_fr": null,
+    "iucn": "least concern",
+    "qid": "Q2826251",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/afroedura-langi.webp",
+      "w": 900,
+      "h": 600,
+      "author": "Gus Benson",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/622833250",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/afroedura-langi-1.webp",
+        "w": 500,
+        "h": 414,
+        "author": "Corné Rautenbach",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/456150326"
+      },
+      {
+        "file": "photos/afroedura-langi-2.webp",
+        "w": 281,
+        "h": 500,
+        "author": "pietersen_darren",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/451592953"
+      },
+      {
+        "file": "photos/afroedura-langi-3.webp",
+        "w": 500,
+        "h": 309,
+        "author": "Vaughan Jessnitz",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/328137198"
+      },
+      {
+        "file": "photos/afroedura-langi-4.webp",
+        "w": 500,
+        "h": 332,
+        "author": "no rights reserved",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source": "https://www.inaturalist.org/photos/642181853"
+      },
+      {
+        "file": "photos/afroedura-langi-5.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Clément panisse",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/471004367"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "matobosaurus-validus",
+    "group": "other",
+    "sci": "Matobosaurus validus",
+    "en": "Giant Plated Lizard",
+    "fr": null,
+    "fr_source": null,
+    "family": "Gerrhosauridae",
+    "family_fr": "Gerrhosauridae",
+    "order": "Squamata",
+    "order_fr": null,
+    "iucn": "least concern",
+    "qid": "Q3061063",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/matobosaurus-validus.webp",
+      "w": 900,
+      "h": 527,
+      "author": "tjeerd",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/32907302",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/matobosaurus-validus-1.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Gus Benson",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/192888447"
+      },
+      {
+        "file": "photos/matobosaurus-validus-2.webp",
+        "w": 500,
+        "h": 375,
+        "author": "no rights reserved",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source": "https://www.inaturalist.org/photos/231268438"
+      },
+      {
+        "file": "photos/matobosaurus-validus-3.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Ruben Foquet",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/249511138"
+      },
+      {
+        "file": "photos/matobosaurus-validus-4.webp",
+        "w": 500,
+        "h": 383,
+        "author": "Marcia Morris",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/363704437"
+      },
+      {
+        "file": "photos/matobosaurus-validus-5.webp",
+        "w": 500,
+        "h": 333,
+        "author": "szimpla",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/341515432"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "gerrhosaurus-flavigularis",
+    "group": "other",
+    "sci": "Gerrhosaurus flavigularis",
+    "en": "Yellow-throated Plated Lizard",
+    "fr": null,
+    "fr_source": null,
+    "family": "Gerrhosauridae",
+    "family_fr": "Gerrhosauridae",
+    "order": "Squamata",
+    "order_fr": null,
+    "iucn": "least concern",
+    "qid": "Q1936086",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/gerrhosaurus-flavigularis.webp",
+      "w": 900,
+      "h": 497,
+      "author": "Alex Rebelo",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/107258243",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/gerrhosaurus-flavigularis-1.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Zizipho Mfaku",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/319299648"
+      },
+      {
+        "file": "photos/gerrhosaurus-flavigularis-2.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Courtney Hundermark",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/179114155"
+      },
+      {
+        "file": "photos/gerrhosaurus-flavigularis-3.webp",
+        "w": 375,
+        "h": 500,
+        "author": "BrianMc",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/239992842"
+      },
+      {
+        "file": "photos/gerrhosaurus-flavigularis-4.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Janelle Isaacs",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/319298787"
+      },
+      {
+        "file": "photos/gerrhosaurus-flavigularis-5.webp",
+        "w": 500,
+        "h": 375,
+        "author": "ryanderoo",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/35180199"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "broadleysaurus-major",
+    "group": "other",
+    "sci": "Broadleysaurus major",
+    "en": "Rough-scaled Plated Lizard",
+    "fr": null,
+    "fr_source": null,
+    "family": "Gerrhosauridae",
+    "family_fr": "Gerrhosauridae",
+    "order": "Squamata",
+    "order_fr": null,
+    "iucn": "least concern",
+    "qid": "Q581845",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/broadleysaurus-major.webp",
+      "w": 900,
+      "h": 675,
+      "author": "Marco Aurelio de Sena",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/155873160",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/broadleysaurus-major-1.webp",
+        "w": 500,
+        "h": 438,
+        "author": "Ernest Porter",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/15728112"
+      },
+      {
+        "file": "photos/broadleysaurus-major-2.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Jacob Dirsuwei",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/204303516"
+      },
+      {
+        "file": "photos/broadleysaurus-major-3.webp",
+        "w": 500,
+        "h": 281,
+        "author": "no rights reserved",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source": "https://www.inaturalist.org/photos/15346654"
+      },
+      {
+        "file": "photos/broadleysaurus-major-4.webp",
+        "w": 500,
+        "h": 330,
+        "author": "Vaughan Jessnitz",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/456145512"
+      },
+      {
+        "file": "photos/broadleysaurus-major-5.webp",
+        "w": 500,
+        "h": 375,
+        "author": "brianrode",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/381875566"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "heliobolus-lugubris",
+    "group": "other",
+    "sci": "Heliobolus lugubris",
+    "en": "Bushveld Lizard",
+    "fr": null,
+    "fr_source": null,
+    "family": "Lacertidae",
+    "family_fr": "Lacertidae",
+    "order": "Squamata",
+    "order_fr": null,
+    "iucn": "least concern",
+    "qid": "Q6456318",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/heliobolus-lugubris.webp",
+      "w": 900,
+      "h": 596,
+      "author": "no rights reserved, uploaded by Marius Burger",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source": "https://www.inaturalist.org/photos/111067463",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/heliobolus-lugubris-1.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Gus Benson",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/192113727"
+      },
+      {
+        "file": "photos/heliobolus-lugubris-2.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Heather and Andrew Hodgson",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/399104962"
+      },
+      {
+        "file": "photos/heliobolus-lugubris-3.webp",
+        "w": 500,
+        "h": 333,
+        "author": "david_taylor",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/384863782"
+      },
+      {
+        "file": "photos/heliobolus-lugubris-4.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Ruben Foquet",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/249510926"
+      },
+      {
+        "file": "photos/heliobolus-lugubris-5.webp",
+        "w": 500,
+        "h": 375,
+        "author": "adamcorreia",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/294454163"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "platysaurus-intermedius",
+    "group": "other",
+    "sci": "Platysaurus intermedius",
+    "en": "Common Flat Lizard",
+    "fr": null,
+    "fr_source": null,
+    "family": "Cordylidae",
+    "family_fr": "Cordylidae",
+    "order": "Squamata",
+    "order_fr": null,
+    "iucn": "least concern",
+    "qid": "Q2716815",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/platysaurus-intermedius.webp",
+      "w": 900,
+      "h": 636,
+      "author": "Wynand Uys",
+      "license": "CC-BY",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "https://www.inaturalist.org/photos/15298581",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/platysaurus-intermedius-1.webp",
+        "w": 500,
+        "h": 329,
+        "author": "Wynand Uys",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/15298578"
+      },
+      {
+        "file": "photos/platysaurus-intermedius-2.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Courtney Hundermark",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/436928054"
+      },
+      {
+        "file": "photos/platysaurus-intermedius-3.webp",
+        "w": 500,
+        "h": 334,
+        "author": "Ryan van Huyssteen",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/454451387"
+      },
+      {
+        "file": "photos/platysaurus-intermedius-4.webp",
+        "w": 500,
+        "h": 415,
+        "author": "leuli",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/286229661"
+      },
+      {
+        "file": "photos/platysaurus-intermedius-5.webp",
+        "w": 500,
+        "h": 284,
+        "author": "Vaughan Jessnitz",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/455460262"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "cordylus-jonesii",
+    "group": "other",
+    "sci": "Cordylus jonesii",
+    "en": "Limpopo Girdled Lizard",
+    "fr": null,
+    "fr_source": null,
+    "family": "Cordylidae",
+    "family_fr": "Cordylidae",
+    "order": "Squamata",
+    "order_fr": null,
+    "iucn": "least concern",
+    "qid": "Q2997183",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/cordylus-jonesii.webp",
+      "w": 900,
+      "h": 601,
+      "author": "Joubert Heymans",
+      "license": "CC-BY-NC-ND",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "source": "https://www.inaturalist.org/photos/30549912",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/cordylus-jonesii-1.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Gus Benson",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/192888940"
+      },
+      {
+        "file": "photos/cordylus-jonesii-2.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Dr. Ryne D. Rutherford",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/58123424"
+      },
+      {
+        "file": "photos/cordylus-jonesii-3.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Tracey Herbst",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/459616940"
+      },
+      {
+        "file": "photos/cordylus-jonesii-4.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Frederic Melki",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/593305266"
+      },
+      {
+        "file": "photos/cordylus-jonesii-5.webp",
+        "w": 500,
+        "h": 263,
+        "author": "Jeff Morris",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/113086668"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "parabuthus-transvaalicus",
+    "group": "other",
+    "sci": "Parabuthus transvaalicus",
+    "en": "Transvaal Thicktail Scorpion",
+    "fr": null,
+    "fr_source": null,
+    "family": "Buthidae",
+    "family_fr": "Buthidae",
+    "order": "Scorpiones",
+    "order_fr": "scorpions",
+    "iucn": null,
+    "qid": "Q139192",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/parabuthus-transvaalicus.webp",
+      "w": 900,
+      "h": 659,
+      "author": "Joubert Heymans",
+      "license": "CC-BY-NC-ND",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "source": "https://www.inaturalist.org/photos/12713908",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/parabuthus-transvaalicus-1.webp",
+        "w": 500,
+        "h": 371,
+        "author": "mikeadams_13",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/430599962"
+      },
+      {
+        "file": "photos/parabuthus-transvaalicus-2.webp",
+        "w": 375,
+        "h": 500,
+        "author": "zanderbarkhuizen",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/373878460"
+      },
+      {
+        "file": "photos/parabuthus-transvaalicus-3.webp",
+        "w": 500,
+        "h": 344,
+        "author": "Alex Rebelo",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/174360143"
+      },
+      {
+        "file": "photos/parabuthus-transvaalicus-4.webp",
+        "w": 500,
+        "h": 361,
+        "author": "Ryan van Huyssteen",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/15237819"
+      },
+      {
+        "file": "photos/parabuthus-transvaalicus-5.webp",
+        "w": 500,
+        "h": 353,
+        "author": "Wynand Uys",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/469264956"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "parabuthus-mossambicensis",
+    "group": "other",
+    "sci": "Parabuthus mossambicensis",
+    "en": "Mozambique Thicktail Scorpion",
+    "fr": null,
+    "fr_source": null,
+    "family": "Buthidae",
+    "family_fr": "Buthidae",
+    "order": "Scorpiones",
+    "order_fr": "scorpions",
+    "iucn": null,
+    "qid": "Q3363124",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/parabuthus-mossambicensis.webp",
+      "w": 900,
+      "h": 702,
+      "author": "Joubert Heymans",
+      "license": "CC-BY-NC-ND",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "source": "https://www.inaturalist.org/photos/12713900",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/parabuthus-mossambicensis-1.webp",
+        "w": 375,
+        "h": 500,
+        "author": "rowy",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/33594022"
+      },
+      {
+        "file": "photos/parabuthus-mossambicensis-2.webp",
+        "w": 500,
+        "h": 328,
+        "author": "Undine Hauptmann, Werner Schmidt",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/176360734"
+      },
+      {
+        "file": "photos/parabuthus-mossambicensis-3.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Sarina",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/585180666"
+      },
+      {
+        "file": "photos/parabuthus-mossambicensis-4.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Manuel R Popp",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/169898251"
+      },
+      {
+        "file": "photos/parabuthus-mossambicensis-5.webp",
+        "w": 500,
+        "h": 386,
+        "author": "Duncan McKenzie",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/421475535"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "uroplectes-olivaceus",
+    "group": "other",
+    "sci": "Uroplectes olivaceus",
+    "en": "Olive-brown Lesser-thicktail Scorpion",
+    "fr": null,
+    "fr_source": null,
+    "family": "Buthidae",
+    "family_fr": "Buthidae",
+    "order": "Scorpiones",
+    "order_fr": "scorpions",
+    "iucn": null,
+    "qid": "Q2713062",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/uroplectes-olivaceus.webp",
+      "w": 900,
+      "h": 547,
+      "author": "Alex Rebelo",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/100129834",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/uroplectes-olivaceus-1.webp",
+        "w": 441,
+        "h": 500,
+        "author": "brianrode",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/550785460"
+      },
+      {
+        "file": "photos/uroplectes-olivaceus-2.webp",
+        "w": 500,
+        "h": 452,
+        "author": "Rob Tibbitt-Eggleton",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/408070195"
+      },
+      {
+        "file": "photos/uroplectes-olivaceus-3.webp",
+        "w": 500,
+        "h": 359,
+        "author": "Megan Fisher",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/457305595"
+      },
+      {
+        "file": "photos/uroplectes-olivaceus-4.webp",
+        "w": 375,
+        "h": 500,
+        "author": "David Dalmeijer",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/598539323"
+      },
+      {
+        "file": "photos/uroplectes-olivaceus-5.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Rion E. Lerm",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/612163006"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "opistophthalmus-glabrifrons",
+    "group": "other",
+    "sci": "Opistophthalmus glabrifrons",
+    "en": "Shiny Burrowing Scorpion",
+    "fr": null,
+    "fr_source": null,
+    "family": "Scorpionidae",
+    "family_fr": "Scorpionidae",
+    "order": "Scorpiones",
+    "order_fr": "scorpions",
+    "iucn": null,
+    "qid": "Q3354278",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/opistophthalmus-glabrifrons.webp",
+      "w": 900,
+      "h": 591,
+      "author": "Joubert Heymans",
+      "license": "CC-BY-NC-ND",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "source": "https://www.inaturalist.org/photos/17461340",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/opistophthalmus-glabrifrons-1.webp",
+        "w": 500,
+        "h": 375,
+        "author": "pistolpete",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/25809263"
+      },
+      {
+        "file": "photos/opistophthalmus-glabrifrons-2.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Sascha Schumann",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/336276133"
+      },
+      {
+        "file": "photos/opistophthalmus-glabrifrons-3.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Liam Botha",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/566230522"
+      },
+      {
+        "file": "photos/opistophthalmus-glabrifrons-4.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Julia",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/656464011"
+      },
+      {
+        "file": "photos/opistophthalmus-glabrifrons-5.webp",
+        "w": 500,
+        "h": 324,
+        "author": "buggsbalmer",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/391960841"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "hadogenes-troglodytes",
+    "group": "other",
+    "sci": "Hadogenes troglodytes",
+    "en": "Flat Rock Scorpion",
+    "fr": null,
+    "fr_source": null,
+    "family": "Liochelidae",
+    "family_fr": "Liochelidae",
+    "order": "Scorpiones",
+    "order_fr": "scorpions",
+    "iucn": null,
+    "qid": "Q3023827",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/hadogenes-troglodytes.webp",
+      "w": 900,
+      "h": 600,
+      "author": "Joubert Heymans",
+      "license": "CC-BY-NC-ND",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "source": "https://www.inaturalist.org/photos/58805801",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/hadogenes-troglodytes-1.webp",
+        "w": 500,
+        "h": 328,
+        "author": "Vaughan Jessnitz",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/342195237"
+      },
+      {
+        "file": "photos/hadogenes-troglodytes-2.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Luke Snowden",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/2707131"
+      },
+      {
+        "file": "photos/hadogenes-troglodytes-3.webp",
+        "w": 500,
+        "h": 357,
+        "author": "Undine Hauptmann, Werner Schmidt",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/368865209"
+      },
+      {
+        "file": "photos/hadogenes-troglodytes-4.webp",
+        "w": 500,
+        "h": 281,
+        "author": "Ryan van Huyssteen",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/15285098"
+      },
+      {
+        "file": "photos/hadogenes-troglodytes-5.webp",
+        "w": 375,
+        "h": 500,
+        "author": "xjeennie",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/541654975"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "opisthacanthus-asper",
+    "group": "other",
+    "sci": "Opisthacanthus asper",
+    "en": "Tree Creeping Scorpion",
+    "fr": null,
+    "fr_source": null,
+    "family": "Liochelidae",
+    "family_fr": "Liochelidae",
+    "order": "Scorpiones",
+    "order_fr": "scorpions",
+    "iucn": null,
+    "qid": "Q3354190",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/opisthacanthus-asper.webp",
+      "w": 900,
+      "h": 648,
+      "author": "markus lilje",
+      "license": "CC-BY-NC-ND",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "source": "https://www.inaturalist.org/photos/9104223",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/opisthacanthus-asper-1.webp",
+        "w": 500,
+        "h": 351,
+        "author": "Tony Rebelo",
+        "license": "CC-BY-SA",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://www.inaturalist.org/photos/138342072"
+      },
+      {
+        "file": "photos/opisthacanthus-asper-2.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Asher P Higgins",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/350356572"
+      },
+      {
+        "file": "photos/opisthacanthus-asper-3.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Charles Stephen",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/22221273"
+      },
+      {
+        "file": "photos/opisthacanthus-asper-4.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Ryan Tippett",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/523402721"
+      },
+      {
+        "file": "photos/opisthacanthus-asper-5.webp",
+        "w": 500,
+        "h": 243,
+        "author": "Ryan van Huyssteen",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/73528085"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "trichonephila-senegalensis",
+    "group": "other",
+    "sci": "Trichonephila senegalensis",
+    "en": "Banded-legged Golden Orb-web Spider",
+    "fr": null,
+    "fr_source": null,
+    "family": "Araneidae",
+    "family_fr": null,
+    "order": "Araneae",
+    "order_fr": "araignée",
+    "iucn": "least concern",
+    "qid": "Q116263156",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/trichonephila-senegalensis.webp",
+      "w": 900,
+      "h": 600,
+      "author": "rbeunen",
+      "license": "CC-BY-NC-SA",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "source": "https://www.inaturalist.org/photos/35742475",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/trichonephila-senegalensis-1.webp",
+        "w": 500,
+        "h": 334,
+        "author": "Nikie Scott",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/276480135"
+      },
+      {
+        "file": "photos/trichonephila-senegalensis-2.webp",
+        "w": 500,
+        "h": 281,
+        "author": "Ruan Booysen",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/276520690"
+      },
+      {
+        "file": "photos/trichonephila-senegalensis-3.webp",
+        "w": 500,
+        "h": 414,
+        "author": "Matthew Fainman",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/183852933"
+      },
+      {
+        "file": "photos/trichonephila-senegalensis-4.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Herman Berteler",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/366813218"
+      },
+      {
+        "file": "photos/trichonephila-senegalensis-5.webp",
+        "w": 241,
+        "h": 500,
+        "author": "Karen Addison",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/117121958"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "trichonephila-fenestrata",
+    "group": "other",
+    "sci": "Trichonephila fenestrata",
+    "en": "Hairy Golden Orb-web Spider",
+    "fr": null,
+    "fr_source": null,
+    "family": "Araneidae",
+    "family_fr": null,
+    "order": "Araneae",
+    "order_fr": "araignée",
+    "iucn": "least concern",
+    "qid": "Q116263148",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/trichonephila-fenestrata.webp",
+      "w": 598,
+      "h": 900,
+      "author": "Tony Rebelo",
+      "license": "CC-BY-SA",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://www.inaturalist.org/photos/15426105",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/trichonephila-fenestrata-1.webp",
+        "w": 500,
+        "h": 500,
+        "author": "Diana Studer",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/179600885"
+      },
+      {
+        "file": "photos/trichonephila-fenestrata-2.webp",
+        "w": 375,
+        "h": 500,
+        "author": "robbiegroves",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/192237874"
+      },
+      {
+        "file": "photos/trichonephila-fenestrata-3.webp",
+        "w": 500,
+        "h": 334,
+        "author": "Roelof van der Breggen",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/110743067"
+      },
+      {
+        "file": "photos/trichonephila-fenestrata-4.webp",
+        "w": 318,
+        "h": 500,
+        "author": "Zac Lawson-Smith",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/191667227"
+      },
+      {
+        "file": "photos/trichonephila-fenestrata-5.webp",
+        "w": 489,
+        "h": 500,
+        "author": "Hendrik McCarthy",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/508700247"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "argiope-australis",
+    "group": "other",
+    "sci": "Argiope australis",
+    "en": "Garden Orb-web Spider",
+    "fr": null,
+    "fr_source": null,
+    "family": "Araneidae",
+    "family_fr": null,
+    "order": "Araneae",
+    "order_fr": "araignée",
+    "iucn": null,
+    "qid": "Q2610693",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/argiope-australis.webp",
+      "w": 900,
+      "h": 573,
+      "author": "Rudolph Steenkamp",
+      "license": "CC-BY-SA",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://www.inaturalist.org/photos/358980794",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/argiope-australis-1.webp",
+        "w": 500,
+        "h": 377,
+        "author": "Nikie Scott",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/268924091"
+      },
+      {
+        "file": "photos/argiope-australis-2.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Marie Delport",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/250140624"
+      },
+      {
+        "file": "photos/argiope-australis-3.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Fayruz Prins",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/186261673"
+      },
+      {
+        "file": "photos/argiope-australis-4.webp",
+        "w": 500,
+        "h": 375,
+        "author": "no rights reserved",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source": "https://www.inaturalist.org/photos/175525542"
+      },
+      {
+        "file": "photos/argiope-australis-5.webp",
+        "w": 500,
+        "h": 375,
+        "author": "nushka",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/190073488"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "gasteracantha-sanguinolenta",
+    "group": "other",
+    "sci": "Gasteracantha sanguinolenta",
+    "en": "Kite Spider",
+    "fr": null,
+    "fr_source": null,
+    "family": "Araneidae",
+    "family_fr": null,
+    "order": "Araneae",
+    "order_fr": "araignée",
+    "iucn": null,
+    "qid": "Q2208614",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/gasteracantha-sanguinolenta.webp",
+      "w": 900,
+      "h": 589,
+      "author": "Wynand Uys",
+      "license": "CC-BY",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "https://www.inaturalist.org/photos/15269023",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/gasteracantha-sanguinolenta-1.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Marie Delport",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/461726484"
+      },
+      {
+        "file": "photos/gasteracantha-sanguinolenta-2.webp",
+        "w": 500,
+        "h": 448,
+        "author": "Brian du Preez",
+        "license": "CC-BY-SA",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://www.inaturalist.org/photos/65945025"
+      },
+      {
+        "file": "photos/gasteracantha-sanguinolenta-3.webp",
+        "w": 500,
+        "h": 432,
+        "author": "Robert Taylor",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/15686400"
+      },
+      {
+        "file": "photos/gasteracantha-sanguinolenta-4.webp",
+        "w": 500,
+        "h": 384,
+        "author": "Gerhard Diedericks",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/15124479"
+      },
+      {
+        "file": "photos/gasteracantha-sanguinolenta-5.webp",
+        "w": 500,
+        "h": 334,
+        "author": "Michael McSweeney",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/15245453"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "ceratogyrus-darlingi",
+    "group": "other",
+    "sci": "Ceratogyrus darlingi",
+    "en": "Horned Baboon Spider",
+    "fr": null,
+    "fr_source": null,
+    "family": "Theraphosidae",
+    "family_fr": "Theraphosidae",
+    "order": "Araneae",
+    "order_fr": "araignée",
+    "iucn": null,
+    "qid": "Q266393",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/ceratogyrus-darlingi.webp",
+      "w": 900,
+      "h": 564,
+      "author": "Ansie Dippenaar-Schoeman",
+      "license": "CC-BY",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "https://www.inaturalist.org/photos/537504789",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/ceratogyrus-darlingi-1.webp",
+        "w": 375,
+        "h": 500,
+        "author": "antkeyter",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/664290715"
+      },
+      {
+        "file": "photos/ceratogyrus-darlingi-2.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Rudolph Steenkamp",
+        "license": "CC-BY-SA",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://www.inaturalist.org/photos/342677534"
+      },
+      {
+        "file": "photos/ceratogyrus-darlingi-3.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Esther Mapo",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/508656554"
+      },
+      {
+        "file": "photos/ceratogyrus-darlingi-4.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Sascha Schumann",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/454904365"
+      },
+      {
+        "file": "photos/ceratogyrus-darlingi-5.webp",
+        "w": 375,
+        "h": 500,
+        "author": "kellystarkys",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/222155293"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "augacephalus-junodi",
+    "group": "other",
+    "sci": "Augacephalus junodi",
+    "en": "Golden Baboon Spider",
+    "fr": null,
+    "fr_source": null,
+    "family": "Theraphosidae",
+    "family_fr": "Theraphosidae",
+    "order": "Araneae",
+    "order_fr": "araignée",
+    "iucn": null,
+    "qid": "Q2132836",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/augacephalus-junodi.webp",
+      "w": 900,
+      "h": 666,
+      "author": "Joubert Heymans",
+      "license": "CC-BY-NC-ND",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "source": "https://www.inaturalist.org/photos/57696957",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/augacephalus-junodi-1.webp",
+        "w": 500,
+        "h": 409,
+        "author": "Norbert Hahn",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/450123396"
+      },
+      {
+        "file": "photos/augacephalus-junodi-2.webp",
+        "w": 500,
+        "h": 281,
+        "author": "Elena Reljic",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/601217867"
+      },
+      {
+        "file": "photos/augacephalus-junodi-3.webp",
+        "w": 377,
+        "h": 500,
+        "author": "Riaan Robbeson",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/436856899"
+      },
+      {
+        "file": "photos/augacephalus-junodi-4.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Joël Roerig",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/458049222"
+      },
+      {
+        "file": "photos/augacephalus-junodi-5.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Roger Peet",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/32691314"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "latrodectus-renivulvatus",
+    "group": "other",
+    "sci": "Latrodectus renivulvatus",
+    "en": "Black Button Spider",
+    "fr": null,
+    "fr_source": null,
+    "family": "Theridiidae",
+    "family_fr": "Theridiidae",
+    "order": "Araneae",
+    "order_fr": "araignée",
+    "iucn": null,
+    "qid": "Q2420622",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/latrodectus-renivulvatus.webp",
+      "w": 675,
+      "h": 900,
+      "author": "kevin koen",
+      "license": "CC-BY-SA",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://www.inaturalist.org/photos/170759073",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/latrodectus-renivulvatus-1.webp",
+        "w": 500,
+        "h": 281,
+        "author": "Ruan Booysen",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/179617746"
+      },
+      {
+        "file": "photos/latrodectus-renivulvatus-2.webp",
+        "w": 500,
+        "h": 500,
+        "author": "Jannie Groenewald",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/113384151"
+      },
+      {
+        "file": "photos/latrodectus-renivulvatus-3.webp",
+        "w": 385,
+        "h": 500,
+        "author": "Rudolph Steenkamp",
+        "license": "CC-BY-SA",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://www.inaturalist.org/photos/176139095"
+      },
+      {
+        "file": "photos/latrodectus-renivulvatus-4.webp",
+        "w": 500,
+        "h": 338,
+        "author": "Robert Wienand",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/303450604"
+      },
+      {
+        "file": "photos/latrodectus-renivulvatus-5.webp",
+        "w": 499,
+        "h": 500,
+        "author": "Christiaan Viljoen",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/57386240"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "latrodectus-geometricus",
+    "group": "other",
+    "sci": "Latrodectus geometricus",
+    "en": "Brown Button Spider",
+    "fr": null,
+    "fr_source": null,
+    "family": "Theridiidae",
+    "family_fr": "Theridiidae",
+    "order": "Araneae",
+    "order_fr": "araignée",
+    "iucn": null,
+    "qid": "Q82243",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/latrodectus-geometricus.webp",
+      "w": 838,
+      "h": 900,
+      "author": "Wayne Fidler",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/29119102",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/latrodectus-geometricus-1.webp",
+        "w": 479,
+        "h": 500,
+        "author": "Rudolph Steenkamp",
+        "license": "CC-BY-SA",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://www.inaturalist.org/photos/462849026"
+      },
+      {
+        "file": "photos/latrodectus-geometricus-2.webp",
+        "w": 375,
+        "h": 500,
+        "author": "adelekokt",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/474183181"
+      },
+      {
+        "file": "photos/latrodectus-geometricus-3.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Marian Oliver",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/149836526"
+      },
+      {
+        "file": "photos/latrodectus-geometricus-4.webp",
+        "w": 500,
+        "h": 404,
+        "author": "Marion Maclean",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/43806713"
+      },
+      {
+        "file": "photos/latrodectus-geometricus-5.webp",
+        "w": 500,
+        "h": 434,
+        "author": "Colin Ralston",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/13230043"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "loxosceles-simillima",
+    "group": "other",
+    "sci": "Loxosceles simillima",
+    "en": "Violin Spider",
+    "fr": null,
+    "fr_source": null,
+    "family": "Sicariidae",
+    "family_fr": "Sicariidae",
+    "order": "Araneae",
+    "order_fr": "araignée",
+    "iucn": null,
+    "qid": "Q15622816",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/loxosceles-simillima.webp",
+      "w": 900,
+      "h": 506,
+      "author": "Ruan Booysen",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/244524140",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/loxosceles-simillima-1.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Ruan Booysen",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/244524153"
+      },
+      {
+        "file": "photos/loxosceles-simillima-2.webp",
+        "w": 333,
+        "h": 500,
+        "author": "Craig Main",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/76313754"
+      },
+      {
+        "file": "photos/loxosceles-simillima-3.webp",
+        "w": 500,
+        "h": 323,
+        "author": "Rudolph Steenkamp",
+        "license": "CC-BY-SA",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://www.inaturalist.org/photos/191254868"
+      },
+      {
+        "file": "photos/loxosceles-simillima-4.webp",
+        "w": 500,
+        "h": 335,
+        "author": "Ansie Dippenaar-Schoeman",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/550737216"
+      },
+      {
+        "file": "photos/loxosceles-simillima-5.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Ollie",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/291981234"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "cheiracanthium-furculatum",
+    "group": "other",
+    "sci": "Cheiracanthium furculatum",
+    "en": "Sac Spider",
+    "fr": null,
+    "fr_source": null,
+    "family": "Cheiracanthiidae",
+    "family_fr": "Cheiracanthiidae",
+    "order": "Araneae",
+    "order_fr": "araignée",
+    "iucn": null,
+    "qid": "Q1871348",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/cheiracanthium-furculatum.webp",
+      "w": 900,
+      "h": 618,
+      "author": "Ansie Dippenaar-Schoeman",
+      "license": "CC-BY",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "https://www.inaturalist.org/photos/539603322",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/cheiracanthium-furculatum-1.webp",
+        "w": 420,
+        "h": 500,
+        "author": "Rudolph Steenkamp",
+        "license": "CC-BY-SA",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://www.inaturalist.org/photos/573802695"
+      },
+      {
+        "file": "photos/cheiracanthium-furculatum-2.webp",
+        "w": 377,
+        "h": 455,
+        "author": "magdastlucia",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/14403628"
+      },
+      {
+        "file": "photos/cheiracanthium-furculatum-3.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Tazzy.c",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/720022808"
+      },
+      {
+        "file": "photos/cheiracanthium-furculatum-4.webp",
+        "w": 500,
+        "h": 492,
+        "author": "Ansie Dippenaar-Schoeman",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/539603982"
+      },
+      {
+        "file": "photos/cheiracanthium-furculatum-5.webp",
+        "w": 500,
+        "h": 500,
+        "author": "Christiaan Viljoen",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/70302686"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "palystes-superciliosus",
+    "group": "other",
+    "sci": "Palystes superciliosus",
+    "en": "Rain Spider",
+    "fr": null,
+    "fr_source": null,
+    "family": "Sparassidae",
+    "family_fr": "Sparassidae",
+    "order": "Araneae",
+    "order_fr": "araignée",
+    "iucn": null,
+    "qid": "Q2438009",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/palystes-superciliosus.webp",
+      "w": 900,
+      "h": 610,
+      "author": "Rudolph Steenkamp",
+      "license": "CC-BY-SA",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://www.inaturalist.org/photos/410930086",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/palystes-superciliosus-1.webp",
+        "w": 499,
+        "h": 353,
+        "author": "Sally Adam",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/12235642"
+      },
+      {
+        "file": "photos/palystes-superciliosus-2.webp",
+        "w": 500,
+        "h": 484,
+        "author": "Diana Studer",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/226403008"
+      },
+      {
+        "file": "photos/palystes-superciliosus-3.webp",
+        "w": 500,
+        "h": 346,
+        "author": "Rudolph Steenkamp",
+        "license": "CC-BY-SA",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://www.inaturalist.org/photos/323283350"
+      },
+      {
+        "file": "photos/palystes-superciliosus-4.webp",
+        "w": 500,
+        "h": 500,
+        "author": "Colin Ralston",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/262167127"
+      },
+      {
+        "file": "photos/palystes-superciliosus-5.webp",
+        "w": 500,
+        "h": 389,
+        "author": "Wynand Uys",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/588651672"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "stegodyphus-dumicola",
+    "group": "other",
+    "sci": "Stegodyphus dumicola",
+    "en": "Social Velvet Spider",
+    "fr": null,
+    "fr_source": null,
+    "family": "Eresidae",
+    "family_fr": "Eresidae",
+    "order": "Araneae",
+    "order_fr": "araignée",
+    "iucn": null,
+    "qid": "Q2420130",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/stegodyphus-dumicola.webp",
+      "w": 900,
+      "h": 506,
+      "author": "Bernard DUPONT",
+      "license": "CC-BY-NC-SA",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "source": "https://www.inaturalist.org/photos/1178279",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/stegodyphus-dumicola-1.webp",
+        "w": 500,
+        "h": 355,
+        "author": "Wynand Uys",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/12637215"
+      },
+      {
+        "file": "photos/stegodyphus-dumicola-2.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Odette Curtis",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/241002728"
+      },
+      {
+        "file": "photos/stegodyphus-dumicola-3.webp",
+        "w": 500,
+        "h": 300,
+        "author": "Ryan Tippett",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/116935417"
+      },
+      {
+        "file": "photos/stegodyphus-dumicola-4.webp",
+        "w": 488,
+        "h": 500,
+        "author": "Sally Adam",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/15609022"
+      },
+      {
+        "file": "photos/stegodyphus-dumicola-5.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Tony Rebelo",
+        "license": "CC-BY-SA",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://www.inaturalist.org/photos/90517054"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "damon-variegatus",
+    "group": "other",
+    "sci": "Damon variegatus",
+    "en": "Whip Spider",
+    "fr": null,
+    "fr_source": null,
+    "family": "Phrynichidae",
+    "family_fr": "Phrynichidae",
+    "order": "Amblypygi",
+    "order_fr": "Amblypygi",
+    "iucn": null,
+    "qid": "Q2257051",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/damon-variegatus.webp",
+      "w": 900,
+      "h": 594,
+      "author": "Rudolph Steenkamp",
+      "license": "CC-BY-SA",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://www.inaturalist.org/photos/242822473",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/damon-variegatus-1.webp",
+        "w": 500,
+        "h": 375,
+        "author": "robyn-leew",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/341610948"
+      },
+      {
+        "file": "photos/damon-variegatus-2.webp",
+        "w": 500,
+        "h": 317,
+        "author": "Rudolph Steenkamp",
+        "license": "CC-BY-SA",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://www.inaturalist.org/photos/242822363"
+      },
+      {
+        "file": "photos/damon-variegatus-3.webp",
+        "w": 500,
+        "h": 386,
+        "author": "Wynand Uys",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/176892688"
+      },
+      {
+        "file": "photos/damon-variegatus-4.webp",
+        "w": 500,
+        "h": 468,
+        "author": "Alex Rebelo",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/211702490"
+      },
+      {
+        "file": "photos/damon-variegatus-5.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Luke Hall",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/366495666"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "amblyomma-hebraeum",
+    "group": "other",
+    "sci": "Amblyomma hebraeum",
+    "en": "Bont Tick",
+    "fr": null,
+    "fr_source": null,
+    "family": "Ixodidae",
+    "family_fr": "Ixodidae",
+    "order": "Ixodida",
+    "order_fr": "tique",
+    "iucn": null,
+    "qid": "Q19896390",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/amblyomma-hebraeum.webp",
+      "w": 840,
+      "h": 560,
+      "author": "John L. Richards",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/58902140",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/amblyomma-hebraeum-1.webp",
+        "w": 500,
+        "h": 364,
+        "author": "Ryan van Huyssteen",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/15350907"
+      },
+      {
+        "file": "photos/amblyomma-hebraeum-2.webp",
+        "w": 500,
+        "h": 333,
+        "author": "John Gale",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/173390116"
+      },
+      {
+        "file": "photos/amblyomma-hebraeum-3.webp",
+        "w": 225,
+        "h": 500,
+        "author": "Stephan and Unelle Knoetze",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/247950463"
+      },
+      {
+        "file": "photos/amblyomma-hebraeum-4.webp",
+        "w": 500,
+        "h": 334,
+        "author": "rjq",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/198456612"
+      },
+      {
+        "file": "photos/amblyomma-hebraeum-5.webp",
+        "w": 500,
+        "h": 452,
+        "author": "Joseph Heymans",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/243938764"
       }
     ],
     "sounds": [],

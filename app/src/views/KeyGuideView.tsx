@@ -9,6 +9,7 @@ import { birdSort } from '../learn/birds';
 import { abundanceCompare, abundanceText } from '../learn/abundance';
 import { snakeInfo, DANGER_LABEL, type Danger } from '../learn/snakes';
 import { plantInfo, KIND_LABEL, LEAF_LABEL } from '../learn/plants';
+import { otherInfo, CAT_LABEL, WHERE_LABEL, type OtherCat, type Where } from '../learn/others';
 import type { Group, Species } from '../types';
 import { GuideSwitch } from './IdGuideView';
 
@@ -22,12 +23,14 @@ interface Criterion {
   options: [string, preact.ComponentChildren][];
   valueOf: (id: string) => string[];
   more?: boolean;   // under "More criteria"
+  hideEmpty?: boolean;   // drop the options no species has (categories not filled yet)
 }
 
 interface KeyState { sel: Signal<Record<string, string[]>>; q: Signal<string>; hideSeen: Signal<boolean> }
 const state = (): KeyState => ({ sel: signal({}), q: signal(''), hideSeen: signal(false) });
 const snakeState = state();
 const plantState = state();
+const otherState = state();
 
 function KeyGuide({ group, st, criteria, icon, noun, badge, credit }: {
   group: Group; st: KeyState; criteria: Criterion[]; icon: IconName; noun: [string, string];
@@ -63,6 +66,7 @@ function KeyGuide({ group, st, criteria, icon, noun, badge, credit }: {
         {c.options.map(([v, label]) => {
           const on = !!s0[c.key]?.includes(v);
           const n = countFor(c, v);
+          if (c.hideEmpty && !all.some((s) => c.valueOf(s.id).includes(v))) return null;
           return <button class={'chip' + (on ? ' on' : '') + (!on && n === 0 ? ' empty' : '')} disabled={!on && n === 0} onClick={() => toggle(c.key, v)}>{label} <span class="n">{n}</span></button>;
         })}
       </div>
@@ -149,4 +153,22 @@ const PLANT_KEY: Criterion[] = [
 export function PlantGuideView() {
   return <KeyGuide group="plant" st={plantState} criteria={PLANT_KEY} icon="tree" noun={['plant', 'plants']}
     credit="Flower colour is the colour seen from a few metres. Figs hide their flowers. Many trees flower on bare branches before the leaves." />;
+}
+
+// ---- others: reptiles, spiders and scorpions ----
+const ot = (id: string) => otherInfo.value.get(id);
+const OTHER_KEY: Criterion[] = [
+  { key: 'cat', label: 'What it is', hideEmpty: true, options: (Object.keys(CAT_LABEL) as OtherCat[]).map((c) => [c, CAT_LABEL[c]]), valueOf: (id) => { const c = ot(id)?.cat; return c ? [c] : []; } },
+  { key: 'where', label: 'Where', options: (Object.keys(WHERE_LABEL) as Where[]).map((w) => [w, WHERE_LABEL[w]]), valueOf: (id) => ot(id)?.where || [] },
+  { key: 'when', label: 'When', options: [['day', 'By day'], ['night', 'At night']], valueOf: (id) => ot(id)?.when || [] },
+  { key: 'danger', label: 'Danger', more: true, options: DANGERS.map((d) => [d, DANGER_SHORT[d]]), valueOf: (id) => { const d = ot(id)?.danger; return d ? [d] : []; } },
+];
+const otherBadge = (id: string) => {
+  const d = ot(id)?.danger;
+  return d === 'deadly' || d === 'venomous' ? <span class={'dgb ' + d} title={DANGER_LABEL[d]}><Icon name="triangle-alert" size={13} stroke={2.6} /></span> : null;
+};
+
+export function OtherGuideView() {
+  return <KeyGuide group="other" st={otherState} criteria={OTHER_KEY} icon="bug" noun={['animal', 'animals']} badge={otherBadge}
+    credit="Thick tail and thin pincers on a scorpion means dangerous; big pincers and a thin tail, mostly harmless. Look, don't touch." />;
 }

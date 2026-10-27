@@ -44,7 +44,7 @@ function toggle(k: Key, v: string) {
 }
 
 /** The keys of the Guide tab: birds by look, mammals by their prints, snakes and plants by look. */
-const GUIDES: [string, string, IconName][] = [['', 'Birds', 'bird'], ['tracks', 'Tracks', 'paw-print'], ['snakes', 'Snakes', 'snake'], ['plants', 'Plants', 'tree']];
+const GUIDES: [string, string, IconName][] = [['', 'Birds', 'bird'], ['tracks', 'Tracks', 'paw-print'], ['snakes', 'Snakes', 'snake'], ['plants', 'Plants', 'tree'], ['others', 'Others', 'bug']];
 export function GuideSwitch() {
   const cur = route.value.parts[1] || '';
   return (

@@ -12,6 +12,7 @@ import { MigBadge, SortButton } from '../components/BirdSection';
 import { birdSort } from '../learn/birds';
 import { abundanceCompare, abundanceText } from '../learn/abundance';
 import { plantInfo, type PlantKind } from '../learn/plants';
+import { otherInfo, CAT_LABEL, type OtherCat } from '../learn/others';
 import type { Group } from '../types';
 
 // module-level so the list keeps its state when coming back from a species page
@@ -22,6 +23,8 @@ const filter = signal<'all' | 'seen' | 'unseen'>('all');
 // plants only: trees (with shrubs and succulents), grasses, wildflowers
 const PLANT_KINDS: [string, string, PlantKind[]][] = [['all', 'All', []], ['trees', 'Trees & shrubs', ['tree', 'shrub', 'succulent']], ['grass', 'Grasses', ['grass']], ['herb', 'Wildflowers', ['herb']]];
 const plantKind = signal('all');
+// others: reptiles, spiders and scorpions, frogs, insects (only the categories that have species)
+const otherCat = signal<OtherCat | 'all'>('all');
 
 export function ListView() {
   const [adding, setAdding] = useState<string | null>(null);
@@ -31,6 +34,7 @@ export function ListView() {
   let list = species.value.filter((s) => s.group === tab.value && matches(s, q.value) && (filter.value === 'all' || (filter.value === 'seen') === seen.has(s.id)));
   const kinds = tab.value === 'plant' ? PLANT_KINDS.find(([k]) => k === plantKind.value)![2] : [];
   if (kinds.length) list = list.filter((s) => kinds.includes(plantInfo.value.get(s.id)?.kind as PlantKind));
+  if (tab.value === 'other' && otherCat.value !== 'all') list = list.filter((s) => otherInfo.value.get(s.id)?.cat === otherCat.value);
   if (cmp) list = [...list].sort(cmp);
   const t = totals.value[tab.value];
 
@@ -51,6 +55,12 @@ export function ListView() {
       {tab.value === 'plant' && (
         <div class="chips" style="margin-bottom:8px">
           {PLANT_KINDS.map(([k, label]) => <button class={'chip' + (plantKind.value === k ? ' on' : '')} onClick={() => (plantKind.value = k)}>{label}</button>)}
+        </div>
+      )}
+      {tab.value === 'other' && (
+        <div class="chips" style="margin-bottom:8px">
+          <button class={'chip' + (otherCat.value === 'all' ? ' on' : '')} onClick={() => (otherCat.value = 'all')}>All</button>
+          {(Object.keys(CAT_LABEL) as OtherCat[]).filter((c) => [...otherInfo.value.values()].some((o) => o.cat === c)).map((c) => <button class={'chip' + (otherCat.value === c ? ' on' : '')} onClick={() => (otherCat.value = c)}>{CAT_LABEL[c]}</button>)}
         </div>
       )}
       <SearchBox value={q.value} onInput={(v) => (q.value = v)} placeholder="Name or family (English, French, Latin)" />

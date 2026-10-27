@@ -41,11 +41,11 @@ function makeStyle(): maplibregl.StyleSpecification {
 }
 
 // ---- filters (module-level: kept when leaving and coming back to the map) ----
-type Kind = 'big5' | 'mammal' | 'bird' | 'snake' | 'plant' | 'off';
-const KIND_COLOUR: Record<Kind, string> = { big5: '#ff3b30', mammal: '#ff9f1c', bird: '#c77dff', snake: '#2ec4b6', plant: '#43a047', off: '#b0b0b0' };
+type Kind = 'big5' | 'mammal' | 'bird' | 'snake' | 'plant' | 'other' | 'off';
+const KIND_COLOUR: Record<Kind, string> = { big5: '#ff3b30', mammal: '#ff9f1c', bird: '#c77dff', snake: '#2ec4b6', plant: '#43a047', other: '#f15bb5', off: '#b0b0b0' };
 const PERIODS: [string, string][] = [['all', 'All'], ['today', 'Today'], ['7d', '7 d'], ['30d', '30 d']];
 // the three chips on the map are both the legend of the marker colours and a one-tap filter
-const TYPES: [Kind, string][] = [['bird', 'Birds'], ['mammal', 'Mammals'], ['big5', 'Big Five'], ['snake', 'Snakes'], ['plant', 'Plants']];
+const TYPES: [Kind, string][] = [['bird', 'Birds'], ['mammal', 'Mammals'], ['big5', 'Big Five'], ['snake', 'Snakes'], ['plant', 'Plants'], ['other', 'Others']];
 const period = signal('all');
 const type = signal('all');
 const fam = signal('');
@@ -91,7 +91,7 @@ function bySpecies(list: Row[]) {
 }
 
 function toGeoJSON(list: Row[]) {
-  const rank: Record<Kind, number> = { off: 0, plant: 0, bird: 1, snake: 1, mammal: 2, big5: 3 };
+  const rank: Record<Kind, number> = { off: 0, plant: 0, other: 1, bird: 1, snake: 1, mammal: 2, big5: 3 };
   return {
     type: 'FeatureCollection',
     features: list.map(({ o, name, kind, onList }) => {
@@ -287,7 +287,7 @@ export function MapView() {
             id: 'obs-pt', type: 'circle', source: 'obs', maxzoom: PHOTO_ZOOM, layout: { 'circle-sort-key': ['get', 'rank'] },
             paint: {
               'circle-radius': ['match', ['get', 'kind'], 'big5', 6.5, 5],
-              'circle-color': ['match', ['get', 'kind'], 'big5', KIND_COLOUR.big5, 'mammal', KIND_COLOUR.mammal, 'snake', KIND_COLOUR.snake, 'plant', KIND_COLOUR.plant, 'off', KIND_COLOUR.off, KIND_COLOUR.bird],
+              'circle-color': ['match', ['get', 'kind'], 'big5', KIND_COLOUR.big5, 'mammal', KIND_COLOUR.mammal, 'snake', KIND_COLOUR.snake, 'plant', KIND_COLOUR.plant, 'other', KIND_COLOUR.other, 'off', KIND_COLOUR.off, KIND_COLOUR.bird],
               'circle-stroke-color': '#fff', 'circle-stroke-width': 2,
             },
           });

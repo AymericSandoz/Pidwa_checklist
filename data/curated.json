@@ -57,5 +57,6 @@
   "Kobus ellipsiprymnus": { "fr": "Cobe à croissant", "traits": ["Anneau blanc autour de la croupe", "1,2-1,4 m au garrot, 200-260 kg", "Pelage hirsute, odeur musquée, près de l'eau"] },
   "Atilax paludinosus": { "fr": "Mangouste des marais", "traits": ["Brun foncé uniforme, près de l'eau", "2,5-4 kg", "Nocturne et crépusculaire, traces à cinq doigts au bord des mares"] },
   "Ichneumia albicauda": { "fr": "Mangouste à queue blanche", "traits": ["Grande mangouste à queue blanche touffue", "3-5 kg", "Nocturne, souvent sur les pistes de nuit"] },
-  "Ceratotherium simum": { "fr": "Rhinocéros blanc", "traits": ["Lèvre carrée (brouteur d'herbe), bosse sur la nuque", "1,7-1,8 m au garrot, 1700-2300 kg", "Tête portée basse, plus grégaire que le noir"] }
+  "Ceratotherium simum": { "fr": "Rhinocéros blanc", "traits": ["Lèvre carrée (brouteur d'herbe), bosse sur la nuque", "1,7-1,8 m au garrot, 1700-2300 kg", "Tête portée basse, plus grégaire que le noir"] },
+  "Panaspis wahlbergii": { "family": "Scincidae" }
 }
