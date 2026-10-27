@@ -58,5 +58,8 @@
   "Atilax paludinosus": { "fr": "Mangouste des marais", "traits": ["Brun foncé uniforme, près de l'eau", "2,5-4 kg", "Nocturne et crépusculaire, traces à cinq doigts au bord des mares"] },
   "Ichneumia albicauda": { "fr": "Mangouste à queue blanche", "traits": ["Grande mangouste à queue blanche touffue", "3-5 kg", "Nocturne, souvent sur les pistes de nuit"] },
   "Ceratotherium simum": { "fr": "Rhinocéros blanc", "traits": ["Lèvre carrée (brouteur d'herbe), bosse sur la nuque", "1,7-1,8 m au garrot, 1700-2300 kg", "Tête portée basse, plus grégaire que le noir"] },
-  "Panaspis wahlbergii": { "family": "Scincidae" }
+  "Panaspis wahlbergii": { "family": "Scincidae" },
+  "Anomalipus elephas": { "family": "Tenebrionidae" },
+  "Dolichomutilla sycorax": { "family": "Mutillidae" },
+  "Telchinia serena": { "family": "Nymphalidae" }
 }

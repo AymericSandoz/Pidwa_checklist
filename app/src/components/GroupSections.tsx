@@ -99,7 +99,8 @@ export function OtherSection({ id }: { id: string }) {
       <div class="card idcard">
         <div class="size"><Icon name="eye" size={16} />{b.size}</div>
         <ul class="traits">{b.keys.map((k) => <li>{k}</li>)}</ul>
-        <p class="voice"><Icon name="sun" size={15} />{b.when.map((w) => (w === 'day' ? 'By day' : 'At night')).join(' and ')} · {b.where.map((w) => WHERE_LABEL[w]).join(', ')}</p>
+        {b.voice && <p class="voice"><Icon name="audio-lines" size={15} />{b.voice}</p>}
+        <p class="voice"><Icon name="sun" size={15} />{b.when.map((w) => (w === 'day' ? 'By day' : 'At night')).join(' and ')} · {b.where.map((w, i) => (i ? WHERE_LABEL[w].charAt(0).toLowerCase() + WHERE_LABEL[w].slice(1) : WHERE_LABEL[w])).join(', ')}</p>
       </div>
       <Confuse list={b.confuse} icon="bug" />
       <div class="card behave">
@@ -108,14 +109,14 @@ export function OtherSection({ id }: { id: string }) {
       </div>
       {b.bite && (
         <>
-          <div class="sec">{b.cat === 'reptile' ? 'Risk' : b.danger ? 'Bite or sting' : 'Health'}</div>
+          <div class="sec">{b.cat === 'reptile' ? 'Risk' : b.danger ? 'Bite or sting' : 'Good to know'}</div>
           <div class={'card bite ' + (b.danger || 'mild')}>
             {b.danger && <div class="row" style="justify-content:space-between;gap:8px;margin-bottom:6px"><b>{DANGER_LABEL[b.danger]}</b>{b.venom && <span class="tag">{b.venom}</span>}</div>}
             <p style="margin:0">{b.bite}</p>
           </div>
         </>
       )}
-      <p class="credit">Written from the standard field guides (Branch; Alexander &amp; Marais; Leeming; Dippenaar-Schoeman). How common: our estimate from iNaturalist records within 60 km. Not a medical guide.</p>
+      <p class="credit">Written from the standard field guides (Branch; Alexander &amp; Marais; Leeming; Dippenaar-Schoeman; Du Preez &amp; Carruthers; Picker, Griffiths &amp; Weaving; Woodhall). How common: our estimate from iNaturalist records within 60 km. Not a medical guide.</p>
     </>
   );
 }

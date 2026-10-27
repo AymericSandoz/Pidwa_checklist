@@ -1,9 +1,10 @@
 import { signal } from '@preact/signals';
+import { Fragment } from 'preact';
 import { useState } from 'preact/hooks';
 import { species, seenCount, name, name2, totals } from '../data';
 import { href } from '../router';
 import { matches } from '../util';
-import { familyEn, GROUPS, GROUP_LABEL, GROUP_ICON } from '../taxa';
+import { familyEn, GROUPS, GROUP_LABEL, GROUP_ICON, FAMILY, INSECT_GROUPS } from '../taxa';
 import { Thumb } from '../components/Thumb';
 import { Icon } from '../components/Icon';
 import { SearchBox } from '../components/SearchBox';
@@ -13,7 +14,7 @@ import { birdSort } from '../learn/birds';
 import { abundanceCompare, abundanceText } from '../learn/abundance';
 import { plantInfo, type PlantKind } from '../learn/plants';
 import { otherInfo, CAT_LABEL, type OtherCat } from '../learn/others';
-import type { Group } from '../types';
+import type { Group, Species } from '../types';
 
 // module-level so the list keeps its state when coming back from a species page
 const saved = localStorage.getItem('tab') as Group;
@@ -36,6 +37,13 @@ export function ListView() {
   if (kinds.length) list = list.filter((s) => kinds.includes(plantInfo.value.get(s.id)?.kind as PlantKind));
   if (tab.value === 'other' && otherCat.value !== 'all') list = list.filter((s) => otherInfo.value.get(s.id)?.cat === otherCat.value);
   if (cmp) list = [...list].sort(cmp);
+  // insects in A-Z order come by big family (beetles, termites, ants and bees…), each under its own header
+  const insectGroup = (s: { family: string | null }) => (s.family && FAMILY[s.family]?.group) || '';
+  const byInsectGroup = tab.value === 'other' && otherCat.value === 'insect' && !cmp;
+  if (byInsectGroup) {
+    const rank = (s: Species) => { const i = INSECT_GROUPS.findIndex(([g]) => g === insectGroup(s)); return i < 0 ? 99 : i; };
+    list = [...list].sort((a, b) => rank(a) - rank(b));
+  }
   const t = totals.value[tab.value];
 
   return (
@@ -74,11 +82,14 @@ export function ListView() {
         {tab.value !== 'mammal' && <SortButton />}
       </div>
       <div class="list">
-        {list.map((s) => {
+        {list.map((s, i) => {
+          const head = byInsectGroup && (i === 0 || insectGroup(list[i - 1]) !== insectGroup(s)) ? INSECT_GROUPS.find(([g]) => g === insectGroup(s))?.[1] : null;
           const n = seen.get(s.id) || 0;
           const rt = cmp && abundanceText(s.id);
           return (
-            <div class={'sp-row' + (n ? ' seen' : '')} key={s.id}>
+            <Fragment key={s.id}>
+            {head && <div class="sec listsec">{head}</div>}
+            <div class={'sp-row' + (n ? ' seen' : '')}>
               <a href={href('species/' + s.id)} class="row" style="flex:1;min-width:0">
                 <span class={'ph' + (n ? ' seen' : '')}><Thumb s={s} />{s.group === 'bird' && <MigBadge id={s.id} />}</span>
                 <div class="names">
@@ -89,6 +100,7 @@ export function ListView() {
               </a>
               <button class="add" aria-label="Log an observation" onClick={() => setAdding(s.id)}><Icon name="plus" /></button>
             </div>
+            </Fragment>
           );
         })}
         {list.length === 0 && <div class="empty"><div class="ring"><Icon name="search" size={26} /></div>No species matches.</div>}

@@ -47167,7 +47167,16 @@
       "fr": null,
       "en": null
     },
-    "image": null,
+    "image": {
+      "file": "images/homopholis-wahlbergii.webp",
+      "w": 900,
+      "h": 541,
+      "author": "Alex Rebelo",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/211993115",
+      "from": "iNaturalist"
+    },
     "photos": [
       {
         "file": "photos/homopholis-wahlbergii-1.webp",
@@ -49511,6 +49520,4689 @@
         "source": "https://www.inaturalist.org/photos/243938764"
       }
     ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "chiromantis-xerampelina",
+    "group": "other",
+    "sci": "Chiromantis xerampelina",
+    "en": "Foam Nest Frog",
+    "fr": null,
+    "fr_source": null,
+    "family": "Rhacophoridae",
+    "family_fr": "Rhacophoridae",
+    "order": "Anura",
+    "order_fr": "anoures",
+    "iucn": "least concern",
+    "qid": "Q2701139",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/chiromantis-xerampelina.webp",
+      "w": 900,
+      "h": 682,
+      "author": "Ryan van Huyssteen",
+      "license": "CC-BY",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "https://www.inaturalist.org/photos/15336745",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/chiromantis-xerampelina-1.webp",
+        "w": 500,
+        "h": 323,
+        "author": "jonmonsoon",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/202911304"
+      },
+      {
+        "file": "photos/chiromantis-xerampelina-2.webp",
+        "w": 500,
+        "h": 318,
+        "author": "Lynn Katsoulis",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/246474486"
+      },
+      {
+        "file": "photos/chiromantis-xerampelina-3.webp",
+        "w": 500,
+        "h": 401,
+        "author": "copper",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/26822191"
+      },
+      {
+        "file": "photos/chiromantis-xerampelina-4.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Tracey Herbst",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/459616331"
+      },
+      {
+        "file": "photos/chiromantis-xerampelina-5.webp",
+        "w": 500,
+        "h": 290,
+        "author": "scottfrichardson",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/598528434"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "hyperolius-marmoratus",
+    "group": "other",
+    "sci": "Hyperolius marmoratus",
+    "en": "Painted Reed Frog",
+    "fr": null,
+    "fr_source": null,
+    "family": "Hyperoliidae",
+    "family_fr": "Hyperoliidae",
+    "order": "Anura",
+    "order_fr": "anoures",
+    "iucn": "least concern",
+    "qid": "Q2246059",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/hyperolius-marmoratus.webp",
+      "w": 900,
+      "h": 600,
+      "author": "Heather and Andrew Hodgson",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/47422548",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/hyperolius-marmoratus-1.webp",
+        "w": 464,
+        "h": 500,
+        "author": "Colin Ralston",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/56876227"
+      },
+      {
+        "file": "photos/hyperolius-marmoratus-2.webp",
+        "w": 500,
+        "h": 323,
+        "author": "fayne",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/12659000"
+      },
+      {
+        "file": "photos/hyperolius-marmoratus-3.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Peter Saul",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/127687638"
+      },
+      {
+        "file": "photos/hyperolius-marmoratus-4.webp",
+        "w": 375,
+        "h": 500,
+        "author": "peepod",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/227857887"
+      },
+      {
+        "file": "photos/hyperolius-marmoratus-5.webp",
+        "w": 361,
+        "h": 500,
+        "author": "Debbie Bodley",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/192094303"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "leptopelis-mossambicus",
+    "group": "other",
+    "sci": "Leptopelis mossambicus",
+    "en": "Brown-backed Tree Frog",
+    "fr": null,
+    "fr_source": null,
+    "family": "Arthroleptidae",
+    "family_fr": "Arthroleptidae",
+    "order": "Anura",
+    "order_fr": "anoures",
+    "iucn": "least concern",
+    "qid": "Q764267",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/leptopelis-mossambicus.webp",
+      "w": 900,
+      "h": 659,
+      "author": "qgrobler",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/238917675",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/leptopelis-mossambicus-1.webp",
+        "w": 500,
+        "h": 324,
+        "author": "Ryan van Huyssteen",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/90065863"
+      },
+      {
+        "file": "photos/leptopelis-mossambicus-2.webp",
+        "w": 375,
+        "h": 500,
+        "author": "lkfreidenburg",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/183022172"
+      },
+      {
+        "file": "photos/leptopelis-mossambicus-3.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Courtney Hundermark",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/437048621"
+      },
+      {
+        "file": "photos/leptopelis-mossambicus-4.webp",
+        "w": 500,
+        "h": 340,
+        "author": "Mariska de Wit",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/115505586"
+      },
+      {
+        "file": "photos/leptopelis-mossambicus-5.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Jacob Dirsuwei",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/189368557"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "kassina-senegalensis",
+    "group": "other",
+    "sci": "Kassina senegalensis",
+    "en": "Bubbling Kassina",
+    "fr": "Grenouille coureuse du Sénégal",
+    "fr_source": "wikidata",
+    "family": "Hyperoliidae",
+    "family_fr": "Hyperoliidae",
+    "order": "Anura",
+    "order_fr": "anoures",
+    "iucn": "least concern",
+    "qid": "Q581541",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/kassina-senegalensis.webp",
+      "w": 900,
+      "h": 513,
+      "author": "Eric",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/40874363",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/kassina-senegalensis-1.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Dewald du Plessis",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/176401274"
+      },
+      {
+        "file": "photos/kassina-senegalensis-2.webp",
+        "w": 500,
+        "h": 375,
+        "author": "LizzieShowe",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/336450736"
+      },
+      {
+        "file": "photos/kassina-senegalensis-3.webp",
+        "w": 500,
+        "h": 180,
+        "author": "Rob Palmer",
+        "license": "CC-BY-NC-SA",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "source": "https://www.inaturalist.org/photos/113263032"
+      },
+      {
+        "file": "photos/kassina-senegalensis-4.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Liam Botha",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/604158145"
+      },
+      {
+        "file": "photos/kassina-senegalensis-5.webp",
+        "w": 236,
+        "h": 500,
+        "author": "jacosmith",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/179802617"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "phrynomantis-bifasciatus",
+    "group": "other",
+    "sci": "Phrynomantis bifasciatus",
+    "en": "Banded Rubber Frog",
+    "fr": null,
+    "fr_source": null,
+    "family": "Microhylidae",
+    "family_fr": "Microhylidae",
+    "order": "Anura",
+    "order_fr": "anoures",
+    "iucn": "least concern",
+    "qid": "Q2212136",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/phrynomantis-bifasciatus.webp",
+      "w": 900,
+      "h": 725,
+      "author": "Joubert Heymans",
+      "license": "CC-BY-NC-ND",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "source": "https://www.inaturalist.org/photos/28997151",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/phrynomantis-bifasciatus-1.webp",
+        "w": 375,
+        "h": 500,
+        "author": "no rights reserved",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source": "https://www.inaturalist.org/photos/180897965"
+      },
+      {
+        "file": "photos/phrynomantis-bifasciatus-2.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Jacob Dirsuwei",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/181664143"
+      },
+      {
+        "file": "photos/phrynomantis-bifasciatus-3.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Aimée Smith",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/67741265"
+      },
+      {
+        "file": "photos/phrynomantis-bifasciatus-4.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Gus Benson",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/609421101"
+      },
+      {
+        "file": "photos/phrynomantis-bifasciatus-5.webp",
+        "w": 375,
+        "h": 500,
+        "author": "jono959",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/263222617"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "pyxicephalus-edulis",
+    "group": "other",
+    "sci": "Pyxicephalus edulis",
+    "en": "Edible Bullfrog",
+    "fr": null,
+    "fr_source": null,
+    "family": "Pyxicephalidae",
+    "family_fr": "Pyxicephalidae",
+    "order": "Anura",
+    "order_fr": "anoures",
+    "iucn": "least concern",
+    "qid": "Q2696978",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/pyxicephalus-edulis.webp",
+      "w": 900,
+      "h": 600,
+      "author": "Decklan",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/183251013",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/pyxicephalus-edulis-1.webp",
+        "w": 397,
+        "h": 500,
+        "author": "copper",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/28159316"
+      },
+      {
+        "file": "photos/pyxicephalus-edulis-2.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Duncan McKenzie",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/274205646"
+      },
+      {
+        "file": "photos/pyxicephalus-edulis-3.webp",
+        "w": 500,
+        "h": 350,
+        "author": "Vaughan Jessnitz",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/328150891"
+      },
+      {
+        "file": "photos/pyxicephalus-edulis-4.webp",
+        "w": 500,
+        "h": 375,
+        "author": "christinesw83",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/624143783"
+      },
+      {
+        "file": "photos/pyxicephalus-edulis-5.webp",
+        "w": 500,
+        "h": 445,
+        "author": "Pieter Kotze",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/255514431"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "schismaderma-carens",
+    "group": "other",
+    "sci": "Schismaderma carens",
+    "en": "Red Toad",
+    "fr": null,
+    "fr_source": null,
+    "family": "Bufonidae",
+    "family_fr": "Bufonidae",
+    "order": "Anura",
+    "order_fr": "anoures",
+    "iucn": "least concern",
+    "qid": "Q2276086",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/schismaderma-carens.webp",
+      "w": 900,
+      "h": 635,
+      "author": "Alex Rebelo",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/55538098",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/schismaderma-carens-1.webp",
+        "w": 500,
+        "h": 348,
+        "author": "probreviceps",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/255263110"
+      },
+      {
+        "file": "photos/schismaderma-carens-2.webp",
+        "w": 500,
+        "h": 375,
+        "author": "barbs_k",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/248949135"
+      },
+      {
+        "file": "photos/schismaderma-carens-3.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Luke Kemp",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/463525018"
+      },
+      {
+        "file": "photos/schismaderma-carens-4.webp",
+        "w": 500,
+        "h": 387,
+        "author": "Darragh Woodford",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/445422222"
+      },
+      {
+        "file": "photos/schismaderma-carens-5.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Ditiro Moloto",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/108839371"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "sclerophrys-gutturalis",
+    "group": "other",
+    "sci": "Sclerophrys gutturalis",
+    "en": "Guttural Toad",
+    "fr": null,
+    "fr_source": null,
+    "family": "Bufonidae",
+    "family_fr": "Bufonidae",
+    "order": "Anura",
+    "order_fr": "anoures",
+    "iucn": "least concern",
+    "qid": "Q28929960",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/sclerophrys-gutturalis.webp",
+      "w": 900,
+      "h": 600,
+      "author": "Gus Benson",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/185353455",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/sclerophrys-gutturalis-1.webp",
+        "w": 500,
+        "h": 362,
+        "author": "Paula Eveline Ribeiro Anunciação",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/146508658"
+      },
+      {
+        "file": "photos/sclerophrys-gutturalis-2.webp",
+        "w": 500,
+        "h": 390,
+        "author": "Tony Rebelo",
+        "license": "CC-BY-SA",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://www.inaturalist.org/photos/15118964"
+      },
+      {
+        "file": "photos/sclerophrys-gutturalis-3.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Philippa Clemo",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/235515551"
+      },
+      {
+        "file": "photos/sclerophrys-gutturalis-4.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Gigi Laidler",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/31623656"
+      },
+      {
+        "file": "photos/sclerophrys-gutturalis-5.webp",
+        "w": 500,
+        "h": 457,
+        "author": "roseannet",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/322990729"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "sclerophrys-garmani",
+    "group": "other",
+    "sci": "Sclerophrys garmani",
+    "en": "Olive Toad",
+    "fr": null,
+    "fr_source": null,
+    "family": "Bufonidae",
+    "family_fr": "Bufonidae",
+    "order": "Anura",
+    "order_fr": "anoures",
+    "iucn": "least concern",
+    "qid": "Q28929935",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/sclerophrys-garmani.webp",
+      "w": 900,
+      "h": 596,
+      "author": "no rights reserved, uploaded by Marius Burger",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source": "https://www.inaturalist.org/photos/86645642",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/sclerophrys-garmani-1.webp",
+        "w": 500,
+        "h": 389,
+        "author": "no rights reserved",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source": "https://www.inaturalist.org/photos/112742281"
+      },
+      {
+        "file": "photos/sclerophrys-garmani-2.webp",
+        "w": 281,
+        "h": 500,
+        "author": "Richard McKibbin",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/256607621"
+      },
+      {
+        "file": "photos/sclerophrys-garmani-3.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Ryan van Huyssteen",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/251340704"
+      },
+      {
+        "file": "photos/sclerophrys-garmani-4.webp",
+        "w": 375,
+        "h": 500,
+        "author": "no rights reserved",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source": "https://www.inaturalist.org/photos/325234163"
+      },
+      {
+        "file": "photos/sclerophrys-garmani-5.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Sascha Schumann",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/333040443"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "poyntonophrynus-fenoulheti",
+    "group": "other",
+    "sci": "Poyntonophrynus fenoulheti",
+    "en": "Northern Pygmy Toad",
+    "fr": null,
+    "fr_source": null,
+    "family": "Bufonidae",
+    "family_fr": "Bufonidae",
+    "order": "Anura",
+    "order_fr": "anoures",
+    "iucn": "least concern",
+    "qid": "Q4687591",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/poyntonophrynus-fenoulheti.webp",
+      "w": 900,
+      "h": 668,
+      "author": "Ryanvanhuyssteen",
+      "license": "CC-BY-SA",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://www.inaturalist.org/photos/2050450",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/poyntonophrynus-fenoulheti-1.webp",
+        "w": 500,
+        "h": 333,
+        "author": "no rights reserved",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source": "https://www.inaturalist.org/photos/360132585"
+      },
+      {
+        "file": "photos/poyntonophrynus-fenoulheti-2.webp",
+        "w": 500,
+        "h": 343,
+        "author": "Ryan van Huyssteen",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/722687744"
+      },
+      {
+        "file": "photos/poyntonophrynus-fenoulheti-3.webp",
+        "w": 500,
+        "h": 281,
+        "author": "Robin Matthews",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/340654718"
+      },
+      {
+        "file": "photos/poyntonophrynus-fenoulheti-4.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Duncan McKenzie",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/271275928"
+      },
+      {
+        "file": "photos/poyntonophrynus-fenoulheti-5.webp",
+        "w": 500,
+        "h": 316,
+        "author": "Alex Rebelo",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/174291464"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "breviceps-adspersus",
+    "group": "other",
+    "sci": "Breviceps adspersus",
+    "en": "Bushveld Rain Frog",
+    "fr": null,
+    "fr_source": null,
+    "family": "Brevicipitidae",
+    "family_fr": "Brevicipitidae",
+    "order": "Anura",
+    "order_fr": "anoures",
+    "iucn": "least concern",
+    "qid": "Q2571127",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/breviceps-adspersus.webp",
+      "w": 900,
+      "h": 600,
+      "author": "Dylan Leonard",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/217133918",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/breviceps-adspersus-1.webp",
+        "w": 500,
+        "h": 332,
+        "author": "copper",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/13665496"
+      },
+      {
+        "file": "photos/breviceps-adspersus-2.webp",
+        "w": 500,
+        "h": 281,
+        "author": "Duncan McKenzie",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/273327302"
+      },
+      {
+        "file": "photos/breviceps-adspersus-3.webp",
+        "w": 500,
+        "h": 347,
+        "author": "Micah Freedman",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/128116578"
+      },
+      {
+        "file": "photos/breviceps-adspersus-4.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Adriaan Jordaan",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/356704130"
+      },
+      {
+        "file": "photos/breviceps-adspersus-5.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Dylan Leonard",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/217133793"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "hemisus-marmoratus",
+    "group": "other",
+    "sci": "Hemisus marmoratus",
+    "en": "Mottled Shovel-nosed Frog",
+    "fr": null,
+    "fr_source": null,
+    "family": "Hemisotidae",
+    "family_fr": "Hemisotidae",
+    "order": "Anura",
+    "order_fr": "anoures",
+    "iucn": "least concern",
+    "qid": "Q1994247",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/hemisus-marmoratus.webp",
+      "w": 900,
+      "h": 600,
+      "author": "Jacob Dirsuwei",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/339535319",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/hemisus-marmoratus-1.webp",
+        "w": 500,
+        "h": 375,
+        "author": "no rights reserved",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source": "https://www.inaturalist.org/photos/221507541"
+      },
+      {
+        "file": "photos/hemisus-marmoratus-2.webp",
+        "w": 375,
+        "h": 500,
+        "author": "buggsbalmer",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/265284078"
+      },
+      {
+        "file": "photos/hemisus-marmoratus-3.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Ryan van Huyssteen",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/252436048"
+      },
+      {
+        "file": "photos/hemisus-marmoratus-4.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Courtney Hundermark",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/254553430"
+      },
+      {
+        "file": "photos/hemisus-marmoratus-5.webp",
+        "w": 500,
+        "h": 333,
+        "author": "no rights reserved",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source": "https://www.inaturalist.org/photos/97079073"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "ptychadena-anchietae",
+    "group": "other",
+    "sci": "Ptychadena anchietae",
+    "en": "Anchieta's Ridged Frog",
+    "fr": null,
+    "fr_source": null,
+    "family": "Ptychadenidae",
+    "family_fr": "Ptychadenidae",
+    "order": "Anura",
+    "order_fr": "anoures",
+    "iucn": "least concern",
+    "qid": "Q2245454",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/ptychadena-anchietae.webp",
+      "w": 900,
+      "h": 600,
+      "author": "Joubert Heymans",
+      "license": "CC-BY-NC-ND",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "source": "https://www.inaturalist.org/photos/30550026",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/ptychadena-anchietae-1.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Wynand Uys",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/15216635"
+      },
+      {
+        "file": "photos/ptychadena-anchietae-2.webp",
+        "w": 500,
+        "h": 361,
+        "author": "Corné Rautenbach",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/611689142"
+      },
+      {
+        "file": "photos/ptychadena-anchietae-3.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Jacob Dirsuwei",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/243133945"
+      },
+      {
+        "file": "photos/ptychadena-anchietae-4.webp",
+        "w": 500,
+        "h": 473,
+        "author": "Hendrik McCarthy",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/508676795"
+      },
+      {
+        "file": "photos/ptychadena-anchietae-5.webp",
+        "w": 500,
+        "h": 427,
+        "author": "Helen Badenhorst",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/315660225"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "amietia-delalandii",
+    "group": "other",
+    "sci": "Amietia delalandii",
+    "en": "Common River Frog",
+    "fr": null,
+    "fr_source": null,
+    "family": "Pyxicephalidae",
+    "family_fr": "Pyxicephalidae",
+    "order": "Anura",
+    "order_fr": "anoures",
+    "iucn": "least concern",
+    "qid": "Q61694980",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/amietia-delalandii.webp",
+      "w": 900,
+      "h": 716,
+      "author": "Joubert Heymans",
+      "license": "CC-BY-NC-ND",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "source": "https://www.inaturalist.org/photos/16054263",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/amietia-delalandii-1.webp",
+        "w": 500,
+        "h": 225,
+        "author": "Karen Eichholz",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/262966607"
+      },
+      {
+        "file": "photos/amietia-delalandii-2.webp",
+        "w": 375,
+        "h": 500,
+        "author": "ruanespach",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/272689622"
+      },
+      {
+        "file": "photos/amietia-delalandii-3.webp",
+        "w": 500,
+        "h": 335,
+        "author": "Bernard DUPONT",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/118696160"
+      },
+      {
+        "file": "photos/amietia-delalandii-4.webp",
+        "w": 375,
+        "h": 500,
+        "author": "madzhuta",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/432979292"
+      },
+      {
+        "file": "photos/amietia-delalandii-5.webp",
+        "w": 500,
+        "h": 363,
+        "author": "Joanette Smith",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/31054643"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "phrynobatrachus-natalensis",
+    "group": "other",
+    "sci": "Phrynobatrachus natalensis",
+    "en": "Snoring Puddle Frog",
+    "fr": null,
+    "fr_source": null,
+    "family": "Phrynobatrachidae",
+    "family_fr": "Phrynobatrachidae",
+    "order": "Anura",
+    "order_fr": "anoures",
+    "iucn": "least concern",
+    "qid": "Q640592",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/phrynobatrachus-natalensis.webp",
+      "w": 900,
+      "h": 648,
+      "author": "Alex Rebelo",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/30554858",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/phrynobatrachus-natalensis-1.webp",
+        "w": 500,
+        "h": 366,
+        "author": "Alex Lamoreaux",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/197291444"
+      },
+      {
+        "file": "photos/phrynobatrachus-natalensis-2.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Gus Benson",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/165526162"
+      },
+      {
+        "file": "photos/phrynobatrachus-natalensis-3.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Charmaine C King",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/359810156"
+      },
+      {
+        "file": "photos/phrynobatrachus-natalensis-4.webp",
+        "w": 500,
+        "h": 366,
+        "author": "Corné Rautenbach",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/611403995"
+      },
+      {
+        "file": "photos/phrynobatrachus-natalensis-5.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Liam Botha",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/743898540"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "tomopterna-marmorata",
+    "group": "other",
+    "sci": "Tomopterna marmorata",
+    "en": "Marbled Sand Frog",
+    "fr": null,
+    "fr_source": null,
+    "family": "Pyxicephalidae",
+    "family_fr": "Pyxicephalidae",
+    "order": "Anura",
+    "order_fr": "anoures",
+    "iucn": "least concern",
+    "qid": "Q2246853",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/tomopterna-marmorata.webp",
+      "w": 900,
+      "h": 600,
+      "author": "Joubert Heymans",
+      "license": "CC-BY-NC-ND",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "source": "https://www.inaturalist.org/photos/30550057",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/tomopterna-marmorata-1.webp",
+        "w": 500,
+        "h": 312,
+        "author": "Ryan van Huyssteen",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/90066612"
+      },
+      {
+        "file": "photos/tomopterna-marmorata-2.webp",
+        "w": 500,
+        "h": 343,
+        "author": "Corné Rautenbach",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/257181150"
+      },
+      {
+        "file": "photos/tomopterna-marmorata-3.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Richard Johnstone",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/470978472"
+      },
+      {
+        "file": "photos/tomopterna-marmorata-4.webp",
+        "w": 500,
+        "h": 450,
+        "author": "Fraser Moore",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/59559254"
+      },
+      {
+        "file": "photos/tomopterna-marmorata-5.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Josh",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/621816423"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "xenopus-muelleri",
+    "group": "other",
+    "sci": "Xenopus muelleri",
+    "en": "Tropical Platanna",
+    "fr": null,
+    "fr_source": null,
+    "family": "Pipidae",
+    "family_fr": "Pipidae",
+    "order": "Anura",
+    "order_fr": "anoures",
+    "iucn": "least concern",
+    "qid": "Q2705074",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/xenopus-muelleri.webp",
+      "w": 900,
+      "h": 776,
+      "author": "Wilderness Safaris Botswana - Conservation Team",
+      "license": "CC-BY",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "https://www.inaturalist.org/photos/48259688",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/xenopus-muelleri-1.webp",
+        "w": 500,
+        "h": 333,
+        "author": "no rights reserved",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source": "https://www.inaturalist.org/photos/110965087"
+      },
+      {
+        "file": "photos/xenopus-muelleri-2.webp",
+        "w": 500,
+        "h": 461,
+        "author": "Alex Rebelo",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/100129966"
+      },
+      {
+        "file": "photos/xenopus-muelleri-3.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Gary Kyle Nicolau",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/460926168"
+      },
+      {
+        "file": "photos/xenopus-muelleri-4.webp",
+        "w": 500,
+        "h": 446,
+        "author": "Corné Rautenbach",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/733715305"
+      },
+      {
+        "file": "photos/xenopus-muelleri-5.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Jacob Dirsuwei",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/248428484"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "kheper-nigroaeneus",
+    "group": "other",
+    "sci": "Kheper nigroaeneus",
+    "en": "Copper Dung Beetle",
+    "fr": null,
+    "fr_source": null,
+    "family": "Scarabaeidae",
+    "family_fr": null,
+    "order": "Coleoptera",
+    "order_fr": null,
+    "iucn": null,
+    "qid": "Q124804206",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/kheper-nigroaeneus.webp",
+      "w": 900,
+      "h": 657,
+      "author": "Udo Schmidt",
+      "license": "CC-BY-SA",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://www.inaturalist.org/photos/1465044",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/kheper-nigroaeneus-1.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Christian Kropf",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/112695463"
+      },
+      {
+        "file": "photos/kheper-nigroaeneus-2.webp",
+        "w": 500,
+        "h": 376,
+        "author": "Gigi Laidler",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/181060471"
+      },
+      {
+        "file": "photos/kheper-nigroaeneus-3.webp",
+        "w": 500,
+        "h": 332,
+        "author": "Corné Rautenbach",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/455931838"
+      },
+      {
+        "file": "photos/kheper-nigroaeneus-4.webp",
+        "w": 462,
+        "h": 500,
+        "author": "altagray",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/585303592"
+      },
+      {
+        "file": "photos/kheper-nigroaeneus-5.webp",
+        "w": 281,
+        "h": 500,
+        "author": "campc",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/342908448"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "dicronorhina-derbyana",
+    "group": "other",
+    "sci": "Dicronorhina derbyana",
+    "en": "Derby's Flower Beetle",
+    "fr": null,
+    "fr_source": null,
+    "family": "Scarabaeidae",
+    "family_fr": null,
+    "order": "Coleoptera",
+    "order_fr": null,
+    "iucn": null,
+    "qid": "Q5273917",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/dicronorhina-derbyana.webp",
+      "w": 900,
+      "h": 760,
+      "author": "maritzasouthafrica",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/58325677",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/dicronorhina-derbyana-1.webp",
+        "w": 500,
+        "h": 497,
+        "author": "maritzasouthafrica",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/58325809"
+      },
+      {
+        "file": "photos/dicronorhina-derbyana-2.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Jakes Oosthuizen",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/257163435"
+      },
+      {
+        "file": "photos/dicronorhina-derbyana-3.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Arista Botha",
+        "license": "CC-BY-NC-SA",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "source": "https://www.inaturalist.org/photos/613930892"
+      },
+      {
+        "file": "photos/dicronorhina-derbyana-4.webp",
+        "w": 500,
+        "h": 375,
+        "author": "no rights reserved",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source": "https://www.inaturalist.org/photos/60182133"
+      },
+      {
+        "file": "photos/dicronorhina-derbyana-5.webp",
+        "w": 500,
+        "h": 334,
+        "author": "Natalie Field",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/115729524"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "anomalipus-elephas",
+    "group": "other",
+    "sci": "Anomalipus elephas",
+    "en": "Armoured Darkling Beetle",
+    "fr": null,
+    "fr_source": null,
+    "family": "Tenebrionidae",
+    "family_fr": null,
+    "order": null,
+    "order_fr": null,
+    "iucn": null,
+    "qid": null,
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/anomalipus-elephas.webp",
+      "w": 900,
+      "h": 675,
+      "author": "Bernard DUPONT",
+      "license": "CC-BY-SA",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://www.inaturalist.org/photos/4176703",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/anomalipus-elephas-1.webp",
+        "w": 500,
+        "h": 334,
+        "author": "no rights reserved",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source": "https://www.inaturalist.org/photos/604470442"
+      },
+      {
+        "file": "photos/anomalipus-elephas-2.webp",
+        "w": 500,
+        "h": 355,
+        "author": "no rights reserved",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source": "https://www.inaturalist.org/photos/176774614"
+      },
+      {
+        "file": "photos/anomalipus-elephas-3.webp",
+        "w": 500,
+        "h": 465,
+        "author": "maritzasouthafrica",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/15190605"
+      },
+      {
+        "file": "photos/anomalipus-elephas-4.webp",
+        "w": 500,
+        "h": 392,
+        "author": "Corné Rautenbach",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/455941576"
+      },
+      {
+        "file": "photos/anomalipus-elephas-5.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Jakob Horz",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/411596479"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "anthia-thoracica",
+    "group": "other",
+    "sci": "Anthia thoracica",
+    "en": "Oogpister Beetle",
+    "fr": null,
+    "fr_source": null,
+    "family": "Carabidae",
+    "family_fr": null,
+    "order": "Coleoptera",
+    "order_fr": null,
+    "iucn": null,
+    "qid": "Q2597106",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/anthia-thoracica.webp",
+      "w": 575,
+      "h": 900,
+      "author": "Johan Pretorius",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/15779029",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/anthia-thoracica-1.webp",
+        "w": 500,
+        "h": 376,
+        "author": "Joël Roerig",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/458101472"
+      },
+      {
+        "file": "photos/anthia-thoracica-2.webp",
+        "w": 375,
+        "h": 500,
+        "author": "no rights reserved",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source": "https://www.inaturalist.org/photos/326392024"
+      },
+      {
+        "file": "photos/anthia-thoracica-3.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Johan Huisamen",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/753809772"
+      },
+      {
+        "file": "photos/anthia-thoracica-4.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Rugumayo Amundsen",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/646318601"
+      },
+      {
+        "file": "photos/anthia-thoracica-5.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Heinrich Human",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/395188062"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "hycleus-oculatus",
+    "group": "other",
+    "sci": "Hycleus oculatus",
+    "en": "CMR Blister Beetle",
+    "fr": null,
+    "fr_source": null,
+    "family": "Meloidae",
+    "family_fr": "Meloidae",
+    "order": "Coleoptera",
+    "order_fr": null,
+    "iucn": null,
+    "qid": "Q2224204",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/hycleus-oculatus.webp",
+      "w": 900,
+      "h": 706,
+      "author": "Daryl de Beer",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/46085248",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/hycleus-oculatus-1.webp",
+        "w": 500,
+        "h": 392,
+        "author": "Daryl de Beer",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/46088084"
+      },
+      {
+        "file": "photos/hycleus-oculatus-2.webp",
+        "w": 500,
+        "h": 399,
+        "author": "Sunčana Bradley",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/256920085"
+      },
+      {
+        "file": "photos/hycleus-oculatus-3.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Phillip Nieuwoudt",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/481514447"
+      },
+      {
+        "file": "photos/hycleus-oculatus-4.webp",
+        "w": 500,
+        "h": 333,
+        "author": "John L. Richards",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/58991480"
+      },
+      {
+        "file": "photos/hycleus-oculatus-5.webp",
+        "w": 500,
+        "h": 471,
+        "author": "magdastlucia",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/15989472"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "tithoes-confinis",
+    "group": "other",
+    "sci": "Tithoes confinis",
+    "en": "Giant Longhorn Beetle",
+    "fr": null,
+    "fr_source": null,
+    "family": "Cerambycidae",
+    "family_fr": null,
+    "order": "Coleoptera",
+    "order_fr": null,
+    "iucn": null,
+    "qid": "Q7809954",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/tithoes-confinis.webp",
+      "w": 900,
+      "h": 831,
+      "author": "fubr",
+      "license": "CC-BY-NC-ND",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "source": "https://www.inaturalist.org/photos/6059263",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/tithoes-confinis-1.webp",
+        "w": 500,
+        "h": 436,
+        "author": "copper",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/13147975"
+      },
+      {
+        "file": "photos/tithoes-confinis-2.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Blair Cowie",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/627011405"
+      },
+      {
+        "file": "photos/tithoes-confinis-3.webp",
+        "w": 333,
+        "h": 500,
+        "author": "Michael Ochse",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/477123265"
+      },
+      {
+        "file": "photos/tithoes-confinis-4.webp",
+        "w": 500,
+        "h": 364,
+        "author": "Bernard DUPONT",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/340739641"
+      },
+      {
+        "file": "photos/tithoes-confinis-5.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Sascha Schumann",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/357272321"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "cheilomenes-lunata",
+    "group": "other",
+    "sci": "Cheilomenes lunata",
+    "en": "Lunate Ladybird",
+    "fr": null,
+    "fr_source": null,
+    "family": "Coccinellidae",
+    "family_fr": null,
+    "order": "Coleoptera",
+    "order_fr": null,
+    "iucn": null,
+    "qid": "Q2159966",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/cheilomenes-lunata.webp",
+      "w": 630,
+      "h": 900,
+      "author": "Rudolph Steenkamp",
+      "license": "CC-BY-SA",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://www.inaturalist.org/photos/248061690",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/cheilomenes-lunata-1.webp",
+        "w": 441,
+        "h": 500,
+        "author": "Marie Delport",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/209005743"
+      },
+      {
+        "file": "photos/cheilomenes-lunata-2.webp",
+        "w": 499,
+        "h": 500,
+        "author": "copper",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/15490600"
+      },
+      {
+        "file": "photos/cheilomenes-lunata-3.webp",
+        "w": 500,
+        "h": 500,
+        "author": "Jacobus Retief",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/555610342"
+      },
+      {
+        "file": "photos/cheilomenes-lunata-4.webp",
+        "w": 500,
+        "h": 376,
+        "author": "Corrie du Toit",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/375186589"
+      },
+      {
+        "file": "photos/cheilomenes-lunata-5.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Callum Evans",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/100107909"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "macrotermes-natalensis",
+    "group": "other",
+    "sci": "Macrotermes natalensis",
+    "en": "Fungus-growing Termite",
+    "fr": null,
+    "fr_source": null,
+    "family": "Termitidae",
+    "family_fr": "Termitidae",
+    "order": "Blattodea",
+    "order_fr": null,
+    "iucn": null,
+    "qid": "Q49620889",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/macrotermes-natalensis.webp",
+      "w": 686,
+      "h": 900,
+      "author": "GLENN STOCKIL",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/170186127",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/macrotermes-natalensis-1.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Katharina Hangl",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/702147395"
+      },
+      {
+        "file": "photos/macrotermes-natalensis-2.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Mahomed Desai",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/192187025"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "hodotermes-mossambicus",
+    "group": "other",
+    "sci": "Hodotermes mossambicus",
+    "en": "Harvester Termite",
+    "fr": null,
+    "fr_source": null,
+    "family": "Hodotermitidae",
+    "family_fr": "Hodotermitidae",
+    "order": "Blattodea",
+    "order_fr": null,
+    "iucn": null,
+    "qid": "Q21169322",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/hodotermes-mossambicus.webp",
+      "w": 853,
+      "h": 900,
+      "author": "Nicola van Berkel",
+      "license": "CC-BY-SA",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://www.inaturalist.org/photos/16122261",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/hodotermes-mossambicus-1.webp",
+        "w": 500,
+        "h": 333,
+        "author": "tjeerd",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/29720518"
+      },
+      {
+        "file": "photos/hodotermes-mossambicus-2.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Andre Harmse",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/176613987"
+      },
+      {
+        "file": "photos/hodotermes-mossambicus-3.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Benjamin Carbuccia",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/168486846"
+      },
+      {
+        "file": "photos/hodotermes-mossambicus-4.webp",
+        "w": 500,
+        "h": 324,
+        "author": "Cecile Roux",
+        "license": "CC-BY-SA",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://www.inaturalist.org/photos/319854210"
+      },
+      {
+        "file": "photos/hodotermes-mossambicus-5.webp",
+        "w": 500,
+        "h": 335,
+        "author": "Bernard DUPONT",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/91411221"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "megaponera-analis",
+    "group": "other",
+    "sci": "Megaponera analis",
+    "en": "Matabele Ant",
+    "fr": null,
+    "fr_source": null,
+    "family": "Formicidae",
+    "family_fr": "Formicidae",
+    "order": "Hymenoptera",
+    "order_fr": null,
+    "iucn": null,
+    "qid": "Q21322148",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/megaponera-analis.webp",
+      "w": 900,
+      "h": 599,
+      "author": "Jonghyun Park",
+      "license": "CC-BY",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "https://www.inaturalist.org/photos/358021991",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/megaponera-analis-1.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Jonghyun Park",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/358021078"
+      },
+      {
+        "file": "photos/megaponera-analis-2.webp",
+        "w": 500,
+        "h": 337,
+        "author": "Alex Rebelo",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/211992266"
+      },
+      {
+        "file": "photos/megaponera-analis-3.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Jakob Horz",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/411550968"
+      },
+      {
+        "file": "photos/megaponera-analis-4.webp",
+        "w": 500,
+        "h": 281,
+        "author": "Rion E. Lerm",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/228479795"
+      },
+      {
+        "file": "photos/megaponera-analis-5.webp",
+        "w": 500,
+        "h": 335,
+        "author": "jully_lg",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/585325329"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "anoplolepis-custodiens",
+    "group": "other",
+    "sci": "Anoplolepis custodiens",
+    "en": "Pugnacious Ant",
+    "fr": null,
+    "fr_source": null,
+    "family": "Formicidae",
+    "family_fr": "Formicidae",
+    "order": "Hymenoptera",
+    "order_fr": null,
+    "iucn": null,
+    "qid": "Q2876792",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/anoplolepis-custodiens.webp",
+      "w": 900,
+      "h": 600,
+      "author": "Jonghyun Park",
+      "license": "CC-BY",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "https://www.inaturalist.org/photos/353773990",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/anoplolepis-custodiens-1.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Johan Pretorius",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/59100930"
+      },
+      {
+        "file": "photos/anoplolepis-custodiens-2.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Mahomed Desai",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/61201016"
+      },
+      {
+        "file": "photos/anoplolepis-custodiens-3.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Hendré",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/108700374"
+      },
+      {
+        "file": "photos/anoplolepis-custodiens-4.webp",
+        "w": 500,
+        "h": 281,
+        "author": "vanrensk",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/19268518"
+      },
+      {
+        "file": "photos/anoplolepis-custodiens-5.webp",
+        "w": 420,
+        "h": 500,
+        "author": "Alan Manson",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/638079092"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "apis-mellifera",
+    "group": "other",
+    "sci": "Apis mellifera",
+    "en": "African Honey Bee",
+    "fr": null,
+    "fr_source": null,
+    "family": "Apidae",
+    "family_fr": "Apidae",
+    "order": "Hymenoptera",
+    "order_fr": null,
+    "iucn": "Data Deficient",
+    "qid": "Q30034",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/apis-mellifera.webp",
+      "w": 900,
+      "h": 600,
+      "author": "Lê Thanh Hoa",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/389898647",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/apis-mellifera-1.webp",
+        "w": 500,
+        "h": 281,
+        "author": "Albertus Horn",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/67970909"
+      },
+      {
+        "file": "photos/apis-mellifera-2.webp",
+        "w": 500,
+        "h": 250,
+        "author": "stjohns9",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/216784874"
+      },
+      {
+        "file": "photos/apis-mellifera-3.webp",
+        "w": 386,
+        "h": 500,
+        "author": "Richard Gill",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/50932647"
+      },
+      {
+        "file": "photos/apis-mellifera-4.webp",
+        "w": 355,
+        "h": 500,
+        "author": "Tony Rebelo",
+        "license": "CC-BY-SA",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://www.inaturalist.org/photos/15217785"
+      },
+      {
+        "file": "photos/apis-mellifera-5.webp",
+        "w": 500,
+        "h": 400,
+        "author": "copper",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/14864346"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "xylocopa-caffra",
+    "group": "other",
+    "sci": "Xylocopa caffra",
+    "en": "Carpenter Bee",
+    "fr": null,
+    "fr_source": null,
+    "family": "Apidae",
+    "family_fr": "Apidae",
+    "order": "Hymenoptera",
+    "order_fr": null,
+    "iucn": null,
+    "qid": "Q2392498",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/xylocopa-caffra.webp",
+      "w": 900,
+      "h": 665,
+      "author": "gerritvede",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/127216681",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/xylocopa-caffra-1.webp",
+        "w": 500,
+        "h": 380,
+        "author": "Louise Creed",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/344793630"
+      },
+      {
+        "file": "photos/xylocopa-caffra-2.webp",
+        "w": 500,
+        "h": 386,
+        "author": "Rob Leslie",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/723729975"
+      },
+      {
+        "file": "photos/xylocopa-caffra-3.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Ian",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/148019580"
+      },
+      {
+        "file": "photos/xylocopa-caffra-4.webp",
+        "w": 375,
+        "h": 500,
+        "author": "salls877",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/220066595"
+      },
+      {
+        "file": "photos/xylocopa-caffra-5.webp",
+        "w": 475,
+        "h": 500,
+        "author": "prmeakin",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/587715527"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "dolichomutilla-sycorax",
+    "group": "other",
+    "sci": "Dolichomutilla sycorax",
+    "en": "Velvet Ant",
+    "fr": null,
+    "fr_source": null,
+    "family": "Mutillidae",
+    "family_fr": null,
+    "order": null,
+    "order_fr": null,
+    "iucn": null,
+    "qid": null,
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/dolichomutilla-sycorax.webp",
+      "w": 900,
+      "h": 640,
+      "author": "Bernard DUPONT",
+      "license": "CC-BY-NC-SA",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "source": "https://www.inaturalist.org/photos/1488396",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/dolichomutilla-sycorax-1.webp",
+        "w": 500,
+        "h": 494,
+        "author": "brianrode",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/504698360"
+      },
+      {
+        "file": "photos/dolichomutilla-sycorax-2.webp",
+        "w": 500,
+        "h": 430,
+        "author": "Corné Rautenbach",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/350884855"
+      },
+      {
+        "file": "photos/dolichomutilla-sycorax-3.webp",
+        "w": 500,
+        "h": 333,
+        "author": "traianbertau",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/314772901"
+      },
+      {
+        "file": "photos/dolichomutilla-sycorax-4.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Sascha Schumann",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/278951350"
+      },
+      {
+        "file": "photos/dolichomutilla-sycorax-5.webp",
+        "w": 500,
+        "h": 452,
+        "author": "Rino",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/67914613"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "danaus-chrysippus",
+    "group": "other",
+    "sci": "Danaus chrysippus",
+    "en": "African Monarch",
+    "fr": null,
+    "fr_source": null,
+    "family": "Nymphalidae",
+    "family_fr": "Nymphalidae",
+    "order": "Lepidoptera",
+    "order_fr": null,
+    "iucn": "least concern",
+    "qid": "Q2663244",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/danaus-chrysippus.webp",
+      "w": 850,
+      "h": 638,
+      "author": "Pavel Vojtek",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/58977135",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/danaus-chrysippus-1.webp",
+        "w": 500,
+        "h": 411,
+        "author": "Tony Rebelo",
+        "license": "CC-BY-SA",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://www.inaturalist.org/photos/17864595"
+      },
+      {
+        "file": "photos/danaus-chrysippus-2.webp",
+        "w": 398,
+        "h": 500,
+        "author": "copper",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/15024923"
+      },
+      {
+        "file": "photos/danaus-chrysippus-3.webp",
+        "w": 375,
+        "h": 500,
+        "author": "grahamlouw",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/191657552"
+      },
+      {
+        "file": "photos/danaus-chrysippus-4.webp",
+        "w": 500,
+        "h": 428,
+        "author": "Colin Ralston",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/183885057"
+      },
+      {
+        "file": "photos/danaus-chrysippus-5.webp",
+        "w": 406,
+        "h": 500,
+        "author": "Shaun Swanepoel",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/189852088"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "papilio-demodocus",
+    "group": "other",
+    "sci": "Papilio demodocus",
+    "en": "Citrus Swallowtail",
+    "fr": null,
+    "fr_source": null,
+    "family": "Papilionidae",
+    "family_fr": "Papilionidae",
+    "order": "Lepidoptera",
+    "order_fr": null,
+    "iucn": "least concern",
+    "qid": "Q133397",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/papilio-demodocus.webp",
+      "w": 900,
+      "h": 675,
+      "author": "magdastlucia",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/13053317",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/papilio-demodocus-1.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Sunčana Bradley",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/124207789"
+      },
+      {
+        "file": "photos/papilio-demodocus-2.webp",
+        "w": 500,
+        "h": 295,
+        "author": "tjeerd",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/56028153"
+      },
+      {
+        "file": "photos/papilio-demodocus-3.webp",
+        "w": 500,
+        "h": 333,
+        "author": "magriet b",
+        "license": "CC-BY-SA",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://www.inaturalist.org/photos/30275688"
+      },
+      {
+        "file": "photos/papilio-demodocus-4.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Chris Vynbos",
+        "license": "CC-BY-SA",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://www.inaturalist.org/photos/29248747"
+      },
+      {
+        "file": "photos/papilio-demodocus-5.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Marie Delport",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/151380844"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "junonia-oenone",
+    "group": "other",
+    "sci": "Junonia oenone",
+    "en": "Blue Pansy",
+    "fr": null,
+    "fr_source": null,
+    "family": "Nymphalidae",
+    "family_fr": "Nymphalidae",
+    "order": "Lepidoptera",
+    "order_fr": null,
+    "iucn": "least concern",
+    "qid": "Q2717039",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/junonia-oenone.webp",
+      "w": 900,
+      "h": 676,
+      "author": "Colin Ralston",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/19204279",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/junonia-oenone-1.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Noor Suhairiya",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/474318483"
+      },
+      {
+        "file": "photos/junonia-oenone-2.webp",
+        "w": 500,
+        "h": 325,
+        "author": "Daniel Correia",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/315252677"
+      },
+      {
+        "file": "photos/junonia-oenone-3.webp",
+        "w": 500,
+        "h": 500,
+        "author": "Sunčana Bradley",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/11874929"
+      },
+      {
+        "file": "photos/junonia-oenone-4.webp",
+        "w": 500,
+        "h": 333,
+        "author": "bruce_crouch",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/69565803"
+      },
+      {
+        "file": "photos/junonia-oenone-5.webp",
+        "w": 500,
+        "h": 376,
+        "author": "Leonie Twentyman Jones",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/69176454"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "belenois-aurota",
+    "group": "other",
+    "sci": "Belenois aurota",
+    "en": "Brown-veined White",
+    "fr": null,
+    "fr_source": null,
+    "family": "Pieridae",
+    "family_fr": "Pieridae",
+    "order": "Lepidoptera",
+    "order_fr": null,
+    "iucn": "least concern",
+    "qid": "Q2005632",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/belenois-aurota.webp",
+      "w": 900,
+      "h": 622,
+      "author": "binub",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/42781447",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/belenois-aurota-1.webp",
+        "w": 500,
+        "h": 397,
+        "author": "leuli",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/195399947"
+      },
+      {
+        "file": "photos/belenois-aurota-2.webp",
+        "w": 333,
+        "h": 500,
+        "author": "tjeerd",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/109220375"
+      },
+      {
+        "file": "photos/belenois-aurota-3.webp",
+        "w": 500,
+        "h": 447,
+        "author": "selwynq",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/19673922"
+      },
+      {
+        "file": "photos/belenois-aurota-4.webp",
+        "w": 375,
+        "h": 500,
+        "author": "StaceyChs",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/269907665"
+      },
+      {
+        "file": "photos/belenois-aurota-5.webp",
+        "w": 500,
+        "h": 333,
+        "author": "John Wilkinson",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/58263716"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "hamanumida-daedalus",
+    "group": "other",
+    "sci": "Hamanumida daedalus",
+    "en": "Guineafowl Butterfly",
+    "fr": null,
+    "fr_source": null,
+    "family": "Nymphalidae",
+    "family_fr": "Nymphalidae",
+    "order": "Lepidoptera",
+    "order_fr": null,
+    "iucn": "least concern",
+    "qid": "Q1304542",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/hamanumida-daedalus.webp",
+      "w": 900,
+      "h": 675,
+      "author": "David Bygott",
+      "license": "CC-BY-NC-SA",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "source": "https://www.inaturalist.org/photos/25610",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/hamanumida-daedalus-1.webp",
+        "w": 500,
+        "h": 375,
+        "author": "lucystofberg",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/613828944"
+      },
+      {
+        "file": "photos/hamanumida-daedalus-2.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Levi Bass",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/497462296"
+      },
+      {
+        "file": "photos/hamanumida-daedalus-3.webp",
+        "w": 375,
+        "h": 500,
+        "author": "callieann65",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/230601411"
+      },
+      {
+        "file": "photos/hamanumida-daedalus-4.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Stefan Wolmarans",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/462188167"
+      },
+      {
+        "file": "photos/hamanumida-daedalus-5.webp",
+        "w": 500,
+        "h": 333,
+        "author": "John Wilkinson",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/58263468"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "catopsilia-florella",
+    "group": "other",
+    "sci": "Catopsilia florella",
+    "en": "African Migrant",
+    "fr": "Piéride du cassier",
+    "fr_source": "wikidata",
+    "family": "Pieridae",
+    "family_fr": "Pieridae",
+    "order": "Lepidoptera",
+    "order_fr": null,
+    "iucn": "least concern",
+    "qid": "Q1309984",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/catopsilia-florella.webp",
+      "w": 900,
+      "h": 853,
+      "author": "Nico Vromant",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/341765748",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/catopsilia-florella-1.webp",
+        "w": 500,
+        "h": 360,
+        "author": "Jacobus Retief",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/214632073"
+      },
+      {
+        "file": "photos/catopsilia-florella-2.webp",
+        "w": 500,
+        "h": 465,
+        "author": "Chrissie Fourie",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/16091547"
+      },
+      {
+        "file": "photos/catopsilia-florella-3.webp",
+        "w": 500,
+        "h": 360,
+        "author": "diego_pitzalis",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/619485793"
+      },
+      {
+        "file": "photos/catopsilia-florella-4.webp",
+        "w": 379,
+        "h": 500,
+        "author": "Louise Creed",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/355681171"
+      },
+      {
+        "file": "photos/catopsilia-florella-5.webp",
+        "w": 500,
+        "h": 331,
+        "author": "Heather and Andrew Hodgson",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/391151565"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "telchinia-serena",
+    "group": "other",
+    "sci": "Telchinia serena",
+    "en": "Dancing Acraea",
+    "fr": null,
+    "fr_source": null,
+    "family": "Nymphalidae",
+    "family_fr": null,
+    "order": null,
+    "order_fr": null,
+    "iucn": null,
+    "qid": null,
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/telchinia-serena.webp",
+      "w": 882,
+      "h": 624,
+      "author": "Wynand Uys",
+      "license": "CC-BY",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "https://www.inaturalist.org/photos/15282121",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/telchinia-serena-1.webp",
+        "w": 500,
+        "h": 353,
+        "author": "Richard Johnstone",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/255020548"
+      },
+      {
+        "file": "photos/telchinia-serena-2.webp",
+        "w": 500,
+        "h": 469,
+        "author": "Ian Smith",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/654248257"
+      },
+      {
+        "file": "photos/telchinia-serena-3.webp",
+        "w": 500,
+        "h": 355,
+        "author": "Sunčana Bradley",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/275142002"
+      },
+      {
+        "file": "photos/telchinia-serena-4.webp",
+        "w": 500,
+        "h": 333,
+        "author": "tjeerd",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/277824448"
+      },
+      {
+        "file": "photos/telchinia-serena-5.webp",
+        "w": 500,
+        "h": 451,
+        "author": "Peter Vos",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/15921095"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "leptotes-pirithous",
+    "group": "other",
+    "sci": "Leptotes pirithous",
+    "en": "Common Zebra Blue",
+    "fr": "Azuré de la luzerne",
+    "fr_source": "wikidata",
+    "family": "Lycaenidae",
+    "family_fr": "Lycaenidae",
+    "order": "Lepidoptera",
+    "order_fr": null,
+    "iucn": "least concern",
+    "qid": "Q1303045",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/leptotes-pirithous.webp",
+      "w": 850,
+      "h": 638,
+      "author": "Pavel Vojtek",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/58803625",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/leptotes-pirithous-1.webp",
+        "w": 500,
+        "h": 334,
+        "author": "microodyssey",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/344075096"
+      },
+      {
+        "file": "photos/leptotes-pirithous-2.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Kathy Webb + Bill Depew",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/589131980"
+      },
+      {
+        "file": "photos/leptotes-pirithous-3.webp",
+        "w": 500,
+        "h": 444,
+        "author": "CliffordR",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/634183245"
+      },
+      {
+        "file": "photos/leptotes-pirithous-4.webp",
+        "w": 334,
+        "h": 500,
+        "author": "jean hirons",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/662652571"
+      },
+      {
+        "file": "photos/leptotes-pirithous-5.webp",
+        "w": 500,
+        "h": 349,
+        "author": "timmcclurg",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/743788295"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "colotis-annae",
+    "group": "other",
+    "sci": "Colotis annae",
+    "en": "Scarlet Tip",
+    "fr": null,
+    "fr_source": null,
+    "family": "Pieridae",
+    "family_fr": "Pieridae",
+    "order": "Lepidoptera",
+    "order_fr": null,
+    "iucn": "least concern",
+    "qid": "Q13474074",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/colotis-annae.webp",
+      "w": 900,
+      "h": 599,
+      "author": "David Renoult",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/10771495",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/colotis-annae-1.webp",
+        "w": 500,
+        "h": 357,
+        "author": "Dr. Alexey Yakovlev",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/680250445"
+      },
+      {
+        "file": "photos/colotis-annae-2.webp",
+        "w": 465,
+        "h": 500,
+        "author": "desertnaturalist",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/482481483"
+      },
+      {
+        "file": "photos/colotis-annae-3.webp",
+        "w": 500,
+        "h": 357,
+        "author": "Wolf-Achim and Hanna Roland",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/175514944"
+      },
+      {
+        "file": "photos/colotis-annae-4.webp",
+        "w": 500,
+        "h": 333,
+        "author": "kcclarke",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/512531"
+      },
+      {
+        "file": "photos/colotis-annae-5.webp",
+        "w": 500,
+        "h": 452,
+        "author": "Richard Johnstone",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/307313225"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "charaxes-saturnus",
+    "group": "other",
+    "sci": "Charaxes saturnus",
+    "en": "Foxy Charaxes",
+    "fr": null,
+    "fr_source": null,
+    "family": "Nymphalidae",
+    "family_fr": "Nymphalidae",
+    "order": "Lepidoptera",
+    "order_fr": null,
+    "iucn": "least concern",
+    "qid": "Q15801208",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/charaxes-saturnus.webp",
+      "w": 900,
+      "h": 674,
+      "author": "steveball",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/38343436",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/charaxes-saturnus-1.webp",
+        "w": 500,
+        "h": 322,
+        "author": "Vaughan Jessnitz",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/328134784"
+      },
+      {
+        "file": "photos/charaxes-saturnus-2.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Richard Gill",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/261234649"
+      },
+      {
+        "file": "photos/charaxes-saturnus-3.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Abby Sesselberg",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/593470138"
+      },
+      {
+        "file": "photos/charaxes-saturnus-4.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Mark Johnstone",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/665010734"
+      },
+      {
+        "file": "photos/charaxes-saturnus-5.webp",
+        "w": 500,
+        "h": 369,
+        "author": "Annette Gerber",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/15998591"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "gonimbrasia-belina",
+    "group": "other",
+    "sci": "Gonimbrasia belina",
+    "en": "Mopane Emperor Moth",
+    "fr": null,
+    "fr_source": null,
+    "family": "Saturniidae",
+    "family_fr": "Saturniidae",
+    "order": "Lepidoptera",
+    "order_fr": null,
+    "iucn": null,
+    "qid": "Q311788",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/gonimbrasia-belina.webp",
+      "w": 800,
+      "h": 511,
+      "author": "Malcolm Douglas",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/192815226",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/gonimbrasia-belina-1.webp",
+        "w": 500,
+        "h": 375,
+        "author": "maddyo",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/15495780"
+      },
+      {
+        "file": "photos/gonimbrasia-belina-2.webp",
+        "w": 375,
+        "h": 500,
+        "author": "johannc78",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/109296711"
+      },
+      {
+        "file": "photos/gonimbrasia-belina-3.webp",
+        "w": 333,
+        "h": 500,
+        "author": "riana60",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/15831245"
+      },
+      {
+        "file": "photos/gonimbrasia-belina-4.webp",
+        "w": 500,
+        "h": 281,
+        "author": "William Maliepaard",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/482341032"
+      },
+      {
+        "file": "photos/gonimbrasia-belina-5.webp",
+        "w": 410,
+        "h": 500,
+        "author": "Alex Gumede",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/533985426"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "argema-mimosae",
+    "group": "other",
+    "sci": "Argema mimosae",
+    "en": "African Moon Moth",
+    "fr": null,
+    "fr_source": null,
+    "family": "Saturniidae",
+    "family_fr": "Saturniidae",
+    "order": "Lepidoptera",
+    "order_fr": null,
+    "iucn": null,
+    "qid": "Q2248077",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/argema-mimosae.webp",
+      "w": 900,
+      "h": 675,
+      "author": "David Bygott",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/25177123",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/argema-mimosae-1.webp",
+        "w": 500,
+        "h": 380,
+        "author": "Alex Rebelo",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/15927349"
+      },
+      {
+        "file": "photos/argema-mimosae-2.webp",
+        "w": 500,
+        "h": 500,
+        "author": "petercalverley",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/32181132"
+      },
+      {
+        "file": "photos/argema-mimosae-3.webp",
+        "w": 500,
+        "h": 479,
+        "author": "Wynand Uys",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/15208130"
+      },
+      {
+        "file": "photos/argema-mimosae-4.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Alex Lamoreaux",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/22319157"
+      },
+      {
+        "file": "photos/argema-mimosae-5.webp",
+        "w": 500,
+        "h": 475,
+        "author": "zingelasafaris",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/31403608"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "anaphe-reticulata",
+    "group": "other",
+    "sci": "Anaphe reticulata",
+    "en": "Processionary Bagnest Moth",
+    "fr": null,
+    "fr_source": null,
+    "family": "Notodontidae",
+    "family_fr": null,
+    "order": "Lepidoptera",
+    "order_fr": null,
+    "iucn": null,
+    "qid": "Q13369442",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/anaphe-reticulata.webp",
+      "w": 900,
+      "h": 830,
+      "author": "Wynand Uys",
+      "license": "CC-BY",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "https://www.inaturalist.org/photos/15154567",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/anaphe-reticulata-1.webp",
+        "w": 431,
+        "h": 500,
+        "author": "no rights reserved",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source": "https://www.inaturalist.org/photos/473132146"
+      },
+      {
+        "file": "photos/anaphe-reticulata-2.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Marcel de Beer",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/460520812"
+      },
+      {
+        "file": "photos/anaphe-reticulata-3.webp",
+        "w": 500,
+        "h": 449,
+        "author": "qgrobler",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/15366819"
+      },
+      {
+        "file": "photos/anaphe-reticulata-4.webp",
+        "w": 500,
+        "h": 416,
+        "author": "Corné Rautenbach",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/472069277"
+      },
+      {
+        "file": "photos/anaphe-reticulata-5.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Shanré Scheepers",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/615721143"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "sphingomorpha-chlorea",
+    "group": "other",
+    "sci": "Sphingomorpha chlorea",
+    "en": "Sundowner Moth",
+    "fr": null,
+    "fr_source": null,
+    "family": "Erebidae",
+    "family_fr": null,
+    "order": "Lepidoptera",
+    "order_fr": null,
+    "iucn": null,
+    "qid": "Q13525601",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/sphingomorpha-chlorea.webp",
+      "w": 900,
+      "h": 828,
+      "author": "Bernard DUPONT",
+      "license": "CC-BY",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "https://www.inaturalist.org/photos/264217800",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/sphingomorpha-chlorea-1.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Conrad",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/342369416"
+      },
+      {
+        "file": "photos/sphingomorpha-chlorea-2.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Dave Flumm",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/688797376"
+      },
+      {
+        "file": "photos/sphingomorpha-chlorea-3.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Imé",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/350106451"
+      },
+      {
+        "file": "photos/sphingomorpha-chlorea-4.webp",
+        "w": 488,
+        "h": 500,
+        "author": "bmaytom",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/471596963"
+      },
+      {
+        "file": "photos/sphingomorpha-chlorea-5.webp",
+        "w": 380,
+        "h": 500,
+        "author": "Peter Vos",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/111932399"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "trithemis-arteriosa",
+    "group": "other",
+    "sci": "Trithemis arteriosa",
+    "en": "Red-veined Dropwing",
+    "fr": "Trithémis écarlate",
+    "fr_source": "wikidata",
+    "family": "Libellulidae",
+    "family_fr": "Libellulidae",
+    "order": "Odonata",
+    "order_fr": "Odonata",
+    "iucn": "least concern",
+    "qid": "Q1317665",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/trithemis-arteriosa.webp",
+      "w": 900,
+      "h": 600,
+      "author": "Roelof van der Breggen",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/105369018",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/trithemis-arteriosa-1.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Herman Berteler",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/174674112"
+      },
+      {
+        "file": "photos/trithemis-arteriosa-2.webp",
+        "w": 500,
+        "h": 381,
+        "author": "Linda Hibbin",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/591066948"
+      },
+      {
+        "file": "photos/trithemis-arteriosa-3.webp",
+        "w": 500,
+        "h": 333,
+        "author": "rbeunen",
+        "license": "CC-BY-NC-SA",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "source": "https://www.inaturalist.org/photos/35815737"
+      },
+      {
+        "file": "photos/trithemis-arteriosa-4.webp",
+        "w": 500,
+        "h": 337,
+        "author": "Peter Vos",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/16006522"
+      },
+      {
+        "file": "photos/trithemis-arteriosa-5.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Phillip Nieuwoudt",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/505266730"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "crocothemis-erythraea",
+    "group": "other",
+    "sci": "Crocothemis erythraea",
+    "en": "Broad Scarlet",
+    "fr": null,
+    "fr_source": null,
+    "family": "Libellulidae",
+    "family_fr": "Libellulidae",
+    "order": "Odonata",
+    "order_fr": "Odonata",
+    "iucn": "least concern",
+    "qid": "Q1409595",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/crocothemis-erythraea.webp",
+      "w": 900,
+      "h": 600,
+      "author": "Erland Refling Nielsen",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/539212346",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/crocothemis-erythraea-1.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Richard Johnstone",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/492824554"
+      },
+      {
+        "file": "photos/crocothemis-erythraea-2.webp",
+        "w": 500,
+        "h": 500,
+        "author": "Nicole Rothman",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/583162253"
+      },
+      {
+        "file": "photos/crocothemis-erythraea-3.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Hendrik McCarthy",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/337358198"
+      },
+      {
+        "file": "photos/crocothemis-erythraea-4.webp",
+        "w": 500,
+        "h": 333,
+        "author": "jean hirons",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/247962703"
+      },
+      {
+        "file": "photos/crocothemis-erythraea-5.webp",
+        "w": 500,
+        "h": 376,
+        "author": "Corrie du Toit",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/618438295"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "pantala-flavescens",
+    "group": "other",
+    "sci": "Pantala flavescens",
+    "en": "Wandering Glider",
+    "fr": null,
+    "fr_source": null,
+    "family": "Libellulidae",
+    "family_fr": "Libellulidae",
+    "order": "Odonata",
+    "order_fr": "Odonata",
+    "iucn": "least concern",
+    "qid": "Q1477924",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/pantala-flavescens.webp",
+      "w": 900,
+      "h": 600,
+      "author": "Gregg Darling",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/251678210",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/pantala-flavescens-1.webp",
+        "w": 500,
+        "h": 374,
+        "author": "tjeerd",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/33748310"
+      },
+      {
+        "file": "photos/pantala-flavescens-2.webp",
+        "w": 500,
+        "h": 361,
+        "author": "dylandavidsmith",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/248071507"
+      },
+      {
+        "file": "photos/pantala-flavescens-3.webp",
+        "w": 500,
+        "h": 357,
+        "author": "copper",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/27093336"
+      },
+      {
+        "file": "photos/pantala-flavescens-4.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Wynand Uys",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/15309471"
+      },
+      {
+        "file": "photos/pantala-flavescens-5.webp",
+        "w": 500,
+        "h": 499,
+        "author": "Hendrik McCarthy",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/334582951"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "ictinogomphus-ferox",
+    "group": "other",
+    "sci": "Ictinogomphus ferox",
+    "en": "Tigertail",
+    "fr": null,
+    "fr_source": null,
+    "family": "Gomphidae",
+    "family_fr": "Gomphidae",
+    "order": "Odonata",
+    "order_fr": "Odonata",
+    "iucn": "least concern",
+    "qid": "Q1313760",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/ictinogomphus-ferox.webp",
+      "w": 900,
+      "h": 600,
+      "author": "Greg Lasley",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/464032",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/ictinogomphus-ferox-1.webp",
+        "w": 500,
+        "h": 283,
+        "author": "Robert Taylor",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/15881851"
+      },
+      {
+        "file": "photos/ictinogomphus-ferox-2.webp",
+        "w": 375,
+        "h": 500,
+        "author": "heeeynathan",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/595323598"
+      },
+      {
+        "file": "photos/ictinogomphus-ferox-3.webp",
+        "w": 500,
+        "h": 334,
+        "author": "Erland Refling Nielsen",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/5460635"
+      },
+      {
+        "file": "photos/ictinogomphus-ferox-4.webp",
+        "w": 500,
+        "h": 411,
+        "author": "Hendrik McCarthy",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/455669541"
+      },
+      {
+        "file": "photos/ictinogomphus-ferox-5.webp",
+        "w": 500,
+        "h": 343,
+        "author": "Rob Palmer",
+        "license": "CC-BY-NC-SA",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "source": "https://www.inaturalist.org/photos/61315942"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "platycypha-caligata",
+    "group": "other",
+    "sci": "Platycypha caligata",
+    "en": "Dancing Jewel",
+    "fr": null,
+    "fr_source": null,
+    "family": "Chlorocyphidae",
+    "family_fr": "Chlorocyphidae",
+    "order": "Odonata",
+    "order_fr": "Odonata",
+    "iucn": "least concern",
+    "qid": "Q1310817",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/platycypha-caligata.webp",
+      "w": 900,
+      "h": 552,
+      "author": "Robert Taylor",
+      "license": "CC-BY",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "https://www.inaturalist.org/photos/112051612",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/platycypha-caligata-1.webp",
+        "w": 500,
+        "h": 300,
+        "author": "mmatthiessen",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/325602883"
+      },
+      {
+        "file": "photos/platycypha-caligata-2.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Joseph Heymans",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/31299555"
+      },
+      {
+        "file": "photos/platycypha-caligata-3.webp",
+        "w": 500,
+        "h": 252,
+        "author": "Robert Taylor",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/12660394"
+      },
+      {
+        "file": "photos/platycypha-caligata-4.webp",
+        "w": 500,
+        "h": 414,
+        "author": "Corné Rautenbach",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/256148055"
+      },
+      {
+        "file": "photos/platycypha-caligata-5.webp",
+        "w": 500,
+        "h": 333,
+        "author": "sharon stanton",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/601706825"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "zonocerus-elegans",
+    "group": "other",
+    "sci": "Zonocerus elegans",
+    "en": "Elegant Grasshopper",
+    "fr": null,
+    "fr_source": null,
+    "family": "Pyrgomorphidae",
+    "family_fr": "Pyrgomorphidae",
+    "order": "Orthoptera",
+    "order_fr": "Orthoptera",
+    "iucn": null,
+    "qid": "Q10724762",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/zonocerus-elegans.webp",
+      "w": 900,
+      "h": 788,
+      "author": "Peter Vos",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/13022667",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/zonocerus-elegans-1.webp",
+        "w": 500,
+        "h": 414,
+        "author": "Peter Vos",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/12302892"
+      },
+      {
+        "file": "photos/zonocerus-elegans-2.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Gerhard Lemmer",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/626669841"
+      },
+      {
+        "file": "photos/zonocerus-elegans-3.webp",
+        "w": 500,
+        "h": 336,
+        "author": "Colin Ralston",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/31724331"
+      },
+      {
+        "file": "photos/zonocerus-elegans-4.webp",
+        "w": 500,
+        "h": 500,
+        "author": "Oswald Kurten",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/256534131"
+      },
+      {
+        "file": "photos/zonocerus-elegans-5.webp",
+        "w": 500,
+        "h": 333,
+        "author": "tjeerd",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/60476828"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "phymateus-baccatus",
+    "group": "other",
+    "sci": "Phymateus baccatus",
+    "en": "Milkweed Locust",
+    "fr": null,
+    "fr_source": null,
+    "family": "Pyrgomorphidae",
+    "family_fr": "Pyrgomorphidae",
+    "order": "Orthoptera",
+    "order_fr": "Orthoptera",
+    "iucn": null,
+    "qid": "Q10630759",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/phymateus-baccatus.webp",
+      "w": 792,
+      "h": 816,
+      "author": "riana60",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/15606537",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/phymateus-baccatus-1.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Katelyn Warner",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/582150104"
+      },
+      {
+        "file": "photos/phymateus-baccatus-2.webp",
+        "w": 500,
+        "h": 375,
+        "author": "brianrode",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/453234499"
+      },
+      {
+        "file": "photos/phymateus-baccatus-3.webp",
+        "w": 375,
+        "h": 500,
+        "author": "no rights reserved",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source": "https://www.inaturalist.org/photos/240029140"
+      },
+      {
+        "file": "photos/phymateus-baccatus-4.webp",
+        "w": 500,
+        "h": 356,
+        "author": "Carrie Powers",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/241446927"
+      },
+      {
+        "file": "photos/phymateus-baccatus-5.webp",
+        "w": 230,
+        "h": 500,
+        "author": "arjenvz",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/641243850"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "acanthoplus-discoidalis",
+    "group": "other",
+    "sci": "Acanthoplus discoidalis",
+    "en": "Armoured Ground Cricket",
+    "fr": null,
+    "fr_source": null,
+    "family": "Tettigoniidae",
+    "family_fr": "Tettigoniidae",
+    "order": "Orthoptera",
+    "order_fr": "Orthoptera",
+    "iucn": "least concern",
+    "qid": "Q4672013",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/acanthoplus-discoidalis.webp",
+      "w": 600,
+      "h": 400,
+      "author": "Grant Reed",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/136960297",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/acanthoplus-discoidalis-1.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Pavel Shukov",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/360981793"
+      },
+      {
+        "file": "photos/acanthoplus-discoidalis-2.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Boitumelo Lesupi",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/485616428"
+      },
+      {
+        "file": "photos/acanthoplus-discoidalis-3.webp",
+        "w": 500,
+        "h": 430,
+        "author": "brianrode",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/650717605"
+      },
+      {
+        "file": "photos/acanthoplus-discoidalis-4.webp",
+        "w": 500,
+        "h": 331,
+        "author": "Kyle Finn",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/44609267"
+      },
+      {
+        "file": "photos/acanthoplus-discoidalis-5.webp",
+        "w": 500,
+        "h": 453,
+        "author": "Chrissie Fourie",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/12558474"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "sphodromantis-gastrica",
+    "group": "other",
+    "sci": "Sphodromantis gastrica",
+    "en": "Common Green Mantis",
+    "fr": null,
+    "fr_source": null,
+    "family": "Mantidae",
+    "family_fr": "Mantidae",
+    "order": "Mantodea",
+    "order_fr": "Mantodea",
+    "iucn": null,
+    "qid": "Q5223557",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/sphodromantis-gastrica.webp",
+      "w": 900,
+      "h": 563,
+      "author": "Bernard DUPONT",
+      "license": "CC-BY",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "https://www.inaturalist.org/photos/180473949",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/sphodromantis-gastrica-1.webp",
+        "w": 500,
+        "h": 351,
+        "author": "Wynand Uys",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/15351374"
+      },
+      {
+        "file": "photos/sphodromantis-gastrica-2.webp",
+        "w": 328,
+        "h": 500,
+        "author": "Joanette Smith",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/31054636"
+      },
+      {
+        "file": "photos/sphodromantis-gastrica-3.webp",
+        "w": 500,
+        "h": 375,
+        "author": "Alienke Boot",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/254854416"
+      },
+      {
+        "file": "photos/sphodromantis-gastrica-4.webp",
+        "w": 233,
+        "h": 500,
+        "author": "Geoff",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/184397923"
+      },
+      {
+        "file": "photos/sphodromantis-gastrica-5.webp",
+        "w": 499,
+        "h": 500,
+        "author": "Willy Guasti",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/639011318"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "popa-spurca",
+    "group": "other",
+    "sci": "Popa spurca",
+    "en": "Twig Mantis",
+    "fr": null,
+    "fr_source": null,
+    "family": "Mantidae",
+    "family_fr": "Mantidae",
+    "order": "Mantodea",
+    "order_fr": "Mantodea",
+    "iucn": null,
+    "qid": "Q148582",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/popa-spurca.webp",
+      "w": 481,
+      "h": 900,
+      "author": "Lindi Eksteen",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/62297902",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/popa-spurca-1.webp",
+        "w": 341,
+        "h": 500,
+        "author": "Rudolph Steenkamp",
+        "license": "CC-BY-SA",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://www.inaturalist.org/photos/180703818"
+      },
+      {
+        "file": "photos/popa-spurca-2.webp",
+        "w": 500,
+        "h": 500,
+        "author": "Jacobus Retief",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/248807728"
+      },
+      {
+        "file": "photos/popa-spurca-3.webp",
+        "w": 500,
+        "h": 375,
+        "author": "soutebrachiaria",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/178763595"
+      },
+      {
+        "file": "photos/popa-spurca-4.webp",
+        "w": 375,
+        "h": 500,
+        "author": "cathytroskie",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/599706275"
+      },
+      {
+        "file": "photos/popa-spurca-5.webp",
+        "w": 500,
+        "h": 401,
+        "author": "cati",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/27195960"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "oxypleura-quadraticollis",
+    "group": "other",
+    "sci": "Oxypleura quadraticollis",
+    "en": "Savanna Cicada",
+    "fr": null,
+    "fr_source": null,
+    "family": "Cicadidae",
+    "family_fr": "Cicadidae",
+    "order": "Hemiptera",
+    "order_fr": null,
+    "iucn": null,
+    "qid": "Q39072063",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/oxypleura-quadraticollis.webp",
+      "w": 650,
+      "h": 900,
+      "author": "copper",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/29087881",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/oxypleura-quadraticollis-1.webp",
+        "w": 500,
+        "h": 279,
+        "author": "Yolande Oelsen",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/585668997"
+      },
+      {
+        "file": "photos/oxypleura-quadraticollis-2.webp",
+        "w": 496,
+        "h": 500,
+        "author": "copper",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/29087884"
+      },
+      {
+        "file": "photos/oxypleura-quadraticollis-3.webp",
+        "w": 500,
+        "h": 329,
+        "author": "Wynand Uys",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/15212948"
+      },
+      {
+        "file": "photos/oxypleura-quadraticollis-4.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Jakes Oosthuizen",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/244272349"
+      },
+      {
+        "file": "photos/oxypleura-quadraticollis-5.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Jakob Horz",
+        "license": "CC-BY",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/photos/392993354"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "ectrichodia-crux",
+    "group": "other",
+    "sci": "Ectrichodia crux",
+    "en": "Millipede Assassin Bug",
+    "fr": null,
+    "fr_source": null,
+    "family": "Reduviidae",
+    "family_fr": "Reduviidae",
+    "order": "Hemiptera",
+    "order_fr": null,
+    "iucn": null,
+    "qid": "Q28739861",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/ectrichodia-crux.webp",
+      "w": 900,
+      "h": 675,
+      "author": "Bernard DUPONT",
+      "license": "CC-BY-NC-SA",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "source": "https://www.inaturalist.org/photos/730243",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/ectrichodia-crux-1.webp",
+        "w": 500,
+        "h": 281,
+        "author": "Sally Adam",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/103332469"
+      },
+      {
+        "file": "photos/ectrichodia-crux-2.webp",
+        "w": 500,
+        "h": 333,
+        "author": "tjeerd",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/5369872"
+      },
+      {
+        "file": "photos/ectrichodia-crux-3.webp",
+        "w": 375,
+        "h": 500,
+        "author": "Simon &amp; Cheryl Blackburn",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/174691702"
+      },
+      {
+        "file": "photos/ectrichodia-crux-4.webp",
+        "w": 500,
+        "h": 333,
+        "author": "Brad Hean",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/604780869"
+      },
+      {
+        "file": "photos/ectrichodia-crux-5.webp",
+        "w": 362,
+        "h": 318,
+        "author": "no rights reserved",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source": "https://www.inaturalist.org/photos/178009537"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": null
+  },
+  {
+    "id": "anopheles-arabiensis",
+    "group": "other",
+    "sci": "Anopheles arabiensis",
+    "en": "Malaria Mosquito",
+    "fr": null,
+    "fr_source": null,
+    "family": "Culicidae",
+    "family_fr": "Culicidae",
+    "order": "Diptera",
+    "order_fr": null,
+    "iucn": null,
+    "qid": "Q13853909",
+    "wiki": {
+      "fr": null,
+      "en": null
+    },
+    "summary": {
+      "fr": null,
+      "en": null
+    },
+    "image": {
+      "file": "images/anopheles-arabiensis.webp",
+      "w": 900,
+      "h": 675,
+      "author": "Guillaume Dupuy",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/376557964",
+      "from": "iNaturalist"
+    },
+    "photos": [],
     "sounds": [],
     "traits": null,
     "notes": null

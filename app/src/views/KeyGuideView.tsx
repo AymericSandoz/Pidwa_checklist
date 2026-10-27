@@ -1,5 +1,6 @@
 import { signal, type Signal } from '@preact/signals';
-import { species, seenCount, name, name2, imgUrl } from '../data';
+import { species, seenCount, name, name2, imgUrl, byId } from '../data';
+import { FAMILY, INSECT_GROUPS } from '../taxa';
 import { href } from '../router';
 import { matches } from '../util';
 import { Icon, type IconName } from '../components/Icon';
@@ -159,6 +160,7 @@ export function PlantGuideView() {
 const ot = (id: string) => otherInfo.value.get(id);
 const OTHER_KEY: Criterion[] = [
   { key: 'cat', label: 'What it is', hideEmpty: true, options: (Object.keys(CAT_LABEL) as OtherCat[]).map((c) => [c, CAT_LABEL[c]]), valueOf: (id) => { const c = ot(id)?.cat; return c ? [c] : []; } },
+  { key: 'insect', label: 'Kind of insect', hint: 'insects only', options: INSECT_GROUPS, valueOf: (id) => { const s = byId.value.get(id); const g = s && ot(id)?.cat === 'insect' ? s.family && FAMILY[s.family]?.group : null; return g ? [g] : []; } },
   { key: 'where', label: 'Where', options: (Object.keys(WHERE_LABEL) as Where[]).map((w) => [w, WHERE_LABEL[w]]), valueOf: (id) => ot(id)?.where || [] },
   { key: 'when', label: 'When', options: [['day', 'By day'], ['night', 'At night']], valueOf: (id) => ot(id)?.when || [] },
   { key: 'danger', label: 'Danger', more: true, options: DANGERS.map((d) => [d, DANGER_SHORT[d]]), valueOf: (id) => { const d = ot(id)?.danger; return d ? [d] : []; } },

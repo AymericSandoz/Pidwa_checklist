@@ -1,4 +1,4 @@
-// The other animals, in one tab: reptiles other than snakes, spiders and scorpions (frogs and insects to come). The data
+// The other animals, in one tab: reptiles other than snakes, spiders and scorpions, frogs, and insects by big families. The data
 // (others.data.json) is written from the standard references (Branch, Alexander & Marais for the reptiles; Leeming,
 // Dippenaar-Schoeman for scorpions and spiders) and has not been checked species by species yet. The list is drawn from the
 // iNaturalist research-grade records within 60 km of camp, less the escarpment species; the level is our estimate.
@@ -22,6 +22,8 @@ export interface OtherInfo {
   where: Where[];
   when: ('day' | 'night')[];
   keys: string[];
+  /** frogs: what the call sounds like (no recordings) */
+  voice?: string;
   confuse: { sp: string; how: string }[];
   behaviour: string;
   /** what a bite or sting does and what to do; null when there is nothing to say */

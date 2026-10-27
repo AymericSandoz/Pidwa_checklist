@@ -134,6 +134,46 @@ export const FAMILY: Record<string, { en: string; group: string }> = {
   Eresidae: { en: 'Velvet spiders', group: 'arachnids' },
   Phrynichidae: { en: 'Whip spiders', group: 'arachnids' },
   Ixodidae: { en: 'Ticks', group: 'arachnids' },
+  // ---- frogs ----
+  Rhacophoridae: { en: 'Foam nest frogs', group: 'frogs' },
+  Hyperoliidae: { en: 'Reed frogs & kassinas', group: 'frogs' },
+  Arthroleptidae: { en: 'Tree frogs', group: 'frogs' },
+  Microhylidae: { en: 'Rubber frogs', group: 'frogs' },
+  Pyxicephalidae: { en: 'Bullfrogs, river & sand frogs', group: 'frogs' },
+  Bufonidae: { en: 'Toads', group: 'frogs' },
+  Brevicipitidae: { en: 'Rain frogs', group: 'frogs' },
+  Hemisotidae: { en: 'Shovel-nosed frogs', group: 'frogs' },
+  Ptychadenidae: { en: 'Ridged frogs', group: 'frogs' },
+  Phrynobatrachidae: { en: 'Puddle frogs', group: 'frogs' },
+  Pipidae: { en: 'Clawed frogs', group: 'frogs' },
+  // ---- insects: the group is the big family the guide filters on ----
+  Scarabaeidae: { en: 'Dung beetles & chafers', group: 'beetles' },
+  Tenebrionidae: { en: 'Darkling beetles', group: 'beetles' },
+  Carabidae: { en: 'Ground beetles', group: 'beetles' },
+  Meloidae: { en: 'Blister beetles', group: 'beetles' },
+  Cerambycidae: { en: 'Longhorn beetles', group: 'beetles' },
+  Coccinellidae: { en: 'Ladybirds', group: 'beetles' },
+  Termitidae: { en: 'Mound-building termites', group: 'termites' },
+  Hodotermitidae: { en: 'Harvester termites', group: 'termites' },
+  Formicidae: { en: 'Ants', group: 'ants' },
+  Apidae: { en: 'Bees', group: 'ants' },
+  Mutillidae: { en: 'Velvet ants (wasps)', group: 'ants' },
+  Nymphalidae: { en: 'Brush-footed butterflies', group: 'butterflies' },
+  Papilionidae: { en: 'Swallowtails', group: 'butterflies' },
+  Pieridae: { en: 'Whites & yellows', group: 'butterflies' },
+  Lycaenidae: { en: 'Blues & coppers', group: 'butterflies' },
+  Saturniidae: { en: 'Emperor moths', group: 'butterflies' },
+  Notodontidae: { en: 'Processionary moths', group: 'butterflies' },
+  Erebidae: { en: 'Owlet moths', group: 'butterflies' },
+  Libellulidae: { en: 'Skimmers & dropwings', group: 'dragonflies' },
+  Gomphidae: { en: 'Clubtails', group: 'dragonflies' },
+  Chlorocyphidae: { en: 'Jewel damselflies', group: 'dragonflies' },
+  Pyrgomorphidae: { en: 'Foam & painted grasshoppers', group: 'grasshoppers' },
+  Tettigoniidae: { en: 'Katydids & armoured crickets', group: 'grasshoppers' },
+  Mantidae: { en: 'Mantids', group: 'mantids' },
+  Cicadidae: { en: 'Cicadas', group: 'bugs' },
+  Reduviidae: { en: 'Assassin bugs', group: 'bugs' },
+  Culicidae: { en: 'Mosquitoes', group: 'flies' },
   // ---- plants ----
   Fabaceae: { en: 'Acacias, peas & pods', group: 'plants' },
   Combretaceae: { en: 'Bushwillows & cluster-leaves', group: 'plants' },
@@ -213,6 +253,12 @@ export const MAMMAL_GROUPS: [string, string][] = [
   ['primates', 'Monkeys, baboons, galagos'],
   ['small-mammals', 'Hares, squirrels, porcupine, hyrax…'],
   ['bats', 'Bats'],
+];
+
+/** Big families of insects, for the Others key (taxa group of their family). */
+export const INSECT_GROUPS: [string, string][] = [
+  ['beetles', 'Beetles'], ['termites', 'Termites'], ['ants', 'Ants, bees & wasps'], ['butterflies', 'Butterflies & moths'],
+  ['dragonflies', 'Dragonflies'], ['grasshoppers', 'Grasshoppers & crickets'], ['mantids', 'Mantids'], ['bugs', 'Bugs & cicadas'], ['flies', 'Mosquitoes & flies'],
 ];
 
 /** Tab label and icon of each group. */
