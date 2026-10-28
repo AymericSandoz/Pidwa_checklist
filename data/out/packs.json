@@ -1,4 +1,2153 @@
 {
+  "images": {
+    "files": [
+      {
+        "path": "images/acanthocercus-atricollis.webp",
+        "bytes": 85476
+      },
+      {
+        "path": "images/acanthoplus-discoidalis.webp",
+        "bytes": 17476
+      },
+      {
+        "path": "images/accipiter-badius.webp",
+        "bytes": 20798
+      },
+      {
+        "path": "images/accipiter-minullus.webp",
+        "bytes": 31634
+      },
+      {
+        "path": "images/accipiter-tachiro.webp",
+        "bytes": 23192
+      },
+      {
+        "path": "images/acinonyx-jubatus.webp",
+        "bytes": 114138
+      },
+      {
+        "path": "images/acontias-plumbeus.webp",
+        "bytes": 64582
+      },
+      {
+        "path": "images/actophilornis-africanus.webp",
+        "bytes": 42788
+      },
+      {
+        "path": "images/adansonia-digitata.webp",
+        "bytes": 123246
+      },
+      {
+        "path": "images/adenium-multiflorum.webp",
+        "bytes": 37290
+      },
+      {
+        "path": "images/aepyceros-melampus.webp",
+        "bytes": 45238
+      },
+      {
+        "path": "images/afroedura-langi.webp",
+        "bytes": 107098
+      },
+      {
+        "path": "images/afrotyphlops-schlegelii.webp",
+        "bytes": 153960
+      },
+      {
+        "path": "images/agama-aculeata.webp",
+        "bytes": 126912
+      },
+      {
+        "path": "images/agricola-pallidus.webp",
+        "bytes": 59534
+      },
+      {
+        "path": "images/albizia-harveyi.webp",
+        "bytes": 49248
+      },
+      {
+        "path": "images/albizia-versicolor.webp",
+        "bytes": 121210
+      },
+      {
+        "path": "images/aloe-marlothii.webp",
+        "bytes": 118118
+      },
+      {
+        "path": "images/alopochen-aegyptiaca.webp",
+        "bytes": 142940
+      },
+      {
+        "path": "images/amadina-fasciata.webp",
+        "bytes": 20500
+      },
+      {
+        "path": "images/amblyodipsas-polylepis.webp",
+        "bytes": 44276
+      },
+      {
+        "path": "images/amblyomma-hebraeum.webp",
+        "bytes": 63070
+      },
+      {
+        "path": "images/amietia-delalandii.webp",
+        "bytes": 99658
+      },
+      {
+        "path": "images/anaphe-reticulata.webp",
+        "bytes": 59432
+      },
+      {
+        "path": "images/anaplectes-rubriceps.webp",
+        "bytes": 44934
+      },
+      {
+        "path": "images/anastomus-lamelligerus.webp",
+        "bytes": 43932
+      },
+      {
+        "path": "images/andropadus-importunus.webp",
+        "bytes": 92222
+      },
+      {
+        "path": "images/anhinga-rufa.webp",
+        "bytes": 55728
+      },
+      {
+        "path": "images/anomalipus-elephas.webp",
+        "bytes": 152566
+      },
+      {
+        "path": "images/anopheles-arabiensis.webp",
+        "bytes": 26226
+      },
+      {
+        "path": "images/anoplolepis-custodiens.webp",
+        "bytes": 10932
+      },
+      {
+        "path": "images/anthia-thoracica.webp",
+        "bytes": 57760
+      },
+      {
+        "path": "images/anthoscopus-caroli.webp",
+        "bytes": 43034
+      },
+      {
+        "path": "images/anthus-caffer.webp",
+        "bytes": 35088
+      },
+      {
+        "path": "images/anthus-cinnamomeus.webp",
+        "bytes": 95456
+      },
+      {
+        "path": "images/aonyx-capensis.webp",
+        "bytes": 57360
+      },
+      {
+        "path": "images/apalis-thoracica.webp",
+        "bytes": 43834
+      },
+      {
+        "path": "images/aparallactus-capensis.webp",
+        "bytes": 44508
+      },
+      {
+        "path": "images/aparallactus-lunulatus.webp",
+        "bytes": 97392
+      },
+      {
+        "path": "images/apis-mellifera.webp",
+        "bytes": 37946
+      },
+      {
+        "path": "images/aptosimum-lineare.webp",
+        "bytes": 47296
+      },
+      {
+        "path": "images/apus-affinis.webp",
+        "bytes": 13370
+      },
+      {
+        "path": "images/apus-barbatus.webp",
+        "bytes": 25596
+      },
+      {
+        "path": "images/apus-caffer.webp",
+        "bytes": 5988
+      },
+      {
+        "path": "images/aquila-rapax.webp",
+        "bytes": 30754
+      },
+      {
+        "path": "images/aquila-spilogaster.webp",
+        "bytes": 24164
+      },
+      {
+        "path": "images/ardea-alba.webp",
+        "bytes": 10140
+      },
+      {
+        "path": "images/ardea-cinerea.webp",
+        "bytes": 51756
+      },
+      {
+        "path": "images/ardea-goliath.webp",
+        "bytes": 22904
+      },
+      {
+        "path": "images/ardea-purpurea.webp",
+        "bytes": 54304
+      },
+      {
+        "path": "images/ardeola-ralloides.webp",
+        "bytes": 59586
+      },
+      {
+        "path": "images/argema-mimosae.webp",
+        "bytes": 29724
+      },
+      {
+        "path": "images/argiope-australis.webp",
+        "bytes": 55514
+      },
+      {
+        "path": "images/aristida-congesta.webp",
+        "bytes": 48180
+      },
+      {
+        "path": "images/aspidelaps-scutatus.webp",
+        "bytes": 119268
+      },
+      {
+        "path": "images/atilax-paludinosus.webp",
+        "bytes": 176302
+      },
+      {
+        "path": "images/atractaspis-bibronii.webp",
+        "bytes": 84070
+      },
+      {
+        "path": "images/augacephalus-junodi.webp",
+        "bytes": 175354
+      },
+      {
+        "path": "images/aviceda-cuculoides.webp",
+        "bytes": 74832
+      },
+      {
+        "path": "images/balanites-maughamii.webp",
+        "bytes": 40090
+      },
+      {
+        "path": "images/batis-molitor.webp",
+        "bytes": 37720
+      },
+      {
+        "path": "images/belenois-aurota.webp",
+        "bytes": 32428
+      },
+      {
+        "path": "images/berchemia-discolor.webp",
+        "bytes": 43464
+      },
+      {
+        "path": "images/berchemia-zeyheri.webp",
+        "bytes": 31164
+      },
+      {
+        "path": "images/bitis-arietans.webp",
+        "bytes": 115366
+      },
+      {
+        "path": "images/boaedon-capensis.webp",
+        "bytes": 76882
+      },
+      {
+        "path": "images/bolusanthus-speciosus.webp",
+        "bytes": 74762
+      },
+      {
+        "path": "images/boophone-disticha.webp",
+        "bytes": 160654
+      },
+      {
+        "path": "images/boscia-albitrunca.webp",
+        "bytes": 73470
+      },
+      {
+        "path": "images/bostrychia-hagedash.webp",
+        "bytes": 62002
+      },
+      {
+        "path": "images/bothriochloa-radicans.webp",
+        "bytes": 79658
+      },
+      {
+        "path": "images/breonadia-salicina.webp",
+        "bytes": 71872
+      },
+      {
+        "path": "images/breviceps-adspersus.webp",
+        "bytes": 80480
+      },
+      {
+        "path": "images/broadleysaurus-major.webp",
+        "bytes": 133738
+      },
+      {
+        "path": "images/bubalornis-niger.webp",
+        "bytes": 120298
+      },
+      {
+        "path": "images/bubo-africanus.webp",
+        "bytes": 56024
+      },
+      {
+        "path": "images/bubulcus-ibis.webp",
+        "bytes": 27326
+      },
+      {
+        "path": "images/bucorvus-leadbeateri.webp",
+        "bytes": 81080
+      },
+      {
+        "path": "images/buphagus-africanus.webp",
+        "bytes": 36938
+      },
+      {
+        "path": "images/buphagus-erythrorynchus.webp",
+        "bytes": 69202
+      },
+      {
+        "path": "images/burhinus-capensis.webp",
+        "bytes": 76036
+      },
+      {
+        "path": "images/burhinus-vermiculatus.webp",
+        "bytes": 67806
+      },
+      {
+        "path": "images/buteo-buteo.webp",
+        "bytes": 30370
+      },
+      {
+        "path": "images/butorides-striata.webp",
+        "bytes": 56762
+      },
+      {
+        "path": "images/bycanistes-bucinator.webp",
+        "bytes": 20102
+      },
+      {
+        "path": "images/calamonastes-stierlingi.webp",
+        "bytes": 57600
+      },
+      {
+        "path": "images/campephaga-flava.webp",
+        "bytes": 44312
+      },
+      {
+        "path": "images/campethera-abingoni.webp",
+        "bytes": 65604
+      },
+      {
+        "path": "images/campethera-bennettii.webp",
+        "bytes": 59934
+      },
+      {
+        "path": "images/campocolinus-coqui.webp",
+        "bytes": 100126
+      },
+      {
+        "path": "images/caprimulgus-europaeus.webp",
+        "bytes": 40764
+      },
+      {
+        "path": "images/caprimulgus-pectoralis.webp",
+        "bytes": 23314
+      },
+      {
+        "path": "images/caracal-caracal.webp",
+        "bytes": 114336
+      },
+      {
+        "path": "images/cassia-abbreviata.webp",
+        "bytes": 69092
+      },
+      {
+        "path": "images/catopsilia-florella.webp",
+        "bytes": 55452
+      },
+      {
+        "path": "images/causus-defilippii.webp",
+        "bytes": 115140
+      },
+      {
+        "path": "images/causus-rhombeatus.webp",
+        "bytes": 137690
+      },
+      {
+        "path": "images/ceblepyris-pectoralis.webp",
+        "bytes": 113378
+      },
+      {
+        "path": "images/cecropis-abyssinica.webp",
+        "bytes": 57914
+      },
+      {
+        "path": "images/celtis-africana.webp",
+        "bytes": 98392
+      },
+      {
+        "path": "images/cenchrus-ciliaris.webp",
+        "bytes": 63854
+      },
+      {
+        "path": "images/centropus-burchellii.webp",
+        "bytes": 32310
+      },
+      {
+        "path": "images/centropus-grillii.webp",
+        "bytes": 65172
+      },
+      {
+        "path": "images/ceratogyrus-darlingi.webp",
+        "bytes": 159804
+      },
+      {
+        "path": "images/ceratotheca-triloba.webp",
+        "bytes": 24614
+      },
+      {
+        "path": "images/ceratotherium-simum.webp",
+        "bytes": 81274
+      },
+      {
+        "path": "images/cercotrichas-leucophrys.webp",
+        "bytes": 59102
+      },
+      {
+        "path": "images/cercotrichas-quadrivirgata.webp",
+        "bytes": 33678
+      },
+      {
+        "path": "images/ceryle-rudis.webp",
+        "bytes": 33254
+      },
+      {
+        "path": "images/chalcomitra-senegalensis.webp",
+        "bytes": 29356
+      },
+      {
+        "path": "images/chamaeleo-dilepis.webp",
+        "bytes": 71422
+      },
+      {
+        "path": "images/charadrius-tricollaris.webp",
+        "bytes": 37732
+      },
+      {
+        "path": "images/charaxes-saturnus.webp",
+        "bytes": 63066
+      },
+      {
+        "path": "images/cheilomenes-lunata.webp",
+        "bytes": 56876
+      },
+      {
+        "path": "images/cheiracanthium-furculatum.webp",
+        "bytes": 36562
+      },
+      {
+        "path": "images/chiromantis-xerampelina.webp",
+        "bytes": 85386
+      },
+      {
+        "path": "images/chloris-virgata.webp",
+        "bytes": 35956
+      },
+      {
+        "path": "images/chlorocebus-pygerythrus.webp",
+        "bytes": 41202
+      },
+      {
+        "path": "images/chlorocichla-flaviventris.webp",
+        "bytes": 42016
+      },
+      {
+        "path": "images/chlorophoneus-sulfureopectus.webp",
+        "bytes": 57364
+      },
+      {
+        "path": "images/chloropicus-namaquus.webp",
+        "bytes": 56232
+      },
+      {
+        "path": "images/chondrodactylus-turneri.webp",
+        "bytes": 70924
+      },
+      {
+        "path": "images/chrysococcyx-caprius.webp",
+        "bytes": 65348
+      },
+      {
+        "path": "images/chrysococcyx-klaas.webp",
+        "bytes": 68880
+      },
+      {
+        "path": "images/ciconia-abdimii.webp",
+        "bytes": 37504
+      },
+      {
+        "path": "images/ciconia-ciconia.webp",
+        "bytes": 110322
+      },
+      {
+        "path": "images/ciconia-microscelis.webp",
+        "bytes": 41420
+      },
+      {
+        "path": "images/ciconia-nigra.webp",
+        "bytes": 44028
+      },
+      {
+        "path": "images/cinnyricinclus-leucogaster.webp",
+        "bytes": 37300
+      },
+      {
+        "path": "images/cinnyris-afer.webp",
+        "bytes": 47472
+      },
+      {
+        "path": "images/cinnyris-mariquensis.webp",
+        "bytes": 87650
+      },
+      {
+        "path": "images/cinnyris-talatala.webp",
+        "bytes": 32696
+      },
+      {
+        "path": "images/circaetus-cinereus.webp",
+        "bytes": 79932
+      },
+      {
+        "path": "images/circaetus-pectoralis.webp",
+        "bytes": 84484
+      },
+      {
+        "path": "images/cisticola-chiniana.webp",
+        "bytes": 21606
+      },
+      {
+        "path": "images/cisticola-erythrops.webp",
+        "bytes": 52618
+      },
+      {
+        "path": "images/cisticola-juncidis.webp",
+        "bytes": 29132
+      },
+      {
+        "path": "images/cisticola-natalensis.webp",
+        "bytes": 25816
+      },
+      {
+        "path": "images/civettictis-civetta.webp",
+        "bytes": 115906
+      },
+      {
+        "path": "images/clamator-jacobinus.webp",
+        "bytes": 47252
+      },
+      {
+        "path": "images/clamator-levaillantii.webp",
+        "bytes": 82616
+      },
+      {
+        "path": "images/clanga-pomarina.webp",
+        "bytes": 71586
+      },
+      {
+        "path": "images/colius-striatus.webp",
+        "bytes": 57028
+      },
+      {
+        "path": "images/colophospermum-mopane.webp",
+        "bytes": 50388
+      },
+      {
+        "path": "images/colotis-annae.webp",
+        "bytes": 35848
+      },
+      {
+        "path": "images/columba-guinea.webp",
+        "bytes": 46090
+      },
+      {
+        "path": "images/combretum-apiculatum.webp",
+        "bytes": 59760
+      },
+      {
+        "path": "images/combretum-collinum.webp",
+        "bytes": 97634
+      },
+      {
+        "path": "images/combretum-erythrophyllum.webp",
+        "bytes": 29256
+      },
+      {
+        "path": "images/combretum-hereroense.webp",
+        "bytes": 51366
+      },
+      {
+        "path": "images/combretum-imberbe.webp",
+        "bytes": 65536
+      },
+      {
+        "path": "images/combretum-molle.webp",
+        "bytes": 68930
+      },
+      {
+        "path": "images/combretum-zeyheri.webp",
+        "bytes": 64834
+      },
+      {
+        "path": "images/commiphora-mollis.webp",
+        "bytes": 39798
+      },
+      {
+        "path": "images/commiphora-pyracanthoides.webp",
+        "bytes": 48970
+      },
+      {
+        "path": "images/connochaetes-taurinus.webp",
+        "bytes": 111408
+      },
+      {
+        "path": "images/coracias-caudatus.webp",
+        "bytes": 35082
+      },
+      {
+        "path": "images/coracias-garrulus.webp",
+        "bytes": 84392
+      },
+      {
+        "path": "images/coracias-naevius.webp",
+        "bytes": 43832
+      },
+      {
+        "path": "images/cordylus-jonesii.webp",
+        "bytes": 83576
+      },
+      {
+        "path": "images/corvus-albus.webp",
+        "bytes": 21078
+      },
+      {
+        "path": "images/corythornis-cristatus.webp",
+        "bytes": 33732
+      },
+      {
+        "path": "images/cossypha-heuglini.webp",
+        "bytes": 25498
+      },
+      {
+        "path": "images/creatophora-cinerea.webp",
+        "bytes": 14702
+      },
+      {
+        "path": "images/crex-egregia.webp",
+        "bytes": 49772
+      },
+      {
+        "path": "images/crinifer-concolor.webp",
+        "bytes": 33130
+      },
+      {
+        "path": "images/crithagra-mozambica.webp",
+        "bytes": 17478
+      },
+      {
+        "path": "images/crocodylus-niloticus.webp",
+        "bytes": 98376
+      },
+      {
+        "path": "images/crocothemis-erythraea.webp",
+        "bytes": 30604
+      },
+      {
+        "path": "images/crocuta-crocuta.webp",
+        "bytes": 75406
+      },
+      {
+        "path": "images/crotaphopeltis-hotamboeia.webp",
+        "bytes": 100498
+      },
+      {
+        "path": "images/croton-megalobotrys.webp",
+        "bytes": 62856
+      },
+      {
+        "path": "images/cuculus-clamosus.webp",
+        "bytes": 36850
+      },
+      {
+        "path": "images/cuculus-gularis.webp",
+        "bytes": 22700
+      },
+      {
+        "path": "images/cuculus-solitarius.webp",
+        "bytes": 49912
+      },
+      {
+        "path": "images/cypsiurus-parvus.webp",
+        "bytes": 53334
+      },
+      {
+        "path": "images/dalbergia-melanoxylon.webp",
+        "bytes": 17760
+      },
+      {
+        "path": "images/damaliscus-lunatus.webp",
+        "bytes": 33024
+      },
+      {
+        "path": "images/damon-variegatus.webp",
+        "bytes": 98802
+      },
+      {
+        "path": "images/danaus-chrysippus.webp",
+        "bytes": 52518
+      },
+      {
+        "path": "images/dasypeltis-scabra.webp",
+        "bytes": 125646
+      },
+      {
+        "path": "images/dendroaspis-polylepis.webp",
+        "bytes": 27386
+      },
+      {
+        "path": "images/dendrocygna-viduata.webp",
+        "bytes": 57192
+      },
+      {
+        "path": "images/dendropicos-fuscescens.webp",
+        "bytes": 64858
+      },
+      {
+        "path": "images/dessonornis-humeralis.webp",
+        "bytes": 29974
+      },
+      {
+        "path": "images/dicerocaryum-senecioides.webp",
+        "bytes": 198380
+      },
+      {
+        "path": "images/diceros-bicornis.webp",
+        "bytes": 82014
+      },
+      {
+        "path": "images/dichrostachys-cinerea.webp",
+        "bytes": 49472
+      },
+      {
+        "path": "images/dicronorhina-derbyana.webp",
+        "bytes": 65920
+      },
+      {
+        "path": "images/dicrurus-adsimilis.webp",
+        "bytes": 23896
+      },
+      {
+        "path": "images/digitaria-eriantha.webp",
+        "bytes": 24876
+      },
+      {
+        "path": "images/diospyros-mespiliformis.webp",
+        "bytes": 80088
+      },
+      {
+        "path": "images/dipsadoboa-aulica.webp",
+        "bytes": 37940
+      },
+      {
+        "path": "images/dispholidus-typus.webp",
+        "bytes": 29440
+      },
+      {
+        "path": "images/dolichomutilla-sycorax.webp",
+        "bytes": 91806
+      },
+      {
+        "path": "images/dombeya-rotundifolia.webp",
+        "bytes": 66832
+      },
+      {
+        "path": "images/dryoscopus-cubla.webp",
+        "bytes": 19268
+      },
+      {
+        "path": "images/ectrichodia-crux.webp",
+        "bytes": 121430
+      },
+      {
+        "path": "images/egretta-garzetta.webp",
+        "bytes": 60324
+      },
+      {
+        "path": "images/elaeodendron-transvaalense.webp",
+        "bytes": 56324
+      },
+      {
+        "path": "images/elanus-caeruleus.webp",
+        "bytes": 18392
+      },
+      {
+        "path": "images/elapsoidea-boulengeri.webp",
+        "bytes": 44558
+      },
+      {
+        "path": "images/emberiza-tahapisi.webp",
+        "bytes": 92458
+      },
+      {
+        "path": "images/enneapogon-cenchroides.webp",
+        "bytes": 53430
+      },
+      {
+        "path": "images/ephippiorhynchus-senegalensis.webp",
+        "bytes": 94942
+      },
+      {
+        "path": "images/epomophorus-wahlbergi.webp",
+        "bytes": 56626
+      },
+      {
+        "path": "images/equus-quagga.webp",
+        "bytes": 96808
+      },
+      {
+        "path": "images/eragrostis-rigidior.webp",
+        "bytes": 79528
+      },
+      {
+        "path": "images/erythrina-lysistemon.webp",
+        "bytes": 32966
+      },
+      {
+        "path": "images/estrilda-astrild.webp",
+        "bytes": 51338
+      },
+      {
+        "path": "images/euclea-divinorum.webp",
+        "bytes": 81390
+      },
+      {
+        "path": "images/euphorbia-cooperi.webp",
+        "bytes": 170794
+      },
+      {
+        "path": "images/euphorbia-ingens.webp",
+        "bytes": 97946
+      },
+      {
+        "path": "images/eurocephalus-anguitimens.webp",
+        "bytes": 78242
+      },
+      {
+        "path": "images/eurystomus-glaucurus.webp",
+        "bytes": 52366
+      },
+      {
+        "path": "images/falco-amurensis.webp",
+        "bytes": 11120
+      },
+      {
+        "path": "images/falco-peregrinus.webp",
+        "bytes": 32938
+      },
+      {
+        "path": "images/falco-subbuteo.webp",
+        "bytes": 12702
+      },
+      {
+        "path": "images/felis-lybica.webp",
+        "bytes": 71116
+      },
+      {
+        "path": "images/ficus-abutilifolia.webp",
+        "bytes": 190130
+      },
+      {
+        "path": "images/ficus-burkei.webp",
+        "bytes": 102792
+      },
+      {
+        "path": "images/ficus-sur.webp",
+        "bytes": 114844
+      },
+      {
+        "path": "images/ficus-sycomorus.webp",
+        "bytes": 110194
+      },
+      {
+        "path": "images/fraseria-caerulescens.webp",
+        "bytes": 39276
+      },
+      {
+        "path": "images/fraseria-plumbea.webp",
+        "bytes": 34302
+      },
+      {
+        "path": "images/galago-moholi.webp",
+        "bytes": 43816
+      },
+      {
+        "path": "images/gallinula-chloropus.webp",
+        "bytes": 42396
+      },
+      {
+        "path": "images/gallirex-porphyreolophus.webp",
+        "bytes": 43386
+      },
+      {
+        "path": "images/gardenia-volkensii.webp",
+        "bytes": 62180
+      },
+      {
+        "path": "images/gasteracantha-sanguinolenta.webp",
+        "bytes": 29682
+      },
+      {
+        "path": "images/genetta-genetta.webp",
+        "bytes": 103418
+      },
+      {
+        "path": "images/genetta-tigrina.webp",
+        "bytes": 226868
+      },
+      {
+        "path": "images/gerrhosaurus-flavigularis.webp",
+        "bytes": 32194
+      },
+      {
+        "path": "images/giraffa-giraffa.webp",
+        "bytes": 35520
+      },
+      {
+        "path": "images/glaucidium-capense.webp",
+        "bytes": 57168
+      },
+      {
+        "path": "images/glaucidium-perlatum.webp",
+        "bytes": 49078
+      },
+      {
+        "path": "images/gloriosa-superba.webp",
+        "bytes": 22134
+      },
+      {
+        "path": "images/gonimbrasia-belina.webp",
+        "bytes": 60580
+      },
+      {
+        "path": "images/gracililima-nyassae.webp",
+        "bytes": 99022
+      },
+      {
+        "path": "images/grewia-bicolor.webp",
+        "bytes": 61132
+      },
+      {
+        "path": "images/grewia-flavescens.webp",
+        "bytes": 78080
+      },
+      {
+        "path": "images/gymnosporia-senegalensis.webp",
+        "bytes": 53844
+      },
+      {
+        "path": "images/gyps-africanus.webp",
+        "bytes": 24628
+      },
+      {
+        "path": "images/gyps-coprotheres.webp",
+        "bytes": 24152
+      },
+      {
+        "path": "images/hadogenes-troglodytes.webp",
+        "bytes": 137326
+      },
+      {
+        "path": "images/halcyon-albiventris.webp",
+        "bytes": 40922
+      },
+      {
+        "path": "images/halcyon-chelicuti.webp",
+        "bytes": 35190
+      },
+      {
+        "path": "images/halcyon-leucocephala.webp",
+        "bytes": 25632
+      },
+      {
+        "path": "images/halcyon-senegalensis.webp",
+        "bytes": 42698
+      },
+      {
+        "path": "images/haliaeetus-vocifer.webp",
+        "bytes": 13346
+      },
+      {
+        "path": "images/hamanumida-daedalus.webp",
+        "bytes": 110042
+      },
+      {
+        "path": "images/hedydipna-collaris.webp",
+        "bytes": 41682
+      },
+      {
+        "path": "images/heliobolus-lugubris.webp",
+        "bytes": 108590
+      },
+      {
+        "path": "images/helogale-parvula.webp",
+        "bytes": 62312
+      },
+      {
+        "path": "images/hemidactylus-mabouia.webp",
+        "bytes": 56826
+      },
+      {
+        "path": "images/hemirhagerrhis-nototaenia.webp",
+        "bytes": 222518
+      },
+      {
+        "path": "images/hemisus-marmoratus.webp",
+        "bytes": 57398
+      },
+      {
+        "path": "images/herpestes-sanguineus.webp",
+        "bytes": 54830
+      },
+      {
+        "path": "images/heteropogon-contortus.webp",
+        "bytes": 125308
+      },
+      {
+        "path": "images/hieraaetus-wahlbergi.webp",
+        "bytes": 19996
+      },
+      {
+        "path": "images/hippopotamus-amphibius.webp",
+        "bytes": 56064
+      },
+      {
+        "path": "images/hippotragus-niger.webp",
+        "bytes": 64788
+      },
+      {
+        "path": "images/hirundo-rustica.webp",
+        "bytes": 11154
+      },
+      {
+        "path": "images/hodotermes-mossambicus.webp",
+        "bytes": 112634
+      },
+      {
+        "path": "images/homopholis-wahlbergii.webp",
+        "bytes": 78988
+      },
+      {
+        "path": "images/hycleus-oculatus.webp",
+        "bytes": 36664
+      },
+      {
+        "path": "images/hyperolius-marmoratus.webp",
+        "bytes": 38690
+      },
+      {
+        "path": "images/hyperthelia-dissoluta.webp",
+        "bytes": 71288
+      },
+      {
+        "path": "images/hystrix-africaeaustralis.webp",
+        "bytes": 160782
+      },
+      {
+        "path": "images/ichneumia-albicauda.webp",
+        "bytes": 150736
+      },
+      {
+        "path": "images/ictinogomphus-ferox.webp",
+        "bytes": 20252
+      },
+      {
+        "path": "images/indicator-indicator.webp",
+        "bytes": 121818
+      },
+      {
+        "path": "images/ispidina-picta.webp",
+        "bytes": 38142
+      },
+      {
+        "path": "images/ixobrychus-sturmii.webp",
+        "bytes": 57612
+      },
+      {
+        "path": "images/junonia-oenone.webp",
+        "bytes": 97120
+      },
+      {
+        "path": "images/justicia-flava.webp",
+        "bytes": 36266
+      },
+      {
+        "path": "images/kassina-senegalensis.webp",
+        "bytes": 65526
+      },
+      {
+        "path": "images/kaupifalco-monogrammicus.webp",
+        "bytes": 69362
+      },
+      {
+        "path": "images/ketupa-lactea.webp",
+        "bytes": 35708
+      },
+      {
+        "path": "images/kheper-nigroaeneus.webp",
+        "bytes": 122332
+      },
+      {
+        "path": "images/kigelia-africana.webp",
+        "bytes": 39156
+      },
+      {
+        "path": "images/kinixys-spekii.webp",
+        "bytes": 92874
+      },
+      {
+        "path": "images/kobus-ellipsiprymnus.webp",
+        "bytes": 70252
+      },
+      {
+        "path": "images/kyphocarpa-angustifolia.webp",
+        "bytes": 263884
+      },
+      {
+        "path": "images/lagonosticta-rhodopareia.webp",
+        "bytes": 25498
+      },
+      {
+        "path": "images/lagonosticta-rubricata.webp",
+        "bytes": 34718
+      },
+      {
+        "path": "images/lagonosticta-senegala.webp",
+        "bytes": 18836
+      },
+      {
+        "path": "images/lamprotornis-chalybaeus.webp",
+        "bytes": 45754
+      },
+      {
+        "path": "images/lamprotornis-nitens.webp",
+        "bytes": 43526
+      },
+      {
+        "path": "images/laniarius-ferrugineus.webp",
+        "bytes": 45132
+      },
+      {
+        "path": "images/lanius-collurio.webp",
+        "bytes": 19798
+      },
+      {
+        "path": "images/lanius-melanoleucus.webp",
+        "bytes": 13226
+      },
+      {
+        "path": "images/lanius-minor.webp",
+        "bytes": 20324
+      },
+      {
+        "path": "images/lannea-schweinfurthii.webp",
+        "bytes": 40850
+      },
+      {
+        "path": "images/lantana-camara.webp",
+        "bytes": 117738
+      },
+      {
+        "path": "images/latrodectus-geometricus.webp",
+        "bytes": 20904
+      },
+      {
+        "path": "images/latrodectus-renivulvatus.webp",
+        "bytes": 35286
+      },
+      {
+        "path": "images/leptailurus-serval.webp",
+        "bytes": 99508
+      },
+      {
+        "path": "images/leptopelis-mossambicus.webp",
+        "bytes": 64854
+      },
+      {
+        "path": "images/leptoptilos-crumenifer.webp",
+        "bytes": 113100
+      },
+      {
+        "path": "images/leptotes-pirithous.webp",
+        "bytes": 50886
+      },
+      {
+        "path": "images/leptotyphlops-incognitus.webp",
+        "bytes": 25094
+      },
+      {
+        "path": "images/lepus-saxatilis.webp",
+        "bytes": 100132
+      },
+      {
+        "path": "images/limaformosa-capensis.webp",
+        "bytes": 97276
+      },
+      {
+        "path": "images/lissotis-melanogaster.webp",
+        "bytes": 85446
+      },
+      {
+        "path": "images/locustella-fluviatilis.webp",
+        "bytes": 30668
+      },
+      {
+        "path": "images/lophoceros-nasutus.webp",
+        "bytes": 23738
+      },
+      {
+        "path": "images/lophotis-ruficrista.webp",
+        "bytes": 71224
+      },
+      {
+        "path": "images/loxodonta-africana.webp",
+        "bytes": 132614
+      },
+      {
+        "path": "images/loxosceles-simillima.webp",
+        "bytes": 70766
+      },
+      {
+        "path": "images/lupulella-adusta.webp",
+        "bytes": 41892
+      },
+      {
+        "path": "images/lupulella-mesomelas.webp",
+        "bytes": 96836
+      },
+      {
+        "path": "images/lybius-torquatus.webp",
+        "bytes": 55636
+      },
+      {
+        "path": "images/lycaon-pictus.webp",
+        "bytes": 93984
+      },
+      {
+        "path": "images/lycodonomorphus-rufulus.webp",
+        "bytes": 62834
+      },
+      {
+        "path": "images/lycophidion-capense.webp",
+        "bytes": 47088
+      },
+      {
+        "path": "images/lycophidion-variegatum.webp",
+        "bytes": 107488
+      },
+      {
+        "path": "images/lygodactylus-capensis.webp",
+        "bytes": 63194
+      },
+      {
+        "path": "images/macronyx-croceus.webp",
+        "bytes": 86432
+      },
+      {
+        "path": "images/macrotermes-natalensis.webp",
+        "bytes": 160796
+      },
+      {
+        "path": "images/malaconotus-blanchoti.webp",
+        "bytes": 57012
+      },
+      {
+        "path": "images/matobosaurus-validus.webp",
+        "bytes": 59240
+      },
+      {
+        "path": "images/megaceryle-maxima.webp",
+        "bytes": 53946
+      },
+      {
+        "path": "images/megaponera-analis.webp",
+        "bytes": 13406
+      },
+      {
+        "path": "images/megathyrsus-maximus.webp",
+        "bytes": 60488
+      },
+      {
+        "path": "images/melaenornis-pammelaina.webp",
+        "bytes": 22422
+      },
+      {
+        "path": "images/melaniparus-niger.webp",
+        "bytes": 51524
+      },
+      {
+        "path": "images/melierax-metabates.webp",
+        "bytes": 48180
+      },
+      {
+        "path": "images/melinis-repens.webp",
+        "bytes": 54944
+      },
+      {
+        "path": "images/mellivora-capensis.webp",
+        "bytes": 63380
+      },
+      {
+        "path": "images/merops-apiaster.webp",
+        "bytes": 27484
+      },
+      {
+        "path": "images/merops-bullockoides.webp",
+        "bytes": 30460
+      },
+      {
+        "path": "images/merops-pusillus.webp",
+        "bytes": 42500
+      },
+      {
+        "path": "images/microcarbo-africanus.webp",
+        "bytes": 28466
+      },
+      {
+        "path": "images/micronisus-gabar.webp",
+        "bytes": 49632
+      },
+      {
+        "path": "images/milvus-aegyptius.webp",
+        "bytes": 27670
+      },
+      {
+        "path": "images/mochlus-sundevallii.webp",
+        "bytes": 61106
+      },
+      {
+        "path": "images/motacilla-aguimp.webp",
+        "bytes": 22298
+      },
+      {
+        "path": "images/mungos-mungo.webp",
+        "bytes": 143360
+      },
+      {
+        "path": "images/muscicapa-striata.webp",
+        "bytes": 24404
+      },
+      {
+        "path": "images/mycteria-ibis.webp",
+        "bytes": 20118
+      },
+      {
+        "path": "images/myriopholis-longicauda.webp",
+        "bytes": 73936
+      },
+      {
+        "path": "images/naja-annulifera.webp",
+        "bytes": 26144
+      },
+      {
+        "path": "images/naja-mossambica.webp",
+        "bytes": 133488
+      },
+      {
+        "path": "images/necrosyrtes-monachus.webp",
+        "bytes": 89282
+      },
+      {
+        "path": "images/netta-erythrophthalma.webp",
+        "bytes": 37840
+      },
+      {
+        "path": "images/nilaus-afer.webp",
+        "bytes": 65728
+      },
+      {
+        "path": "images/numida-meleagris.webp",
+        "bytes": 139064
+      },
+      {
+        "path": "images/opisthacanthus-asper.webp",
+        "bytes": 99802
+      },
+      {
+        "path": "images/opistophthalmus-glabrifrons.webp",
+        "bytes": 113560
+      },
+      {
+        "path": "images/oreotragus-oreotragus.webp",
+        "bytes": 156362
+      },
+      {
+        "path": "images/oriolus-larvatus.webp",
+        "bytes": 20344
+      },
+      {
+        "path": "images/oriolus-oriolus.webp",
+        "bytes": 50474
+      },
+      {
+        "path": "images/ortygornis-sephaena.webp",
+        "bytes": 139172
+      },
+      {
+        "path": "images/orycteropus-afer.webp",
+        "bytes": 115786
+      },
+      {
+        "path": "images/otolemur-crassicaudatus.webp",
+        "bytes": 53484
+      },
+      {
+        "path": "images/otus-senegalensis.webp",
+        "bytes": 69582
+      },
+      {
+        "path": "images/oxypleura-quadraticollis.webp",
+        "bytes": 141822
+      },
+      {
+        "path": "images/pachydactylus-punctatus.webp",
+        "bytes": 63642
+      },
+      {
+        "path": "images/palystes-superciliosus.webp",
+        "bytes": 86274
+      },
+      {
+        "path": "images/panaspis-wahlbergii.webp",
+        "bytes": 80440
+      },
+      {
+        "path": "images/pantala-flavescens.webp",
+        "bytes": 16116
+      },
+      {
+        "path": "images/panthera-leo.webp",
+        "bytes": 92346
+      },
+      {
+        "path": "images/panthera-pardus.webp",
+        "bytes": 100550
+      },
+      {
+        "path": "images/papilio-demodocus.webp",
+        "bytes": 48100
+      },
+      {
+        "path": "images/papio-ursinus.webp",
+        "bytes": 75246
+      },
+      {
+        "path": "images/pappea-capensis.webp",
+        "bytes": 56028
+      },
+      {
+        "path": "images/parabuthus-mossambicensis.webp",
+        "bytes": 55408
+      },
+      {
+        "path": "images/parabuthus-transvaalicus.webp",
+        "bytes": 138938
+      },
+      {
+        "path": "images/parahyaena-brunnea.webp",
+        "bytes": 42630
+      },
+      {
+        "path": "images/paraxerus-cepapi.webp",
+        "bytes": 92382
+      },
+      {
+        "path": "images/passer-diffusus.webp",
+        "bytes": 38386
+      },
+      {
+        "path": "images/passer-domesticus.webp",
+        "bytes": 21674
+      },
+      {
+        "path": "images/pelomedusa-subrufa.webp",
+        "bytes": 83014
+      },
+      {
+        "path": "images/peltophorum-africanum.webp",
+        "bytes": 76786
+      },
+      {
+        "path": "images/pelusios-sinuatus.webp",
+        "bytes": 86876
+      },
+      {
+        "path": "images/perotis-patens.webp",
+        "bytes": 84822
+      },
+      {
+        "path": "images/phacochoerus-africanus.webp",
+        "bytes": 148504
+      },
+      {
+        "path": "images/philenoptera-violacea.webp",
+        "bytes": 52622
+      },
+      {
+        "path": "images/philothamnus-hoplogaster.webp",
+        "bytes": 119710
+      },
+      {
+        "path": "images/philothamnus-semivariegatus.webp",
+        "bytes": 163226
+      },
+      {
+        "path": "images/phoeniculus-purpureus.webp",
+        "bytes": 113600
+      },
+      {
+        "path": "images/phoenix-reclinata.webp",
+        "bytes": 100940
+      },
+      {
+        "path": "images/phragmites-mauritianus.webp",
+        "bytes": 65310
+      },
+      {
+        "path": "images/phrynobatrachus-natalensis.webp",
+        "bytes": 55236
+      },
+      {
+        "path": "images/phrynomantis-bifasciatus.webp",
+        "bytes": 76928
+      },
+      {
+        "path": "images/phylloscopus-trochilus.webp",
+        "bytes": 29056
+      },
+      {
+        "path": "images/phymateus-baccatus.webp",
+        "bytes": 46570
+      },
+      {
+        "path": "images/platalea-alba.webp",
+        "bytes": 30804
+      },
+      {
+        "path": "images/platycypha-caligata.webp",
+        "bytes": 45122
+      },
+      {
+        "path": "images/platysaurus-intermedius.webp",
+        "bytes": 160854
+      },
+      {
+        "path": "images/plectropterus-gambensis.webp",
+        "bytes": 55000
+      },
+      {
+        "path": "images/ploceus-cucullatus.webp",
+        "bytes": 34304
+      },
+      {
+        "path": "images/ploceus-intermedius.webp",
+        "bytes": 51398
+      },
+      {
+        "path": "images/ploceus-velatus.webp",
+        "bytes": 27764
+      },
+      {
+        "path": "images/pogonarthria-squarrosa.webp",
+        "bytes": 66834
+      },
+      {
+        "path": "images/pogoniulus-chrysoconus.webp",
+        "bytes": 23864
+      },
+      {
+        "path": "images/poicephalus-cryptoxanthus.webp",
+        "bytes": 35598
+      },
+      {
+        "path": "images/polemaetus-bellicosus.webp",
+        "bytes": 91572
+      },
+      {
+        "path": "images/polyboroides-typus.webp",
+        "bytes": 18552
+      },
+      {
+        "path": "images/popa-spurca.webp",
+        "bytes": 19892
+      },
+      {
+        "path": "images/potamochoerus-larvatus.webp",
+        "bytes": 95918
+      },
+      {
+        "path": "images/poyntonophrynus-fenoulheti.webp",
+        "bytes": 80150
+      },
+      {
+        "path": "images/prinia-subflava.webp",
+        "bytes": 25654
+      },
+      {
+        "path": "images/prionops-plumatus.webp",
+        "bytes": 27344
+      },
+      {
+        "path": "images/prionops-retzii.webp",
+        "bytes": 42366
+      },
+      {
+        "path": "images/procavia-capensis.webp",
+        "bytes": 129204
+      },
+      {
+        "path": "images/prosymna-stuhlmanni.webp",
+        "bytes": 127614
+      },
+      {
+        "path": "images/proteles-cristatus.webp",
+        "bytes": 96042
+      },
+      {
+        "path": "images/psammophis-brevirostris.webp",
+        "bytes": 152414
+      },
+      {
+        "path": "images/psammophis-mossambicus.webp",
+        "bytes": 86692
+      },
+      {
+        "path": "images/psammophis-subtaeniatus.webp",
+        "bytes": 86256
+      },
+      {
+        "path": "images/pternistis-natalensis.webp",
+        "bytes": 114962
+      },
+      {
+        "path": "images/pternistis-swainsonii.webp",
+        "bytes": 95602
+      },
+      {
+        "path": "images/pterocarpus-angolensis.webp",
+        "bytes": 39972
+      },
+      {
+        "path": "images/pterocarpus-rotundifolius.webp",
+        "bytes": 143664
+      },
+      {
+        "path": "images/ptilopsis-granti.webp",
+        "bytes": 43308
+      },
+      {
+        "path": "images/ptychadena-anchietae.webp",
+        "bytes": 67402
+      },
+      {
+        "path": "images/pycnonotus-tricolor.webp",
+        "bytes": 30424
+      },
+      {
+        "path": "images/python-natalensis.webp",
+        "bytes": 125364
+      },
+      {
+        "path": "images/pytilia-melba.webp",
+        "bytes": 47592
+      },
+      {
+        "path": "images/pyxicephalus-edulis.webp",
+        "bytes": 31608
+      },
+      {
+        "path": "images/quelea-quelea.webp",
+        "bytes": 45784
+      },
+      {
+        "path": "images/raphicerus-campestris.webp",
+        "bytes": 50664
+      },
+      {
+        "path": "images/raphicerus-sharpei.webp",
+        "bytes": 67150
+      },
+      {
+        "path": "images/redunca-arundinum.webp",
+        "bytes": 32730
+      },
+      {
+        "path": "images/rhamphiophis-rostratus.webp",
+        "bytes": 160390
+      },
+      {
+        "path": "images/rhinopomastus-cyanomelas.webp",
+        "bytes": 71474
+      },
+      {
+        "path": "images/rhinoptilus-chalcopterus.webp",
+        "bytes": 53700
+      },
+      {
+        "path": "images/riparia-paludicola.webp",
+        "bytes": 19966
+      },
+      {
+        "path": "images/rostratula-benghalensis.webp",
+        "bytes": 100430
+      },
+      {
+        "path": "images/sansevieria-hyacinthoides.webp",
+        "bytes": 105760
+      },
+      {
+        "path": "images/sarkidiornis-melanotos.webp",
+        "bytes": 61406
+      },
+      {
+        "path": "images/saxicola-torquatus.webp",
+        "bytes": 15618
+      },
+      {
+        "path": "images/scadoxus-multiflorus.webp",
+        "bytes": 97768
+      },
+      {
+        "path": "images/schismaderma-carens.webp",
+        "bytes": 135850
+      },
+      {
+        "path": "images/schmidtia-pappophoroides.webp",
+        "bytes": 17456
+      },
+      {
+        "path": "images/schotia-brachypetala.webp",
+        "bytes": 85976
+      },
+      {
+        "path": "images/sclerocarya-birrea.webp",
+        "bytes": 117746
+      },
+      {
+        "path": "images/sclerophrys-garmani.webp",
+        "bytes": 81378
+      },
+      {
+        "path": "images/sclerophrys-gutturalis.webp",
+        "bytes": 62840
+      },
+      {
+        "path": "images/scopus-umbretta.webp",
+        "bytes": 61692
+      },
+      {
+        "path": "images/securidaca-longepedunculata.webp",
+        "bytes": 46218
+      },
+      {
+        "path": "images/senegalia-burkei.webp",
+        "bytes": 221436
+      },
+      {
+        "path": "images/senegalia-erubescens.webp",
+        "bytes": 47242
+      },
+      {
+        "path": "images/senegalia-galpinii.webp",
+        "bytes": 247278
+      },
+      {
+        "path": "images/senegalia-nigrescens.webp",
+        "bytes": 55342
+      },
+      {
+        "path": "images/senegalia-senegal.webp",
+        "bytes": 97620
+      },
+      {
+        "path": "images/smutsia-temminckii.webp",
+        "bytes": 103182
+      },
+      {
+        "path": "images/sphingomorpha-chlorea.webp",
+        "bytes": 189866
+      },
+      {
+        "path": "images/sphodromantis-gastrica.webp",
+        "bytes": 32542
+      },
+      {
+        "path": "images/spilopelia-senegalensis.webp",
+        "bytes": 39908
+      },
+      {
+        "path": "images/spirostachys-africana.webp",
+        "bytes": 62430
+      },
+      {
+        "path": "images/stegodyphus-dumicola.webp",
+        "bytes": 116970
+      },
+      {
+        "path": "images/sterculia-rogersii.webp",
+        "bytes": 63444
+      },
+      {
+        "path": "images/stigmochelys-pardalis.webp",
+        "bytes": 133740
+      },
+      {
+        "path": "images/streptopelia-capicola.webp",
+        "bytes": 15260
+      },
+      {
+        "path": "images/streptopelia-semitorquata.webp",
+        "bytes": 40766
+      },
+      {
+        "path": "images/strychnos-madagascariensis.webp",
+        "bytes": 92410
+      },
+      {
+        "path": "images/strychnos-spinosa.webp",
+        "bytes": 41952
+      },
+      {
+        "path": "images/sylvicapra-grimmia.webp",
+        "bytes": 51466
+      },
+      {
+        "path": "images/sylvietta-rufescens.webp",
+        "bytes": 20366
+      },
+      {
+        "path": "images/syncerus-caffer.webp",
+        "bytes": 135200
+      },
+      {
+        "path": "images/tabernaemontana-elegans.webp",
+        "bytes": 49912
+      },
+      {
+        "path": "images/tachybaptus-ruficollis.webp",
+        "bytes": 58212
+      },
+      {
+        "path": "images/tachymarptis-melba.webp",
+        "bytes": 10408
+      },
+      {
+        "path": "images/taphozous-mauritianus.webp",
+        "bytes": 89088
+      },
+      {
+        "path": "images/taurotragus-oryx.webp",
+        "bytes": 78264
+      },
+      {
+        "path": "images/tchagra-australis.webp",
+        "bytes": 62200
+      },
+      {
+        "path": "images/tchagra-senegalus.webp",
+        "bytes": 54866
+      },
+      {
+        "path": "images/telchinia-serena.webp",
+        "bytes": 36420
+      },
+      {
+        "path": "images/telescopus-semiannulatus.webp",
+        "bytes": 50166
+      },
+      {
+        "path": "images/telophorus-viridis.webp",
+        "bytes": 61168
+      },
+      {
+        "path": "images/terathopius-ecaudatus.webp",
+        "bytes": 73710
+      },
+      {
+        "path": "images/terminalia-prunioides.webp",
+        "bytes": 73542
+      },
+      {
+        "path": "images/terminalia-sericea.webp",
+        "bytes": 46872
+      },
+      {
+        "path": "images/terpsiphone-viridis.webp",
+        "bytes": 45140
+      },
+      {
+        "path": "images/thamnolaea-cinnamomeiventris.webp",
+        "bytes": 28068
+      },
+      {
+        "path": "images/thelotornis-capensis.webp",
+        "bytes": 27716
+      },
+      {
+        "path": "images/themeda-triandra.webp",
+        "bytes": 47232
+      },
+      {
+        "path": "images/thryonomys-swinderianus.webp",
+        "bytes": 164820
+      },
+      {
+        "path": "images/tithoes-confinis.webp",
+        "bytes": 64878
+      },
+      {
+        "path": "images/tockus-leucomelas.webp",
+        "bytes": 80464
+      },
+      {
+        "path": "images/tockus-rufirostris.webp",
+        "bytes": 74562
+      },
+      {
+        "path": "images/tomopterna-marmorata.webp",
+        "bytes": 104602
+      },
+      {
+        "path": "images/torgos-tracheliotos.webp",
+        "bytes": 69300
+      },
+      {
+        "path": "images/trachylepis-margaritifer.webp",
+        "bytes": 131252
+      },
+      {
+        "path": "images/trachylepis-striata.webp",
+        "bytes": 86376
+      },
+      {
+        "path": "images/trachylepis-varia.webp",
+        "bytes": 152552
+      },
+      {
+        "path": "images/trachyphonus-vaillantii.webp",
+        "bytes": 52988
+      },
+      {
+        "path": "images/tragelaphus-angasii.webp",
+        "bytes": 111488
+      },
+      {
+        "path": "images/tragelaphus-strepsiceros.webp",
+        "bytes": 67004
+      },
+      {
+        "path": "images/tragelaphus-sylvaticus.webp",
+        "bytes": 140058
+      },
+      {
+        "path": "images/tragus-berteronianus.webp",
+        "bytes": 66946
+      },
+      {
+        "path": "images/treron-calvus.webp",
+        "bytes": 61406
+      },
+      {
+        "path": "images/tribulus-terrestris.webp",
+        "bytes": 59156
+      },
+      {
+        "path": "images/trichilia-emetica.webp",
+        "bytes": 47204
+      },
+      {
+        "path": "images/tricholaema-leucomelas.webp",
+        "bytes": 39878
+      },
+      {
+        "path": "images/trichonephila-fenestrata.webp",
+        "bytes": 26612
+      },
+      {
+        "path": "images/trichonephila-senegalensis.webp",
+        "bytes": 12400
+      },
+      {
+        "path": "images/trigonoceps-occipitalis.webp",
+        "bytes": 15614
+      },
+      {
+        "path": "images/trithemis-arteriosa.webp",
+        "bytes": 15002
+      },
+      {
+        "path": "images/turdoides-jardineii.webp",
+        "bytes": 64546
+      },
+      {
+        "path": "images/turdus-libonyana.webp",
+        "bytes": 53042
+      },
+      {
+        "path": "images/turdus-litsitsirupa.webp",
+        "bytes": 47814
+      },
+      {
+        "path": "images/turnix-sylvaticus.webp",
+        "bytes": 39782
+      },
+      {
+        "path": "images/turtur-chalcospilos.webp",
+        "bytes": 32482
+      },
+      {
+        "path": "images/upupa-africana.webp",
+        "bytes": 24918
+      },
+      {
+        "path": "images/uraeginthus-angolensis.webp",
+        "bytes": 43834
+      },
+      {
+        "path": "images/urochloa-mosambicensis.webp",
+        "bytes": 17830
+      },
+      {
+        "path": "images/urocolius-indicus.webp",
+        "bytes": 48050
+      },
+      {
+        "path": "images/uroplectes-olivaceus.webp",
+        "bytes": 116228
+      },
+      {
+        "path": "images/vachellia-exuvialis.webp",
+        "bytes": 226764
+      },
+      {
+        "path": "images/vachellia-gerrardii.webp",
+        "bytes": 232208
+      },
+      {
+        "path": "images/vachellia-karroo.webp",
+        "bytes": 53998
+      },
+      {
+        "path": "images/vachellia-nilotica.webp",
+        "bytes": 147362
+      },
+      {
+        "path": "images/vachellia-robusta.webp",
+        "bytes": 135770
+      },
+      {
+        "path": "images/vachellia-tortilis.webp",
+        "bytes": 113868
+      },
+      {
+        "path": "images/vachellia-xanthophloea.webp",
+        "bytes": 49668
+      },
+      {
+        "path": "images/vanellus-armatus.webp",
+        "bytes": 52938
+      },
+      {
+        "path": "images/vanellus-coronatus.webp",
+        "bytes": 134110
+      },
+      {
+        "path": "images/vanellus-senegallus.webp",
+        "bytes": 101262
+      },
+      {
+        "path": "images/vangueria-infausta.webp",
+        "bytes": 58462
+      },
+      {
+        "path": "images/varanus-albigularis.webp",
+        "bytes": 140942
+      },
+      {
+        "path": "images/varanus-niloticus.webp",
+        "bytes": 160002
+      },
+      {
+        "path": "images/vidua-funerea.webp",
+        "bytes": 94200
+      },
+      {
+        "path": "images/vidua-macroura.webp",
+        "bytes": 28972
+      },
+      {
+        "path": "images/waltheria-indica.webp",
+        "bytes": 28790
+      },
+      {
+        "path": "images/xanthocercis-zambesiaca.webp",
+        "bytes": 63944
+      },
+      {
+        "path": "images/xenopus-muelleri.webp",
+        "bytes": 37736
+      },
+      {
+        "path": "images/ximenia-caffra.webp",
+        "bytes": 56360
+      },
+      {
+        "path": "images/xylocopa-caffra.webp",
+        "bytes": 52862
+      },
+      {
+        "path": "images/zapornia-flavirostra.webp",
+        "bytes": 30584
+      },
+      {
+        "path": "images/ziziphus-mucronata.webp",
+        "bytes": 66792
+      },
+      {
+        "path": "images/zonocerus-elegans.webp",
+        "bytes": 85088
+      },
+      {
+        "path": "images/zosterops-virens.webp",
+        "bytes": 38344
+      }
+    ],
+    "bytes": 36432278
+  },
   "sounds": {
     "files": [
       {

@@ -21,6 +21,8 @@ const pack = (files) => ({ files: files.map((f) => ({ path: f.path.replace(/\\/g
 const birdnet = walk(path.join(OUT_DIR, 'birdnet'), 'birdnet');
 const photos = walk(path.join(OUT_DIR, 'photos'), 'photos'); // extra species photos for the quiz and the galleries (14_photos.mjs)
 const signs = walk(path.join(OUT_DIR, 'signs'), 'signs').filter((f) => f.path.endsWith('.webp')); // field photos of tracks and dung (15_signs.mjs); index.json stays in the app
-const packs = { sounds: pack(sounds), sat: pack(sat), birdnet: pack(birdnet), photos: pack(photos), signs: pack(signs) };
+// the main photo of every species: a pack and not in the service worker's install, which is all-or-nothing and timed out on a phone over mobile data
+const images = walk(path.join(OUT_DIR, 'images'), 'images');
+const packs = { images: pack(images), sounds: pack(sounds), sat: pack(sat), birdnet: pack(birdnet), photos: pack(photos), signs: pack(signs) };
 writeJson(path.join(OUT_DIR, 'packs.json'), packs);
 for (const [k, v] of Object.entries(packs)) console.log(k.padEnd(8), v.files.length, 'files', (v.bytes / 1e6).toFixed(1), 'MB');

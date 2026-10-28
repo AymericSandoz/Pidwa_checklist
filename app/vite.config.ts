@@ -34,15 +34,17 @@ export default defineConfig({
         ],
       },
       workbox: {
-        // App shell + species data + photos are precached at install (~20 MB).
+        // App shell + species data + thumbnails are precached at install (~11 MB). Keep it small: the install is all-or-nothing
+        // and the phone gives it a few minutes, so the 36 MB of species photos live in the 'images' pack instead.
         globPatterns: ['**/*.{js,css,html,ico,png,svg,webp,json,woff2,wasm,pcm}'], // wasm + pcm: sound ID engine and its reference sound
-        globIgnores: ['**/data/sounds/**', '**/data/map/**', '**/data/birdnet/**', '**/data/photos/**', '**/data/signs/*.webp'],
+        globIgnores: ['**/data/images/**', '**/data/preview.html', '**/data/sounds/**', '**/data/map/**', '**/data/birdnet/**', '**/data/photos/**', '**/data/signs/*.webp'],
         maximumFileSizeToCacheInBytes: 30 * 1024 * 1024,
         navigateFallback: base + 'index.html',
         // Sounds and map are "packs" downloaded on demand from the settings screen into these caches.
         // ignoreVary: GitHub Pages answers "Vary: Accept-Encoding" and the audio player asks with its own Accept-Encoding,
         // so without it the sound saved by the settings screen is never found again once offline.
         runtimeCaching: [
+          { urlPattern: ({ url }) => url.pathname.includes('/data/images/'), handler: 'CacheFirst', options: { cacheName: 'pack-images' } },
           { urlPattern: ({ url }) => url.pathname.includes('/data/sounds/'), handler: 'CacheFirst', options: { cacheName: 'pack-sounds', rangeRequests: true, matchOptions: { ignoreVary: true } } },
           { urlPattern: ({ url }) => url.pathname.includes('/data/birdnet/'), handler: 'CacheFirst', options: { cacheName: 'pack-birdnet' } },
           { urlPattern: ({ url }) => url.pathname.includes('/data/map/'), handler: 'CacheFirst', options: { cacheName: 'pack-sat' } },

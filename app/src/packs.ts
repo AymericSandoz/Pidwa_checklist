@@ -7,10 +7,10 @@ import type { Packs } from './types';
 
 export interface PackState { total: number; cached: number; bytes: number; busy: boolean; error?: string }
 
-export const PACK_LABEL: Record<string, string> = { sounds: 'Bird sounds (xeno-canto)', sat: 'Reserve map (satellite, Sentinel-2)', birdnet: 'Sound ID model (BirdNET)', photos: 'More photos per species (iNaturalist), for the quiz', signs: 'Track and dung photos (iNaturalist)' };
-export const PACK_SHORT: Record<string, string> = { sounds: 'bird sounds', sat: 'map', birdnet: 'Sound ID', photos: 'quiz photos', signs: 'track photos' };
-// smallest and most used first, the 60 MB model last
-const ORDER = ['sat', 'sounds', 'signs', 'photos', 'birdnet'];
+export const PACK_LABEL: Record<string, string> = { images: 'Species photos (one per species)', sounds: 'Bird sounds (xeno-canto)', sat: 'Reserve map (satellite, Sentinel-2)', birdnet: 'Sound ID model (BirdNET)', photos: 'More photos per species (iNaturalist), for the quiz', signs: 'Track and dung photos (iNaturalist)' };
+export const PACK_SHORT: Record<string, string> = { images: 'photos', sounds: 'bird sounds', sat: 'map', birdnet: 'Sound ID', photos: 'quiz photos', signs: 'track photos' };
+// the species photos first (the app looks empty without them), then smallest and most used, the 60 MB model last
+const ORDER = ['images', 'sat', 'sounds', 'signs', 'photos', 'birdnet'];
 const cacheName = (p: string) => 'pack-' + p;
 
 export const packs = signal<Packs | null>(null);
@@ -67,7 +67,13 @@ export async function downloadPack(k: string) {
   const ctrl = new AbortController(); aborts[k] = ctrl;
   patch(k, { busy: true, error: undefined });
   const todo: string[] = [];
-  for (const f of p[k].files) { const u = location.origin + dataUrl(f.path); if (!(await cache.match(u))) todo.push(u); }
+  for (const f of p[k].files) {
+    const u = location.origin + dataUrl(f.path);
+    if (await cache.match(u)) continue;
+    // species photos were precached by older versions of the app (under a ?__WB_REVISION__ key): reuse them rather than download again
+    const old = k === 'images' ? await caches.match(u, { ignoreSearch: true }) : undefined;
+    if (old) await cache.put(u, old); else todo.push(u);
+  }
   let done = p[k].files.length - todo.length;
   patch(k, { cached: done });
   let i = 0, failed = 0;
@@ -113,7 +119,10 @@ function unmetered() {
   return c.type === 'wifi' || c.type === 'ethernet';
 }
 function maybeAuto() {
-  if (autoPacks.value && navigator.onLine && unmetered() && missing.value.keys.length) downloadAll();
+  if (!navigator.onLine) return;
+  if (autoPacks.value && unmetered() && missing.value.keys.length) downloadAll();
+  // the species photos are fetched on any connection, as when they were part of the app's install
+  else if (missing.value.keys.includes('images') && !(navigator as any).connection?.saveData) downloadPack('images');
 }
 
 /** Called once at startup: read the packs state, then start downloading if on Wi-Fi. */
