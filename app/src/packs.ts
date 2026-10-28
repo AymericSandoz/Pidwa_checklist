@@ -66,14 +66,9 @@ export async function downloadPack(k: string) {
   const cache = await caches.open(cacheName(k));
   const ctrl = new AbortController(); aborts[k] = ctrl;
   patch(k, { busy: true, error: undefined });
-  const todo: string[] = [];
-  for (const f of p[k].files) {
-    const u = location.origin + dataUrl(f.path);
-    if (await cache.match(u)) continue;
-    // species photos were precached by older versions of the app (under a ?__WB_REVISION__ key): reuse them rather than download again
-    const old = k === 'images' ? await caches.match(u, { ignoreSearch: true }) : undefined;
-    if (old) await cache.put(u, old); else todo.push(u);
-  }
+  // one listing of the cache rather than a lookup per file: thousands of awaits kept the counter still and the stop button dead
+  const have = new Set((await cache.keys()).map((r) => r.url));
+  const todo = p[k].files.map((f) => location.origin + dataUrl(f.path)).filter((u) => !have.has(u));
   let done = p[k].files.length - todo.length;
   patch(k, { cached: done });
   let i = 0, failed = 0;
@@ -81,8 +76,14 @@ export async function downloadPack(k: string) {
     while (i < todo.length && !ctrl.signal.aborted) {
       const u = todo[i++];
       try {
-        const r = await fetch(u, { signal: ctrl.signal, cache: 'no-store' });
-        if (r.ok) { await cache.put(u, r); done++; } else failed++;
+        // a request left hanging by a flaky connection gives up after 30 s instead of holding a worker forever
+        const one = new AbortController(), stop = () => one.abort();
+        ctrl.signal.addEventListener('abort', stop);
+        const t = setTimeout(stop, 30000);
+        try {
+          const r = await fetch(u, { signal: one.signal, cache: 'no-store' });
+          if (r.ok) { await cache.put(u, r); done++; } else failed++;
+        } finally { clearTimeout(t); ctrl.signal.removeEventListener('abort', stop); }
       } catch { if (ctrl.signal.aborted) return; failed++; }
       if (done % 20 === 0) patch(k, { cached: done });
     }
