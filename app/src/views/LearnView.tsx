@@ -7,6 +7,7 @@ import { LandView } from './LandView';
 import { FencesView } from './FencesView';
 import { QuizView } from './QuizView';
 import { SpoorQuizView } from './SpoorQuizView';
+import { SoundQuizView } from './SoundQuizView';
 import { VeldView } from './VeldView';
 import { BushView } from './BushView';
 import { ClimateView } from './ClimateView';
@@ -86,12 +87,18 @@ export function LearnView() {
   if (parts[1] === 'climate') return <ClimateView />;
   if (parts[1] === 'quiz') return <QuizView />;
   if (parts[1] === 'spoorquiz') return <SpoorQuizView />;
+  if (parts[1] === 'soundquiz') return <SoundQuizView />;
   return (
     <div>
       <div class="learn-hero"><b>Learn</b><p>Short, sourced chapters on what you see at Pidwa and the bigger picture behind it. Every number links to where it comes from.</p></div>
       <a class="chap quiz" href={href('learn/quiz')}>
         <div class="ill"><Icon name="eye" size={26} /></div>
         <div class="tx"><b>Quiz: name that species</b><span>A photo, sometimes the call, and you type the name. Starts with what you have already seen.</span><span class="tag ok">practice</span></div>
+        <Icon name="chevron-right" size={20} />
+      </a>
+      <a class="chap quiz" href={href('learn/soundquiz')}>
+        <div class="ill"><Icon name="audio-lines" size={26} /></div>
+        <div class="tx"><b>Quiz: who's singing?</b><span>A recording, four names, level by level: from the birds you hear all day to the hard ones.</span><span class="tag ok">practice</span></div>
         <Icon name="chevron-right" size={20} />
       </a>
       <a class="chap quiz" href={href('learn/spoorquiz')}>

@@ -48,7 +48,7 @@ function distractors(e: Spoor, pool: Spoor[]): string[] {
 }
 
 /** Masks the animal's own name in a text used as a hint ("civetries" would give the civet away). */
-function redact(t: string, id: string) {
+export function redact(t: string, id: string) {
   const words = (byId.value.get(id)?.en || '').split(/[\s-]+/).filter((w) => w.length > 3 && !/^(african|common|southern|greater|lesser|black|white|spotted|brown|plains|cape|large|small|blue|grey|side)/i.test(w));
   return words.reduce((s, w) => s.replace(new RegExp(`\\b${w.slice(0, Math.min(5, w.length - 1))}\\w*`, 'gi'), '▢▢▢'), t);
 }

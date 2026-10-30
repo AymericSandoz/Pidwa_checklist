@@ -9,7 +9,7 @@ import { Thumb } from '../components/Thumb';
 import { Icon } from '../components/Icon';
 import { SearchBox } from '../components/SearchBox';
 import { ObsForm } from '../components/ObsForm';
-import { MigBadge, SortButton } from '../components/BirdSection';
+import { MigBadge, SortButton, heardText } from '../components/BirdSection';
 import { birdSort } from '../learn/birds';
 import { abundanceCompare, abundanceText } from '../learn/abundance';
 import { plantInfo, type PlantKind } from '../learn/plants';
@@ -31,7 +31,9 @@ export function ListView() {
   const [adding, setAdding] = useState<string | null>(null);
   const seen = seenCount.value;
   // mammals have no level: no sort
-  const cmp = tab.value !== 'mammal' ? abundanceCompare(birdSort.value) : null;
+  // "most heard" is for the birds: the other tabs take it as commonest
+  const sort = tab.value !== 'bird' && birdSort.value === 'hear' ? 'common' : birdSort.value;
+  const cmp = tab.value !== 'mammal' ? abundanceCompare(sort) : null;
   let list = species.value.filter((s) => s.group === tab.value && matches(s, q.value) && (filter.value === 'all' || (filter.value === 'seen') === seen.has(s.id)));
   const kinds = tab.value === 'plant' ? PLANT_KINDS.find(([k]) => k === plantKind.value)![2] : [];
   if (kinds.length) list = list.filter((s) => kinds.includes(plantInfo.value.get(s.id)?.kind as PlantKind));
@@ -80,13 +82,13 @@ export function ListView() {
           ))}
         </div>
         {q.value && <span class="muted count">{list.length}</span>}
-        {tab.value !== 'mammal' && <SortButton />}
+        {tab.value !== 'mammal' && <SortButton birds={tab.value === 'bird'} />}
       </div>
       <div class="list">
         {list.map((s, i) => {
           const head = subGroups && (i === 0 || sg(list[i - 1]) !== sg(s)) ? subGroups.find(([g]) => g === sg(s))?.[1] : null;
           const n = seen.get(s.id) || 0;
-          const rt = cmp && abundanceText(s.id);
+          const rt = cmp && (sort === 'hear' ? heardText(s.id) : abundanceText(s.id));
           return (
             <Fragment key={s.id}>
             {head && <div class="sec listsec">{head}</div>}

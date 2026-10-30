@@ -34,6 +34,8 @@ export interface BirdInfo {
   /** lives in or right by the water (ducks, herons, storks, Hamerkop, water kingfishers…), not just coming to drink;
    *  hand-picked from AVONET's wetland birds, for the "Water birds" filter of the ID guide */
   water?: boolean;
+  /** how much it calls, hand-assessed from the voice notes: 3 all the time, 2 regularly, 1 rather quiet, 0 practically silent */
+  vocal?: number;
 }
 
 export type Rarity = 'very-common' | 'common' | 'uncommon' | 'scarce' | 'rare';
@@ -43,14 +45,27 @@ export const rarity = (b: BirdInfo): Rarity | null => b.common == null ? null
   : b.common >= 0.3 ? 'very-common' : b.common >= 0.1 ? 'common' : b.common >= 0.03 ? 'uncommon' : b.common >= 0.01 ? 'scarce' : 'rare';
 export const fmtCommon = (c: number) => (c < 0.01 ? (c * 100).toFixed(1) : Math.round(c * 100)) + '%';
 
-/** Bird order of the list and the ID guide, shared and remembered: as they come (A-Z), rarest or commonest first. */
-export type BirdSort = 'az' | 'rare' | 'common';
-export const SORT_LABEL: Record<BirdSort, string> = { az: 'A–Z', rare: 'Rarest', common: 'Commonest' };
-export const NEXT_SORT: Record<BirdSort, BirdSort> = { az: 'rare', rare: 'common', common: 'az' };
-export const birdSort = signal<BirdSort>((localStorage.getItem('sort') as BirdSort) || 'az');
+/** Bird order of the list and the ID guide, shared and remembered: rarest first by default, commonest, most heard, or A-Z. */
+export type BirdSort = 'az' | 'rare' | 'common' | 'hear';
+export const SORT_LABEL: Record<BirdSort, string> = { az: 'A–Z', rare: 'Rarest', common: 'Commonest', hear: 'Most heard' };
+export const NEXT_SORT: Record<BirdSort, BirdSort> = { rare: 'common', common: 'hear', hear: 'az', az: 'rare' };
+// a new key: choices made when A-Z was the default don't count
+export const birdSort = signal<BirdSort>((localStorage.getItem('bird-sort') as BirdSort) || 'rare');
+
+const VOCAL_WEIGHT = [0.05, 0.25, 0.6, 1];
+/** Chance of hearing the bird, whatever the month: atlas rate x how much it calls. An estimate, not a measure.
+ *  Without an atlas rate (Dark-capped Bulbul, abundant here) it counts as very common. */
+export const hearScore = (b: BirdInfo) => (b.common ?? 0.7) * VOCAL_WEIGHT[b.vocal ?? 2];
+/** The same for this month: nothing when away, half when only a few are here. */
+export const hearNowScore = (b: BirdInfo, d = new Date()) => hearScore(b) * b.months[d.getMonth()] / 2;
+export const hearText = (b: BirdInfo) => {
+  const s = hearNowScore(b);
+  return s === 0 ? 'Away now' : s >= 0.4 ? 'Heard all the time' : s >= 0.15 ? 'Heard often' : s >= 0.04 ? 'Heard sometimes' : 'Rarely heard';
+};
 /** Comparator by rarity for the current sort; birds without an atlas rate go last. Null for A-Z. */
 export function rarityCompare(sort: BirdSort, info: Map<string, BirdInfo>) {
   if (sort === 'az') return null;
+  if (sort === 'hear') { const h = (id: string) => { const b = info.get(id); return b ? hearNowScore(b) : -1; }; return (a: { id: string }, b: { id: string }) => h(b.id) - h(a.id); }
   const c = (id: string) => info.get(id)?.common ?? (sort === 'rare' ? Infinity : -Infinity);
   return (a: { id: string }, b: { id: string }) => (sort === 'rare' ? c(a.id) - c(b.id) : c(b.id) - c(a.id));
 }

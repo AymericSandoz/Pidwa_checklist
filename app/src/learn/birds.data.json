@@ -50,7 +50,8 @@
       "https://en.wikipedia.org/wiki/Gabar_goshawk"
     ],
     "atlas": true,
-    "common": 0.066
+    "common": 0.066,
+    "vocal": 1
   },
   {
     "id": "accipiter-minullus",
@@ -103,7 +104,8 @@
       "https://citizen.co.za/highway-mail/?p=437368"
     ],
     "atlas": true,
-    "common": 0.084
+    "common": 0.084,
+    "vocal": 1
   },
   {
     "id": "accipiter-tachiro",
@@ -155,7 +157,8 @@
       "https://www.xeno-canto.org/species/Accipiter-tachiro"
     ],
     "atlas": true,
-    "common": 0.11
+    "common": 0.11,
+    "vocal": 2
   },
   {
     "id": "actophilornis-africanus",
@@ -203,7 +206,8 @@
     ],
     "atlas": true,
     "common": 0.269,
-    "water": true
+    "water": true,
+    "vocal": 2
   },
   {
     "id": "agricola-pallidus",
@@ -251,7 +255,8 @@
       "https://www.niall.co.za/Species/bird-pages/696.htm"
     ],
     "atlas": true,
-    "common": 0.067
+    "common": 0.067,
+    "vocal": 1
   },
   {
     "id": "alopochen-aegyptiaca",
@@ -299,7 +304,8 @@
     ],
     "atlas": true,
     "common": 0.66,
-    "water": true
+    "water": true,
+    "vocal": 2
   },
   {
     "id": "amadina-fasciata",
@@ -347,7 +353,8 @@
       "https://birdforum.net/opus/Cut-throat_Finch"
     ],
     "atlas": true,
-    "common": 0.151
+    "common": 0.151,
+    "vocal": 2
   },
   {
     "id": "anaplectes-rubriceps",
@@ -397,7 +404,8 @@
       "https://www.oiseaux.net/birds/red-headed.weaver.html"
     ],
     "atlas": true,
-    "common": 0.387
+    "common": 0.387,
+    "vocal": 2
   },
   {
     "id": "anastomus-lamelligerus",
@@ -450,7 +458,8 @@
     ],
     "atlas": true,
     "common": 0.087,
-    "water": true
+    "water": true,
+    "vocal": 0
   },
   {
     "id": "andropadus-importunus",
@@ -498,7 +507,8 @@
       "https://www.niall.co.za/Species/bird-pages/572.htm"
     ],
     "atlas": true,
-    "common": 0.192
+    "common": 0.192,
+    "vocal": 3
   },
   {
     "id": "anhinga-rufa",
@@ -542,7 +552,8 @@
     ],
     "atlas": true,
     "common": 0.131,
-    "water": true
+    "water": true,
+    "vocal": 0
   },
   {
     "id": "anthoscopus-caroli",
@@ -590,7 +601,8 @@
       "https://www.niall.co.za/Species/bird-pages/558.htm"
     ],
     "atlas": true,
-    "common": 0.088
+    "common": 0.088,
+    "vocal": 1
   },
   {
     "id": "anthus-caffer",
@@ -635,7 +647,8 @@
       "https://gobirding.birdlife.org.za/kruger-national-park-pretoriuskop/"
     ],
     "atlas": false,
-    "common": 0.025
+    "common": 0.025,
+    "vocal": 2
   },
   {
     "id": "anthus-cinnamomeus",
@@ -682,7 +695,8 @@
       "https://www.birdforum.net/opus/African_Pipit"
     ],
     "atlas": true,
-    "common": 0.17
+    "common": 0.17,
+    "vocal": 2
   },
   {
     "id": "apalis-thoracica",
@@ -729,7 +743,8 @@
       "https://sabap2.birdmap.africa/docs/sabap1/648.pdf"
     ],
     "atlas": true,
-    "common": 0.042
+    "common": 0.042,
+    "vocal": 2
   },
   {
     "id": "apus-affinis",
@@ -780,7 +795,8 @@
       "https://thebdi.org/?p=20071"
     ],
     "atlas": true,
-    "common": 0.39
+    "common": 0.39,
+    "vocal": 2
   },
   {
     "id": "apus-barbatus",
@@ -831,7 +847,8 @@
       "https://birding.krugerpark.co.za/birding-in-kruger-summer-visitors.html"
     ],
     "atlas": true,
-    "common": 0.075
+    "common": 0.075,
+    "vocal": 2
   },
   {
     "id": "apus-caffer",
@@ -879,7 +896,8 @@
       "https://birding.krugerpark.co.za/birding-in-kruger-summer-visitors.html"
     ],
     "atlas": true,
-    "common": 0.195
+    "common": 0.195,
+    "vocal": 1
   },
   {
     "id": "aquila-rapax",
@@ -930,7 +948,8 @@
       "https://blog.londolozi.com/2016/05/02/birding-for-beginners-eagles/"
     ],
     "atlas": true,
-    "common": 0.159
+    "common": 0.159,
+    "vocal": 1
   },
   {
     "id": "aquila-spilogaster",
@@ -981,7 +1000,8 @@
       "https://www.peregrinefund.org/explore-raptors-species/eagles/african-hawk-eagle"
     ],
     "atlas": true,
-    "common": 0.169
+    "common": 0.169,
+    "vocal": 1
   },
   {
     "id": "ardea-alba",
@@ -1032,7 +1052,8 @@
     ],
     "atlas": true,
     "common": 0.218,
-    "water": true
+    "water": true,
+    "vocal": 0
   },
   {
     "id": "ardea-cinerea",
@@ -1084,7 +1105,8 @@
     ],
     "atlas": true,
     "common": 0.376,
-    "water": true
+    "water": true,
+    "vocal": 1
   },
   {
     "id": "ardea-goliath",
@@ -1132,7 +1154,8 @@
     ],
     "atlas": true,
     "common": 0.138,
-    "water": true
+    "water": true,
+    "vocal": 1
   },
   {
     "id": "ardea-purpurea",
@@ -1179,7 +1202,8 @@
     ],
     "atlas": true,
     "common": 0.058,
-    "water": true
+    "water": true,
+    "vocal": 1
   },
   {
     "id": "ardeola-ralloides",
@@ -1230,7 +1254,8 @@
     ],
     "atlas": true,
     "common": 0.091,
-    "water": true
+    "water": true,
+    "vocal": 1
   },
   {
     "id": "aviceda-cuculoides",
@@ -1281,7 +1306,8 @@
       "https://oiseaux-birds.com/card-african-cuckoo-hawk.html"
     ],
     "atlas": false,
-    "common": 0.011
+    "common": 0.011,
+    "vocal": 2
   },
   {
     "id": "batis-molitor",
@@ -1320,7 +1346,8 @@
       "https://app.birda.org/species-guide/19762/Chinspot_Batis"
     ],
     "atlas": true,
-    "common": 0.679
+    "common": 0.679,
+    "vocal": 3
   },
   {
     "id": "bostrychia-hagedash",
@@ -1363,7 +1390,8 @@
       "https://dewetswild.com/tag/hadeda-ibis/"
     ],
     "atlas": true,
-    "common": 0.519
+    "common": 0.519,
+    "vocal": 3
   },
   {
     "id": "bubalornis-niger",
@@ -1406,7 +1434,8 @@
       "https://fr.wikipedia.org/wiki/Alecto_à_bec_rouge"
     ],
     "atlas": true,
-    "common": 0.383
+    "common": 0.383,
+    "vocal": 2
   },
   {
     "id": "bubo-africanus",
@@ -1452,7 +1481,8 @@
       "https://www.oiseaux.net/oiseaux/grand-duc.africain.html"
     ],
     "atlas": true,
-    "common": 0.06
+    "common": 0.06,
+    "vocal": 2
   },
   {
     "id": "bubulcus-ibis",
@@ -1502,7 +1532,8 @@
       "https://www.oiseaux.net/oiseaux/heron.garde-boeufs.html"
     ],
     "atlas": true,
-    "common": 0.22
+    "common": 0.22,
+    "vocal": 0
   },
   {
     "id": "bucorvus-leadbeateri",
@@ -1530,17 +1561,19 @@
       "White flight feathers show only in flight. Juvenile browner, with dull yellowish facial skin"
     ],
     "confuse": [],
-    "voice": "A deep, booming “oomph, oomph-oomph” repeated in chorus by the group, mostly at dawn, at dusk or before rain. Sounds a bit like a distant lion and carries several kilometres.",
+    "voice": "A deep, booming “oomph, oomph-oomph” repeated in chorus by the group, mostly at dawn, at dusk or before rain. Sounds a bit like a distant lion and carries several kilometres. An old edition of Roberts gives an indigenous reading of the duet: she says “I'm going, I'm going, I'm going home to my relations”, he answers “You can go, you can go, you can go home to your relations!”",
     "behaviour": "A group of 2-8 birds walks several kilometres a day hunting on the ground, taking insects, frogs, snakes, tortoises and even hares. Only the dominant pair breeds; the helpers feed the female in a tree-hole nest. She usually lays two eggs, but the second chick almost always starves within a week, and a group may raise one young only every few years.",
     "memo": "A black turkey with a red throat that booms at dawn: Africa's endangered walking hornbill.",
     "sources": [
       "https://en.wikipedia.org/wiki/Southern_ground_hornbill",
       "https://www.oiseaux.net/oiseaux/bucorve.du.sud.html",
       "https://www.oiseaux.net/birds/southern.ground.hornbill.html",
-      "http://www.biodiversityexplorer.info/birds/bucorvidae/bucorvus_leadbeateri.htm"
+      "http://www.biodiversityexplorer.info/birds/bucorvidae/bucorvus_leadbeateri.htm",
+      "https://mostlybirding.com/2015/09/30/southern-ground-hornbil/"
     ],
     "atlas": true,
-    "common": 0.132
+    "common": 0.132,
+    "vocal": 3
   },
   {
     "id": "buphagus-africanus",
@@ -1585,7 +1618,8 @@
       "https://www.niall.co.za/Species/bird-pages/771.htm"
     ],
     "atlas": true,
-    "common": 0.108
+    "common": 0.108,
+    "vocal": 2
   },
   {
     "id": "buphagus-erythrorynchus",
@@ -1632,7 +1666,8 @@
       "https://en.wikipedia.org/wiki/Yellow-billed_oxpecker"
     ],
     "atlas": true,
-    "common": 0.535
+    "common": 0.535,
+    "vocal": 2
   },
   {
     "id": "burhinus-capensis",
@@ -1676,7 +1711,8 @@
       "https://www.niall.co.za/Species/bird-pages/297.htm"
     ],
     "atlas": true,
-    "common": 0.095
+    "common": 0.095,
+    "vocal": 3
   },
   {
     "id": "burhinus-vermiculatus",
@@ -1722,7 +1758,8 @@
     ],
     "atlas": true,
     "common": 0.393,
-    "water": true
+    "water": true,
+    "vocal": 3
   },
   {
     "id": "buteo-buteo",
@@ -1773,7 +1810,8 @@
       "https://dewetswild.com/2018/03/26/steppe-buzzard/"
     ],
     "atlas": true,
-    "common": 0.191
+    "common": 0.191,
+    "vocal": 1
   },
   {
     "id": "butorides-striata",
@@ -1822,7 +1860,8 @@
     ],
     "atlas": false,
     "common": 0.005,
-    "water": true
+    "water": true,
+    "vocal": 0
   },
   {
     "id": "bycanistes-bucinator",
@@ -1870,7 +1909,8 @@
       "https://blog.londolozi.com/2018/02/11/hornbills-nesting-weird-and-wonderful/"
     ],
     "atlas": true,
-    "common": 0.052
+    "common": 0.052,
+    "vocal": 2
   },
   {
     "id": "calamonastes-stierlingi",
@@ -1918,7 +1958,8 @@
       "https://www.niall.co.za/Species/bird-pages/659.htm"
     ],
     "atlas": true,
-    "common": 0.344
+    "common": 0.344,
+    "vocal": 3
   },
   {
     "id": "campephaga-flava",
@@ -1971,7 +2012,8 @@
       "https://www.tanzaniabirds.net/African_birds/Cuckooshrike_black/bcs.htm"
     ],
     "atlas": true,
-    "common": 0.168
+    "common": 0.168,
+    "vocal": 1
   },
   {
     "id": "campethera-abingoni",
@@ -2023,7 +2065,8 @@
       "https://avise-birds.bio.uci.edu/piciformes/picidae/campethera_abingoni/index.html"
     ],
     "atlas": true,
-    "common": 0.406
+    "common": 0.406,
+    "vocal": 2
   },
   {
     "id": "campethera-bennettii",
@@ -2074,7 +2117,8 @@
       "https://www.niall.co.za/Species/bird-pages/481.htm"
     ],
     "atlas": true,
-    "common": 0.043
+    "common": 0.043,
+    "vocal": 2
   },
   {
     "id": "campocolinus-coqui",
@@ -2124,7 +2168,8 @@
       "https://dewetswild.com/2023/12/27/coqui-francolin/"
     ],
     "atlas": false,
-    "common": 0.006
+    "common": 0.006,
+    "vocal": 2
   },
   {
     "id": "caprimulgus-europaeus",
@@ -2167,7 +2212,8 @@
       "https://dewetswild.com/2022/06/28/european-nightjar/"
     ],
     "atlas": true,
-    "common": 0.038
+    "common": 0.038,
+    "vocal": 1
   },
   {
     "id": "caprimulgus-pectoralis",
@@ -2211,7 +2257,8 @@
       "https://sausagetree.co.za/the-fiery-necked-night-jar"
     ],
     "atlas": true,
-    "common": 0.295
+    "common": 0.295,
+    "vocal": 3
   },
   {
     "id": "ceblepyris-pectoralis",
@@ -2258,7 +2305,8 @@
       "https://fr.wikipedia.org/wiki/%C3%89chenilleur_%C3%A0_ventre_blanc"
     ],
     "atlas": false,
-    "common": 0.006
+    "common": 0.006,
+    "vocal": 1
   },
   {
     "id": "cecropis-abyssinica",
@@ -2302,7 +2350,8 @@
       "https://birding.krugerpark.co.za/birding-in-kruger-summer-visitors.html"
     ],
     "atlas": true,
-    "common": 0.483
+    "common": 0.483,
+    "vocal": 2
   },
   {
     "id": "centropus-burchellii",
@@ -2350,7 +2399,8 @@
       "https://dsae.co.za/entry/rainbird/e05859"
     ],
     "atlas": true,
-    "common": 0.44
+    "common": 0.44,
+    "vocal": 3
   },
   {
     "id": "centropus-grillii",
@@ -2394,7 +2444,8 @@
       "https://singita.com/2026/03/the-ghost-in-the-grass/"
     ],
     "atlas": false,
-    "common": 0.004
+    "common": 0.004,
+    "vocal": 2
   },
   {
     "id": "cercotrichas-leucophrys",
@@ -2441,7 +2492,8 @@
       "https://en.wikipedia.org/wiki/Bearded_scrub_robin"
     ],
     "atlas": true,
-    "common": 0.571
+    "common": 0.571,
+    "vocal": 3
   },
   {
     "id": "cercotrichas-quadrivirgata",
@@ -2488,7 +2540,8 @@
       "https://xeno-canto.org/779206"
     ],
     "atlas": true,
-    "common": 0.166
+    "common": 0.166,
+    "vocal": 2
   },
   {
     "id": "ceryle-rudis",
@@ -2531,7 +2584,8 @@
     ],
     "atlas": true,
     "common": 0.351,
-    "water": true
+    "water": true,
+    "vocal": 2
   },
   {
     "id": "chalcomitra-senegalensis",
@@ -2578,7 +2632,8 @@
       "https://de.wikipedia.org/wiki/Rotbrust-Glanzköpfchen"
     ],
     "atlas": true,
-    "common": 0.233
+    "common": 0.233,
+    "vocal": 2
   },
   {
     "id": "charadrius-tricollaris",
@@ -2616,7 +2671,8 @@
     ],
     "atlas": true,
     "common": 0.414,
-    "water": true
+    "water": true,
+    "vocal": 2
   },
   {
     "id": "chlorocichla-flaviventris",
@@ -2653,7 +2709,7 @@
         "how": "All dull olive-green with a striking white eye, no bright yellow belly; mostly heard rather than seen."
       }
     ],
-    "voice": "Loud, nasal, rather complaining calls, often repeated from inside a thicket; no widely used mnemonic.",
+    "voice": "Loud, nasal, rather complaining calls, often repeated from inside a thicket.",
     "behaviour": "Forages in the lower canopy, often with other bulbuls, gleaning fruit, seeds and insects from leaves. It has even been recorded picking ticks off impala, duiker and nyala, and around camps it becomes bold and will steal fruit from tables.",
     "memo": "A bulbul without the black hat: olive above, lemon-yellow below, hiding in the riverine tangle.",
     "sources": [
@@ -2664,7 +2720,8 @@
       "https://www.niall.co.za/Species/bird-pages/574.htm"
     ],
     "atlas": true,
-    "common": 0.171
+    "common": 0.171,
+    "vocal": 2
   },
   {
     "id": "chlorophoneus-sulfureopectus",
@@ -2712,7 +2769,8 @@
       "https://www.oiseaux.net/oiseaux/gonolek.soufre.html"
     ],
     "atlas": true,
-    "common": 0.489
+    "common": 0.489,
+    "vocal": 3
   },
   {
     "id": "chloropicus-namaquus",
@@ -2763,7 +2821,8 @@
       "https://mostlybirding.com/tag/bearded-woodpecker/"
     ],
     "atlas": true,
-    "common": 0.286
+    "common": 0.286,
+    "vocal": 2
   },
   {
     "id": "chrysococcyx-caprius",
@@ -2808,7 +2867,8 @@
       "https://www.oiseaux.net/oiseaux/coucou.didric.html"
     ],
     "atlas": true,
-    "common": 0.58
+    "common": 0.58,
+    "vocal": 3
   },
   {
     "id": "chrysococcyx-klaas",
@@ -2853,7 +2913,8 @@
       "https://birding.krugerpark.co.za/birding-in-kruger-summer-visitors.html"
     ],
     "atlas": true,
-    "common": 0.295
+    "common": 0.295,
+    "vocal": 3
   },
   {
     "id": "ciconia-abdimii",
@@ -2903,7 +2964,8 @@
       "https://www.oiseaux.net/oiseaux/cigogne.d.abdim.html"
     ],
     "atlas": false,
-    "common": 0.014
+    "common": 0.014,
+    "vocal": 0
   },
   {
     "id": "ciconia-ciconia",
@@ -2949,7 +3011,8 @@
       "https://www.oiseaux.net/oiseaux/cigogne.blanche.html"
     ],
     "atlas": true,
-    "common": 0.043
+    "common": 0.043,
+    "vocal": 0
   },
   {
     "id": "ciconia-microscelis",
@@ -2996,7 +3059,8 @@
     ],
     "atlas": false,
     "common": 0.016,
-    "water": true
+    "water": true,
+    "vocal": 0
   },
   {
     "id": "ciconia-nigra",
@@ -3048,7 +3112,8 @@
     ],
     "atlas": true,
     "common": 0.055,
-    "water": true
+    "water": true,
+    "vocal": 0
   },
   {
     "id": "cinnyricinclus-leucogaster",
@@ -3095,7 +3160,8 @@
       "https://birding.krugerpark.co.za/birding-in-kruger-summer-visitors.html"
     ],
     "atlas": true,
-    "common": 0.516
+    "common": 0.516,
+    "vocal": 1
   },
   {
     "id": "cinnyris-afer",
@@ -3146,7 +3212,8 @@
       "https://cavern.co.za/birding-blog-may-2016"
     ],
     "atlas": false,
-    "common": 0.004
+    "common": 0.004,
+    "vocal": 2
   },
   {
     "id": "cinnyris-mariquensis",
@@ -3198,7 +3265,8 @@
       "https://www.niall.co.za/Species/bird-pages/779.htm"
     ],
     "atlas": true,
-    "common": 0.276
+    "common": 0.276,
+    "vocal": 2
   },
   {
     "id": "cinnyris-talatala",
@@ -3248,7 +3316,8 @@
       "https://www.oiseaux.net/oiseaux/souimanga.a.ventre.blanc.html"
     ],
     "atlas": true,
-    "common": 0.655
+    "common": 0.655,
+    "vocal": 2
   },
   {
     "id": "circaetus-cinereus",
@@ -3299,7 +3368,8 @@
       "https://www.peregrinefund.org/explore-raptors-species/eagles/brown-snake-eagle"
     ],
     "atlas": true,
-    "common": 0.19
+    "common": 0.19,
+    "vocal": 1
   },
   {
     "id": "circaetus-pectoralis",
@@ -3346,7 +3416,8 @@
       "https://blog.londolozi.com/?p=111786"
     ],
     "atlas": true,
-    "common": 0.079
+    "common": 0.079,
+    "vocal": 1
   },
   {
     "id": "cisticola-chiniana",
@@ -3397,7 +3468,8 @@
       "https://fr.wikipedia.org/wiki/Cisticole_grinçante"
     ],
     "atlas": true,
-    "common": 0.597
+    "common": 0.597,
+    "vocal": 3
   },
   {
     "id": "cisticola-erythrops",
@@ -3449,7 +3521,8 @@
       "https://en.wikipedia.org/wiki/Cisticola"
     ],
     "atlas": true,
-    "common": 0.196
+    "common": 0.196,
+    "vocal": 2
   },
   {
     "id": "cisticola-juncidis",
@@ -3499,7 +3572,8 @@
       "http://www.biodiversityexplorer.info/birds/cisticolidae/cisticola_juncidis.htm"
     ],
     "atlas": true,
-    "common": 0.068
+    "common": 0.068,
+    "vocal": 2
   },
   {
     "id": "cisticola-natalensis",
@@ -3546,7 +3620,8 @@
       "https://www.upemba.org/post/birdytuesday-meet-the-croaking-cisticola"
     ],
     "atlas": false,
-    "common": 0.014
+    "common": 0.014,
+    "vocal": 2
   },
   {
     "id": "clamator-jacobinus",
@@ -3595,7 +3670,8 @@
       "https://birding.krugerpark.co.za/birding-in-kruger-by-region-crocodile-malelane.html"
     ],
     "atlas": true,
-    "common": 0.367
+    "common": 0.367,
+    "vocal": 3
   },
   {
     "id": "clamator-levaillantii",
@@ -3642,7 +3718,8 @@
       "https://en.wikipedia.org/wiki/Jacobin_cuckoo"
     ],
     "atlas": true,
-    "common": 0.234
+    "common": 0.234,
+    "vocal": 2
   },
   {
     "id": "clanga-pomarina",
@@ -3691,7 +3768,8 @@
       "https://birding.krugerpark.co.za/birding-in-kruger-summer-visitors.html"
     ],
     "atlas": true,
-    "common": 0.06
+    "common": 0.06,
+    "vocal": 1
   },
   {
     "id": "colius-striatus",
@@ -3733,7 +3811,8 @@
       "https://www.oiseaux.net/oiseaux/coliou.raye.html"
     ],
     "atlas": true,
-    "common": 0.244
+    "common": 0.244,
+    "vocal": 2
   },
   {
     "id": "columba-guinea",
@@ -3775,7 +3854,8 @@
       "https://www.oiseaux.net/oiseaux/pigeon.roussard.html"
     ],
     "atlas": true,
-    "common": 0.031
+    "common": 0.031,
+    "vocal": 2
   },
   {
     "id": "coracias-caudatus",
@@ -3825,7 +3905,8 @@
       "http://www.biodiversityexplorer.info/birds/coraciidae/coracias_caudatus.htm"
     ],
     "atlas": true,
-    "common": 0.469
+    "common": 0.469,
+    "vocal": 2
   },
   {
     "id": "coracias-garrulus",
@@ -3878,7 +3959,8 @@
       "https://ebird.org/species/librol2"
     ],
     "atlas": true,
-    "common": 0.474
+    "common": 0.474,
+    "vocal": 1
   },
   {
     "id": "coracias-naevius",
@@ -3928,7 +4010,8 @@
       "https://www.oiseaux.net/oiseaux/rollier.varie.html"
     ],
     "atlas": true,
-    "common": 0.097
+    "common": 0.097,
+    "vocal": 2
   },
   {
     "id": "corvus-albus",
@@ -3965,7 +4048,8 @@
       "http://www.biodiversityexplorer.info/birds/corvidae/corvus_albus.htm"
     ],
     "atlas": true,
-    "common": 0.272
+    "common": 0.272,
+    "vocal": 2
   },
   {
     "id": "corythornis-cristatus",
@@ -4013,7 +4097,8 @@
     ],
     "atlas": true,
     "common": 0.109,
-    "water": true
+    "water": true,
+    "vocal": 1
   },
   {
     "id": "cossypha-heuglini",
@@ -4060,7 +4145,8 @@
       "https://en.wikipedia.org/wiki/White-throated_robin-chat"
     ],
     "atlas": true,
-    "common": 0.13
+    "common": 0.13,
+    "vocal": 3
   },
   {
     "id": "creatophora-cinerea",
@@ -4107,7 +4193,8 @@
       "https://www.niall.co.za/Species/bird-pages/760.htm"
     ],
     "atlas": true,
-    "common": 0.154
+    "common": 0.154,
+    "vocal": 2
   },
   {
     "id": "crex-egregia",
@@ -4153,7 +4240,8 @@
       "https://www.oiseaux.net/oiseaux/rale.des.pres.html"
     ],
     "atlas": false,
-    "common": 0.008
+    "common": 0.008,
+    "vocal": 2
   },
   {
     "id": "crinifer-concolor",
@@ -4198,7 +4286,8 @@
       "https://dsae.co.za/entry/kwêvoël/e04177"
     ],
     "atlas": true,
-    "common": 0.696
+    "common": 0.696,
+    "vocal": 3
   },
   {
     "id": "crithagra-mozambica",
@@ -4241,7 +4330,8 @@
       "https://www.niall.co.za/Species/bird-pages/869.htm"
     ],
     "atlas": true,
-    "common": 0.59
+    "common": 0.59,
+    "vocal": 2
   },
   {
     "id": "cuculus-clamosus",
@@ -4292,7 +4382,8 @@
       "https://wilkinsonsworld.com/2012/06/bird-of-the-week-week-125-black-cuckoo/"
     ],
     "atlas": true,
-    "common": 0.093
+    "common": 0.093,
+    "vocal": 3
   },
   {
     "id": "cuculus-gularis",
@@ -4340,7 +4431,8 @@
       "https://journals.uct.ac.za/index.php/BO/article/view/256"
     ],
     "atlas": true,
-    "common": 0.078
+    "common": 0.078,
+    "vocal": 2
   },
   {
     "id": "cuculus-solitarius",
@@ -4390,7 +4482,8 @@
       "https://cavern.co.za/birding-blog-january-2021"
     ],
     "atlas": true,
-    "common": 0.363
+    "common": 0.363,
+    "vocal": 3
   },
   {
     "id": "cypsiurus-parvus",
@@ -4441,7 +4534,8 @@
       "https://krugerpark.co.za/africa_lala_palm.html"
     ],
     "atlas": true,
-    "common": 0.377
+    "common": 0.377,
+    "vocal": 2
   },
   {
     "id": "dendrocygna-viduata",
@@ -4484,7 +4578,8 @@
     ],
     "atlas": true,
     "common": 0.271,
-    "water": true
+    "water": true,
+    "vocal": 3
   },
   {
     "id": "dendropicos-fuscescens",
@@ -4535,7 +4630,8 @@
       "https://www.oiseaux.net/birds/cardinal.woodpecker.html"
     ],
     "atlas": true,
-    "common": 0.259
+    "common": 0.259,
+    "vocal": 2
   },
   {
     "id": "dessonornis-humeralis",
@@ -4582,7 +4678,8 @@
       "https://avise-birds.bio.uci.edu/passeriformes/muscicapidae/cossypha_humeralis/index.html"
     ],
     "atlas": true,
-    "common": 0.22
+    "common": 0.22,
+    "vocal": 2
   },
   {
     "id": "dicrurus-adsimilis",
@@ -4631,7 +4728,8 @@
       "https://en.wikipedia.org/wiki/Southern_black_flycatcher"
     ],
     "atlas": true,
-    "common": 0.842
+    "common": 0.842,
+    "vocal": 3
   },
   {
     "id": "dryoscopus-cubla",
@@ -4681,7 +4779,8 @@
       "https://www.biodiversityexplorer.info/birds/malaconotidae/dryoscopus_cubla.htm"
     ],
     "atlas": true,
-    "common": 0.774
+    "common": 0.774,
+    "vocal": 3
   },
   {
     "id": "egretta-garzetta",
@@ -4730,7 +4829,8 @@
     ],
     "atlas": true,
     "common": 0.168,
-    "water": true
+    "water": true,
+    "vocal": 0
   },
   {
     "id": "elanus-caeruleus",
@@ -4774,7 +4874,8 @@
       "https://dewetswild.com/tag/elanus-caeruleus/"
     ],
     "atlas": true,
-    "common": 0.073
+    "common": 0.073,
+    "vocal": 1
   },
   {
     "id": "emberiza-tahapisi",
@@ -4812,7 +4913,8 @@
       "https://namibian.org/nature-wildlife/birds/passeriformes/cinnamon-breasted-bunting"
     ],
     "atlas": true,
-    "common": 0.285
+    "common": 0.285,
+    "vocal": 2
   },
   {
     "id": "ephippiorhynchus-senegalensis",
@@ -4861,7 +4963,8 @@
     ],
     "atlas": true,
     "common": 0.152,
-    "water": true
+    "water": true,
+    "vocal": 0
   },
   {
     "id": "estrilda-astrild",
@@ -4908,7 +5011,8 @@
       "https://www.sa-venues.com/wildlife/birds_common_waxbill.htm"
     ],
     "atlas": true,
-    "common": 0.141
+    "common": 0.141,
+    "vocal": 2
   },
   {
     "id": "eurocephalus-anguitimens",
@@ -4955,7 +5059,8 @@
       "https://fr.wikipedia.org/wiki/Eurocephale_a_couronne_blanche"
     ],
     "atlas": true,
-    "common": 0.293
+    "common": 0.293,
+    "vocal": 2
   },
   {
     "id": "eurystomus-glaucurus",
@@ -5007,7 +5112,8 @@
       "https://dewetswild.com/2024/04/24/broad-billed-roller/"
     ],
     "atlas": true,
-    "common": 0.079
+    "common": 0.079,
+    "vocal": 2
   },
   {
     "id": "falco-amurensis",
@@ -5056,7 +5162,8 @@
       "https://krugerpark.co.za/krugerpark-times-3-15-birdwatchers-23368.html"
     ],
     "atlas": true,
-    "common": 0.095
+    "common": 0.095,
+    "vocal": 1
   },
   {
     "id": "falco-peregrinus",
@@ -5102,7 +5209,8 @@
       "https://www.oiseaux.net/oiseaux/faucon.pelerin.html"
     ],
     "atlas": true,
-    "common": 0.027
+    "common": 0.027,
+    "vocal": 1
   },
   {
     "id": "falco-subbuteo",
@@ -5149,7 +5257,8 @@
       "https://journals.uct.ac.za/index.php/ABB/article/view/v2_1"
     ],
     "atlas": true,
-    "common": 0.025
+    "common": 0.025,
+    "vocal": 1
   },
   {
     "id": "fraseria-caerulescens",
@@ -5200,7 +5309,8 @@
       "https://sabap2.birdmap.africa/docs/sabap1/691.pdf"
     ],
     "atlas": true,
-    "common": 0.197
+    "common": 0.197,
+    "vocal": 2
   },
   {
     "id": "fraseria-plumbea",
@@ -5248,7 +5358,8 @@
       "https://www.oiseaux.net/oiseaux/gobemouche.mesange.html"
     ],
     "atlas": true,
-    "common": 0.222
+    "common": 0.222,
+    "vocal": 2
   },
   {
     "id": "gallinula-chloropus",
@@ -5295,7 +5406,8 @@
     ],
     "atlas": true,
     "common": 0.044,
-    "water": true
+    "water": true,
+    "vocal": 2
   },
   {
     "id": "gallirex-porphyreolophus",
@@ -5337,7 +5449,8 @@
       "https://www.oiseaux.net/oiseaux/touraco.a.huppe.splendide.html"
     ],
     "atlas": true,
-    "common": 0.276
+    "common": 0.276,
+    "vocal": 3
   },
   {
     "id": "glaucidium-capense",
@@ -5385,7 +5498,8 @@
       "https://www.sabisabi.com/blog/26133/owlets/"
     ],
     "atlas": true,
-    "common": 0.143
+    "common": 0.143,
+    "vocal": 2
   },
   {
     "id": "glaucidium-perlatum",
@@ -5435,7 +5549,8 @@
       "https://www.oiseaux.net/oiseaux/chevechette.perlee.html"
     ],
     "atlas": true,
-    "common": 0.242
+    "common": 0.242,
+    "vocal": 3
   },
   {
     "id": "gyps-africanus",
@@ -5487,7 +5602,8 @@
       "https://en.wikipedia.org/wiki/Cape_vulture"
     ],
     "atlas": true,
-    "common": 0.412
+    "common": 0.412,
+    "vocal": 0
   },
   {
     "id": "gyps-coprotheres",
@@ -5539,7 +5655,8 @@
       "https://gobirding.birdlife.org.za/hoedspruit-manoutsa-vulture-colony/"
     ],
     "atlas": true,
-    "common": 0.099
+    "common": 0.099,
+    "vocal": 0
   },
   {
     "id": "halcyon-albiventris",
@@ -5591,7 +5708,8 @@
       "https://ebird.org/species/brhkin1 (summary via search, page blocked)"
     ],
     "atlas": true,
-    "common": 0.643
+    "common": 0.643,
+    "vocal": 3
   },
   {
     "id": "halcyon-chelicuti",
@@ -5638,7 +5756,8 @@
       "https://www.niall.co.za/Species/bird-pages/437.htm"
     ],
     "atlas": true,
-    "common": 0.167
+    "common": 0.167,
+    "vocal": 2
   },
   {
     "id": "halcyon-leucocephala",
@@ -5690,7 +5809,8 @@
       "https://namibian.org/nature-wildlife/birds/corachformes/grey-headed-kingfisher"
     ],
     "atlas": false,
-    "common": 0.024
+    "common": 0.024,
+    "vocal": 2
   },
   {
     "id": "halcyon-senegalensis",
@@ -5742,7 +5862,8 @@
       "https://blog.londolozi.com/2025/01/23/the-synonymous-sounds-of-summer/"
     ],
     "atlas": true,
-    "common": 0.782
+    "common": 0.782,
+    "vocal": 3
   },
   {
     "id": "haliaeetus-vocifer",
@@ -5792,7 +5913,8 @@
     ],
     "atlas": true,
     "common": 0.482,
-    "water": true
+    "water": true,
+    "vocal": 3
   },
   {
     "id": "hedydipna-collaris",
@@ -5833,7 +5955,7 @@
         "how": "Bigger, with a long, strongly curved bill; the male has a blackish belly below a blue and maroon breast band, and the female is pale and streaked below."
       }
     ],
-    "voice": "Soft, high calls and a short twittering song; no widely used mnemonic.",
+    "voice": "Soft, high calls and a short twittering song.",
     "behaviour": "Feeds more on insects and spiders than nectar, gleaning them from leaves and often perching rather than hovering at flowers. In winter it visits flowering aloes, for example at Skukuza. The female alone builds an untidy hanging nest with a side entrance, often next to a wasp nest.",
     "memo": "Tiny, short-billed and yellow-bellied: the green-and-gold jewel of the riverine thickets.",
     "sources": [
@@ -5845,7 +5967,8 @@
       "https://www.tanzaniabirds.net/African_birds/sunbird_collared/cs.htm"
     ],
     "atlas": true,
-    "common": 0.183
+    "common": 0.183,
+    "vocal": 1
   },
   {
     "id": "hieraaetus-wahlbergi",
@@ -5896,7 +6019,8 @@
       "https://birding.krugerpark.co.za/birding-in-kruger-summer-visitors.html"
     ],
     "atlas": true,
-    "common": 0.389
+    "common": 0.389,
+    "vocal": 2
   },
   {
     "id": "hirundo-rustica",
@@ -5947,7 +6071,8 @@
       "https://blog.londolozi.com/2025/03/04/the-barn-swallow-a-remarkable-migrant-journey-from-europe-to-south-africa/"
     ],
     "atlas": true,
-    "common": 0.648
+    "common": 0.648,
+    "vocal": 1
   },
   {
     "id": "indicator-indicator",
@@ -5990,7 +6115,8 @@
       "https://www.niall.co.za/Species/bird-pages/474.htm"
     ],
     "atlas": true,
-    "common": 0.154
+    "common": 0.154,
+    "vocal": 2
   },
   {
     "id": "ispidina-picta",
@@ -6036,7 +6162,8 @@
       "https://birding.krugerpark.co.za/birding-in-kruger-summer-visitors.html"
     ],
     "atlas": true,
-    "common": 0.071
+    "common": 0.071,
+    "vocal": 1
   },
   {
     "id": "ixobrychus-sturmii",
@@ -6085,7 +6212,8 @@
     ],
     "atlas": true,
     "common": 0.029,
-    "water": true
+    "water": true,
+    "vocal": 0
   },
   {
     "id": "kaupifalco-monogrammicus",
@@ -6137,7 +6265,8 @@
       "https://www.oiseaux-birds.com/card-lizard-buzzard.html"
     ],
     "atlas": true,
-    "common": 0.098
+    "common": 0.098,
+    "vocal": 1
   },
   {
     "id": "ketupa-lactea",
@@ -6185,7 +6314,8 @@
       "https://blog.londolozi.com/2025/07/08/winter-nesters-at-londolozi-a-look-at-birds-that-breed-in-the-cooler-months/"
     ],
     "atlas": true,
-    "common": 0.085
+    "common": 0.085,
+    "vocal": 2
   },
   {
     "id": "lagonosticta-rhodopareia",
@@ -6234,7 +6364,8 @@
       "https://en.wikipedia.org/wiki/Purple_indigobird"
     ],
     "atlas": true,
-    "common": 0.231
+    "common": 0.231,
+    "vocal": 2
   },
   {
     "id": "lagonosticta-rubricata",
@@ -6281,7 +6412,8 @@
       "https://dewetswild.com/tag/african-firefinch/"
     ],
     "atlas": true,
-    "common": 0.093
+    "common": 0.093,
+    "vocal": 2
   },
   {
     "id": "lagonosticta-senegala",
@@ -6329,7 +6461,8 @@
       "https://en.wikipedia.org/wiki/Village_indigobird"
     ],
     "atlas": true,
-    "common": 0.299
+    "common": 0.299,
+    "vocal": 1
   },
   {
     "id": "lamprotornis-chalybaeus",
@@ -6377,7 +6510,8 @@
       "https://birdforum.net/opus/Greater_Blue-eared_Starling"
     ],
     "atlas": true,
-    "common": 0.158
+    "common": 0.158,
+    "vocal": 2
   },
   {
     "id": "lamprotornis-nitens",
@@ -6425,7 +6559,8 @@
       "https://forum.caithness.org/archive/index.php/t-34898.html"
     ],
     "atlas": true,
-    "common": 0.732
+    "common": 0.732,
+    "vocal": 2
   },
   {
     "id": "laniarius-ferrugineus",
@@ -6472,7 +6607,8 @@
       "https://www.oiseaux.net/birds/southern.boubou.html"
     ],
     "atlas": true,
-    "common": 0.21
+    "common": 0.21,
+    "vocal": 3
   },
   {
     "id": "lanius-collurio",
@@ -6515,7 +6651,8 @@
       "https://en.wikipedia.org/wiki/Lesser_grey_shrike"
     ],
     "atlas": true,
-    "common": 0.509
+    "common": 0.509,
+    "vocal": 1
   },
   {
     "id": "lanius-melanoleucus",
@@ -6566,7 +6703,8 @@
       "https://www.oiseaux-birds.com/card-magpie-shrike.html"
     ],
     "atlas": true,
-    "common": 0.308
+    "common": 0.308,
+    "vocal": 2
   },
   {
     "id": "lanius-minor",
@@ -6613,7 +6751,8 @@
       "https://www.africanbirdclub.org/afbid/search/birddetails/species/1986/42540"
     ],
     "atlas": true,
-    "common": 0.144
+    "common": 0.144,
+    "vocal": 1
   },
   {
     "id": "leptoptilos-crumenifer",
@@ -6664,7 +6803,8 @@
       "https://blog.londolozi.com/2025/04/03/inter-specific-competition-among-scavengers/"
     ],
     "atlas": true,
-    "common": 0.185
+    "common": 0.185,
+    "vocal": 0
   },
   {
     "id": "lissotis-melanogaster",
@@ -6707,7 +6847,8 @@
       "https://sabisabi.com/wildfacts/black-bellied-bustard"
     ],
     "atlas": false,
-    "common": 0.018
+    "common": 0.018,
+    "vocal": 2
   },
   {
     "id": "locustella-fluviatilis",
@@ -6751,7 +6892,8 @@
       "https://de.wikipedia.org/wiki/Schlagschwirl"
     ],
     "atlas": false,
-    "common": 0.004
+    "common": 0.004,
+    "vocal": 2
   },
   {
     "id": "lophoceros-nasutus",
@@ -6797,7 +6939,8 @@
       "https://www.oiseaux.net/oiseaux/calao.a.bec.noir.html"
     ],
     "atlas": true,
-    "common": 0.517
+    "common": 0.517,
+    "vocal": 3
   },
   {
     "id": "lophotis-ruficrista",
@@ -6845,7 +6988,8 @@
       "https://www.niall.co.za/Species/bird-pages/237.htm"
     ],
     "atlas": true,
-    "common": 0.393
+    "common": 0.393,
+    "vocal": 3
   },
   {
     "id": "lybius-torquatus",
@@ -6892,7 +7036,8 @@
       "https://dewetswild.com/2019/03/09/black-collared-barbet/"
     ],
     "atlas": true,
-    "common": 0.517
+    "common": 0.517,
+    "vocal": 3
   },
   {
     "id": "macronyx-croceus",
@@ -6935,7 +7080,8 @@
       "https://en.wikipedia.org/wiki/Longclaw"
     ],
     "atlas": true,
-    "common": 0.052
+    "common": 0.052,
+    "vocal": 2
   },
   {
     "id": "malaconotus-blanchoti",
@@ -6984,7 +7130,8 @@
       "https://www.niall.co.za/Species/bird-pages/751.htm"
     ],
     "atlas": true,
-    "common": 0.521
+    "common": 0.521,
+    "vocal": 3
   },
   {
     "id": "megaceryle-maxima",
@@ -7029,7 +7176,8 @@
     ],
     "atlas": true,
     "common": 0.181,
-    "water": true
+    "water": true,
+    "vocal": 2
   },
   {
     "id": "melaenornis-pammelaina",
@@ -7080,7 +7228,8 @@
       "https://www.niall.co.za/Species/bird-pages/694.htm"
     ],
     "atlas": true,
-    "common": 0.241
+    "common": 0.241,
+    "vocal": 1
   },
   {
     "id": "melaniparus-niger",
@@ -7123,7 +7272,8 @@
       "https://de.wikipedia.org/wiki/Mohrenmeise"
     ],
     "atlas": true,
-    "common": 0.516
+    "common": 0.516,
+    "vocal": 2
   },
   {
     "id": "melierax-metabates",
@@ -7170,7 +7320,8 @@
       "https://blog.londolozi.com/2018/12/04/bird-quiz-4/"
     ],
     "atlas": true,
-    "common": 0.16
+    "common": 0.16,
+    "vocal": 1
   },
   {
     "id": "merops-apiaster",
@@ -7218,7 +7369,8 @@
       "https://africawild-forum.com/viewtopic.php?p=183864"
     ],
     "atlas": true,
-    "common": 0.547
+    "common": 0.547,
+    "vocal": 3
   },
   {
     "id": "merops-bullockoides",
@@ -7264,7 +7416,8 @@
       "https://www.oiseaux.net/oiseaux/guepier.a.front.blanc.html"
     ],
     "atlas": true,
-    "common": 0.254
+    "common": 0.254,
+    "vocal": 2
   },
   {
     "id": "merops-pusillus",
@@ -7310,7 +7463,8 @@
       "http://www.biodiversityexplorer.info/birds/meropidae/merops_pusillus.htm"
     ],
     "atlas": true,
-    "common": 0.274
+    "common": 0.274,
+    "vocal": 1
   },
   {
     "id": "microcarbo-africanus",
@@ -7354,7 +7508,8 @@
     ],
     "atlas": true,
     "common": 0.16,
-    "water": true
+    "water": true,
+    "vocal": 0
   },
   {
     "id": "micronisus-gabar",
@@ -7406,7 +7561,8 @@
       "https://birding.krugerpark.co.za/birding-in-kruger-raptor-hawks.html"
     ],
     "atlas": true,
-    "common": 0.089
+    "common": 0.089,
+    "vocal": 1
   },
   {
     "id": "milvus-aegyptius",
@@ -7455,7 +7611,8 @@
       "https://birding.krugerpark.co.za/birding-in-kruger-summer-visitors.html"
     ],
     "atlas": true,
-    "common": 0.339
+    "common": 0.339,
+    "vocal": 1
   },
   {
     "id": "motacilla-aguimp",
@@ -7494,7 +7651,8 @@
     ],
     "atlas": true,
     "common": 0.36,
-    "water": true
+    "water": true,
+    "vocal": 2
   },
   {
     "id": "muscicapa-striata",
@@ -7540,7 +7698,8 @@
       "https://www.oiseaux.net/oiseaux/gobemouche.gris.html"
     ],
     "atlas": true,
-    "common": 0.44
+    "common": 0.44,
+    "vocal": 1
   },
   {
     "id": "mycteria-ibis",
@@ -7589,7 +7748,8 @@
     ],
     "atlas": true,
     "common": 0.218,
-    "water": true
+    "water": true,
+    "vocal": 0
   },
   {
     "id": "necrosyrtes-monachus",
@@ -7641,7 +7801,8 @@
       "https://animaldiversity.org/accounts/necrosyrtes_monachus/"
     ],
     "atlas": true,
-    "common": 0.141
+    "common": 0.141,
+    "vocal": 0
   },
   {
     "id": "netta-erythrophthalma",
@@ -7693,7 +7854,8 @@
     ],
     "atlas": false,
     "common": 0.005,
-    "water": true
+    "water": true,
+    "vocal": 0
   },
   {
     "id": "nilaus-afer",
@@ -7741,7 +7903,8 @@
       "https://www.xeno-canto.org/species/Nilaus-afer?pg=5"
     ],
     "atlas": true,
-    "common": 0.404
+    "common": 0.404,
+    "vocal": 3
   },
   {
     "id": "numida-meleagris",
@@ -7779,7 +7942,8 @@
       "https://www.sabisabi.com/blog/20334/helmeted-guineafowl"
     ],
     "atlas": true,
-    "common": 0.49
+    "common": 0.49,
+    "vocal": 3
   },
   {
     "id": "oriolus-larvatus",
@@ -7826,7 +7990,8 @@
       "https://krugerpark.co.za/africa_black_headed_oriole.html"
     ],
     "atlas": true,
-    "common": 0.662
+    "common": 0.662,
+    "vocal": 3
   },
   {
     "id": "oriolus-oriolus",
@@ -7870,7 +8035,8 @@
       "https://birding.krugerpark.co.za/birding-in-kruger-summer-visitors.html"
     ],
     "atlas": true,
-    "common": 0.109
+    "common": 0.109,
+    "vocal": 1
   },
   {
     "id": "ortygornis-sephaena",
@@ -7922,7 +8088,8 @@
       "https://en.wikipedia.org/wiki/Crested_francolin"
     ],
     "atlas": true,
-    "common": 0.587
+    "common": 0.587,
+    "vocal": 3
   },
   {
     "id": "otus-senegalensis",
@@ -7971,7 +8138,8 @@
       "https://www.lawsons-africa.co.za/owls-of-the-kruger-national-park/"
     ],
     "atlas": true,
-    "common": 0.157
+    "common": 0.157,
+    "vocal": 3
   },
   {
     "id": "passer-diffusus",
@@ -8014,7 +8182,8 @@
       "https://en.wikipedia.org/wiki/Southern_grey-headed_sparrow"
     ],
     "atlas": true,
-    "common": 0.611
+    "common": 0.611,
+    "vocal": 2
   },
   {
     "id": "passer-domesticus",
@@ -8061,7 +8230,8 @@
       "https://archive.org/download/biostor-135121/biostor-135121.pdf"
     ],
     "atlas": true,
-    "common": 0.203
+    "common": 0.203,
+    "vocal": 2
   },
   {
     "id": "phoeniculus-purpureus",
@@ -8108,7 +8278,8 @@
       "https://www.oiseaux.net/oiseaux/irrisor.moqueur.html"
     ],
     "atlas": true,
-    "common": 0.462
+    "common": 0.462,
+    "vocal": 3
   },
   {
     "id": "phylloscopus-trochilus",
@@ -8158,7 +8329,8 @@
       "http://biodiversityexplorer.info/birds/sylviidae/phylloscopus_trochilus.htm"
     ],
     "atlas": true,
-    "common": 0.207
+    "common": 0.207,
+    "vocal": 2
   },
   {
     "id": "platalea-alba",
@@ -8206,7 +8378,8 @@
     ],
     "atlas": true,
     "common": 0.186,
-    "water": true
+    "water": true,
+    "vocal": 0
   },
   {
     "id": "plectropterus-gambensis",
@@ -8255,7 +8428,8 @@
     ],
     "atlas": true,
     "common": 0.082,
-    "water": true
+    "water": true,
+    "vocal": 0
   },
   {
     "id": "ploceus-cucullatus",
@@ -8301,7 +8475,8 @@
       "https://www.oiseaux.net/oiseaux/tisserin.gendarme.html"
     ],
     "atlas": true,
-    "common": 0.144
+    "common": 0.144,
+    "vocal": 2
   },
   {
     "id": "ploceus-intermedius",
@@ -8348,7 +8523,8 @@
       "https://en.wikipedia.org/wiki/Southern_masked_weaver"
     ],
     "atlas": true,
-    "common": 0.255
+    "common": 0.255,
+    "vocal": 2
   },
   {
     "id": "ploceus-velatus",
@@ -8400,7 +8576,8 @@
       "https://www.oiseaux.net/birds/southern.masked.weaver.html"
     ],
     "atlas": true,
-    "common": 0.294
+    "common": 0.294,
+    "vocal": 2
   },
   {
     "id": "pogoniulus-chrysoconus",
@@ -8447,7 +8624,8 @@
       "https://birding.krugerpark.co.za/birding-in-kruger-by-region-crocodile-bridge.html"
     ],
     "atlas": true,
-    "common": 0.214
+    "common": 0.214,
+    "vocal": 3
   },
   {
     "id": "poicephalus-cryptoxanthus",
@@ -8491,7 +8669,8 @@
       "https://parrots.org/encyclopedia/brown-headed-parrot/"
     ],
     "atlas": true,
-    "common": 0.142
+    "common": 0.142,
+    "vocal": 2
   },
   {
     "id": "polemaetus-bellicosus",
@@ -8542,7 +8721,8 @@
       "https://www.niall.co.za/Species/bird-pages/140.htm"
     ],
     "atlas": true,
-    "common": 0.113
+    "common": 0.113,
+    "vocal": 1
   },
   {
     "id": "polyboroides-typus",
@@ -8589,7 +8769,8 @@
       "https://dewetswild.com/2020/11/04/african-harrier-hawk/"
     ],
     "atlas": true,
-    "common": 0.129
+    "common": 0.129,
+    "vocal": 1
   },
   {
     "id": "prinia-subflava",
@@ -8636,7 +8817,8 @@
       "https://www.niall.co.za/Species/bird-pages/683.htm"
     ],
     "atlas": true,
-    "common": 0.556
+    "common": 0.556,
+    "vocal": 3
   },
   {
     "id": "prionops-plumatus",
@@ -8683,7 +8865,8 @@
       "https://fr.wikipedia.org/wiki/Bagadais_casqu%C3%A9"
     ],
     "atlas": true,
-    "common": 0.453
+    "common": 0.453,
+    "vocal": 2
   },
   {
     "id": "prionops-retzii",
@@ -8728,7 +8911,8 @@
       "https://en.wikipedia.org/wiki/White-crested_helmetshrike"
     ],
     "atlas": true,
-    "common": 0.192
+    "common": 0.192,
+    "vocal": 2
   },
   {
     "id": "pternistis-natalensis",
@@ -8775,7 +8959,8 @@
       "http://www.biodiversityexplorer.info/birds/phasianidae/pternistis_natalensis.htm"
     ],
     "atlas": true,
-    "common": 0.665
+    "common": 0.665,
+    "vocal": 3
   },
   {
     "id": "pternistis-swainsonii",
@@ -8823,7 +9008,8 @@
       "https://www.oiseaux.net/oiseaux/francolin.du.natal.html"
     ],
     "atlas": true,
-    "common": 0.335
+    "common": 0.335,
+    "vocal": 3
   },
   {
     "id": "ptilopsis-granti",
@@ -8870,7 +9056,8 @@
       "https://en.wikipedia.org/wiki/Northern_white-faced_owl"
     ],
     "atlas": true,
-    "common": 0.052
+    "common": 0.052,
+    "vocal": 2
   },
   {
     "id": "pycnonotus-tricolor",
@@ -8917,7 +9104,8 @@
       "https://citizen.co.za/highway-mail/?p=464282",
       "https://xeno-canto.org/601101"
     ],
-    "atlas": false
+    "atlas": false,
+    "vocal": 3
   },
   {
     "id": "pytilia-melba",
@@ -8956,7 +9144,8 @@
       "https://en.wikipedia.org/wiki/Eastern_paradise_whydah"
     ],
     "atlas": true,
-    "common": 0.231
+    "common": 0.231,
+    "vocal": 1
   },
   {
     "id": "quelea-quelea",
@@ -9003,7 +9192,8 @@
       "https://dewetswild.com/2017/05/08/red-billed-quelea/"
     ],
     "atlas": true,
-    "common": 0.355
+    "common": 0.355,
+    "vocal": 2
   },
   {
     "id": "rhinopomastus-cyanomelas",
@@ -9046,7 +9236,8 @@
       "https://dewetswild.com/2024/09/24/common-scimitarbill/"
     ],
     "atlas": true,
-    "common": 0.337
+    "common": 0.337,
+    "vocal": 2
   },
   {
     "id": "rhinoptilus-chalcopterus",
@@ -9093,7 +9284,8 @@
       "https://xeno-canto.org/species/rhinoptilus-chalcopterus"
     ],
     "atlas": true,
-    "common": 0.08
+    "common": 0.08,
+    "vocal": 2
   },
   {
     "id": "riparia-paludicola",
@@ -9141,7 +9333,8 @@
     ],
     "atlas": true,
     "common": 0.108,
-    "water": true
+    "water": true,
+    "vocal": 2
   },
   {
     "id": "rostratula-benghalensis",
@@ -9181,7 +9374,8 @@
     ],
     "atlas": true,
     "common": 0.029,
-    "water": true
+    "water": true,
+    "vocal": 0
   },
   {
     "id": "sarkidiornis-melanotos",
@@ -9230,7 +9424,8 @@
     ],
     "atlas": true,
     "common": 0.147,
-    "water": true
+    "water": true,
+    "vocal": 0
   },
   {
     "id": "saxicola-torquatus",
@@ -9275,7 +9470,8 @@
       "https://www.oiseaux.net/oiseaux/tarier.d.afrique.html"
     ],
     "atlas": true,
-    "common": 0.069
+    "common": 0.069,
+    "vocal": 2
   },
   {
     "id": "scopus-umbretta",
@@ -9322,7 +9518,8 @@
     ],
     "atlas": true,
     "common": 0.315,
-    "water": true
+    "water": true,
+    "vocal": 2
   },
   {
     "id": "spilopelia-senegalensis",
@@ -9373,7 +9570,8 @@
       "https://www.oiseaux.net/birds/laughing.dove.html"
     ],
     "atlas": true,
-    "common": 0.669
+    "common": 0.669,
+    "vocal": 3
   },
   {
     "id": "streptopelia-capicola",
@@ -9421,7 +9619,8 @@
       "https://en.wikipedia.org/wiki/Red-eyed_dove"
     ],
     "atlas": true,
-    "common": 0.799
+    "common": 0.799,
+    "vocal": 3
   },
   {
     "id": "streptopelia-semitorquata",
@@ -9470,7 +9669,8 @@
       "https://en.wikipedia.org/wiki/Ring-necked_dove"
     ],
     "atlas": true,
-    "common": 0.398
+    "common": 0.398,
+    "vocal": 3
   },
   {
     "id": "sylvietta-rufescens",
@@ -9517,7 +9717,8 @@
       "https://www.oiseaux-birds.com/card-long-billed-crombec.html"
     ],
     "atlas": true,
-    "common": 0.607
+    "common": 0.607,
+    "vocal": 3
   },
   {
     "id": "tachybaptus-ruficollis",
@@ -9561,7 +9762,8 @@
     ],
     "atlas": true,
     "common": 0.107,
-    "water": true
+    "water": true,
+    "vocal": 2
   },
   {
     "id": "tachymarptis-melba",
@@ -9613,7 +9815,8 @@
       "https://cavern.co.za/birding-blog-september-2019"
     ],
     "atlas": true,
-    "common": 0.118
+    "common": 0.118,
+    "vocal": 2
   },
   {
     "id": "tchagra-australis",
@@ -9656,7 +9859,8 @@
       "https://birdforum.net/opus/Brown-crowned_Tchagra"
     ],
     "atlas": true,
-    "common": 0.436
+    "common": 0.436,
+    "vocal": 3
   },
   {
     "id": "tchagra-senegalus",
@@ -9700,7 +9904,8 @@
       "https://www.tanzaniabirds.net/African_birds/Tchagra_black_crowned/bct.htm"
     ],
     "atlas": true,
-    "common": 0.47
+    "common": 0.47,
+    "vocal": 3
   },
   {
     "id": "telophorus-viridis",
@@ -9749,7 +9954,8 @@
       "https://www.xeno-canto.org/species/Telophorus-viridis?pg=2"
     ],
     "atlas": true,
-    "common": 0.082
+    "common": 0.082,
+    "vocal": 2
   },
   {
     "id": "terathopius-ecaudatus",
@@ -9796,7 +10002,8 @@
       "https://www.krugerpark.co.za/africa_bateleur_eagle.html"
     ],
     "atlas": true,
-    "common": 0.373
+    "common": 0.373,
+    "vocal": 1
   },
   {
     "id": "terpsiphone-viridis",
@@ -9841,7 +10048,8 @@
       "https://birding.krugerpark.co.za/birding-in-kruger-summer-visitors.html"
     ],
     "atlas": true,
-    "common": 0.425
+    "common": 0.425,
+    "vocal": 3
   },
   {
     "id": "thamnolaea-cinnamomeiventris",
@@ -9889,7 +10097,8 @@
       "https://www.niall.co.za/Species/bird-pages/593.htm"
     ],
     "atlas": true,
-    "common": 0.073
+    "common": 0.073,
+    "vocal": 2
   },
   {
     "id": "tockus-leucomelas",
@@ -9937,7 +10146,8 @@
       "https://www.xeno-canto.org/species/Tockus-leucomelas"
     ],
     "atlas": true,
-    "common": 0.759
+    "common": 0.759,
+    "vocal": 3
   },
   {
     "id": "tockus-rufirostris",
@@ -9983,7 +10193,8 @@
       "https://www.oiseaux.net/oiseaux/calao.d.afrique.du.sud.html"
     ],
     "atlas": true,
-    "common": 0.623
+    "common": 0.623,
+    "vocal": 3
   },
   {
     "id": "torgos-tracheliotos",
@@ -10034,7 +10245,8 @@
       "https://www.wildlifeact.com/blog/what-are-the-six-vulture-species-of-south-africa"
     ],
     "atlas": true,
-    "common": 0.053
+    "common": 0.053,
+    "vocal": 0
   },
   {
     "id": "trachyphonus-vaillantii",
@@ -10081,7 +10293,8 @@
       "https://www.sa-venues.com/wildlife/birds_crested_barbet.htm"
     ],
     "atlas": true,
-    "common": 0.538
+    "common": 0.538,
+    "vocal": 3
   },
   {
     "id": "treron-calvus",
@@ -10125,7 +10338,8 @@
       "https://www.safari.com/travel-blog/birds-in-the-kruger"
     ],
     "atlas": true,
-    "common": 0.304
+    "common": 0.304,
+    "vocal": 2
   },
   {
     "id": "tricholaema-leucomelas",
@@ -10172,7 +10386,8 @@
       "https://www.xeno-canto.org/species/Tricholaema-leucomelas"
     ],
     "atlas": true,
-    "common": 0.188
+    "common": 0.188,
+    "vocal": 2
   },
   {
     "id": "trigonoceps-occipitalis",
@@ -10223,7 +10438,8 @@
       "https://oiseaux-birds.com/card-white-headed-vulture.html"
     ],
     "atlas": true,
-    "common": 0.039
+    "common": 0.039,
+    "vocal": 0
   },
   {
     "id": "turdoides-jardineii",
@@ -10262,7 +10478,8 @@
       "https://wildernessdestinations.com/journal/wildlife/arrow-marked-babblers-adopt-levaillant-s-cuckoo"
     ],
     "atlas": true,
-    "common": 0.59
+    "common": 0.59,
+    "vocal": 3
   },
   {
     "id": "turdus-libonyana",
@@ -10305,7 +10522,8 @@
       "https://www.tanzaniabirds.net/African_birds/thrush_groundscraper/gt.htm"
     ],
     "atlas": true,
-    "common": 0.418
+    "common": 0.418,
+    "vocal": 2
   },
   {
     "id": "turdus-litsitsirupa",
@@ -10347,7 +10565,8 @@
       "https://dewetswild.com/2018/09/02/groundscraper-thrush/"
     ],
     "atlas": true,
-    "common": 0.19
+    "common": 0.19,
+    "vocal": 2
   },
   {
     "id": "turnix-sylvaticus",
@@ -10391,7 +10610,8 @@
       "https://biostor.org/reference/111840"
     ],
     "atlas": true,
-    "common": 0.052
+    "common": 0.052,
+    "vocal": 2
   },
   {
     "id": "turtur-chalcospilos",
@@ -10428,17 +10648,19 @@
         "how": "Larger and plain grey-brown with a black half-collar on the hind neck; white (not chestnut) in the tail and wings in flight."
       }
     ],
-    "voice": "A long, mournful cooing: two soft long coos, then a slow series of coos that descend and speed up before fading out in a rapid tumble, one of the classic background sounds of the bushveld.",
+    "voice": "A long, mournful cooing: two soft long coos, then a slow series of coos that descend and speed up before fading out in a rapid tumble, one of the classic background sounds of the bushveld. Sometimes heard as “My mother is dead… dead… another… brother is dead, oh boohoohohoho!”",
     "behaviour": "Walks quietly on bare ground under bushes, picking up small seeds, and often sits on sandy tracks. When flushed it bursts up with a flash of chestnut wings and dark back bars, flying fast and low to land a short distance away.",
     "memo": "Small dove, green jewels on the wing, chestnut flash and a sad falling coo.",
     "sources": [
       "https://en.wikipedia.org/wiki/Emerald-spotted_wood_dove",
       "https://www.oiseaux.net/oiseaux/tourtelette.emeraudine.html",
       "http://www.biodiversityexplorer.info/birds/columbidae/turtur_chalcospilos.htm",
-      "https://mpala.org/field_guide/view/emerald-spotted-wood-dove/"
+      "https://mpala.org/field_guide/view/emerald-spotted-wood-dove/",
+      "https://www.mpalalive.org/field_guide/view/emerald-spotted-wood-dove"
     ],
     "atlas": true,
-    "common": 0.739
+    "common": 0.739,
+    "vocal": 3
   },
   {
     "id": "upupa-africana",
@@ -10476,7 +10698,8 @@
       "https://www.oiseaux.net/oiseaux/huppe.d.afrique.html"
     ],
     "atlas": true,
-    "common": 0.469
+    "common": 0.469,
+    "vocal": 2
   },
   {
     "id": "uraeginthus-angolensis",
@@ -10519,7 +10742,8 @@
       "https://www.sa-venues.com/wildlife/birds_blue_waxbill.php"
     ],
     "atlas": true,
-    "common": 0.775
+    "common": 0.775,
+    "vocal": 2
   },
   {
     "id": "urocolius-indicus",
@@ -10563,7 +10787,8 @@
       "https://en.wikipedia.org/wiki/Speckled_mousebird"
     ],
     "atlas": true,
-    "common": 0.419
+    "common": 0.419,
+    "vocal": 2
   },
   {
     "id": "vanellus-armatus",
@@ -10611,7 +10836,8 @@
     ],
     "atlas": true,
     "common": 0.607,
-    "water": true
+    "water": true,
+    "vocal": 3
   },
   {
     "id": "vanellus-coronatus",
@@ -10658,7 +10884,8 @@
       "https://dewetswild.com/tag/kroonkiewiet/"
     ],
     "atlas": true,
-    "common": 0.315
+    "common": 0.315,
+    "vocal": 2
   },
   {
     "id": "vanellus-senegallus",
@@ -10706,7 +10933,8 @@
     ],
     "atlas": true,
     "common": 0.03,
-    "water": true
+    "water": true,
+    "vocal": 2
   },
   {
     "id": "vidua-funerea",
@@ -10759,7 +10987,8 @@
       "https://fladder.app/en/birds/dusky-indigobird"
     ],
     "atlas": true,
-    "common": 0.084
+    "common": 0.084,
+    "vocal": 2
   },
   {
     "id": "vidua-macroura",
@@ -10805,7 +11034,8 @@
       "https://www.oiseaux.net/oiseaux/veuve.dominicaine.html"
     ],
     "atlas": true,
-    "common": 0.109
+    "common": 0.109,
+    "vocal": 2
   },
   {
     "id": "zapornia-flavirostra",
@@ -10852,7 +11082,8 @@
     ],
     "atlas": true,
     "common": 0.263,
-    "water": true
+    "water": true,
+    "vocal": 2
   },
   {
     "id": "zosterops-virens",
@@ -10895,6 +11126,7 @@
       "http://sabap2.birdmap.africa/docs/sabap1/796.pdf"
     ],
     "atlas": true,
-    "common": 0.075
+    "common": 0.075,
+    "vocal": 2
   }
 ]

@@ -6,7 +6,7 @@ import { BIRD_GROUPS, groupOf, familyEn } from '../taxa';
 import { COLOURS, BIRD_COLOURS } from '../colours';
 import { Icon, type IconName } from '../components/Icon';
 import { SearchBox } from '../components/SearchBox';
-import { SortButton, rarityText, MigBadge } from '../components/BirdSection';
+import { SortButton, rarityText, heardText, MigBadge } from '../components/BirdSection';
 import { birdInfo, birdSort, rarityCompare } from '../learn/birds';
 import type { Species } from '../types';
 
@@ -73,7 +73,7 @@ export function IdGuideView() {
   };
   const wantCol = s0.colour || [];
   const score = (b: Species) => colours(b).filter((c) => wantCol.includes(c)).length;
-  // the colour match comes first; the chosen sort (rarest, commonest) orders the birds within it
+  // the colour match comes first; the chosen sort (rarest, commonest, most heard) orders the birds within it
   const cmp = rarityCompare(birdSort.value, birdInfo.value);
   const result = birds.filter((b) => pass(b)).sort((a, b) => score(b) - score(a) || (cmp ? cmp(a, b) : 0));
   // count per option with that criterion's own filter removed, so you see where the candidates are
@@ -156,7 +156,7 @@ export function IdGuideView() {
       <div class="grid">
         {result.map((b) => {
           const u = imgUrl(b);
-          const rt = cmp && rarityText(b.id);
+          const rt = cmp && (birdSort.value === 'hear' ? heardText(b.id) : rarityText(b.id));
           return (
             <a class={'tile' + (seen.has(b.id) ? ' seen' : '')} href={href('species/' + b.id)} key={b.id} title={name2(b)}>
               {u ? <img src={u} loading="lazy" decoding="async" alt="" /> : <div class="noimg"><Icon name="bird" size={26} /></div>}

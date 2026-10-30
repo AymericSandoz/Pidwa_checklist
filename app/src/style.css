@@ -828,3 +828,11 @@ details summary { cursor: pointer; }
 .duo.quad .l { font-size: 11.5px; }
 @media (max-width: 440px) { .duo.quad .l .ic, .gswitch .ic { display: none; } .gswitch button { font-size: 12.5px; } }
 .listsec { margin: 12px 2px 2px; font-size: 15px; }
+
+/* sound quiz */
+.slevel { display: block; width: 100%; text-align: left; font: inherit; color: var(--text); border: 1px solid var(--line); cursor: pointer; }
+.slevel .lhead { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.slevel .qprog { margin-top: 8px; }
+.qplay { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 26px 12px; border-radius: 18px; background: var(--card); border: 1px solid var(--line); }
+.qplay button { width: 72px; height: 72px; border-radius: 50%; display: grid; place-items: center; padding: 0; border: 0; background: var(--green); color: #fff; }
+.qplay span { font-size: 13px; color: var(--muted); text-align: center; }
