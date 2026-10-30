@@ -1,7 +1,7 @@
 import { signal } from '@preact/signals';
 import { Fragment } from 'preact';
 import { useState } from 'preact/hooks';
-import { species, seenCount, name, name2, totals } from '../data';
+import { species, seenCount, name, name2, totals, noteText } from '../data';
 import { href } from '../router';
 import { matches } from '../util';
 import { familyEn, groupOf, GROUPS, GROUP_LABEL, GROUP_ICON, OTHER_GROUPS } from '../taxa';
@@ -74,7 +74,7 @@ export function ListView() {
           {(Object.keys(CAT_LABEL) as OtherCat[]).filter((c) => [...otherInfo.value.values()].some((o) => o.cat === c)).map((c) => <button class={'chip' + (otherCat.value === c ? ' on' : '')} onClick={() => (otherCat.value = c)}>{CAT_LABEL[c]}</button>)}
         </div>
       )}
-      <SearchBox value={q.value} onInput={(v) => (q.value = v)} placeholder="Name or family (English, French, Latin)" />
+      <SearchBox value={q.value} onInput={(v) => (q.value = v)} placeholder="Name, family or your notes" />
       <div class="listhead">
         <div class="chips" style="margin-bottom:-7px">
           {(['all', 'seen', 'unseen'] as const).map((f) => (
@@ -99,6 +99,7 @@ export function ListView() {
                   <div class="fr">{name(s)}</div>
                   <div class="en">{name2(s)}{name2(s) ? ' · ' : ''}{rt || familyEn(s)}</div>
                 </div>
+                {noteText.value.has(s.id) && <span class="hasnote" title="You have notes on it"><Icon name="notebook-pen" size={16} /></span>}
                 {n > 0 && <span class="cnt">×{n}</span>}
               </a>
               <button class="add" aria-label="Log an observation" onClick={() => setAdding(s.id)}><Icon name="plus" /></button>

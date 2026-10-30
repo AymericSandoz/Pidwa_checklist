@@ -836,3 +836,10 @@ details summary { cursor: pointer; }
 .qplay { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 26px 12px; border-radius: 18px; background: var(--card); border: 1px solid var(--line); }
 .qplay button { width: 72px; height: 72px; border-radius: 50%; display: grid; place-items: center; padding: 0; border: 0; background: var(--green); color: #fff; }
 .qplay span { font-size: 13px; color: var(--muted); text-align: center; }
+
+/* species notes */
+.notenew textarea { width: 100%; min-height: 64px; box-sizing: border-box; margin-bottom: 8px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; background: var(--bg, transparent); color: var(--text); font: inherit; resize: vertical; }
+.notenew > .btn { margin-left: auto; display: flex; }
+.obs.note1 { align-items: flex-start; cursor: pointer; }
+.obs.note1 .body { white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.4; }
+.hasnote { flex: none; color: var(--amber); display: grid; place-items: center; }

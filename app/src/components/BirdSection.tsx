@@ -77,13 +77,13 @@ export function MigBadge({ id }: { id: string }) {
 
 const RARITY_TONE = { 'very-common': ' ok', 'common': ' ok', 'uncommon': '', 'scarce': ' warn', 'rare': ' warn' };
 
-/** The sort button of the lists: rarest, commonest, most heard, A-Z, round and round. "Most heard" is for the birds only. */
+/** The sort button of the lists: commonest, most heard, rarest, A-Z, round and round. "Most heard" is for the birds only. */
 export function SortButton({ class: cls = '', birds = true }: { class?: string; birds?: boolean }) {
   const v = !birds && birdSort.value === 'hear' ? 'common' : birdSort.value;
   const next = NEXT_SORT[v];
   return (
     <button class={'chip sortbtn ' + cls + (v !== 'az' ? ' on' : '')} aria-label={'Sort: ' + SORT_LABEL[v]}
-      onClick={() => { birdSort.value = !birds && next === 'hear' ? 'az' : next; localStorage.setItem('bird-sort', birdSort.value); }}>
+      onClick={() => { birdSort.value = !birds && next === 'hear' ? 'rare' : next; localStorage.setItem('list-sort', birdSort.value); }}>
       <Icon name="arrow-down-up" size={14} stroke={2.4} />{SORT_LABEL[v]}
     </button>
   );

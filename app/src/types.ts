@@ -52,6 +52,14 @@ export interface Place {
   ts: number;        // when it was added, epoch ms
 }
 
+/** A dated personal note on a species, seen or not. Stays on the phone, and goes with the JSON backup. */
+export interface SpeciesNote {
+  id?: number;
+  speciesId: string;
+  text: string;
+  ts: number;        // when it was written, epoch ms
+}
+
 /** Spaced-repetition state of one species in the quiz (Leitner boxes). Stays on the phone. */
 export interface QuizCard {
   speciesId: string;

@@ -15,7 +15,7 @@ const names = () => page.$$eval('.sp-row .fr', (e) => e.slice(0, 4).map((x) => x
 const label = () => page.textContent('.sortbtn');
 console.log('default:', await label(), await names());
 await page.screenshot({ path: `${out}/s-list-rare.png` });
-for (let k = 0; k < 2; k++) await page.click('.sortbtn');
+await page.click('.sortbtn');
 console.log('then:', await label(), await names(), await page.$$eval('.sp-row .en', (e) => e.slice(0, 2).map((x) => x.textContent)));
 await page.screenshot({ path: `${out}/s-list-hear.png` });
 await page.goto(base + 'learn/soundquiz', { waitUntil: 'networkidle' });

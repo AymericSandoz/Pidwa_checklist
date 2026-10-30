@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'preact/hooks';
-import { observations, obsInfo, reloadObservations, places, reloadPlaces } from '../data';
+import { observations, obsInfo, reloadObservations, places, reloadPlaces, speciesNotes, reloadNotes } from '../data';
 import { db } from '../db';
 import { fmtBytes } from '../util';
 import { theme, setTheme, type Theme } from '../theme';
 import { Icon } from '../components/Icon';
-import type { Observation, Place } from '../types';
+import type { Observation, Place, SpeciesNote } from '../types';
 import { packs, packState, packsError, missing, autoPacks, setAutoPacks, loadPacks, downloadPack, downloadAll, stopPack, stopAll, removePack, PACK_LABEL } from '../packs';
 
 const THEMES: [Theme, string][] = [['auto', 'Automatic'], ['light', 'Day'], ['dark', 'Night']];
@@ -40,7 +40,7 @@ export function SettingsView() {
   const stamp = () => new Date().toISOString().slice(0, 10);
   function exportJson() {
     const rows = observations.value.map(({ photo, ...o }) => o);
-    dl(`pidwa-observations-${stamp()}.json`, JSON.stringify({ observations: rows, places: places.value }, null, 1), 'application/json');
+    dl(`pidwa-observations-${stamp()}.json`, JSON.stringify({ observations: rows, places: places.value, notes: speciesNotes.value }, null, 1), 'application/json');
   }
   function exportCsv() {
     const esc = (v: any) => `"${String(v ?? '').replace(/"/g, '""')}"`;
@@ -71,7 +71,12 @@ export function SettingsView() {
       const addPlaces = placeRows.filter((p) => p.name && p.lat != null && p.lon != null && !havePlaces.has(`${p.name}|${p.lat}|${p.lon}`)).map(({ id, ...p }) => ({ ...p, type: p.type || 'other', note: p.note || '', ts: p.ts || Date.now() }));
       await db.places.bulkAdd(addPlaces);
       await reloadPlaces();
-      setMsg(`${add.length} observation(s) and ${addPlaces.length} place(s) imported, ${rows.length - add.length} observation(s) already present.`);
+      const noteRows = (Array.isArray(parsed) ? [] : parsed.notes || []) as SpeciesNote[];
+      const haveNotes = new Set((await db.notes.toArray()).map((n) => `${n.speciesId}|${n.ts}`));
+      const addNotes = noteRows.filter((n) => n.speciesId && n.text && n.ts && !haveNotes.has(`${n.speciesId}|${n.ts}`)).map(({ id, ...n }) => n);
+      await db.notes.bulkAdd(addNotes);
+      await reloadNotes();
+      setMsg(`${add.length} observation(s), ${addPlaces.length} place(s) and ${addNotes.length} note(s) imported, ${rows.length - add.length} observation(s) already present.`);
     } catch (err: any) { setMsg('Import failed: ' + err.message); }
   }
 
@@ -121,7 +126,7 @@ export function SettingsView() {
 
       <div class="card">
         <b>Backup of observations</b>
-        <p class="muted small" style="margin:4px 0 8px">{observations.value.length} observation(s) and {places.value.length} place(s) on the map. Photos stay on the phone, the export does not include them.</p>
+        <p class="muted small" style="margin:4px 0 8px">{observations.value.length} observation(s), {places.value.length} place(s) on the map and {speciesNotes.value.length} note(s) (JSON only). Photos stay on the phone, the export does not include them.</p>
         <div class="actions">
           <button class="btn secondary" onClick={exportJson}>JSON</button>
           <button class="btn secondary" onClick={exportCsv}>CSV</button>

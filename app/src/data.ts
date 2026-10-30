@@ -1,6 +1,6 @@
 import { signal, computed } from '@preact/signals';
 import { db } from './db';
-import type { Species, Observation, Group, Place } from './types';
+import type { Species, Observation, Group, Place, SpeciesNote } from './types';
 
 export const BASE = import.meta.env.BASE_URL; // e.g. "/Pidwa_checklist/"
 export const dataUrl = (rel: string) => BASE + 'data/' + rel;
@@ -11,6 +11,7 @@ export const loadError = signal<string | null>(null);
 export const byId = computed(() => new Map(species.value.map((s) => [s.id, s])));
 
 export const observations = signal<Observation[]>([]);
+export const speciesNotes = signal<SpeciesNote[]>([]);
 export const places = signal<Place[]>([]);
 
 export async function loadAll() {
@@ -23,6 +24,7 @@ export async function loadAll() {
     list.sort((a, b) => coll.compare(a.en, b.en));
     species.value = list;
     await reloadObservations();
+    await reloadNotes();
     await reloadPlaces();
     loaded.value = true;
   } catch (e: any) {
@@ -64,6 +66,29 @@ export async function deleteObservation(id: number) {
   await db.observations.delete(id);
   await reloadObservations();
 }
+
+export async function reloadNotes() {
+  for (const [from, to] of Object.entries(RENAMED)) await db.notes.where('speciesId').equals(from).modify({ speciesId: to });
+  speciesNotes.value = await db.notes.orderBy('ts').reverse().toArray();
+}
+export async function addNote(speciesId: string, text: string) {
+  await db.notes.add({ speciesId, text, ts: Date.now() });
+  await reloadNotes();
+}
+export async function updateNote(id: number, text: string) {
+  await db.notes.update(id, { text });
+  await reloadNotes();
+}
+export async function deleteNote(id: number) {
+  await db.notes.delete(id);
+  await reloadNotes();
+}
+/** All the notes of a species in one text, per species id: the list's marker and the search. */
+export const noteText = computed(() => {
+  const m = new Map<string, string>();
+  for (const n of speciesNotes.value) m.set(n.speciesId, (m.get(n.speciesId) || '') + ' ' + n.text);
+  return m;
+});
 
 /** Number of observations per species id. */
 export const seenCount = computed(() => {

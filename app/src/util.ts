@@ -1,3 +1,4 @@
+import { noteText } from './data';
 import type { Species } from './types';
 
 export const fmtDate = (ts: number) => new Date(ts).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' });
@@ -17,7 +18,7 @@ export const norm = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀
 export function matches(sp: Species, q: string) {
   if (!q) return true;
   const n = norm(q);
-  return norm(sp.en).includes(n) || norm(sp.fr || '').includes(n) || norm(sp.sci).includes(n) || norm(sp.family || '').includes(n);
+  return norm(sp.en).includes(n) || norm(sp.fr || '').includes(n) || norm(sp.sci).includes(n) || norm(sp.family || '').includes(n) || norm(noteText.value.get(sp.id) || '').includes(n);
 }
 
 /** Downscale a camera photo before storing it (keeps IndexedDB small). */

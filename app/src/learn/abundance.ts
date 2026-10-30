@@ -1,6 +1,6 @@
 // How common a species is around Pidwa, whatever its group: the SABAP2 atlas rate for birds, our estimated level for snakes,
 // plants and the others. Shared by the list's rarity sort and the species page pills. Mammals have none.
-import { birdInfo, rarity, rarityCompare, RARITY_LABEL, fmtCommon, type BirdSort, type Rarity } from './birds';
+import { birdInfo, rarity, rarityCompare, commonRate, RARITY_LABEL, fmtCommon, type BirdSort, type Rarity } from './birds';
 import { snakeInfo } from './snakes';
 import { plantInfo } from './plants';
 import { otherInfo } from './others';
@@ -10,7 +10,7 @@ const LEVEL_RATE: Record<Rarity, number> = { 'very-common': 0.5, 'common': 0.2, 
 
 export function abundance(id: string): { level: Rarity; rate: number; atlas: boolean } | null {
   const b = birdInfo.value.get(id);
-  if (b) { const r = rarity(b); return r ? { level: r, rate: b.common!, atlas: true } : null; }
+  if (b) { const r = rarity(b); return r ? { level: r, rate: b.common!, atlas: true } : { level: 'very-common', rate: commonRate(b), atlas: false }; }
   const lv = snakeInfo.value.get(id)?.level || plantInfo.value.get(id)?.level || otherInfo.value.get(id)?.level;
   return lv ? { level: lv, rate: LEVEL_RATE[lv], atlas: false } : null;
 }

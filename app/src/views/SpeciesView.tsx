@@ -7,6 +7,7 @@ import { ObsForm } from '../components/ObsForm';
 import { PhotoImg } from '../components/PhotoImg';
 import { Icon } from '../components/Icon';
 import { SoundPlayer } from '../components/SoundPlayer';
+import { SpeciesNotes } from '../components/SpeciesNotes';
 import { TracksSection } from '../components/TracksSection';
 import { BirdSection, RarityPill } from '../components/BirdSection';
 import { SnakeSection, PlantSection, OtherSection, LevelPill, DangerPill } from '../components/GroupSections';
@@ -127,6 +128,8 @@ export function SpeciesView({ id }: { id: string }) {
             {s.sounds.map((sn) => <SoundPlayer key={sn.file} src={dataUrl(sn.file)} title={cap(sn.type || 'recording')} len={sn.len} sub={`quality ${sn.q} · ${sn.by} · xeno-canto`} />)}
           </>
         )}
+
+        <SpeciesNotes id={s.id} />
 
         <div class="sec">My observations {mine.length > 0 && <span class="n">{mine.length}</span>}</div>
         {mine.map((o) => (
