@@ -843,3 +843,20 @@ details summary { cursor: pointer; }
 .obs.note1 { align-items: flex-start; cursor: pointer; }
 .obs.note1 .body { white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.4; }
 .hasnote { flex: none; color: var(--amber); display: grid; place-items: center; }
+
+/* raptors in flight */
+.fshapes { display: grid; grid-template-columns: 1fr 1fr; gap: 7px; }
+.fshape { display: flex; flex-direction: column; gap: 2px; padding: 9px 11px; border: 1px solid var(--line); border-radius: 14px; background: var(--card); color: var(--text); font: inherit; text-align: left; }
+.fshape b { font-size: 14px; }
+.fshape span { font-size: 12px; color: var(--muted); line-height: 1.25; }
+.fshape.on { border: 2px solid var(--green); background: var(--green-light); }
+.flightc { padding: 0; overflow: hidden; }
+.flightc .fph { position: relative; }
+.flightc .fph img { display: block; width: 100%; max-height: 300px; object-fit: cover; background: var(--sand); }
+.flightc .cred { position: absolute; right: 6px; bottom: 6px; padding: 2px 7px; border-radius: 8px; background: rgba(0, 0, 0, .55); color: #fff; font-size: 10.5px; }
+.flightc .fname { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 8px; padding: 10px 14px 0; color: var(--text); }
+.flightc .fname b { font-size: 16px; }
+.flightc .fname span { font-size: 13px; color: var(--muted); flex: 1; }
+.flightc .fname .ic { align-self: center; }
+.flightc .traits { margin: 8px 14px 12px; }
+.flightc .fdoubt { margin: -4px 14px 12px; font-size: 13px; line-height: 1.4; color: var(--amber); }

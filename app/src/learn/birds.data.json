@@ -11128,5 +11128,48 @@
     "atlas": true,
     "common": 0.075,
     "vocal": 2
+  },
+  {
+    "id": "aquila-verreauxii",
+    "status": "resident",
+    "months": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "migration": "Adults stay on their home range, while young birds wander after leaving their parents. The atlas reports it so rarely around Pidwa that its months say little, so they are not taken from it.",
+    "size": "75-96 cm, wingspan about 1.8-2.3 m: a very large eagle, very similar in size to the Martial Eagle.",
+    "keys": [
+      "Jet-black, with a white V on the back that runs down to the rump, partly hidden when perched",
+      "Yellow cere, eye-ring and “eyebrows”, and yellow feet",
+      "In flight: paddle-shaped wings, broad in the middle and pinched at the base of the primaries, with a white window on the primaries seen from above and below",
+      "Juvenile: brown, with a golden crown, rufous nape, black cheeks and no white V; adult plumage after about 4-6 years"
+    ],
+    "confuse": [
+      {
+        "sp": "Martial Eagle",
+        "how": "Similar in size, but it has a dark hood, a white spotted belly and dark underwings, without the black body and white V."
+      }
+    ],
+    "voice": "Largely silent. In display, a harsh yelping call and a melodious “keee-up”; contact and chase calls such as “whaeee-whaeee” or “keeooo-keeooo”.",
+    "behaviour": "A bird of cliffs, gorges and rocky hills, usually in pairs. Hyraxes are its main and often only prey, and it rarely comes to carrion. It rides the wind along rock faces, and mates are recorded hunting together, one distracting the prey. Usually lays two eggs, and the older chick nearly always kills the younger one.",
+    "memo": "The black eagle with a white V on its back: where there are cliffs and hyraxes.",
+    "sources": [
+      "https://www.sanbi.org/animal-of-the-week/verreauxs-eagle/",
+      "https://www.oiseaux-birds.com/card-verreaux-eagle.html",
+      "https://en.wikipedia.org/wiki/Verreaux%27s_eagle"
+    ],
+    "atlas": false,
+    "common": 0.0083,
+    "vocal": 1
   }
 ]

@@ -1,0 +1,32 @@
+import { chromium } from 'playwright-core';
+// The flight guide: the brown-with-silver-wings case should leave the Brown Snake Eagle; Verreaux's Eagle page; console errors.
+// Usage: node scripts/flight-shot.mjs <outdir>
+const out = process.argv[2];
+const browser = await chromium.launch({ channel: 'chrome', headless: true });
+const ctx = await browser.newContext({ viewport: { width: 412, height: 915 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true });
+const page = await ctx.newPage();
+const errs = [];
+page.on('pageerror', (e) => errs.push(e.message));
+page.on('console', (m) => { if (m.type() === 'error') errs.push(m.text()); });
+const base = 'http://localhost:5180/Pidwa_checklist/#/';
+await page.goto(base + 'id/flight', { waitUntil: 'networkidle' });
+await page.waitForTimeout(1500);
+await page.screenshot({ path: `${out}/f-top.png` });
+const names = () => page.$$eval('.flightc .fname b', (e) => e.map((x) => x.textContent));
+console.log('all:', (await names()).length, (await names()).slice(0, 5));
+console.log('imgs broken:', await page.evaluate(async () => { const out = []; for (const i of document.querySelectorAll('.flightc img')) { const r = await fetch(i.src); if (!r.ok) out.push(i.src); } return out; }));
+await page.click('.chip:has-text("Brown")');
+await page.click('.chip:has-text("Dark front, pale rear")');
+await page.waitForTimeout(200);
+console.log('brown + pale rear:', await names());
+await page.locator('.flightc').first().scrollIntoViewIfNeeded();
+await page.screenshot({ path: `${out}/f-result.png` });
+await page.goto(base + 'species/aquila-verreauxii', { waitUntil: 'networkidle' });
+await page.waitForTimeout(1200);
+await page.locator('.flightc').scrollIntoViewIfNeeded();
+await page.screenshot({ path: `${out}/f-verreaux.png` });
+await page.goto(base + 'id/flight', { waitUntil: 'networkidle' });
+await page.waitForTimeout(800);
+await page.screenshot({ path: `${out}/f-full.png`, fullPage: true, clip: { x: 0, y: 0, width: 412, height: 3000 } });
+console.log('errors:', errs);
+await browser.close();

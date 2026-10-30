@@ -7,10 +7,10 @@ import type { Packs } from './types';
 
 export interface PackState { total: number; cached: number; bytes: number; busy: boolean; error?: string }
 
-export const PACK_LABEL: Record<string, string> = { images: 'Species photos (one per species)', sounds: 'Bird sounds (xeno-canto)', sat: 'Reserve map (satellite, Sentinel-2)', birdnet: 'Sound ID model (BirdNET)', photos: 'More photos per species (iNaturalist), for the quiz', signs: 'Track and dung photos (iNaturalist)' };
-export const PACK_SHORT: Record<string, string> = { images: 'photos', sounds: 'bird sounds', sat: 'map', birdnet: 'Sound ID', photos: 'quiz photos', signs: 'track photos' };
+export const PACK_LABEL: Record<string, string> = { images: 'Species photos (one per species)', sounds: 'Bird sounds (xeno-canto)', sat: 'Reserve map (satellite, Sentinel-2)', birdnet: 'Sound ID model (BirdNET)', photos: 'More photos per species (iNaturalist), for the quiz', signs: 'Track and dung photos (iNaturalist)', flight: 'Raptors in flight (photos)' };
+export const PACK_SHORT: Record<string, string> = { images: 'photos', sounds: 'bird sounds', sat: 'map', birdnet: 'Sound ID', photos: 'quiz photos', signs: 'track photos', flight: 'raptors in flight' };
 // the species photos first (the app looks empty without them), then smallest and most used, the 60 MB model last
-const ORDER = ['images', 'sat', 'sounds', 'signs', 'photos', 'birdnet'];
+const ORDER = ['images', 'sat', 'sounds', 'signs', 'flight', 'photos', 'birdnet'];
 const cacheName = (p: string) => 'pack-' + p;
 
 export const packs = signal<Packs | null>(null);

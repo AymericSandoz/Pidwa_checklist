@@ -15,6 +15,7 @@ import { birdInfo } from '../learn/birds';
 import type { Observation, Species } from '../types';
 import { popById, fmtN } from '../learn/populations';
 import { DropChart } from './LearnView';
+import { FlightSection } from './FlightGuideView';
 
 /** The extra field photos (photos pack). A photo that is not on the phone yet simply does not show. */
 function Gallery({ s }: { s: Species }) {
@@ -108,6 +109,7 @@ export function SpeciesView({ id }: { id: string }) {
         {s.group === 'mammal' && <TracksSection id={s.id} />}
         {s.group === 'bird' && <BirdSection id={s.id} />}
         {s.group === 'snake' && <SnakeSection id={s.id} />}
+        {s.group === 'bird' && <FlightSection id={s.id} />}
         {s.group === 'plant' && <PlantSection id={s.id} />}
         {s.group === 'other' && <OtherSection id={s.id} />}
 

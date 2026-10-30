@@ -186,6 +186,10 @@
         "bytes": 24164
       },
       {
+        "path": "images/aquila-verreauxii.webp",
+        "bytes": 23224
+      },
+      {
         "path": "images/ardea-alba.webp",
         "bytes": 10140
       },
@@ -2146,7 +2150,7 @@
         "bytes": 38344
       }
     ],
-    "bytes": 36432278
+    "bytes": 36455502
   },
   "sounds": {
     "files": [
@@ -11448,6 +11452,26 @@
       {
         "path": "photos/aquila-spilogaster-5.webp",
         "bytes": 18838
+      },
+      {
+        "path": "photos/aquila-verreauxii-1.webp",
+        "bytes": 22162
+      },
+      {
+        "path": "photos/aquila-verreauxii-2.webp",
+        "bytes": 10530
+      },
+      {
+        "path": "photos/aquila-verreauxii-3.webp",
+        "bytes": 50412
+      },
+      {
+        "path": "photos/aquila-verreauxii-4.webp",
+        "bytes": 49916
+      },
+      {
+        "path": "photos/aquila-verreauxii-5.webp",
+        "bytes": 17340
       },
       {
         "path": "photos/ardea-alba-1.webp",
@@ -21206,7 +21230,7 @@
         "bytes": 52056
       }
     ],
-    "bytes": 76040502
+    "bytes": 76190862
   },
   "signs": {
     "files": [
@@ -22444,5 +22468,114 @@
       }
     ],
     "bytes": 16311192
+  },
+  "flight": {
+    "files": [
+      {
+        "path": "flight/accipiter-badius.webp",
+        "bytes": 4074
+      },
+      {
+        "path": "flight/accipiter-tachiro.webp",
+        "bytes": 15194
+      },
+      {
+        "path": "flight/aquila-rapax.webp",
+        "bytes": 1682
+      },
+      {
+        "path": "flight/aquila-spilogaster.webp",
+        "bytes": 2136
+      },
+      {
+        "path": "flight/aquila-verreauxii.webp",
+        "bytes": 4058
+      },
+      {
+        "path": "flight/aviceda-cuculoides.webp",
+        "bytes": 6780
+      },
+      {
+        "path": "flight/buteo-buteo.webp",
+        "bytes": 9178
+      },
+      {
+        "path": "flight/circaetus-cinereus.webp",
+        "bytes": 4408
+      },
+      {
+        "path": "flight/circaetus-pectoralis.webp",
+        "bytes": 3184
+      },
+      {
+        "path": "flight/clanga-pomarina.webp",
+        "bytes": 2498
+      },
+      {
+        "path": "flight/elanus-caeruleus.webp",
+        "bytes": 4534
+      },
+      {
+        "path": "flight/falco-amurensis.webp",
+        "bytes": 5330
+      },
+      {
+        "path": "flight/falco-peregrinus.webp",
+        "bytes": 10926
+      },
+      {
+        "path": "flight/falco-subbuteo.webp",
+        "bytes": 3972
+      },
+      {
+        "path": "flight/gyps-africanus.webp",
+        "bytes": 8180
+      },
+      {
+        "path": "flight/gyps-coprotheres.webp",
+        "bytes": 2824
+      },
+      {
+        "path": "flight/haliaeetus-vocifer.webp",
+        "bytes": 2910
+      },
+      {
+        "path": "flight/hieraaetus-wahlbergi.webp",
+        "bytes": 1752
+      },
+      {
+        "path": "flight/melierax-metabates.webp",
+        "bytes": 8964
+      },
+      {
+        "path": "flight/milvus-aegyptius.webp",
+        "bytes": 4072
+      },
+      {
+        "path": "flight/necrosyrtes-monachus.webp",
+        "bytes": 13512
+      },
+      {
+        "path": "flight/polemaetus-bellicosus.webp",
+        "bytes": 6224
+      },
+      {
+        "path": "flight/polyboroides-typus.webp",
+        "bytes": 16100
+      },
+      {
+        "path": "flight/terathopius-ecaudatus.webp",
+        "bytes": 4034
+      },
+      {
+        "path": "flight/torgos-tracheliotos.webp",
+        "bytes": 13736
+      },
+      {
+        "path": "flight/trigonoceps-occipitalis.webp",
+        "bytes": 3318
+      }
+    ],
+    "bytes": 163580
   }
 }

@@ -37,7 +37,7 @@ export default defineConfig({
         // App shell + species data + thumbnails are precached at install (~11 MB). Keep it small: the install is all-or-nothing
         // and the phone gives it a few minutes, so the 36 MB of species photos live in the 'images' pack instead.
         globPatterns: ['**/*.{js,css,html,ico,png,svg,webp,json,woff2,wasm,pcm}'], // wasm + pcm: sound ID engine and its reference sound
-        globIgnores: ['**/data/images/**', '**/data/preview.html', '**/data/sounds/**', '**/data/map/**', '**/data/birdnet/**', '**/data/photos/**', '**/data/signs/*.webp'],
+        globIgnores: ['**/data/images/**', '**/data/preview.html', '**/data/sounds/**', '**/data/map/**', '**/data/birdnet/**', '**/data/photos/**', '**/data/signs/*.webp', '**/data/flight/**'],
         maximumFileSizeToCacheInBytes: 30 * 1024 * 1024,
         navigateFallback: base + 'index.html',
         // Sounds and map are "packs" downloaded on demand from the settings screen into these caches.
@@ -49,6 +49,7 @@ export default defineConfig({
           { urlPattern: ({ url }) => url.pathname.includes('/data/birdnet/'), handler: 'CacheFirst', options: { cacheName: 'pack-birdnet' } },
           { urlPattern: ({ url }) => url.pathname.includes('/data/map/'), handler: 'CacheFirst', options: { cacheName: 'pack-sat' } },
           { urlPattern: ({ url }) => url.pathname.includes('/data/photos/'), handler: 'CacheFirst', options: { cacheName: 'pack-photos' } },
+          { urlPattern: ({ url }) => url.pathname.includes('/data/flight/'), handler: 'CacheFirst', options: { cacheName: 'pack-flight', matchOptions: { ignoreVary: true } } },
           { urlPattern: ({ url }) => url.pathname.includes('/data/signs/') && url.pathname.endsWith('.webp'), handler: 'CacheFirst', options: { cacheName: 'pack-signs' } },
         ],
       },

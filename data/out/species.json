@@ -54206,5 +54206,108 @@
     "sounds": [],
     "traits": null,
     "notes": null
+  },
+  {
+    "id": "aquila-verreauxii",
+    "group": "bird",
+    "sci": "Aquila verreauxii",
+    "en": "Verreaux's Eagle",
+    "fr": "Aigle de Verreaux",
+    "fr_source": "IOC",
+    "family": "Accipitridae",
+    "family_fr": "Accipitridae",
+    "order": "Accipitriformes",
+    "order_fr": "Accipitriformes",
+    "iucn": "least concern",
+    "qid": "Q747827",
+    "wiki": {
+      "fr": "https://fr.wikipedia.org/wiki/Aigle_de_Verreaux",
+      "en": "https://en.wikipedia.org/wiki/Verreaux's_eagle"
+    },
+    "summary": {
+      "fr": "L'Aigle de Verreaux (Aquila verreauxii) ou Aigle noir (d'Afrique) ou aigle noir à dos blanc, est une espèce de rapaces diurnes appartenant à la famille des Accipitridae.",
+      "en": "Verreaux's eagle is a large, mostly African, bird of prey. It is also called the black eagle, especially in southern Africa, not to be confused with the black eagle of south and southeast Asia. The Verreaux's eagle lives in hilly and mountainous regions of southern and eastern Africa, and very locally in the Middle East."
+    },
+    "image": {
+      "file": "images/aquila-verreauxii.webp",
+      "w": 900,
+      "h": 600,
+      "author": "Burak Doğansoysal",
+      "license": "CC-BY-NC",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "source": "https://www.inaturalist.org/photos/333127504",
+      "from": "iNaturalist"
+    },
+    "photos": [
+      {
+        "file": "photos/aquila-verreauxii-1.webp",
+        "w": 500,
+        "h": 281,
+        "author": "Chris Laidler",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/385242921"
+      },
+      {
+        "file": "photos/aquila-verreauxii-2.webp",
+        "w": 500,
+        "h": 333,
+        "author": "petermcintyre",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/290813814"
+      },
+      {
+        "file": "photos/aquila-verreauxii-3.webp",
+        "w": 500,
+        "h": 374,
+        "author": "Andrew Keys",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/378777180"
+      },
+      {
+        "file": "photos/aquila-verreauxii-4.webp",
+        "w": 500,
+        "h": 334,
+        "author": "Ernest Porter",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/15626471"
+      },
+      {
+        "file": "photos/aquila-verreauxii-5.webp",
+        "w": 375,
+        "h": 500,
+        "author": "christine_scott",
+        "license": "CC-BY-NC",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "source": "https://www.inaturalist.org/photos/520842542"
+      }
+    ],
+    "sounds": [],
+    "traits": null,
+    "notes": "also called Black Eagle; added after a sighting at Pidwa",
+    "avonet": {
+      "mass": 4195,
+      "beak": 58.2,
+      "tarsus": 117.4,
+      "wing": 590.2,
+      "tail": 403.5,
+      "habitat": "Rock",
+      "lifestyle": "Aerial",
+      "niche": "Vertivore",
+      "migration": 1,
+      "src": "BirdLife"
+    },
+    "bn": null,
+    "idk": {
+      "size": "goose",
+      "bill": "hooked",
+      "legs": "medium",
+      "habitat": "Rock",
+      "lifestyle": "Aerial",
+      "niche": "Vertivore"
+    }
   }
 ]
