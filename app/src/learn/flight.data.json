@@ -1,897 +1,926 @@
 [
- {
-  "id": "gyps-africanus",
-  "group": "vulture",
-  "size": [
-   "huge"
-  ],
-  "body": [
-   "brown",
-   "pale"
-  ],
-  "under": [
-   "pale-front"
-  ],
-  "marks": [
-   "From below: pale wing coverts against blackish flight feathers, a strong contrast",
-   "White lower back and rump, seen when it banks or lands",
-   "Juvenile darker and streaked, with no white back"
-  ],
-  "sources": [
-   "https://ebird.org/species/whbvul1/"
-  ],
-  "photo": {
-   "file": "flight/gyps-africanus.webp",
-   "w": 460,
-   "h": 500,
-   "author": "Christine Sydes",
-   "license": "cc-by-nc",
-   "source": "https://www.inaturalist.org/photos/15794907"
+  {
+    "id": "gyps-africanus",
+    "group": "vulture",
+    "size": [
+      "huge"
+    ],
+    "body": [
+      "brown",
+      "pale"
+    ],
+    "under": [
+      "pale-front"
+    ],
+    "marks": [
+      "From below: pale wing coverts against blackish flight feathers, a strong contrast",
+      "White lower back and rump, seen when it banks or lands",
+      "Juvenile darker and streaked, with no white back"
+    ],
+    "sources": [
+      "https://ebird.org/species/whbvul1/",
+      "https://en.wikipedia.org/wiki/White-backed_vulture"
+    ],
+    "photo": {
+      "file": "flight/gyps-africanus.webp",
+      "w": 460,
+      "h": 500,
+      "author": "Christine Sydes",
+      "license": "cc-by-nc",
+      "source": "https://www.inaturalist.org/photos/15794907"
+    },
+    "tail": [
+      "short"
+    ]
+  },
+  {
+    "id": "necrosyrtes-monachus",
+    "group": "vulture",
+    "size": [
+      "large"
+    ],
+    "body": [
+      "dark",
+      "brown"
+    ],
+    "under": [
+      "all-dark"
+    ],
+    "tail": [
+      "short"
+    ],
+    "marks": [
+      "The smallest vulture here (wingspan 1.6-1.8 m)",
+      "Broad, fairly short wings and a short tail",
+      "Soft pale pattern at the base of the flight feathers from below"
+    ],
+    "doubt": "Sources disagree on the tail: square or rounded.",
+    "sources": [
+      "https://www.oiseaux-birds.com/card-hooded-vulture.html",
+      "https://birding.krugerpark.co.za/birding-in-kruger-raptor-vultures.html",
+      "https://en.wikipedia.org/wiki/Hooded_vulture"
+    ],
+    "photo": {
+      "file": "flight/necrosyrtes-monachus.webp",
+      "w": 500,
+      "h": 400,
+      "author": "Lip Kee",
+      "license": "CC BY-SA 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Hooded_vulture_in_flight,_Maasai_Mara_(2853903168).jpg"
+    }
+  },
+  {
+    "id": "gyps-coprotheres",
+    "group": "vulture",
+    "size": [
+      "huge"
+    ],
+    "body": [
+      "pale"
+    ],
+    "under": [
+      "pale-front"
+    ],
+    "marks": [
+      "Bigger than the White-backed (wingspan 2.3-2.6 m) and paler",
+      "Creamy-buff body and coverts with black flight feathers and tail, but less contrast under the wing than the White-backed"
+    ],
+    "sources": [
+      "https://ebird.org/species/whbvul1/",
+      "https://thebdi.org/?p=23499"
+    ],
+    "photo": {
+      "file": "flight/gyps-coprotheres.webp",
+      "w": 500,
+      "h": 331,
+      "author": "Kyle Finn",
+      "license": "cc-by-nc",
+      "source": "https://www.inaturalist.org/photos/120496054"
+    },
+    "tail": [
+      "short"
+    ]
+  },
+  {
+    "id": "torgos-tracheliotos",
+    "group": "vulture",
+    "size": [
+      "huge"
+    ],
+    "body": [
+      "dark"
+    ],
+    "under": [
+      "all-dark"
+    ],
+    "marks": [
+      "The biggest vulture here (wingspan 2.5-2.9 m)",
+      "Dark, broad wings with parallel edges and slightly serrated tips",
+      "Pale thighs stand out against the dark body",
+      "Circles on flat wings"
+    ],
+    "doubt": "A white bar along the front of the underwing is reported, but only from search summaries.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lappet-faced_vulture",
+      "https://www.oiseaux-birds.com/card-lappet-faced-vulture.html"
+    ],
+    "photo": {
+      "file": "flight/torgos-tracheliotos.webp",
+      "w": 500,
+      "h": 404,
+      "author": "Dwergenpaartje",
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Torgos_tracheliotus_MM_flight.jpg"
+    }
+  },
+  {
+    "id": "trigonoceps-occipitalis",
+    "group": "vulture",
+    "size": [
+      "huge"
+    ],
+    "body": [
+      "pale"
+    ],
+    "under": [
+      "all-dark"
+    ],
+    "marks": [
+      "White belly and a white line along the underwing, on black wings",
+      "The female also has a white panel on the inner wing"
+    ],
+    "sources": [],
+    "photo": {
+      "file": "flight/trigonoceps-occipitalis.webp",
+      "w": 274,
+      "h": 256,
+      "author": "peterdeman",
+      "license": "cc-by-nc",
+      "source": "https://www.inaturalist.org/photos/294778415"
+    }
+  },
+  {
+    "id": "haliaeetus-vocifer",
+    "group": "eagle",
+    "size": [
+      "large"
+    ],
+    "body": [
+      "pale",
+      "rufous"
+    ],
+    "under": [
+      "all-dark"
+    ],
+    "tail": [
+      "short"
+    ],
+    "marks": [
+      "White head, chest and tail: visible from far away",
+      "Chestnut coverts and black flight feathers under broad wings",
+      "Pairs often soar together, calling"
+    ],
+    "sources": [
+      "https://thebdi.org/?p=21429",
+      "https://www.oiseaux-birds.com/card-african-fish-eagle.html"
+    ],
+    "photo": {
+      "file": "flight/haliaeetus-vocifer.webp",
+      "w": 500,
+      "h": 333,
+      "author": "C Lombard",
+      "license": "cc-by-nc",
+      "source": "https://www.inaturalist.org/photos/353116818"
+    },
+    "tailmark": [
+      "white"
+    ]
+  },
+  {
+    "id": "terathopius-ecaudatus",
+    "group": "eagle",
+    "size": [
+      "large"
+    ],
+    "body": [
+      "dark"
+    ],
+    "under": [
+      "all-pale"
+    ],
+    "tail": [
+      "tiny"
+    ],
+    "style": [
+      "rock",
+      "low"
+    ],
+    "marks": [
+      "Almost no tail: the red feet stick out behind",
+      "Very long wings held in a V, rocking from side to side, low over the bush",
+      "White underwing edged black: a broad edge in the male, narrow in the female"
+    ],
+    "doubt": "The juvenile is plain brown, with a slightly longer tail.",
+    "sources": [
+      "https://www.sa-venues.com/wildlife/birds_bateleur.php"
+    ],
+    "photo": {
+      "file": "flight/terathopius-ecaudatus.webp",
+      "w": 500,
+      "h": 357,
+      "author": "Rob Shepherd",
+      "license": "cc-by-nc",
+      "source": "https://www.inaturalist.org/photos/555466104"
+    }
+  },
+  {
+    "id": "circaetus-cinereus",
+    "group": "eagle",
+    "size": [
+      "large"
+    ],
+    "body": [
+      "brown"
+    ],
+    "under": [
+      "pale-rear"
+    ],
+    "marks": [
+      "Silvery-white flight feathers against a dark brown body and front of the wing",
+      "Dark tail with 3-4 narrow pale bars",
+      "Big round head"
+    ],
+    "sources": [
+      "https://www.hbw.com/ibc/species/53166"
+    ],
+    "photo": {
+      "file": "flight/circaetus-cinereus.webp",
+      "w": 500,
+      "h": 333,
+      "author": "Marc Henrion",
+      "license": "cc-by-nc",
+      "source": "https://www.inaturalist.org/photos/176916299"
+    },
+    "tailmark": [
+      "barred"
+    ]
+  },
+  {
+    "id": "aquila-rapax",
+    "group": "eagle",
+    "size": [
+      "large"
+    ],
+    "body": [
+      "brown"
+    ],
+    "under": [
+      "grey"
+    ],
+    "marks": [
+      "Long broad wings and a medium, rounded tail, usually spread",
+      "Soars with wings flat or slightly raised",
+      "Greyish, finely barred flight feathers",
+      "A pale patch on the rump of darker adults"
+    ],
+    "doubt": "Very variable, from pale tawny to dark brown. A pale “window” in the wing is contested: do not rely on it.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tawny_eagle",
+      "https://www.oiseaux-birds.com/card-tawny-eagle.html"
+    ],
+    "photo": {
+      "file": "flight/aquila-rapax.webp",
+      "w": 500,
+      "h": 333,
+      "author": "Gabi Rusu",
+      "license": "cc-by-nc",
+      "source": "https://www.inaturalist.org/photos/259383579"
+    }
+  },
+  {
+    "id": "polemaetus-bellicosus",
+    "group": "eagle",
+    "size": [
+      "huge",
+      "large"
+    ],
+    "body": [
+      "pale"
+    ],
+    "under": [
+      "all-dark",
+      "pale-rear"
+    ],
+    "tail": [
+      "short"
+    ],
+    "style": [
+      "high"
+    ],
+    "marks": [
+      "Huge (wingspan up to 2.4-2.6 m), soaring very high for hours",
+      "Dark head and chest, white belly",
+      "Dark wing coverts from below, paler flight feathers streaked black",
+      "Short, narrowly barred tail"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Martial_eagle",
+      "https://birding.krugerpark.co.za/birding-in-kruger-raptor-eagles.html",
+      "https://peregrinefund.org/explore-raptors-species/eagles/martial-eagle"
+    ],
+    "photo": {
+      "file": "flight/polemaetus-bellicosus.webp",
+      "w": 427,
+      "h": 500,
+      "author": "Peter Vos",
+      "license": "cc-by-nc",
+      "source": "https://www.inaturalist.org/photos/532395693"
+    },
+    "tailmark": [
+      "barred"
+    ]
+  },
+  {
+    "id": "circaetus-pectoralis",
+    "group": "eagle",
+    "size": [
+      "large"
+    ],
+    "body": [
+      "pale"
+    ],
+    "under": [
+      "all-pale"
+    ],
+    "style": [
+      "hover"
+    ],
+    "marks": [
+      "White underwings with three narrow black bars on the flight feathers",
+      "Dark chest and white belly",
+      "Hovers high in the wind before dropping on a snake"
+    ],
+    "sources": [],
+    "photo": {
+      "file": "flight/circaetus-pectoralis.webp",
+      "w": 500,
+      "h": 333,
+      "author": "Anita",
+      "license": "cc-by-nc",
+      "source": "https://www.inaturalist.org/photos/242083609"
+    },
+    "tailmark": [
+      "barred"
+    ]
+  },
+  {
+    "id": "aquila-verreauxii",
+    "group": "eagle",
+    "size": [
+      "huge",
+      "large"
+    ],
+    "body": [
+      "dark"
+    ],
+    "under": [
+      "all-dark"
+    ],
+    "marks": [
+      "Jet-black with a white V on the back, seen from above",
+      "Paddle-shaped wings: broad in the middle, pinched at the base of the primaries",
+      "A white window on the primaries, above and below",
+      "Near cliffs and rocky hills"
+    ],
+    "sources": [
+      "https://www.sanbi.org/animal-of-the-week/verreauxs-eagle/",
+      "https://en.wikipedia.org/wiki/Verreaux%27s_eagle"
+    ],
+    "photo": {
+      "file": "flight/aquila-verreauxii.webp",
+      "w": 500,
+      "h": 297,
+      "author": "debbie_upstream",
+      "license": "cc-by-nc",
+      "source": "https://www.inaturalist.org/photos/408547743"
+    }
+  },
+  {
+    "id": "hieraaetus-wahlbergi",
+    "group": "mid-eagle",
+    "size": [
+      "medium"
+    ],
+    "body": [
+      "brown",
+      "pale"
+    ],
+    "under": [
+      "grey"
+    ],
+    "tail": [
+      "long"
+    ],
+    "marks": [
+      "Cross-shaped: straight, parallel wings and a long, narrow, square tail held closed",
+      "Flight feathers and tail grey and finely barred below",
+      "Usually dark brown, but pale birds exist; summer only"
+    ],
+    "sources": [
+      "https://birding.krugerpark.co.za/birding-in-kruger-raptor-eagles.html"
+    ],
+    "photo": {
+      "file": "flight/hieraaetus-wahlbergi.webp",
+      "w": 500,
+      "h": 301,
+      "author": "Peter Erb",
+      "license": "cc-by-nc",
+      "source": "https://www.inaturalist.org/photos/593940915"
+    }
+  },
+  {
+    "id": "aquila-spilogaster",
+    "group": "mid-eagle",
+    "size": [
+      "medium"
+    ],
+    "body": [
+      "pale"
+    ],
+    "under": [
+      "all-pale"
+    ],
+    "marks": [
+      "White underwing with a black trailing edge and a pale “window” at the base of the primaries",
+      "Grey tail with a broad black band at the tip",
+      "Appears mostly white from below"
+    ],
+    "sources": [
+      "https://birding.krugerpark.co.za/birding-in-kruger-raptor-eagles.html"
+    ],
+    "photo": {
+      "file": "flight/aquila-spilogaster.webp",
+      "w": 500,
+      "h": 305,
+      "author": "Peter Erb",
+      "license": "cc-by-nc",
+      "source": "https://www.inaturalist.org/photos/356509889"
+    },
+    "tailmark": [
+      "band"
+    ]
+  },
+  {
+    "id": "clanga-pomarina",
+    "group": "mid-eagle",
+    "size": [
+      "medium"
+    ],
+    "body": [
+      "brown"
+    ],
+    "under": [
+      "all-dark"
+    ],
+    "tail": [
+      "short"
+    ],
+    "marks": [
+      "Plain dark brown, with a short, rounded tail",
+      "From above: pale flash at the base of the primaries and a pale crescent on the rump"
+    ],
+    "sources": [
+      "https://birding.krugerpark.co.za/birding-in-kruger-raptor-eagles.html"
+    ],
+    "photo": {
+      "file": "flight/clanga-pomarina.webp",
+      "w": 500,
+      "h": 375,
+      "author": "Ian A W Macdonald",
+      "license": "cc-by-nc",
+      "source": "https://www.inaturalist.org/photos/587705911"
+    }
+  },
+  {
+    "id": "milvus-aegyptius",
+    "group": "kite",
+    "size": [
+      "medium"
+    ],
+    "body": [
+      "brown"
+    ],
+    "tail": [
+      "forked"
+    ],
+    "style": [
+      "low"
+    ],
+    "marks": [
+      "Long forked tail, constantly twisted to steer",
+      "Drifts low and buoyantly rather than circling",
+      "Summer only"
+    ],
+    "doubt": "The fork can vanish when the tail is fully spread. Nothing found on the underwing.",
+    "sources": [
+      "https://birding.krugerpark.co.za/birding-in-kruger-raptor-kites.html",
+      "http://www.biodiversityexplorer.info/birds/accipitridae/milvus_migrans.htm"
+    ],
+    "photo": {
+      "file": "flight/milvus-aegyptius.webp",
+      "w": 500,
+      "h": 438,
+      "author": "Peter Vos",
+      "license": "cc-by-nc",
+      "source": "https://www.inaturalist.org/photos/112410360"
+    }
+  },
+  {
+    "id": "buteo-buteo",
+    "group": "kite",
+    "size": [
+      "medium"
+    ],
+    "body": [
+      "brown"
+    ],
+    "under": [
+      "pale-rear"
+    ],
+    "tail": [
+      "short"
+    ],
+    "marks": [
+      "Broad wings in a shallow V, soaring in circles",
+      "Dark wrist patch, pale flight feathers and a dark trailing edge",
+      "Short, fanned tail, often rufous",
+      "Summer only"
+    ],
+    "sources": [],
+    "photo": {
+      "file": "flight/buteo-buteo.webp",
+      "w": 500,
+      "h": 464,
+      "author": "Scarabinol",
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Common_Buzzard_flying,_Switzerland.jpg"
+    }
+  },
+  {
+    "id": "polyboroides-typus",
+    "group": "kite",
+    "size": [
+      "medium"
+    ],
+    "body": [
+      "grey"
+    ],
+    "under": [
+      "grey"
+    ],
+    "tail": [
+      "long"
+    ],
+    "style": [
+      "low"
+    ],
+    "marks": [
+      "Broad, rounded pale grey wings with a black trailing edge",
+      "Black tail with one broad white band",
+      "Small head; slow, buoyant flight, often mobbed by small birds"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/African_harrier-hawk",
+      "https://www.oiseaux-birds.com/card-african-harrier-hawk.html",
+      "https://birding.krugerpark.co.za/birding-in-kruger-raptor-hawks.html"
+    ],
+    "photo": {
+      "file": "flight/polyboroides-typus.webp",
+      "w": 500,
+      "h": 333,
+      "author": "cheryld21",
+      "license": "cc-by-nc",
+      "source": "https://www.inaturalist.org/photos/463286610"
+    },
+    "tailmark": [
+      "band"
+    ]
+  },
+  {
+    "id": "kaupifalco-monogrammicus",
+    "group": "kite",
+    "size": [
+      "small"
+    ],
+    "body": [
+      "grey"
+    ],
+    "style": [
+      "low"
+    ],
+    "marks": [
+      "Small and stocky; black tail with one broad white band, white rump",
+      "Undulating, thrush-like flight between perches, rarely above the trees"
+    ],
+    "sources": [],
+    "tailmark": [
+      "band"
+    ]
+  },
+  {
+    "id": "elanus-caeruleus",
+    "group": "kite",
+    "size": [
+      "small"
+    ],
+    "body": [
+      "pale"
+    ],
+    "under": [
+      "all-pale"
+    ],
+    "tail": [
+      "short"
+    ],
+    "style": [
+      "hover"
+    ],
+    "marks": [
+      "White below with black wingtips",
+      "Hovers about 10 m above open grass, legs dangling"
+    ],
+    "sources": [],
+    "photo": {
+      "file": "flight/elanus-caeruleus.webp",
+      "w": 500,
+      "h": 333,
+      "author": "מינוזיג",
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Elanus_caeruleus_in_flight.jpg"
+    }
+  },
+  {
+    "id": "aviceda-cuculoides",
+    "group": "kite",
+    "size": [
+      "medium"
+    ],
+    "body": [
+      "barred"
+    ],
+    "marks": [
+      "Slim, with long wings and a long tail",
+      "Rufous underwing",
+      "Slower, weaker flight than a sparrowhawk"
+    ],
+    "sources": [],
+    "photo": {
+      "file": "flight/aviceda-cuculoides.webp",
+      "w": 375,
+      "h": 500,
+      "author": "spearo7",
+      "license": "cc-by-nc",
+      "source": "https://www.inaturalist.org/photos/377611404"
+    },
+    "tail": [
+      "long"
+    ]
+  },
+  {
+    "id": "melierax-metabates",
+    "group": "hawk",
+    "size": [
+      "medium"
+    ],
+    "body": [
+      "grey"
+    ],
+    "marks": [
+      "Grey with black outer primaries and a tail barred dark and white",
+      "Rump finely barred grey, not pure white",
+      "Soars with raised wings"
+    ],
+    "sources": [
+      "https://www.oiseaux-birds.com/card-dark-chanting-goshawk.html",
+      "https://en.wikipedia.org/wiki/Dark_chanting_goshawk"
+    ],
+    "photo": {
+      "file": "flight/melierax-metabates.webp",
+      "w": 500,
+      "h": 333,
+      "author": "Charles J. Sharp",
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Dark_chanting_goshawk_(Melierax_metabates_metabates)_in_flight_Serengeti.jpg"
+    },
+    "tailmark": [
+      "barred"
+    ]
+  },
+  {
+    "id": "accipiter-tachiro",
+    "group": "hawk",
+    "size": [
+      "small"
+    ],
+    "body": [
+      "barred"
+    ],
+    "style": [
+      "dash"
+    ],
+    "marks": [
+      "Broad wings and a long tail",
+      "Pale rufous underwing; flight feathers and tail barred grey below",
+      "Morning display above the canopy: slow wingbeats and glides, with a dry “krit”"
+    ],
+    "doubt": "Most of this rests on one source.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/African_goshawk"
+    ],
+    "photo": {
+      "file": "flight/accipiter-tachiro.webp",
+      "w": 500,
+      "h": 378,
+      "author": "Neil Crawford from Sweden",
+      "license": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:African_Cuckoo-Hawk_(Aviceda_cuculoides)_in_flight.jpg"
+    },
+    "tail": [
+      "long"
+    ]
+  },
+  {
+    "id": "micronisus-gabar",
+    "group": "hawk",
+    "size": [
+      "small"
+    ],
+    "body": [
+      "grey"
+    ],
+    "style": [
+      "dash"
+    ],
+    "marks": [
+      "Broad, clean white rump, obvious in flight",
+      "Chases birds persistently through the trees"
+    ],
+    "doubt": "The dark morph, about a quarter of birds, is all black with no white rump.",
+    "sources": [],
+    "tailmark": [
+      "barred"
+    ]
+  },
+  {
+    "id": "accipiter-minullus",
+    "group": "hawk",
+    "size": [
+      "small"
+    ],
+    "style": [
+      "dash"
+    ],
+    "marks": [
+      "Tiny, about the size of a dove",
+      "Narrow white rump band and two white spots on the tail",
+      "A short, fast dash from cover"
+    ],
+    "doubt": "Nothing found on the wing shape or underwing.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Little_sparrowhawk",
+      "https://birding.krugerpark.co.za/birding-in-kruger-raptor-hawks.html"
+    ],
+    "tailmark": [
+      "barred"
+    ]
+  },
+  {
+    "id": "accipiter-badius",
+    "group": "hawk",
+    "size": [
+      "small"
+    ],
+    "body": [
+      "barred"
+    ],
+    "marks": [
+      "Short, rounded wings with black tips",
+      "No white rump",
+      "A few flaps then a glide, tree to tree"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Shikra",
+      "https://oiseaux-birds.com/card-shikra.html",
+      "https://birding.krugerpark.co.za/birding-in-kruger-raptor-hawks.html"
+    ],
+    "photo": {
+      "file": "flight/accipiter-badius.webp",
+      "w": 500,
+      "h": 332,
+      "author": "Karthik Easvur",
+      "license": "CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Shikra_flight.jpg"
+    }
+  },
+  {
+    "id": "falco-amurensis",
+    "group": "falcon",
+    "size": [
+      "small"
+    ],
+    "body": [
+      "dark",
+      "grey"
+    ],
+    "under": [
+      "pale-front"
+    ],
+    "style": [
+      "hover",
+      "flock"
+    ],
+    "marks": [
+      "In flocks, hovering over grass; summer only",
+      "Long pointed wings",
+      "The male flashes white coverts against dark flight feathers"
+    ],
+    "sources": [
+      "https://oiseaux-birds.com/card-amur-falcon.html"
+    ],
+    "photo": {
+      "file": "flight/falco-amurensis.webp",
+      "w": 500,
+      "h": 331,
+      "author": "P Jeganathan",
+      "license": "CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Amur_Falcon_in_flight_from_Doyang_reservoir_region_in_Nagaland_JEG4483.JPG"
+    },
+    "tail": [
+      "long"
+    ]
+  },
+  {
+    "id": "falco-peregrinus",
+    "group": "falcon",
+    "size": [
+      "medium"
+    ],
+    "body": [
+      "barred"
+    ],
+    "style": [
+      "dash"
+    ],
+    "marks": [
+      "Compact, with long pointed wings broad at the base",
+      "Quick, shallow wingbeats; stoops with folded wings"
+    ],
+    "doubt": "Sources are not specific to the African race, and disagree on the tail length.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Peregrine_falcon",
+      "https://birding.krugerpark.co.za/birding-in-kruger-raptor-falcons.html"
+    ],
+    "photo": {
+      "file": "flight/falco-peregrinus.webp",
+      "w": 500,
+      "h": 500,
+      "author": "Mike Baird",
+      "license": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Falco_peregrinus_-Morro_Rock,_Morro_Bay,_California,_USA_-flying-8.jpg"
+    }
+  },
+  {
+    "id": "falco-subbuteo",
+    "group": "falcon",
+    "size": [
+      "small"
+    ],
+    "under": [
+      "grey"
+    ],
+    "style": [
+      "dash"
+    ],
+    "marks": [
+      "Long, scythe-shaped wings: looks like a big swift",
+      "Short tail; underwing densely barred",
+      "Catches swallows and dragonflies on the wing; summer only"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Eurasian_hobby",
+      "https://www.oiseaux-birds.com/card-eurasian-hobby.html",
+      "https://birding.krugerpark.co.za/birding-in-kruger-raptor-falcons.html"
+    ],
+    "photo": {
+      "file": "flight/falco-subbuteo.webp",
+      "w": 500,
+      "h": 333,
+      "author": "Gabi Rusu",
+      "license": "cc-by-nc",
+      "source": "https://www.inaturalist.org/photos/262218383"
+    },
+    "tail": [
+      "short"
+    ]
   }
- },
- {
-  "id": "necrosyrtes-monachus",
-  "group": "vulture",
-  "size": [
-   "large"
-  ],
-  "body": [
-   "dark",
-   "brown"
-  ],
-  "under": [
-   "all-dark"
-  ],
-  "tail": [
-   "short"
-  ],
-  "marks": [
-   "The smallest vulture here (wingspan 1.6-1.8 m)",
-   "Broad, fairly short wings and a short tail",
-   "Soft pale pattern at the base of the flight feathers from below"
-  ],
-  "doubt": "Sources disagree on the tail: square or rounded.",
-  "sources": [
-   "https://www.oiseaux-birds.com/card-hooded-vulture.html",
-   "https://birding.krugerpark.co.za/birding-in-kruger-raptor-vultures.html",
-   "https://en.wikipedia.org/wiki/Hooded_vulture"
-  ],
-  "photo": {
-   "file": "flight/necrosyrtes-monachus.webp",
-   "w": 500,
-   "h": 400,
-   "author": "Lip Kee",
-   "license": "CC BY-SA 2.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Hooded_vulture_in_flight,_Maasai_Mara_(2853903168).jpg"
-  }
- },
- {
-  "id": "gyps-coprotheres",
-  "group": "vulture",
-  "size": [
-   "huge"
-  ],
-  "body": [
-   "pale"
-  ],
-  "under": [
-   "pale-front"
-  ],
-  "marks": [
-   "Bigger than the White-backed (wingspan 2.3-2.6 m) and paler",
-   "Creamy-buff body and coverts with black flight feathers and tail, but less contrast under the wing than the White-backed"
-  ],
-  "sources": [
-   "https://ebird.org/species/whbvul1/"
-  ],
-  "photo": {
-   "file": "flight/gyps-coprotheres.webp",
-   "w": 500,
-   "h": 331,
-   "author": "Kyle Finn",
-   "license": "cc-by-nc",
-   "source": "https://www.inaturalist.org/photos/120496054"
-  }
- },
- {
-  "id": "torgos-tracheliotos",
-  "group": "vulture",
-  "size": [
-   "huge"
-  ],
-  "body": [
-   "dark"
-  ],
-  "under": [
-   "all-dark"
-  ],
-  "marks": [
-   "The biggest vulture here (wingspan 2.5-2.9 m)",
-   "Dark, broad wings with parallel edges and slightly serrated tips",
-   "Pale thighs stand out against the dark body",
-   "Circles on flat wings"
-  ],
-  "doubt": "A white bar along the front of the underwing is reported, but only from search summaries.",
-  "sources": [
-   "https://en.wikipedia.org/wiki/Lappet-faced_vulture",
-   "https://www.oiseaux-birds.com/card-lappet-faced-vulture.html"
-  ],
-  "photo": {
-   "file": "flight/torgos-tracheliotos.webp",
-   "w": 500,
-   "h": 404,
-   "author": "Dwergenpaartje",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Torgos_tracheliotus_MM_flight.jpg"
-  }
- },
- {
-  "id": "trigonoceps-occipitalis",
-  "group": "vulture",
-  "size": [
-   "huge"
-  ],
-  "body": [
-   "pale"
-  ],
-  "under": [
-   "all-dark"
-  ],
-  "marks": [
-   "White belly and a white line along the underwing, on black wings",
-   "The female also has a white panel on the inner wing"
-  ],
-  "sources": [],
-  "photo": {
-   "file": "flight/trigonoceps-occipitalis.webp",
-   "w": 274,
-   "h": 256,
-   "author": "peterdeman",
-   "license": "cc-by-nc",
-   "source": "https://www.inaturalist.org/photos/294778415"
-  }
- },
- {
-  "id": "haliaeetus-vocifer",
-  "group": "eagle",
-  "size": [
-   "large"
-  ],
-  "body": [
-   "pale",
-   "rufous"
-  ],
-  "under": [
-   "all-dark"
-  ],
-  "tail": [
-   "white",
-   "short"
-  ],
-  "marks": [
-   "White head, chest and tail: visible from far away",
-   "Chestnut coverts and black flight feathers under broad wings",
-   "Pairs often soar together, calling"
-  ],
-  "sources": [
-   "https://thebdi.org/?p=21429",
-   "https://www.oiseaux-birds.com/card-african-fish-eagle.html"
-  ],
-  "photo": {
-   "file": "flight/haliaeetus-vocifer.webp",
-   "w": 500,
-   "h": 333,
-   "author": "C Lombard",
-   "license": "cc-by-nc",
-   "source": "https://www.inaturalist.org/photos/353116818"
-  }
- },
- {
-  "id": "terathopius-ecaudatus",
-  "group": "eagle",
-  "size": [
-   "large"
-  ],
-  "body": [
-   "dark"
-  ],
-  "under": [
-   "all-pale"
-  ],
-  "tail": [
-   "tiny"
-  ],
-  "style": [
-   "rock",
-   "low"
-  ],
-  "marks": [
-   "Almost no tail: the red feet stick out behind",
-   "Very long wings held in a V, rocking from side to side, low over the bush",
-   "White underwing edged black: a broad edge in the male, narrow in the female"
-  ],
-  "doubt": "The juvenile is plain brown, with a slightly longer tail.",
-  "sources": [
-   "https://www.sa-venues.com/wildlife/birds_bateleur.php"
-  ],
-  "photo": {
-   "file": "flight/terathopius-ecaudatus.webp",
-   "w": 500,
-   "h": 357,
-   "author": "Rob Shepherd",
-   "license": "cc-by-nc",
-   "source": "https://www.inaturalist.org/photos/555466104"
-  }
- },
- {
-  "id": "circaetus-cinereus",
-  "group": "eagle",
-  "size": [
-   "large"
-  ],
-  "body": [
-   "brown"
-  ],
-  "under": [
-   "pale-rear"
-  ],
-  "tail": [
-   "barred"
-  ],
-  "marks": [
-   "Silvery-white flight feathers against a dark brown body and front of the wing",
-   "Dark tail with 3-4 narrow pale bars",
-   "Big round head"
-  ],
-  "sources": [
-   "https://www.hbw.com/ibc/species/53166"
-  ],
-  "photo": {
-   "file": "flight/circaetus-cinereus.webp",
-   "w": 500,
-   "h": 333,
-   "author": "Marc Henrion",
-   "license": "cc-by-nc",
-   "source": "https://www.inaturalist.org/photos/176916299"
-  }
- },
- {
-  "id": "aquila-rapax",
-  "group": "eagle",
-  "size": [
-   "large"
-  ],
-  "body": [
-   "brown"
-  ],
-  "under": [
-   "grey"
-  ],
-  "marks": [
-   "Long broad wings and a medium, rounded tail, usually spread",
-   "Soars with wings flat or slightly raised",
-   "Greyish, finely barred flight feathers",
-   "A pale patch on the rump of darker adults"
-  ],
-  "doubt": "Very variable, from pale tawny to dark brown. A pale “window” in the wing is contested: do not rely on it.",
-  "sources": [
-   "https://en.wikipedia.org/wiki/Tawny_eagle",
-   "https://www.oiseaux-birds.com/card-tawny-eagle.html"
-  ],
-  "photo": {
-   "file": "flight/aquila-rapax.webp",
-   "w": 500,
-   "h": 333,
-   "author": "Gabi Rusu",
-   "license": "cc-by-nc",
-   "source": "https://www.inaturalist.org/photos/259383579"
-  }
- },
- {
-  "id": "polemaetus-bellicosus",
-  "group": "eagle",
-  "size": [
-   "huge",
-   "large"
-  ],
-  "body": [
-   "pale"
-  ],
-  "under": [
-   "all-dark",
-   "pale-rear"
-  ],
-  "tail": [
-   "short",
-   "barred"
-  ],
-  "style": [
-   "high"
-  ],
-  "marks": [
-   "Huge (wingspan up to 2.4-2.6 m), soaring very high for hours",
-   "Dark head and chest, white belly",
-   "Dark wing coverts from below, paler flight feathers streaked black",
-   "Short, narrowly barred tail"
-  ],
-  "sources": [
-   "https://en.wikipedia.org/wiki/Martial_eagle",
-   "https://birding.krugerpark.co.za/birding-in-kruger-raptor-eagles.html",
-   "https://peregrinefund.org/explore-raptors-species/eagles/martial-eagle"
-  ],
-  "photo": {
-   "file": "flight/polemaetus-bellicosus.webp",
-   "w": 427,
-   "h": 500,
-   "author": "Peter Vos",
-   "license": "cc-by-nc",
-   "source": "https://www.inaturalist.org/photos/532395693"
-  }
- },
- {
-  "id": "circaetus-pectoralis",
-  "group": "eagle",
-  "size": [
-   "large"
-  ],
-  "body": [
-   "pale"
-  ],
-  "under": [
-   "all-pale"
-  ],
-  "tail": [
-   "barred"
-  ],
-  "style": [
-   "hover"
-  ],
-  "marks": [
-   "White underwings with three narrow black bars on the flight feathers",
-   "Dark chest and white belly",
-   "Hovers high in the wind before dropping on a snake"
-  ],
-  "sources": [],
-  "photo": {
-   "file": "flight/circaetus-pectoralis.webp",
-   "w": 500,
-   "h": 333,
-   "author": "Anita",
-   "license": "cc-by-nc",
-   "source": "https://www.inaturalist.org/photos/242083609"
-  }
- },
- {
-  "id": "aquila-verreauxii",
-  "group": "eagle",
-  "size": [
-   "huge",
-   "large"
-  ],
-  "body": [
-   "dark"
-  ],
-  "under": [
-   "all-dark"
-  ],
-  "marks": [
-   "Jet-black with a white V on the back, seen from above",
-   "Paddle-shaped wings: broad in the middle, pinched at the base of the primaries",
-   "A white window on the primaries, above and below",
-   "Near cliffs and rocky hills"
-  ],
-  "sources": [
-   "https://www.sanbi.org/animal-of-the-week/verreauxs-eagle/",
-   "https://en.wikipedia.org/wiki/Verreaux%27s_eagle"
-  ],
-  "photo": {
-   "file": "flight/aquila-verreauxii.webp",
-   "w": 500,
-   "h": 297,
-   "author": "debbie_upstream",
-   "license": "cc-by-nc",
-   "source": "https://www.inaturalist.org/photos/408547743"
-  }
- },
- {
-  "id": "hieraaetus-wahlbergi",
-  "group": "mid-eagle",
-  "size": [
-   "medium"
-  ],
-  "body": [
-   "brown",
-   "pale"
-  ],
-  "under": [
-   "grey"
-  ],
-  "tail": [
-   "long-square"
-  ],
-  "marks": [
-   "Cross-shaped: straight, parallel wings and a long, narrow, square tail held closed",
-   "Flight feathers and tail grey and finely barred below",
-   "Usually dark brown, but pale birds exist; summer only"
-  ],
-  "sources": [
-   "https://birding.krugerpark.co.za/birding-in-kruger-raptor-eagles.html"
-  ],
-  "photo": {
-   "file": "flight/hieraaetus-wahlbergi.webp",
-   "w": 500,
-   "h": 301,
-   "author": "Peter Erb",
-   "license": "cc-by-nc",
-   "source": "https://www.inaturalist.org/photos/593940915"
-  }
- },
- {
-  "id": "aquila-spilogaster",
-  "group": "mid-eagle",
-  "size": [
-   "medium"
-  ],
-  "body": [
-   "pale"
-  ],
-  "under": [
-   "all-pale"
-  ],
-  "tail": [
-   "band"
-  ],
-  "marks": [
-   "White underwing with a black trailing edge and a pale “window” at the base of the primaries",
-   "Grey tail with a broad black band at the tip",
-   "Appears mostly white from below"
-  ],
-  "sources": [
-   "https://birding.krugerpark.co.za/birding-in-kruger-raptor-eagles.html"
-  ],
-  "photo": {
-   "file": "flight/aquila-spilogaster.webp",
-   "w": 500,
-   "h": 305,
-   "author": "Peter Erb",
-   "license": "cc-by-nc",
-   "source": "https://www.inaturalist.org/photos/356509889"
-  }
- },
- {
-  "id": "clanga-pomarina",
-  "group": "mid-eagle",
-  "size": [
-   "medium"
-  ],
-  "body": [
-   "brown"
-  ],
-  "under": [
-   "all-dark"
-  ],
-  "tail": [
-   "short"
-  ],
-  "marks": [
-   "Plain dark brown, with a short, rounded tail",
-   "From above: pale flash at the base of the primaries and a pale crescent on the rump"
-  ],
-  "sources": [
-   "https://birding.krugerpark.co.za/birding-in-kruger-raptor-eagles.html"
-  ],
-  "photo": {
-   "file": "flight/clanga-pomarina.webp",
-   "w": 500,
-   "h": 375,
-   "author": "Ian A W Macdonald",
-   "license": "cc-by-nc",
-   "source": "https://www.inaturalist.org/photos/587705911"
-  }
- },
- {
-  "id": "milvus-aegyptius",
-  "group": "kite",
-  "size": [
-   "medium"
-  ],
-  "body": [
-   "brown"
-  ],
-  "tail": [
-   "forked"
-  ],
-  "style": [
-   "low"
-  ],
-  "marks": [
-   "Long forked tail, constantly twisted to steer",
-   "Drifts low and buoyantly rather than circling",
-   "Summer only"
-  ],
-  "doubt": "The fork can vanish when the tail is fully spread. Nothing found on the underwing.",
-  "sources": [
-   "https://birding.krugerpark.co.za/birding-in-kruger-raptor-kites.html",
-   "http://www.biodiversityexplorer.info/birds/accipitridae/milvus_migrans.htm"
-  ],
-  "photo": {
-   "file": "flight/milvus-aegyptius.webp",
-   "w": 500,
-   "h": 438,
-   "author": "Peter Vos",
-   "license": "cc-by-nc",
-   "source": "https://www.inaturalist.org/photos/112410360"
-  }
- },
- {
-  "id": "buteo-buteo",
-  "group": "kite",
-  "size": [
-   "medium"
-  ],
-  "body": [
-   "brown"
-  ],
-  "under": [
-   "pale-rear"
-  ],
-  "tail": [
-   "short"
-  ],
-  "marks": [
-   "Broad wings in a shallow V, soaring in circles",
-   "Dark wrist patch, pale flight feathers and a dark trailing edge",
-   "Short, fanned tail, often rufous",
-   "Summer only"
-  ],
-  "sources": [],
-  "photo": {
-   "file": "flight/buteo-buteo.webp",
-   "w": 500,
-   "h": 464,
-   "author": "Scarabinol",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Common_Buzzard_flying,_Switzerland.jpg"
-  }
- },
- {
-  "id": "polyboroides-typus",
-  "group": "kite",
-  "size": [
-   "medium"
-  ],
-  "body": [
-   "grey"
-  ],
-  "under": [
-   "grey"
-  ],
-  "tail": [
-   "band"
-  ],
-  "style": [
-   "low"
-  ],
-  "marks": [
-   "Broad, rounded pale grey wings with a black trailing edge",
-   "Black tail with one broad white band",
-   "Small head; slow, buoyant flight, often mobbed by small birds"
-  ],
-  "sources": [
-   "https://en.wikipedia.org/wiki/African_harrier-hawk",
-   "https://www.oiseaux-birds.com/card-african-harrier-hawk.html",
-   "https://birding.krugerpark.co.za/birding-in-kruger-raptor-hawks.html"
-  ],
-  "photo": {
-   "file": "flight/polyboroides-typus.webp",
-   "w": 500,
-   "h": 333,
-   "author": "cheryld21",
-   "license": "cc-by-nc",
-   "source": "https://www.inaturalist.org/photos/463286610"
-  }
- },
- {
-  "id": "kaupifalco-monogrammicus",
-  "group": "kite",
-  "size": [
-   "small"
-  ],
-  "body": [
-   "grey"
-  ],
-  "tail": [
-   "band"
-  ],
-  "style": [
-   "low"
-  ],
-  "marks": [
-   "Small and stocky; black tail with one broad white band, white rump",
-   "Undulating, thrush-like flight between perches, rarely above the trees"
-  ],
-  "sources": []
- },
- {
-  "id": "elanus-caeruleus",
-  "group": "kite",
-  "size": [
-   "small"
-  ],
-  "body": [
-   "pale"
-  ],
-  "under": [
-   "all-pale"
-  ],
-  "tail": [
-   "short"
-  ],
-  "style": [
-   "hover"
-  ],
-  "marks": [
-   "White below with black wingtips",
-   "Hovers about 10 m above open grass, legs dangling"
-  ],
-  "sources": [],
-  "photo": {
-   "file": "flight/elanus-caeruleus.webp",
-   "w": 500,
-   "h": 333,
-   "author": "מינוזיג",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Elanus_caeruleus_in_flight.jpg"
-  }
- },
- {
-  "id": "aviceda-cuculoides",
-  "group": "kite",
-  "size": [
-   "medium"
-  ],
-  "body": [
-   "barred"
-  ],
-  "marks": [
-   "Slim, with long wings and a long tail",
-   "Rufous underwing",
-   "Slower, weaker flight than a sparrowhawk"
-  ],
-  "sources": [],
-  "photo": {
-   "file": "flight/aviceda-cuculoides.webp",
-   "w": 375,
-   "h": 500,
-   "author": "spearo7",
-   "license": "cc-by-nc",
-   "source": "https://www.inaturalist.org/photos/377611404"
-  }
- },
- {
-  "id": "melierax-metabates",
-  "group": "hawk",
-  "size": [
-   "medium"
-  ],
-  "body": [
-   "grey"
-  ],
-  "tail": [
-   "barred"
-  ],
-  "marks": [
-   "Grey with black outer primaries and a tail barred dark and white",
-   "Rump finely barred grey, not pure white",
-   "Soars with raised wings"
-  ],
-  "sources": [
-   "https://www.oiseaux-birds.com/card-dark-chanting-goshawk.html",
-   "https://en.wikipedia.org/wiki/Dark_chanting_goshawk"
-  ],
-  "photo": {
-   "file": "flight/melierax-metabates.webp",
-   "w": 500,
-   "h": 333,
-   "author": "Charles J. Sharp",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Dark_chanting_goshawk_(Melierax_metabates_metabates)_in_flight_Serengeti.jpg"
-  }
- },
- {
-  "id": "accipiter-tachiro",
-  "group": "hawk",
-  "size": [
-   "small"
-  ],
-  "body": [
-   "barred"
-  ],
-  "style": [
-   "dash"
-  ],
-  "marks": [
-   "Broad wings and a long tail",
-   "Pale rufous underwing; flight feathers and tail barred grey below",
-   "Morning display above the canopy: slow wingbeats and glides, with a dry “krit”"
-  ],
-  "doubt": "Most of this rests on one source.",
-  "sources": [
-   "https://en.wikipedia.org/wiki/African_goshawk"
-  ],
-  "photo": {
-   "file": "flight/accipiter-tachiro.webp",
-   "w": 500,
-   "h": 378,
-   "author": "Neil Crawford from Sweden",
-   "license": "CC BY 2.0",
-   "source": "https://commons.wikimedia.org/wiki/File:African_Cuckoo-Hawk_(Aviceda_cuculoides)_in_flight.jpg"
-  }
- },
- {
-  "id": "micronisus-gabar",
-  "group": "hawk",
-  "size": [
-   "small"
-  ],
-  "body": [
-   "grey"
-  ],
-  "tail": [
-   "barred"
-  ],
-  "style": [
-   "dash"
-  ],
-  "marks": [
-   "Broad, clean white rump, obvious in flight",
-   "Chases birds persistently through the trees"
-  ],
-  "doubt": "The dark morph, about a quarter of birds, is all black with no white rump.",
-  "sources": []
- },
- {
-  "id": "accipiter-minullus",
-  "group": "hawk",
-  "size": [
-   "small"
-  ],
-  "tail": [
-   "barred"
-  ],
-  "style": [
-   "dash"
-  ],
-  "marks": [
-   "Tiny, about the size of a dove",
-   "Narrow white rump band and two white spots on the tail",
-   "A short, fast dash from cover"
-  ],
-  "doubt": "Nothing found on the wing shape or underwing.",
-  "sources": [
-   "https://en.wikipedia.org/wiki/Little_sparrowhawk",
-   "https://birding.krugerpark.co.za/birding-in-kruger-raptor-hawks.html"
-  ]
- },
- {
-  "id": "accipiter-badius",
-  "group": "hawk",
-  "size": [
-   "small"
-  ],
-  "body": [
-   "barred"
-  ],
-  "marks": [
-   "Short, rounded wings with black tips",
-   "No white rump",
-   "A few flaps then a glide, tree to tree"
-  ],
-  "sources": [
-   "https://en.wikipedia.org/wiki/Shikra",
-   "https://oiseaux-birds.com/card-shikra.html",
-   "https://birding.krugerpark.co.za/birding-in-kruger-raptor-hawks.html"
-  ],
-  "photo": {
-   "file": "flight/accipiter-badius.webp",
-   "w": 500,
-   "h": 332,
-   "author": "Karthik Easvur",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Shikra_flight.jpg"
-  }
- },
- {
-  "id": "falco-amurensis",
-  "group": "falcon",
-  "size": [
-   "small"
-  ],
-  "body": [
-   "dark",
-   "grey"
-  ],
-  "under": [
-   "pale-front"
-  ],
-  "style": [
-   "hover",
-   "flock"
-  ],
-  "marks": [
-   "In flocks, hovering over grass; summer only",
-   "Long pointed wings",
-   "The male flashes white coverts against dark flight feathers"
-  ],
-  "sources": [],
-  "photo": {
-   "file": "flight/falco-amurensis.webp",
-   "w": 500,
-   "h": 331,
-   "author": "P Jeganathan",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Amur_Falcon_in_flight_from_Doyang_reservoir_region_in_Nagaland_JEG4483.JPG"
-  }
- },
- {
-  "id": "falco-peregrinus",
-  "group": "falcon",
-  "size": [
-   "medium"
-  ],
-  "body": [
-   "barred"
-  ],
-  "style": [
-   "dash"
-  ],
-  "marks": [
-   "Compact, with long pointed wings broad at the base",
-   "Quick, shallow wingbeats; stoops with folded wings"
-  ],
-  "doubt": "Sources are not specific to the African race, and disagree on the tail length.",
-  "sources": [
-   "https://en.wikipedia.org/wiki/Peregrine_falcon",
-   "https://birding.krugerpark.co.za/birding-in-kruger-raptor-falcons.html"
-  ],
-  "photo": {
-   "file": "flight/falco-peregrinus.webp",
-   "w": 500,
-   "h": 500,
-   "author": "Mike Baird",
-   "license": "CC BY 2.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Falco_peregrinus_-Morro_Rock,_Morro_Bay,_California,_USA_-flying-8.jpg"
-  }
- },
- {
-  "id": "falco-subbuteo",
-  "group": "falcon",
-  "size": [
-   "small"
-  ],
-  "under": [
-   "grey"
-  ],
-  "style": [
-   "dash"
-  ],
-  "marks": [
-   "Long, scythe-shaped wings: looks like a big swift",
-   "Short tail; underwing densely barred",
-   "Catches swallows and dragonflies on the wing; summer only"
-  ],
-  "sources": [
-   "https://en.wikipedia.org/wiki/Eurasian_hobby",
-   "https://www.oiseaux-birds.com/card-eurasian-hobby.html",
-   "https://birding.krugerpark.co.za/birding-in-kruger-raptor-falcons.html"
-  ],
-  "photo": {
-   "file": "flight/falco-subbuteo.webp",
-   "w": 500,
-   "h": 333,
-   "author": "Gabi Rusu",
-   "license": "cc-by-nc",
-   "source": "https://www.inaturalist.org/photos/262218383"
-  }
- }
 ]

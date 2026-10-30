@@ -26,17 +26,19 @@ export interface FlightInfo {
   body?: string[];
   under?: string[];
   tail?: string[];
+  tailmark?: string[];
   style?: string[];
   photo?: FlightPhoto;
   sources: string[];
 }
 
-export type FlightKey = 'size' | 'body' | 'under' | 'tail' | 'style';
+export type FlightKey = 'size' | 'body' | 'under' | 'tail' | 'tailmark' | 'style';
 export const CRITERIA: [FlightKey, string, [string, string][]][] = [
   ['size', 'Size', [['small', 'Dove to pigeon'], ['medium', 'Crow to kite'], ['large', 'Big eagle'], ['huge', 'Huge']]],
   ['body', 'Body from below', [['brown', 'Brown'], ['dark', 'Black or very dark'], ['pale', 'White or pale'], ['grey', 'Grey'], ['barred', 'Barred'], ['rufous', 'Rufous']]],
   ['under', 'Under the wings', [['all-dark', 'All dark'], ['all-pale', 'Mostly white or pale'], ['pale-rear', 'Dark front, pale rear'], ['pale-front', 'Pale front, dark rear'], ['grey', 'Grey, finely barred']]],
-  ['tail', 'Tail', [['tiny', 'Almost none'], ['forked', 'Forked'], ['long-square', 'Long and square'], ['short', 'Short'], ['white', 'White'], ['band', 'One white or black band'], ['barred', 'Barred']]],
+  ['tail', 'Tail shape', [['tiny', 'Almost none'], ['short', 'Short'], ['long', 'Long'], ['forked', 'Forked']]],
+  ['tailmark', 'Tail pattern', [['white', 'White'], ['band', 'One white or black band'], ['barred', 'Barred']]],
   ['style', 'How it flies', [['hover', 'Hovers'], ['rock', 'Rocks side to side'], ['high', 'Soars very high'], ['low', 'Low over the bush'], ['dash', 'Fast and dashing'], ['flock', 'In flocks']]],
 ];
 

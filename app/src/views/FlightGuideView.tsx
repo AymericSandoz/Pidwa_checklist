@@ -53,6 +53,10 @@ export function FlightGuideView() {
   // birds matching what is ticked come before those that only stay because nothing is documented
   const fit = (f: FlightInfo) => CRITERIA.filter(([k]) => f[k]?.some((v) => s0[k]?.includes(v))).length;
   const result = all.filter((f) => pass(f)).sort((a, b) => fit(b) - fit(a) || common(b) - common(a));
+  // a bird stays in the list when a ticked criterion is undocumented for it: that is not a match, so it goes apart
+  const ticked = CRITERIA.filter(([k]) => s0[k]?.length).length;
+  const matches = result.filter((f) => fit(f) === ticked);
+  const unknown = result.filter((f) => fit(f) < ticked);
   const count = (k: FlightKey, v: string) => all.filter((f) => pass(f, k) && f[k]?.includes(v)).length;
 
   return (
@@ -88,10 +92,15 @@ export function FlightGuideView() {
       ))}
 
       <div class="row" style="justify-content:space-between;margin:12px 0 8px">
-        <b>{result.length} raptor{result.length !== 1 ? 's' : ''}, best match first</b>
+        <b>{matches.length} raptor{matches.length !== 1 ? 's' : ''}{active ? ' match' + (matches.length === 1 ? 'es' : '') : ''}</b>
         {active && <button class="btn sm secondary" onClick={() => { sel.value = {}; }}>clear all</button>}
       </div>
-      {result.map((f) => <FlightCard f={f} link key={f.id} />)}
+      {matches.map((f) => <FlightCard f={f} link key={f.id} />)}
+      {unknown.length > 0 && <>
+        <div class="sec">Can't be ruled out ({unknown.length})</div>
+        <p class="muted small" style="margin:0 0 8px">No source found for at least one thing you ticked. Best match first.</p>
+        {unknown.map((f) => <FlightCard f={f} link key={f.id} />)}
+      </>}
       <p class="credit" style="margin-top:12px">Marks are for adults, unless said otherwise, and come from the sources on each species page and in the app's data. A bird with nothing documented for a criterion is not ruled out. Photos: Wikimedia Commons and iNaturalist, under their authors' licences. Offline, they need the “Raptors in flight” pack in Settings.</p>
     </div>
   );
