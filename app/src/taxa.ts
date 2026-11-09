@@ -306,3 +306,40 @@ export const GROUPS = Object.keys(GROUP_LABEL) as Group[];
 /** Big Five; rhino counts once, either species. */
 export const BIG5: [string, string[]][] = [['Lion', ['panthera-leo']], ['Leopard', ['panthera-pardus']], ['Elephant', ['loxodonta-africana']], ['Buffalo', ['syncerus-caffer']], ['Rhino', ['ceratotherium-simum', 'diceros-bicornis']]];
 export const BIG5_IDS = new Set(BIG5.flatMap(([, ids]) => ids));
+
+/** Bird orders and families in field-guide (IOC) sequence, for the "By family" sort: [order, English name, its families].
+ *  Wikidata names the gamebirds' order Pangalliformes: shown as Galliformes. */
+export const BIRD_TAXA: [string, string, string[]][] = [
+  ['Pangalliformes', 'Gamebirds', ['Numididae', 'Phasianidae']],
+  ['Anseriformes', 'Waterfowl', ['Anatidae']],
+  ['Caprimulgiformes', 'Nightjars', ['Caprimulgidae']],
+  ['Apodiformes', 'Swifts', ['Apodidae']],
+  ['Otidiformes', 'Bustards', ['Otididae']],
+  ['Musophagiformes', 'Turacos', ['Musophagidae']],
+  ['Cuculiformes', 'Cuckoos', ['Cuculidae']],
+  ['Columbiformes', 'Pigeons & doves', ['Columbidae']],
+  ['Gruiformes', 'Rails & cranes', ['Rallidae']],
+  ['Podicipediformes', 'Grebes', ['Podicipedidae']],
+  ['Charadriiformes', 'Waders', ['Burhinidae', 'Charadriidae', 'Rostratulidae', 'Jacanidae', 'Turnicidae', 'Glareolidae']],
+  ['Ciconiiformes', 'Storks', ['Ciconiidae']],
+  ['Suliformes', 'Cormorants & darters', ['Phalacrocoracidae', 'Anhingidae']],
+  ['Pelecaniformes', 'Herons, ibises & allies', ['Threskiornithidae', 'Ardeidae', 'Scopidae']],
+  ['Accipitriformes', 'Birds of prey', ['Accipitridae']],
+  ['Strigiformes', 'Owls', ['Strigidae']],
+  ['Coliiformes', 'Mousebirds', ['Coliidae']],
+  ['Bucerotiformes', 'Hornbills & hoopoes', ['Upupidae', 'Phoeniculidae', 'Bucorvidae', 'Bucerotidae']],
+  ['Coraciiformes', 'Rollers, kingfishers & bee-eaters', ['Coraciidae', 'Alcedinidae', 'Meropidae']],
+  ['Piciformes', 'Barbets, honeyguides & woodpeckers', ['Lybiidae', 'Indicatoridae', 'Picidae']],
+  ['Falconiformes', 'Falcons', ['Falconidae']],
+  ['Psittaciformes', 'Parrots', ['Psittacidae']],
+  ['Passeriformes', 'Perching birds', ['Oriolidae', 'Vangidae', 'Platysteiridae', 'Malaconotidae', 'Campephagidae', 'Dicruridae', 'Monarchidae',
+    'Eurocephalidae', 'Laniidae', 'Corvidae', 'Paridae', 'Remizidae', 'Macrosphenidae', 'Cisticolidae', 'Locustellidae', 'Hirundinidae',
+    'Pycnonotidae', 'Phylloscopidae', 'Leiothrichidae', 'Zosteropidae', 'Sturnidae', 'Buphagidae', 'Turdidae', 'Muscicapidae',
+    'Nectariniidae', 'Ploceidae', 'Estrildidae', 'Viduidae', 'Passeridae', 'Motacillidae', 'Fringillidae', 'Emberizidae']],
+];
+const ORDER_RANK = new Map(BIRD_TAXA.map(([o], i) => [o, i]));
+const FAMILY_RANK = new Map(BIRD_TAXA.flatMap(([, , fs]) => fs).map((f, i) => [f, i]));
+/** Position in the sequence: order first (a family missing from the table still goes with its order), then family. */
+export const taxRank = (s: Species) => (ORDER_RANK.get(s.order || '') ?? 99) * 1000 + (FAMILY_RANK.get(s.family || '') ?? 999);
+export const orderName = (o: string | null) => (o === 'Pangalliformes' ? 'Galliformes' : o || '');
+export const orderEn = (o: string | null) => BIRD_TAXA.find(([k]) => k === o)?.[1] || '';

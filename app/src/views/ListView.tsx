@@ -4,14 +4,14 @@ import { useState } from 'preact/hooks';
 import { species, seenCount, name, name2, totals, noteText } from '../data';
 import { href } from '../router';
 import { matches } from '../util';
-import { familyEn, groupOf, GROUPS, GROUP_LABEL, GROUP_ICON, OTHER_GROUPS } from '../taxa';
+import { familyEn, groupOf, GROUPS, GROUP_LABEL, GROUP_ICON, OTHER_GROUPS, orderName, orderEn } from '../taxa';
 import { Thumb } from '../components/Thumb';
 import { Icon } from '../components/Icon';
 import { SearchBox } from '../components/SearchBox';
 import { ObsForm } from '../components/ObsForm';
-import { MigBadge, SortButton, heardText } from '../components/BirdSection';
-import { birdSort } from '../learn/birds';
-import { abundanceCompare, abundanceText } from '../learn/abundance';
+import { MigBadge, SortButton } from '../components/BirdSection';
+import { birdSort, sortFor } from '../learn/birds';
+import { abundanceCompare, sortText } from '../learn/abundance';
 import { plantInfo, type PlantKind } from '../learn/plants';
 import { otherInfo, CAT_LABEL, type OtherCat } from '../learn/others';
 import type { Group, Species } from '../types';
@@ -31,8 +31,8 @@ export function ListView() {
   const [adding, setAdding] = useState<string | null>(null);
   const seen = seenCount.value;
   // mammals have no level: no sort
-  // "most heard" is for the birds: the other tabs take it as commonest
-  const sort = tab.value !== 'bird' && birdSort.value === 'hear' ? 'common' : birdSort.value;
+  // most heard, weight and family are for the birds: the other tabs take them as commonest
+  const sort = sortFor(birdSort.value, tab.value === 'bird');
   const cmp = tab.value !== 'mammal' ? abundanceCompare(sort) : null;
   let list = species.value.filter((s) => s.group === tab.value && matches(s, q.value) && (filter.value === 'all' || (filter.value === 'seen') === seen.has(s.id)));
   const kinds = tab.value === 'plant' ? PLANT_KINDS.find(([k]) => k === plantKind.value)![2] : [];
@@ -47,6 +47,9 @@ export function ListView() {
     const rank = (s: Species) => { const i = subGroups.findIndex(([g]) => g === sg(s)); return i < 0 ? 99 : i; };
     list = [...list].sort((a, b) => rank(a) - rank(b));
   }
+  // birds by family: a header for each order and each family, with its count
+  const byTax = tab.value === 'bird' && sort === 'tax';
+  const nOf = (k: 'order' | 'family', v: string | null) => list.filter((s) => s[k] === v).length;
   const t = totals.value[tab.value];
 
   return (
@@ -88,10 +91,14 @@ export function ListView() {
         {list.map((s, i) => {
           const head = subGroups && (i === 0 || sg(list[i - 1]) !== sg(s)) ? subGroups.find(([g]) => g === sg(s))?.[1] : null;
           const n = seen.get(s.id) || 0;
-          const rt = cmp && (sort === 'hear' ? heardText(s.id) : abundanceText(s.id));
+          const rt = cmp && sortText(s, sort);
+          const newOrder = byTax && (i === 0 || list[i - 1].order !== s.order);
+          const newFam = byTax && (i === 0 || list[i - 1].family !== s.family);
           return (
             <Fragment key={s.id}>
             {head && <div class="sec listsec">{head}</div>}
+            {newOrder && <div class="sec listsec taxo">{orderEn(s.order) || orderName(s.order)}<i>{orderName(s.order)}</i><span class="n">{nOf('order', s.order)}</span></div>}
+            {newFam && <div class="taxf">{familyEn(s)}<i>{s.family}</i><span>{nOf('family', s.family)}</span></div>}
             <div class={'sp-row' + (n ? ' seen' : '')}>
               <a href={href('species/' + s.id)} class="row" style="flex:1;min-width:0">
                 <span class={'ph' + (n ? ' seen' : '')}><Thumb s={s} />{s.group === 'bird' && <MigBadge id={s.id} />}</span>

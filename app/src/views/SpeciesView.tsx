@@ -1,7 +1,7 @@
 import { useState } from 'preact/hooks';
 import { byId, imgUrl, name, name2, observations, dataUrl } from '../data';
 import { back, href } from '../router';
-import { fmtDay, fmtTime, L, lbl, soundIdGrade } from '../util';
+import { fmtDay, fmtTime, L, lbl, soundIdGrade, fmtMass } from '../util';
 import { familyEn, groupOf, groupLabel } from '../taxa';
 import { ObsForm } from '../components/ObsForm';
 import { PhotoImg } from '../components/PhotoImg';
@@ -59,7 +59,7 @@ export function SpeciesView({ id }: { id: string }) {
   // [label, value, full width]
   const specs = ([
     ['Size', k?.size ? lbl(L.size, k.size) : null, true],
-    ['Weight', a?.mass != null ? (a.mass >= 1000 ? (a.mass / 1000).toFixed(1) + ' kg' : Math.round(a.mass) + ' g') : null],
+    ['Weight', a?.mass != null ? fmtMass(a.mass) : null],
     ['Bill', k?.bill ? lbl(L.bill, k.bill) : null],
     ['Legs', k?.legs ? lbl(L.legs, k.legs) : null],
     ['Habitat', k?.habitat ? lbl(L.habitat, k.habitat) : null],

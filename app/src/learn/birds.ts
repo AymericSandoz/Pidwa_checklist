@@ -45,10 +45,13 @@ export const rarity = (b: BirdInfo): Rarity | null => b.common == null ? null
   : b.common >= 0.3 ? 'very-common' : b.common >= 0.1 ? 'common' : b.common >= 0.03 ? 'uncommon' : b.common >= 0.01 ? 'scarce' : 'rare';
 export const fmtCommon = (c: number) => (c < 0.01 ? (c * 100).toFixed(1) : Math.round(c * 100)) + '%';
 
-/** Bird order of the list and the ID guide, shared and remembered: commonest first by default, most heard, rarest, or A-Z. */
-export type BirdSort = 'az' | 'rare' | 'common' | 'hear';
-export const SORT_LABEL: Record<BirdSort, string> = { az: 'A–Z', rare: 'Rarest', common: 'Commonest', hear: 'Most heard' };
-export const NEXT_SORT: Record<BirdSort, BirdSort> = { common: 'hear', hear: 'rare', rare: 'az', az: 'common' };
+/** Bird order of the list and the ID guide, shared and remembered: commonest first by default, most heard, rarest,
+ *  heaviest, lightest, by family (field-guide sequence) or A-Z. */
+export type BirdSort = 'az' | 'rare' | 'common' | 'hear' | 'heavy' | 'light' | 'tax';
+export const SORT_LABEL: Record<BirdSort, string> = { common: 'Commonest', hear: 'Most heard', rare: 'Rarest', heavy: 'Heaviest', light: 'Lightest', tax: 'By family', az: 'A–Z' };
+/** The sorts that only make sense for birds: elsewhere they fall back to commonest. */
+export const BIRD_ONLY_SORTS: BirdSort[] = ['hear', 'heavy', 'light', 'tax'];
+export const sortFor = (sort: BirdSort, birds: boolean): BirdSort => (!birds && BIRD_ONLY_SORTS.includes(sort) ? 'common' : sort);
 // a new key: choices made under the earlier defaults don't count
 export const birdSort = signal<BirdSort>((localStorage.getItem('list-sort') as BirdSort) || 'common');
 

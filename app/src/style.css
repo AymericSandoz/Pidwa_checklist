@@ -860,3 +860,14 @@ details summary { cursor: pointer; }
 .flightc .fname .ic { align-self: center; }
 .flightc .traits { margin: 8px 14px 12px; }
 .flightc .fdoubt { margin: -4px 14px 12px; font-size: 13px; line-height: 1.4; color: var(--amber); }
+
+/* sort menu: a chip with an invisible native select over it */
+.sortbtn { position: relative; cursor: pointer; }
+.sortbtn select { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; font-size: 16px; }
+/* birds by family: order and family headers (in the list and across the ID-guide grid) */
+.taxo i, .taxf i { font-style: italic; font-weight: 600; color: var(--muted); font-size: 12.5px; }
+.taxo .n { margin-left: auto; }
+.taxf { display: flex; align-items: baseline; gap: 7px; font-size: 13.5px; font-weight: 800; margin: 8px 4px 2px; }
+.taxf span { margin-left: auto; font-size: 12px; font-weight: 700; color: var(--muted); }
+.grid .sec, .grid .taxf { grid-column: 1 / -1; }
+.grid .sec { margin-bottom: 0; }

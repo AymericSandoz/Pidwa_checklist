@@ -6,8 +6,8 @@ import { matches } from '../util';
 import { Icon, type IconName } from '../components/Icon';
 import { SearchBox } from '../components/SearchBox';
 import { SortButton } from '../components/BirdSection';
-import { birdSort } from '../learn/birds';
-import { abundance, abundanceCompare, abundanceText } from '../learn/abundance';
+import { birdSort, sortFor } from '../learn/birds';
+import { abundance, abundanceCompare, sortText } from '../learn/abundance';
 import { snakeInfo, DANGER_LABEL, type Danger } from '../learn/snakes';
 import { plantInfo, KIND_LABEL, LEAF_LABEL } from '../learn/plants';
 import { otherInfo, CAT_LABEL, WHERE_LABEL, type OtherCat, type Where } from '../learn/others';
@@ -54,7 +54,8 @@ function KeyGuide({ group, st, criteria, icon, noun, badge, sub, credit }: {
     if (st.hideSeen.value && seen.has(s.id)) return false;
     return matches(s, st.q.value);
   };
-  const cmp = abundanceCompare(birdSort.value);
+  const sort = sortFor(birdSort.value, false);
+  const cmp = abundanceCompare(sort);
   const result = all.filter((s) => pass(s));
   if (cmp) result.sort(cmp);
   const countFor = (c: Criterion, v: string) => all.filter((s) => c.valueOf(s.id).includes(v) && pass(s, c.key)).length;
@@ -122,14 +123,14 @@ function KeyGuide({ group, st, criteria, icon, noun, badge, sub, credit }: {
       <div class="idbar">
         <b>{result.length} {result.length === 1 ? noun[0] : noun[1]}</b>
         <button class={'chip' + (st.hideSeen.value ? ' on' : '')} onClick={() => (st.hideSeen.value = !st.hideSeen.value)}>hide seen</button>
-        <SortButton />
+        <SortButton birds={false} />
         {active && <button class="btn sm secondary" onClick={() => { st.sel.value = {}; st.q.value = ''; }}>clear all</button>}
       </div>
 
       <div class="grid">
         {result.map((s) => {
           const u = imgUrl(s);
-          const rt = cmp && abundanceText(s.id);
+          const rt = cmp && sortText(s, sort);
           return (
             <a class={'tile' + (seen.has(s.id) ? ' seen' : '')} href={href('species/' + s.id)} key={s.id} title={name2(s)}>
               {u ? <img src={u} loading="lazy" decoding="async" alt="" /> : <div class="noimg"><Icon name={icon} size={26} /></div>}

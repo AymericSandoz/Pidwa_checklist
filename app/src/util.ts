@@ -53,3 +53,6 @@ export const ORDER = {
   lifestyle: ['Insessorial', 'Terrestrial', 'Aerial', 'Aquatic', 'Generalist'],
   niche: ['Invertivore', 'Granivore', 'Frugivore', 'Nectarivore', 'Omnivore', 'Vertivore', 'Scavenger', 'Aquatic predator', 'Herbivore aquatic', 'Herbivore terrestrial'],
 };
+
+/** "35 g", "1.2 kg": AVONET body mass. */
+export const fmtMass = (g: number) => (g >= 1000 ? (g / 1000).toFixed(g >= 10000 ? 0 : 1) + ' kg' : (g < 10 ? g.toFixed(1) : Math.round(g)) + ' g');

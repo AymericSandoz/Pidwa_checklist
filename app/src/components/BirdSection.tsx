@@ -1,6 +1,6 @@
 import { species } from '../data';
 import { href } from '../router';
-import { birdInfo, STATUS_LABEL, hereNow, migKind, rarity, RARITY_LABEL, fmtCommon, birdSort, SORT_LABEL, NEXT_SORT, hearText } from '../learn/birds';
+import { birdInfo, STATUS_LABEL, hereNow, migKind, rarity, RARITY_LABEL, fmtCommon, birdSort, SORT_LABEL, sortFor, BIRD_ONLY_SORTS, type BirdSort } from '../learn/birds';
 import type { BirdInfo } from '../learn/birds';
 import { Icon } from './Icon';
 import { Thumb } from './Thumb';
@@ -77,27 +77,20 @@ export function MigBadge({ id }: { id: string }) {
 
 const RARITY_TONE = { 'very-common': ' ok', 'common': ' ok', 'uncommon': '', 'scarce': ' warn', 'rare': ' warn' };
 
-/** The sort button of the lists: commonest, most heard, rarest, A-Z, round and round. "Most heard" is for the birds only. */
+/** The sort menu of the lists: commonest, most heard, rarest, heaviest, lightest, by family, A-Z. A chip with a native select
+ *  over it, so the phone shows its own picker. Most heard, weight and family are for the birds only. */
 export function SortButton({ class: cls = '', birds = true }: { class?: string; birds?: boolean }) {
-  const v = !birds && birdSort.value === 'hear' ? 'common' : birdSort.value;
-  const next = NEXT_SORT[v];
+  const v = sortFor(birdSort.value, birds);
+  const opts = (Object.keys(SORT_LABEL) as BirdSort[]).filter((k) => birds || !BIRD_ONLY_SORTS.includes(k));
   return (
-    <button class={'chip sortbtn ' + cls + (v !== 'az' ? ' on' : '')} aria-label={'Sort: ' + SORT_LABEL[v]}
-      onClick={() => { birdSort.value = !birds && next === 'hear' ? 'rare' : next; localStorage.setItem('list-sort', birdSort.value); }}>
+    <label class={'chip sortbtn ' + cls + (v !== 'az' ? ' on' : '')}>
       <Icon name="arrow-down-up" size={14} stroke={2.4} />{SORT_LABEL[v]}
-    </button>
+      <select aria-label="Sort" value={v} onChange={(e) => { birdSort.value = (e.target as HTMLSelectElement).value as BirdSort; localStorage.setItem('list-sort', birdSort.value); }}>
+        {opts.map((k) => <option value={k}>{SORT_LABEL[k]}</option>)}
+      </select>
+    </label>
   );
 }
-
-/** "Rare, 0.4%": the level and rate shown in place of the family when a list is sorted by rarity. */
-export const rarityText = (id: string) => {
-  const b = birdInfo.value.get(id);
-  const r = b && rarity(b);
-  return r ? `${RARITY_LABEL[r]}, ${fmtCommon(b!.common!)}` : null;
-};
-
-/** "Heard often": shown instead when a list is sorted by most heard. */
-export const heardText = (id: string) => { const b = birdInfo.value.get(id); return b ? hearText(b) : null; };
 
 /** How common the bird is around Pidwa, for the pills of the species page. */
 export function RarityPill({ id }: { id: string }) {
