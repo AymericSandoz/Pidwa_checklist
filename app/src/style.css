@@ -785,8 +785,6 @@ details summary { cursor: pointer; }
 .monthstrip span { font-size: 10.5px; font-weight: 700; color: var(--muted); }
 .monthstrip .now span { color: var(--text); }
 .monthstrip .now i { outline: 2px solid var(--text); outline-offset: 1px; }
-.listhead .sortbtn { margin: 0 0 0 auto; flex: none; }
-.listhead .count + .sortbtn { margin-left: 0; }
 .grid .tile .rr { font-size: 11px; font-weight: 600; color: var(--muted); padding: 0 8px 7px; margin-top: -4px; line-height: 1.2; }
 .grid .tile .migb { left: 6px; top: 6px; right: auto; }
 
@@ -861,9 +859,11 @@ details summary { cursor: pointer; }
 .flightc .traits { margin: 8px 14px 12px; }
 .flightc .fdoubt { margin: -4px 14px 12px; font-size: 13px; line-height: 1.4; color: var(--amber); }
 
-/* sort menu: a chip with an invisible native select over it */
-.sortbtn { position: relative; cursor: pointer; }
-.sortbtn select { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; font-size: 16px; }
+/* sort: one row of chips, scrolled sideways, bleeding to the screen edges */
+.sortrow { display: flex; align-items: center; gap: 7px; overflow-x: auto; scrollbar-width: none; margin: 0 -14px 10px; padding: 0 14px; scroll-padding: 0 14px; -webkit-overflow-scrolling: touch; }
+.sortrow::-webkit-scrollbar { display: none; }
+.sortrow .chip { margin: 0; flex: none; white-space: nowrap; }
+.sortrow .lab { display: inline-flex; align-items: center; gap: 4px; flex: none; font-size: 12.5px; font-weight: 800; color: var(--muted); }
 /* birds by family: order and family headers (in the list and across the ID-guide grid) */
 .taxo i, .taxf i { font-style: italic; font-weight: 600; color: var(--muted); font-size: 12.5px; }
 .taxo .n { margin-left: auto; }

@@ -1,6 +1,7 @@
+import { useEffect, useRef } from 'preact/hooks';
 import { species } from '../data';
 import { href } from '../router';
-import { birdInfo, STATUS_LABEL, hereNow, migKind, rarity, RARITY_LABEL, fmtCommon, birdSort, SORT_LABEL, sortFor, BIRD_ONLY_SORTS, type BirdSort } from '../learn/birds';
+import { birdInfo, STATUS_LABEL, hereNow, migKind, rarity, RARITY_LABEL, fmtCommon, birdSort, sortFor, sortsFor, sortLabel } from '../learn/birds';
 import type { BirdInfo } from '../learn/birds';
 import { Icon } from './Icon';
 import { Thumb } from './Thumb';
@@ -77,18 +78,23 @@ export function MigBadge({ id }: { id: string }) {
 
 const RARITY_TONE = { 'very-common': ' ok', 'common': ' ok', 'uncommon': '', 'scarce': ' warn', 'rare': ' warn' };
 
-/** The sort menu of the lists: commonest, most heard, rarest, heaviest, lightest, by family, A-Z. A chip with a native select
- *  over it, so the phone shows its own picker. Most heard, weight and family are for the birds only. */
-export function SortButton({ class: cls = '', birds = true }: { class?: string; birds?: boolean }) {
-  const v = sortFor(birdSort.value, birds);
-  const opts = (Object.keys(SORT_LABEL) as BirdSort[]).filter((k) => birds || !BIRD_ONLY_SORTS.includes(k));
+/** The sorts of a tab as a row of chips, scrolled sideways: commonest, most heard, rarest, by size, by family, A-Z, as
+ *  far as the tab has them (see sortsFor). The chosen one is scrolled into view. */
+export function SortChips({ group }: { group: string }) {
+  const v = sortFor(birdSort.value, group);
+  const row = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const r = row.current, on = r?.querySelector<HTMLElement>('.chip.on');
+    if (r && on) r.scrollTo({ left: on.offsetLeft - (r.clientWidth - on.offsetWidth) / 2, behavior: 'smooth' });
+  }, [v, group]);
   return (
-    <label class={'chip sortbtn ' + cls + (v !== 'az' ? ' on' : '')}>
-      <Icon name="arrow-down-up" size={14} stroke={2.4} />{SORT_LABEL[v]}
-      <select aria-label="Sort" value={v} onChange={(e) => { birdSort.value = (e.target as HTMLSelectElement).value as BirdSort; localStorage.setItem('list-sort', birdSort.value); }}>
-        {opts.map((k) => <option value={k}>{SORT_LABEL[k]}</option>)}
-      </select>
-    </label>
+    <div class="sortrow" ref={row} role="radiogroup" aria-label="Sort">
+      <span class="lab"><Icon name="arrow-down-up" size={14} stroke={2.4} />Sort</span>
+      {sortsFor(group).map((k) => (
+        <button class={'chip' + (k === v ? ' on' : '')} role="radio" aria-checked={k === v}
+          onClick={() => { birdSort.value = k; localStorage.setItem('list-sort', k); }}>{sortLabel(k, group)}</button>
+      ))}
+    </div>
   );
 }
 

@@ -5,7 +5,9 @@ import { href } from '../router';
 import { matches } from '../util';
 import { Icon, type IconName } from '../components/Icon';
 import { SearchBox } from '../components/SearchBox';
-import { SortButton } from '../components/BirdSection';
+import { SortChips } from '../components/BirdSection';
+import { TaxHeads } from '../components/TaxHeads';
+import { Fragment } from 'preact';
 import { birdSort, sortFor } from '../learn/birds';
 import { abundance, abundanceCompare, sortText } from '../learn/abundance';
 import { snakeInfo, DANGER_LABEL, type Danger } from '../learn/snakes';
@@ -54,7 +56,7 @@ function KeyGuide({ group, st, criteria, icon, noun, badge, sub, credit }: {
     if (st.hideSeen.value && seen.has(s.id)) return false;
     return matches(s, st.q.value);
   };
-  const sort = sortFor(birdSort.value, false);
+  const sort = sortFor(birdSort.value, group);
   const cmp = abundanceCompare(sort);
   const result = all.filter((s) => pass(s));
   if (cmp) result.sort(cmp);
@@ -123,22 +125,24 @@ function KeyGuide({ group, st, criteria, icon, noun, badge, sub, credit }: {
       <div class="idbar">
         <b>{result.length} {result.length === 1 ? noun[0] : noun[1]}</b>
         <button class={'chip' + (st.hideSeen.value ? ' on' : '')} onClick={() => (st.hideSeen.value = !st.hideSeen.value)}>hide seen</button>
-        <SortButton birds={false} />
         {active && <button class="btn sm secondary" onClick={() => { st.sel.value = {}; st.q.value = ''; }}>clear all</button>}
       </div>
+      <SortChips group={group} />
 
       <div class="grid">
-        {result.map((s) => {
+        {result.map((s, i) => {
           const u = imgUrl(s);
           const rt = cmp && sortText(s, sort);
           return (
-            <a class={'tile' + (seen.has(s.id) ? ' seen' : '')} href={href('species/' + s.id)} key={s.id} title={name2(s)}>
+            <Fragment key={s.id}>
+            {sort === 'tax' && <TaxHeads list={result} i={i} />}
+            <a class={'tile' + (seen.has(s.id) ? ' seen' : '')} href={href('species/' + s.id)} title={name2(s)}>
               {u ? <img src={u} loading="lazy" decoding="async" alt="" /> : <div class="noimg"><Icon name={icon} size={26} /></div>}
               {badge?.(s.id)}
               <div class="t">{name(s)}</div>
-              {sub && !cmp && <div class="rr">{sub(s.id)}</div>}
-              {rt && <div class="rr">{rt}</div>}
+              {rt ? <div class="rr">{rt}</div> : sub && <div class="rr">{sub(s.id)}</div>}
             </a>
+            </Fragment>
           );
         })}
       </div>

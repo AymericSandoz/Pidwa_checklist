@@ -16,6 +16,9 @@ for (const sci of new Set([...Object.keys(IM_COMMONS), ...Object.keys(IM_INAT)])
   IM[sci] = m;
 }
 const AV = readJson(path.join(RAW_DIR, 'avonet.json'), {});
+// orders Wikidata doesn't give, from the family
+const FAMILY_ORDER = { Scincidae: 'Squamata', Tenebrionidae: 'Coleoptera', Mutillidae: 'Hymenoptera', Nymphalidae: 'Lepidoptera' };
+const MM = readJson(path.join(RAW_DIR, 'mammal_mass.json'), {}); // PanTHERIA adult mass of the mammals (20_mammal_mass.mjs)
 const SN = readJson(path.join(RAW_DIR, 'sounds.json'), {});
 const BN = readJson(path.join(RAW_DIR, 'birdnet_map.json'), {});
 // how well the model recognised our own reference clip of the species (optimistic: probably seen in training)
@@ -83,7 +86,7 @@ for (const s of species) {
     fr_source: cur.fr ? 'curated' : IOC[s.scientific]?.fr ? 'IOC' : vern(wp.fr?.title) ? 'frwiki' : vern(wd.label_fr) ? 'wikidata' : null,
     family: cur.family || wd.family || av?.family || null,
     family_fr: wd.family_fr || null,
-    order: wd.order || av?.order || null,
+    order: wd.order || av?.order || FAMILY_ORDER[cur.family || wd.family] || null,
     order_fr: wd.order_fr || null,
     iucn: wd.iucn || null,
     qid: wd.qid || null,
@@ -101,6 +104,7 @@ for (const s of species) {
     rec.bn = BN[s.scientific] ? { ...BN[s.scientific], ref: bench ? Math.round(bench.ref * 100) / 100 : null, heardAs: bench && !bench.hit && bench.top1 ? bench.top1 : null } : null;
     rec.idk = av ? { size: sizeClass(av.mass), bill: billShape(av, wd.family), legs: legLength(av), habitat: av.habitat, lifestyle: av.lifestyle, niche: av.trophicNiche } : null;
   }
+  if (s.group === 'mammal') rec.mass = MM[s.scientific] ?? null;
   if (!rec.fr) warnings.push(`${s.scientific}: no French name`);
   if (!rec.image) warnings.push(`${s.scientific}: no image`);
   if (s.group === 'bird' && !av) warnings.push(`${s.scientific}: no AVONET`);

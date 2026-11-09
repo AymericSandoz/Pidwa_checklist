@@ -83,7 +83,8 @@
       "60 cm au garrot, 40-70 kg",
       "Long museau, oreilles de lièvre, queue épaisse"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 56175.2
   },
   {
     "id": "proteles-cristatus",
@@ -169,7 +170,8 @@
       "45-50 cm au garrot, 8-12 kg",
       "Crinière dorsale érectile, mange surtout des termites"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 8139.4
   },
   {
     "id": "civettictis-civetta",
@@ -255,7 +257,8 @@
       "40 cm au garrot, 9-15 kg",
       "Pelage tacheté, masque noir, crinière dorsale"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 12075.6
   },
   {
     "id": "loxodonta-africana",
@@ -341,7 +344,8 @@
       "Mâles 4-6 t, femelles 2-3,5 t",
       "Troupeaux familiaux menés par une matriarche"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 3824539.9
   },
   {
     "id": "lycaon-pictus",
@@ -427,7 +431,8 @@
       "75 cm au garrot, 20-30 kg",
       "Meutes diurnes, chasse en groupe"
     ],
-    "notes": "paper says African Painted Wolf"
+    "notes": "paper says African Painted Wolf",
+    "mass": 22000
   },
   {
     "id": "felis-lybica",
@@ -513,7 +518,8 @@
       "3-6 kg",
       "Dos des oreilles roux, nocturne"
     ],
-    "notes": "paper uses old name Felis silvestris cafra"
+    "notes": "paper uses old name Felis silvestris cafra",
+    "mass": 4573.1
   },
   {
     "id": "mungos-mungo",
@@ -599,7 +605,8 @@
       "Bandes de 10-30 individus, diurne",
       "1-2 kg, souvent près des termitières"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 1260
   },
   {
     "id": "lupulella-mesomelas",
@@ -685,7 +692,8 @@
       "40 cm au garrot, 6-12 kg",
       "Cri plaintif au crépuscule"
     ],
-    "notes": "paper uses Canis mesomelas"
+    "notes": "paper uses Canis mesomelas",
+    "mass": 8247.3
   },
   {
     "id": "diceros-bicornis",
@@ -771,7 +779,8 @@
       "1,5 m au garrot, 800-1400 kg",
       "Solitaire, plus nerveux que le blanc, tête portée haute"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 995940.5
   },
   {
     "id": "connochaetes-taurinus",
@@ -857,7 +866,8 @@
       "1,4 m au garrot, 180-250 kg",
       "Bandes sombres verticales sur l'encolure"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 198619.7
   },
   {
     "id": "parahyaena-brunnea",
@@ -943,7 +953,8 @@
       "75-80 cm au garrot, 35-50 kg",
       "Nocturne et solitaire, pattes rayées ; oreilles pointues, plus petite que la tachetée"
     ],
-    "notes": "added by hand: not on the paper list"
+    "notes": "added by hand: not on the paper list",
+    "mass": 42977.9
   },
   {
     "id": "tragelaphus-sylvaticus",
@@ -1029,7 +1040,8 @@
       "70-80 cm au garrot, 30-45 kg",
       "Rayures et taches blanches, mâle brun foncé à cornes torsadées"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 43250.4
   },
   {
     "id": "potamochoerus-larvatus",
@@ -1115,7 +1127,8 @@
       "55-80 cm au garrot, 60-100 kg",
       "Pelage roux hirsute, crinière blanche"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 69063.8
   },
   {
     "id": "syncerus-caffer",
@@ -1201,7 +1214,8 @@
       "1,4-1,7 m au garrot, 500-900 kg",
       "Troupeaux mixtes, vieux mâles solitaires"
     ],
-    "notes": "paper says Cape Buffalo and misspells caffer"
+    "notes": "paper says Cape Buffalo and misspells caffer",
+    "mass": 592666
   },
   {
     "id": "aonyx-capensis",
@@ -1287,7 +1301,8 @@
       "10-20 kg",
       "Rivières et plans d'eau, crépusculaire"
     ],
-    "notes": "paper says Cape Clawless Otter"
+    "notes": "paper says Cape Clawless Otter",
+    "mass": 19322.2
   },
   {
     "id": "hystrix-africaeaustralis",
@@ -1373,7 +1388,8 @@
       "10-25 kg, nocturne",
       "Piquants abandonnés sur les pistes"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 14936
   },
   {
     "id": "caracal-caracal",
@@ -1459,7 +1475,8 @@
       "45 cm au garrot, 8-18 kg",
       "Pelage uni roux, nocturne"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 11964.4
   },
   {
     "id": "papio-ursinus",
@@ -1545,7 +1562,8 @@
       "Mâles 25-45 kg, femelles 12-20 kg",
       "Troupes bruyantes, dortoirs dans les arbres ou les falaises"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 17729.4
   },
   {
     "id": "acinonyx-jubatus",
@@ -1631,7 +1649,8 @@
       "75-90 cm au garrot, 35-65 kg",
       "Taches rondes pleines, corps fin, diurne"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 50577.9
   },
   {
     "id": "sylvicapra-grimmia",
@@ -1717,7 +1736,8 @@
       "50 cm au garrot, 15-20 kg",
       "Souvent seul, disparaît en zigzag dans les fourrés"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 15639.2
   },
   {
     "id": "taurotragus-oryx",
@@ -1803,7 +1823,8 @@
       "1,5-1,8 m au garrot, 400-900 kg",
       "Cornes droites torsadées chez les deux sexes"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 562592.7
   },
   {
     "id": "redunca-arundinum",
@@ -1889,7 +1910,8 @@
       "80-90 cm au garrot, 50-80 kg",
       "Tache noire sous les oreilles, cornes courbées vers l'avant chez le mâle"
     ],
-    "notes": "paper says Common Reedbuck"
+    "notes": "paper says Common Reedbuck",
+    "mass": 58059.2
   },
   {
     "id": "helogale-parvula",
@@ -1975,7 +1997,8 @@
       "Groupes autour des termitières",
       "Pelage brun uni, diurne"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 281.8
   },
   {
     "id": "giraffa-giraffa",
@@ -2061,7 +2084,8 @@
       "Motif de taches propre à chaque individu",
       "Ossicônes ; les mâles foncent avec l'âge"
     ],
-    "notes": "paper uses the old single-species name; Pidwa has the southern giraffe (G. g. giraffa)"
+    "notes": "paper uses the old single-species name; Pidwa has the southern giraffe (G. g. giraffa)",
+    "mass": 964654.7
   },
   {
     "id": "thryonomys-swinderianus",
@@ -2147,7 +2171,8 @@
       "4-8 kg",
       "Nocturne, poils raides ; souvent seulement traces et crottes"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 3750.9
   },
   {
     "id": "smutsia-temminckii",
@@ -2233,7 +2258,8 @@
       "5-15 kg",
       "Nocturne et très rare à observer"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 11943.7
   },
   {
     "id": "hippopotamus-amphibius",
@@ -2319,7 +2345,8 @@
       "1,5 m au garrot, 1300-1800 kg",
       "Grognements caractéristiques"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 1536310.4
   },
   {
     "id": "mellivora-capensis",
@@ -2405,7 +2432,8 @@
       "10-15 kg",
       "Surtout nocturne, réputé intrépide"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 9000
   },
   {
     "id": "aepyceros-melampus",
@@ -2491,7 +2519,8 @@
       "90 cm au garrot, 40-60 kg",
       "Seuls les mâles ont des cornes en lyre"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 52591.7
   },
   {
     "id": "oreotragus-oreotragus",
@@ -2577,7 +2606,8 @@
       "50 cm au garrot, 10-15 kg",
       "Pelage dense jaune-gris, vit en couple"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 13486.6
   },
   {
     "id": "tragelaphus-strepsiceros",
@@ -2663,7 +2693,8 @@
       "1,2-1,5 m au garrot, 150-250 kg",
       "6-10 fines rayures blanches verticales, grandes oreilles"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 206056.4
   },
   {
     "id": "genetta-tigrina",
@@ -2749,7 +2780,8 @@
       "1,5-3 kg",
       "Bout de la queue noir"
     ],
-    "notes": "paper says Large-spotted Genet"
+    "notes": "paper says Large-spotted Genet",
+    "mass": 2066.6
   },
   {
     "id": "panthera-pardus",
@@ -2835,7 +2867,8 @@
       "60-70 cm au garrot, 30-90 kg",
       "Nocturne, hisse ses proies dans les arbres"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 52400
   },
   {
     "id": "panthera-leo",
@@ -2921,7 +2954,8 @@
       "1-1,2 m au garrot, 120-250 kg",
       "Troupes, actif surtout la nuit ; rugissements"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 158623.9
   },
   {
     "id": "taphozous-mauritianus",
@@ -3007,7 +3041,8 @@
       "Ventre blanc, dos gris moucheté",
       "20-30 g"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 28
   },
   {
     "id": "tragelaphus-angasii",
@@ -3093,7 +3128,8 @@
       "Mâle 1,1 m au garrot, 100-125 kg",
       "Pattes fauves chez le mâle, fourrés denses"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 87616.8
   },
   {
     "id": "equus-quagga",
@@ -3179,7 +3215,8 @@
       "1,3 m au garrot, 200-300 kg",
       "Motif propre à chaque individu"
     ],
-    "notes": "paper says Plain's Zebra with subspecies burchellii"
+    "notes": "paper says Plain's Zebra with subspecies burchellii",
+    "mass": 400000
   },
   {
     "id": "procavia-capensis",
@@ -3265,7 +3302,8 @@
       "2-4,5 kg",
       "Colonies, cri d'alarme aigu"
     ],
-    "notes": "paper adds (Dassie)"
+    "notes": "paper adds (Dassie)",
+    "mass": 2952.5
   },
   {
     "id": "hippotragus-niger",
@@ -3351,7 +3389,8 @@
       "1,2-1,4 m au garrot, 180-270 kg",
       "Masque facial blanc et noir"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 236405.9
   },
   {
     "id": "leptailurus-serval",
@@ -3437,7 +3476,8 @@
       "55-60 cm au garrot, 9-18 kg",
       "Taches et rayures, zones herbeuses humides"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 12000
   },
   {
     "id": "lepus-saxatilis",
@@ -3523,7 +3563,8 @@
       "1,5-3 kg",
       "Nuque rousse, dessus de la queue noir"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 2593.6
   },
   {
     "id": "raphicerus-sharpei",
@@ -3609,7 +3650,8 @@
       "45-50 cm au garrot, 7-11 kg",
       "Nocturne, discret, dans les fourrés"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 9396.9
   },
   {
     "id": "lupulella-adusta",
@@ -3695,7 +3737,8 @@
       "6-12 kg",
       "Plus discret et nocturne que le chacal à chabraque"
     ],
-    "notes": "paper uses Canis adustus"
+    "notes": "paper uses Canis adustus",
+    "mass": 10392.5
   },
   {
     "id": "herpestes-sanguineus",
@@ -3781,7 +3824,8 @@
       "0,5-0,8 kg",
       "Solitaire, diurne, traverse les pistes en courant"
     ],
-    "notes": "paper misspells sanguineus"
+    "notes": "paper misspells sanguineus",
+    "mass": 543.8
   },
   {
     "id": "genetta-genetta",
@@ -3867,7 +3911,8 @@
       "1,5-2,5 kg",
       "Nocturne, arboricole et terrestre"
     ],
-    "notes": "paper says Small-spotted Genet"
+    "notes": "paper says Small-spotted Genet",
+    "mass": 1756.2
   },
   {
     "id": "galago-moholi",
@@ -3953,7 +3998,8 @@
       "150-200 g",
       "Bonds spectaculaires entre les branches, cris perçants"
     ],
-    "notes": "paper says Southern Lesser Bushbaby"
+    "notes": "paper says Southern Lesser Bushbaby",
+    "mass": 192
   },
   {
     "id": "crocuta-crocuta",
@@ -4039,7 +4085,8 @@
       "80 cm au garrot, 45-80 kg",
       "Ricanements et hurlements nocturnes"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 63370
   },
   {
     "id": "raphicerus-campestris",
@@ -4125,7 +4172,8 @@
       "50 cm au garrot, 10-15 kg",
       "Solitaire ou en couple, cornes droites chez le mâle"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 11661.5
   },
   {
     "id": "otolemur-crassicaudatus",
@@ -4211,7 +4259,8 @@
       "1-1,5 kg",
       "Cri semblable à un bébé qui pleure"
     ],
-    "notes": "paper says Thick-tailed Bushbaby"
+    "notes": "paper says Thick-tailed Bushbaby",
+    "mass": 1206.6
   },
   {
     "id": "paraxerus-cepapi",
@@ -4297,7 +4346,8 @@
       "100-250 g",
       "Diurne, cri d'alarme cliquetant, queue agitée"
     ],
-    "notes": "paper says Tree Squirrel"
+    "notes": "paper says Tree Squirrel",
+    "mass": 222.9
   },
   {
     "id": "damaliscus-lunatus",
@@ -4383,7 +4433,8 @@
       "1,2 m au garrot, 120-150 kg",
       "Épaules plus hautes que la croupe, cornes en lyre"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 136000.3
   },
   {
     "id": "chlorocebus-pygerythrus",
@@ -4469,7 +4520,8 @@
       "3-8 kg",
       "Troupes ; scrotum bleu chez le mâle"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 3696
   },
   {
     "id": "epomophorus-wahlbergi",
@@ -4555,7 +4607,8 @@
       "60-125 g",
       "Vole au crépuscule vers les figuiers, cri métallique répété"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 93.6
   },
   {
     "id": "phacochoerus-africanus",
@@ -4641,7 +4694,8 @@
       "65-85 cm au garrot, 50-100 kg",
       "Court la queue dressée, s'agenouille pour brouter"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 82500
   },
   {
     "id": "kobus-ellipsiprymnus",
@@ -4727,7 +4781,8 @@
       "1,2-1,4 m au garrot, 200-260 kg",
       "Pelage hirsute, odeur musquée, près de l'eau"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 204393.5
   },
   {
     "id": "atilax-paludinosus",
@@ -4813,7 +4868,8 @@
       "2,5-4 kg",
       "Nocturne et crépusculaire, traces à cinq doigts au bord des mares"
     ],
-    "notes": "paper says Water (Marsh) Mongoose"
+    "notes": "paper says Water (Marsh) Mongoose",
+    "mass": 3600.2
   },
   {
     "id": "ichneumia-albicauda",
@@ -4899,7 +4955,8 @@
       "3-5 kg",
       "Nocturne, souvent sur les pistes de nuit"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 3628.4
   },
   {
     "id": "ceratotherium-simum",
@@ -4985,7 +5042,8 @@
       "1,7-1,8 m au garrot, 1700-2300 kg",
       "Tête portée basse, plus grégaire que le noir"
     ],
-    "notes": null
+    "notes": null,
+    "mass": 2285939.4
   },
   {
     "id": "ciconia-abdimii",
@@ -46827,7 +46885,7 @@
     "fr_source": null,
     "family": "Scincidae",
     "family_fr": null,
-    "order": null,
+    "order": "Squamata",
     "order_fr": null,
     "iucn": null,
     "qid": null,
@@ -51091,7 +51149,7 @@
     "fr_source": null,
     "family": "Tenebrionidae",
     "family_fr": null,
-    "order": null,
+    "order": "Coleoptera",
     "order_fr": null,
     "iucn": null,
     "qid": null,
@@ -51966,7 +52024,7 @@
     "fr_source": null,
     "family": "Mutillidae",
     "family_fr": null,
-    "order": null,
+    "order": "Hymenoptera",
     "order_fr": null,
     "iucn": null,
     "qid": null,
@@ -52540,7 +52598,7 @@
     "fr_source": null,
     "family": "Nymphalidae",
     "family_fr": null,
-    "order": null,
+    "order": "Lepidoptera",
     "order_fr": null,
     "iucn": null,
     "qid": null,

@@ -21,6 +21,8 @@ export interface Species {
   sounds: { file: string; type: string; q: string; len: string; by: string; license: string; url: string }[];
   traits: string[] | null;
   notes: string | null;
+  /** mammals: mean adult body mass in grams, PanTHERIA (birds have theirs in avonet) */
+  mass?: number | null;
   avonet?: { mass: number | null; beak: number | null; tarsus: number | null; wing: number | null; tail: number | null; habitat: string | null; lifestyle: string | null; niche: string | null; migration: number | null; src: string } | null;
   /** BirdNET class used by sound ID; null when the species is not covered */
   bn?: { index: number; label: string; lumped: boolean; /** score on our own reference clip, 0..1 */ ref?: number | null; heardAs?: string | null } | null;

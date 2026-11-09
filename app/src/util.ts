@@ -55,4 +55,6 @@ export const ORDER = {
 };
 
 /** "35 g", "1.2 kg": AVONET body mass. */
+/** "35 cm", "1.2 m", "5 mm": a length given in cm. */
+export const fmtLen = (cm: number) => (cm >= 100 ? +(cm / 100).toFixed(1) + ' m' : cm < 1 ? Math.round(cm * 10) + ' mm' : +cm.toFixed(1) + ' cm');
 export const fmtMass = (g: number) => (g >= 1000 ? (g / 1000).toFixed(g >= 10000 ? 0 : 1) + ' kg' : (g < 10 ? g.toFixed(1) : Math.round(g)) + ' g');

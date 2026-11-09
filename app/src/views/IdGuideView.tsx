@@ -3,11 +3,12 @@ import { Fragment } from 'preact';
 import { species, byId, seenCount, name, name2, imgUrl } from '../data';
 import { href, route, navigate } from '../router';
 import { L, ORDER, lbl, matches } from '../util';
-import { BIRD_GROUPS, groupOf, familyEn, taxRank, orderName, orderEn } from '../taxa';
+import { BIRD_GROUPS, groupOf, familyEn, familyCompare } from '../taxa';
+import { TaxHeads } from '../components/TaxHeads';
 import { COLOURS, BIRD_COLOURS } from '../colours';
 import { Icon, type IconName } from '../components/Icon';
 import { SearchBox } from '../components/SearchBox';
-import { SortButton, MigBadge } from '../components/BirdSection';
+import { SortChips, MigBadge } from '../components/BirdSection';
 import { birdInfo, birdSort } from '../learn/birds';
 import { abundanceCompare, sortText } from '../learn/abundance';
 import type { Species } from '../types';
@@ -80,8 +81,7 @@ export function IdGuideView() {
   const sort = birdSort.value;
   const cmp = abundanceCompare(sort);
   const byTax = sort === 'tax';
-  const result = birds.filter((b) => pass(b)).sort((a, b) => (byTax ? taxRank(a) - taxRank(b) : 0) || score(b) - score(a) || (cmp ? cmp(a, b) : 0));
-  const nOf = (k: 'order' | 'family', v: string | null) => result.filter((s) => s[k] === v).length;
+  const result = birds.filter((b) => pass(b)).sort((a, b) => (byTax ? familyCompare(a, b) : 0) || score(b) - score(a) || (cmp ? cmp(a, b) : 0));
   // count per option with that criterion's own filter removed, so you see where the candidates are
   const countFor = (k: Key, v: string) => birds.filter((b) => valueOf(b, k).includes(v) && pass(b, k)).length;
   const fams = [...new Set(birds.filter((b) => pass(b, 'family')).map((b) => b.family || ''))].filter(Boolean).sort();
@@ -155,20 +155,17 @@ export function IdGuideView() {
       <div class="idbar">
         <b>{result.length} bird{result.length !== 1 ? 's' : ''}</b>
         <button class={'chip' + (hideSeen.value ? ' on' : '')} onClick={() => (hideSeen.value = !hideSeen.value)}>hide seen</button>
-        <SortButton />
         {active && <button class="btn sm secondary" onClick={() => { sel.value = {}; family.value = ''; q.value = ''; }}>clear all</button>}
       </div>
+      <SortChips group="bird" />
 
       <div class="grid">
         {result.map((b, i) => {
           const u = imgUrl(b);
           const rt = cmp && sortText(b, sort);
-          const newOrder = byTax && (i === 0 || result[i - 1].order !== b.order);
-          const newFam = byTax && (i === 0 || result[i - 1].family !== b.family);
           return (
             <Fragment key={b.id}>
-            {newOrder && <div class="sec listsec taxo">{orderEn(b.order) || orderName(b.order)}<i>{orderName(b.order)}</i><span class="n">{nOf('order', b.order)}</span></div>}
-            {newFam && <div class="taxf">{familyEn(b)}<i>{b.family}</i><span>{nOf('family', b.family)}</span></div>}
+            {byTax && <TaxHeads list={result} i={i} />}
             <a class={'tile' + (seen.has(b.id) ? ' seen' : '')} href={href('species/' + b.id)} title={name2(b)}>
               {u ? <img src={u} loading="lazy" decoding="async" alt="" /> : <div class="noimg"><Icon name="bird" size={26} /></div>}
               <MigBadge id={b.id} />

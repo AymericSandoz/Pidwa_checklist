@@ -337,9 +337,40 @@ export const BIRD_TAXA: [string, string, string[]][] = [
     'Pycnonotidae', 'Phylloscopidae', 'Leiothrichidae', 'Zosteropidae', 'Sturnidae', 'Buphagidae', 'Turdidae', 'Muscicapidae',
     'Nectariniidae', 'Ploceidae', 'Estrildidae', 'Viduidae', 'Passeridae', 'Motacillidae', 'Fringillidae', 'Emberizidae']],
 ];
-const ORDER_RANK = new Map(BIRD_TAXA.map(([o], i) => [o, i]));
-const FAMILY_RANK = new Map(BIRD_TAXA.flatMap(([, , fs]) => fs).map((f, i) => [f, i]));
-/** Position in the sequence: order first (a family missing from the table still goes with its order), then family. */
-export const taxRank = (s: Species) => (ORDER_RANK.get(s.order || '') ?? 99) * 1000 + (FAMILY_RANK.get(s.family || '') ?? 999);
+/** Mammal orders and families in field-guide sequence, the same way. */
+export const MAMMAL_TAXA: [string, string, string[]][] = [
+  ['Proboscidea', 'Elephant', ['Elephantidae']],
+  ['Hyracoidea', 'Hyraxes', ['Procaviidae']],
+  ['Tubulidentata', 'Aardvark', ['Orycteropodidae']],
+  ['Primates', 'Primates', ['Galagidae', 'Cercopithecidae']],
+  ['Lagomorpha', 'Hares', ['Leporidae']],
+  ['Rodentia', 'Rodents', ['Sciuridae', 'Hystricidae', 'Thryonomyidae']],
+  ['Chiroptera', 'Bats', ['Pteropodidae', 'Emballonuridae']],
+  ['Pholidota', 'Pangolin', ['Manidae']],
+  ['Carnivora', 'Carnivores', ['Felidae', 'Viverridae', 'Herpestidae', 'Hyaenidae', 'Canidae', 'Mustelidae']],
+  ['Perissodactyla', 'Odd-toed hoofed mammals', ['Equidae', 'Rhinocerotidae']],
+  ['Artiodactyla', 'Even-toed hoofed mammals', ['Suidae', 'Hippopotamidae', 'Giraffidae', 'Bovidae']],
+];
+/** Orders of the snakes and the Others tab: reptiles, frogs, arachnids, insects (families alphabetically inside). */
+export const OTHER_TAXA: [string, string, string[]][] = [
+  ['Crocodilia', 'Crocodiles', []], ['Testudines', 'Tortoises & terrapins', []], ['Squamata', 'Lizards & snakes', []],
+  ['Anura', 'Frogs & toads', []],
+  ['Scorpiones', 'Scorpions', []], ['Araneae', 'Spiders', []], ['Amblypygi', 'Whip spiders', []], ['Ixodida', 'Ticks', []],
+  ['Odonata', 'Dragonflies & damselflies', []], ['Orthoptera', 'Grasshoppers & crickets', []], ['Mantodea', 'Mantids', []],
+  ['Blattodea', 'Termites & cockroaches', []], ['Hemiptera', 'Bugs & cicadas', []], ['Coleoptera', 'Beetles', []],
+  ['Lepidoptera', 'Butterflies & moths', []], ['Diptera', 'Flies & mosquitoes', []], ['Hymenoptera', 'Ants, bees & wasps', []],
+];
+const TAXA = [...BIRD_TAXA, ...MAMMAL_TAXA, ...OTHER_TAXA];
+const ORDER_RANK = new Map(TAXA.map(([o], i) => [o, i]));
+const FAMILY_RANK = new Map(TAXA.flatMap(([, , fs]) => fs).map((f, i) => [f, i]));
+/** Field-guide sequence for birds and mammals: order, then family (a family missing from the tables still goes with its
+ *  order). Snakes, plants and the others have no table: orders and families alphabetically. Then the scientific name. */
+export const familyCompare = (a: Species, b: Species) =>
+  (ORDER_RANK.get(a.order || '') ?? 99) - (ORDER_RANK.get(b.order || '') ?? 99)
+  || (FAMILY_RANK.get(a.family || '') ?? 999) - (FAMILY_RANK.get(b.family || '') ?? 999)
+  || byName(a.order, b.order) || byName(a.family, b.family);
+/** Alphabetical, the missing ones last. */
+const byName = (a: string | null, b: string | null) => (a && b ? a.localeCompare(b) : a ? -1 : b ? 1 : 0);
+export const taxCompare = (a: Species, b: Species) => familyCompare(a, b) || a.sci.localeCompare(b.sci);
 export const orderName = (o: string | null) => (o === 'Pangalliformes' ? 'Galliformes' : o || '');
-export const orderEn = (o: string | null) => BIRD_TAXA.find(([k]) => k === o)?.[1] || '';
+export const orderEn = (o: string | null) => TAXA.find(([k]) => k === o)?.[1] || '';
