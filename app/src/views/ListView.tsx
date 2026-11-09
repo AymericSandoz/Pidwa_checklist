@@ -12,7 +12,7 @@ import { SearchBox } from '../components/SearchBox';
 import { ObsForm } from '../components/ObsForm';
 import { MigBadge, SortChips } from '../components/BirdSection';
 import { birdSort, sortFor } from '../learn/birds';
-import { abundanceCompare, sortText } from '../learn/abundance';
+import { abundanceCompare, sortText, weightTag } from '../learn/abundance';
 import { plantInfo, type PlantKind } from '../learn/plants';
 import { otherInfo, CAT_LABEL, type OtherCat } from '../learn/others';
 import type { Group, Species } from '../types';
@@ -103,7 +103,7 @@ export function ListView() {
                   <div class="en">{name2(s)}{name2(s) ? ' · ' : ''}{rt || familyEn(s)}</div>
                 </div>
                 {noteText.value.has(s.id) && <span class="hasnote" title="You have notes on it"><Icon name="notebook-pen" size={16} /></span>}
-                {n > 0 && <span class="cnt">×{n}</span>}
+                {weightTag(s) && <span class="wtag">{weightTag(s)}</span>}
               </a>
               <button class="add" aria-label="Log an observation" onClick={() => setAdding(s.id)}><Icon name="plus" /></button>
             </div>

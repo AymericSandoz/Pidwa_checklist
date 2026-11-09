@@ -10,7 +10,7 @@ import { Icon, type IconName } from '../components/Icon';
 import { SearchBox } from '../components/SearchBox';
 import { SortChips, MigBadge } from '../components/BirdSection';
 import { birdInfo, birdSort } from '../learn/birds';
-import { abundanceCompare, sortText } from '../learn/abundance';
+import { abundanceCompare, sortText, weightTag } from '../learn/abundance';
 import type { Species } from '../types';
 
 // Every criterion is multi-select: ticking several options means "one of these" (e.g. bill medium OR thin).
@@ -169,6 +169,7 @@ export function IdGuideView() {
             <a class={'tile' + (seen.has(b.id) ? ' seen' : '')} href={href('species/' + b.id)} title={name2(b)}>
               {u ? <img src={u} loading="lazy" decoding="async" alt="" /> : <div class="noimg"><Icon name="bird" size={26} /></div>}
               <MigBadge id={b.id} />
+              {weightTag(b) && <span class="wtag">{weightTag(b)}</span>}
               <div class="t">{name(b)}</div>
               {rt && <div class="rr">{rt}</div>}
             </a>

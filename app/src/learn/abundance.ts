@@ -51,9 +51,17 @@ export function abundanceCompare(sort: BirdSort): ((a: Species, b: Species) => n
  *  when the family itself is the point (A-Z, by family). */
 export function sortText(s: Species, sort: BirdSort): string | null {
   if (sort === 'az' || sort === 'tax') return null;
+  if ((sort === 'heavy' || sort === 'light') && weightTag(s)) return null;
   if (sort === 'heavy' || sort === 'light') { const z = sizeOf(s); return z ? (z.unit === 'g' ? fmtMass(z.v) : fmtLen(z.v)) : null; }
   if (sort === 'hear') { const b = birdInfo.value.get(s.id); return b ? hearText(b) : null; }
   return abundanceText(s.id);
+}
+
+/** The weight shown on every row and tile of the birds and mammals, "46 g", "3825 kg"; null for the others. */
+export function weightTag(s: Species): string | null {
+  if (s.group !== 'bird' && s.group !== 'mammal') return null;
+  const g = s.avonet?.mass ?? s.mass;
+  return g != null ? fmtMass(g) : null;
 }
 
 /** "Rare, 0.4%" for a bird, "Uncommon" for an estimated level: shown in place of the family when sorted by rarity. */
