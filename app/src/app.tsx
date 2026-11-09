@@ -4,6 +4,7 @@ import { loaded, loadError } from './data';
 import { ListView } from './views/ListView';
 import { SpeciesView } from './views/SpeciesView';
 import { IdGuideView } from './views/IdGuideView';
+import { TreeView } from './views/TreeView';
 import { TrackGuideView } from './views/TrackGuideView';
 import { FlightGuideView } from './views/FlightGuideView';
 import { SnakeGuideView, PlantGuideView, OtherGuideView } from './views/KeyGuideView';
@@ -44,7 +45,7 @@ export function App() {
   let view;
   switch (r.path) {
     case 'species': view = <SpeciesView id={r.parts[1]} />; break;
-    case 'id': view = r.parts[1] === 'flight' ? <FlightGuideView /> : r.parts[1] === 'tracks' ? <TrackGuideView /> : r.parts[1] === 'snakes' ? <SnakeGuideView /> : r.parts[1] === 'plants' ? <PlantGuideView /> : r.parts[1] === 'others' ? <OtherGuideView /> : <IdGuideView />; break;
+    case 'id': view = r.parts[1] === 'flight' ? <FlightGuideView /> : r.parts[1] === 'tracks' ? <TrackGuideView /> : r.parts[1] === 'snakes' ? <SnakeGuideView /> : r.parts[1] === 'plants' ? <PlantGuideView /> : r.parts[1] === 'others' ? <OtherGuideView /> : r.parts[1] === 'tree' ? <TreeView /> : <IdGuideView />; break;
     case 'obs': view = <StatsView journal />; break; // old journal link: the journal now lives under Stats
     case 'map': view = <MapLazy />; break;
     case 'listen': view = <ListenLazy />; break;

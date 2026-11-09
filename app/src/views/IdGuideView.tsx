@@ -46,8 +46,8 @@ function toggle(k: Key, v: string) {
   if (k === 'group') family.value = '';
 }
 
-/** The keys of the Guide tab: birds by look, mammals by their prints, snakes and plants by look. */
-const GUIDES: [string, string, IconName][] = [['', 'Birds', 'bird'], ['flight', 'Flight', 'feather'], ['tracks', 'Tracks', 'paw-print'], ['snakes', 'Snakes', 'snake'], ['plants', 'Plants', 'tree'], ['others', 'Others', 'bug']];
+/** The keys of the Guide tab: birds by look, mammals by their prints, snakes and plants by look; the family tree. */
+const GUIDES: [string, string, IconName][] = [['', 'Birds', 'bird'], ['flight', 'Flight', 'feather'], ['tracks', 'Tracks', 'paw-print'], ['snakes', 'Snakes', 'snake'], ['plants', 'Plants', 'tree'], ['others', 'Others', 'bug'], ['tree', 'Tree', 'network']];
 export function GuideSwitch() {
   const cur = route.value.parts[1] || '';
   return (

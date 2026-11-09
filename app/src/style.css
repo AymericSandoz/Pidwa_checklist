@@ -871,3 +871,57 @@ details summary { cursor: pointer; }
 .taxf span { margin-left: auto; font-size: 12px; font-weight: 700; color: var(--muted); }
 .grid .sec, .grid .taxf { grid-column: 1 / -1; }
 .grid .sec { margin-bottom: 0; }
+
+/* ---- Tree guide: circular family tree, zoomed and moved like a map ---- */
+.treehead { display: flex; align-items: baseline; gap: 6px; margin: 0 2px 6px; font-size: 15px; }
+.treehead .muted { font-size: 12.5px; font-weight: 600; }
+.treebox { position: relative; margin: 0 -14px; background: var(--card); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.treebox svg { display: block; width: 100%; aspect-ratio: 1; touch-action: none; user-select: none; -webkit-user-select: none; cursor: grab; }
+.treebox .branches { fill: none; stroke: var(--muted); stroke-width: 1.1; stroke-linecap: round; transition: opacity .2s; }
+.treebox .branches.on { stroke: var(--green); stroke-width: 2; }
+.treebox .fade { opacity: .28; }
+.treebox .leaf text { font-size: 8.5px; font-weight: 600; fill: var(--text); }
+.treebox .leaf circle { fill: var(--muted); }
+.treebox .leaf.seen circle { fill: var(--green); }
+.treebox .leaf.on text { fill: var(--green-ink); font-weight: 800; }
+.treebox .hit { fill: transparent; stroke: none; }
+.treebox .node circle:not(.hit) { fill: var(--card); stroke: var(--text); stroke-width: 1.4; }
+.treebox .node.big circle:not(.hit) { fill: var(--text); }
+.treebox .node.on circle:not(.hit) { fill: var(--green); stroke: var(--green); }
+.treebox .node text { font-size: 7.5px; font-weight: 800; fill: var(--text); paint-order: stroke; stroke: var(--card); stroke-width: 2.5px; }
+.treebox .band path { stroke: var(--card); stroke-width: 1; }
+.treebox .band.on path:first-child { stroke: var(--green); stroke-width: 2; }
+.treebox .ordt { fill: #fff; font-weight: 800; }
+.treebox .famt { fill: #1b1b1b; font-weight: 700; }
+.treezoom { position: absolute; right: 10px; bottom: 10px; display: flex; flex-direction: column; gap: 6px; }
+.treezoom button { width: 38px; height: 38px; border-radius: 12px; border: 1px solid var(--line); background: var(--card); color: var(--text); display: grid; place-items: center; padding: 0; box-shadow: 0 1px 3px #0002; }
+.treezoom .minus { width: 13px; height: 2px; border-radius: 1px; background: currentColor; }
+.treeg .credit { margin-top: 10px; }
+.treepanel { position: fixed; left: 8px; right: 8px; bottom: calc(var(--nav-h) + 8px + env(safe-area-inset-bottom)); z-index: 20; max-height: 46vh; overflow: auto;
+  background: var(--card); border-radius: 18px; padding: 12px 14px 14px; box-shadow: 0 6px 24px #0003; border: 1px solid var(--line); }
+.treepanel.shut { max-height: none; }
+.treepanel.shut p, .treepanel.shut .treethumbs, .treepanel.shut .meta { display: none; }
+.treepanel .x { position: absolute; top: 8px; right: 8px; width: 32px; height: 32px; border-radius: 50%; border: 0; background: var(--bg); color: var(--text); display: grid; place-items: center; padding: 0; }
+.treepanel h3 { font-size: 18px; font-weight: 800; margin: 2px 36px 8px 0; cursor: pointer; }
+.treepanel h3 i { font-size: 13px; font-weight: 600; color: var(--muted); }
+.treepanel .meta { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+.treepanel p { font-size: 14px; line-height: 1.45; margin: 0 0 10px; }
+.treepanel .crumbs { display: flex; flex-wrap: wrap; align-items: center; gap: 2px 4px; margin-right: 36px; font-size: 11.5px; color: var(--muted); }
+.treepanel .crumbs button { border: 0; background: none; padding: 2px 0; font: inherit; font-weight: 700; color: var(--green-ink); }
+.treethumbs { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; margin: 0 -14px; padding: 0 14px; }
+.treethumbs a { flex: none; width: 74px; font-size: 11px; font-weight: 700; line-height: 1.2; color: var(--text); }
+.treethumbs .thumb { width: 74px; height: 74px; border-radius: 12px; object-fit: cover; display: grid; place-items: center; background: var(--sand); margin-bottom: 4px; }
+.treepanel .treesp { gap: 12px; margin-top: 8px; color: var(--text); }
+.treepanel .treesp .thumb { width: 64px; height: 64px; border-radius: 12px; object-fit: cover; }
+.treepanel .treesp > div { flex: 1; }
+/* "By family" headers that open a description */
+.taxbtn { width: 100%; border: 0; background: none; font-family: inherit; color: inherit; text-align: left; cursor: pointer; padding: 0; }
+.taxbtn.sec { display: flex; }
+.taxbtn > svg { flex: none; color: var(--muted); }
+.taxbtn.taxf > svg { margin-left: 2px; }
+.taxbtn.taxo .n { margin-left: auto; }
+.taxf .c { margin-left: auto; font-size: 12px; font-weight: 700; color: var(--muted); }
+.taxdesc { background: var(--card); border-radius: 14px; padding: 10px 12px; margin: 4px 0 8px; box-shadow: 0 1px 0 var(--line); }
+.taxdesc .pill { margin-bottom: 6px; }
+.taxdesc p { margin: 0; font-size: 13.5px; line-height: 1.45; }
+.grid .taxbtn, .grid .taxdesc { grid-column: 1 / -1; }
