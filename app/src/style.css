@@ -899,6 +899,28 @@ details summary { cursor: pointer; }
 .treezoom button { width: 38px; height: 38px; border-radius: 12px; border: 1px solid var(--line); background: var(--card); color: var(--text); display: grid; place-items: center; padding: 0; box-shadow: 0 1px 3px #0002; }
 .treezoom .minus { width: 13px; height: 2px; border-radius: 1px; background: currentColor; }
 .treeg .credit { margin-top: 10px; }
+.treehead .treemode { margin-left: auto; align-self: center; }
+.treehead .treemode button { padding: 4px 10px; font-size: 12px; }
+/* the Columns drawing: left to right, scrolled both ways inside its box */
+.treecols { margin: 0 -14px; background: var(--card); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); overflow: auto; max-height: 72vh; overscroll-behavior: contain; }
+.tcin { position: relative; }
+.tcin svg { position: absolute; inset: 0; }
+.tclines { fill: none; stroke: var(--muted); stroke-width: 1.2; transition: opacity .2s; }
+.tclines.on { stroke: var(--green); stroke-width: 2; }
+.treecols .fade { opacity: .28; }
+.tcbox { position: absolute; display: flex; align-items: center; padding: 0 8px; border-radius: 9px; border: 1px solid var(--line); background: var(--card); color: var(--text);
+  font-size: 11px; font-weight: 700; line-height: 1.15; text-align: left; transition: opacity .2s; }
+.tcbox span { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.tcbox.clade { font-weight: 800; border-color: var(--text); }
+.tcbox.order { color: #fff; border-color: transparent; font-weight: 800; }
+.tcbox.family { color: #1b1b1b; border-color: transparent; }
+.tcbox.subfamily, .tcbox.tribe { font-size: 10.5px; color: var(--muted); }
+.tcbox.on { outline: 2px solid var(--green); outline-offset: 1px; }
+.tcleaf { position: absolute; display: flex; align-items: center; gap: 6px; padding: 0 4px; border: 0; background: none; color: var(--text);
+  font-size: 12.5px; font-weight: 600; white-space: nowrap; text-align: left; transition: opacity .2s; }
+.tcleaf i { flex: none; width: 7px; height: 7px; border-radius: 50%; background: var(--muted); }
+.tcleaf.seen i { background: var(--green); }
+.tcleaf.on { color: var(--green-ink); font-weight: 800; }
 .treepanel { position: fixed; left: 8px; right: 8px; bottom: calc(var(--nav-h) + 8px + env(safe-area-inset-bottom)); z-index: 20; max-height: 46vh; overflow: auto;
   background: var(--card); border-radius: 18px; padding: 12px 14px 14px; box-shadow: 0 6px 24px #0003; border: 1px solid var(--line); }
 .treepanel.shut { max-height: none; }
