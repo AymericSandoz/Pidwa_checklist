@@ -162,6 +162,7 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 12px 0; }
 /* weight of the birds and mammals: a quiet tag at the end of the row, in a corner of the tile photo */
 .sp-row .wtag { flex: none; font-size: 12px; font-weight: 700; color: var(--muted); background: var(--bg); border-radius: 999px; padding: 3px 8px; font-variant-numeric: tabular-nums; }
 .grid .tile .wtag { position: absolute; right: 6px; top: 6px; font-size: 10.5px; font-weight: 700; color: #fff; background: #0008; border-radius: 999px; padding: 2px 6px; font-variant-numeric: tabular-nums; }
+.grid .tile.seen .wtag { right: 34px; top: 7.5px; } /* beside the green seen badge, not under it */
 .sp-row .add { border: 1.5px solid var(--line); background: transparent; color: var(--text); width: 40px; height: 40px; border-radius: 50%; font-size: 22px; line-height: 1; flex: none; display: grid; place-items: center; padding: 0; }
 .sp-row .add:active { background: var(--green-light); border-color: var(--green); }
 .listhead { display: flex; align-items: center; gap: 8px; margin: 10px 0; }
