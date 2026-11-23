@@ -21,8 +21,10 @@ const docId = (c: Coll, r: any): string => (c === 'quiz' ? r.speciesId : r.uid);
 const pk = (c: Coll, r: any) => (c === 'quiz' ? r.speciesId : r.id);
 
 export const cloudConfigured = !!firebaseConfig.apiKey;
-/** undefined while Firebase starts, null when signed out. */
-export const user = signal<{ uid: string; email: string | null } | null | undefined>(undefined);
+/** null when signed out. Starts from the last known account, so that the screen does not wait for Firebase to load
+ *  (undefined only on a phone that never saw Firebase answer). */
+const known = localStorage.getItem('cloud-user');
+export const user = signal<{ uid: string; email: string | null } | null | undefined>(known === null ? undefined : JSON.parse(known));
 export const syncing = signal(false);
 export const syncError = signal<string | null>(null);
 export const lastSync = signal<number>(+(localStorage.getItem('last-sync') || 0));
@@ -31,6 +33,7 @@ export const pending = signal(0);
 
 type FB = { fs: typeof import('firebase/firestore/lite'); auth: typeof import('firebase/auth'); a: import('firebase/auth').Auth; d: import('firebase/firestore/lite').Firestore };
 let fbp: Promise<FB> | null = null;
+let authReady = false;
 function fb(): Promise<FB> {
   fbp ||= (async () => {
     const [{ initializeApp }, auth, fs] = await Promise.all([import('firebase/app'), import('firebase/auth'), import('firebase/firestore/lite')]);
@@ -47,7 +50,9 @@ export async function initSync() {
   try {
     const { a, auth } = await fb();
     auth.onAuthStateChanged(a, (u) => {
+      authReady = true;
       user.value = u ? { uid: u.uid, email: u.email } : null;
+      localStorage.setItem('cloud-user', JSON.stringify(user.value));
       if (u) syncNow(true);
     });
   } catch (e: any) { user.value = null; syncError.value = 'Cloud backup unavailable: ' + (e.message || e); }
@@ -85,7 +90,7 @@ async function countPending() {
 let running: Promise<void> | null = null;
 /** Push what changed on the phone; with pull, also bring what changed in the cloud. */
 export function syncNow(pull: boolean): Promise<void> {
-  if (!cloudConfigured || !user.value || !navigator.onLine) return Promise.resolve();
+  if (!cloudConfigured || !user.value || !authReady || !navigator.onLine) return Promise.resolve();
   if (running) return running;
   syncing.value = true;
   running = (async () => {

@@ -88,8 +88,7 @@ export function SettingsView() {
       <div class="card">
         <b>Cloud backup</b>
         {!cloudConfigured ? <p class="muted small" style="margin:4px 0 0">Not set up in this version of the app.</p>
-          : user.value === undefined ? <p class="muted small" style="margin:4px 0 0">starting…</p>
-          : user.value === null ? (<>
+          : !user.value ? (<>
             <p class="muted small" style="margin:4px 0 8px">Off: observations, photos, places, notes and quiz progress are only on this phone, and Chrome can wipe them. Sign in with Google: everything is then copied to your own cloud space whenever there is network, and comes back after a wipe or on a new phone.</p>
             <button class="btn block" disabled={!navigator.onLine} onClick={() => signIn()}>{navigator.onLine ? 'Sign in with Google' : 'Sign in (needs network)'}</button>
           </>) : (<>

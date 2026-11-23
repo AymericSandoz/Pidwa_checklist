@@ -11,6 +11,7 @@ registerSW({ immediate: true });
 // Ask Android to never evict our IndexedDB / caches.
 navigator.storage?.persist?.().catch(() => {});
 
-loadAll().then(initSync);
+loadAll();
+initSync(); // in parallel with the species list: the sign-in state should not wait for it
 initPacks();
 render(<App />, document.getElementById('app')!);
