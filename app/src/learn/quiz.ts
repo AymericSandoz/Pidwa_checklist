@@ -1,4 +1,4 @@
-import { db } from '../db';
+import { db, tombstone } from '../db';
 import type { Species, QuizCard } from '../types';
 import type { Verdict } from './match';
 export { judge, type Verdict } from './match';
@@ -25,7 +25,9 @@ export async function record(speciesId: string, prev: QuizCard | undefined, v: V
 /** Forget the progress of one quiz: keys with that prefix ("spoor:", "scat:"), or with none for the photo quiz. */
 export async function resetCards(prefixes: string[] = []) {
   const keys = (await db.quiz.toArray()).map((c) => c.speciesId);
-  await db.quiz.bulkDelete(keys.filter((k) => (prefixes.length ? prefixes.some((p) => k.startsWith(p)) : !k.includes(':'))));
+  const gone = keys.filter((k) => (prefixes.length ? prefixes.some((p) => k.startsWith(p)) : !k.includes(':')));
+  await db.quiz.bulkDelete(gone);
+  for (const k of gone) await tombstone('quiz', k);
 }
 
 /** Build a round: species due for review first, then never-asked ones, then the rest (those known best last), shuffled a little. */

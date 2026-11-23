@@ -5,6 +5,7 @@ import { fmtBytes } from '../util';
 import { theme, setTheme, type Theme } from '../theme';
 import { Icon } from '../components/Icon';
 import type { Observation, Place, SpeciesNote } from '../types';
+import { cloudConfigured, user, syncing, syncError, lastSync, pending, signIn, signOut, syncNow } from '../sync';
 import { packs, packState, packsError, missing, autoPacks, setAutoPacks, loadPacks, downloadPack, downloadAll, stopPack, stopAll, removePack, PACK_LABEL } from '../packs';
 
 const THEMES: [Theme, string][] = [['auto', 'Automatic'], ['light', 'Day'], ['dark', 'Night']];
@@ -38,8 +39,10 @@ export function SettingsView() {
     setTimeout(() => URL.revokeObjectURL(a.href), 5000);
   }
   const stamp = () => new Date().toISOString().slice(0, 10);
-  function exportJson() {
-    const rows = observations.value.map(({ photo, ...o }) => o);
+  const blobUrl = (b: Blob) => new Promise<string>((res, rej) => { const fr = new FileReader(); fr.onload = () => res(fr.result as string); fr.onerror = () => rej(fr.error); fr.readAsDataURL(b); });
+  async function exportJson() {
+    // photos go in as data URLs, so that the file alone is a complete backup
+    const rows = await Promise.all(observations.value.map(async ({ photo, id, dirty, ...o }) => ({ ...o, ...(photo ? { photo: await blobUrl(photo) } : {}) })));
     dl(`pidwa-observations-${stamp()}.json`, JSON.stringify({ observations: rows, places: places.value, notes: speciesNotes.value }, null, 1), 'application/json');
   }
   function exportCsv() {
@@ -64,16 +67,16 @@ export function SettingsView() {
       const existing = await db.observations.toArray();
       const key = (o: Observation) => `${o.speciesId}|${o.ts}`;
       const have = new Set(existing.map(key));
-      const add = rows.filter((o) => o.speciesId && o.ts && !have.has(key(o))).map(({ id, ...o }) => ({ ...o, count: o.count || 1, note: o.note || '', lat: o.lat ?? null, lon: o.lon ?? null, acc: o.acc ?? null }));
+      const add = await Promise.all(rows.filter((o) => o.speciesId && o.ts && !have.has(key(o))).map(async ({ id, dirty, photo, ...o }) => ({ ...o, photo: typeof photo === 'string' ? await (await fetch(photo)).blob() : null, count: o.count || 1, note: o.note || '', lat: o.lat ?? null, lon: o.lon ?? null, acc: o.acc ?? null })));
       await db.observations.bulkAdd(add);
       await reloadObservations();
       const havePlaces = new Set((await db.places.toArray()).map((p) => `${p.name}|${p.lat}|${p.lon}`));
-      const addPlaces = placeRows.filter((p) => p.name && p.lat != null && p.lon != null && !havePlaces.has(`${p.name}|${p.lat}|${p.lon}`)).map(({ id, ...p }) => ({ ...p, type: p.type || 'other', note: p.note || '', ts: p.ts || Date.now() }));
+      const addPlaces = placeRows.filter((p) => p.name && p.lat != null && p.lon != null && !havePlaces.has(`${p.name}|${p.lat}|${p.lon}`)).map(({ id, dirty, ...p }) => ({ ...p, type: p.type || 'other', note: p.note || '', ts: p.ts || Date.now() }));
       await db.places.bulkAdd(addPlaces);
       await reloadPlaces();
       const noteRows = (Array.isArray(parsed) ? [] : parsed.notes || []) as SpeciesNote[];
       const haveNotes = new Set((await db.notes.toArray()).map((n) => `${n.speciesId}|${n.ts}`));
-      const addNotes = noteRows.filter((n) => n.speciesId && n.text && n.ts && !haveNotes.has(`${n.speciesId}|${n.ts}`)).map(({ id, ...n }) => n);
+      const addNotes = noteRows.filter((n) => n.speciesId && n.text && n.ts && !haveNotes.has(`${n.speciesId}|${n.ts}`)).map(({ id, dirty, ...n }) => n);
       await db.notes.bulkAdd(addNotes);
       await reloadNotes();
       setMsg(`${add.length} observation(s), ${addPlaces.length} place(s) and ${addNotes.length} note(s) imported, ${rows.length - add.length} observation(s) already present.`);
@@ -82,6 +85,25 @@ export function SettingsView() {
 
   return (
     <div>
+      <div class="card">
+        <b>Cloud backup</b>
+        {!cloudConfigured ? <p class="muted small" style="margin:4px 0 0">Not set up in this version of the app.</p>
+          : user.value === undefined ? <p class="muted small" style="margin:4px 0 0">starting…</p>
+          : user.value === null ? (<>
+            <p class="muted small" style="margin:4px 0 8px">Off: observations, photos, places, notes and quiz progress are only on this phone, and Chrome can wipe them. Sign in with Google: everything is then copied to your own cloud space whenever there is network, and comes back after a wipe or on a new phone.</p>
+            <button class="btn block" disabled={!navigator.onLine} onClick={() => signIn()}>{navigator.onLine ? 'Sign in with Google' : 'Sign in (needs network)'}</button>
+          </>) : (<>
+            <div class="stat"><span>Account</span><span>{user.value.email}</span></div>
+            <div class="stat"><span>Last backup</span><span>{syncing.value ? 'in progress…' : lastSync.value ? new Date(lastSync.value).toLocaleString('en-GB', { dateStyle: 'short', timeStyle: 'short' }) : 'never'}</span></div>
+            <div class="stat"><span>Waiting for network</span><span>{pending.value ? `${pending.value} change(s)` : <>none {tick}</>}</span></div>
+            <div class="actions" style="margin-top:8px">
+              <button class="btn sm secondary" disabled={syncing.value || !navigator.onLine} onClick={() => syncNow(true)}>back up now</button>
+              <button class="btn sm secondary" onClick={() => { if (confirm('Sign out? The data stays on this phone, but new changes are no longer backed up.')) signOut(); }}>sign out</button>
+            </div>
+          </>)}
+        {syncError.value && <p class="err small">{syncError.value}</p>}
+      </div>
+
       <div class="card">
         <b>Appearance</b>
         <p class="muted small" style="margin:4px 0 8px">Automatic follows the phone's dark mode. Night is easier on the eyes before sunrise and on night drives.</p>
@@ -126,7 +148,7 @@ export function SettingsView() {
 
       <div class="card">
         <b>Backup of observations</b>
-        <p class="muted small" style="margin:4px 0 8px">{observations.value.length} observation(s), {places.value.length} place(s) on the map and {speciesNotes.value.length} note(s) (JSON only). Photos stay on the phone, the export does not include them.</p>
+        <p class="muted small" style="margin:4px 0 8px">{observations.value.length} observation(s), {places.value.length} place(s) on the map and {speciesNotes.value.length} note(s) (JSON only, photos included). A file to keep elsewhere, on top of the cloud backup.</p>
         <div class="actions">
           <button class="btn secondary" onClick={exportJson}>JSON</button>
           <button class="btn secondary" onClick={exportCsv}>CSV</button>

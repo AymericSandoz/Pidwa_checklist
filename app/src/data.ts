@@ -1,5 +1,5 @@
 import { signal, computed } from '@preact/signals';
-import { db } from './db';
+import { db, tombstone } from './db';
 import type { Species, Observation, Group, Place, SpeciesNote } from './types';
 
 export const BASE = import.meta.env.BASE_URL; // e.g. "/Pidwa_checklist/"
@@ -45,13 +45,14 @@ export async function reloadPlaces() {
   // the camp is the first place; added once, so that it can be renamed or removed like any other
   if (places.value.length === 0 && !localStorage.getItem('camp-seeded')) {
     localStorage.setItem('camp-seeded', '1');
-    await db.places.add({ name: 'Askari Camp', type: 'camp', lat: -24.0648, lon: 30.55897, note: '', ts: Date.now() });
+    // upd: 1, older than anything: if the backup holds the camp (renamed, moved), the cloud copy wins
+    await db.places.add({ uid: 'camp', upd: 1, name: 'Askari Camp', type: 'camp', lat: -24.0648, lon: 30.55897, note: '', ts: Date.now() });
     places.value = await db.places.orderBy('ts').toArray();
   }
 }
 export async function addPlace(p: Place) { const id = await db.places.add(p); await reloadPlaces(); return id; }
 export async function updatePlace(id: number, patch: Partial<Place>) { await db.places.update(id, patch); await reloadPlaces(); }
-export async function deletePlace(id: number) { await db.places.delete(id); await reloadPlaces(); }
+export async function deletePlace(id: number) { const p = await db.places.get(id); await db.places.delete(id); await tombstone('places', p?.uid); await reloadPlaces(); }
 
 export async function addObservation(o: Observation) {
   const id = await db.observations.add(o);
@@ -63,7 +64,9 @@ export async function updateObservation(id: number, patch: Partial<Observation>)
   await reloadObservations();
 }
 export async function deleteObservation(id: number) {
+  const o = await db.observations.get(id);
   await db.observations.delete(id);
+  await tombstone('obs', o?.uid);
   await reloadObservations();
 }
 
@@ -80,7 +83,9 @@ export async function updateNote(id: number, text: string) {
   await reloadNotes();
 }
 export async function deleteNote(id: number) {
+  const n = await db.notes.get(id);
   await db.notes.delete(id);
+  await tombstone('notes', n?.uid);
   await reloadNotes();
 }
 /** All the notes of a species in one text, per species id: the list's marker and the search. */

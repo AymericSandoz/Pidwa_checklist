@@ -41,6 +41,10 @@ export interface Observation {
   photo?: Blob | null;
   /** set when the species is not on the Pidwa checklist (logged from sound ID); speciesId is then "x:<slug>" */
   extra?: { sci: string; en: string; fr: string | null } | null;
+  /** cloud backup: stable id, last change (epoch ms), 1 while not yet in the cloud */
+  uid?: string;
+  upd?: number;
+  dirty?: 0 | 1;
 }
 
 /** A place of your own on the map (water hole, gate, hide…). Stays on the phone, like the observations. */
@@ -52,6 +56,10 @@ export interface Place {
   lon: number;
   note: string;
   ts: number;        // when it was added, epoch ms
+  /** cloud backup: stable id, last change (epoch ms), 1 while not yet in the cloud */
+  uid?: string;
+  upd?: number;
+  dirty?: 0 | 1;
 }
 
 /** A dated personal note on a species, seen or not. Stays on the phone, and goes with the JSON backup. */
@@ -60,6 +68,10 @@ export interface SpeciesNote {
   speciesId: string;
   text: string;
   ts: number;        // when it was written, epoch ms
+  /** cloud backup: stable id, last change (epoch ms), 1 while not yet in the cloud */
+  uid?: string;
+  upd?: number;
+  dirty?: 0 | 1;
 }
 
 /** Spaced-repetition state of one species in the quiz (Leitner boxes). Stays on the phone. */
@@ -70,6 +82,10 @@ export interface QuizCard {
   asked: number;
   right: number;
   last: number;      // epoch ms of the last answer
+  /** cloud backup: stable id, last change (epoch ms), 1 while not yet in the cloud */
+  uid?: string;
+  upd?: number;
+  dirty?: 0 | 1;
 }
 
 export interface PackFile { path: string; bytes: number }
