@@ -4,9 +4,10 @@ import { App } from './app';
 import { loadAll } from './data';
 import { initPacks } from './packs';
 import { initSync } from './sync';
+import { onRegistered, onRegisterError } from './offline';
 import './style.css';
 
-registerSW({ immediate: true });
+registerSW({ immediate: true, onRegisteredSW: (_url, r) => onRegistered(r), onRegisterError });
 
 // Ask Android to never evict our IndexedDB / caches.
 navigator.storage?.persist?.().catch(() => {});

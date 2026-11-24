@@ -5,6 +5,7 @@ import { fmtBytes } from '../util';
 import { theme, setTheme, type Theme } from '../theme';
 import { Icon } from '../components/Icon';
 import type { Observation, Place, SpeciesNote } from '../types';
+import { offlineApp, checkOffline } from '../offline';
 import { cloudConfigured, user, syncing, syncError, lastSync, pending, signIn, signOut, syncNow } from '../sync';
 import { packs, packState, packsError, missing, autoPacks, setAutoPacks, loadPacks, downloadPack, downloadAll, stopPack, stopAll, removePack, PACK_LABEL } from '../packs';
 
@@ -21,7 +22,7 @@ export function SettingsView() {
     try { const e = await navigator.storage.estimate(); setQuota({ usage: e.usage || 0, quota: e.quota || 0 }); } catch {}
     try { setPersisted(await navigator.storage.persisted()); } catch {}
   }
-  useEffect(() => { refresh(); }, []);
+  useEffect(() => { refresh(); checkOffline(); }, []);
   // storage use changes as packs come in
   const busy = missing.value.busy;
   useEffect(() => { if (!busy) refresh(); }, [busy]);
@@ -101,6 +102,24 @@ export function SettingsView() {
             </div>
           </>)}
         {syncError.value && <p class="err small">{syncError.value}</p>}
+      </div>
+
+      <div class="card">
+        <b>The app offline</b>
+        {(() => {
+          const o = offlineApp.value;
+          const label = { ready: <>saved on the phone {tick}</>, installing: 'saving… keep the network', failed: 'NOT saved: it will not open without network', none: 'not saved yet', unsupported: 'not possible in this browser' }[o.state] || o.state;
+          return (<>
+            <p class="muted small" style="margin:4px 0 6px">The app itself (about 10 MB) must be saved by Chrome to open without network. If it is not, Chrome shows "You are offline".</p>
+            <div class="stat"><span>State</span><span>{label}</span></div>
+            <div class="stat"><span>App files kept</span><span>{o.files}</span></div>
+            <div class="stat"><span>This page served offline-ready</span><span>{o.controlled ? 'yes' : 'no'}</span></div>
+            {o.quota != null && <div class="stat"><span>Space used / allowed to Chrome</span><span>{fmtBytes(o.usage || 0)} / {fmtBytes(o.quota)}</span></div>}
+            {o.error && <p class="err small">{o.error}</p>}
+            {o.quota != null && o.quota < 300e6 && <p class="err small">Chrome is allowed very little space: the phone is nearly full. Free some space (photos, videos, apps), then open the app again with network.</p>}
+            <div class="actions" style="margin-top:8px"><button class="btn sm secondary" onClick={() => checkOffline()}>check again</button></div>
+          </>);
+        })()}
       </div>
 
       <div class="card">

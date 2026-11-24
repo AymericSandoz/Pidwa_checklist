@@ -16,6 +16,7 @@ import { ListenLazy, listening } from './views/ListenLazy';
 import { Icon, type IconName } from './components/Icon';
 import { PackBanner } from './components/PackBanner';
 import { BackupBanner } from './components/BackupBanner';
+import { OfflineBanner } from './components/OfflineBanner';
 import { missing } from './packs';
 import './theme';
 
@@ -65,7 +66,7 @@ export function App() {
           <a href={href('settings')} class="gear" aria-label="Settings"><Icon name="settings" />{missing.value.keys.length > 0 && <i class="dot" />}</a>
         </header>
       )}
-      <main class="main">{!fullscreen && !bare && r.path !== 'settings' && <><BackupBanner /><PackBanner /></>}<ViewBoundary key={r.path}>{view}</ViewBoundary></main>
+      <main class="main">{!fullscreen && !bare && r.path !== 'settings' && <><OfflineBanner /><BackupBanner /><PackBanner /></>}<ViewBoundary key={r.path}>{view}</ViewBoundary></main>
       <nav class="bottom">
         {NAV.map(([p, label, icon]) => (
           <a href={href(p)} class={r.path === p || (p === 'list' && r.path === 'species') || (p === 'stats' && r.path === 'obs') ? 'active' : ''}>
